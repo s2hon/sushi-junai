@@ -7,37 +7,46 @@ import Footer from "../components/Footer";
 import Counter from "../components/Counter";
 import Col from "../components/Col";
 import Image from "../components/Image";
+import Button from "../components/Button";
 
 function Home(props) {
     return (<>
-    <Nav/>
+        <Nav />
         <Container>
             <Row>
                 <Col size={"sm"} number={6}>
-                <Card><ul>
-                    <li>Location 1</li>
-                    <li>Phone number</li>
-                    <li>Address</li>
-                    </ul>
+                    <Card>
+                        <p>Sushi Junai 1</p>
+                        <p>1612 Lavaca St, Austin, TX 78701</p>
+                        <p>(512)322-2428</p>
+
                     </Card>
                 </Col>
                 <Col size={"sm"} number={6}>
-                <Card>
-                <ul>
-                    <li>Location 2</li>
-                    <li>Phone number</li>
-                    <li>Address</li>
-                    </ul>
-                </Card>
+                    <Card>
+
+                        <p>Sushi Junai 2</p>
+                        <p>2500 W Parmer Ln #100, Austin, TX 78727</p>
+                        <p>(512)716-3922</p>
+
+                    </Card>
                 </Col>
-                </Row>
-                <Row>
-                    <Col size={"md"} number={12}>
-                <Image src={"./assests/logo.png"} alt={"fish logo"}/>
+            </Row>
+            <Row>
+                <Col size={"md"} number={12}>
+                    <Image src={"./assests/logo.png"} alt={"fish logo"} />
                 </Col>
             </Row>
             <Col size={"md"} number={6}>
-                {/* button component */}
+                <Row>
+                    <Button type={"button"} btn={"btn btn-dark"}>Reservations</Button>
+                </Row>
+                <Row>
+                    <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
+                </Row>
+                <Row>
+                    <Button type={"button"} btn={"btn btn-dark"} >Carry Out</Button>
+                </Row>
             </Col>
         </Container>
         <Footer />
