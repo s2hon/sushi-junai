@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Image from "../components/Image";
 
 
 
@@ -7,7 +8,7 @@ function Nav (props) {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <Link className="navbar-brand" to="/" id="name">
-            Sushi Junai
+            <Image src={"./assests/logo.png"} alt={"fish logo for restraunt"}/>
           </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
