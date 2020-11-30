@@ -1,4 +1,4 @@
-[
+const menuItems = [
     {
         "name": "Agedashi Tofu",
         "description": "Lightly fried tofu in delicate broth",
@@ -1884,3 +1884,5 @@
 		"fish": false
     }
 ]
+
+export default menuItems;
