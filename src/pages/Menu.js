@@ -4,16 +4,13 @@ import Counter from "../components/Counter";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Footer from "../components/Footer";
-import menu from "../menu";
+import menu from "../../"
 import MenuItems from "../components/MenuItems"
 import Card from "../components/Card";
 import Button from "../components/Button"
 
 
-
 function Menu(props) {
-
-    
 
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
@@ -41,18 +38,15 @@ function Menu(props) {
                     <Container>
                         {
                             appetizers.map(item => {
-                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
-                                if (item.onlyOrderOnce) {
-                                    oncePerOrder = "red";
+                                let fishHTML = ""
+                                if (item.fish){
+                                    fishHTML = '<i class="fas fa-fish"></i>'
                                 }
-
-                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
-                                if (item.fish) {
-                                    fishClass = "fa fa-fish";
-                                }
-                                console.log(fishClass)
+                                console.log(fishHTML);
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                    <MenuItems name={item.name} price={item.price} description={item.description} fish={fishHTML}>
+                                        <Button>-</Button>
+                                        0
                                         <Button>+</Button>
                                     </MenuItems>
                                 </Card>)
