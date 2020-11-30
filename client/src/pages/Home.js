@@ -4,18 +4,10 @@ import Card from "../components/Card";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Footer from "../components/Footer";
-import Counter from "../components/Counter";
 import Col from "../components/Col";
 import Image from "../components/Image";
 import Button from "../components/Button";
 
-const styles = {
-    img: {
-        display: "block",
-        maxHeight: "50%",
-        maxWidth: "50%"
-    }
-}
 
 function Home(props) {
     return (<>
@@ -58,8 +50,8 @@ function Home(props) {
                 </Col>
             </Row>
             <Row>
-                <Col size={"md"} number={12}>
-                    <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} style= {styles.img}/>
+                <Col size={"md"} number={4}>
+                    <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} />
                 </Col>
             </Row>
             <Col size={"md"} number={6}>
@@ -70,7 +62,7 @@ function Home(props) {
                     <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
                 </Row>
                 <Row>
-                    <Button type={"button"} btn={"btn btn-dark"} >Carry Out</Button>
+                    <Button type={"button"} btn={"btn btn-dark"}>Carry Out</Button>
                 </Row>
             </Col>
         </Container>
