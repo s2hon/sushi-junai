@@ -5,6 +5,7 @@ import Alacarte from "./pages/Alacarte";
 import Menu from "./pages/Menu";
 import Favorite from "./pages/Favorite";
 import OrderSummary from "./pages/OrderSummary";
+import Signup from "./pages/Signup";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route exact path="/menu" component={Menu}/> 
             <Route exact path="/favorite" component={Favorite}/>
             <Route exact path="/ordersummary" component={OrderSummary}/> 
+            <Route exact path="/SignUp" component={Signup}/>
         </Router>
     );
 }
