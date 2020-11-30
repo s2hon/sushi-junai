@@ -50,9 +50,7 @@ function Home(props) {
                 </Col>
             </Row>
             <Row>
-                
                     <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} />
-                
             </Row>
             <Col size={"md"} number={6}>
                 <Row>
