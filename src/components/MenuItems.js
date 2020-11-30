@@ -1,6 +1,10 @@
 import React from "react";
 
 function MenuItems(props) {
+    // let fish = "";
+    // if (props.fish) {
+    //     fish = '<i class="fas fa-fish"></i>';
+    // }
     return (
         <>
         <h5>{props.name}</h5>

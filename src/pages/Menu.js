@@ -38,16 +38,31 @@ function Menu(props) {
                     <Container>
                         {
                             appetizers.map(item => {
-                                return(<Card>
-                        <MenuItems name={item.name} price={item.price} description={item.description}>
-                            <Button>-</Button>
-                            0
-                            <Button>+</Button>
-                        </MenuItems>
-                    </Card>)
+                                return (<Card>
+                                    <MenuItems name={item.name} price={item.price} description={item.description} fish={item.fish}>
+                                        <Button>-</Button>
+                                        0
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
                             })
                         }
-                    
+                    </Container>
+                </Row>
+                <Row>
+                    <h4>Salad</h4>
+                    <Container>
+                        {
+                            salads.map(item => {
+                                return (<Card>
+                                    <MenuItems name={item.name} price={item.price} description={item.description} fish={item.fish}>
+                                        <Button>-</Button>
+                                        0
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
                     </Container>
                 </Row>
             </Container>
