@@ -13,7 +13,7 @@ import Button from "../components/Button"
 
 function Menu(props) {
 
-    
+
 
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
@@ -22,7 +22,7 @@ function Menu(props) {
     const rice = ayceMenu.filter(item => item.category === "Rice");
     const classicRolls = ayceMenu.filter(item => item.category === "Classic Roll/Hand Roll");
     const sushi = ayceMenu.filter(item => item.category === "Sushi");
-    const chefsSpecial = ayceMenu.filter(item => item.category === "Chef's Special Rolls");
+    const chefsSpecial = ayceMenu.filter(item => item.category === "Chef’s Special Rolls");
     const tempuraRolls = ayceMenu.filter(item => item.category === "Tempura Rolls");
     const bakedRolls = ayceMenu.filter(item => item.category === "Baked Rolls");
     const desserts = ayceMenu.filter(item => item.category === "Desserts");
@@ -65,10 +65,17 @@ function Menu(props) {
                     <Container>
                         {
                             salads.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
+                                if (item.fish) {
+                                    fishClass = "fa fa-fish";
+                                }
                                 return (<Card>
-                                    <MenuItems name={item.name} price={item.price} description={item.description} fish={item.fish}>
-                                        <Button>-</Button>
-                                        0
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
                                         <Button>+</Button>
                                     </MenuItems>
                                 </Card>)
@@ -76,8 +83,187 @@ function Menu(props) {
                         }
                     </Container>
                 </Row>
-            </Container>
-            <Footer />
+                <Row>
+                    <h4>Soup/Noodles</h4>
+                    <Container>
+                        {
+                            soups.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
+                                if (item.fish) {
+                                    fishClass = "fa fa-fish";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
+                <Row>
+                    <h4>Rice</h4>
+                    <Container>
+                        {
+                            rice.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
+                                if (item.fish) {
+                                    fishClass = "fa fa-fish";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
+                <Row>
+                    <h4>Classic Roll/Hand Roll</h4>
+                    <Container>
+                        {
+                            classicRolls.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
+                                if (item.fish) {
+                                    fishClass = "fa fa-fish";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
+                <Row>
+                    <h4>Sushi <i className="fas fa-fish"></i></h4>
+                    <Container>
+                        {
+                            sushi.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={""} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
+                <Row>
+                    <h4>Chef's Special Rolls</h4>
+                    <Container>
+                        {
+                            chefsSpecial.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
+                                if (item.fish) {
+                                    fishClass = "fa fa-fish";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
+                <Row>
+                    <h4>Tempura Rolls</h4>
+                    <Container>
+                        {
+                            tempuraRolls.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
+                                if (item.fish) {
+                                    fishClass = "fa fa-fish";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
+                <Row>
+                    <h4>Baked Rolls</h4>
+                    <Container>
+                        {
+                            bakedRolls.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
+                                if (item.fish) {
+                                    fishClass = "fa fa-fish";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
+                <Row>
+                    <h4>Desserts</h4>
+                    <Container>
+                        {
+                            desserts.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
+                                if (item.fish) {
+                                    fishClass = "fa fa-fish";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
+                </Container>
+                <Footer />
         </>
     );
 }
