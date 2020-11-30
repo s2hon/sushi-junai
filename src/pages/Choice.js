@@ -3,25 +3,22 @@ import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import Nav from "../components/Nav";
 import Row from "../components/Row";
+import Button from "../components/Button"
 
 function Choice () {
     return (<Container>
         <Nav/>
         <Row>
         <h4>Get the items you love</h4>
-        <Link to="alacarte">
-            <button className="btn btn-warning"> 
-                    A la Carte
-            </button>
-        </Link>
+            <Link to="alacarte">
+                <Button type={"button"} btn={"btn btn-dark"}>A La Carte</Button>
+            </Link>
         </Row>
         <Row>
-        <h4>First time? Try All You Can Eat and taste our delicious dishes.</h4>
-        <Link to="alacarte">
-            <button className="btn btn-danger"> 
-                    All You Can Eat
-            </button>
-        </Link>
+        <h4>Try All You Can Eat and taste our delicious dishes.</h4>
+            <Link to="menu">
+                <Button type={"button"} btn={"btn btn-dark"}>All You Can Eat</Button>
+            </Link>
         </Row>
     </Container>)
 }
