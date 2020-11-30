@@ -53,8 +53,9 @@ function Home(props) {
                     <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} />
             </Row>
             <Col size={"md"} number={6}>
-                <Row>
+                <Row><a href={"https://www.yelp.com/biz/sushi-junai-2-austin"}>
                     <Button type={"button"} btn={"btn btn-dark"}>Reservations</Button>
+                    </a>
                 </Row>
                 <Row>
                 <Link to={"/choice"}>
@@ -62,7 +63,9 @@ function Home(props) {
                     </Link>
                 </Row>
                 <Row>
+                <Link to={"/alacarte"}>
                     <Button type={"button"} btn={"btn btn-dark"}>Carry Out</Button>
+                    </Link>
                 </Row>
             </Col>
         </Container>
