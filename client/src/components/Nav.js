@@ -41,7 +41,7 @@ function Nav (props) {
                   to="/ordersummary"
                   className={window.location.pathname === "/ordersummary" ? "nav-link active" : "nav-link"}
                 >
-                  AYCE
+                  Order Summary
                 </Link>
               </li>
             </ul>
