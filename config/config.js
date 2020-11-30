@@ -13,18 +13,12 @@ module.exports=
   test: {
     username: process.env.DBUSER,
     password: process.env.DBPASSWORD,
-    database: process.env.DATABASE, 
+    database: process.env.DATABASE,
     host: process.env.DBHOST,
-    port: 3306,
-    dialect: "mysql"
+    port: process.env.DBPORT || 3306,
+    dialect: mysql
   },
   production: {
-    username: process.env.DBUSER,
-    password: process.env.DBPASSWORD,
-    database: process.env.DATABASE, 
-    host: process.env.DBHOST,
-    port: 3306,
-    dialect: "mysql"
+    use_env_variable: JAWSDB_URL
   }
-
 }
