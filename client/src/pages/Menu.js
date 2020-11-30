@@ -129,6 +129,47 @@ function Menu(props) {
                         }
                     </Container>
                 </Row>
+                <Row>
+                    <h4>Classic Roll/Hand Roll</h4>
+                    <Container>
+                        {
+                            classicRolls.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
+                                if (item.fish) {
+                                    fishClass = "fa fa-fish";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
+                <Row>
+                    <h4>Sushi <i className="fas fa-fish"></i></h4>
+                    <Container>
+                        {
+                            sushi.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={""} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
             </Container>
             <Footer />
         </>
