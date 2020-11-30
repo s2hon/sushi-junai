@@ -171,6 +171,52 @@ function Menu(props) {
                     </Container>
                 </Row>
             </Container>
+            <Row>
+                    <h4>Chef's Special Rolls</h4>
+                    <Container>
+                        {
+                            chefsSpecial.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
+                                if (item.fish) {
+                                    fishClass = "fa fa-fish";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
+                <Row>
+                    <h4>Tempura Rolls</h4>
+                    <Container>
+                        {
+                            tempuraRolls.map(item => {
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
+                                if (item.fish) {
+                                    fishClass = "fa fa-fish";
+                                }
+                                return (<Card>
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <Button>+</Button>
+                                    </MenuItems>
+                                </Card>)
+                            })
+                        }
+                    </Container>
+                </Row>
             <Footer />
         </>
     );
