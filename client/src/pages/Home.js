@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Nav from "../components/Nav";
 import Card from "../components/Card";
 import Container from "../components/Container";
@@ -7,7 +8,6 @@ import Footer from "../components/Footer";
 import Col from "../components/Col";
 import Image from "../components/Image";
 import Button from "../components/Button";
-
 
 function Home(props) {
     return (<>
@@ -50,16 +50,18 @@ function Home(props) {
                 </Col>
             </Row>
             <Row>
-                <Col size={"md"} number={4}>
+                
                     <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} />
-                </Col>
+                
             </Row>
             <Col size={"md"} number={6}>
                 <Row>
                     <Button type={"button"} btn={"btn btn-dark"}>Reservations</Button>
                 </Row>
                 <Row>
+                <Link to={"/choice"}>
                     <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
+                    </Link>
                 </Row>
                 <Row>
                     <Button type={"button"} btn={"btn btn-dark"}>Carry Out</Button>
