@@ -8,8 +8,7 @@ function Nav (props) {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <Link className="navbar-brand" to="/" id="name">
-            <Image src={"./assests/logo.png"} alt={"fish logo for restraunt"} style={{height: "100px",
-      width: "100px"}}/>
+            <Image src={"../assets/logo.png"} alt={"sushi-junai logo"}/>
           </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,14 +30,6 @@ function Nav (props) {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/alacarte"
-                  className={window.location.pathname === "/alacarte" ? "nav-link active" : "nav-link"}
-                >
-                  AlaCarte
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
                   to="/menu"
                   className={window.location.pathname === "/menu" ? "nav-link active" : "nav-link"}
                 >
@@ -47,8 +38,8 @@ function Nav (props) {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/ayce"
-                  className={window.location.pathname === "/ayce" ? "nav-link active" : "nav-link"}
+                  to="/ordersummary"
+                  className={window.location.pathname === "/ordersummary" ? "nav-link active" : "nav-link"}
                 >
                   AYCE
                 </Link>

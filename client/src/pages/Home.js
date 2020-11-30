@@ -12,9 +12,9 @@ import Button from "../components/Button";
 const styles = {
     img: {
         display: "block",
-        height: "50px",
-        width: "100%"
-      }
+        maxHeight: "50%",
+        maxWidth: "50%"
+    }
 }
 
 function Home(props) {
@@ -59,7 +59,7 @@ function Home(props) {
             </Row>
             <Row>
                 <Col size={"md"} number={12}>
-                    <Image src={"./assests/rest-img.JPG"} alt={"picture of sushi with drinks in background"} style= {styles.img}/>
+                    <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} style= {styles.img}/>
                 </Col>
             </Row>
             <Col size={"md"} number={6}>
