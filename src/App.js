@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Alacarte from "./pages/Alacarte";
 import Menu from "./pages/Menu";
+import Choice from "./pages/Choice";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Route exact path="/home" component={Home}/>
           <Route exact path="/alacarte" component={Alacarte}/>
           <Route exact path="/menu" component={Menu}/> 
+          <Route exact path="/choice" component={Choice}/>
     </Router>
   );
 }
