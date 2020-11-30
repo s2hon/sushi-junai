@@ -4,7 +4,7 @@ import Counter from "../components/Counter";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Footer from "../components/Footer";
-import menu from "../assets/menu";
+import menu from "../../"
 import MenuItems from "../components/MenuItems"
 import Card from "../components/Card";
 import Button from "../components/Button"
@@ -38,8 +38,13 @@ function Menu(props) {
                     <Container>
                         {
                             appetizers.map(item => {
+                                let fishHTML = ""
+                                if (item.fish){
+                                    fishHTML = '<i class="fas fa-fish"></i>'
+                                }
+                                console.log(fishHTML);
                                 return (<Card>
-                                    <MenuItems name={item.name} price={item.price} description={item.description} fish={item.fish}>
+                                    <MenuItems name={item.name} price={item.price} description={item.description} fish={fishHTML}>
                                         <Button>-</Button>
                                         0
                                         <Button>+</Button>
