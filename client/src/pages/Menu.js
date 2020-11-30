@@ -13,6 +13,8 @@ import Button from "../components/Button"
 
 function Menu(props) {
 
+    
+
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
@@ -39,15 +41,18 @@ function Menu(props) {
                     <Container>
                         {
                             appetizers.map(item => {
-                                let fishClass = "";
+                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                if (item.onlyOrderOnce) {
+                                    oncePerOrder = "red";
+                                }
+
+                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
                                 if (item.fish) {
                                     fishClass = "fa fa-fish";
                                 }
                                 console.log(fishClass)
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass}>
-                                        <Button>-</Button>
-                                        0
+                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
                                         <Button>+</Button>
                                     </MenuItems>
                                 </Card>)
