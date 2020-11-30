@@ -6,6 +6,7 @@ import Menu from "./pages/Menu";
 import Favorite from "./pages/Favorite";
 import OrderSummary from "./pages/OrderSummary";
 import Signup from "./pages/Signup";
+import Choice from "./pages/Choice";
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
             <Route exact path="/" component={Home}/>
             <Route exact path="/home" component={Home}/>
             <Route exact path="/alacarte" component={Alacarte}/>
-            <Route exact path="/menu" component={Menu}/> 
+            <Route exact path="/menu" component={Menu}/>
+            <Route exact path="/choice" component={Choice}/>
             <Route exact path="/favorite" component={Favorite}/>
             <Route exact path="/ordersummary" component={OrderSummary}/> 
             <Route exact path="/SignUp" component={Signup}/>

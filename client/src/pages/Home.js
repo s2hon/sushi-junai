@@ -1,21 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Nav from "../components/Nav";
 import Card from "../components/Card";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Footer from "../components/Footer";
-import Counter from "../components/Counter";
 import Col from "../components/Col";
 import Image from "../components/Image";
 import Button from "../components/Button";
-
-const styles = {
-    img: {
-        display: "block",
-        maxHeight: "50%",
-        maxWidth: "50%"
-    }
-}
 
 function Home(props) {
     return (<>
@@ -58,19 +50,22 @@ function Home(props) {
                 </Col>
             </Row>
             <Row>
-                <Col size={"md"} number={12}>
-                    <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} style= {styles.img}/>
-                </Col>
+                    <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} />
             </Row>
             <Col size={"md"} number={6}>
-                <Row>
+                <Row><a href={"https://www.yelp.com/biz/sushi-junai-2-austin"}>
                     <Button type={"button"} btn={"btn btn-dark"}>Reservations</Button>
+                    </a>
                 </Row>
                 <Row>
+                <Link to={"/choice"}>
                     <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
+                    </Link>
                 </Row>
                 <Row>
-                    <Button type={"button"} btn={"btn btn-dark"} >Carry Out</Button>
+                <Link to={"/alacarte"}>
+                    <Button type={"button"} btn={"btn btn-dark"}>Carry Out</Button>
+                    </Link>
                 </Row>
             </Col>
         </Container>
