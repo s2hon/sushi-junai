@@ -43,6 +43,14 @@ function Nav (props) {
                   Menu
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  to="/ayce"
+                  className={window.location.pathname === "/ayce" ? "nav-link active" : "nav-link"}
+                >
+                  AYCE
+                </Link>
+              </li>
             </ul>
           </div>
         </nav>
