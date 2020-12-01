@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Nav from "../components/Nav";
 import Counter from "../components/Counter";
 import Container from "../components/Container";
@@ -30,7 +30,7 @@ function Menu() {
         }
         setCart(newCart);
 
-        console.log(cart)
+        console.log(newCart);
     };
 
     const ayceMenu = menu.filter(item => item.menu === "ayce");

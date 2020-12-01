@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Alacarte from "./pages/Alacarte";
 import Menu from "./pages/Menu";
 import Favorite from "./pages/Favorite";
-import OrderSummary from "./pages/OrderSummary";
+import OrderSummary from "./components/Cart";
 import Signup from "./pages/Signup";
 import Choice from "./pages/Choice";
 
