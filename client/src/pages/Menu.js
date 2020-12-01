@@ -33,8 +33,6 @@ function Menu() {
         console.log(cart)
     };
 
-    
-
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Alacarte from "./pages/Alacarte";
 import Menu from "./pages/Menu";
 import Favorite from "./pages/Favorite";
+import OrderSummary from "./pages/OrderSummary";
 import Signup from "./pages/Signup";
 import Choice from "./pages/Choice";
 
@@ -17,6 +18,7 @@ function App() {
             <Route exact path="/menu" component={Menu}/>
             <Route exact path="/choice" component={Choice}/>
             <Route exact path="/favorite" component={Favorite}/>
+            <Route exact path="/ordersummary" component={OrderSummary}/> 
             <Route exact path="/SignUp" component={Signup}/>
         </Router>
     );
