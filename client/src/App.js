@@ -7,6 +7,7 @@ import Favorite from "./pages/Favorite";
 import OrderSummary from "./pages/OrderSummary";
 import Signup from "./pages/Signup";
 import Choice from "./pages/Choice";
+import Rules from "./pages/Rules";
 import Login from "./pages/Login";
  
 
@@ -22,6 +23,7 @@ function App() {
             <Route exact path="/favorite" component={Favorite}/>
             <Route exact path="/ordersummary" component={OrderSummary}/>
             <Route exact path="/login" component={Login}/>
+            <Route exact path="/rules" component={Rules}/>
             <Route exact path="/SignUp" component={Signup}/>
         </Router>
     );
