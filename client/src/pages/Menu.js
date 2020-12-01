@@ -1,19 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../components/Nav";
 import Counter from "../components/Counter";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Footer from "../components/Footer";
-import menu from "../menu";
+import menu from "../db/menu.json";
 import MenuItems from "../components/MenuItems"
 import Card from "../components/Card";
-import Button from "../components/Button"
+import Button from "../components/Button";
 
 
 
-function Menu(props) {
+function Menu() {
+    //order summary
+    const [cart, setCart] = useState([]);
+    const addToCart = (product) => {
+        let newCart = [...cart];
+        let itemInCart = newCart.find(
+            (item) => product.name === item.name
+        );
+        if (itemInCart) {
+            itemInCart.quantity++;
+        } else {
+            itemInCart = {
+            ...product,
+            quantity: 1,
+            };
+            newCart.push(itemInCart);
+        }
+        setCart(newCart);
 
+        console.log(cart)
+    };
 
+    
 
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
@@ -26,9 +46,11 @@ function Menu(props) {
     const tempuraRolls = ayceMenu.filter(item => item.category === "Tempura Rolls");
     const bakedRolls = ayceMenu.filter(item => item.category === "Baked Rolls");
     const desserts = ayceMenu.filter(item => item.category === "Desserts");
+    
     return (
         <>
             <Nav />
+            <header>Items in cart </header>
             <Container>
                 <Row>
                     <Counter></Counter>
@@ -40,7 +62,7 @@ function Menu(props) {
                     <h4>Appetizers</h4>
                     <Container>
                         {
-                            appetizers.map(item => {
+                            appetizers.map((item, idx) => {
                                 let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
@@ -50,10 +72,10 @@ function Menu(props) {
                                 if (item.fish) {
                                     fishClass = "fa fa-fish";
                                 }
-                                console.log(fishClass)
+                                // console.log(fishClass)
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button>+</Button>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <button onClick={() => addToCart(item)}>+</button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -64,7 +86,7 @@ function Menu(props) {
                     <h4>Salad</h4>
                     <Container>
                         {
-                            salads.map(item => {
+                            salads.map((item, idx) => {
                                 let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
@@ -75,8 +97,8 @@ function Menu(props) {
                                     fishClass = "fa fa-fish";
                                 }
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button>+</Button>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <button onClick={() => addToCart(item)}>+</button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -87,7 +109,7 @@ function Menu(props) {
                     <h4>Soup/Noodles</h4>
                     <Container>
                         {
-                            soups.map(item => {
+                            soups.map((item, idx) => {
                                 let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
@@ -98,8 +120,8 @@ function Menu(props) {
                                     fishClass = "fa fa-fish";
                                 }
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button>+</Button>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <button onClick={() => addToCart(item)}>+</button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -107,10 +129,10 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Rice</h4>
+                    <h4>Rice Entrees</h4>
                     <Container>
                         {
-                            rice.map(item => {
+                            rice.map((item, idx) => {
                                 let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
@@ -121,8 +143,8 @@ function Menu(props) {
                                     fishClass = "fa fa-fish";
                                 }
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button>+</Button>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <button onClick={() => addToCart(item)}>+</button> 
                                     </MenuItems>
                                 </Card>)
                             })
@@ -130,10 +152,10 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Classic Roll/Hand Roll</h4>
+                    <h4>Hand Roll (cone)</h4>
                     <Container>
                         {
-                            classicRolls.map(item => {
+                            classicRolls.map((item, idx) => {
                                 let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
@@ -144,8 +166,8 @@ function Menu(props) {
                                     fishClass = "fa fa-fish";
                                 }
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button>+</Button>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <button onClick={() => addToCart(item)}>+</button> 
                                     </MenuItems>
                                 </Card>)
                             })
@@ -153,17 +175,17 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Sushi <i className="fas fa-fish"></i></h4>
+                    <h4>Sushi (Nigiri) <i className="fas fa-fish"></i></h4>
                     <Container>
                         {
-                            sushi.map(item => {
+                            sushi.map((item, idx) => {
                                 let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
                                 }
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={""} oncePerOrder={oncePerOrder}>
-                                        <Button>+</Button>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={""} oncePerOrder={oncePerOrder}>
+                                        <button onClick={() => addToCart(item)}>+</button> 
                                     </MenuItems>
                                 </Card>)
                             })
@@ -174,7 +196,7 @@ function Menu(props) {
                     <h4>Chef's Special Rolls</h4>
                     <Container>
                         {
-                            chefsSpecial.map(item => {
+                            chefsSpecial.map((item, idx) => {
                                 let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
@@ -185,8 +207,8 @@ function Menu(props) {
                                     fishClass = "fa fa-fish";
                                 }
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button>+</Button>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <button onClick={() => addToCart(item)}>+</button> 
                                     </MenuItems>
                                 </Card>)
                             })
@@ -194,10 +216,10 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Tempura Rolls</h4>
+                    <h4>Tempura (Fried) Rolls</h4>
                     <Container>
                         {
-                            tempuraRolls.map(item => {
+                            tempuraRolls.map((item, idx) => {
                                 let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
@@ -208,8 +230,8 @@ function Menu(props) {
                                     fishClass = "fa fa-fish";
                                 }
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button>+</Button>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <button onClick={() => addToCart(item)}>+</button> 
                                     </MenuItems>
                                 </Card>)
                             })
@@ -220,7 +242,7 @@ function Menu(props) {
                     <h4>Baked Rolls</h4>
                     <Container>
                         {
-                            bakedRolls.map(item => {
+                            bakedRolls.map((item, idx) => {
                                 let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
@@ -231,8 +253,8 @@ function Menu(props) {
                                     fishClass = "fa fa-fish";
                                 }
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button>+</Button>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <button onClick={() => addToCart(item)}>+</button> 
                                     </MenuItems>
                                 </Card>)
                             })
@@ -243,7 +265,7 @@ function Menu(props) {
                     <h4>Desserts</h4>
                     <Container>
                         {
-                            desserts.map(item => {
+                            desserts.map((item, idx) => {
                                 let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
@@ -254,8 +276,8 @@ function Menu(props) {
                                     fishClass = "fa fa-fish";
                                 }
                                 return (<Card>
-                                    <MenuItems key={item.name} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button>+</Button>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                        <Button function={() => addToCart(item)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
