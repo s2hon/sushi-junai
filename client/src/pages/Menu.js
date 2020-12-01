@@ -8,7 +8,7 @@ import menu from "../menu";
 import MenuItems from "../components/MenuItems"
 import Card from "../components/Card";
 import Button from "../components/Button"
-
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 function Menu(props) {
@@ -37,16 +37,16 @@ function Menu(props) {
                     <h3>All-You-Can-Eat Menu</h3>
                 </Row>
                 <Row>
-                    <Button>Appetizers</Button>
-                    <Button>Salads</Button>
-                    <Button>Soup/Noodles</Button>
-                    <Button>Rice</Button>
-                    <Button>Classic Rolls/Hand Rolls</Button>
-                    <Button>Sushi</Button>
-                    <Button>Chef's Special Rolls</Button>
-                    <Button>Tempura Rolls</Button>
-                    <Button>Baked Rolls</Button>
-                    <Button>Desserts</Button>
+                    <Link to="menu#appetizers"><Button>Appetizers</Button></Link>
+                    <Link to="menu#salad"><Button>Salads</Button></Link>
+                    <Link to="menu#soup"><Button>Soup/Noodles</Button></Link>
+                    <Link to="menu#rice"><Button>Rice</Button></Link>
+                    <Link to="menu#classicRoll"><Button>Classic Rolls/Hand Rolls</Button></Link>
+                    <Link to="menu#sushi"><Button>Sushi</Button></Link>
+                    <Link to="menu#chefsSpecial"><Button>Chef's Special Rolls</Button></Link>
+                    <Link to="menu#tempura"><Button>Tempura Rolls</Button></Link>
+                    <Link to="menu#bakedRolls"><Button>Baked Rolls</Button></Link>
+                    <Link to="menu#desserts"><Button>Desserts</Button></Link>
                 </Row>
                 <Row>
                     <h4 id="appetizers">Appetizers</h4>
