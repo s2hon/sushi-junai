@@ -7,7 +7,6 @@ export const addItem = id => {
     }
 };
 
-
 export const changeQuantity = (id, quantity) => {
     return {
         type: 'CHANGE_ITEM',
