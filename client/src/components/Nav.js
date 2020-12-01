@@ -36,13 +36,15 @@ function Nav (props) {
                   Menu
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  to="/ordersummary"
-                  className={window.location.pathname === "/ordersummary" ? "nav-link active" : "nav-link"}
-                >
-                  Order Summary
-                </Link>
+              <li className="nav-item"> 
+                <button className="headerButton">
+                  <Link
+                    to="/ordersummary"
+                    className={window.location.pathname === "/ordersummary" ? "nav-link active" : "nav-link"}
+                  >
+                    Order Summary
+                  </Link>
+                </button>
               </li>
             </ul>
           </div>

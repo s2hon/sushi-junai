@@ -1,45 +1,43 @@
+import { connect } from 'react-redux'
+import Cart from "../components/Cart";
+import {changeQuantity, addItem, decrementItem} from "../actions/index";
 
-import React, { useState } from 'react';
-import Products from './Menu';
-import Cart from '../components/Cart';
+const mapStateToProps = state => {
+    let cart = [];
+    for(let id in state.shoppingCart)
+    {
+        if(state.itemListing.hasOwnProperty(id)) {
+            let item = {...state.itemListing[id]};
+            item.quantity = state.shoppingCart[id].quantity;
+            cart.push(item);
+        }
+    }
+    return {
+        shoppingCart: cart
+    }
+};
 
-const PAGE_PRODUCTS = 'products';
-const PAGE_CART = 'cart';
+const mapDispatchToProps = dispatch => {
+    return {
+        changeItem: (id, quantity) => {
+            if(quantity >= 0)
+                dispatch(changeQuantity(id, quantity))
+        },
+        removeItem: id => {
+            dispatch(changeQuantity(id, 0))
+        },
+        incrementItem: id => {
+            dispatch(addItem(id))
+        },
+        decrementItem: id => {
+            dispatch(decrementItem(id))
+        }
+    }
+};
 
-function App() {
-    const [cart, setCart] = useState([]);
-    const [page, setPage] = useState(PAGE_PRODUCTS);
+const VisibleCart = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Cart);
 
-    const navigateTo = (nextPage) => {
-        setPage(nextPage);
-    };
-
-    const getCartTotal = () => {
-        return cart.reduce(
-        (sum, { quantity }) => sum + quantity,
-        0
-        );
-    };
-
-    return (
-        <div className="App">
-        <header>
-            <button onClick={() => navigateTo(PAGE_CART)}>
-            Go to Order Summary ({getCartTotal()})
-            </button>
-
-            <button onClick={() => navigateTo(PAGE_PRODUCTS)}>
-            View Menu
-            </button>
-        </header>
-        {page === PAGE_PRODUCTS && (
-            <Products cart={cart} setCart={setCart} />
-        )}
-        {page === PAGE_CART && (
-            <Cart cart={cart} setCart={setCart} />
-        )}
-        </div>
-    );
-}
-
-export default App;
+export default VisibleCart
