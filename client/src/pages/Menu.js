@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav";
 import Counter from "../components/Counter";
 import Container from "../components/Container";
@@ -73,7 +73,7 @@ function Menu() {
                                 // console.log(fishClass)
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <button onClick={() => addToCart(item)}>+</button>
+                                        <Button function={() => addToCart(item)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -96,7 +96,7 @@ function Menu() {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <button onClick={() => addToCart(item)}>+</button>
+                                        <Button function={() => addToCart(item)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -119,7 +119,7 @@ function Menu() {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <button onClick={() => addToCart(item)}>+</button>
+                                        <Button function={() => addToCart(item)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -142,7 +142,7 @@ function Menu() {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <button onClick={() => addToCart(item)}>+</button> 
+                                        <Button function={() => addToCart(item)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -165,7 +165,7 @@ function Menu() {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <button onClick={() => addToCart(item)}>+</button> 
+                                        <Button function={() => addToCart(item)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -183,7 +183,7 @@ function Menu() {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={""} oncePerOrder={oncePerOrder}>
-                                        <button onClick={() => addToCart(item)}>+</button> 
+                                        <Button function={() => addToCart(item)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -206,7 +206,7 @@ function Menu() {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <button onClick={() => addToCart(item)}>+</button> 
+                                        <Button function={() => addToCart(item)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -229,7 +229,7 @@ function Menu() {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <button onClick={() => addToCart(item)}>+</button> 
+                                        <Button function={() => addToCart(item)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -252,7 +252,7 @@ function Menu() {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <button onClick={() => addToCart(item)}>+</button> 
+                                    <Button function={() => addToCart(item)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
