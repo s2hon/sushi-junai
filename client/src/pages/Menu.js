@@ -12,9 +12,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 
 function Menu(props) {
-
-
-
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
