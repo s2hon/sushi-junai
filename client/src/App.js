@@ -20,11 +20,8 @@ function App() {
             <Route exact path="/choice" component={Choice}/>
             <Route exact path="/favorite" component={Favorite}/>
             <Route exact path="/ordersummary" component={OrderSummary}/> 
-<<<<<<< HEAD
             <Route exact path="/rules" component={Rules}/>
-=======
             <Route exact path="/SignUp" component={Signup}/>
->>>>>>> 079760bb209dd98eef1de4588bcf230840868996
         </Router>
     );
 }
