@@ -12,9 +12,6 @@ import Button from "../components/Button"
 
 
 function Menu(props) {
-
-
-
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
@@ -261,6 +258,10 @@ function Menu(props) {
                             })
                         }
                     </Container>
+                </Row>
+                <Row>
+                    <h5><i className="fa fa-fish"></i>Raw Fish</h5>
+                    <p><strong>Warning:</strong> Thoroughly cooking foods such as beef, eggs, fish, lamb, milk, poultry or shellfish reduces the risk of food borne illness. Individuals with certain health conditions may be at higher risk if they consume these foods raw or undercooked.</p>
                 </Row>
                 </Container>
                 <Footer />
