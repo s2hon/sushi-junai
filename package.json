@@ -29,6 +29,7 @@
     "passport-local": "^1.0.0",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.2.2",
+    "redux": "^4.0.5",
     "sequelize": "^5.8.6"
   },
   "devDependencies": {

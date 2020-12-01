@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import Nav from "../components/Nav";
 import Counter from "../components/Counter";
 import Container from "../components/Container";
@@ -10,33 +10,7 @@ import Card from "../components/Card";
 import Button from "../components/Button"
 import { HashLink as Link } from 'react-router-hash-link';
 
-
-<<<<<<< HEAD
-function Menu() {
-    //order summary
-    const [cart, setCart] = useState([]);
-    const addToCart = (product) => {
-        let newCart = [...cart];
-        let itemInCart = newCart.find(
-            (item) => product.name === item.name
-        );
-        if (itemInCart) {
-            itemInCart.quantity++;
-        } else {
-            itemInCart = {
-            ...product,
-            quantity: 1,
-            };
-            newCart.push(itemInCart);
-        }
-        setCart(newCart);
-
-        console.log(newCart);
-    };
-
-=======
 function Menu(props) {
->>>>>>> 3ec31564493ea0dd2f0e68b6e46ca71c642bbc29
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
@@ -89,7 +63,10 @@ function Menu(props) {
                                 // console.log(fishClass)
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => addToCart(item)}>+</Button>
+                                        <Button function={() => {
+                                            console.log(item);
+                                            props.addItem(item)}}
+                                            >+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -111,8 +88,7 @@ function Menu(props) {
                                     fishClass = "fa fa-fish";
                                 }
                                 return (<Card>
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => addToCart(item)}>+</Button>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder} addItem={props.addItem}>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -135,7 +111,7 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => addToCart(item)}>+</Button>
+                                        <Button function={() => item.addItem(item.idx)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -158,7 +134,7 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => addToCart(item)}>+</Button>
+                                        <Button function={() => item.addItem(item.idx)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -181,7 +157,7 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => addToCart(item)}>+</Button>
+                                        <Button function={() => item.addItem(item.idx)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -199,7 +175,7 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={""} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => addToCart(item)}>+</Button>
+                                        <Button function={() => item.addItem(item.idx)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -222,7 +198,7 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => addToCart(item)}>+</Button>
+                                        <Button function={() => item.addItem(item.idx)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -245,7 +221,7 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => addToCart(item)}>+</Button>
+                                        <Button function={() => item.addItem(item.idx)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -268,7 +244,7 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                    <Button function={() => addToCart(item)}>+</Button>
+                                    <Button function={() => item.addItem(item.idx)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -291,7 +267,7 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => addToCart(item)}>+</Button>
+                                        <Button function={() => item.addItem(item.idx)}>+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
