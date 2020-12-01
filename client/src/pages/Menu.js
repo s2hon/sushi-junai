@@ -262,6 +262,10 @@ function Menu(props) {
                         }
                     </Container>
                 </Row>
+                <Row>
+                    <h5><i className="fa fa-fish"></i> Raw Fish</h5>
+                    <p>Consuming raw or undercooked fish increases the risk of food bourne diseases, especially in people with certain health conditions.</p>
+                </Row>
                 </Container>
                 <Footer />
         </>
