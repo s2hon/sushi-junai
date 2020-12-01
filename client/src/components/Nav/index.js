@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image from "../components/Image";
-
+import Image from "./../Image";
+import { useStoreContext } from '../../utils/GlobalStore';
+import "./style.css";
 
 
 function Nav (props) {
+    const [state] = useStoreContext();
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <Link className="navbar-brand" to="/" id="name">
@@ -14,7 +17,7 @@ function Nav (props) {
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
     </button>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div className="collapse navbar-collapse">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link
@@ -25,7 +28,15 @@ function Nav (props) {
                       : "nav-link"
                   }
                 >
-                  Welcome
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/alacarte"
+                  className={window.location.pathname === "/alacarte" ? "nav-link active" : "nav-link"}
+                >
+                  A La Carte
                 </Link>
               </li>
               <li className="nav-item">
@@ -33,7 +44,23 @@ function Nav (props) {
                   to="/menu"
                   className={window.location.pathname === "/menu" ? "nav-link active" : "nav-link"}
                 >
-                  Menu
+                  AYCE
+                </Link>
+              </li>
+              <li className={!state.userLoggedIn ? "nav-item hide": "nav-item"}>
+                <Link
+                  to="/logout"
+                  className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
+                >
+                  Logout
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/favorites"
+                  className={window.location.pathname === "/favorites" ? "nav-link active" : "nav-link"}
+                >
+                  Favorites
                 </Link>
               </li>
               <li className="nav-item">
@@ -41,7 +68,7 @@ function Nav (props) {
                   to="/ordersummary"
                   className={window.location.pathname === "/ordersummary" ? "nav-link active" : "nav-link"}
                 >
-                  AYCE
+                  OrderSummary
                 </Link>
               </li>
             </ul>
