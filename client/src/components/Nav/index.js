@@ -28,7 +28,7 @@ function Nav (props) {
                       : "nav-link"
                   }
                 >
-                  Welcome
+                  Home
                 </Link>
               </li>
               <li className="nav-item">
@@ -47,28 +47,12 @@ function Nav (props) {
                   AYCE
                 </Link>
               </li>
-              <li className={!state.userLoggedIn ? "nav-item": "nav-item hide"}>
-                <Link
-                  to="/Login"
-                  className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}
-                >
-                  Login
-                </Link>
-              </li>
               <li className={!state.userLoggedIn ? "nav-item hide": "nav-item"}>
                 <Link
                   to="/logout"
                   className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
                 >
                   Logout
-                </Link>
-              </li>
-              <li className={!state.userLoggedIn ? "nav-item": "nav-item hide"}>
-                <Link
-                  to="/SignUp"
-                  className={window.location.pathname === "/SignUp" ? "nav-link active" : "nav-link"}
-                >
-                  Sign Up
                 </Link>
               </li>
               <li className="nav-item">
@@ -78,6 +62,8 @@ function Nav (props) {
                 >
                   Favorites
                 </Link>
+              </li>
+              <li className="nav-item">
                 <Link
                   to="/ordersummary"
                   className={window.location.pathname === "/ordersummary" ? "nav-link active" : "nav-link"}
