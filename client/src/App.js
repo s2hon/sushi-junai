@@ -6,6 +6,7 @@ import Menu from "./pages/Menu";
 import Favorite from "./pages/Favorite";
 import OrderSummary from "./pages/OrderSummary";
 import Choice from "./pages/Choice";
+import Rules from "./pages/Rules";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/choice" component={Choice}/>
             <Route exact path="/favorite" component={Favorite}/>
             <Route exact path="/ordersummary" component={OrderSummary}/> 
+            <Route exact path="/rules" component={Rules}/>
         </Router>
     );
 }
