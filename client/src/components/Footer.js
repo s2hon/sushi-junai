@@ -5,10 +5,10 @@ function Footer() {
 
     <footer className="footer">
       {/* <span>Sushi Junai</span> */}
-      <a href="https://www.facebook.com/sushijunai/" className="fa fa-facebook"></a>
-      <a href="https://www.instagram.com/sushijunai/" className="fa fa-instagram"></a>
-      <a href="mailto:sushijunai1@gmail.com" className="fa fa-envelope"></a>
-      <a href="https://github.com/s2hon/sushi-junai" className="fa fa-github"> Built with love</a>
+      <a href="https://www.facebook.com/sushijunai/"><i className="fa fa-facebook fa-2x"></i></a>
+      <a href="https://www.instagram.com/sushijunai/"><i className="fa fa-instagram fa-2x"></i></a>
+      <a href="mailto:sushijunai1@gmail.com"> <i className="fa fa-envelope fa-2x"></i></a>
+      <a href="https://github.com/s2hon/sushi-junai"><i className="fa fa-github fa-2x"> Built By</i></a>
     </footer>
 
   );

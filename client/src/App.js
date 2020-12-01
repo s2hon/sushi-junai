@@ -13,6 +13,9 @@ import Favorite from "./pages/Favorite";
 import VisibleCart from "./pages/OrderSummary";
 import Signup from "./pages/Signup";
 import Choice from "./pages/Choice";
+import Rules from "./pages/Rules";
+import Login from "./pages/Login";
+ 
 
 const persistedState = loadState("shoppingCart");
 const store = createStore(reducer, {shoppingCart: persistedState});
@@ -36,6 +39,7 @@ function App() {
                 <Route exact path="/favorite" component={Favorite}/>
                 <Route exact path="/ordersummary" component={VisibleCart}/> 
                 <Route exact path="/SignUp" component={Signup}/>
+                <Route exact path="/rules" component={Rules}/>
             </Router>
         </Provider>
     );
