@@ -51,6 +51,7 @@ function Signup() {
                             <span className="sr-only">Error:</span> <span className="msg">{errorMessage}</span>
                         </div>
                         <button type="submit" className="btn btn-default">Sign Up</button>
+                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
                     </form>
                     <br />
                     <p>Or log in <Link to="/login">here</Link></p>
