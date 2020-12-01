@@ -27,7 +27,8 @@
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "react-slider": "^1.1.2",
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.2.2",
     "sequelize": "^5.8.6"
   },
   "devDependencies": {

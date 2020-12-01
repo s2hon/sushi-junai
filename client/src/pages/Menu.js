@@ -8,7 +8,7 @@ import menu from "../menu";
 import MenuItems from "../components/MenuItems"
 import Card from "../components/Card";
 import Button from "../components/Button"
-
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 function Menu(props) {
@@ -37,7 +37,19 @@ function Menu(props) {
                     <h3>All-You-Can-Eat Menu</h3>
                 </Row>
                 <Row>
-                    <h4>Appetizers</h4>
+                    <Link to="menu#appetizers"><Button>Appetizers</Button></Link>
+                    <Link to="menu#salad"><Button>Salads</Button></Link>
+                    <Link to="menu#soup"><Button>Soup/Noodles</Button></Link>
+                    <Link to="menu#rice"><Button>Rice</Button></Link>
+                    <Link to="menu#classicRoll"><Button>Classic Rolls/Hand Rolls</Button></Link>
+                    <Link to="menu#sushi"><Button>Sushi</Button></Link>
+                    <Link to="menu#chefsSpecial"><Button>Chef's Special Rolls</Button></Link>
+                    <Link to="menu#tempura"><Button>Tempura Rolls</Button></Link>
+                    <Link to="menu#bakedRolls"><Button>Baked Rolls</Button></Link>
+                    <Link to="menu#desserts"><Button>Desserts</Button></Link>
+                </Row>
+                <Row>
+                    <h4 id="appetizers">Appetizers</h4>
                     <Container>
                         {
                             appetizers.map(item => {
@@ -61,7 +73,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Salad</h4>
+                    <h4 id="salad">Salad</h4>
                     <Container>
                         {
                             salads.map(item => {
@@ -84,7 +96,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Soup/Noodles</h4>
+                    <h4 id="soup">Soup/Noodles</h4>
                     <Container>
                         {
                             soups.map(item => {
@@ -107,7 +119,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Rice</h4>
+                    <h4 id="rice">Rice</h4>
                     <Container>
                         {
                             rice.map(item => {
@@ -130,7 +142,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Classic Roll/Hand Roll</h4>
+                    <h4 id="classicRoll">Classic Roll/Hand Roll</h4>
                     <Container>
                         {
                             classicRolls.map(item => {
@@ -153,7 +165,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Sushi <i className="fas fa-fish"></i></h4>
+                    <h4 id="sushi">Sushi <i className="fas fa-fish"></i></h4>
                     <Container>
                         {
                             sushi.map(item => {
@@ -171,7 +183,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Chef's Special Rolls</h4>
+                    <h4 id="chefsSpecial">Chef's Special Rolls</h4>
                     <Container>
                         {
                             chefsSpecial.map(item => {
@@ -194,7 +206,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Tempura Rolls</h4>
+                    <h4 id="tempura">Tempura Rolls</h4>
                     <Container>
                         {
                             tempuraRolls.map(item => {
@@ -217,7 +229,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Baked Rolls</h4>
+                    <h4 id="bakedRolls">Baked Rolls</h4>
                     <Container>
                         {
                             bakedRolls.map(item => {
@@ -240,7 +252,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4>Desserts</h4>
+                    <h4 id="desserts">Desserts</h4>
                     <Container>
                         {
                             desserts.map(item => {
@@ -261,6 +273,10 @@ function Menu(props) {
                             })
                         }
                     </Container>
+                </Row>
+                <Row>
+                    <h5><i className="fa fa-fish"></i> Raw Fish</h5>
+                    <p>Consuming raw or undercooked fish increases the risk of food bourne diseases, especially in people with certain health conditions.</p>
                 </Row>
                 </Container>
                 <Footer />
