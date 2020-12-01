@@ -5,6 +5,7 @@ import Alacarte from "./pages/Alacarte";
 import Menu from "./pages/Menu";
 import Favorite from "./pages/Favorite";
 import OrderSummary from "./pages/OrderSummary";
+import Signup from "./pages/Signup";
 import Choice from "./pages/Choice";
 import Rules from "./pages/Rules";
 
@@ -19,7 +20,11 @@ function App() {
             <Route exact path="/choice" component={Choice}/>
             <Route exact path="/favorite" component={Favorite}/>
             <Route exact path="/ordersummary" component={OrderSummary}/> 
+<<<<<<< HEAD
             <Route exact path="/rules" component={Rules}/>
+=======
+            <Route exact path="/SignUp" component={Signup}/>
+>>>>>>> 079760bb209dd98eef1de4588bcf230840868996
         </Router>
     );
 }
