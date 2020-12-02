@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react"
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import API from "../utils/API";
 import { AUTH_SET_LOGGED_IN } from "../utils/actions";
 import { useStoreContext } from '../utils/GlobalStore';
@@ -7,6 +7,7 @@ import { useStoreContext } from '../utils/GlobalStore';
 function Signup() {
     const [showError, setShowError] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
+    const history = useHistory();
 
     const emailRef = useRef();
     const passwordRef = useRef();
@@ -26,6 +27,7 @@ function Signup() {
                     email
                 }
             });
+            history.push("/")
         }).catch(err => {
             setShowError(true);
             setErrorMessage("An error occurred while signing up");
