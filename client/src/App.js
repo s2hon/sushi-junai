@@ -5,17 +5,7 @@ import { Provider } from 'react-redux';
 import reducer from './reducer';
 import data from './db/menu.json';
 import {saveState, loadState} from "./localstorage";
-
-import Home from "./pages/Home";
-import Alacarte from "./pages/Alacarte";
-import AYCEMenu from "./pages/AYCEMenu";
-import Favorite from "./pages/Favorite";
-import OrderSummary from "./pages/OrderSummary";
-import Signup from "./pages/Signup";
-import Choice from "./pages/Choice";
-import Rules from "./pages/Rules";
-import Login from "./pages/Login";
- 
+import AllRoute from "./Router/index"
 
 const persistedState = loadState("shoppingCart");
 const store = createStore(reducer, {shoppingCart: persistedState});

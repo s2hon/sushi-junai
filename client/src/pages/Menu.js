@@ -10,32 +10,7 @@ import Card from "../components/Card";
 import Button from "../components/Button"
 
 
-<<<<<<< HEAD
-function Menu() {
-    //order summary
-    const [cart, setCart] = useState([]);
-    const addToCart = (product) => {
-        let newCart = [...cart];
-        let itemInCart = newCart.find(
-            (item) => product.name === item.name
-        );
-        if (itemInCart) {
-            itemInCart.quantity++;
-        } else {
-            itemInCart = {
-            ...product,
-            quantity: 1,
-            };
-            newCart.push(itemInCart);
-        }
-        setCart(newCart);
-
-        console.log(newCart);
-    };
-
-=======
 function Menu(props) {
->>>>>>> edabaac1b4533d1c076f16ab702f7919d1992108
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");

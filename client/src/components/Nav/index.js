@@ -2,7 +2,8 @@ import React from 'react'
 import {Link}  from 'react-router-dom'
 import Header from '../Header/index'
 import MobileNav from '../MobileNav/index'
-import './style.css'
+import './style.css';
+import Row from '../Row'
 
 const Nav = () => {
     const SubmitHandler = (e) =>{
@@ -67,7 +68,7 @@ const Nav = () => {
                 </nav>
               </div>
               <div className="col-md-3 col-sm-3 col-3">
-                  <MobileNav/>
+                <MobileNav/>
               </div>
               <div className="clearfix"></div>
             </div>
