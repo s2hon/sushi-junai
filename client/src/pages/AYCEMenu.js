@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import ItemList from "./Menu2";
+import ItemList from "../components/MenuList";
 import {addItem} from "../actions/index"
 
 const mapStateToProps = state => {
@@ -16,9 +16,9 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-const VisibleItemList = connect(
+const AYCEMenu = connect(
     mapStateToProps,
     mapDispatchToProps
 )(ItemList);
 
-export default VisibleItemList
+export default AYCEMenu;
