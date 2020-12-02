@@ -3,22 +3,10 @@ import CartItem from './CartItem';
 import {Link} from 'react-router-dom';
 
 function Cart(props) {
-    let count = 0;
-    let total = 0;
-    console.log(props);
-
-    if(props.shoppingCart){
-        if(props.shoppingCart.length === 0)
-        {
-            return (
-                <h1>get some sushi and order with a dining staff!</h1>
-            )
-        }
-        props.shoppingCart.forEach((item) => {
-            count += item.quantity
-            total += item.price*item.quantity;
-        });
-    }
+    const { shoppingCart } = props
+    const total = shoppingCart.reduce((acc, val) => acc + val.price, 0)
+    const count = shoppingCart.length
+    if (!count) return <h1>get some sushi and order with a dining staff!</h1>
 
     return (
         <div className="cart">
@@ -35,9 +23,7 @@ function Cart(props) {
                             <span className="third">Price</span>
                         </div>
                         <div className="cardTable">
-                            {
-                                props.shoppingCart.map(item => <CartItem incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} changeItem={props.changeItem} {...item}/>)
-                            }
+                            {shoppingCart.map((item, idx) => <CartItem key={idx} item={item} />)}
                         </div>
                     </div>
                     <div className="cartRight">

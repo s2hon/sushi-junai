@@ -1,24 +1,25 @@
 import React from 'react';
 
 const CartItem = (props) => {
+    const { name, category, price } = props.item
     return (
         <div className="cartItem">
             <div className="cartItemName first">
                 <span>
                     <span className="centerVertically">
-                        {props.name}
+                        {name}
                     </span>
                     <span className="centerVertically">
-                        {props.category}
+                        {category}
                     </span>
                 </span>
-                <span className="centerVertically" onClick={() => props.removeItem(props.id)}>X</span>
+                <span className="centerVertically" onClick={() => {}}>X</span>
             </div>
             <div className="cartItemQty second">
-                {props.quantity}
+                1
             </div>
             <div className="cartItemNamePrice third">
-                ${props.quantity*props.price}
+                {price}
             </div>
         </div>
     )

@@ -3,17 +3,8 @@ import Cart from "../components/Cart";
 import {changeQuantity, addItem, decrementItem} from "../actions/index";
 
 const mapStateToProps = state => {
-    let cart = [];
-    for(let id in state.shoppingCart)
-    {
-        if(state.itemListing.hasOwnProperty(id)) {
-            let item = {...state.itemListing[id]};
-            item.quantity = state.shoppingCart[id].quantity;
-            cart.push(item);
-        }
-    }
     return {
-        shoppingCart: cart
+        shoppingCart: state.shoppingCart
     }
 };
 
@@ -35,9 +26,9 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-const VisibleCart = connect(
+const OrderSummary = connect(
     mapStateToProps,
     mapDispatchToProps
 )(Cart);
 
-export default VisibleCart
+export default OrderSummary
