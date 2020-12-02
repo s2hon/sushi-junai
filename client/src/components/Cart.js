@@ -30,7 +30,7 @@ const Cart = (props) => {
                     <th>Price</th>
                     </tr>
                     <tbody>
-                        <h3>whatsabi? 0 items so far?
+                        <h3>Whatsabi? 0 items so far?
                         <br/> 
                         Go
                         <Link
