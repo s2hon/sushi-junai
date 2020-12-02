@@ -25,6 +25,9 @@ function Menu(props) {
     return (
         <>
         <Nav />
+        <div className="d-flex justify-content-between position-fixed">
+            <Counter />
+        </div>
         <h3>All-You-Can-Eat Menu</h3> 
             <Container>
                 <Row>
@@ -96,7 +99,7 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                        <Button function={() => item.addItem(item.idx)}></Button>
                                     </MenuItems>
                                 </Card>)
                             })
