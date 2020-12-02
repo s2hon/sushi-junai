@@ -23,3 +23,10 @@ export const decrementItem = (id) => {
         }
     }
 };
+
+export const removeItem = (item) => {
+    return {
+        type: 'REMOVE_LISTING',
+        payload: { item }
+    }
+};

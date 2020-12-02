@@ -1,14 +1,13 @@
 import React from "react";
-import Nav from "../components/Nav";
-import Counter from "../components/Counter";
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Footer from "../components/Footer";
+import Nav from "./Nav";
+import Counter from "./Counter";
+import Container from "./Container";
+import Row from "./Row";
+import Footer from "./Footer";
 import menu from "../db/menu.json";
-import MenuItems from "../components/MenuItems"
-import Card from "../components/Card";
-import Button from "../components/Button";
-import MenuNav from "../components/MenuNav";
+import MenuItems from "./MenuItems"
+import Card from "./Card";
+import Button from "./Button";
 
 function Menu(props) {
     const ayceMenu = menu.filter(item => item.menu === "ayce");
@@ -25,14 +24,8 @@ function Menu(props) {
     
     return (
         <>
-        <header>
-            <Nav />
-        </header>
+        <Nav />
         <h3>All-You-Can-Eat Menu</h3> 
-        <div className="row position-fixed float-right">
-        <MenuNav />
-        <Counter />
-        </div>
             <Container>
                 <Row>
                     <h4 id="appetizers">Appetizers</h4>

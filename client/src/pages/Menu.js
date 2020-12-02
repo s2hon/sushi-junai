@@ -10,6 +10,7 @@ import Card from "../components/Card";
 import Button from "../components/Button"
 
 
+<<<<<<< HEAD
 function Menu() {
     //order summary
     const [cart, setCart] = useState([]);
@@ -32,6 +33,9 @@ function Menu() {
         console.log(newCart);
     };
 
+=======
+function Menu(props) {
+>>>>>>> edabaac1b4533d1c076f16ab702f7919d1992108
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
