@@ -56,7 +56,7 @@ function NavBar (props) {
                   <NavLink onClick={logout}>Logout</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/favorites">Favorites</NavLink>
+                  <NavLink href="/favorite">Favorites</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/ordersummary">Ordersummary</NavLink>
