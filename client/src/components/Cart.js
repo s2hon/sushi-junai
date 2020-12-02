@@ -10,8 +10,8 @@ import  TipCalculater from './TipCalculater';
 
 const Cart = (props) => {
     const { shoppingCart } = props
-    const total = shoppingCart.reduce((acc, val) => acc + val.price, 0)
-    const count = shoppingCart.length
+    const total = shoppingCart.reduce((acc, val) => acc + val.price, 0).toFixed(2);
+    const count = shoppingCart.length;
     // let tipFifteen = ".15";
     // let tipTwenty = ".2";
     // let tipEighteen= ".18";
@@ -74,7 +74,7 @@ const Cart = (props) => {
                     <th scope="row"></th>
                     <td></td>
                     <td>You just saved:</td>
-                    <td>${total-32.95}</td>
+                    <td>${(total-32.95).toFixed(2)}</td>
                     </tr>
                     <TipCalculater td={"newtip"}/>
                 </tbody>
