@@ -8,6 +8,7 @@ import menu from "../db/menu.json";
 import MenuItems from "./MenuItems"
 import Card from "./Card";
 import Button from "./Button";
+import MenuNav from "./MobileNav/index"
 
 function Menu(props) {
     const ayceMenu = menu.filter(item => item.menu === "ayce");
@@ -25,6 +26,14 @@ function Menu(props) {
     return (
         <>
         <Nav />
+        <MenuNav />
+        <div className="d-flex justify-content-between position-sticky">
+            <Row>
+            </Row>
+            <Row>
+            <Counter />
+            </Row>
+        </div>
         <h3>All-You-Can-Eat Menu</h3> 
             <Container>
                 <Row>
@@ -96,7 +105,7 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                        <Button function={() => item.addItem(item.idx)}></Button>
                                     </MenuItems>
                                 </Card>)
                             })
