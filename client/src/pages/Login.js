@@ -1,16 +1,14 @@
-import React, { useRef, useState } from "react";
-import Nav from "../components/Nav";
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import React, { useRef, useState } from "react"
+import { Link, useHistory } from "react-router-dom";
 import API from "../utils/API";
 import { AUTH_SET_LOGGED_IN } from "../utils/actions";
 import { useStoreContext } from '../utils/GlobalStore';
+import Nav from "../components/Nav"
 
 function Login() {
     const [showError, setShowError] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
+    const history = useHistory();
 
     const emailRef = useRef();
     const passwordRef = useRef();
@@ -30,7 +28,8 @@ function Login() {
                 data: {
                     email
                 }
-            });
+            })
+            history.push("/choice");
         }).catch(err => {
             setShowError(true);
             setErrorMessage("An error occurred during login");
@@ -38,31 +37,32 @@ function Login() {
     }
 
     return <div>
-            <Nav></Nav> 
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-6 col-md-offset-3">
-                        <h2>Login</h2>
-                        <form className="signup" onSubmit={handleLogin}>
-                            <div className="form-group">
-                                <label htmlFor="exampleInputEmail1">Email address</label>
-                                <input type="email" className="form-control" placeholder="Email" ref={emailRef} />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="exampleInputPassword1">Password</label>
-                                <input type="password" className="form-control" placeholder="Password" ref={passwordRef} />
-                            </div>
-                            <div style={{ "display": showError ? "block" : "none" }} id="alert" className="alert alert-danger" role="alert">
-                                <span className="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                                <span className="sr-only">Error:</span> <span className="msg">{errorMessage}</span>
-                            </div>
-                            <button type="submit" className="btn btn-default">Login</button>
-                        </form>
-                        <br />
-                        <p>Or Sign up  <Link to="/Signup">here</Link></p>
-                    </div>
+        <Nav/>
+        <div className="container">
+            <div className="row">
+                <div className="col-md-6 col-md-offset-3">
+                    <h2>Login</h2>
+                    <form className="signup" onSubmit={handleLogin}>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputEmail1">Email address</label>
+                            <input type="email" className="form-control" placeholder="Email" ref={emailRef} />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputPassword1">Password</label>
+                            <input type="password" className="form-control" placeholder="Password" ref={passwordRef} />
+                        </div>
+                        <div style={{ "display": showError ? "block" : "none" }} id="alert" className="alert alert-danger" role="alert">
+                            <span className="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            <span className="sr-only">Error:</span> <span className="msg">{errorMessage}</span>
+                        </div>
+                        <button type="submit" className="btn btn-default">Login</button>
+                    </form>
+                    <br />
+                    <p>Or Sign up  <Link to="/signup">here</Link></p>
+                    <p> <Link to="/choice">Continue as guest </Link></p>
                 </div>
             </div>               
+        </div>
     </div>
 }
 

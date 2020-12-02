@@ -1,9 +1,10 @@
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Image from "./../Image";
+import Counter from "../Counter"
 import { useStoreContext } from '../../utils/GlobalStore';
+import { AUTH_SET_LOGGED_OUT} from "../../utils/actions";
 //components from reactstrap
-
 import {
   Collapse,
   Navbar,
@@ -11,8 +12,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  // DropdownToggle,
-  // DropdownItem,
   NavbarToggler
 } from "reactstrap";
 
@@ -21,10 +20,19 @@ import "./style.css";
 
 
 function NavBar (props) {
-    const [state] = useStoreContext();
-
+    const [state, dispatch] = useStoreContext();
+    const history = useHistory();
+    //this controls the responsive navbar
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen)
+
+    //handles the logout
+    const logout = () => {
+      dispatch({
+        type: AUTH_SET_LOGGED_OUT
+      })
+      history.push("/")
+    }
 
     return (
         <div>
@@ -45,7 +53,7 @@ function NavBar (props) {
                   <NavLink href="/menu">Menu</NavLink>
                 </NavItem>
                 <NavItem className={!state.userLoggedIn ? "hide": ""}>
-                  <NavLink href="/logout">Logout</NavLink>
+                  <NavLink onClick={logout}>Logout</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/favorites">Favorites</NavLink>
@@ -54,7 +62,11 @@ function NavBar (props) {
                   <NavLink href="/ordersummary">Ordersummary</NavLink>
                 </NavItem>
                 <NavItem>
+<<<<<<< HEAD
                   <NavLink href="/Login">Log In</NavLink>
+=======
+                  <Counter />
+>>>>>>> 9d4948c4d8efac2c2915791f4d329d713241ca77
                 </NavItem>
               </Nav>
             </Collapse>
