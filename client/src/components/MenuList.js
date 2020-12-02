@@ -26,6 +26,9 @@ function Menu(props) {
         <>
         <Nav />
         <h3>All-You-Can-Eat Menu</h3> 
+        {/* <div className="d-flex justify-content-between position-fixed">
+            <Counter />
+        </div> */}
             <Container>
                 <Row>
                     <h4 id="appetizers">Appetizers</h4>

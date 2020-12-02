@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Image from "./../Image";
+import Counter from "../Counter"
 import { useStoreContext } from '../../utils/GlobalStore';
 //components from reactstrap
 
@@ -52,6 +53,9 @@ function NavBar (props) {
                 </NavItem>
                 <NavItem>
                   <NavLink href="/ordersummary">Ordersummary</NavLink>
+                </NavItem>
+                <NavItem>
+                  <Counter />
                 </NavItem>
               </Nav>
             </Collapse>
