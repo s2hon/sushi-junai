@@ -40,6 +40,7 @@ function App() {
                 <Route exact path="/ordersummary" component={OrderSummary}/> 
                 <Route exact path="/SignUp" component={Signup}/>
                 <Route exact path="/rules" component={Rules}/>
+                <Route exact path="/login" component={Login}/>
             </Router>
         </Provider>
     );
