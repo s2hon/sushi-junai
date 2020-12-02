@@ -6,11 +6,17 @@ import Container from "./Container";
 import { Table } from 'reactstrap';
 import Row from './Row';
 import  ButtonGroup from './Buttongroup';
+import  TipCalculater from './TipCalculater';
 
 const Cart = (props) => {
     const { shoppingCart } = props
     const total = shoppingCart.reduce((acc, val) => acc + val.price, 0)
     const count = shoppingCart.length
+    // let tipFifteen = ".15";
+    // let tipTwenty = ".2";
+    // let tipEighteen= ".18";
+    // let totalTip = (total*tipFifteen)
+
     if (count == 0) {
         return (   
         <>
@@ -70,9 +76,9 @@ const Cart = (props) => {
                     <td>You just saved:</td>
                     <td>${total-32.95}</td>
                     </tr>
+                    <TipCalculater td={"newtip"}/>
                 </tbody>
             </Table>
-            <ButtonGroup/> 
         </Container>
         </>
     );
