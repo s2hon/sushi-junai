@@ -1,16 +1,34 @@
-import React from "react";
-import Footer from "../components/Footer";
-import Nav from "../components/Nav";
-import Grid from "../components/OrderSummary/Grid";
+import { connect } from 'react-redux'
+import Cart from "../components/Cart";
+import {changeQuantity, addItem, decrementItem} from "../actions/index";
 
-function OrderSummary(props) {
-    return (
-        <>
-            <Nav></Nav>
-            <Grid />
-            <Footer />
-        </>
-        );
-}
+const mapStateToProps = state => {
+    return {
+        shoppingCart: state.shoppingCart
+    }
+};
 
-export default OrderSummary;
+const mapDispatchToProps = dispatch => {
+    return {
+        changeItem: (id, quantity) => {
+            if(quantity >= 0)
+                dispatch(changeQuantity(id, quantity))
+        },
+        removeItem: id => {
+            dispatch(changeQuantity(id, 0))
+        },
+        incrementItem: id => {
+            dispatch(addItem(id))
+        },
+        decrementItem: id => {
+            dispatch(decrementItem(id))
+        }
+    }
+};
+
+const OrderSummary = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Cart);
+
+export default OrderSummary
