@@ -1,4 +1,8 @@
-import React, { useRef, useState } from "react"
+import React, { useRef, useState } from "react";
+import Nav from "../components/Nav";
+import Container from "../components/Container";
+import Row from "../components/Row";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import API from "../utils/API";
 import { AUTH_SET_LOGGED_IN } from "../utils/actions";
@@ -18,6 +22,7 @@ function Signup() {
             email: emailRef.current.value,
             password: passwordRef.current.value
         };
+        console.log(signupData);
         API.signup(signupData).then(response => {
             const { email } = response.data;
             dispatch({
@@ -33,6 +38,7 @@ function Signup() {
     }
 
     return <div>
+        <Nav></Nav>
         <div className="container">
             <div className="row">
                 <div className="col-md-6 col-md-offset-3">
@@ -51,13 +57,15 @@ function Signup() {
                             <span className="sr-only">Error:</span> <span className="msg">{errorMessage}</span>
                         </div>
                         <button type="submit" className="btn btn-default">Sign Up</button>
-                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                        {/* <div class="g-signin2" data-onsuccess="onSignIn"></div> */}
                     </form>
                     <br />
-                    <p>Or log in <Link to="/login">here</Link></p>
+                    <p>Or log in <Link to="/Login">here</Link></p>
                 </div>
             </div>
         </div>
+        
+        
     </div>
 }
 
