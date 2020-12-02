@@ -5,7 +5,8 @@
 node_modules
 /.pnp
 .pnp.js
-
+.eslintcache
+/.eslintcache
 # testing
 /coverage
 
@@ -25,5 +26,5 @@ yarn-error.log*
 node_modules
 .pnp.js
 .env
-
+/.env
 package-lock.json
