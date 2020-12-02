@@ -50,21 +50,21 @@ function Home(props) {
                 </Col>
             </Row>
             <Row>
-                    <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} />
+                <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} />
             </Row>
             <Col size={"md"} number={6}>
                 <Row><a href={"https://www.yelp.com/biz/sushi-junai-2-austin"}>
                     <Button type={"button"} btn={"btn btn-dark"}>Reservations</Button>
-                    </a>
+                </a>
                 </Row>
                 <Row>
-                <Link to={"/choice"}>
-                    <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
+                    <Link to={"/choice"}>
+                        <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
                     </Link>
                 </Row>
                 <Row>
-                <Link to={"/alacarte"}>
-                    <Button type={"button"} btn={"btn btn-dark"}>Carry Out</Button>
+                    <Link to={"/alacarte"}>
+                        <Button type={"button"} btn={"btn btn-dark"}>Carry Out</Button>
                     </Link>
                 </Row>
             </Col>

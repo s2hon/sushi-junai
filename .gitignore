@@ -25,3 +25,5 @@ yarn-error.log*
 node_modules
 .pnp.js
 .env
+
+package-lock.json
