@@ -31,5 +31,14 @@ module.exports = function(sequelize, DataTypes) {
       null
     );
   });
+
+  //here we will add a suer.associate to connect to  favorites model 
+  // User.associate = function(models) {
+  //   // Associating user with box models
+  //   // When an Author is deleted, also delete any associated Posts
+  //   User.hasMany(models.BoxProfile, {
+  //     onDelete: "cascade"
+  //   });
+  // };
   return User;
 };

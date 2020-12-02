@@ -16,9 +16,10 @@ module.exports=
     database: process.env.DATABASE,
     host: process.env.DBHOST,
     port: process.env.DBPORT || 3306,
-    dialect: mysql
+    dialect: "mysql"
   },
   production: {
-    use_env_variable: JAWSDB_URL
+    use_env_variable: JAWSDB_URL,
+    dialect: "mysql"
   }
 }

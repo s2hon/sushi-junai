@@ -37,7 +37,7 @@ function Login() {
     }
 
     return <div>
-        <Nav />
+        <Nav/>
         <div className="container">
             <div className="row">
                 <div className="col-md-6 col-md-offset-3">
@@ -61,7 +61,7 @@ function Login() {
                     <p>Or Sign up  <Link to="/signup">here</Link></p>
                     <p> <Link to="/choice">Continue as guest </Link></p>
                 </div>
-            </div>
+            </div>               
         </div>
     </div>
 }
