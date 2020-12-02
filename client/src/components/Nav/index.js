@@ -62,6 +62,9 @@ function NavBar (props) {
                   <NavLink href="/ordersummary">Ordersummary</NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink href="/Login">Log-In</NavLink>
+                </NavItem>
+                <NavItem>
                   <Counter />
                 </NavItem>
               </Nav>
