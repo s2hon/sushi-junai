@@ -1,81 +1,64 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Image from "./../Image";
 import { useStoreContext } from '../../utils/GlobalStore';
+//components from reactstrap
+
+import {
+  Collapse,
+  Navbar,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  // DropdownToggle,
+  // DropdownItem,
+  NavbarToggler
+} from "reactstrap";
+
+
 import "./style.css";
 
 
-function Nav (props) {
+function NavBar (props) {
     const [state] = useStoreContext();
 
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen)
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <Link className="navbar-brand" to="/" id="name">
+        <div>
+          <Navbar color="light" light expand ="md">
+            <NavbarBrand href="/">
             <Image src={"../assets/logo.png"} alt={"sushi-junai logo"}/>
-          </Link>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-    </button>
-          <div className="collapse navbar-collapse">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link
-                  to="/"
-                  className={
-                    window.location.pathname === "/" || window.location.pathname === "/home"
-                      ? "nav-link active"
-                      : "nav-link"
-                  }
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/alacarte"
-                  className={window.location.pathname === "/alacarte" ? "nav-link active" : "nav-link"}
-                >
-                  A La Carte
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/menu"
-                  className={window.location.pathname === "/menu" ? "nav-link active" : "nav-link"}
-                >
-                  AYCE
-                </Link>
-              </li>
-              <li className={!state.userLoggedIn ? "nav-item hide": "nav-item"}>
-                <Link
-                  to="/logout"
-                  className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
-                >
-                  Logout
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/favorites"
-                  className={window.location.pathname === "/favorites" ? "nav-link active" : "nav-link"}
-                >
-                  Favorites
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/ordersummary"
-                  className={window.location.pathname === "/ordersummary" ? "nav-link active" : "nav-link"}
-                >
-                  OrderSummary
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
+            </NavbarBrand>
+            <NavbarToggler onClick={toggle}/>
+            <Collapse isOpen={isOpen} navbar>
+              <Nav className="mr-auto" navbar>
+                <NavItem>
+                  <NavLink href="/">Home</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/alacarte">A La Carte</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/menu">Menu</NavLink>
+                </NavItem>
+                <NavItem className={!state.userLoggedIn ? "hide": ""}>
+                  <NavLink href="/logout">Logout</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/favorites">Favorites</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/ordersummary">Ordersummary</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Navbar>
+        </div>
       );
     }
     
 
-export default Nav;
+export default NavBar;
