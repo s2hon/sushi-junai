@@ -10,7 +10,7 @@ function Buttongroup(props) {
 
                 }}>15%
                 </Button>
-                <Button className="eighteen" fufunction={() => {
+                <Button className="eighteen" function={() => {
 
                 }}>18%
                 </Button>
