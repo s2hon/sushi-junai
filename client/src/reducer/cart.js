@@ -1,19 +1,3 @@
-const addItem = (state = {}, action) => {
-    let quantity = 0;
-    if(state[action.item.id] !== undefined)
-        quantity = state[action.item.id].quantity;
-    let newState = {
-    };
-    for(let key in state) {
-        newState[key] = {...state[key]};
-    }
-    newState[action.item.id] = {
-        quantity: quantity + 1,
-        id: action.item.id,
-    };
-    return newState;
-};
-
 const decrementItem = (state = {}, action) => {
     let quantity = 0;
     if(state[action.item.id] !== undefined)
@@ -43,10 +27,15 @@ const changeItem = (state = {}, action) => {
     return newState;
 };
 
-const shoppingCart = (state = {}, action) => {
+const shoppingCart = (state = [], action) => {
     switch (action.type) {
         case 'ADD_ITEM':
-            return addItem(state, action);
+            const { item } = action.payload
+            return [...state, {
+                name: item.name,
+                price: item.price,
+                category: item.category
+            }];
         case 'CHANGE_ITEM':
             return changeItem(state, action);
         case 'DECREMENT_ITEM':

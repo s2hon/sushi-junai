@@ -1,0 +1,202 @@
+.wpo-header-style-2 .topbar,
+.header-style-3 .topbar {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.header-style-3 .topbar {
+    border-bottom: 1px solid #dfe2e6;
+    background: #f2f2f2;
+}
+
+@media (max-width: 991px) {
+
+    .wpo-header-style-2 .topbar,
+    .header-style-3 .topbar {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .wpo-header-style-2 .topbar,
+    .header-style-3 .topbar {
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
+.wpo-header-style-2 .topbar p,
+.header-style-3 .topbar p {
+    font-size: 15px;
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+
+    .wpo-header-style-2 .topbar p,
+    .header-style-3 .topbar p {
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-size: 0.93333rem;
+    }
+}
+
+.wpo-header-style-2 .topbar ul,
+.header-style-3 .topbar ul {
+    overflow: hidden;
+    list-style: none;
+	float: right;
+	margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+
+    .wpo-header-style-2 .topbar ul,
+    .header-style-3 .topbar ul {
+        float: none;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.wpo-header-style-2 .topbar ul li,
+.header-style-3 .topbar ul li {
+    font-size: 14px;
+    float: left;
+    padding: 20px 20px;
+    color: #f2f2f2;
+    line-height: 1em;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.wpo-header-style-2 .topbar .contact-info ul li a {
+    color: #f2f2f2;
+}
+
+.header-style-3 .topbar .contact-info ul li a {
+    color: #666;
+}
+
+.wpo-header-style-2 .topbar .contact-info ul li a:hover,
+.header-style-3 .topbar .contact-info ul li a:hover {
+    color: #7db1f0;
+}
+
+.header-style-3 .topbar ul li {
+    color: #666;
+    border-right: 1px solid #dfe2e6;
+}
+
+.wpo-header-style-2 .topbar ul li:first-child,
+.header-style-3 .topbar ul li:first-child {
+    padding-left: 0;
+}
+
+.wpo-header-style-2 .topbar .contact-intro ul,
+.header-style-3 .topbar .contact-intro ul {
+    float: none;
+}
+
+@media (max-width: 991px) {
+
+    .wpo-header-style-2 .topbar ul li,
+    .header-style-3 .topbar ul li {
+        font-size: 12px;
+    }
+    .wpo-header-style-2 .topbar .theme-btn, 
+    .header-style-3 .topbar .theme-btn {
+        margin-top: 2px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .wpo-header-style-2 .topbar ul li,
+    .header-style-3 .topbar ul li {
+        float: left;
+        border: none;
+        padding: 8px 6px;
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 590px) {
+
+    .wpo-header-style-2 .topbar ul li,
+    .header-style-3 .topbar ul li {
+        float: none;
+    }
+
+    .wpo-header-style-2 .topbar .contact-info ul li,
+    .header-style-3 .topbar .contact-info ul li {
+        float: left;
+    }
+}
+
+.wpo-header-style-2 .topbar ul>li+li+li,
+.header-style-3 .topbar ul>li+li+li {
+    border-right: none;
+    padding-right: 10px;
+    padding: 0;
+}
+
+.wpo-header-style-2 .topbar ul>li+li,
+.header-style-3 .topbar ul>li+li {
+    border-right: none;
+}
+
+.wpo-header-style-2 .topbar .theme-btn,
+.header-style-3 .topbar .theme-btn {
+    padding: 12px 20px;
+    margin-top: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.wpo-header-style-2 .topbar ul .fi,
+.header-style-3 .topbar ul .fi {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    padding-right: 3px;
+}
+
+.wpo-header-style-2 .topbar ul .fi:before,
+.header-style-3 .topbar ul .fi:before {
+    font-size: 15px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.header-style-3 .topbar ul .fi:before {
+    color: #666;
+}
+
+@media (max-width: 991px) {
+
+    .wpo-header-style-2 .topbar ul .fi:before,
+    .header-style-3 .topbar ul .fi:before {
+        font-size: 20px;
+        font-size: 1.33333rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .wpo-header-style-2 .topbar ul .fi:before,
+    .header-style-3 .topbar ul .fi:before {
+        font-size: 16px;
+    }
+}
+
+.wpo-header-style-2 .navigation ul,
+.header-style-3 .navigation ul {
+    list-style: none;
+}

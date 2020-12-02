@@ -10,8 +10,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        addItem: id => 
-            dispatch(addItem(id))
+        addItem: item =>
+            dispatch(addItem(item))
         
     }
 };

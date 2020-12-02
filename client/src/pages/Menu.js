@@ -8,10 +8,8 @@ import menu from "../db/menu.json";
 import MenuItems from "../components/MenuItems"
 import Card from "../components/Card";
 import Button from "../components/Button"
-import { HashLink as Link } from 'react-router-hash-link';
 
 
-<<<<<<< HEAD
 function Menu() {
     //order summary
     const [cart, setCart] = useState([]);
@@ -34,9 +32,6 @@ function Menu() {
         console.log(newCart);
     };
 
-=======
-function Menu(props) {
->>>>>>> 3ec31564493ea0dd2f0e68b6e46ca71c642bbc29
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
@@ -61,16 +56,6 @@ function Menu(props) {
                     <h3>All-You-Can-Eat Menu</h3>
                 </Row>
                 <Row>
-                    <Link to="menu#appetizers"><Button>Appetizers</Button></Link>
-                    <Link to="menu#salad"><Button>Salads</Button></Link>
-                    <Link to="menu#soup"><Button>Soup/Noodles</Button></Link>
-                    <Link to="menu#rice"><Button>Rice</Button></Link>
-                    <Link to="menu#classicRoll"><Button>Classic Rolls/Hand Rolls</Button></Link>
-                    <Link to="menu#sushi"><Button>Sushi</Button></Link>
-                    <Link to="menu#chefsSpecial"><Button>Chef's Special Rolls</Button></Link>
-                    <Link to="menu#tempura"><Button>Tempura Rolls</Button></Link>
-                    <Link to="menu#bakedRolls"><Button>Baked Rolls</Button></Link>
-                    <Link to="menu#desserts"><Button>Desserts</Button></Link>
                 </Row>
                 <Row>
                     <h4 id="appetizers">Appetizers</h4>
