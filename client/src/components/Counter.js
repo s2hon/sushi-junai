@@ -11,6 +11,13 @@ function Counter() {
     }
 
     useEffect(() => {
+        const previousTimer = localStorage.getItem("timer");
+        if (previousTimer) {
+            setCount(previousTimer);
+        };
+    }, []);
+
+    useEffect(() => {
         const timer = setTimeout(() => {
             setCount(count - 1);
             setHour(Math.floor(count / 3600));
