@@ -8,6 +8,9 @@ import menu from "../db/menu.json";
 import MenuItems from "./MenuItems"
 import Card from "./Card";
 import Button from "./Button";
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import { faFish } from "@fortawesome/free-solid-svg-icons"
+
 
 function Menu(props) {
     const ayceMenu = menu.filter(item => item.menu === "ayce");
@@ -26,12 +29,9 @@ function Menu(props) {
         <>
         <Nav />
         <h3>All-You-Can-Eat Menu</h3> 
-        {/* <div className="d-flex justify-content-between position-fixed">
-            <Counter />
-        </div> */}
             <Container>
                 <Row>
-                    <h4 id="appetizers">Appetizers</h4>
+                    <h4 id="appetizers">Appetizers</h4> 
                     <Container>
                         {
                             appetizers.map((item, idx) => {
@@ -39,19 +39,14 @@ function Menu(props) {
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
                                 }
-
-                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
-                                if (item.fish) {
-                                    fishClass = "fa fa-fish";
-                                }
-                                // console.log(fishClass)
                                 return (
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
                                         <Button btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             >+</Button>
+                                        
                                     </MenuItems>
                                     </div>
                                 </div>
@@ -153,7 +148,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4 id="sushi">Sushi (Nigiri)<i className="fas fa-fish"></i></h4>
+                    <h4 id="sushi">Sushi (Nigiri)<FontAwesomeIcon icon={faFish} /></h4>
                     <Container>
                         {
                             sushi.map((item, idx) => {
