@@ -9,6 +9,7 @@ import Col from "../components/Col";
 import Image from "../components/Image";
 import Button from "../components/Button";
 
+
 function Home(props) {
     return (<>
         <Nav />
