@@ -1,9 +1,7 @@
-export const addItem = id => {
+export const addItem = item => {
     return {
         type: 'ADD_ITEM',
-        item: {
-            id: id
-        }
+        payload: { item }
     }
 };
 
@@ -23,5 +21,12 @@ export const decrementItem = (id) => {
         item: {
             id: id
         }
+    }
+};
+
+export const removeItem = (item) => {
+    return {
+        type: 'REMOVE_LISTING',
+        payload: { item }
     }
 };

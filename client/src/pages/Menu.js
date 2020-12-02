@@ -11,32 +11,7 @@ import Button from "../components/Button"
 import { HashLink as Link } from 'react-router-hash-link';
 
 
-<<<<<<< HEAD
-function Menu() {
-    //order summary
-    const [cart, setCart] = useState([]);
-    const addToCart = (product) => {
-        let newCart = [...cart];
-        let itemInCart = newCart.find(
-            (item) => product.name === item.name
-        );
-        if (itemInCart) {
-            itemInCart.quantity++;
-        } else {
-            itemInCart = {
-            ...product,
-            quantity: 1,
-            };
-            newCart.push(itemInCart);
-        }
-        setCart(newCart);
-
-        console.log(newCart);
-    };
-
-=======
 function Menu(props) {
->>>>>>> 3ec31564493ea0dd2f0e68b6e46ca71c642bbc29
     const ayceMenu = menu.filter(item => item.menu === "ayce");
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
