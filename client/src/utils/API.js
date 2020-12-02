@@ -14,4 +14,5 @@ export default {
     logout: () => {
         return axios.get("/logout");
     }
+
 }

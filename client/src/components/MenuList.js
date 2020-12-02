@@ -42,7 +42,7 @@ function Menu(props) {
 
                                 let fishClass = ""; // Add fish icon to items with raw or undercooked fish
                                 if (item.fish) {
-                                    fishClass = "fa fa-fish";
+                                    fishClass = "fas fa-fish";
                                 }
                                 // console.log(fishClass)
                                 return (

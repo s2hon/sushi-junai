@@ -30,3 +30,8 @@ export const removeItem = (item) => {
         payload: { item }
     }
 };
+
+export const addFavorite = (favoriteData) => ({
+    type: 'ADD_FAVORITE',
+    payload: favoriteData,
+})
