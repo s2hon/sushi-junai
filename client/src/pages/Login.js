@@ -55,6 +55,7 @@ function Login() {
                     </form>
                     <br />
                     <p>Or Sign up  <Link to="/signup">here</Link></p>
+                    <p> <Link to="/choice">Continue as guest </Link></p>
                 </div>
             </div>
         </div>
