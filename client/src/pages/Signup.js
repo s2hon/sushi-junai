@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-import React, { useRef, useState } from "react";
-import Nav from "../components/Nav";
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
-=======
 import React, { useRef, useState } from "react"
 import { Link, useHistory } from "react-router-dom";
->>>>>>> 9d4948c4d8efac2c2915791f4d329d713241ca77
 import API from "../utils/API";
 import { AUTH_SET_LOGGED_IN } from "../utils/actions";
 import { useStoreContext } from '../utils/GlobalStore';
