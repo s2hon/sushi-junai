@@ -59,7 +59,7 @@ function Home(props) {
                 </a>
                 </Row>
                 <Row>
-                    <Link to={"/choice"}>
+                    <Link to={"/login"}>
                         <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
                     </Link>
                 </Row>
