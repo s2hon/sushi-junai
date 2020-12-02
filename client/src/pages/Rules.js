@@ -12,11 +12,11 @@ import Slider from "../components/Slider";
 function Rules(props) {
     return (
         <>
-        <Nav/>
-        <Container>
-        <Slider/>
-        </Container>
-        <Footer/>
+            <Nav />
+            <Container>
+                <Slider />
+            </Container>
+            <Footer />
         </>
     );
 }

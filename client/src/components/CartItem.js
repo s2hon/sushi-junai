@@ -1,26 +1,15 @@
 import React from 'react';
+import { Button } from 'reactstrap';
 
 const CartItem = (props) => {
+    const { name, category, price } = props.item
     return (
-        <div className="cartItem">
-            <div className="cartItemName first">
-                <span>
-                    <span className="centerVertically">
-                        {props.name}
-                    </span>
-                    <span className="centerVertically">
-                        {props.category}
-                    </span>
-                </span>
-                <span className="centerVertically" onClick={() => props.removeItem(props.id)}>X</span>
-            </div>
-            <div className="cartItemQty second">
-                {props.quantity}
-            </div>
-            <div className="cartItemNamePrice third">
-                ${props.quantity*props.price}
-            </div>
-        </div>
+        <tr>
+        <th scope="row">{name}</th>
+        <td>{category}</td>
+        <td>{price}</td>
+        <td><Button color="danger" onClick={() => props.removeItem(props.id)}>X</Button></td>
+        </tr>
     )
 };
 
