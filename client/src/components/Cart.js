@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import Container from "./Container";
 import { Table } from 'reactstrap';
 import Row from './Row';
-
+import  ButtonGroup from './Buttongroup';
 
 const Cart = (props) => {
     const { shoppingCart } = props
@@ -38,6 +38,7 @@ const Cart = (props) => {
                     </tbody>
                 </thead>
             </Table>
+            <ButtonGroup/> 
         </Container>
         </>
     )}
@@ -71,6 +72,7 @@ const Cart = (props) => {
                     </tr>
                 </tbody>
             </Table>
+            <ButtonGroup/> 
         </Container>
         </>
     );

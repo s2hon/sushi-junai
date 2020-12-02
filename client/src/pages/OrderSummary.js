@@ -2,6 +2,7 @@ import { connect } from 'react-redux'
 import Cart from "../components/Cart";
 import {changeQuantity, addItem, decrementItem} from "../actions/index";
 
+
 const mapStateToProps = state => {
     return {
         shoppingCart: state.shoppingCart
@@ -30,5 +31,6 @@ const OrderSummary = connect(
     mapStateToProps,
     mapDispatchToProps
 )(Cart);
+
 
 export default OrderSummary
