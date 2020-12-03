@@ -2050,5 +2050,125 @@
 		"menu": "drinks",
 		"price": 1.95,
 		"category": "soft drinks"
+	},
+	{
+		"name": "Vegetable Ried Rice",
+		"description": "Fried rice mixed with egg and green onion",
+		"price": 6.95,
+		"menu": "lunch",
+		"category": "Lunch Special",
+		"fish": false
+	},
+	{
+		"name": "Chicken Fried Rice",
+		"description": "Chicken fried rice mixed with egg and green onion",
+		"price": 7.95,
+		"menu": "lunch",
+		"category": "Lunch Special",
+		"fish": false
+	},
+	{
+		"name": "Seafood Fried Rice",
+		"description": "Seafood fried rice mixed with egg and green onion",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "Lunch Special",
+		"fish": false
+	},
+	{
+		"name": "Sashimi Combo",
+		"description": "Six pieces of sashimi, four pieces Cali, four pieces spicy tuna, six pieces crunch",
+		"price": 12.5,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Texas Combo (A)",
+		"description": "Udon with four pieces Cali, four pieces spicy tuna, six pieces crunch",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Texas Combo (B)",
+		"description": "Udon with four pieces Cali, four pieces spicy tuna, five pieces sushi",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Texas Combo (C)",
+		"description": "Udon wiht five pieces of sushi and six pieces of crunch",
+		"price": "",
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Austin Combo (A)",
+		"description": "Spicy ramen with special roll",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Austin Combo (B)",
+		"description": "Spicy ramen with five pieces of sushi and four pieces of Cali",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Austin Combo (C)",
+		"description": "Spicy ramen with chicken teriyaki and rice",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": false
+	},
+	{
+		"name": "Chicken Teriyaki",
+		"description": "Grilled chicken with house teriyaki sauce",
+		"price": 8.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false
+	},
+	{
+		"name": "Tonkatsu",
+		"description": "Deep fried, breaded, tender pork cutlet",
+		"price": 8.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false
+	},
+	{
+		"name": "Chicken Katsu",
+		"description": "Deep fried, breaded chicken breast with house katsu sauce",
+		"price": 8.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false
+	},
+	{
+		"name": "Korea Bulgogi",
+		"description": "Stir fried seasoned beef with mixed vegetables",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false
+	},
+	{
+		"name": "Salmon Teriyaki",
+		"description": "Salmon teriyaki with house teriyaki sauce",
+		"price": 10.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false
 	}
 ]
