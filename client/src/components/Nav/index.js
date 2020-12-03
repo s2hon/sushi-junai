@@ -4,6 +4,7 @@ import Image from "./../Image";
 import Counter from "../Counter"
 import { useStoreContext } from '../../utils/GlobalStore';
 import { AUTH_SET_LOGGED_OUT} from "../../utils/actions";
+import "./style.css";
 //components from reactstrap
 import {
   Collapse,
@@ -15,13 +16,7 @@ import {
   NavbarToggler
 } from "reactstrap";
 
-
-import "./style.css";
-
-const NavBar = () => {
-    const SubmitHandler = (e) =>{
-        e.preventDefault()}
-
+function NavBar (props) {
     const [state, dispatch] = useStoreContext();
     const history = useHistory();
     //this controls the responsive navbar
@@ -63,6 +58,7 @@ const NavBar = () => {
                 <NavItem>
                   <NavLink href="/ordersummary">Ordersummary</NavLink>
                 </NavItem>
+                <hr />
                 <NavItem>
                   <NavLink href="/Login">Log-In</NavLink>
                 </NavItem>

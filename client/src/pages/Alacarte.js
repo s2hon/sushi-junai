@@ -7,10 +7,10 @@ import Container from "../components/Container";
 function Alacarte(props) {
     return (
         <>
-            <Nav/>
-            <Container>
+        <Nav/>
+        <Container>
             <h1>Coming Soon</h1>
-         <Image src={"./assets/019-salmon.png"} alt={"picture of sushi"}/>
+            <Image src={"./assets/019-salmon.png"} alt={"picture of sushi"} width="100%"/>
         </Container>
             <Footer />
         </>

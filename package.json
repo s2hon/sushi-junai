@@ -35,10 +35,7 @@
     "react-fontawesome": "^1.7.1",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
-<<<<<<< HEAD
-=======
     "react-router-hash-link": "^2.2.2",
->>>>>>> ebf7870dbf8daf9fbfb7ccd33a36e68c0d728b9f
     "reactstrap": "^8.7.1",
     "redux": "^4.0.5",
     "sequelize": "^5.8.6"

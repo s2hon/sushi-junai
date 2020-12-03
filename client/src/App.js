@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import reducer from './reducer';
 import data from './db/menu.json';
 import {saveState} from "./localstorage";
+import AllRoute from './Router/index'
 
 const store = createStore(reducer);
 data.forEach((item) => store.dispatch({

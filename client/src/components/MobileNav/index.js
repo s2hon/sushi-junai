@@ -18,20 +18,15 @@ const menus = [
     {
         id: 3,
         title: 'All You Can Eat',
-        link: '/menu',
+        link: '/ayce',
         submenu: [
             {
                 id: 11,
-                title: 'Menu',
-                link: '/ayce'
-            },
-            {
-                id: 12,
                 title: 'Order Summary',
                 link: '/ordersummary'
             },
             {
-                id: 13,
+                id: 12,
                 title: 'Favorites',
                 link: '/favorites'
             }

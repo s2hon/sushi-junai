@@ -16,7 +16,6 @@ const MenuCart = (props) => {
     // let tipTwenty = ".2";
     // let tipEighteen= ".18";
     // let totalTip = (total*tipFifteen)
-    
 
     if (count === 0) {
         return (   
