@@ -7,10 +7,10 @@ function PrivateRoute({ children , ...rest}) {
     const location = useLocation();
     const {from} = location.state || { from: {pathname: "/"}}
 
-    return (
-    <Route {...rest}
-    render={(location.state)=>state.isLoggedIn ? (children) : 
-    (<Redirect to={{pathname: "/login",state: {from: location}}}/>)}/>
+    return (<div></div>
+    // <Route {...rest}
+    // render={(location.state)=>state.isLoggedIn ? (children) : 
+    // (<Redirect to={{pathname: "/login",state: {from: location}}}/>)}/>
     )
 }
 

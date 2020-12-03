@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       unique: true      
     },
     email: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       references: {
         model: 'Users',
         key: 'email'
