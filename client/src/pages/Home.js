@@ -8,9 +8,12 @@ import Footer from "../components/Footer";
 import Col from "../components/Col";
 import Image from "../components/Image";
 import Button from "../components/Button";
+import { useStoreContext } from '../utils/GlobalStore';
 
 
 function Home(props) {
+    const [state] = useStoreContext();
+
     return (<>
         <Nav />
         <Container>
@@ -59,7 +62,7 @@ function Home(props) {
                 </a>
                 </Row>
                 <Row>
-                    <Link to={"/login"}>
+                    <Link to={!state.userLoggedIn ? "/login": "/choice"}>
                         <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
                     </Link>
                 </Row>
