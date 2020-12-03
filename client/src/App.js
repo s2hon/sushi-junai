@@ -40,8 +40,7 @@ function App() {
                 <Route exact path="/choice" component={Choice}/>
                 <Route exact path="/favorite" component={Favorite}/>
                 <Route exact path="/ordersummary" component={OrderSummary}/> 
-                <Route exact path="/Signup" component={Signup}/>
-                <Route exact path="/Login" component={Login}/>
+                <Route exact path="/Signup" component={Signup}/>            
                 <Route exact path="/rules" component={Rules}/>
                 <Route exact path="/login" component={Login}/>
             </Router>

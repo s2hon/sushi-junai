@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "./Nav";
-import Counter from "./Counter";
 import Container from "./Container";
 import Row from "./Row";
 import Footer from "./Footer";
@@ -75,6 +74,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                    <Button btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            >+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -97,7 +99,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}></Button>
+                                    <Button btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            >+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -120,7 +124,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            >+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -143,7 +149,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            >+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -161,7 +169,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={""} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            >+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -184,7 +194,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            >+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -207,7 +219,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            >+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -230,7 +244,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                    <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            >+</Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -253,7 +269,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            >+</Button>
                                     </MenuItems>
                                 </Card>)
                             })

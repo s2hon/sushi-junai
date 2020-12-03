@@ -31,17 +31,12 @@ const MenuCart = (props) => {
                     <th>Price</th>
                     </tr>
                     <tbody>
-                        <h3>whatsabi? 0 items so far?
-                        <br/> 
-                        Go
+                        <h3>Your cart is empty</h3>
                         <Link
                             to="/menu"
                             className={window.location.pathname === "/menu" ? "nav-link active" : "nav-link"}
-                        >
-                        HERE
-                        </Link>
-                        and order ebi-thing with a dining staff! 
-                        <br/> Let's Roll!</h3>
+                        >Click to Order
+                        </Link> 
                     </tbody>
                 </thead>
             </Table>
@@ -75,7 +70,7 @@ const MenuCart = (props) => {
                     <th scope="row"></th>
                     <td></td>
                     <td>You just saved:</td>
-                    <td>$ {total-32.95}</td>
+                    <td>$ {(total-32.95).toFixed(2)}</td>
                     </tr>
                     <TipCalculater td={"newtip"}/>
                 </tbody>
