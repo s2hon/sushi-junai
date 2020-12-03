@@ -25,7 +25,7 @@ module.exports = function(app) {
   });
 
   //this code will add the faorites
-  app.post("/api/favorites", function(req, res) {
+  app.post("/api/favorite", function(req, res) {
     db.UserFavorites.create({
       item: req.body.item,
       category: req.body.category,
@@ -39,7 +39,7 @@ module.exports = function(app) {
       });
   });
   //this code will retrieve the faorites
-  app.get("/api/favorites", function(req, res){
+  app.get("/api/favorite", function(req, res){
     db.UserFavorites.findAll({
       where: {
         email: req.user.email
