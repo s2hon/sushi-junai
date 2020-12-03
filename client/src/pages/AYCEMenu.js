@@ -1,17 +1,20 @@
-import { connect } from 'react-redux'
-import ItemList from "../components/MenuList";
-import {addItem} from "../actions/index"
+import { connect } from 'react-redux';
+import MenuList from "../components/MenuList";
 
 const mapStateToProps = state => {
     return {
-        itemListing: state.itemListing
+        menuCart: state.menuCart
     }
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        addItem: item =>
-            dispatch(addItem(item))
+        addItem: item => {
+            dispatch({
+                type: 'ADD_MENU_ITEM',
+                payload: { item }
+            })
+        }
         
     }
 };
@@ -19,6 +22,6 @@ const mapDispatchToProps = dispatch => {
 const AYCEMenu = connect(
     mapStateToProps,
     mapDispatchToProps
-)(ItemList);
+)(MenuList);
 
 export default AYCEMenu;
