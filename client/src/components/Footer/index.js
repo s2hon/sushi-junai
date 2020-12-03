@@ -3,10 +3,6 @@ import './style.css'
 
 const Footer = (props) =>{
 
-    const ClickHandler = () =>{
-      window.scrollTo(10, 0);
-    }
-
   return(
     <footer className="wpo-site-footer">
       <div className="wpo-upper-footer">
@@ -16,9 +12,9 @@ const Footer = (props) =>{
               <div className="widget about-widget">
                 <p>Connect with us!</p>
                 <ul className="text-center">
-                    <li><a target={"_blank"} href="https://www.facebook.com/sushijunai/"><i className="fa fa-facebook fa-2x"></i></a></li>
-                    <li><a target={"_blank"} href="https://www.instagram.com/sushijunai/"><i className="fa fa-instagram fa-2x"></i></a></li>
-                    <li><a target={"_blank"} href="mailto:sushijunai1@gmail.com"><i className="fa fa-envelope fa-2x"></i></a></li>
+                    <li><a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/sushijunai/"><i className="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a target={"_blank"} rel="noreferrer" href="https://www.instagram.com/sushijunai/"><i className="fa fa-instagram fa-2x"></i></a></li>
+                    <li><a target={"_blank"} rel="noreferrer" href="mailto:sushijunai1@gmail.com"><i className="fa fa-envelope fa-2x"></i></a></li>
                 </ul>
               </div>
             </div>

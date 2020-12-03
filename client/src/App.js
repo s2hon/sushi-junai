@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
@@ -18,8 +18,6 @@ store.subscribe(() => {
 });
 
 function App() {
-    const [sidebarIsOpen, setSidebarOpen] = useState(true);
-    const toggleSidebar = () => setSidebarOpen(!sidebarIsOpen);
 
     return (
         <Provider store={store}>
