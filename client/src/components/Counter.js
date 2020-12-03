@@ -14,7 +14,6 @@ function Counter() {
         };
     }, [count])
 
-
     useEffect(() => {
         const timer = setTimeout(() => {
             setCount(count - 1);
