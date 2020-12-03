@@ -12,7 +12,7 @@ const MenuCart = (props) => {
     const { menuCart } = props
     const total = menuCart.reduce((acc, val) => acc + val.price, 0)
     const count = menuCart.length
-  
+
     if (count === 0) {
         return (
             <>
