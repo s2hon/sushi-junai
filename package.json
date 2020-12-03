@@ -51,6 +51,7 @@
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.3",
     "passport": "^0.4.1",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
   }
 }

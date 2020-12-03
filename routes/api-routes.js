@@ -24,6 +24,31 @@ module.exports = function(app) {
       });
   });
 
+  //this code will add the faorites
+  app.post("/api/favorites", function(req, res) {
+    db.UserFavorites.create({
+      item: req.body.item,
+      category: req.body.category,
+      email: req.user.email
+    })
+      .then(function(dbFavorite) {
+        res.json(dbFavorite);
+      })
+      .catch(function(err) {
+        res.status(401).json(err);
+      });
+  });
+  //this code will retrieve the faorites
+  app.get("/api/favorites", function(req, res){
+    db.UserFavorites.findAll({
+      where: {
+        email: req.user.email
+      }
+    }).then(function(dbFavorites){
+      res.json(dbFavorites);
+    })
+  })
+
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
