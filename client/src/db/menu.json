@@ -7,7 +7,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -67,7 +67,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -79,7 +79,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -235,7 +235,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -307,7 +307,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -319,7 +319,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -331,7 +331,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -343,7 +343,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -367,7 +367,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -415,7 +415,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -439,7 +439,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -535,7 +535,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -667,7 +667,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -679,7 +679,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -703,7 +703,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
