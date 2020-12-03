@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import CartItem from './CartItem';
+import MenuCartItem from './MenuCartItem';
 import Nav from "./Nav";
 import Container from "./Container";
 import { Table } from 'reactstrap';
 import Row from './Row';
 import TipCalculater from './TipCalculater';
 
-const Cart = (props) => {
-    const { shoppingCart } = props
-    const total = shoppingCart.reduce((acc, val) => acc + val.price, 0).toFixed(2);
-    const count = shoppingCart.length;
 
+const MenuCart = (props) => {
+    const { menuCart } = props
+    const total = menuCart.reduce((acc, val) => acc + val.price, 0)
+    const count = menuCart.length
+  
     if (count === 0) {
         return (
             <>
@@ -53,7 +54,7 @@ const Cart = (props) => {
                         </tr>
                     </thead>
                     <tbody>
-                        {shoppingCart.map((item, idx) => <CartItem key={idx} item={item} removeItem={props.removeItem} />)}
+                        {menuCart.map((item, idx) => <MenuCartItem key={idx} item={item} removeItem={props.removeItem} />)}
                         <tr>
                             <th scope="row"></th>
                             <td></td>
@@ -74,4 +75,4 @@ const Cart = (props) => {
     );
 };
 
-export default Cart;
+export default MenuCart;

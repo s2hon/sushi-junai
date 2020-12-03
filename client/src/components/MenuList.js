@@ -7,8 +7,8 @@ import menu from "../db/menu.json";
 import MenuItems from "./MenuItems"
 import Card from "./Card";
 import Button from "./Button";
-import { FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faFish } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faFish } from "@fortawesome/free-solid-svg-icons";
 
 
 function Menu(props) {
