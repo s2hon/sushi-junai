@@ -6,16 +6,14 @@ function Counter() {
     const [minute, setMinute] = useState(0);
     const [seconds, setSeconds] = useState(0);
 
-    function saveTimer() {
-        localStorage.setItem("timer", count);
-    }
-
     useEffect(() => {
+        localStorage.setItem("timer", count);
         const previousTimer = localStorage.getItem("timer");
         if (previousTimer) {
             setCount(previousTimer);
         };
-    }, []);
+    }, [count])
+
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -32,7 +30,6 @@ function Counter() {
                 secondsRemaining = secondsRemaining.toString().padStart(2, "0");
             }
             setSeconds(secondsRemaining);
-            saveTimer();
         }, 1000)
 
         if (count < 0) {
