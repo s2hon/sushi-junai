@@ -4,10 +4,17 @@
 module.exports = function(sequelize, DataTypes) {
   var UserFavorites = sequelize.define("UserFavorites", {
     // The email cannot be null, and must be a proper email before creation
-    item: {
+    name: {
       type: DataTypes.STRING,
       unique: true      
-    }
+    },
+    category: {type:DataTypes.STRING}
+
+    // description: {type:DataTypes.STRING},    
+    // glutenFree: {type:DataTypes.BOOLEAN},
+    // vegetarian: {type:DataTypes.BOOLEAN},
+    // vegan: {type:DataTypes.BOOLEAN},
+    // fish: {type:DataTypes.BOOLEAN}
   });
 
 

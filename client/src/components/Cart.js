@@ -40,7 +40,7 @@ const Cart = (props) => {
                         HERE
                         </Link>
                         and order ebi-thing with a dining staff! 
-                        <br/> Let's Roll!</h3>
+                        <br/> Let's Rock-n-Roll!</h3>
                     </tbody>
                 </thead>
             </Table>

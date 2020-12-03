@@ -13,5 +13,11 @@ export default {
     },
     logout: () => {
         return axios.get("/logout");
+    },
+    addFavorite: () => {
+        return axios.post("/api/favorite", item)
+    },
+    addFavorite: () => {
+        return axios.post("/api/favorite", item)
     }
 }

@@ -6,8 +6,18 @@ import Container from "../components/Container";
 import Footer from "../components/Footer";
 // import Col from "../components/Col";
 import Image from "../components/Image";
+import favItems from "../components/MenuItems"
 
 function Favorite(props) {
+
+    //get user email
+   
+    //load menu items stored under that user
+    const [state] = useStoreContext();
+    const userEmail = state.email;
+
+    //add delete function 
+    //add funciton to add item to order 
     return (<>
         <Nav />
         <Container>
