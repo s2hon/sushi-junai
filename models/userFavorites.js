@@ -8,13 +8,13 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       unique: true      
     },
-    category: {type:DataTypes.STRING}
-
-    // description: {type:DataTypes.STRING},    
-    // glutenFree: {type:DataTypes.BOOLEAN},
-    // vegetarian: {type:DataTypes.BOOLEAN},
-    // vegan: {type:DataTypes.BOOLEAN},
-    // fish: {type:DataTypes.BOOLEAN}
+    email: {
+      type: Sequelize.STRING,
+      references: {
+        model: 'Users',
+        key: 'email'
+      }
+    }
   });
 
 
@@ -24,6 +24,9 @@ module.exports = function(sequelize, DataTypes) {
     // When an favorite is deleted. we will have to update the array 
     UserFavorites.belongsTo(models.User, {
     //   onDelete: "cascade"
+          foreignKey:{
+            allowNull: false
+          }
     });
   };
   return UserFavorites;
