@@ -1,27 +1,22 @@
 import { connect } from 'react-redux'
-import Cart from "../components/Cart";
-import {changeQuantity, addItem, decrementItem} from "../actions/index";
+import MenuCart from "../components/MenuCart";
 
-const mapStateToProps = state => {
-    return {
-        shoppingCart: state.shoppingCart
-    }
-};
+
+const mapStateToProps = state => ({
+    menuCart: state.menuCart,
+    favCart: state.favCart
+});
 
 const mapDispatchToProps = dispatch => {
     return {
-        changeItem: (id, quantity) => {
-            if(quantity >= 0)
-                dispatch(changeQuantity(id, quantity))
-        },
         removeItem: id => {
-            dispatch(changeQuantity(id, 0))
+            dispatch({})
         },
-        incrementItem: id => {
-            dispatch(addItem(id))
-        },
-        decrementItem: id => {
-            dispatch(decrementItem(id))
+        handleFavorite: id => {
+            dispatch({
+                type: 'ADD_FAV_ITEM',
+                payload: { item }
+            })
         }
     }
 };
@@ -29,6 +24,7 @@ const mapDispatchToProps = dispatch => {
 const OrderSummary = connect(
     mapStateToProps,
     mapDispatchToProps
-)(Cart);
+)(MenuCart);
+
 
 export default OrderSummary

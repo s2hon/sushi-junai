@@ -1,10 +1,13 @@
-const shoppingCart = (state = [], action) => {
+import {loadState} from "../localstorage";
+
+const persistedState = loadState("favCart");
+
+const favCart = (state=persistedState || [], action) => {
     switch (action.type) {
-        case 'ADD_ITEM':
+        case 'ADD_FAV_ITEM':
             const { item } = action.payload
             return [...state, {
                 name: item.name,
-                price: item.price,
                 category: item.category
             }];
         default:
@@ -12,4 +15,4 @@ const shoppingCart = (state = [], action) => {
     }
 };
 
-export default shoppingCart;
+export default favCart;

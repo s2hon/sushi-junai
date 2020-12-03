@@ -83,12 +83,12 @@ const Slider = (props) => {
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
     <Link to={"/menu"}>
-                        <Button type={"button"} btn={"btn btn-dark"}>I agree</Button>
-                    </Link>
-                    <Link to={"/alacarte"}>
-                        <Button type={"button"} btn={"btn btn-dark"}>Al A Carte</Button>
-                    </Link>
-          </>
+      <Button type={"button"} btn={"btn btn-dark"}>I agree</Button>
+    </Link>
+    <Link to={"/alacarte"}>
+      <Button type={"button"} btn={"btn btn-dark"}>Al A Carte</Button>
+    </Link>
+  </>
   );
 }
 

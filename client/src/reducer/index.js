@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux';
-import shoppingCart from './cart';
-import itemListing from './listing';
-import addFavorite from './favorite'
+import menuCart from './menuCart';
+import favCart from './favCart'
 
 const shoppingCartApp = combineReducers({
-    shoppingCart,
-    itemListing,
-    addFavorite
+    menuCart,
+    favCart
 });
 
 export default shoppingCartApp;

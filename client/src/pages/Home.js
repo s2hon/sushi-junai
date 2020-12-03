@@ -9,6 +9,7 @@ import Col from "../components/Col";
 import Image from "../components/Image";
 import Button from "../components/Button";
 
+
 function Home(props) {
     return (<>
         <Nav />
@@ -50,7 +51,7 @@ function Home(props) {
                 </Col>
             </Row>
             <Row>
-                <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} />
+                <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} width="100%" />
             </Row>
             <Col size={"md"} number={6}>
                 <Row><a href={"https://www.yelp.com/biz/sushi-junai-2-austin"}>
@@ -58,7 +59,7 @@ function Home(props) {
                 </a>
                 </Row>
                 <Row>
-                    <Link to={"/choice"}>
+                    <Link to={"/login"}>
                         <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
                     </Link>
                 </Row>
