@@ -22,13 +22,7 @@ function Buttongroup() {
             <ButtonGroup size="lg">
                 <Button btn={"btn btn-dark"} className="fifteen" function={handleFifteen}>15%
                 </Button>
-<<<<<<< HEAD
-                <Button className="eighteen" function={() => {
-
-                }}>18%
-=======
                 <Button btn={"btn btn-dark"} className="eighteen" function={handleEighteen}>18%
->>>>>>> 7ff6ef5bc21b687387ed49c1a23f147ea572f8ea
                 </Button>
                 <Button btn={"btn btn-dark"} className="twenty"function={handleTwenty}>20%
                 </Button>

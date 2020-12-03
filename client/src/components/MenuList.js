@@ -7,8 +7,8 @@ import menu from "../db/menu.json";
 import MenuItems from "./MenuItems"
 import Card from "./Card";
 import Button from "./Button";
-import { FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faFish } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faFish } from "@fortawesome/free-solid-svg-icons";
 
 
 function Menu(props) {
@@ -27,9 +27,6 @@ function Menu(props) {
     return (
         <>
         <Nav />
-        <div className="d-flex justify-content-between position-fixed">
-            <Counter />
-        </div>
         <h3>All-You-Can-Eat Menu</h3> 
             <Container>
                 <Row>
