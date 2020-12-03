@@ -1,54 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Nav from "../components/Nav";
-import Card from "../components/Card";
+import Nav from "../components/Nav/index";
+import Card from "../components/Card/index";
 import Container from "../components/Container";
 import Row from "../components/Row";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/index";
 import Col from "../components/Col";
 import Image from "../components/Image";
 import Button from "../components/Button";
-
+import data from "../db/store.json"
 
 function Home(props) {
     return (<>
         <Nav />
         <Container>
             <Row>
-                <Col size={"sm"} number={6}>
-                    <Card>
-                        <p>Sushi Junai 1</p>
-                        <p>1612 Lavaca St, Austin, TX 78701</p>
-                        <p>(512)322-2428</p>
-                        <p>
-                            <li>Monday 11AM–10PM</li>
-                            <li>Tuesday 11AM–10PM</li>
-                            <li>Wednesday 11AM–10PM</li>
-                            <li>Thursday 11AM–10PM</li>
-                            <li>Friday 11AM–10PM</li>
-                            <li>Saturday 11AM–10PM</li>
-                            <li>Sunday Closed</li>
-                        </p>
-                    </Card>
-                </Col>
-                <Col size={"sm"} number={6}>
-                    <Card>
-
-                        <p>Sushi Junai 2</p>
-                        <p>2500 W Parmer Ln #100, Austin, TX 78727</p>
-                        <p>(512)716-3922</p>
-                        <p>
-                            <li>Monday 11AM–10PM</li>
-                            <li>Tuesday	11AM–10PM</li>
-                            <li>Wednesday 11AM–10PM</li>
-                            <li>Thursday 11AM–10PM</li>
-                            <li>Friday 11AM–10PM</li>
-                            <li>Saturday 11AM–10:30PM</li>
-                            <li>Sunday 5–10PM</li>
-                        </p>
-
-                    </Card>
-                </Col>
+                {
+                    data.map((data, idx) => {
+                        return (
+                            <Col size={"sm"} number={6}>
+                                <Card key={idx} location={data.location} phone={data.phone} address={data.address}
+                                mon={data.mon} tue={data.tue} wed={data.tue} thu={data.thu} fri={data.fri} sat={data.sat} sun={data.sun}>
+                                </Card>
+                            </Col>
+                        )
+                    })
+                }
             </Row>
             <Row>
                 <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} width="100%" />

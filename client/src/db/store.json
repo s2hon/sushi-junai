@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "location": "Sushi Junai 1",
+        "phone": "(512)322-2428",
+        "address": "1612 Lavaca St, Austin, TX 78701",
+        "mon": "11AM–10PM",
+        "tue": "11AM–10PM",
+        "wed": "11AM–10PM",
+        "thu": "11AM–10PM",
+        "fri": "11AM–10PM",
+        "sat": "11AM–10PM",
+        "sun": "Closed"
+    },
+    {
+        "id": 2,
+        "location": "Sushi Junai 2",
+        "phone": "(512)716-3922",
+        "address": "2500 W Parmer Ln #100, Austin, TX 78727",
+        "mon": "11AM–10PM",
+        "tue": "11AM–10PM",
+        "wed": "11AM–10PM",
+        "thu": "11AM–10PM",
+        "fri": "11AM–10PM",
+        "sat": "11AM–10:30PM",
+        "sun": "5PM–10PM"
+    }
+]

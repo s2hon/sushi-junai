@@ -3,7 +3,7 @@ import React from "react";
 import Nav from "../components/Nav";
 import Container from "../components/Container";
 // import Row from "../components/Row";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/index";
 import Slider from "../components/Slider";
 // import Col from "../components/Col";
 // import Image from "../components/Image";

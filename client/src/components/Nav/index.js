@@ -50,7 +50,7 @@ function NavBar (props) {
                   <NavLink href="/alacarte">A La Carte</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/menu">Menu</NavLink>
+                  <NavLink href="/ayce">All You Can Eat</NavLink>
                 </NavItem>
                 <NavItem className={!state.userLoggedIn ? "hide": ""}>
                   <NavLink onClick={logout}>Logout</NavLink>
