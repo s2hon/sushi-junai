@@ -38,7 +38,7 @@ function NavBar (props) {
         <div>
           <Navbar color="light" light expand ="md">
             <NavbarBrand href="/">
-            <Image src={"../assets/logo.png"} alt={"sushi-junai logo"}/>
+            <Image src={"../assets/logo.png"} alt={"sushi-junai-logo"}/>
             </NavbarBrand>
             <NavbarToggler onClick={toggle}/>
             <Collapse isOpen={isOpen} navbar>
