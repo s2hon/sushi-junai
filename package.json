@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "6.11.1"}
+  ,
   "scripts": {
     "install": "cd client && npm install",
     "test": "npm run lint",
