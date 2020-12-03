@@ -1882,5 +1882,173 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    }
+	},
+	{
+		"name": "House Hot Sake",
+		"category": "sake",
+		"menu": "drinks",
+		"smallPrice": 3.5,
+		"largePrice": 5.95
+	},
+	{
+		"name": "Ozeki Karatamba, Honjozo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "Ozeki Karatamba has a full-bodied, rich taste that feels smooth on the palate",
+		"price": 14,
+		"category": "sake"
+	},
+	{
+		"name": "Ozeki Yamada Nishik, Tokubetsu Junmai",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "Ozeki Yamadanishiki tastes clean and refreshing with a dry aftertaste.",
+		"price": 14,
+		"category": "sake"
+	},
+	{
+		"name": "Joto One Cup \"Graffiti Cup\", Honjozo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "200 ml",
+		"description": "Light and fresh, notes of juicy green apple and watermelon",
+		"price": 7,
+		"category": "sake"
+	},
+	{
+		"name": "Joto Yuri Masamune Honjozo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "200 ml",
+		"description": "This sake has nutty and earthy notes and is balanced by an underlying fruitiness.",
+		"price": 9,
+		"category": "sake"
+	},
+	{
+		"name": "Ozeki Dry Sake, Junmai",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "750 ml",
+		"description": "This is an excellent choice for first time sake drinkers due to its lower alcohol content and smooth taste",
+		"price": 18,
+		"category": "sake"
+	},
+	{
+		"name": "Ozeki Nigori, Junmai Nigori",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "375 ml",
+		"description": "The texture is velvety smooth and soft and has a tropical flavor similar to coconut milk.",
+		"price": 12,
+		"category": "sake"
+	},
+	{
+		"name": "Sho Chiku Bai Nigori",
+		"subtitle": "cream sake",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "Coconut custard on the nose with pear and coconut.",
+		"price": 10,
+		"category": "sake"
+	},
+	{
+		"name": "Shirayuki Nama",
+		"subtitle": "fresh sake",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "A unique, light and fresh, easy to drink sake.",
+		"price": 11,
+		"category": "sake"
+	},
+	{
+		"name": "Shirayuki Junmai Gingo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "A great-tasting sake with a fruit aroma.",
+		"price": 16,
+		"category": "sake"
+	},
+	{
+		"name": "Estancia Chardonnay",
+		"origin": "California",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 22,
+		"category": "wine"
+	},
+	{
+		"name": "Chateau Ste Michelle Riesling",
+		"origin": "Washington",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 23,
+		"category": "wine"
+	},
+	{
+		"name": "Castle Rock Pinot Noir",
+		"origin": "California",
+		"menu": "drinks",
+		"glassPrice": 7,
+		"bottlePrice": 27,
+		"category": "wine"
+	},
+	{
+		"name": "Fall Creek Merlot",
+		"origin": "Texas",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 23,
+		"category": "wine"
+	},
+	{
+		"name": "Robert Mondavi Private Selection Cabernet",
+		"origin": "California",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 24,
+		"category": "wine"
+	},
+	{
+		"name": "Sapporo",
+		"size": "21 oz",
+		"menu": "drinks",
+		"price": 6.5,
+		"category": "beer"
+	},
+	{
+		"name": "Asahi",
+		"size": "22 oz",
+		"menu": "drinks",
+		"price": 6.5,
+		"category": "beer"
+	},
+	{
+		"name": "Kirin Inchban",
+		"size": "",
+		"menu": "drinks",
+		"price": 6.5,
+		"category": "beer"
+	},
+	{
+		"name": "",
+		"drinks": ["Pepsi", "Diet Pepsi", "Fanta", "Lemonade", "Sierra Mist", "Dr. Pepper", "Sweet Tea", "Unsweetened Tea"],
+		"menu": "drinks",
+		"price": 1.95,
+		"category": "soft drinks"
+	},
+	{
+		"name": "Hot or Iced Tea",
+		"menu": "drinks",
+		"price": 1.95,
+		"category": "soft drinks"
+	},
+	{
+		"name": "Hot Green Tea",
+		"menu": "drinks",
+		"price": 1.95,
+		"category": "soft drinks"
+	}
 ]
