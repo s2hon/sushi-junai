@@ -26,10 +26,10 @@ module.exports = function(app) {
 
   //this code will add the faorites
   app.post("/api/favorite", function(req, res) {
+    console.log(req.body);
     db.UserFavorites.create({
-      item: req.body.item,
-      category: req.body.category,
-      email: req.user.email
+      item: req.body.name,
+      category: req.body.category
     })
       .then(function(dbFavorite) {
         res.json(dbFavorite);
