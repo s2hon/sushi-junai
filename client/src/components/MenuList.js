@@ -23,7 +23,7 @@ function Menu(props) {
     const tempuraRolls = ayceMenu.filter(item => item.category === "Tempura Rolls");
     const bakedRolls = ayceMenu.filter(item => item.category === "Baked Rolls");
     const desserts = ayceMenu.filter(item => item.category === "Desserts");
-    
+    //eventually users will be able to favorite items straight from the menu (if logged-in) 
     return (
         <>
         <Nav />

@@ -4,12 +4,12 @@
 module.exports = function(sequelize, DataTypes) {
   var UserFavorites = sequelize.define("UserFavorites", {
     // The email cannot be null, and must be a proper email before creation
-    item: {
+    name: {
       type: DataTypes.STRING,
       unique: true      
     },
     email: {
-      type: Sequelize.STRING,
+      type: DataTypes.STRING,
       references: {
         model: 'Users',
         key: 'email'
