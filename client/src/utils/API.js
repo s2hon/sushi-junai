@@ -20,4 +20,5 @@ export default {
     addFavorite: () => {
         return axios.post("/api/favorite", item)
     }
+
 }
