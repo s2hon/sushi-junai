@@ -1,76 +1,80 @@
-import React from 'react'
-import {Link}  from 'react-router-dom'
-import Header from '../Header/index'
-import './style.css';
-import Row from '../Row'
+import React, {useState} from "react";
+import { useHistory } from "react-router-dom";
+import Image from "./../Image";
+import Counter from "../Counter"
+import { useStoreContext } from '../../utils/GlobalStore';
+import { AUTH_SET_LOGGED_OUT} from "../../utils/actions";
+//components from reactstrap
+import {
+  Collapse,
+  Navbar,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  NavbarToggler
+} from "reactstrap";
 
-const Nav = () => {
+
+import "./style.css";
+
+const NavBar = () => {
     const SubmitHandler = (e) =>{
         e.preventDefault()}
 
-  return(	
-	  <div className="middle-header header-style-3">
-      <Header/>
-        <div className="container">
-          <div className="header-content">
-            <div className="row">
-              <div className="col-lg-3 col-md-4 col-sm-4 col-4">
-              </div>
-              <div className="col-lg-8 d-lg-block d-none">
-                <nav>
-                  <ul>
-                    <li>
-                      <Link
-                        to="/"
-                        className={
-                          window.location.pathname === "/" || window.location.pathname === "/home"
-                            ? "nav-link active"
-                            : "nav-link"
-                        }
-                      >
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/alacarte"
-                        className={window.location.pathname === "/alacarte" ? "nav-link active" : "nav-link"}
-                      >
-                        A La Carte
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/ayce"
-                        className={window.location.pathname === "/ayce" ? "nav-link active" : "nav-link"}
-                      >
-                        AYCE
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/ordersummary"
-                        className={window.location.pathname === "/ordersummary" ? "nav-link active" : "nav-link"}
-                      >
-                        OrderSummary
-                      </Link>
-                    </li>
-                    <li>                              
-                      <Link
-                        to="/favorites"
-                        className={window.location.pathname === "/favorites" ? "nav-link active" : "nav-link"}
-                      >
-                        Favorites
-                      </Link>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-  )
-}
+    const [state, dispatch] = useStoreContext();
+    const history = useHistory();
+    //this controls the responsive navbar
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen)
 
-export default Nav;
+    //handles the logout
+    const logout = () => {
+      dispatch({
+        type: AUTH_SET_LOGGED_OUT
+      })
+      history.push("/")
+    }
+
+    return (
+        <div>
+          <Navbar color="light" light expand ="md">
+            <NavbarBrand href="/">
+            <Image src={"../assets/logo.png"} alt={"sushi-junai logo"}/>
+            </NavbarBrand>
+            <NavbarToggler onClick={toggle}/>
+            <Collapse isOpen={isOpen} navbar>
+              <Nav className="mr-auto" navbar>
+                <NavItem>
+                  <NavLink href="/">Home</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/alacarte">A La Carte</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/menu">Menu</NavLink>
+                </NavItem>
+                <NavItem className={!state.userLoggedIn ? "hide": ""}>
+                  <NavLink onClick={logout}>Logout</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/favorite">Favorites</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/ordersummary">Ordersummary</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/Login">Log-In</NavLink>
+                </NavItem>
+                <NavItem>
+                  <Counter />
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Navbar>
+        </div>
+      );
+    }
+    
+
+export default NavBar;

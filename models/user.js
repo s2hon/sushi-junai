@@ -31,5 +31,13 @@ module.exports = function(sequelize, DataTypes) {
       null
     );
   });
+
+  //here we will add a user.associate to connect to  favorites model 
+  User.associate = function(models) {
+    // Associating user with box models
+    User.hasMany(models.UserFavorites, {
+      onDelete: "cascade"
+    });
+  };
   return User;
 };

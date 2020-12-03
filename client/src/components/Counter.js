@@ -1,18 +1,38 @@
 import React, { useState, useEffect } from "react";
 
-
 function Counter() {
     const [count, setCount] = useState(7199);
     const [hour, setHour] = useState(0);
     const [minute, setMinute] = useState(0);
     const [seconds, setSeconds] = useState(0);
 
+    function saveTimer() {
+        localStorage.setItem("timer", count);
+    }
+
+    useEffect(() => {
+        const previousTimer = localStorage.getItem("timer");
+        if (previousTimer) {
+            setCount(previousTimer);
+        };
+    }, []);
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setCount(count - 1);
             setHour(Math.floor(count / 3600));
-            setMinute(Math.floor(Math.floor((count) - (Math.floor(count / 3600) * 3600)) / 60));
-            setSeconds(count % 60);
+            let minutes = Math.floor(Math.floor((count) - (Math.floor(count / 3600) * 3600)) / 60)
+            if (minutes < 10){
+                minutes = minutes.toString().padStart(2, "0");
+            }
+            setMinute(minutes);
+
+            let secondsRemaining = count % 60;
+            if (secondsRemaining < 10) {
+                secondsRemaining = secondsRemaining.toString().padStart(2, "0");
+            }
+            setSeconds(secondsRemaining);
+            saveTimer();
         }, 1000)
 
         if (count < 0) {
@@ -24,8 +44,7 @@ function Counter() {
     }, [count])
 
     return (
-        <div>{hour}:{minute}:{seconds}
-        </div>
+        <div>{hour}:{minute}:{seconds}</div>
     )
 }
 

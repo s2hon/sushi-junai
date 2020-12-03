@@ -23,7 +23,20 @@ function App() {
     return (
         <Provider store={store}>
             <Router itemListing = {store.getState()["itemListing"]}>
+<<<<<<< HEAD
                 <AllRoute/>
+=======
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/home" component={Home}/>
+                <Route exact path="/alacarte" component={Alacarte}/>
+                <Route exact path="/menu" component={AYCEMenu}/>
+                <Route exact path="/choice" component={Choice}/>
+                <Route exact path="/favorite" component={Favorite}/>
+                <Route exact path="/ordersummary" component={OrderSummary}/> 
+                <Route exact path="/Signup" component={Signup}/>            
+                <Route exact path="/rules" component={Rules}/>
+                <Route exact path="/login" component={Login}/>
+>>>>>>> ebf7870dbf8daf9fbfb7ccd33a36e68c0d728b9f
             </Router>
         </Provider>
     );
