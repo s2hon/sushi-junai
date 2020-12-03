@@ -9,7 +9,7 @@ function saveFave(itemName, itemCategory){
    //  const [state,dispatch] = useStoreContext.useStoreContext();
    //  const email = state.email;
    //  console.log("The user's email is"+email);
-   console.log("Youh are tryingto favorite" + itemName );
+   console.log("Youh are trying to favorite" + itemName );
     API.addFavorite({name:itemName, category:itemCategory}).
     then(res=> console.log(res)).
     catch(err => console.log(err));
