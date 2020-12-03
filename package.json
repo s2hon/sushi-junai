@@ -1,12 +1,12 @@
 {
-  "name": "1-passport-example",
+  "name": "sushi-junai",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "install": "cd client && npm install",
     "test": "npm run lint",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "node server.js",
     "start:dev": "concurrently \"nodemon server.js --ignore 'client/*'\" \"npm run client\"",
     "start:prod": "node server.js",
     "client": "cd client && npm start",
@@ -16,14 +16,20 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s2hon/sushi-junai.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/s2hon/sushi-junai#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
     "bcryptjs": "2.4.3",
+    "bootstrap": "^4.5.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.0",
     "express-session": "^1.16.1",
