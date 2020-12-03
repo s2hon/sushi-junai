@@ -12,7 +12,7 @@ const mapDispatchToProps = dispatch => {
         removeItem: id => {
             dispatch({})
         },
-        handleFavorite: id => {
+        handleFavorite: item => {
             dispatch({
                 type: 'ADD_FAV_ITEM',
                 payload: { item }

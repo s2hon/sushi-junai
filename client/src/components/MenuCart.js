@@ -5,7 +5,6 @@ import Nav from "./Nav";
 import Container from "./Container";
 import { Table } from 'reactstrap';
 import Row from './Row';
-import  ButtonGroup from './Buttongroup';
 import  TipCalculater from './TipCalculater';
 
 
@@ -46,7 +45,6 @@ const MenuCart = (props) => {
                     </tbody>
                 </thead>
             </Table>
-            <ButtonGroup/> 
         </Container>
         </>
     )}
