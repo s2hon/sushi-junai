@@ -5,8 +5,7 @@ import { Provider } from 'react-redux';
 import reducer from './reducer';
 import data from './db/menu.json';
 import {saveState} from "./localstorage";
-import SideBar from "./components/SideBar/index";
-import Content from "./Router/index2";
+import AllRouter from "./Router/index"
 
 const store = createStore(reducer);
 data.forEach((item) => store.dispatch({
@@ -25,10 +24,7 @@ function App() {
     return (
         <Provider store={store}>
             <Router>
-            <div className="App wrapper">
-                <SideBar toggle={toggleSidebar} isOpen={sidebarIsOpen} />
-                <Content toggleSidebar={toggleSidebar} sidebarIsOpen={sidebarIsOpen} />
-            </div>
+                <AllRouter />
             </Router>
         </Provider>
     );
