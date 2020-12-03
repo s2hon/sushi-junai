@@ -45,4 +45,19 @@ module.exports = function(app) {
     }
   });
 
+  //route for creating a new favorite entry in a user's db 
+  app.post("/api/favorite", function(req, res) {
+    console.log(req.body);
+    console.log(req.user);
+    db.UserFavorites.create({
+      name:req.name,
+      category: req.category,
+      UserId: req.user.id
+    })
+      .then(console.log("You have posted to userDB"))
+      .catch(function(err) {
+        res.status(401).json(err);
+      });
+  });
+
 };
