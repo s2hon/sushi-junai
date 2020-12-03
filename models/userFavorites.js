@@ -7,6 +7,13 @@ module.exports = function(sequelize, DataTypes) {
     item: {
       type: DataTypes.STRING,
       unique: true      
+    },
+    email: {
+      type: Sequelize.STRING,
+      references: {
+        model: 'Users',
+        key: 'email'
+      }
     }
   });
 
@@ -17,6 +24,9 @@ module.exports = function(sequelize, DataTypes) {
     // When an favorite is deleted. we will have to update the array 
     UserFavorites.belongsTo(models.User, {
     //   onDelete: "cascade"
+          foreignKey:{
+            allowNull: false
+          }
     });
   };
   return UserFavorites;
