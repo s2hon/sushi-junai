@@ -12,12 +12,8 @@ const Cart = (props) => {
     const { shoppingCart } = props
     const total = shoppingCart.reduce((acc, val) => acc + val.price, 0).toFixed(2);
     const count = shoppingCart.length;
-    // let tipFifteen = ".15";
-    // let tipTwenty = ".2";
-    // let tipEighteen= ".18";
-    // let totalTip = (total*tipFifteen)
 
-    if (count == 0) {
+    if (count === 0) {
         return (   
         <>
         <Nav />
@@ -30,21 +26,15 @@ const Cart = (props) => {
                     <th>Price</th>
                     </tr>
                     <tbody>
-                        <h3>Whatsabi? 0 items so far?
-                        <br/> 
-                        Go
+                        <h3>Your cart is empty</h3>
                         <Link
                             to="/menu"
                             className={window.location.pathname === "/menu" ? "nav-link active" : "nav-link"}
-                        >
-                        HERE
-                        </Link>
-                        and order ebi-thing with a dining staff! 
-                        <br/> Let's Roll!</h3>
+                        >Click to Order
+                        </Link> 
                     </tbody>
                 </thead>
             </Table>
-            <ButtonGroup/> 
         </Container>
         </>
     )}

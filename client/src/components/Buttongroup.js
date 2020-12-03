@@ -1,22 +1,30 @@
 import React from 'react';
-import { Button, ButtonGroup, ButtonToolbar } from 'reactstrap';
+import {ButtonGroup, ButtonToolbar } from 'reactstrap';
+import Button from "./Button";
 
-function Buttongroup(props) {
-
+function Buttongroup() {
+    
+    function handleFifteen(e){
+        e.preventDefault();
+    alert('15 was clicked.');
+        
+    }
+    function handleEighteen(e){
+        e.preventDefault();
+    alert('18 was clicked.');
+    }
+    function handleTwenty(e){
+        e.preventDefault();
+    alert('20 was clicked.');
+    }
     return (
         <ButtonToolbar>
             <ButtonGroup size="lg">
-                <Button className="fifteen" function={() => {
-
-                }}>15%
+                <Button btn={"btn btn-dark"} className="fifteen" function={handleFifteen}>15%
                 </Button>
-                <Button className="eighteen" function={() => {
-
-                }}>18%
+                <Button btn={"btn btn-dark"} className="eighteen" function={handleEighteen}>18%
                 </Button>
-                <Button className="twenty"function={() => {
-
-                }}>20%
+                <Button btn={"btn btn-dark"} className="twenty"function={handleTwenty}>20%
                 </Button>
             </ButtonGroup>
         </ButtonToolbar>
