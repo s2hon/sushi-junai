@@ -1,26 +1,34 @@
 import React from 'react';
-import { Button, ButtonGroup, ButtonToolbar } from 'reactstrap';
+import { ButtonGroup, ButtonToolbar } from 'reactstrap';
+import Button from "./Button";
 
 function Buttongroup(props) {
+
+    function handleFifteen(e) {
+        e.preventDefault();
+        props.setTipState({ percent: .15 });
+    }
+    function handleEighteen(e) {
+        e.preventDefault();
+        props.setTipState({ percent: .18 });
+    }
+    function handleTwenty(e) {
+        props.setTipState({ percent: .20 });
+    }
 
     return (
         <ButtonToolbar>
             <ButtonGroup size="lg">
-                <Button className="fifteen" function={() => {
-
-                }}>15%
+                <Button btn={"btn btn-dark"} className="fifteen" function={handleFifteen}>15%
                 </Button>
-                <Button className="eighteen" function={() => {
-
-                }}>18%
+                <Button btn={"btn btn-dark"} className="eighteen" function={handleEighteen}>18%
                 </Button>
-                <Button className="twenty"function={() => {
-
-                }}>20%
+                <Button btn={"btn btn-dark"} className="twenty" function={handleTwenty}>20%
                 </Button>
             </ButtonGroup>
         </ButtonToolbar>
     );
+
 }
 
 export default Buttongroup;

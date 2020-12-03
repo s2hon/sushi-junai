@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "./Nav";
-import Counter from "./Counter";
 import Container from "./Container";
 import Row from "./Row";
 import Footer from "./Footer";
@@ -8,8 +7,8 @@ import menu from "../db/menu.json";
 import MenuItems from "./MenuItems"
 import Card from "./Card";
 import Button from "./Button";
-import { FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faFish } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faFish } from "@fortawesome/free-solid-svg-icons";
 
 
 function Menu(props) {
@@ -43,9 +42,9 @@ function Menu(props) {
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
-                                        <Button btn={"float-right"} function={() => {
+                                        <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
-                                            >+</Button>
+                                            ></Button>
                                         
                                     </MenuItems>
                                     </div>
@@ -72,6 +71,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
+                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            ></Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -94,7 +96,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            ></Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -117,7 +121,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button icon ={"fa fa-plus"}btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            ></Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -140,7 +146,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            ></Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -158,7 +166,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={""} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            ></Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -181,7 +191,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            ></Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -204,7 +216,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            ></Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -227,7 +241,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                    <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            ></Button>
                                     </MenuItems>
                                 </Card>)
                             })
@@ -250,7 +266,9 @@ function Menu(props) {
                                 }
                                 return (<Card>
                                     <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                        <Button function={() => item.addItem(item.idx)}>+</Button>
+                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                            props.addItem(item)}}
+                                            ></Button>
                                     </MenuItems>
                                 </Card>)
                             })
