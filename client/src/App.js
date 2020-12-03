@@ -4,7 +4,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducer';
 import data from './db/menu.json';
-import {saveState, loadState} from "./localstorage";
+import {saveState} from "./localstorage";
 
 import Home from "./pages/Home";
 import Alacarte from "./pages/Alacarte";
@@ -17,20 +17,22 @@ import Rules from "./pages/Rules";
 import Login from "./pages/Login";
  
 
-const persistedState = loadState("shoppingCart");
-const store = createStore(reducer, {shoppingCart: persistedState});
+const store = createStore(reducer);
 data.forEach((item) => store.dispatch({
     "type" : "ADD_LISTING",
     "item" : item
 }));
-store.subscribe(() => saveState("shoppingCart", store.getState()["shoppingCart"]));
+store.subscribe(() => {
+    saveState("menuCart", store.getState().menuCart)
+    saveState("favCart", store.getState().favCart)
+});
 
 
 
 function App() {
     return (
         <Provider store={store}>
-            <Router itemListing = {store.getState()["itemListing"]}>
+            <Router>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/home" component={Home}/>
                 <Route exact path="/alacarte" component={Alacarte}/>
