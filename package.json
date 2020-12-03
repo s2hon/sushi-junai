@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "15.3.0"
+  },
   "scripts": {
     "install": "cd client && npm install",
     "test": "npm run lint",
@@ -30,6 +33,7 @@
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
+    "popper.js": "^1.16.1",
     "react-bootstrap": "^1.4.0",
     "react-fontawesome": "^1.7.1",
     "react-redux": "^7.2.2",

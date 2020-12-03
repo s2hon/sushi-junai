@@ -25,11 +25,11 @@ module.exports = function(app) {
   });
 
   //this code will add the faorites
-  app.post("/api/favorites", function(req, res) {
+  app.post("/api/favorite", function(req, res) {
+    console.log(req.body);
     db.UserFavorites.create({
-      item: req.body.item,
-      category: req.body.category,
-      email: req.user.email
+      item: req.body.name,
+      category: req.body.category
     })
       .then(function(dbFavorite) {
         res.json(dbFavorite);
@@ -39,7 +39,7 @@ module.exports = function(app) {
       });
   });
   //this code will retrieve the faorites
-  app.get("/api/favorites", function(req, res){
+  app.get("/api/favorite", function(req, res){
     db.UserFavorites.findAll({
       where: {
         email: req.user.email
@@ -68,6 +68,21 @@ module.exports = function(app) {
         id: req.user.id
       });
     }
+  });
+
+  //route for creating a new favorite entry in a user's db 
+  app.post("/api/favorite", function(req, res) {
+    console.log(req.body);
+    console.log(req.user);
+    db.UserFavorites.create({
+      name:req.name,
+      category: req.category,
+      UserId: req.user.id
+    })
+      .then(console.log("You have posted to userDB"))
+      .catch(function(err) {
+        res.status(401).json(err);
+      });
   });
 
 };
