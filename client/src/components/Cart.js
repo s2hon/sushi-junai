@@ -66,7 +66,7 @@ const Cart = (props) => {
                     <td>You just saved:</td>
                     <td>${(total-32.95).toFixed(2)}</td>
                     </tr>
-                    <TipCalculater td={"newtip"}/>
+                    <TipCalculater total={total} td={"newtip"}/>
                 </tbody>
             </Table>
         </Container>
