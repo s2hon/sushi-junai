@@ -34,6 +34,7 @@ function Login() {
             setShowError(true);
             setErrorMessage("An error occurred during login");
         })
+        // console.log(email)
     }
 
     return <div>

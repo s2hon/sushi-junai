@@ -13,6 +13,9 @@ export default {
     },
     logout: () => {
         return axios.get("/logout");
+    },
+    addFavorite: (item) => {
+        return axios.post("/api/favorite", item)
     }
 
 }
