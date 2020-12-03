@@ -7,7 +7,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -66,8 +66,8 @@
 		"price": 2.00,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -78,8 +78,8 @@
 		"price": 4.00,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -235,7 +235,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -306,8 +306,8 @@
 		"price": 3.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -319,7 +319,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -331,7 +331,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -342,8 +342,8 @@
 		"price": 6.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -354,7 +354,7 @@
 		"price": 6.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
@@ -366,8 +366,8 @@
 		"price": 2.00,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -414,8 +414,8 @@
 		"price": 1.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -439,7 +439,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -474,7 +474,7 @@
 		"price": 11.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
@@ -486,7 +486,7 @@
 		"price": 12.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
@@ -534,8 +534,8 @@
 		"price": 3.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -546,7 +546,7 @@
 		"price": 5.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -558,7 +558,7 @@
 		"price": 5.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -570,7 +570,7 @@
 		"price": 5.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -582,7 +582,7 @@
 		"price": 6.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -606,7 +606,7 @@
 		"price": 5.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
@@ -630,7 +630,7 @@
 		"price": 5.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -642,7 +642,7 @@
 		"price": 5.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -666,8 +666,8 @@
 		"price": 4.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -678,8 +678,8 @@
 		"price": 5.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -702,8 +702,8 @@
 		"price": 4.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -714,7 +714,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -726,7 +726,7 @@
 		"price": 4.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -774,7 +774,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -810,7 +810,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -834,7 +834,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -870,7 +870,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -882,7 +882,7 @@
 		"price": 6.95,
 		"menu": "ayce",
 		"onlyOrderOnce": true,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -930,7 +930,7 @@
 		"price": 3.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -942,7 +942,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -954,7 +954,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -990,7 +990,7 @@
 		"price": 3.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1002,7 +1002,7 @@
 		"price": 5.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1014,7 +1014,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1038,7 +1038,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1050,7 +1050,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1086,7 +1086,7 @@
 		"price": 8.95,
 		"menu": "ayce",
 		"onlyOrderOnce": true,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1350,7 +1350,7 @@
 		"price": 11.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1518,7 +1518,7 @@
 		"price": 12.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1882,5 +1882,293 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    }
+	},
+	{
+		"name": "House Hot Sake",
+		"category": "sake",
+		"menu": "drinks",
+		"smallPrice": 3.5,
+		"largePrice": 5.95
+	},
+	{
+		"name": "Ozeki Karatamba, Honjozo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "Ozeki Karatamba has a full-bodied, rich taste that feels smooth on the palate",
+		"price": 14,
+		"category": "sake"
+	},
+	{
+		"name": "Ozeki Yamada Nishik, Tokubetsu Junmai",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "Ozeki Yamadanishiki tastes clean and refreshing with a dry aftertaste.",
+		"price": 14,
+		"category": "sake"
+	},
+	{
+		"name": "Joto One Cup \"Graffiti Cup\", Honjozo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "200 ml",
+		"description": "Light and fresh, notes of juicy green apple and watermelon",
+		"price": 7,
+		"category": "sake"
+	},
+	{
+		"name": "Joto Yuri Masamune Honjozo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "200 ml",
+		"description": "This sake has nutty and earthy notes and is balanced by an underlying fruitiness.",
+		"price": 9,
+		"category": "sake"
+	},
+	{
+		"name": "Ozeki Dry Sake, Junmai",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "750 ml",
+		"description": "This is an excellent choice for first time sake drinkers due to its lower alcohol content and smooth taste",
+		"price": 18,
+		"category": "sake"
+	},
+	{
+		"name": "Ozeki Nigori, Junmai Nigori",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "375 ml",
+		"description": "The texture is velvety smooth and soft and has a tropical flavor similar to coconut milk.",
+		"price": 12,
+		"category": "sake"
+	},
+	{
+		"name": "Sho Chiku Bai Nigori",
+		"subtitle": "cream sake",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "Coconut custard on the nose with pear and coconut.",
+		"price": 10,
+		"category": "sake"
+	},
+	{
+		"name": "Shirayuki Nama",
+		"subtitle": "fresh sake",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "A unique, light and fresh, easy to drink sake.",
+		"price": 11,
+		"category": "sake"
+	},
+	{
+		"name": "Shirayuki Junmai Gingo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "A great-tasting sake with a fruit aroma.",
+		"price": 16,
+		"category": "sake"
+	},
+	{
+		"name": "Estancia Chardonnay",
+		"origin": "California",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 22,
+		"category": "wine"
+	},
+	{
+		"name": "Chateau Ste Michelle Riesling",
+		"origin": "Washington",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 23,
+		"category": "wine"
+	},
+	{
+		"name": "Castle Rock Pinot Noir",
+		"origin": "California",
+		"menu": "drinks",
+		"glassPrice": 7,
+		"bottlePrice": 27,
+		"category": "wine"
+	},
+	{
+		"name": "Fall Creek Merlot",
+		"origin": "Texas",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 23,
+		"category": "wine"
+	},
+	{
+		"name": "Robert Mondavi Private Selection Cabernet",
+		"origin": "California",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 24,
+		"category": "wine"
+	},
+	{
+		"name": "Sapporo",
+		"size": "21 oz",
+		"menu": "drinks",
+		"price": 6.5,
+		"category": "beer"
+	},
+	{
+		"name": "Asahi",
+		"size": "22 oz",
+		"menu": "drinks",
+		"price": 6.5,
+		"category": "beer"
+	},
+	{
+		"name": "Kirin Inchban",
+		"size": "",
+		"menu": "drinks",
+		"price": 6.5,
+		"category": "beer"
+	},
+	{
+		"name": "",
+		"drinks": ["Pepsi", "Diet Pepsi", "Fanta", "Lemonade", "Sierra Mist", "Dr. Pepper", "Sweet Tea", "Unsweetened Tea"],
+		"menu": "drinks",
+		"price": 1.95,
+		"category": "soft drinks"
+	},
+	{
+		"name": "Hot or Iced Tea",
+		"menu": "drinks",
+		"price": 1.95,
+		"category": "soft drinks"
+	},
+	{
+		"name": "Hot Green Tea",
+		"menu": "drinks",
+		"price": 1.95,
+		"category": "soft drinks"
+	},
+	{
+		"name": "Vegetable Ried Rice",
+		"description": "Fried rice mixed with egg and green onion",
+		"price": 6.95,
+		"menu": "lunch",
+		"category": "Lunch Special",
+		"fish": false
+	},
+	{
+		"name": "Chicken Fried Rice",
+		"description": "Chicken fried rice mixed with egg and green onion",
+		"price": 7.95,
+		"menu": "lunch",
+		"category": "Lunch Special",
+		"fish": false
+	},
+	{
+		"name": "Seafood Fried Rice",
+		"description": "Seafood fried rice mixed with egg and green onion",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "Lunch Special",
+		"fish": false
+	},
+	{
+		"name": "Sashimi Combo",
+		"description": "Six pieces of sashimi, four pieces Cali, four pieces spicy tuna, six pieces crunch",
+		"price": 12.5,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Texas Combo (A)",
+		"description": "Udon with four pieces Cali, four pieces spicy tuna, six pieces crunch",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Texas Combo (B)",
+		"description": "Udon with four pieces Cali, four pieces spicy tuna, five pieces sushi",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Texas Combo (C)",
+		"description": "Udon wiht five pieces of sushi and six pieces of crunch",
+		"price": "",
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Austin Combo (A)",
+		"description": "Spicy ramen with special roll",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Austin Combo (B)",
+		"description": "Spicy ramen with five pieces of sushi and four pieces of Cali",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Austin Combo (C)",
+		"description": "Spicy ramen with chicken teriyaki and rice",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": false
+	},
+	{
+		"name": "Chicken Teriyaki",
+		"description": "Grilled chicken with house teriyaki sauce",
+		"price": 8.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false
+	},
+	{
+		"name": "Tonkatsu",
+		"description": "Deep fried, breaded, tender pork cutlet",
+		"price": 8.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false
+	},
+	{
+		"name": "Chicken Katsu",
+		"description": "Deep fried, breaded chicken breast with house katsu sauce",
+		"price": 8.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false
+	},
+	{
+		"name": "Korea Bulgogi",
+		"description": "Stir fried seasoned beef with mixed vegetables",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false
+	},
+	{
+		"name": "Salmon Teriyaki",
+		"description": "Salmon teriyaki with house teriyaki sauce",
+		"price": 10.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false
+	}
 ]
