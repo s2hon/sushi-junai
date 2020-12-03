@@ -59,7 +59,7 @@ const MenuCart = (props) => {
                             <th scope="row"></th>
                             <td></td>
                             <td>Total Cost:</td>
-                            <td>${total}</td>
+                            <td>${total.toFixed(2)}</td>
                         </tr>
                         <tr>
                             <th scope="row"></th>
