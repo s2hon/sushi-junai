@@ -5,14 +5,16 @@ import { AUTH_SET_LOGGED_IN } from "../utils/actions";
 import { useStoreContext } from '../utils/GlobalStore';
 import Nav from "../components/Nav"
 
+
 function Login() {
+
     const [showError, setShowError] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
     const history = useHistory();
 
     const emailRef = useRef();
     const passwordRef = useRef();
-    const [, dispatch] = useStoreContext();
+    const [store, dispatch] = useStoreContext();
 
     const handleLogin = (event) => {
         event.preventDefault();
@@ -23,6 +25,7 @@ function Login() {
         API.login(loginData).then(response => {
             setShowError(false);
             const { email } = response.data;
+            //could set local storage w/ email here
             dispatch({
                 type: AUTH_SET_LOGGED_IN,
                 data: {

@@ -2,11 +2,13 @@
 // var bcrypt = require("bcryptjs");
 // Creating our User model
 module.exports = function(sequelize, DataTypes) {
-  var UserFavorites = sequelize.define("UserFavorites", {
+  var Favorites = sequelize.define("Favorites", {
     // The email cannot be null, and must be a proper email before creation
-    name: {
-      type: DataTypes.STRING,
-      unique: true      
+    item: {
+      type: DataTypes.STRING   
+    },
+    category: {
+      type: DataTypes.STRING
     },
     email: {
       type: DataTypes.STRING,
@@ -19,15 +21,15 @@ module.exports = function(sequelize, DataTypes) {
 
 
   //here we will add a user.associate to connect to  favorites model 
-  UserFavorites.associate = function(models) {
+  Favorites.associate = function(models) {
     // Associating user with favorites
     // When an favorite is deleted. we will have to update the array 
-    UserFavorites.belongsTo(models.User, {
+    Favorites.belongsTo(models.User, {
     //   onDelete: "cascade"
           foreignKey:{
             allowNull: false
           }
     });
   };
-  return UserFavorites;
+  return Favorites;
 };
