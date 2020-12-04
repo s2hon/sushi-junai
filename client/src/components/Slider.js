@@ -66,8 +66,10 @@ const Slider = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.rule} />
+        <img className="d-block w-100" src={item.src} alt={item.altText} />
+        <CarouselCaption captionText={item.caption} captionHeader={item.rule}>
+    </CarouselCaption>   
+    
       </CarouselItem>
     );
   });
@@ -77,6 +79,7 @@ function setTimer(e) {
 }
 
   return (<>
+  <h1>Please Read ALL rules before agreeing, or click "Al a Carte" to order individual sushi</h1>
     <Carousel
       activeIndex={activeIndex}
       next={next}
@@ -84,14 +87,14 @@ function setTimer(e) {
     >
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}  />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
-    <Link to={"/ayce"}>
-      <Button type={"button"} btn={"btn btn-dark"} function ={setTimer}>I agree</Button>
-    </Link>
     <Link to={"/alacarte"}>
       <Button type={"button"} btn={"btn btn-dark"}>Al A Carte</Button>
+    </Link>
+    <Link to={"/ayce"}>
+      <Button type={"button"} btn={"btn btn-dark"} function ={setTimer}>I agree</Button>
     </Link>
   </>
   );
