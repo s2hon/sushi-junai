@@ -41,10 +41,9 @@ function Home(props) {
                         <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
                     </Link>
                 </Row>
-                <Row>
-                    <Link to={"/alacarte"}>
+                <Row><a href={"https://www.yelp.com/order/v2/cart/954de1b27f3ee7705f2ca2d2c8336670"}>
                         <Button type={"button"} btn={"btn btn-dark"}>Carry Out</Button>
-                    </Link>
+                        </a>
                 </Row>
             </Col>
         </Container>

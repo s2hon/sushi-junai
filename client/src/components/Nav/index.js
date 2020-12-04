@@ -110,7 +110,7 @@ export default class Nav extends Component {
                             <a href="https://www.yelp.com/biz/sushi-junai-2-austin">Reservations</a>
                         </li>
                         <li>
-                            <a href="https://www.yelp.com/biz/sushi-junai-2-austin">Order Online</a>
+                            <a href="https://www.yelp.com/order/v2/cart/954de1b27f3ee7705f2ca2d2c8336670">Order Online</a>
                         </li>
 
                         
