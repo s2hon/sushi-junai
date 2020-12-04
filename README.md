@@ -46,15 +46,34 @@ https://sushi-junai.herokuapp.com/
 
 ## Contributors
 This project exists thanks to all the people who contributed.
+
+
 * Staci 
+
+
 Follow me on GitHub: <a href="https://github.com/s2hon" target="_blank">![GitHub followers](https://img.shields.io/github/followers/s2hon?label=s2hon&style=social)</a></br>
+
 * Michelle 
+
+
 Follow me on GitHub: <a href="https://github.com/Moon-Ingenium/" target="_blank">![GitHub followers](https://img.shields.io/github/followers/Moon-Ingenium?label=Moon-Ingenium&style=social)</a></br>
+
+
 * Christina
+
+
 Follow me on GitHub: <a href="https://github.com/christinakerr/" target="_blank">![GitHub followers](https://img.shields.io/github/followers/christinakerr?label=christinakerr&style=social)</a></br>
+
+
 * Aminadab
+
+
 Follow me on GitHub: <a href="https://github.com/aminadabm93/" target="_blank">![GitHub followers](https://img.shields.io/github/followers/aminadabm93?label=aminadabm93&style=social)</a></br>
+
+
 * Raunel
+
+
 Follow me on GitHub: <a href="https://github.com/26rsuarez/" target="_blank">![GitHub followers](https://img.shields.io/github/followers/26rsuarez?label=26rsuarez&style=social)</a></br>
 
 ## Questions
