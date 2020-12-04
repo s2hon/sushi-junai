@@ -15,6 +15,7 @@ import Signup from "./pages/Signup";
 import Choice from "./pages/Choice";
 import Rules from "./pages/Rules";
 import Login from "./pages/Login";
+import Nav from "./components/Nav";
  
 
 const store = createStore(reducer);
@@ -33,6 +34,7 @@ function App() {
     return (
         <Provider store={store}>
             <Router>
+                <Nav/>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/home" component={Home}/>
                 <Route exact path="/alacarte" component={Alacarte}/>

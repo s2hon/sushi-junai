@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Nav from "../components/Nav";
 import Card from "../components/Card";
 import Container from "../components/Container";
 import Row from "../components/Row";
@@ -15,7 +14,6 @@ function Home(props) {
     const [state] = useStoreContext();
 
     return (<>
-        <Nav />
         <Container>
             <Row>
                 <Col size={"sm"} number={6}>

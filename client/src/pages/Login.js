@@ -3,7 +3,6 @@ import { Link, useHistory } from "react-router-dom";
 import API from "../utils/API";
 import { AUTH_SET_LOGGED_IN } from "../utils/actions";
 import { useStoreContext } from '../utils/GlobalStore';
-import Nav from "../components/Nav"
 
 function Login() {
     const [showError, setShowError] = useState(false);
@@ -38,7 +37,6 @@ function Login() {
     }
 
     return <div>
-        <Nav/>
         <div className="container">
             <div className="row">
                 <div className="col-md-6 col-md-offset-3">
