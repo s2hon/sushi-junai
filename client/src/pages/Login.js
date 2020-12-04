@@ -63,6 +63,9 @@ function Login() {
             <div className="row">
                 <p>Don't have an account? <Link to="/signup">Become a part of the Junai Fam</Link> </p>
             </div>           
+            <div className="row">
+                <p><Link to="/rules">Or continue as guest</Link> </p>
+            </div>           
         </div>
     </React.Fragment>
     )
