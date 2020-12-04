@@ -1,12 +1,10 @@
 import React from "react";
-import Nav from "./Nav";
-import Container from "./Container";
-import Row from "./Row";
-import Footer from "./Footer";
-import menu from "../db/menu.json";
-import MenuItems from "./MenuItems"
-import Card from "./Card";
-import Button from "./Button";
+import Container from "../Container";
+import Row from "../Row";
+import menu from "../../db/menu.json";
+import MenuItems from "../MenuItems";
+import MenuNav from "../MenuNav/index"
+import Button from "../Button";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faFish } from "@fortawesome/free-solid-svg-icons";
 
@@ -26,7 +24,7 @@ function Menu(props) {
     //eventually users will be able to favorite items straight from the menu (if logged-in) 
     return (
         <>
-        <Nav />
+        <MenuNav />
         <h3>All-You-Can-Eat Menu</h3> 
             <Container>
                 <Row>
@@ -45,7 +43,6 @@ function Menu(props) {
                                         <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
-                                        
                                     </MenuItems>
                                     </div>
                                 </div>
@@ -64,18 +61,17 @@ function Menu(props) {
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
                                 }
-
-                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
-                                if (item.fish) {
-                                    fishClass = "fa fa-fish";
-                                }
-                                return (<Card>
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                return (
+                                <div className="card text-center">
+                                    <div className="card-body d-flex justify-content-between">
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                        <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
                                     </MenuItems>
-                                </Card>)
+                                    </div>
+                                </div>
+                                )
                             })
                         }
                     </Container>
@@ -89,18 +85,17 @@ function Menu(props) {
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
                                 }
-
-                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
-                                if (item.fish) {
-                                    fishClass = "fa fa-fish";
-                                }
-                                return (<Card>
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                return (
+                                <div className="card text-center">
+                                    <div className="card-body d-flex justify-content-between">
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                        <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
                                     </MenuItems>
-                                </Card>)
+                                    </div>
+                                </div>
+                                )
                             })
                         }
                     </Container>
@@ -114,18 +109,17 @@ function Menu(props) {
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
                                 }
-
-                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
-                                if (item.fish) {
-                                    fishClass = "fa fa-fish";
-                                }
-                                return (<Card>
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                    <Button icon ={"fa fa-plus"}btn={"float-right"} function={() => {
+                                return (
+                                <div className="card text-center">
+                                    <div className="card-body d-flex justify-content-between">
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                        <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
                                     </MenuItems>
-                                </Card>)
+                                    </div>
+                                </div>
+                                )
                             })
                         }
                     </Container>
@@ -139,18 +133,17 @@ function Menu(props) {
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
                                 }
-
-                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
-                                if (item.fish) {
-                                    fishClass = "fa fa-fish";
-                                }
-                                return (<Card>
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                return (
+                                <div className="card text-center">
+                                    <div className="card-body d-flex justify-content-between">
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                        <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
                                     </MenuItems>
-                                </Card>)
+                                    </div>
+                                </div>
+                                )
                             })
                         }
                     </Container>
@@ -164,13 +157,17 @@ function Menu(props) {
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
                                 }
-                                return (<Card>
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={""} oncePerOrder={oncePerOrder}>
-                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                return (
+                                <div className="card text-center">
+                                    <div className="card-body d-flex justify-content-between">
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                        <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
                                     </MenuItems>
-                                </Card>)
+                                    </div>
+                                </div>
+                                )
                             })
                         }
                     </Container>
@@ -184,18 +181,17 @@ function Menu(props) {
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
                                 }
-
-                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
-                                if (item.fish) {
-                                    fishClass = "fa fa-fish";
-                                }
-                                return (<Card>
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                return (
+                                <div className="card text-center">
+                                    <div className="card-body d-flex justify-content-between">
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                        <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
                                     </MenuItems>
-                                </Card>)
+                                    </div>
+                                </div>
+                                )
                             })
                         }
                     </Container>
@@ -209,18 +205,17 @@ function Menu(props) {
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
                                 }
-
-                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
-                                if (item.fish) {
-                                    fishClass = "fa fa-fish";
-                                }
-                                return (<Card>
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                return (
+                                <div className="card text-center">
+                                    <div className="card-body d-flex justify-content-between">
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                        <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
                                     </MenuItems>
-                                </Card>)
+                                    </div>
+                                </div>
+                                )
                             })
                         }
                     </Container>
@@ -234,18 +229,17 @@ function Menu(props) {
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
                                 }
-
-                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
-                                if (item.fish) {
-                                    fishClass = "fa fa-fish";
-                                }
-                                return (<Card>
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                return (
+                                <div className="card text-center">
+                                    <div className="card-body d-flex justify-content-between">
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                        <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
                                     </MenuItems>
-                                </Card>)
+                                    </div>
+                                </div>
+                                )
                             })
                         }
                     </Container>
@@ -259,28 +253,28 @@ function Menu(props) {
                                 if (item.onlyOrderOnce) {
                                     oncePerOrder = "red";
                                 }
-
-                                let fishClass = ""; // Add fish icon to items with raw or undercooked fish
-                                if (item.fish) {
-                                    fishClass = "fa fa-fish";
-                                }
-                                return (<Card>
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={fishClass} oncePerOrder={oncePerOrder}>
-                                    <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
+                                return (
+                                <div className="card text-center">
+                                    <div className="card-body d-flex justify-content-between">
+                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                        <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
                                     </MenuItems>
-                                </Card>)
+                                    </div>
+                                </div>
+                                )
                             })
                         }
                     </Container>
                 </Row>
                 <Row>
-                    <h5><i className="fa fa-fish"></i> Raw Fish</h5>
-                    <p>Consuming raw or undercooked fish increases the risk of food bourne diseases, especially in people with certain health conditions.</p>
+                    <h5 id="rawfish">Raw Fish <i className="fa fa-fish"></i></h5>
+                    <Container>
+                        <p>Consuming raw or undercooked fish increases the risk of food bourne diseases, especially in people with certain health conditions.</p>
+                    </Container>
                 </Row>
                 </Container>
-                <Footer />
         </>
     );
 }

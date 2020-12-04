@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'reactstrap';
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import API from '../utils/API';
+import API from '../../utils/API';
 
 function saveFave(itemName, itemCategory){
     //save email from store
