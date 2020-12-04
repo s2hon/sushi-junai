@@ -5,6 +5,7 @@ import Container from "../Container";
 import { Table } from 'reactstrap';
 import Row from '../Row';
 import TipCalculater from '../TipCalculater';
+import Button from '../Button';
 
 
 const MenuCart = (props) => {
@@ -52,6 +53,9 @@ const MenuCart = (props) => {
                     </thead>
                     <tbody>
                         {menuCart.map((item, idx) => <MenuCartItem key={idx} item={item} removeItem={props.removeItem} />)}
+                        <tr>
+                            <Button type={"button"} btn={"btn btn-dark"}>Submit Order to Server</Button>
+                        </tr>
                         <tr>
                             <th scope="row"></th>
                             <td></td>
