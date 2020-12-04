@@ -73,7 +73,7 @@ const Slider = (props) => {
   });
 function setTimer(e) {
     localStorage.setItem("timer", 7199);
-    localStorage.setItem("date", moment().format('MMMM Do YYYY, h:mm:ss a'));
+    localStorage.setItem("date", moment().format('MMMM Do YYYY'));
 }
 
   return (<>
