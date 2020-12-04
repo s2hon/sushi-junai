@@ -70,6 +70,9 @@ const Slider = (props) => {
       </CarouselItem>
     );
   });
+function setTimer(e) {
+    localStorage.setItem("timer", 7199);
+}
 
   return (<>
     <Carousel
@@ -83,7 +86,7 @@ const Slider = (props) => {
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
     <Link to={"/ayce"}>
-      <Button type={"button"} btn={"btn btn-dark"}>I agree</Button>
+      <Button type={"button"} btn={"btn btn-dark"} function ={setTimer}>I agree</Button>
     </Link>
     <Link to={"/alacarte"}>
       <Button type={"button"} btn={"btn btn-dark"}>Al A Carte</Button>

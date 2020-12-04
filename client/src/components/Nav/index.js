@@ -3,7 +3,6 @@ import { Collapse, CardBody, Card } from 'reactstrap';
 import { Link } from 'react-router-dom'
 import './style.css';
 import Image from "./../Image";
-
 const menus = [
     {
         id: 1,

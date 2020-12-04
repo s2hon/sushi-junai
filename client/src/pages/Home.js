@@ -32,7 +32,7 @@ function Home(props) {
                 <Image src={"./assets/rest-img.JPG"} alt={"picture of sushi with drinks in background"} width="100%" />
             </Row>
             <Col size={"md"} number={6}>
-                <Row><a href={"https://www.yelp.com/biz/sushi-junai-2-austin"}>
+                <Row><a href={"https://www.yelp.com/biz/sushi-junai-austin"}>
                     <Button type={"button"} btn={"btn btn-dark"}>Reservations</Button>
                 </a>
                 </Row>
