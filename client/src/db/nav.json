@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "title": "Home",
+        "link": "/home"
+    },
+    {
+        "id": 2,
+            "title": "Menu",
+            "link": "/menu"
+    },
+    {
+        "id": 3,
+            "title": "Dine-in",
+            "link": "/dinein"
+    },
+    {
+        "id": 4,
+            "title": "Order Summary",
+            "link": "/ordersummary"
+    },
+    {
+        "id": 5,
+            "title": "Favorite",
+            "link": "/favorite"
+
+    }
+]

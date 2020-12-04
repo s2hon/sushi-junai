@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
+import moment from 'moment';
 
 import {
   Carousel,
@@ -65,13 +66,20 @@ const Slider = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.rule} />
+        <img className="d-block w-100" src={item.src} alt={item.altText} />
+        <CarouselCaption captionText={item.caption} captionHeader={item.rule}>
+    </CarouselCaption>   
+    
       </CarouselItem>
     );
   });
+function setTimer(e) {
+    localStorage.setItem("timer", 7199);
+    localStorage.setItem("date", moment().format('MMMM Do YYYY'));
+}
 
   return (<>
+  <h1>Please Read ALL rules before agreeing, or click "Al a Carte" to order individual sushi</h1>
     <Carousel
       activeIndex={activeIndex}
       next={next}
@@ -79,14 +87,14 @@ const Slider = (props) => {
     >
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}  />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
-    <Link to={"/menu"}>
-      <Button type={"button"} btn={"btn btn-dark"}>I agree</Button>
-    </Link>
     <Link to={"/alacarte"}>
       <Button type={"button"} btn={"btn btn-dark"}>Al A Carte</Button>
+    </Link>
+    <Link to={"/ayce"}>
+      <Button type={"button"} btn={"btn btn-dark"} function ={setTimer}>I agree</Button>
     </Link>
   </>
   );

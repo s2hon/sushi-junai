@@ -1,78 +1,79 @@
-import React, {useState} from "react";
-import { useHistory } from "react-router-dom";
+import React, { Component } from 'react'
+import { Collapse, CardBody, Card } from 'reactstrap';
+import { Link } from 'react-router-dom'
+import './style.css';
 import Image from "./../Image";
-import Counter from "../Counter"
-import { useStoreContext } from '../../utils/GlobalStore';
-import { AUTH_SET_LOGGED_OUT} from "../../utils/actions";
-//components from reactstrap
-import {
-  Collapse,
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarToggler
-} from "reactstrap";
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import menus from "../../db/nav.json";
 
 
-import "./style.css";
+export default class Nav extends Component {
 
-
-function NavBar (props) {
-    const [state, dispatch] = useStoreContext();
-    const history = useHistory();
-    //this controls the responsive navbar
-    const [isOpen, setIsOpen] = useState(false);
-    const toggle = () => setIsOpen(!isOpen)
-
-    //handles the logout
-    const logout = () => {
-      dispatch({
-        type: AUTH_SET_LOGGED_OUT
-      })
-      history.push("/")
+    state = {
+        isMenuShow: false,
+        isOpen: 0,
     }
 
-    return (
-        <div>
-          <Navbar color="light" light expand ="md">
-            <NavbarBrand href="/">
-            <Image src={"../assets/logo.png"} alt={"sushi-junai logo"}/>
-            </NavbarBrand>
-            <NavbarToggler onClick={toggle}/>
-            <Collapse isOpen={isOpen} navbar>
-              <Nav className="mr-auto" navbar>
-                <NavItem>
-                  <NavLink href="/">Home</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/alacarte">A La Carte</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/menu">Menu</NavLink>
-                </NavItem>
-                <NavItem className={!state.userLoggedIn ? "hide": ""}>
-                  <NavLink onClick={logout}>Logout</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/favorite">Favorites</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/ordersummary">Ordersummary</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/Login">Log-In</NavLink>
-                </NavItem>
-                <NavItem>
-                  <Counter />
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Navbar>
-        </div>
-      );
+    menuHandler = () => {
+        this.setState({
+            isMenuShow: !this.state.isMenuShow
+        })
     }
-    
 
-export default NavBar;
+    setIsOpen = id => () => {
+        this.setState({
+            isOpen: id === this.state.isOpen ? 0 : id
+        })
+    }
+
+    render() {
+
+        const { isMenuShow, isOpen } = this.state;
+
+        return (
+            <div>
+                <div className={`sidebar ${isMenuShow ? 'show' : ''}`}>
+                    <ul className="navlist">
+                        {menus.map(item => {
+                            return (
+                                <li key={item.id}>
+                                    {item.submenu ? <p onClick={this.setIsOpen(item.id)}>
+                                        {item.title}
+                                        {item.submenu ? <i className="fa fa-angle-right" aria-hidden="true"></i> : ''}
+                                    </p> : <Link to={item.link} onClick={this.menuHandler}>{item.title}</Link>}
+                                    {item.submenu ?
+                                    <Collapse isOpen={item.id === isOpen}>
+                                        <Card>
+                                            <CardBody>
+                                                <ul>
+                                                    {item.submenu.map(submenu => (
+                                                        <li key={submenu.id}><Link className="active" to={submenu.link} onClick={this.menuHandler}>{submenu.title}</Link></li>
+                                                    ))}
+                                                </ul>
+                                            </CardBody>
+                                        </Card>
+                                    </Collapse>
+                                    : ''}
+                                </li>
+                            )
+                        })}
+
+                        <li>
+                            <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-2-austin">Reservations</a>
+                        </li>
+                        <li>
+                            <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-2-austin">Order Online</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div className="navbtn" onClick={this.menuHandler}>
+                    <Image src={"../assets/sushi.png"} alt={"kawaii-sake"} width="100%"/>
+                    <FontAwesomeIcon icon={faBars} />
+                </div>
+            </div>
+        )
+    }
+}

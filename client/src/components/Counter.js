@@ -1,21 +1,12 @@
 import React, { useState, useEffect } from "react";
+import moment from 'moment';
+import AlertBox from "../components/AlertBox";
 
 function Counter() {
-    const [count, setCount] = useState(7199);
-    const [hour, setHour] = useState(0);
-    const [minute, setMinute] = useState(0);
-    const [seconds, setSeconds] = useState(0);
-
-    function saveTimer() {
-        localStorage.setItem("timer", count);
-    }
-
-    useEffect(() => {
-        const previousTimer = localStorage.getItem("timer");
-        if (previousTimer) {
-            setCount(previousTimer);
-        };
-    }, []);
+    const [count, setCount] = useState(localStorage.getItem("timer"));
+    const [hour, setHour] = useState();
+    const [minute, setMinute] = useState();
+    const [seconds, setSeconds] = useState();
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -32,19 +23,25 @@ function Counter() {
                 secondsRemaining = secondsRemaining.toString().padStart(2, "0");
             }
             setSeconds(secondsRemaining);
-            saveTimer();
+            if (localStorage.getItem("timer")) {
+                localStorage.setItem("timer", count);
+            }
+            else if (localStorage.getItem("date") !== moment().format('MMMM Do YYYY')) {
+                localStorage.setItem("timer", count);
+            }
         }, 1000)
 
         if (count < 0) {
             clearTimeout(timer);
+            <AlertBox> text={"All you can eat has ended!"} </AlertBox>
         }
-        else if (count < 0) {
-            alert("All you can eat has ended!");
+
+        return function cleanup(){
+            clearTimeout(timer)
         }
     }, [count])
-
     return (
-        <div>{hour}:{minute}:{seconds}</div>
+        <div>{hour}:{minute}:{seconds} </div>
     )
 }
 

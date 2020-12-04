@@ -7,9 +7,10 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Pang",
@@ -66,10 +67,11 @@
 		"price": 2.00,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Spicy Garlic Edamame",
@@ -78,10 +80,11 @@
 		"price": 4.00,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Screaming \"O\" (3/8 pcs)",
@@ -93,7 +96,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"aLaCarte": true
     },
     {
         "name": "White \"O\" (3/8 pcs)",
@@ -105,7 +109,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"aLaCarte": true
     },
     {
         "name": "Tuna Poki",
@@ -117,7 +122,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"aLaCarte": true
     },
     {
         "name": "Salmon Poki",
@@ -129,7 +135,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"aLaCarte": true
     },
     {
         "name": "Shrimp Tempura (2/5 pcs)",
@@ -141,7 +148,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Vegetable Tempura (2/5 pcs)",
@@ -153,7 +161,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Mixed Tempura (2 shrimp and 3 veggie)",
@@ -165,7 +174,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Calamari Tempura",
@@ -177,7 +187,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Creamy Shrimp (2/4 pcs)",
@@ -189,7 +200,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Kurobuta Sausage (2/4 pcs)",
@@ -225,7 +237,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Spring Roll (2/4 pcs)",
@@ -235,9 +248,10 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Dynamite",
@@ -249,7 +263,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Mushroom Cap (2/4 pcs)",
@@ -261,7 +276,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Monkey Brain (2/4 pcs)",
@@ -285,7 +301,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"aLaCarte": true
     },
     {
         "name": "House Crab Salad",
@@ -297,7 +314,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Cucumber Salad",
@@ -306,10 +324,11 @@
 		"price": 3.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Seaweed Salad",
@@ -319,9 +338,10 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Spicy Asian Salad",
@@ -331,9 +351,10 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Avocado Salad",
@@ -342,10 +363,11 @@
 		"price": 6.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Salmon Skin Salad",
@@ -354,10 +376,11 @@
 		"price": 6.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Miso Soup",
@@ -366,10 +389,11 @@
 		"price": 2.00,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Kake Udon",
@@ -381,7 +405,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Tempura Udon",
@@ -393,7 +418,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Spicy Ramen",
@@ -405,7 +431,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Steam Rice",
@@ -414,14 +441,14 @@
 		"price": 1.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
+		"glutenFree": true,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
     {
         "name": "Mixed Fish Rice",
-        "description": "Rice mixed with assorted fish, vegetables, and spicy sauce",
+        "description": "Rice mixed with assorted fish, vegetables, and inhouse made spicy sauce",
 		"category": "Rice",
 		"price": 13.95,
 		"menu": "ayce",
@@ -439,7 +466,7 @@
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
     },
@@ -474,7 +501,7 @@
 		"price": 11.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
@@ -486,7 +513,7 @@
 		"price": 12.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
@@ -515,9 +542,9 @@
 		"vegan": false,
 		"fish": false
     },
-    {
-        "name": "California Roll",
-        "description": "",
+	{
+		"name": "California Roll",
+		"description": "Imitation crab, cucumber, avocado wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 4.95,
 		"menu": "ayce",
@@ -526,58 +553,58 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Cucumber Roll",
-        "description": "",
+	},
+	{
+		"name": "Cucumber Roll",
+		"description": "Fresh cucumber wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 3.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Tuna Roll",
-        "description": "",
+	},
+	{
+		"name": "Tuna Roll",
+		"description": "Fresh Ahi tuna wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 5.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Salmon Roll",
-        "description": "",
+	},
+	{
+		"name": "Salmon Roll",
+		"description": "Fresh salmon wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 5.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Yellowtail Roll",
-        "description": "",
+	},
+	{
+		"name": "Yellowtail Roll",
+		"description": "Yellowtail wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 5.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Philadelphia Roll",
-        "description": "",
+	},
+	{
+		"name": "Philadelphia Roll",
+		"description": "Fresh salmon, cream cheese, avocado wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 6.50,
 		"menu": "ayce",
@@ -586,10 +613,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Eel Roll",
-        "description": "",
+	},
+	{
+		"name": "Eel Roll",
+		"description": "Grilled eel with cucumber wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 6.50,
 		"menu": "ayce",
@@ -598,10 +625,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Salmon Skin Roll",
-        "description": "",
+	},
+	{
+		"name": "Salmon Skin Roll",
+		"description": "Grilled salmon skin with vegetables wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 5.50,
 		"menu": "ayce",
@@ -609,11 +636,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
-    },
-    {
-        "name": "Crab Stick Roll",
-        "description": "",
+		"fish": true
+	},
+	{
+		"name": "Crab Stick Roll",
+		"description": "Imitation crab wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 4.95,
 		"menu": "ayce",
@@ -622,10 +649,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Spicy Tuna Roll",
-        "description": "",
+	},
+	{
+		"name": "Spicy Tuna Roll",
+		"description": "Ahi tuna tossed in house special spicy sauce wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 5.95,
 		"menu": "ayce",
@@ -634,10 +661,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Spicy Salmon Roll",
-        "description": "",
+	},
+	{
+		"name": "Spicy Salmon Roll",
+		"description": "Fresh salmon tossed in house special spicy sauce wrapped in sushi rice and seaweed paper ",
 		"category": "Classic Roll/Hand Roll",
 		"price": 5.95,
 		"menu": "ayce",
@@ -646,10 +673,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Spicy Crab Roll",
-        "description": "",
+	},
+	{
+		"name": "Spicy Crab Roll",
+		"description": "Imitation crab tossed in house special spicy sauce wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 5.95,
 		"menu": "ayce",
@@ -658,34 +685,34 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Asparagus Roll",
-        "description": "",
+	},
+	{
+		"name": "Asparagus Roll",
+		"description": "Deep fried asparagus wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 4.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
+		"glutenFree": true,
+		"vegetarian": true,
+		"vegan": true,
 		"fish": false
-    },
-    {
-        "name": "Vegetable Roll",
-        "description": "",
+	},
+	{
+		"name": "Vegetable Roll",
+		"description": "Mixed fresh vegetables wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 5.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": false,
-		"vegetarian": false,
+		"vegetarian": true,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Yum Yum Roll",
-        "description": "",
+	},
+	{
+		"name": "Yum Yum Roll",
+		"description": "Scallop tossed in spicy house special sauce wrapped in sushi rice and seaweed paper, balanced out with sweet mayo",
 		"category": "Classic Roll/Hand Roll",
 		"price": 6.50,
 		"menu": "ayce",
@@ -694,22 +721,70 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Avocado Roll",
-        "description": "",
+	},
+	{
+		"name": "Avocado Roll",
+		"description": "Avocado wrapped in sushi rice and seaweed paper",
 		"category": "Classic Roll/Hand Roll",
 		"price": 4.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
+		"glutenFree": true,
+		"vegetarian": true,
+		"vegan": true,
 		"fish": false
-    },
-    {
-        "name": "Salmon (Sake)",
-        "description": "",
+	},
+	{
+		"name": "Salmon (Sake)",
+		"description": "Wild caught king Salmon",
+		"category": "Sushi",
+		"price": 4.50,
+		"menu": "ayce",
+		"onlyOrderOnce": false,
+		"glutenFree": true,
+		"vegetarian": false,
+		"vegan": false,
+		"fish": true
+	},
+	{
+		"name": "Salmon Belly (Sake toro)",
+		"description": "Fattier cut of king salmon *limited quantity*",
+		"category": "Sushi",
+		"price": 4.95,
+		"menu": "ayce",
+		"onlyOrderOnce": false,
+		"glutenFree": true,
+		"vegetarian": false,
+		"vegan": false,
+		"fish": true
+	},
+	{
+		"name": "Garlic Salmon",
+		"description": "King salmon drizzled with garlic ponzu sauce",
+		"category": "Sushi",
+		"price": 4.95,
+		"menu": "ayce",
+		"onlyOrderOnce": false,
+		"glutenFree": false,
+		"vegetarian": false,
+		"vegan": false,
+		"fish": true
+	},
+	{
+		"name": "Sweet Salmon",
+		"description": "Slighty torched king salmon drizzled in sweet mayo",
+		"category": "Sushi",
+		"price": 4.95,
+		"menu": "ayce",
+		"onlyOrderOnce": false,
+		"glutenFree": false,
+		"vegetarian": false,
+		"vegan": false,
+		"fish": true
+	},
+	{
+		"name": "Tuna (Maguro)",
+		"description": "Ahi tuna",
 		"category": "Sushi",
 		"price": 4.50,
 		"menu": "ayce",
@@ -718,10 +793,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Salmon Belly",
-        "description": "",
+	},
+	{
+		"name": "Pepper Tuna",
+		"description": "Generously peppered tuna flash fried",
 		"category": "Sushi",
 		"price": 4.95,
 		"menu": "ayce",
@@ -730,10 +805,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Garlic Salmon",
-        "description": "",
+	},
+	{
+		"name": "Garlic Tuna",
+		"description": "Ahi tuna drizzled with garlic ponzu sauce",
 		"category": "Sushi",
 		"price": 4.95,
 		"menu": "ayce",
@@ -742,34 +817,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Garlic Salmon",
-        "description": "",
-		"category": "Sushi",
-		"price": 4.95,
-		"menu": "ayce",
-		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
-		"fish": true
-    },
-    {
-        "name": "Sweet Salmon",
-        "description": "",
-		"category": "Sushi",
-		"price": 4.95,
-		"menu": "ayce",
-		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
-		"fish": true
-    },
-    {
-        "name": "Tuna (Maguro)",
-        "description": "",
+	},
+	{
+		"name": "Yellowtail (Hamachi)",
+		"description": "Japanese amberjack with lucious and buttery taste",
 		"category": "Sushi",
 		"price": 4.50,
 		"menu": "ayce",
@@ -778,10 +829,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Pepper Tuna",
-        "description": "",
+	},
+	{
+		"name": "Yuzu Yellowtail",
+		"description": "Yellowtail drizzled with fresh yuzu (grapefruit/mandarin) sauce",
 		"category": "Sushi",
 		"price": 4.95,
 		"menu": "ayce",
@@ -790,10 +841,22 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Garlic Tuna",
-        "description": "",
+	},
+	{
+		"name": "Albacore (Bincho Maguro)",
+		"description": "Mild to medium flavor profile with a steak-like texture",
+		"category": "Sushi",
+		"price": 4.50,
+		"menu": "ayce",
+		"onlyOrderOnce": false,
+		"glutenFree": true,
+		"vegetarian": false,
+		"vegan": false,
+		"fish": true
+	},
+	{
+		"name": "Cajun Albacore",
+		"description": "Generously coated in cajun spice and flash fried",
 		"category": "Sushi",
 		"price": 4.95,
 		"menu": "ayce",
@@ -802,10 +865,22 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Yellowtail (Hamachi)",
-        "description": "",
+	},
+	{
+		"name": "Garlic Albacore",
+		"description": "Albacore drizzled with garlic ponzu sauce",
+		"category": "Sushi",
+		"price": 4.95,
+		"menu": "ayce",
+		"onlyOrderOnce": false,
+		"glutenFree": false,
+		"vegetarian": false,
+		"vegan": false,
+		"fish": true
+	},
+	{
+		"name": "Super White Tuna (Escolar)",
+		"description": "Brilliantly satiny texture with a rich, succulent flavor",
 		"category": "Sushi",
 		"price": 4.50,
 		"menu": "ayce",
@@ -814,70 +889,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Yuzu Yellowtail",
-        "description": "",
-		"category": "Sushi",
-		"price": 4.95,
-		"menu": "ayce",
-		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
-		"fish": true
-    },
-    {
-        "name": "Albacore (Bincho Maguro)",
-        "description": "",
-		"category": "Sushi",
-		"price": 4.50,
-		"menu": "ayce",
-		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
-		"fish": true
-    },
-    {
-        "name": "Cajun Albacore",
-        "description": "",
-		"category": "Sushi",
-		"price": 4.95,
-		"menu": "ayce",
-		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
-		"fish": true
-    },
-    {
-        "name": "Garlic Albacore",
-        "description": "",
-		"category": "Sushi",
-		"price": 4.95,
-		"menu": "ayce",
-		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
-		"fish": true
-    },
-    {
-        "name": "Super White Tuna (Escolar)",
-        "description": "",
-		"category": "Sushi",
-		"price": 4.50,
-		"menu": "ayce",
-		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
-		"fish": true
-    },
-    {
-        "name": "Beef",
-        "description": "",
+	},
+	{
+		"name": "Beef",
+		"description": "Lightly torched premium beef cut drizzled with house special savory sauce",
 		"category": "Sushi",
 		"price": 6.95,
 		"menu": "ayce",
@@ -885,11 +900,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
-    },
-    {
-        "name": "Crab Stick (Kani)",
-        "description": "",
+		"fish": false
+	},
+	{
+		"name": "Crab Stick (Kani Surimi)",
+		"description": "Imitation Crab",
 		"category": "Sushi",
 		"price": 3.95,
 		"menu": "ayce",
@@ -898,10 +913,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Fresh Water Eel (Unagi)",
-        "description": "",
+	},
+	{
+		"name": "Fresh Water Eel (Unagi)",
+		"description": "",
 		"category": "Sushi",
 		"price": 4.50,
 		"menu": "ayce",
@@ -910,10 +925,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Inari",
-        "description": "",
+	},
+	{
+		"name": "Inari",
+		"description": "",
 		"category": "Sushi",
 		"price": 3.95,
 		"menu": "ayce",
@@ -922,10 +937,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Mackerel (Saba)",
-        "description": "",
+	},
+	{
+		"name": "Mackerel (Saba)",
+		"description": "",
 		"category": "Sushi",
 		"price": 3.95,
 		"menu": "ayce",
@@ -934,10 +949,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Octopus (Tako)",
-        "description": "",
+	},
+	{
+		"name": "Octopus (Tako)",
+		"description": "",
 		"category": "Sushi",
 		"price": 4.50,
 		"menu": "ayce",
@@ -946,7 +961,7 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
+	},
     {
         "name": "Red Snapper (Tai)",
         "description": "",
@@ -954,7 +969,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -990,7 +1005,7 @@
 		"price": 3.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1002,7 +1017,7 @@
 		"price": 5.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1014,7 +1029,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1038,7 +1053,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1050,7 +1065,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1086,7 +1101,7 @@
 		"price": 8.95,
 		"menu": "ayce",
 		"onlyOrderOnce": true,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1350,7 +1365,7 @@
 		"price": 11.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1518,7 +1533,7 @@
 		"price": 12.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -1882,5 +1897,298 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    }
+	},
+	{
+		"name": "House Hot Sake",
+		"category": "sake",
+		"menu": "drinks",
+		"smallPrice": 3.5,
+		"largePrice": 5.95
+	},
+	{
+		"name": "Ozeki Karatamba, Honjozo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "Ozeki Karatamba has a full-bodied, rich taste that feels smooth on the palate",
+		"price": 14,
+		"category": "sake"
+	},
+	{
+		"name": "Ozeki Yamada Nishik, Tokubetsu Junmai",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "Ozeki Yamadanishiki tastes clean and refreshing with a dry aftertaste.",
+		"price": 14,
+		"category": "sake"
+	},
+	{
+		"name": "Joto One Cup \"Graffiti Cup\", Honjozo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "200 ml",
+		"description": "Light and fresh, notes of juicy green apple and watermelon",
+		"price": 7,
+		"category": "sake"
+	},
+	{
+		"name": "Joto Yuri Masamune Honjozo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "200 ml",
+		"description": "This sake has nutty and earthy notes and is balanced by an underlying fruitiness.",
+		"price": 9,
+		"category": "sake"
+	},
+	{
+		"name": "Ozeki Dry Sake, Junmai",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "750 ml",
+		"description": "This is an excellent choice for first time sake drinkers due to its lower alcohol content and smooth taste",
+		"price": 18,
+		"category": "sake"
+	},
+	{
+		"name": "Ozeki Nigori, Junmai Nigori",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "375 ml",
+		"description": "The texture is velvety smooth and soft and has a tropical flavor similar to coconut milk.",
+		"price": 12,
+		"category": "sake"
+	},
+	{
+		"name": "Sho Chiku Bai Nigori",
+		"subtitle": "creamy and smooth sake",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "Coconut custard on the nose with pear and coconut.",
+		"price": 10,
+		"category": "sake"
+	},
+	{
+		"name": "Shirayuki Nama",
+		"subtitle": "fresh sake",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "A unique, light and fresh, easy to drink sake.",
+		"price": 11,
+		"category": "sake"
+	},
+	{
+		"name": "Shirayuki Junmai Gingo",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "A great-tasting sake with a fruit aroma.",
+		"price": 16,
+		"category": "sake"
+	},
+	{
+		"name": "Estancia Chardonnay",
+		"origin": "California",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 22,
+		"category": "wine"
+	},
+	{
+		"name": "Chateau Ste Michelle Riesling",
+		"origin": "Washington",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 23,
+		"category": "wine"
+	},
+	{
+		"name": "Castle Rock Pinot Noir",
+		"origin": "California",
+		"menu": "drinks",
+		"glassPrice": 7,
+		"bottlePrice": 27,
+		"category": "wine"
+	},
+	{
+		"name": "Fall Creek Merlot",
+		"origin": "Texas",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 23,
+		"category": "wine"
+	},
+	{
+		"name": "Robert Mondavi Private Selection Cabernet",
+		"origin": "California",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 24,
+		"category": "wine"
+	},
+	{
+		"name": "Sapporo",
+		"size": "21 oz",
+		"menu": "drinks",
+		"price": 6.5,
+		"category": "beer"
+	},
+	{
+		"name": "Asahi",
+		"size": "22 oz",
+		"menu": "drinks",
+		"price": 6.5,
+		"category": "beer"
+	},
+	{
+		"name": "Kirin Inchban",
+		"size": "",
+		"menu": "drinks",
+		"price": 6.5,
+		"category": "beer"
+	},
+	{
+		"name": "Soft Drinks",
+		"drinks": ["Pepsi", "Diet Pepsi", "Fanta", "Lemonade", "Sierra Mist", "Dr. Pepper", "Sweet Tea", "Unsweetened Tea"],
+		"menu": "drinks",
+		"price": 1.95,
+		"category": "soft drinks"
+	},
+	{
+		"name": "Hot or Iced Tea",
+		"menu": "drinks",
+		"price": 1.95,
+		"category": "soft drinks"
+	},
+	{
+		"name": "Hot Green Tea",
+		"menu": "drinks",
+		"price": 1.95,
+		"category": "soft drinks"
+	},
+	{
+		"name": "Vegetable Ried Rice",
+		"description": "Fried rice mixed with egg and green onion",
+		"price": 6.95,
+		"menu": "lunch",
+		"category": "Lunch Special",
+		"fish": false
+	},
+	{
+		"name": "Chicken Fried Rice",
+		"description": "Chicken fried rice mixed with egg and green onion",
+		"price": 7.95,
+		"menu": "lunch",
+		"category": "Lunch Special",
+		"fish": false
+	},
+	{
+		"name": "Seafood Fried Rice",
+		"description": "Seafood fried rice mixed with egg and green onion",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "Lunch Special",
+		"fish": false
+	},
+	{
+		"name": "Sashimi Combo",
+		"description": "Six pieces of chef's pick sashimi, four pieces california roll, four pieces spicy tuna roll, and a Banzai roll",
+		"price": 12.5,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Texas Combo (A)",
+		"description": "Udon with four pieces california roll, four pieces spicy tuna roll, and a Banzai roll",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Texas Combo (B)",
+		"description": "Udon with four pieces california roll, four pieces spicy tuna roll, five pieces of chef's choice sushi(Nigiri)",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Texas Combo (C)",
+		"description": "Udon wiht five pieces of sushi and a Banzai roll",
+		"price": "",
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Austin Combo (A)",
+		"description": "Spicy ramen with customer choice of one chef special roll",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Austin Combo (B)",
+		"description": "Spicy ramen with five pieces of chef's choice sushi (Nigiri) and four pieces of california roll",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": true
+	},
+	{
+		"name": "Austin Combo (C)",
+		"description": "Spicy ramen with chicken teriyaki rice bowl",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "combo",
+		"fish": false
+	},
+	{
+		"name": "Chicken Teriyaki",
+		"description": "Grilled chicken with house teriyaki sauce",
+		"price": 8.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false,
+		"aLaCarte": true
+	},
+	{
+		"name": "Tonkatsu",
+		"description": "Deep fried, breaded, tender pork cutlet",
+		"price": 8.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false,
+		"aLaCarte": true
+	},
+	{
+		"name": "Chicken Katsu",
+		"description": "Deep fried, breaded chicken breast with house katsu sauce",
+		"price": 8.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false,
+		"aLaCarte": true
+	},
+	{
+		"name": "Korea Bulgogi",
+		"description": "Stir fried seasoned beef with mixed vegetables",
+		"price": 9.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false,
+		"aLaCarte": true
+	},
+	{
+		"name": "Salmon Teriyaki",
+		"description": "Salmon teriyaki with house teriyaki sauce",
+		"price": 10.95,
+		"menu": "lunch",
+		"category": "Lunch Box",
+		"fish": false,
+		"aLaCarte": true
+	}
 ]

@@ -4,9 +4,16 @@
 module.exports = function(sequelize, DataTypes) {
   var UserFavorites = sequelize.define("UserFavorites", {
     // The email cannot be null, and must be a proper email before creation
-    item: {
+    name: {
       type: DataTypes.STRING,
       unique: true      
+    },
+    email: {
+      type: DataTypes.STRING,
+      references: {
+        model: 'Users',
+        key: 'email'
+      }
     }
   });
 
@@ -17,6 +24,9 @@ module.exports = function(sequelize, DataTypes) {
     // When an favorite is deleted. we will have to update the array 
     UserFavorites.belongsTo(models.User, {
     //   onDelete: "cascade"
+          foreignKey:{
+            allowNull: false
+          }
     });
   };
   return UserFavorites;
