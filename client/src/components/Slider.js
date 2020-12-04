@@ -85,7 +85,7 @@ function setTimer(e) {
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
-    <Link to={"/menu"}>
+    <Link to={"/ayce"}>
       <Button type={"button"} btn={"btn btn-dark"} function ={setTimer}>I agree</Button>
     </Link>
     <Link to={"/alacarte"}>
