@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import MenuCart from "../components/MenuCart";
+import MenuCart from "../components/OrderSummary/MenuCart";
 
 
 const mapStateToProps = state => ({

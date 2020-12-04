@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import MenuCartItem from './MenuCartItem';
-import Nav from "./Nav";
-import Container from "./Container";
+import Container from "../Container";
 import { Table } from 'reactstrap';
-import Row from './Row';
-import TipCalculater from './TipCalculater';
+import Row from '../Row';
+import TipCalculater from '../TipCalculater';
 
 
 const MenuCart = (props) => {
@@ -16,7 +15,6 @@ const MenuCart = (props) => {
     if (count === 0) {
         return (
             <>
-                <Nav />
                 <Container>
                     <Table>
                         <thead>
@@ -42,7 +40,6 @@ const MenuCart = (props) => {
 
     return (
         <>
-            <Nav />
             <Container>
                 <Row><h3 className="cartHeading">Order Summary ({count})</h3></Row>
                 <Table>

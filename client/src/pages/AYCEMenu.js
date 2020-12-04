@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import MenuList from "../components/MenuList";
+import MenuList from "../components/AyceMenu/MenuList";
 
 const mapStateToProps = state => {
     return {

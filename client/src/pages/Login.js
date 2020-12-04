@@ -3,7 +3,6 @@ import { Link, useHistory } from "react-router-dom";
 import API from "../utils/API";
 import { AUTH_SET_LOGGED_IN } from "../utils/actions";
 import { useStoreContext } from '../utils/GlobalStore';
-import Nav from "../components/Nav"
 
 
 function Login() {
@@ -40,8 +39,8 @@ function Login() {
         // console.log(email)
     }
 
-    return <div>
-        <Nav/>
+    return (
+    <React.Fragment>
         <div className="container">
             <div className="row">
                 <div className="col-md-6 col-md-offset-3">
@@ -62,12 +61,17 @@ function Login() {
                         <button type="submit" className="btn btn-default">Login</button>
                     </form>
                     <br />
-                    <p>Or Sign up  <Link to="/signup">here</Link></p>
-                    <p> <Link to="/choice">Continue as guest </Link></p>
                 </div>
-            </div>               
+            </div>    
+            <div className="row">
+                <p>Don't have an account? <Link to="/signup">Become a part of the Junai Fam</Link> </p>
+            </div>           
+            <div className="row">
+                <p><Link to="/rules">Or continue as guest</Link> </p>
+            </div>           
         </div>
-    </div>
+    </React.Fragment>
+    )
 }
 
 export default Login;

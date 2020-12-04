@@ -1,6 +1,5 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import Nav from "../components/Nav";
 import Container from "../components/Container";
 // import Row from "../components/Row";
 import Footer from "../components/Footer";
@@ -8,7 +7,7 @@ import Footer from "../components/Footer";
 import Image from "../components/Image";
 import favItems from "../components/MenuItems"
 import { connect } from 'react-redux'
-import FavCart from "../components/FavCart";
+import FavCart from "../components/Favorite/FavCart";
 
 // function Favorite(props) {
 

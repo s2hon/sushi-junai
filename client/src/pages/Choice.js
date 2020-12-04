@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
-import Nav from "../components/Nav";
 import Row from "../components/Row";
 import Button from "../components/Button"
 
 function Choice () {
-    return (<Container>
-        <Nav/>
+    return (
+    <Container>
         <Row>
         <h4>Get the items you love</h4>
             <Link to="/alacarte">
