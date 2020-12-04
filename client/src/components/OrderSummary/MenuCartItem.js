@@ -10,7 +10,7 @@ function saveFave(itemName, itemCategory){
    //  const email = state.email;
    //  console.log("The user's email is"+email);
 
-   console.log("Youh are trying to favorite" + itemName );
+   console.log("You are trying to favorite" + itemName );
     API.addFavorite({name:itemName, category:itemCategory}).
     then(res=> console.log(res)).
     catch(err => console.log(err));
@@ -31,7 +31,7 @@ const MenuCartItem = (props) => {
         </td>
         <th scope="row">{name}</th>
         <td>{category}</td>
-        <td>{price}</td>
+        <td>$ {price.toFixed(2)}</td>
         <td><Button color="danger" onClick={() => props.removeItem(props.item)}>X</Button></td>
         </tr>
     )

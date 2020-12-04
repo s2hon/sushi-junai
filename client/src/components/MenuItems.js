@@ -12,7 +12,7 @@ function MenuItems(props) {
                         <a href="ayce#rawfish"><FontAwesomeIcon icon={faFish} /></a>
                         : <span></span>}
                         </h5>
-                        {props.price}
+                        $ {props.price}
                 </Col>
                 <Col sm="auto">
                         <p>{props.description}
