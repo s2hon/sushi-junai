@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Home",
+        "link": "/home",
+        "submenu": [
+            {
+                "id": 11,
+                "title": "Login",
+                "link": "/login"
+            },
+            {
+                "id": 12,
+                "title": "Signup",
+                "link": "/signup"
+            },
+            {
+                "id":13,
+                "title": "Logout",
+                "link": "/logout"
+            }
+        ]
+    },
+
+    {
+        "id": 2,
+        "title": "Reservation",
+        "link": "/reservation"
+    },
+
+{
+    "id": 3,
+        "title": "Takeout",
+        "link": "/takeout"
+},
+{
+    "id": 4,
+        "title": "A La Carte",
+        "link": "/alacarte"
+},
+{
+    "id": 5,
+        "title": "All You Can Eat",
+        "link": "/ayce"
+},
+{
+    "id": 6,
+        "title": "Lunch Special",
+        "link": "/lunch"
+},
+{
+    "id": 7,
+        "title": "Order Summary",
+        "link": "/ordersummary"
+},
+{
+    "id": 8,
+        "title": "Favorite",
+        "link": "/favorite"
+
+}
+]
