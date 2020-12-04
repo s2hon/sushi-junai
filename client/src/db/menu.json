@@ -9,7 +9,8 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Pang",
@@ -69,7 +70,8 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Spicy Garlic Edamame",
@@ -81,7 +83,8 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Screaming \"O\" (3/8 pcs)",
@@ -93,7 +96,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"aLaCarte": true
     },
     {
         "name": "White \"O\" (3/8 pcs)",
@@ -105,7 +109,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"aLaCarte": true
     },
     {
         "name": "Tuna Poki",
@@ -117,7 +122,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"aLaCarte": true
     },
     {
         "name": "Salmon Poki",
@@ -129,7 +135,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"aLaCarte": true
     },
     {
         "name": "Shrimp Tempura (2/5 pcs)",
@@ -141,7 +148,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Vegetable Tempura (2/5 pcs)",
@@ -153,7 +161,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Mixed Tempura (2 shrimp and 3 veggie)",
@@ -165,7 +174,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Calamari Tempura",
@@ -177,7 +187,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Creamy Shrimp (2/4 pcs)",
@@ -189,7 +200,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Kurobuta Sausage (2/4 pcs)",
@@ -225,7 +237,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Spring Roll (2/4 pcs)",
@@ -237,7 +250,8 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Dynamite",
@@ -249,7 +263,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Mushroom Cap (2/4 pcs)",
@@ -261,7 +276,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Monkey Brain (2/4 pcs)",
@@ -285,7 +301,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"aLaCarte": true
     },
     {
         "name": "House Crab Salad",
@@ -297,7 +314,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Cucumber Salad",
@@ -309,7 +327,8 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Seaweed Salad",
@@ -321,7 +340,8 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Spicy Asian Salad",
@@ -333,7 +353,8 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Avocado Salad",
@@ -345,7 +366,8 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Salmon Skin Salad",
@@ -357,7 +379,8 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Miso Soup",
@@ -369,7 +392,8 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Kake Udon",
@@ -381,7 +405,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Tempura Udon",
@@ -393,7 +418,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Spicy Ramen",
@@ -405,7 +431,8 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
     },
     {
         "name": "Steam Rice",
@@ -2125,7 +2152,8 @@
 		"price": 8.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
 	},
 	{
 		"name": "Tonkatsu",
@@ -2133,7 +2161,8 @@
 		"price": 8.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
 	},
 	{
 		"name": "Chicken Katsu",
@@ -2141,7 +2170,8 @@
 		"price": 8.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
 	},
 	{
 		"name": "Korea Bulgogi",
@@ -2149,7 +2179,8 @@
 		"price": 9.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
 	},
 	{
 		"name": "Salmon Teriyaki",
@@ -2157,6 +2188,7 @@
 		"price": 10.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false
+		"fish": false,
+		"aLaCarte": true
 	}
 ]
