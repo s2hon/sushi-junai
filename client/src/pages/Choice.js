@@ -5,7 +5,8 @@ import Row from "../components/Row";
 import Button from "../components/Button"
 
 function Choice () {
-    return (<Container>
+    return (
+    <Container>
         <Row>
         <h4>Get the items you love</h4>
             <Link to="/alacarte">

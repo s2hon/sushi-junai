@@ -1,26 +1,83 @@
-# Project 3 Template (SQL Edition)
 
-## BEFORE YOU BEGIN 
-1. Run `db/schema.sql` to create your database
-2. Make sure to create a `.env` file and copy the contents of `.env.example` into it.
-3. In the `.env` file replace the ???? for SESSION_SECRET and set your db credentials in LOCALDB_URL
-it should look something like this
-```
-SESSION_SECRET=SomethingBesidesKeyboardCat
-LOCALDB_URL=mysql://root:dbpassword@localhost:3306/Project2Dev
-```
-**NOTE** Do *not* check in your `.env` file into source control, it is particular to *your* environment.
+# Sushi Junai Web App ![maintained](https://img.shields.io/maintenance/true/2020) ![license](https://img.shields.io/badge/license-MIT-blue)
 
-## Scripts
-### Install
-    npm install
-### Run (production)
+### Description
+to develop and create a web app that will replace all physical menu's for sushi junai
+
+## Table of contents
+* [Description](#Description)
+* [Version](#Version)
+* [Deployed Project](#Deployed)
+* [Features](#Features)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Technologies](#Technologies)
+* [Motivation](#Motivation)
+* [Contributors](#Contributors)
+* [Questions](#Questions)
+* [License](#License)
+
+
+### Version 
+0.1.0
+
+### Deployed Project
+https://sushi-junai.herokuapp.com/
+
+### Features
+* react
+* redux
+* mysql
+* express
+* authenticate
+* passport
+
+## Installation
+    npm i
+
+## Usage
     npm start
-### Run (dev)
-    npm run watch
-### Tests (includes linting)
-    npm test
-### Linting by itself (only detects errors)
-    npm run lint
-### Autofix linting errors where pssible (Note: this will not necessarily fix all of them)
-    npm run fix
+
+### Technologies
+* reactstrap
+
+### Motivation
+    Customers want an easy way to keep track of the food they’ve eaten during their all-you-can-eat period, see the price their food would’ve been, and calculate how much to tip;
+
+## Contributors
+This project exists thanks to all the people who contributed.
+
+
+* Staci 
+
+
+Follow me on GitHub: <a href="https://github.com/s2hon" target="_blank">![GitHub followers](https://img.shields.io/github/followers/s2hon?label=s2hon&style=social)</a></br>
+
+* Michelle 
+
+
+Follow me on GitHub: <a href="https://github.com/Moon-Ingenium/" target="_blank">![GitHub followers](https://img.shields.io/github/followers/Moon-Ingenium?label=Moon-Ingenium&style=social)</a></br>
+
+
+* Christina
+
+
+Follow me on GitHub: <a href="https://github.com/christinakerr/" target="_blank">![GitHub followers](https://img.shields.io/github/followers/christinakerr?label=christinakerr&style=social)</a></br>
+
+
+* Aminadab
+
+
+Follow me on GitHub: <a href="https://github.com/aminadabm93/" target="_blank">![GitHub followers](https://img.shields.io/github/followers/aminadabm93?label=aminadabm93&style=social)</a></br>
+
+
+* Raunel
+
+
+Follow me on GitHub: <a href="https://github.com/26rsuarez/" target="_blank">![GitHub followers](https://img.shields.io/github/followers/26rsuarez?label=26rsuarez&style=social)</a></br>
+
+## Questions
+<a href="mailto: staci.shon@gmail.com" target="_blank">![open Gmail](https://img.shields.io/badge/open-Gmail-red?style=for-the-badge)</a> 
+
+## License
+MIT © Staci Shon 

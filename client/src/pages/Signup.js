@@ -35,7 +35,8 @@ function Signup() {
         })
     }
 
-    return <div>
+    return (
+    <div>
         <div className="container">
             <div className="row">
                 <div className="col-md-6 col-md-offset-3">
@@ -61,9 +62,8 @@ function Signup() {
                 </div>
             </div>
         </div>
-        
-        
     </div>
+    )
 }
 
 export default Signup;

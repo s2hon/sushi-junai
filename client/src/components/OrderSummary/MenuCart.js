@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import MenuCartItem from './MenuCartItem';
 import Container from "./Container";
 import { Table } from 'reactstrap';
-import Row from './Row';
-import TipCalculater from './TipCalculater';
+import Row from '../Row';
+import TipCalculater from '../TipCalculater';
 
 
 const MenuCart = (props) => {

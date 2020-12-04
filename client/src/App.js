@@ -1,22 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducer';
 import data from './db/menu.json';
 import {saveState} from "./localstorage";
-
-import Home from "./pages/Home";
-import Alacarte from "./pages/Alacarte";
-import AYCEMenu from "./pages/AYCEMenu";
-import Favorite from "./pages/Favorite";
-import OrderSummary from "./pages/OrderSummary";
-import Signup from "./pages/Signup";
-import Choice from "./pages/Choice";
-import Rules from "./pages/Rules";
-import Login from "./pages/Login";
-import Nav from "./components/Nav";
- 
+import AllRouter from "./Router/index";
 
 const store = createStore(reducer);
 data.forEach((item) => store.dispatch({
@@ -28,23 +17,12 @@ store.subscribe(() => {
     saveState("favCart", store.getState().favCart)
 });
 
-
-
 function App() {
+
     return (
         <Provider store={store}>
             <Router>
-                <Nav/>
-                <Route exact path="/" component={Home}/>
-                <Route exact path="/home" component={Home}/>
-                <Route exact path="/alacarte" component={Alacarte}/>
-                <Route exact path="/menu" component={AYCEMenu}/>
-                <Route exact path="/choice" component={Choice}/>
-                <Route exact path="/favorite" component={Favorite}/>
-                <Route exact path="/ordersummary" component={OrderSummary}/> 
-                <Route exact path="/Signup" component={Signup}/>            
-                <Route exact path="/rules" component={Rules}/>
-                <Route exact path="/login" component={Login}/>
+                <AllRouter />
             </Router>
         </Provider>
     );
