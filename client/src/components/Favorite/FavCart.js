@@ -1,7 +1,6 @@
 import React from 'react';
 import FavCartItem from './FavCartItem';
-import Nav from "../Nav/index";
-import Container from "../Container";
+import Container from "./Container";
 import { Table } from 'reactstrap';
 import Row from '../Row';
 import { Button } from 'reactstrap';
@@ -19,7 +18,6 @@ const FavCart = (props) => {
     if (count === 0) {
         return (   
         <>
-        <Nav />
         <Container> 
             <Table>
                 <thead>
@@ -40,27 +38,26 @@ const FavCart = (props) => {
     )}
 
     return (
-        <>
-        <Nav />
-        <Container>
-            <Row><h3 className="cartHeading">My Favorites ({count})</h3></Row>
-            <Table>
-                <thead>
-                    <tr>
-                    <th>Item</th>
-                    <th>Category</th>
-                    <th> Unlike </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {favCart.map((item, idx) => <FavCartItem key={idx} item={item}/ > )}
-                    <tr>
-                        <Button>Add for future reference</Button>
-                    </tr>
-                </tbody>
-            </Table>
-        </Container>
-        </>
+        <React.Fragment>
+            <Container>
+                <Row><h3 className="cartHeading">My Favorites ({count})</h3></Row>
+                <Table>
+                    <thead>
+                        <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th> Unlike </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {favCart.map((item, idx) => <FavCartItem key={idx} item={item}/ > )}
+                        <tr>
+                            <Button>Add for future reference</Button>
+                        </tr>
+                    </tbody>
+                </Table>
+            </Container>
+        </React.Fragment>
     );
 };
 

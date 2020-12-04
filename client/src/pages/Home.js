@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Card from "../components/Card/index";
 import Container from "../components/Container";
 import Row from "../components/Row";
-import Footer from "../components/Footer/index";
 import Col from "../components/Col";
 import Image from "../components/Image";
 import Button from "../components/Button";
@@ -35,7 +34,7 @@ function Home(props) {
                 </a>
                 </Row>
                 <Row>
-                    <Link to={"/login"}>
+                    <Link to={!state.userLoggedIn ? "/login": "/choice"}>
                         <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
                     </Link>
                 </Row>
@@ -46,7 +45,6 @@ function Home(props) {
                 </Row>
             </Col>
         </Container>
-        <Footer />
     </React.Fragment>);
 }
 

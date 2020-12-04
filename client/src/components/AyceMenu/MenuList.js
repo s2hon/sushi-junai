@@ -1,8 +1,6 @@
 import React from "react";
-import Nav from "../Nav/index";
 import Container from "../Container";
 import Row from "../Row";
-import Footer from "../Footer/index";
 import menu from "../../db/menu.json";
 import MenuItems from "../MenuItems";
 import MenuNav from "../MenuNav/index"
@@ -26,7 +24,6 @@ function Menu(props) {
     //eventually users will be able to favorite items straight from the menu (if logged-in) 
     return (
         <>
-        <Nav />
         <MenuNav />
         <h3>All-You-Can-Eat Menu</h3> 
             <Container>
@@ -278,7 +275,6 @@ function Menu(props) {
                     </Container>
                 </Row>
                 </Container>
-                <Footer />
         </>
     );
 }

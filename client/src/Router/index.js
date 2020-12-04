@@ -9,7 +9,8 @@ import Signup from "../pages/Signup";
 import Choice from "../pages/Choice";
 import Rules from "../pages/Rules";
 import Login from "../pages/Login";
-import Header from "../components/Header/index"
+import Header from "../components/Header/index";
+import Footer from "../components/Footer/index"
 
 const AllRoute = () => { 
 
@@ -28,6 +29,7 @@ const AllRoute = () => {
         <Route exact path="/rules" component={Rules}/>
         <Route exact path="/login" component={Login}/>
       </Switch>
+      <Footer />
     </div>
   );
 }

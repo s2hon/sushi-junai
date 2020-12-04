@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 function Counter() {
-    const [count, setCount] = useState(7199);
+    
+    const [count, setCount] = useState(localStorage.getItem("timer") || 7199);
     const [hour, setHour] = useState(0);
     const [minute, setMinute] = useState(0);
     const [seconds, setSeconds] = useState(0);
-
-    // useEffect(() => {
-    //     localStorage.setItem("timer", count);
-    //     const previousTimer = localStorage.getItem("timer");
-    //     if (previousTimer) {
-    //         setCount(previousTimer);
-    //     };
-    // }, [count])
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -29,15 +22,21 @@ function Counter() {
                 secondsRemaining = secondsRemaining.toString().padStart(2, "0");
             }
             setSeconds(secondsRemaining);
+            localStorage.setItem("timer", count);
         }, 1000)
 
         if (count < 0) {
             clearTimeout(timer);
-        }
-        else if (count < 0) {
             alert("All you can eat has ended!");
         }
+
+        return function cleanup(){
+            clearTimeout(timer)
+        }
     }, [count])
+
+        
+    
 
     return (
         <div>{hour}:{minute}:{seconds}</div>
