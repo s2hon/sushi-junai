@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "./Nav";
 import Container from "./Container";
 import Row from "./Row";
 import Footer from "./Footer";
@@ -26,7 +25,6 @@ function Menu(props) {
     //eventually users will be able to favorite items straight from the menu (if logged-in) 
     return (
         <>
-        <Nav />
         <h3>All-You-Can-Eat Menu</h3> 
             <Container>
                 <Row>

@@ -1,6 +1,5 @@
 import React from 'react';
 import FavCartItem from './FavCartItem';
-import Nav from "./Nav";
 import Container from "./Container";
 import { Table } from 'reactstrap';
 import Row from './Row';
@@ -19,7 +18,6 @@ const FavCart = (props) => {
     if (count === 0) {
         return (   
         <>
-        <Nav />
         <Container> 
             <Table>
                 <thead>
@@ -41,7 +39,6 @@ const FavCart = (props) => {
 
     return (
         <>
-        <Nav />
         <Container>
             <Row><h3 className="cartHeading">My Favorites ({count})</h3></Row>
             <Table>
