@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import MenuCartItem from './MenuCartItem';
-import Container from "./Container";
+import Container from "../Container";
 import { Table } from 'reactstrap';
 import Row from '../Row';
 import TipCalculater from '../TipCalculater';

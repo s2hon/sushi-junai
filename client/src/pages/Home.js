@@ -6,9 +6,12 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 import Image from "../components/Image";
 import Button from "../components/Button";
-import data from "../db/store.json"
+import data from "../db/store.json";
+import { useStoreContext } from '../utils/GlobalStore';
 
 function Home(props) {
+    const [state, dispatch] = useStoreContext();
+
     return (
     <React.Fragment>
         <Container>
