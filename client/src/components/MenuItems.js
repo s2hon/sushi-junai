@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faFish } from "@fortawesome/free-solid-svg-icons";
+import { faFish, faLeaf, faBreadSlice } from "@fortawesome/free-solid-svg-icons";
 import { Col } from 'reactstrap';
 
 function MenuItems(props) {
@@ -11,6 +11,16 @@ function MenuItems(props) {
                         {props.fish ? 
                         <a href="ayce#rawfish"><FontAwesomeIcon icon={faFish} /></a>
                         : <span></span>}
+                        {
+                                props.vegetarian ?
+                                <a href="ayce#vegetarian"><FontAwesomeIcon icon={faLeaf} /></a>
+                                : <span></span>
+                        }
+                        {
+                                props.glutenFree ?
+                                <a href="ayce#glutenFree"><FontAwesomeIcon icon={faBreadSlice} /></a>
+                                : <span></span>
+                        }
                         </h5>
                         $ {props.price}
                 </Col>
