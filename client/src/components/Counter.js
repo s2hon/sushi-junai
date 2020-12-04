@@ -25,7 +25,7 @@ function Counter() {
             if (localStorage.getItem("timer")) {
                 localStorage.setItem("timer", count);
             }
-            else if (localStorage.getItem("date") !== moment().format('MMMM Do YYYY, h:mm:ss a')) {
+            else if (localStorage.getItem("date") !== moment().format('MMMM Do YYYY')) {
                 localStorage.setItem("timer", count);
             }
         }, 1000)
