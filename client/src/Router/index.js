@@ -9,6 +9,7 @@ import Signup from "../pages/Signup";
 import Choice from "../pages/Choice";
 import Rules from "../pages/Rules";
 import Login from "../pages/Login";
+import Drinks from "../pages/Drinks"
 import Header from "../components/Header/index";
 import Footer from "../components/Footer/index"
 
@@ -28,6 +29,7 @@ const AllRoute = () => {
         <Route exact path="/Signup" component={Signup}/>            
         <Route exact path="/rules" component={Rules}/>
         <Route exact path="/login" component={Login}/>
+        <Route exact path="/drinks" component={Drinks}/>
       </Switch>
       <Footer />
     </div>
