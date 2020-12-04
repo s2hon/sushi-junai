@@ -5,6 +5,7 @@ import { useStoreContext } from '../../utils/GlobalStore';
 import { AUTH_SET_LOGGED_OUT} from "../../utils/actions";
 import Nav from "../Nav/index";
 import './style.css';
+import Counter from "../Counter";
 
 function Header (props) {
     const [state, dispatch] = useStoreContext();
@@ -27,6 +28,7 @@ function Header (props) {
                             <Image src={"../assets/logo.png"} alt={"sushi-junai logo"} width="40%"/>
                         </Link>
                     </div>
+                    <Counter/>
                     <div className="col col-md-6 col-sm-10 col-10">
                         <ul>
                             <li><Link to="/login">Login</Link></li>

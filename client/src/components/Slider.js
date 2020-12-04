@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
+import moment from 'moment';
 
 import {
   Carousel,
@@ -70,6 +71,10 @@ const Slider = (props) => {
       </CarouselItem>
     );
   });
+function setTimer(e) {
+    localStorage.setItem("timer", 7199);
+    localStorage.setItem("date", moment().format('MMMM Do YYYY'));
+}
 
   return (<>
     <Carousel
@@ -82,8 +87,8 @@ const Slider = (props) => {
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
-    <Link to={"/menu"}>
-      <Button type={"button"} btn={"btn btn-dark"}>I agree</Button>
+    <Link to={"/ayce"}>
+      <Button type={"button"} btn={"btn btn-dark"} function ={setTimer}>I agree</Button>
     </Link>
     <Link to={"/alacarte"}>
       <Button type={"button"} btn={"btn btn-dark"}>Al A Carte</Button>

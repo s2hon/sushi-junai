@@ -30,7 +30,7 @@ const MenuCartItem = (props) => {
         </td>
         <th scope="row">{name}</th>
         <td>{category}</td>
-        <td>{price}</td>
+        <td>$ {price.toFixed(2)}</td>
         <td><Button color="danger" onClick={() => props.removeItem(props.item)}>X</Button></td>
         </tr>
     )
