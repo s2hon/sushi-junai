@@ -1900,7 +1900,7 @@
 	},
 	{
 		"name": "House Hot Sake",
-		"category": "house sake",
+		"category": "sake",
 		"menu": "drinks",
 		"smallPrice": 3.5,
 		"largePrice": 5.95
@@ -2048,7 +2048,7 @@
 		"category": "beer"
 	},
 	{
-		"name": "",
+		"name": "Soft Drinks",
 		"drinks": ["Pepsi", "Diet Pepsi", "Fanta", "Lemonade", "Sierra Mist", "Dr. Pepper", "Sweet Tea", "Unsweetened Tea"],
 		"menu": "drinks",
 		"price": 1.95,

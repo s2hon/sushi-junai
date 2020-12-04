@@ -3,16 +3,13 @@ import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "./MenuItems";
-import Button from "../Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFish, faLeaf, faBreadSlice } from "@fortawesome/free-solid-svg-icons";
-
 
 function Menu(props) {
     const drinkMenu = menu.filter(item => item.menu === "drinks");
-    const houseSake = drinkMenu.filter(item => item.name == "House Hot Sake")
     const sake = drinkMenu.filter(item => item.category === "sake");
-    //eventually users will be able to favorite items straight from the menu (if logged-in) 
+    const wine = drinkMenu.filter(item => item.category === "wine");
+    const beer = drinkMenu.filter(item => item.category === "beer");
+    const softDrinks = drinkMenu.filter(item => item.category === "soft drinks")
     return (
         <>
             <Container>
@@ -22,22 +19,12 @@ function Menu(props) {
                 <Row>
                     <h4 id="Sake">Sake</h4>
                     <Container>
-                        <div className="card text-center">
-                            <div className="card-body d-flex justify-content-between">
-                                <MenuItems name={houseSake.name} smallPrice={houseSake.smallPrice} largePrice={houseSake.largePrice} size={houseSake.size} description={houseSake.description}>
-                                </MenuItems>
-                            </div>
-                        </div>
                         {
                             sake.map((item, idx) => {
-                                let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
-                                if (item.onlyOrderOnce) {
-                                    oncePerOrder = "red";
-                                }
                                 return (
                                     <div className="card text-center">
                                         <div className="card-body d-flex justify-content-between">
-                                            <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} subtitle={item.subtitle} size={item.size} >
+                                            <MenuItems key={idx} name={item.name} price={item.price} description={item.description} subtitle={item.subtitle} size={item.size} smallPrice={item.smallPrice} largePrice={item.largePrice}>
                                             </MenuItems>
                                         </div>
                                     </div>
@@ -46,7 +33,57 @@ function Menu(props) {
                         }
                     </Container>
                 </Row>
-
+                <Row>
+                    <h4 id="Wine">Wine</h4>
+                    <Container>
+                        {
+                            wine.map((item, idx) => {
+                                return (
+                                    <div className="card text-center">
+                                        <div className="card-body d-flex justify-content-between">
+                                            <MenuItems key={idx} name={item.name} glassPrice={item.glassPrice} bottlePrice={item.bottlePrice} origin={item.origin} >
+                                            </MenuItems>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </Container>
+                </Row>
+                <Row>
+                    <h4 id="Beer">Beer</h4>
+                    <Container>
+                        {
+                            beer.map((item, idx) => {
+                                return (
+                                    <div className="card text-center">
+                                        <div className="card-body d-flex justify-content-between">
+                                            <MenuItems key={idx} name={item.name} size={item.size} price={item.price} >
+                                            </MenuItems>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </Container>
+                </Row>
+                <Row>
+                    <h4 id="Soft Drinks">Soft Drinks</h4>
+                    <Container>
+                        {
+                            softDrinks.map((item, idx) => {
+                                return (
+                                    <div className="card text-center">
+                                        <div className="card-body d-flex justify-content-between">
+                                            <MenuItems key={idx} name={item.name} price={item.price} drinks={item.drinks} >
+                                            </MenuItems>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </Container>
+                </Row>
             </Container>
         </>
     );
