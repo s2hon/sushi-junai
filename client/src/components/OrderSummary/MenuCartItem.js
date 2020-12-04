@@ -15,7 +15,7 @@ const MenuCartItem = (props) => {
     // const email = state.email;
     
     function saveFave(itemName, itemCategory){
-        console.log("The user's email is"+state.email);
+        console.log("The state is "+JSON.stringify(state));
         API.addFavorite({name:itemName, category:itemCategory, email: state.email}).
         then(res=> console.log(res)).
         catch(err => console.log(err));

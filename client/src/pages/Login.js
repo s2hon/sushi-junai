@@ -3,6 +3,12 @@ import { Link, useHistory } from "react-router-dom";
 import API from "../utils/API";
 import { AUTH_SET_LOGGED_IN } from "../utils/actions";
 import { useStoreContext } from '../utils/GlobalStore';
+//now we will use reducer from auth. 
+//must use connect (redux)
+// const AYCEMenu = connect(
+//     mapStateToProps,
+//     mapDispatchToProps
+// )(MenuList);
 
 
 function Login() {
@@ -13,7 +19,7 @@ function Login() {
 
     const emailRef = useRef();
     const passwordRef = useRef();
-    const [store, dispatch] = useStoreContext();
+    const [store, dispatch] = useStoreContext();//use dispatch to get info
 
     const handleLogin = (event) => {
         event.preventDefault();
@@ -36,7 +42,7 @@ function Login() {
             setShowError(true);
             setErrorMessage("An error occurred during login");
         })
-        // console.log(email)
+        console.log("The globalStore: "+ store);
     }
 
     return (
