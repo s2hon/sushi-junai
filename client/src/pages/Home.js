@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Nav from "../components/Nav/index";
 import Card from "../components/Card/index";
 import Container from "../components/Container";
 import Row from "../components/Row";
@@ -11,8 +10,8 @@ import Button from "../components/Button";
 import data from "../db/store.json"
 
 function Home(props) {
-    return (<>
-        <Nav />
+    return (
+    <React.Fragment>
         <Container>
             <Row>
                 {
@@ -48,7 +47,7 @@ function Home(props) {
             </Col>
         </Container>
         <Footer />
-    </>);
+    </React.Fragment>);
 }
 
 export default Home;

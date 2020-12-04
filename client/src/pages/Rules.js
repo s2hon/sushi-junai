@@ -1,6 +1,5 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import Nav from "../components/Nav";
 import Container from "../components/Container";
 // import Row from "../components/Row";
 import Footer from "../components/Footer/index";
@@ -12,7 +11,6 @@ import Slider from "../components/Slider";
 function Rules(props) {
     return (
         <>
-        <Nav/>
         <Container>
         <Slider/>
         </Container>

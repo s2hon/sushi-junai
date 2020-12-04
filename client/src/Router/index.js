@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Switch, Route } from 'react-router-dom'
+import {Switch, Route } from 'react-router-dom'
 import Home from "../pages/Home";
 import Alacarte from "../pages/Alacarte";
 import AYCEMenu from "../pages/AYCEMenu";
@@ -9,11 +9,13 @@ import Signup from "../pages/Signup";
 import Choice from "../pages/Choice";
 import Rules from "../pages/Rules";
 import Login from "../pages/Login";
+import Header from "../components/Header/index"
 
 const AllRoute = () => { 
 
   return (
     <div>
+      <Header />
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/home" component={Home}/>

@@ -1,12 +1,12 @@
 import React from "react";
-import Nav from "./Nav/index";
-import Container from "./Container";
-import Row from "./Row";
-import Footer from "./Footer/index";
-import menu from "../db/menu.json";
-import MenuItems from "./MenuItems";
-import MenuNav from "./MenuNav/index"
-import Button from "./Button";
+import Nav from "../Nav/index";
+import Container from "../Container";
+import Row from "../Row";
+import Footer from "../Footer/index";
+import menu from "../../db/menu.json";
+import MenuItems from "../MenuItems";
+import MenuNav from "../MenuNav/index"
+import Button from "../Button";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faFish } from "@fortawesome/free-solid-svg-icons";
 

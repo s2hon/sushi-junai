@@ -1,105 +1,129 @@
-import React, {useState, Link} from "react";
-import { useHistory } from "react-router-dom";
+import React, { Component } from 'react'
+import { Collapse, CardBody, Card } from 'reactstrap';
+import { Link } from 'react-router-dom'
+import './style.css';
 import Image from "./../Image";
-import Counter from "../Counter"
-import { useStoreContext } from '../../utils/GlobalStore';
-import { AUTH_SET_LOGGED_OUT} from "../../utils/actions";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faHeart,
-} from "@fortawesome/free-solid-svg-icons";
-//components from reactstrap
-import {
-  Collapse,
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarToggler
-} from "reactstrap";
-import SubMenu from "./SubMenu";
+
+const menus = [
+    {
+        id: 1,
+        title: 'Home',
+        link: '/home',
+        submenu: [
+            {
+                id: 11,
+                title: 'Login',
+                link: '/login'
+            },
+            {
+                id: 12,
+                title: 'Signup',
+                link: '/signup'
+            },
+            {
+                id:13,
+                title: 'Logout',
+                link: '/logout'
+            },
+        ]
+    },
+
+    {
+        id: 2,
+        title: 'Reservation',
+        link: '/reservation',
+    },
+
+{
+    id: 3,
+        title: 'Online Order',
+        link: '/online',
+},
+{
+    id: 4,
+        title: 'A La Carte',
+        link: '/alacarte',
+},
+{
+    id: 5,
+        title: 'All You Can Eat',
+        link: '/ayce',
+},
+{
+    id: 6,
+        title: 'Lunch Special',
+        link: '/lunch',
+},
+{
+    id: 7,
+        title: 'Order Summary',
+        link: '/ordersummary',
+},
+{
+    id: 8,
+        title: 'Favorite',
+        link: '/favorite',
+
+}
+]
 
 
-import "./style.css";
+export default class Nav extends Component {
 
-
-function NavBar () {
-
-  const [state, dispatch] = useStoreContext();
-  const history = useHistory();
-  //this controls the responsive navbar
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen)
-
-    //handles the logout
-    const logout = () => {
-      dispatch({
-        type: AUTH_SET_LOGGED_OUT
-      })
-      history.push("/")
+    state = {
+        isMenuShow: false,
+        isOpen: 0,
     }
-    return (
-        <div>
-          <Navbar color="light" light expand ="md">
-            <NavbarBrand href="/">
-            <Image src={"../assets/logo.png"} alt={"sushi-junai-logo"}/>
-            </NavbarBrand>
-            <NavbarToggler onClick={toggle}/>
-            <Collapse isOpen={isOpen} navbar>
-              <Nav className="mr-auto" navbar>
-                <NavItem>
-                  <NavLink tag={Link} to={"/"}>
-                    Home
-                    <FontAwesomeIcon icon={faHome} className="mr-2" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} to={"/reservation"}>
-                    Reservation
-                  </NavLink>
-                </NavItem>
-                <NavLink tag={Link} to={"/alacarte"}>
-                    A La Carte
-                </NavLink>
-                <NavLink tag={Link} to={"/ayce"}>
-                    All You Can Eat
-                </NavLink>
-                <NavItem>
-                  <NavLink tag={Link} to={"/ordersummary"}>
-                    Ordersummary</NavLink>
-                </NavItem>
-                <NavLink tag={Link} to={"/favorite"}>
-                  <FontAwesomeIcon icon={faHeart} />
-                  Favorite
-                </NavLink>
-                <SubMenu title="Home" icon={faHome} items={
-                  [
-                    {
-                    title: "Login",
-                    target: "login",
-                    },
-                    {
-                    title: "signup",
-                    target: "signup",
-                    },
-                    {
-                    itle: "Logout",
-                    target: "logout",
-                    },
-                  ]} />
-                <NavItem className={!state.userLoggedIn ? "hide": ""}>
-                  <NavLink onClick={logout}>Logout</NavLink>
-                </NavItem>
-                <NavItem>
-                  <Counter />
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Navbar>
-        </div>
-      );
-  }
 
-export default NavBar;
+    menuHandler = () => {
+        this.setState({
+            isMenuShow: !this.state.isMenuShow
+        })
+    }
+
+    setIsOpen = id => () => {
+        this.setState({
+            isOpen: id === this.state.isOpen ? 0 : id
+        })
+    }
+
+    render() {
+
+        const { isMenuShow, isOpen } = this.state;
+
+        return (
+            <div>
+                <div className={`sidebar ${isMenuShow ? 'show' : ''}`}>
+                    <ul className="navlist">
+                        {menus.map(item => {
+                            return (
+                                <li key={item.id}>
+                                    {item.submenu ? <p onClick={this.setIsOpen(item.id)}>
+                                        {item.title}
+                                        {item.submenu ? <i className="fa fa-angle-right" aria-hidden="true"></i> : ''}
+                                    </p> : <Link to={item.link}>{item.title}</Link>}
+                                    {item.submenu ?
+                                    <Collapse isOpen={item.id === isOpen}>
+                                        <Card>
+                                            <CardBody>
+                                                <ul>
+                                                    {item.submenu.map(submenu => (
+                                                        <li key={submenu.id}><Link className="active" to={submenu.link}>{submenu.title}</Link></li>
+                                                    ))}
+                                                </ul>
+                                            </CardBody>
+                                        </Card>
+                                    </Collapse>
+                                    : ''}
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+                </div>
+
+                <div className="navbtn" onClick={this.menuHandler}><Image src={"../assets/sushi.png"} alt={"kawaii-sake"} width="100%"/></div>
+            </div>
+        )
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'reactstrap';
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faHeartBroken } from "@fortawesome/free-solid-svg-icons";
-import API from '../utils/API';
+import API from '../../utils/API';
 // import {useStoreContext} from "../utils/GlobalStore";
 
 //create api function to add to DB once button is clicked 

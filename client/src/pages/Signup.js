@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react"
 import { Link, useHistory } from "react-router-dom";
 import API from "../utils/API";
-import Nav from "../components/Nav/index";
 import { AUTH_SET_LOGGED_IN } from "../utils/actions";
 import { useStoreContext } from '../utils/GlobalStore';
 
@@ -36,8 +35,8 @@ function Signup() {
         })
     }
 
-    return <div>
-        <Nav/>
+    return (
+    <div>
         <div className="container">
             <div className="row">
                 <div className="col-md-6 col-md-offset-3">
@@ -63,9 +62,8 @@ function Signup() {
                 </div>
             </div>
         </div>
-        
-        
     </div>
+    )
 }
 
 export default Signup;

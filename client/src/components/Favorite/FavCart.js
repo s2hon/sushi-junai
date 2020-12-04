@@ -1,9 +1,9 @@
 import React from 'react';
 import FavCartItem from './FavCartItem';
-import Nav from "./Nav";
-import Container from "./Container";
+import Nav from "../Nav/index";
+import Container from "../Container";
 import { Table } from 'reactstrap';
-import Row from './Row';
+import Row from '../Row';
 import { Button } from 'reactstrap';
 
 
