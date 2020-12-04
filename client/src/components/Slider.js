@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
+import moment from 'moment';
 
 import {
   Carousel,
@@ -72,6 +73,7 @@ const Slider = (props) => {
   });
 function setTimer(e) {
     localStorage.setItem("timer", 7199);
+    localStorage.setItem("date", moment().format('MMMM Do YYYY, h:mm:ss a'));
 }
 
   return (<>

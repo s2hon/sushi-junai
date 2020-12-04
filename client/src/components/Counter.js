@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import moment from 'moment';
 
 function Counter() {
     const [count, setCount] = useState(localStorage.getItem("timer"));
@@ -23,7 +24,9 @@ function Counter() {
             setSeconds(secondsRemaining);
             if (localStorage.getItem("timer")) {
                 localStorage.setItem("timer", count);
-
+            }
+            else if (localStorage.getItem("date") !== moment().format('MMMM Do YYYY, h:mm:ss a')) {
+                localStorage.setItem("timer", count);
             }
         }, 1000)
 
