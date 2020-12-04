@@ -40,7 +40,6 @@ const MenuCart = (props) => {
 
     return (
         <>
-            <Nav />
             <Container>
                 <Row><h3 className="cartHeading">Order Summary ({count})</h3></Row>
                 <Table>
