@@ -63,7 +63,7 @@ export default class Nav extends Component {
                             <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-2-austin">Reservations</a>
                         </li>
                         <li>
-                            <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-2-austin">Order Online</a>
+                             <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-2-austin">Order Online</a>
                         </li>
                     </ul>
 
