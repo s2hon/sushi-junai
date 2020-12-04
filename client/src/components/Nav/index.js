@@ -3,56 +3,9 @@ import { Collapse, CardBody, Card } from 'reactstrap';
 import { Link } from 'react-router-dom'
 import './style.css';
 import Image from "./../Image";
-const menus = [
-    {
-        id: 1,
-        title: 'Home',
-        link: '/home',
-        submenu: [
-            {
-                id: 7,
-                title: 'Login',
-                link: '/login'
-            },
-            {
-                id: 8,
-                title: 'Signup',
-                link: '/signup'
-            },
-            {
-                id:9,
-                title: 'Logout',
-                link: '/logout'
-            },
-        ]
-    },
-{
-    id: 2,
-        title: 'A La Carte',
-        link: '/alacarte',
-},
-{
-    id: 3,
-        title: 'All You Can Eat',
-        link: '/rules',
-},
-{
-    id: 4,
-        title: 'Lunch Special',
-        link: '/lunch',
-},
-{
-    id: 5,
-        title: 'Order Summary',
-        link: '/ordersummary',
-},
-{
-    id: 6,
-        title: 'Favorite',
-        link: '/favorite',
-
-}
-]
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import menus from "../../db/nav.json";
 
 
 export default class Nav extends Component {
@@ -107,18 +60,19 @@ export default class Nav extends Component {
                         })}
 
                         <li>
-                            <a href="https://www.yelp.com/biz/sushi-junai-2-austin">Reservations</a>
+                            <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-2-austin">Reservations</a>
                         </li>
                         <li>
-                            <a href="https://www.yelp.com/biz/sushi-junai-2-austin">Order Online</a>
+                            <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-2-austin">Order Online</a>
                         </li>
-
-                        
                     </ul>
 
                 </div>
 
-                <div className="navbtn" onClick={this.menuHandler}><Image src={"../assets/sushi.png"} alt={"kawaii-sake"} width="100%"/></div>
+                <div className="navbtn" onClick={this.menuHandler}>
+                    <Image src={"../assets/sushi.png"} alt={"kawaii-sake"} width="100%"/>
+                    <FontAwesomeIcon icon={faBars} />
+                </div>
             </div>
         )
     }
