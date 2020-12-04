@@ -13,8 +13,7 @@ function Card(props) {
                 <div className="wpo-event-text">
                     <h1>{props.location}</h1>
                     <ul>
-                        <li><i className="fa fa-clock-o" aria-hidden="true"></i></li>
-                        <li>Monday {props.mon}</li>
+                        <li><i className="fa fa-clock-o" aria-hidden="true"></i>Monday {props.mon}</li>
                         <li>Tuesday {props.tue}</li>
                         <li>Wednesday {props.wed}</li>
                         <li>Thursday {props.thu}</li>
@@ -22,8 +21,8 @@ function Card(props) {
                         <li>Saturday {props.sat}</li>
                         <li>Sunday {props.sun}</li>
 
-                        <li><i className="fi flaticon-pin"></i>{props.address}</li>
-                        <li><i className="fi flaticon-pin"></i>{props.phone}</li>
+                        <li><i className="fa fa-map-marker-alt"></i>{props.address}</li>
+                        <li><i className="fa fa-phone"></i>{props.phone}</li>
                     </ul>
                 </div>
             </div>
