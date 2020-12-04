@@ -39,7 +39,7 @@ function Menu(props) {
                                 return (
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                    <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
                                         <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
@@ -64,7 +64,7 @@ function Menu(props) {
                                 return (
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                    <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
                                         <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
@@ -88,7 +88,7 @@ function Menu(props) {
                                 return (
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                    <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
                                         <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
@@ -112,7 +112,7 @@ function Menu(props) {
                                 return (
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                    <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
                                         <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
@@ -136,7 +136,7 @@ function Menu(props) {
                                 return (
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                    <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
                                         <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
@@ -160,7 +160,7 @@ function Menu(props) {
                                 return (
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                    <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
                                         <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
@@ -184,7 +184,7 @@ function Menu(props) {
                                 return (
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                    <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
                                         <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
@@ -208,7 +208,7 @@ function Menu(props) {
                                 return (
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                    <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
                                         <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
@@ -232,7 +232,7 @@ function Menu(props) {
                                 return (
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                    <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
                                         <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
@@ -256,7 +256,7 @@ function Menu(props) {
                                 return (
                                 <div className="card text-center">
                                     <div className="card-body d-flex justify-content-between">
-                                    <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
+                                    <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder}>
                                         <Button icon ={"fa fa-plus"} btn={"float-right"} function={() => {
                                             props.addItem(item)}}
                                             ></Button>
