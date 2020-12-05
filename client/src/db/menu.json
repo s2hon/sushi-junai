@@ -2067,7 +2067,7 @@
 		"category": "soft drinks"
 	},
 	{
-		"name": "Vegetable Ried Rice",
+		"name": "Vegetable Fried Rice",
 		"description": "Fried rice mixed with egg and green onion",
 		"price": 6.95,
 		"menu": "lunch",
@@ -2116,8 +2116,8 @@
 	},
 	{
 		"name": "Texas Combo (C)",
-		"description": "Udon wiht five pieces of sushi and a Banzai roll",
-		"price": "",
+		"description": "Udon with five pieces of sushi and a Banzai roll",
+		"price": 9.95,
 		"menu": "lunch",
 		"category": "combo",
 		"fish": true

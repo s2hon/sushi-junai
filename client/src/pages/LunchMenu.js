@@ -2,7 +2,7 @@ import React from "react";
 import LunchMenu from "../components/LunchMenu/MenuList"
 
 
-function LunchMenu() {
+function Lunch() {
     return (
         <>
         <LunchMenu />
@@ -10,4 +10,4 @@ function LunchMenu() {
         );
 }
 
-export default LunchMenu;
+export default Lunch;
