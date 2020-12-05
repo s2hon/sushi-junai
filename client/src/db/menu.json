@@ -371,7 +371,7 @@
     },
     {
         "name": "Salmon Skin Salad",
-        "description": "Spicy, crunchy salmon over mixed greens with special sauce",
+        "description": "Spicy, crunchy salmon over mixed greens with special sauce. (Contains traces of gluten.)",
 		"category": "Salad",
 		"price": 6.95,
 		"menu": "ayce",
@@ -561,7 +561,7 @@
 		"price": 3.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
 		"fish": false
@@ -609,7 +609,7 @@
 		"price": 6.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -628,12 +628,12 @@
 	},
 	{
 		"name": "Salmon Skin Roll",
-		"description": "Grilled salmon skin with vegetables wrapped in sushi rice and seaweed paper",
+		"description": "Grilled salmon skin with vegetables wrapped in sushi rice and seaweed paper. (Contains traces of gluten)",
 		"category": "Classic Roll/Hand Roll",
 		"price": 5.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -657,7 +657,7 @@
 		"price": 5.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -669,7 +669,7 @@
 		"price": 5.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -705,7 +705,7 @@
 		"price": 5.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
 		"fish": false
@@ -789,7 +789,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -825,7 +825,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -885,7 +885,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -897,7 +897,7 @@
 		"price": 6.95,
 		"menu": "ayce",
 		"onlyOrderOnce": true,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
@@ -945,7 +945,7 @@
 		"price": 3.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
@@ -957,7 +957,7 @@
 		"price": 4.50,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
-		"glutenFree": false,
+		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
