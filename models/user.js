@@ -8,6 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
+      primaryKey:true,
       validate: {
         isEmail: true
       }
@@ -37,7 +38,7 @@ module.exports = function(sequelize, DataTypes) {
     // Associating user with box models
     User.hasMany(models.Favorites, {
       onDelete: "cascade",
-      foreignKey: "email"
+      foreignKey: "UserEmail"
     });
   };
   return User;

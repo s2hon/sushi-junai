@@ -26,16 +26,15 @@ module.exports = function(app) {
 
   //route for creating a new favorite entry in a user's db 
   app.post("/api/favorites", function(req, res) {
-    console.log("You are using the back-end API");
-    console.log("This is the body "+JSON.stringify(req.body) );
     db.Favorites.create({
-      name:req.name,
-      category: req.category,
-      email:req.email
-    })
+      item:req.body.item,
+      category: req.body.category,
+      UserEmail:req.body.UserEmail
+    }).
     then(function(dbFavorite) {
       res.json(dbFavorite);
-      console.log("You have added to the db" + dbFavorite);
+      //this response might be useful in the future
+
     })
       .catch(function(err) {
         res.status(401).json(err);

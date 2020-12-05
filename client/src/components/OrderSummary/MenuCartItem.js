@@ -12,16 +12,16 @@ const MenuCartItem = (props) => {
     //add ability to reload items so taht they respond to the item 
     const [state,dispatch] = useStoreContext();
     //save email from store to use with DB later
-    // const email = state.email;
-    
+    const email = state.email;
+    console.log("The user email is "+email)
     function saveFave(itemName, itemCategory){
-        console.log("The state is "+JSON.stringify(state));
-        API.addFavorite({name:itemName, category:itemCategory, email: state.email}).
+        console.log("You are about to save the item:"+ itemName+" category: "+itemCategory);
+        API.addFavorite({item:itemName, category:itemCategory, UserEmail: state.email}).
         then(res=> console.log(res)).
         catch(err => console.log(err));
     };
-    const { name, category, price } = props.item;
 
+    const { name, category, price } = props.item;
     return (
         <tr>
         <td><Button btn={"float-right"} onClick={() => saveFave(name,category)}>

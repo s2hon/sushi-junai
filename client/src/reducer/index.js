@@ -5,6 +5,7 @@ import favCart from './favCart'
 const shoppingCartApp = combineReducers({
     menuCart,
     favCart
+    //add reducer from file
 });
 
 export default shoppingCartApp;

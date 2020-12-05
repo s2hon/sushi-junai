@@ -14,8 +14,7 @@ const mapDispatchToProps = dispatch => {
                 type: 'ADD_MENU_ITEM',
                 payload: { item }
             })
-        }
-        
+        }        
     }
 };
 

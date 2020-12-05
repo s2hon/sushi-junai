@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     category: {
       type: DataTypes.STRING
     },
-    email: {
+    UserEmail: {
       type: DataTypes.STRING,
       references: {
         model: 'Users',
@@ -27,7 +27,6 @@ module.exports = function(sequelize, DataTypes) {
     Favorites.belongsTo(models.User, {
     //   onDelete: "cascade"
           foreignKey:{
-            allowNull: false
           }
     });
   };

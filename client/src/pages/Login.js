@@ -3,12 +3,6 @@ import { Link, useHistory } from "react-router-dom";
 import API from "../utils/API";
 import { AUTH_SET_LOGGED_IN } from "../utils/actions";
 import { useStoreContext } from '../utils/GlobalStore';
-//now we will use reducer from auth. 
-//must use connect (redux)
-// const AYCEMenu = connect(
-//     mapStateToProps,
-//     mapDispatchToProps
-// )(MenuList);
 
 
 function Login() {

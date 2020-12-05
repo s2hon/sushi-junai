@@ -9,7 +9,8 @@ CREATE TABLE users (
 
 CREATE TABLE favorites (
     id SERIAL NOT NULL PRIMARY KEY,
-    item_name VARCHAR (123) NOT NULL,
+    item VARCHAR (123) NOT NULL,
+    category VARCHAR (123) NOT NULL,
     email FOREIGN KEY REFERENCES users(email)
     -- user_id INTEGER NOT NULL,
 );
