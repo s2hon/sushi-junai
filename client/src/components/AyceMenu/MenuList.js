@@ -46,9 +46,10 @@ function Menu(props) {
 
     return (
         <>
-            
-            <h3>All-You-Can-Eat Menu</h3>
             <Container>
+                <Row>
+                    <h3>All-You-Can-Eat Menu</h3>
+                </Row>
                 <Row>
                     <MenuNav />
                     <div class="form-check form-check-inline">
