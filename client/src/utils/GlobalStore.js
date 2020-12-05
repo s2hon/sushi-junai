@@ -9,6 +9,7 @@ const { Provider } = StoreContext;
 const reducer = (state, action) => {
     switch(action.type){
         case AUTH_SET_LOGGED_IN:
+            console.log('The globalStore is setting the email to: '+action.data.email);
             return {
                 ...state,
                 userLoggedIn: true,
@@ -19,11 +20,26 @@ const reducer = (state, action) => {
                 ...state,
                 userLoggedIn: false,
                 email: ""
-            }
+            }    
         default:
             return state;
     }
 }
+//make new reducer from menuCart reducer folder
+// const menuCartReducer = (state = {} || [], action) => {
+//     switch (action.type) {
+//         case 'ADD_MENU_ITEM':
+//             const { item } = action.payload
+//             console.log(state);
+//             return [...state, {
+//                 name: item.name,
+//                 price: item.price,
+//                 category: item.category
+//             }];
+//         default:
+//             return state
+//     }
+// };
 
 // Setup the provider component for our apps store
 const StoreProvider = ({value, ...props}) => {

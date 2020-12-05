@@ -27,7 +27,7 @@ const MenuCartItem = (props) => {
         <tr>
         <th scope="row">{name}</th>
         <td>{category}</td>
-        <td onClick={()=>saveFave(name,category)}><Button onClick={()=>saveFave(name,category)} ><FontAwesomeIcon icon={faHeartBroken} /></Button></td>
+        <td ><Button  ><FontAwesomeIcon icon={faHeartBroken} /></Button></td>
         </tr>
     )
 };
