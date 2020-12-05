@@ -13,6 +13,7 @@ import Drinks from "../pages/Drinks"
 import Header from "../components/Header/index";
 import Footer from "../components/Footer/index"
 import LunchMenu from '../pages/LunchMenu';
+import StaticAYCEMenu from '../pages/StaticAYCEMenu';
 
 const AllRoute = () => { 
 
@@ -32,6 +33,7 @@ const AllRoute = () => {
         <Route exact path="/login" component={Login}/>
         <Route exact path="/drinks" component={Drinks}/>
         <Route exact path="/lunch" component={LunchMenu}/>
+        <Route exact path="/aycestatic" component={StaticAYCEMenu}/>
       </Switch>
       <Footer />
     </div>
