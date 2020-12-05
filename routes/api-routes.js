@@ -24,25 +24,28 @@ module.exports = function(app) {
       });
   });
 
-  //this code will add the faorites
-  app.post("/api/favorite", function(req, res) {
-    console.log(req.body);
-    db.UserFavorites.create({
-      item: req.body.name,
-      category: req.body.category
+  //route for creating a new favorite entry in a user's db 
+  app.post("/api/favorites", function(req, res) {
+    db.Favorites.create({
+      item:req.body.item,
+      category: req.body.category,
+      UserEmail:req.body.UserEmail
+    }).
+    then(function(dbFavorite) {
+      res.json(dbFavorite);
+      //this response might be useful in the future
+
     })
-      .then(function(dbFavorite) {
-        res.json(dbFavorite);
-      })
       .catch(function(err) {
         res.status(401).json(err);
       });
   });
-  //this code will retrieve the faorites
+  
+  //this code will retrieve the favorites
   app.get("/api/favorite", function(req, res){
-    db.UserFavorites.findAll({
+    db.Favorites.findAll({
       where: {
-        email: req.user.email
+        User_id: req.user.email
       }
     }).then(function(dbFavorites){
       res.json(dbFavorites);
@@ -68,21 +71,6 @@ module.exports = function(app) {
         id: req.user.id
       });
     }
-  });
-
-  //route for creating a new favorite entry in a user's db 
-  app.post("/api/favorite", function(req, res) {
-    console.log(req.body);
-    console.log(req.user);
-    db.UserFavorites.create({
-      name:req.name,
-      category: req.category,
-      UserId: req.user.id
-    })
-      .then(console.log("You have posted to userDB"))
-      .catch(function(err) {
-        res.status(401).json(err);
-      });
   });
 
 };
