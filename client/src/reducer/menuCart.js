@@ -31,7 +31,7 @@ const menuCart = (state = persistedState || [], action) => {
         }
         case 'DECREMENT_MENU_ITEM': {
             const { item } = action.payload
-                if (findItem.quantity > 1){
+                if (item.quantity > 1){
                     return state.map(x => {
                         if (x.name == item.name) x.quantity--
                         return x
@@ -45,10 +45,6 @@ const menuCart = (state = persistedState || [], action) => {
             const { item } = action.payload
             return state.filter(x => x.name !== item.name) 
         }
-        // case 'CLEAR_CART':
-        //     const { total } = action.payload
-        //     console.log (total);
-        //     return state.clear();
         default:
             return state
     }

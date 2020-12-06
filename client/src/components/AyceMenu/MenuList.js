@@ -46,6 +46,11 @@ function Menu(props) {
         setIsGlutenFree(!isGlutenFree);
     }
 
+    const { menuCart } = props
+    const currentQty = arr => arr.reduce((sum, {quantity}) => sum + quantity, 0);
+    const currentQtyTotal = currentQty(menuCart);
+
+
     return (
         <>
             <Container>
@@ -61,6 +66,12 @@ function Menu(props) {
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF}  value="glutenFree" />
                             <label class="form-check-label" for="glutenFreeCheckbox">Gluten Free <Image src={gfIcon} width="18" alt="Gluten Free" /></label>
+                    </div>
+                    <div>
+                    <a href="/ordersummary">Order Summary ({currentQtyTotal})</a>
+                    </div>
+                    <div>
+                    <a href="/favorite">Favorite</a>
                     </div>
                 </Row>
                     <Row>

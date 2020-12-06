@@ -26,9 +26,6 @@ const NavBar = () => {
                     <DropdownItem active><a href="ayce#bakedRolls">Baked Rolls</a></DropdownItem> 
                     <DropdownItem divider />
                     <DropdownItem active><a href="ayce#desserts">Desserts</a></DropdownItem> 
-                    <DropdownItem divider />
-                    <DropdownItem active><a href="/ordersummary">Order Summary</a></DropdownItem> 
-                    <DropdownItem active><a href="/favorite">Favorite</a></DropdownItem> 
                 </DropdownMenu>
             </Dropdown>
         </Nav>

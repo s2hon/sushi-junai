@@ -13,10 +13,17 @@ import sadIcon from "./icons8-sad-50.png"
 
 const MenuCart = (props) => {
     const { menuCart } = props
-    const total = menuCart.reduce((acc, val) => acc + val.price, 0)
-    const count = menuCart.length
+    console.log(menuCart)
 
-    if (count === 0) {
+    const currentQty = arr => arr.reduce((sum, {quantity}) => sum + quantity, 0);
+    const currentQtyTotal = currentQty(menuCart);
+    console.log(currentQtyTotal);
+
+    const sumCostTotal = arr => arr.reduce((sum, {price, quantity})=> sum + price*quantity, 0);
+    const cartCostTotal = sumCostTotal(menuCart);
+    console.log(cartCostTotal);
+
+    if (currentQtyTotal === 0) {
         return (
             <>
                 <Container>
@@ -50,7 +57,7 @@ const MenuCart = (props) => {
     return (
         <>
             <Container>
-                <Row><h3 className="cartHeading">Order Summary ({count})</h3></Row>
+                <Row><h3 className="cartHeading">Order Summary ({currentQtyTotal})</h3></Row>
                 <Table>
                     <thead>
                         <tr>
@@ -72,21 +79,21 @@ const MenuCart = (props) => {
                             </Link>
                         </tr>
                         <tr>
-                            <Button type={"button"} btn={"btn btn-dark"} onClick={() => {props.clearCart(total)}}>Ordered with a Server</Button>
+                            <Button type={"button"} btn={"btn btn-dark"} onClick={() => {props.clearCart(cartCostTotal)}}>Ordered with a Server</Button>
                         </tr>
                         <tr>
                             <th scope="row"></th>
                             <td></td>
                             <td>Total Cost:</td>
-                            <td>${total.toFixed(2)}</td>
+                            <td>${cartCostTotal.toFixed(2)}</td>
                         </tr>
                         <tr>
                             <th scope="row"></th>
                             <td></td>
                             <td>You just saved:</td>
-                            <td>${(total - 32.95).toFixed(2)}</td>
+                            <td>${(cartCostTotal - 32.95).toFixed(2)}</td>
                         </tr>
-                        <TipCalculater total={total} />
+                        <TipCalculater total={cartCostTotal} />
                     </tbody>
                 </Table>
             </Container>

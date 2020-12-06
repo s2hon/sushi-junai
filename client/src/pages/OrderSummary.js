@@ -27,17 +27,16 @@ const mapDispatchToProps = dispatch => {
                 payload: { item }
             })
         },
-        
+        clearCart: cartTotal => {
+            dispatch({
+                type: 'CLEAR_CART',
+                payload: { cartTotal }
+            })
+        }
         // handleFavorite: item => {
         //     dispatch({
         //         type: 'ADD_FAV_ITEM',
         //         payload: { item }
-        //     })
-        // }
-        // clearCart: total => {
-        //     dispatch({
-        //         type: 'CLEAR_CART',
-        //         payload: { total }
         //     })
         // }
     }
