@@ -4,7 +4,7 @@ import { Col } from 'reactstrap';
 function MenuItems(props) {
     return (
         <>
-            <Col sm="1" md="3" lg="3">
+            <Col sm="3" md="3" lg="3">
                 <h5>{props.name} <h6>{props.subtitle}</h6>
                 </h5>
                 $ {props.price ? props.price.toFixed(2): "" }
@@ -13,7 +13,7 @@ function MenuItems(props) {
                 {props.largePrice ? " | $ " + props.largePrice.toFixed(2) : ""}
                 {props.bottlePrice ? " | $ " + props.bottlePrice.toFixed(2) : ""}
             </Col>
-            <Col sm="auto">
+            <Col sm="9" md="9" lg="9">
                 <p>{props.size || props.origin}</p>
                 <p>{props.description}
                 {props.drinks ? props.drinks.join(", ") : ""}</p>

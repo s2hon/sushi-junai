@@ -6,7 +6,7 @@ import { Col } from 'reactstrap';
 function MenuItems(props) {
         return (
                 <>
-                <Col sm="1" md="3" lg="3">
+                <Col sm="3" md="3" lg="3">
                         <h5>{props.name} <br/> 
                         {props.fish ? 
                         <a href="ayce#rawfish"><FontAwesomeIcon icon={faFish} /></a>
@@ -14,7 +14,7 @@ function MenuItems(props) {
                         </h5>
                         $ {props.price}
                 </Col>
-                <Col sm="auto">
+                <Col sm="9" md="9" lg="9">
                         <p>{props.description}
                         
                         </p>

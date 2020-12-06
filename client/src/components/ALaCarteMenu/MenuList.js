@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
-import MenuItems from "../MenuItems";
+import MenuItems from "./MenuItems";
 import MenuNav from "../MenuNav/index";
 import Image from "../Image";
 import vegIcon from "../AyceMenu/icons8-vegetarian-mark-50.png";
@@ -51,7 +51,7 @@ function Menu() {
         <>
             <Container>
                 <Row>
-                    <h3>All-You-Can-Eat Menu</h3>
+                    <h3>A La Carte Menu</h3>
                 </Row>
                 <Row>
                     <MenuNav />

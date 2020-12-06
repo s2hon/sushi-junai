@@ -8,7 +8,7 @@ import { Col } from 'reactstrap';
 function MenuItems(props) {
         return (
                 <>
-                <Col sm="1" md="3" lg="3">
+                <Col sm="3" md="3" lg="3">
                         <h5 className={props.oncePerOrder}>{props.name} <br/> 
                         
                         {props.fish ? 

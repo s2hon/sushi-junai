@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./Image";
+import Image from "../Image";
 import fishIcon from "../AyceMenu/icons8-fish-food-50.png"
 import vegIcon from "../AyceMenu/icons8-vegetarian-mark-50.png"
 import gfIcon from "../AyceMenu/icons8-no-gluten-50.png"
@@ -8,7 +8,7 @@ import { Col } from 'reactstrap';
 function MenuItems(props) {
         return (
                 <>
-                <Col sm="1" md="3" lg="3">
+                <Col sm="3" md="3" lg="3">
                         <h5>{props.name} <br/> 
                         
                         {props.fish ? 
@@ -27,7 +27,7 @@ function MenuItems(props) {
                         </h5>
                         $ {props.price.toFixed(2)}
                 </Col>
-                <Col sm="auto">
+                <Col sm="9" md="9" lg="9">
                         <p>{props.description}
                         
                         </p>
