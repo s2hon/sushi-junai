@@ -3,8 +3,8 @@ import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "./MenuItems";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faFish } from "@fortawesome/free-solid-svg-icons"
+import fishIcon from "../AyceMenu/icons8-dressed-fish-50.png";
+import Image from "../Image";
 
 function Menu() {
     const lunchMenu = menu.filter(item => item.menu === "lunch");
@@ -69,7 +69,7 @@ function Menu() {
                     </Container>
                 </Row>
                 <Row>
-                        <h5 id="rawfish">Raw Fish <FontAwesomeIcon icon={faFish} /></h5>
+                        <h5 id="rawfish">Raw Fish <Image src={fishIcon} width="18" alt="Raw Fish" /></h5>
                         <Container>
                             <p>Consuming raw or undercooked fish increases the risk of food bourne diseases, especially in people with certain health conditions.</p>
                         </Container>

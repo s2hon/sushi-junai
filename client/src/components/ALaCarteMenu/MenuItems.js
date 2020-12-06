@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "./Image";
-import fishIcon from "../AyceMenu/icons8-fish-food-50.png"
-import vegIcon from "../AyceMenu/icons8-vegetarian-mark-50.png"
-import gfIcon from "../AyceMenu/icons8-no-gluten-50.png"
+import vegIcon from "../AyceMenu/icons8-vegetarian-mark-48.png";
+import gfIcon from "../AyceMenu/icons8-color-50.png";
+import fishIcon from "../AyceMenu/icons8-dressed-fish-50.png";
 import { Col } from 'reactstrap';
 
 function MenuItems(props) {
@@ -12,16 +12,16 @@ function MenuItems(props) {
                         <h5>{props.name} <br/> 
                         
                         {props.fish ? 
-                        <a href="ayce#rawfish"><Image src={fishIcon} width="18" alt="Fish" /></a>
+                        <a href="#rawfish"><Image src={fishIcon} width="18" alt="Fish" /></a>
                         : <span></span>}
                         {
                                 props.vegetarian ?
-                                <a href="ayce#vegetarian"><Image src={vegIcon} width="18" alt="Vegetarian" /></a>
+                                <a href="#vegetarian"><Image src={vegIcon} width="18" alt="Vegetarian" /></a>
                                 : <span></span>
                         }
                         {
                                 props.glutenFree ?
-                                <a href="ayce#glutenFree"><Image src={gfIcon} width="18" alt="Gluten Free" /></a>
+                                <a href="#glutenFree"><Image src={gfIcon} width="18" alt="Gluten Free" /></a>
                                 : <span></span>
                         }
                         </h5>

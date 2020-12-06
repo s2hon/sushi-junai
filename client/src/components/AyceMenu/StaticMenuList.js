@@ -5,9 +5,9 @@ import menu from "../../db/menu.json";
 import MenuItems from "../MenuItems";
 import MenuNav from "../MenuNav/index";
 import Image from "../Image";
-import vegIcon from "./icons8-vegetarian-mark-50.png";
-import gfIcon from "./icons8-no-gluten-50.png";
-import fishIcon from "./icons8-fish-food-50.png";
+import vegIcon from "./icons8-vegetarian-mark-48.png";
+import gfIcon from "./icons8-color-50.png";
+import fishIcon from "./icons8-dressed-fish-50.png";
 
 function Menu() {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -58,7 +58,10 @@ function Menu() {
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF}  value="glutenFree" />
-                            <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
+                            <label class="form-check-label" for="glutenFreeCheckbox">
+                            <a href="#glutenFree"><Image src={gfIcon} width="18" alt="Gluten Free" /></a>
+                            Gluten Free (order without sauce)
+                            </label>
                     </div>
                 </Row>
                     <Row>
