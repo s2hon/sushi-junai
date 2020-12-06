@@ -4,42 +4,36 @@
         "title": "Home",
         "link": "/home"
     },
-
     {
         "id": 2,
-        "title": "Reservation",
-        "link": "/reservation"
+            "title": "Menu",
+            "link": "/menu",
+            "submenu": [
+                {
+                    "id": 6,
+                    "title": "Drinks",
+                    "link": "/drinks"
+                },
+                {
+                    "id": 7,
+                    "title": "Lunch Specials (Mon-Fri)",
+                    "link": "/lunch"
+                },
+                {
+                    "id": 8,
+                    "title": "Alacarte",
+                    "link": "/alacarte"
+                },
+                {
+                    "id": 9,
+                    "title": "All You Can Eat",
+                    "link": "/aycestatic"
+                }
+            ]
     },
-
-{
-    "id": 3,
-        "title": "Takeout",
-        "link": "/takeout"
-},
-{
-    "id": 4,
-        "title": "A La Carte",
-        "link": "/alacarte"
-},
-{
-    "id": 5,
-        "title": "All You Can Eat",
-        "link": "/ayce"
-},
-{
-    "id": 6,
-        "title": "Lunch Special",
-        "link": "/lunch"
-},
-{
-    "id": 7,
-        "title": "Order Summary",
-        "link": "/ordersummary"
-},
-{
-    "id": 8,
-        "title": "Favorite",
-        "link": "/favorite"
-
-}
+    {
+        "id": 3,
+        "title": "Dine-in",
+        "link": "/dinein"
+    }
 ]

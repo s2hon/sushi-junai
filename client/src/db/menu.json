@@ -2049,7 +2049,7 @@
 	},
 	{
 		"name": "Soft Drinks",
-		"drinks": ["Pepsi", "Diet Pepsi", "Fanta", "Lemonade", "Sierra Mist", "Dr. Pepper", "Sweet Tea", "Unsweetened Tea"],
+		"drinks": ["Pepsi", "Diet Pepsi", "Fanta", "Lemonade", "Sierra Mist", "Dr. Pepper", "Sweet Tea", "Unsweetened Tea", "Arnold Palmer"],
 		"menu": "drinks",
 		"price": 1.95,
 		"category": "soft drinks"

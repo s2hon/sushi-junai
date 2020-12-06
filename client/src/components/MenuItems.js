@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faFish, faLeaf, faBreadSlice } from "@fortawesome/free-solid-svg-icons";
 import Image from "./Image";
 import fishIcon from "./AyceMenu/icons8-fish-food-50.png"
 import vegIcon from "./AyceMenu/icons8-vegetarian-mark-50.png"

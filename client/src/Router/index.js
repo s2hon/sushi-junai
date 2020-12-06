@@ -25,7 +25,7 @@ const AllRoute = () => {
         <Route exact path="/home" component={Home}/>
         <Route exact path="/alacarte" component={Alacarte}/>
         <Route exact path="/ayce" component={AYCEMenu}/>
-        <Route exact path="/choice" component={Choice}/>
+        <Route exact path="/dinein" component={Choice}/>
         <Route exact path="/favorite" component={Favorite}/>
         <Route exact path="/ordersummary" component={OrderSummary}/> 
         <Route exact path="/Signup" component={Signup}/>            

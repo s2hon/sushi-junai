@@ -9,15 +9,36 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => {
     return {
-        removeItem: id => {
-            dispatch({})
-        },
-        handleFavorite: item => {
+        incrementItem: item => {
             dispatch({
-                type: 'ADD_FAV_ITEM',
+                type: 'INCREMENT_MENU_ITEM',
                 payload: { item }
             })
+        },
+        removeItem: item => {
+            dispatch({
+                type: 'DELETE_MENU_ITEM',
+                payload: { item }
+            })
+        },
+        decrementItem: item => {
+            dispatch({
+                type: 'DECREMENT_MENU_ITEM',
+                payload: { item }
+            })
+        },
+        clearCart: cartTotal => {
+            dispatch({
+                type: 'CLEAR_CART',
+                payload: { cartTotal }
+            })
         }
+        // handleFavorite: item => {
+        //     dispatch({
+        //         type: 'ADD_FAV_ITEM',
+        //         payload: { item }
+        //     })
+        // }
     }
 };
 

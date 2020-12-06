@@ -3,10 +3,11 @@ import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "../MenuItems";
-import MenuNav from "../MenuNav/index"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFish, faLeaf, faBreadSlice } from "@fortawesome/free-solid-svg-icons";
-
+import MenuNav from "../MenuNav/index";
+import Image from "../Image";
+import vegIcon from "./icons8-vegetarian-mark-50.png";
+import gfIcon from "./icons8-no-gluten-50.png";
+import fishIcon from "./icons8-fish-food-50.png";
 
 function Menu() {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -53,11 +54,11 @@ function Menu() {
                     <MenuNav />
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
-                            <label class="form-check-label" for="vegetarianCheckbox">Vegetarian</label>
+                            <label class="form-check-label" for="vegetarianCheckbox">Vegetarian <Image src={vegIcon} width="18" alt="Vegetarian" /></label>
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF}  value="glutenFree" />
-                            <label class="form-check-label" for="glutenFreeCheckbox">Gluten Free</label>
+                            <label class="form-check-label" for="glutenFreeCheckbox">Gluten Free <Image src={gfIcon} width="18" alt="Gluten Free" /></label>
                     </div>
                 </Row>
                     <Row>
@@ -273,20 +274,20 @@ function Menu() {
                     </Row>
 
                     <Row>
-                        <h5 id="rawfish">Raw Fish <FontAwesomeIcon icon={faFish} /></h5>
+                        <h5 id="rawfish">Raw Fish <Image src={fishIcon} width="18" alt="Raw Fish" /></h5>
                         <Container>
                             <p>Consuming raw or undercooked fish increases the risk of food bourne diseases, especially in people with certain health conditions.</p>
                         </Container>
                     </Row>
 
                     <Row>
-                        <h5 id="glutenFree">Gluten Free <FontAwesomeIcon icon={faBreadSlice} /></h5>
+                        <h5 id="glutenFree">Gluten Free <Image src={gfIcon} width="18" alt="Gluten Free" /></h5>
                         <Container>
                             <p>Request no sauce when ordering.</p>
                         </Container>
                     </Row>
                     <Row>
-                        <h5 id="vegetarian">Vegetarian <FontAwesomeIcon icon={faLeaf} /></h5>
+                        <h5 id="vegetarian">Vegetarian <Image src={vegIcon} width="18" alt="Vegetarian" /></h5>
                     </Row>
                 </Container>
         </>
