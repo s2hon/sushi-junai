@@ -1,7 +1,7 @@
 [
-    {
-        "name": "Agedashi Tofu",
-        "description": "Lightly fried tofu in delicate broth",
+	{
+		"name": "Agedashi Tofu",
+		"description": "Lightly fried tofu in delicate broth",
 		"category": "Appetizer",
 		"price": 4.50,
 		"menu": "ayce",
@@ -9,12 +9,11 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Pang",
-        "description": "Baked spicy crab and salmon, cream cheese on baguette bread",
+		"fish": false
+	},
+	{
+		"name": "Pang",
+		"description": "Baked spicy crab and salmon, cream cheese on baguette bread",
 		"category": "Appetizer",
 		"price": 6.95,
 		"menu": "ayce",
@@ -23,10 +22,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Fish Taco",
-        "description": "Assorted fish with special sauce",
+	},
+	{
+		"name": "Fish Taco",
+		"description": "Assorted fish with special sauce",
 		"category": "Appetizer",
 		"price": 8.95,
 		"menu": "ayce",
@@ -35,10 +34,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Grilled Jalapeno (2/4 pcs)",
-        "description": "",
+	},
+	{
+		"name": "Grilled Jalapeno (2/4 pcs)",
+		"description": "",
 		"category": "Appetizer",
 		"price": 4.95,
 		"menu": "ayce",
@@ -47,10 +46,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Chicken Karaage",
-        "description": "",
+	},
+	{
+		"name": "Chicken Karaage",
+		"description": "",
 		"category": "Appetizer",
 		"price": 7.50,
 		"menu": "ayce",
@@ -59,10 +58,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Edamame",
-        "description": "Lightly fried tofu in delicate broth",
+	},
+	{
+		"name": "Edamame",
+		"description": "Lightly fried tofu in delicate broth",
 		"category": "Appetizer",
 		"price": 2.00,
 		"menu": "ayce",
@@ -70,12 +69,11 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Spicy Garlic Edamame",
-        "description": "",
+		"fish": false
+	},
+	{
+		"name": "Spicy Garlic Edamame",
+		"description": "",
 		"category": "Appetizer",
 		"price": 4.00,
 		"menu": "ayce",
@@ -83,12 +81,11 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Screaming \"O\" (3/8 pcs)",
-        "description": "Slice seared tuna over shredded radish with S.O. sauce",
+		"fish": false
+	},
+	{
+		"name": "Screaming \"O\" (3/8 pcs)",
+		"description": "Slice seared tuna over shredded radish with S.O. sauce",
 		"category": "Appetizer",
 		"price": 12.50,
 		"menu": "ayce",
@@ -96,12 +93,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true,
-		"aLaCarte": true
-    },
-    {
-        "name": "White \"O\" (3/8 pcs)",
-        "description": "Slice super white tuna over shredded radish with garlic ponzu",
+		"fish": true
+	},
+	{
+		"name": "White \"O\" (3/8 pcs)",
+		"description": "Slice super white tuna over shredded radish with garlic ponzu",
 		"category": "Appetizer",
 		"price": 12.50,
 		"menu": "ayce",
@@ -109,11 +105,10 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true,
-		"aLaCarte": true
-    },
-    {
-        "name": "Tuna Poki",
+		"fish": true
+	},
+	{
+		"name": "Tuna Poki",
 		"description": "Fresh tuna, green onions, onions, smelt eggs, seaweed salad topped with spicy special sauce",
 		"category": "Appetizer",
 		"price": 9.95,
@@ -122,12 +117,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true,
-		"aLaCarte": true
-    },
-    {
-        "name": "Salmon Poki",
-        "description": "Salmon, green onions, smelt eggs, seaweed salad topped with spicy special sauce",
+		"fish": true
+	},
+	{
+		"name": "Salmon Poki",
+		"description": "Salmon, green onions, smelt eggs, seaweed salad topped with spicy special sauce",
 		"category": "Appetizer",
 		"price": 8.95,
 		"menu": "ayce",
@@ -135,12 +129,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true,
-		"aLaCarte": true
-    },
-    {
-        "name": "Shrimp Tempura (2/5 pcs)",
-        "description": "",
+		"fish": true
+	},
+	{
+		"name": "Shrimp Tempura (2/5 pcs)",
+		"description": "",
 		"category": "Appetizer",
 		"price": 7.50,
 		"menu": "ayce",
@@ -148,12 +141,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Vegetable Tempura (2/5 pcs)",
-        "description": "",
+		"fish": false
+	},
+	{
+		"name": "Vegetable Tempura (2/5 pcs)",
+		"description": "",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -161,12 +153,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Mixed Tempura (2 shrimp and 3 veggie)",
-        "description": "",
+		"fish": false
+	},
+	{
+		"name": "Mixed Tempura (2 shrimp and 3 veggie)",
+		"description": "",
 		"category": "Appetizer",
 		"price": 6.50,
 		"menu": "ayce",
@@ -174,12 +165,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Calamari Tempura",
-        "description": "Lightly fried calamari with a little yum yum sauce",
+		"fish": false
+	},
+	{
+		"name": "Calamari Tempura",
+		"description": "Lightly fried calamari with a little yum yum sauce",
 		"category": "Appetizer",
 		"price": 7.95,
 		"menu": "ayce",
@@ -187,12 +177,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Creamy Shrimp (2/4 pcs)",
-        "description": "Cream cheese, shrimp deep fried",
+		"fish": false
+	},
+	{
+		"name": "Creamy Shrimp (2/4 pcs)",
+		"description": "Cream cheese, shrimp deep fried",
 		"category": "Appetizer",
 		"price": 7.50,
 		"menu": "ayce",
@@ -200,12 +189,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Kurobuta Sausage (2/4 pcs)",
-        "description": "",
+		"fish": false
+	},
+	{
+		"name": "Kurobuta Sausage (2/4 pcs)",
+		"description": "",
 		"category": "Appetizer",
 		"price": 5.95,
 		"menu": "ayce",
@@ -214,10 +202,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Shrimp Shumai (2/4 pcs)",
-        "description": "",
+	},
+	{
+		"name": "Shrimp Shumai (2/4 pcs)",
+		"description": "",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -226,10 +214,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Gyoza (2/4 pcs)",
-        "description": "Meat and vegetable dumplings fried or steamed",
+	},
+	{
+		"name": "Gyoza (2/4 pcs)",
+		"description": "Meat and vegetable dumplings fried or steamed",
 		"category": "Appetizer",
 		"price": 4.95,
 		"menu": "ayce",
@@ -237,12 +225,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Spring Roll (2/4 pcs)",
-        "description": "Deep fried mixed vegetables with yum yum sauce",
+		"fish": false
+	},
+	{
+		"name": "Spring Roll (2/4 pcs)",
+		"description": "Deep fried mixed vegetables with yum yum sauce",
 		"category": "Appetizer",
 		"price": 4.95,
 		"menu": "ayce",
@@ -250,12 +237,11 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Dynamite",
-        "description": "Onions, mushroom, scallop, crab baked in a shell",
+		"fish": false
+	},
+	{
+		"name": "Dynamite",
+		"description": "Onions, mushroom, scallop, crab baked in a shell",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -263,12 +249,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Mushroom Cap (2/4 pcs)",
-        "description": "Mushroom topped crab with eel sauce",
+		"fish": false
+	},
+	{
+		"name": "Mushroom Cap (2/4 pcs)",
+		"description": "Mushroom topped crab with eel sauce",
 		"category": "Appetizer",
 		"price": 4.50,
 		"menu": "ayce",
@@ -276,12 +261,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Monkey Brain (2/4 pcs)",
-        "description": "Deep fried mushroom with cream cheese, crab, spicy tuna and eel, spicy mayo",
+		"fish": false
+	},
+	{
+		"name": "Monkey Brain (2/4 pcs)",
+		"description": "Deep fried mushroom with cream cheese, crab, spicy tuna and eel, spicy mayo",
 		"category": "Appetizer",
 		"price": 6.50,
 		"menu": "ayce",
@@ -290,10 +274,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Spicy Tuna Cracker (2/4 pcs)",
-        "description": "Crispy rice topped spicy tuna with eel, spicy mayo sauce",
+	},
+	{
+		"name": "Spicy Tuna Cracker (2/4 pcs)",
+		"description": "Crispy rice topped spicy tuna with eel, spicy mayo sauce",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -301,12 +285,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true,
-		"aLaCarte": true
-    },
-    {
-        "name": "House Crab Salad",
-        "description": "Mixed greens topped crab stick with house sesame dressing",
+		"fish": true
+	},
+	{
+		"name": "House Crab Salad",
+		"description": "Mixed greens topped crab stick with house sesame dressing",
 		"category": "Salad",
 		"price": 3.50,
 		"menu": "ayce",
@@ -314,12 +297,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Cucumber Salad",
-        "description": "Cucumber and crab with vinaigrette dressing",
+		"fish": false
+	},
+	{
+		"name": "Cucumber Salad",
+		"description": "Cucumber and crab with vinaigrette dressing",
 		"category": "Salad",
 		"price": 3.95,
 		"menu": "ayce",
@@ -327,12 +309,11 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Seaweed Salad",
-        "description": "Seasoned seaweed with sesame",
+		"fish": false
+	},
+	{
+		"name": "Seaweed Salad",
+		"description": "Seasoned seaweed with sesame",
 		"category": "Salad",
 		"price": 4.95,
 		"menu": "ayce",
@@ -340,12 +321,11 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Spicy Asian Salad",
-        "description": "Spring mix with spicy garlic sauce",
+		"fish": false
+	},
+	{
+		"name": "Spicy Asian Salad",
+		"description": "Spring mix with spicy garlic sauce",
 		"category": "Salad",
 		"price": 5.95,
 		"menu": "ayce",
@@ -353,12 +333,11 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Avocado Salad",
-        "description": "Spring mix and avocado with Japanese mustard",
+		"fish": false
+	},
+	{
+		"name": "Avocado Salad",
+		"description": "Spring mix and avocado with Japanese mustard",
 		"category": "Salad",
 		"price": 6.95,
 		"menu": "ayce",
@@ -366,12 +345,11 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Salmon Skin Salad",
-        "description": "Spicy, crunchy salmon over mixed greens with special sauce. (Contains traces of gluten.)",
+		"fish": false
+	},
+	{
+		"name": "Salmon Skin Salad",
+		"description": "Spicy, crunchy salmon over mixed greens with special sauce. (Contains traces of gluten.)",
 		"category": "Salad",
 		"price": 6.95,
 		"menu": "ayce",
@@ -379,12 +357,11 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Miso Soup",
-        "description": "",
+		"fish": false
+	},
+	{
+		"name": "Miso Soup",
+		"description": "",
 		"category": "Soup/Noodles",
 		"price": 2.00,
 		"menu": "ayce",
@@ -392,12 +369,11 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Kake Udon",
-        "description": "Traditional udon noodle in hot broth topped with scallions",
+		"fish": false
+	},
+	{
+		"name": "Kake Udon",
+		"description": "Traditional udon noodle in hot broth topped with scallions",
 		"category": "Soup/Noodles",
 		"price": 5.95,
 		"menu": "ayce",
@@ -405,12 +381,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Tempura Udon",
-        "description": "Japanese traditional noodle in house special broth with tempura",
+		"fish": false
+	},
+	{
+		"name": "Tempura Udon",
+		"description": "Japanese traditional noodle in house special broth with tempura",
 		"category": "Soup/Noodles",
 		"price": 9.95,
 		"menu": "ayce",
@@ -418,12 +393,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Spicy Ramen",
-        "description": "Spicy noodle with soup",
+		"fish": false
+	},
+	{
+		"name": "Spicy Ramen",
+		"description": "Spicy noodle with soup",
 		"category": "Soup/Noodles",
 		"price": 6.95,
 		"menu": "ayce",
@@ -431,12 +405,11 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false,
-		"aLaCarte": true
-    },
-    {
-        "name": "Steam Rice",
-        "description": "",
+		"fish": false
+	},
+	{
+		"name": "Steam Rice",
+		"description": "",
 		"category": "Rice",
 		"price": 1.50,
 		"menu": "ayce",
@@ -445,10 +418,10 @@
 		"vegetarian": true,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Mixed Fish Rice",
-        "description": "Rice mixed with assorted fish, vegetables, and inhouse made spicy sauce",
+	},
+	{
+		"name": "Mixed Fish Rice",
+		"description": "Rice mixed with assorted fish, vegetables, and inhouse made spicy sauce",
 		"category": "Rice",
 		"price": 13.95,
 		"menu": "ayce",
@@ -457,10 +430,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Vegetable Fried Rice",
-        "description": "Fried rice mixed with egg, yellow onion, carrot, green onion, sesame, mushroom",
+	},
+	{
+		"name": "Vegetable Fried Rice",
+		"description": "Fried rice mixed with egg, yellow onion, carrot, green onion, sesame, mushroom",
 		"category": "Rice",
 		"price": 6.95,
 		"menu": "ayce",
@@ -469,10 +442,10 @@
 		"vegetarian": true,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Chicken Fried Rice",
-        "description": "Chicken fried rice mixed with egg and green onion",
+	},
+	{
+		"name": "Chicken Fried Rice",
+		"description": "Chicken fried rice mixed with egg and green onion",
 		"category": "Rice",
 		"price": 7.95,
 		"menu": "ayce",
@@ -481,10 +454,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Shrimp Fried Rice",
-        "description": "Shrimp fried rice mixed with egg and green onion",
+	},
+	{
+		"name": "Shrimp Fried Rice",
+		"description": "Shrimp fried rice mixed with egg and green onion",
 		"category": "Rice",
 		"price": 9.95,
 		"menu": "ayce",
@@ -493,10 +466,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Chicken Teriyaki",
-        "description": "Grilled chicken with house teriyaki sauce",
+	},
+	{
+		"name": "Chicken Teriyaki",
+		"description": "Grilled chicken with house teriyaki sauce",
 		"category": "Rice",
 		"price": 11.95,
 		"menu": "ayce",
@@ -505,10 +478,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Salmon Teriyaki",
-        "description": "Salmon teriyaki with houes teriyaki sauce",
+	},
+	{
+		"name": "Salmon Teriyaki",
+		"description": "Salmon teriyaki with houes teriyaki sauce",
 		"category": "Rice",
 		"price": 12.95,
 		"menu": "ayce",
@@ -517,10 +490,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Chicken Katsu",
-        "description": "Deep fried breaded chicken breast with house hatsu sauce",
+	},
+	{
+		"name": "Chicken Katsu",
+		"description": "Deep fried breaded chicken breast with house hatsu sauce",
 		"category": "Rice",
 		"price": 12.50,
 		"menu": "ayce",
@@ -529,10 +502,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Korea Bulgogi",
-        "description": "Stir fried seasoned beef with mixed vegetable",
+	},
+	{
+		"name": "Korea Bulgogi",
+		"description": "Stir fried seasoned beef with mixed vegetable",
 		"category": "Rice",
 		"price": 12.95,
 		"menu": "ayce",
@@ -541,7 +514,7 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
+	},
 	{
 		"name": "California Roll",
 		"description": "Imitation crab, cucumber, avocado wrapped in sushi rice and seaweed paper",
@@ -962,9 +935,9 @@
 		"vegan": false,
 		"fish": true
 	},
-    {
-        "name": "Red Snapper (Tai)",
-        "description": "",
+	{
+		"name": "Red Snapper (Tai)",
+		"description": "",
 		"category": "Sushi",
 		"price": 4.50,
 		"menu": "ayce",
@@ -973,10 +946,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Scallop Yum Yum",
-        "description": "",
+	},
+	{
+		"name": "Scallop Yum Yum",
+		"description": "",
 		"category": "Sushi",
 		"price": 4.50,
 		"menu": "ayce",
@@ -985,10 +958,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Aomori Scallop",
-        "description": "",
+	},
+	{
+		"name": "Aomori Scallop",
+		"description": "",
 		"category": "Sushi",
 		"price": 4.95,
 		"menu": "ayce",
@@ -997,10 +970,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Shrimp (Ebi)",
-        "description": "",
+	},
+	{
+		"name": "Shrimp (Ebi)",
+		"description": "",
 		"category": "Sushi",
 		"price": 3.95,
 		"menu": "ayce",
@@ -1009,10 +982,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Salmon Egg (Ikura)",
-        "description": "",
+	},
+	{
+		"name": "Salmon Egg (Ikura)",
+		"description": "",
 		"category": "Sushi",
 		"price": 5.50,
 		"menu": "ayce",
@@ -1021,10 +994,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Smelt Egg (Masago)",
-        "description": "",
+	},
+	{
+		"name": "Smelt Egg (Masago)",
+		"description": "",
 		"category": "Sushi",
 		"price": 4.50,
 		"menu": "ayce",
@@ -1033,10 +1006,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Flying Fish Egg (Tobiko)",
-        "description": "",
+	},
+	{
+		"name": "Flying Fish Egg (Tobiko)",
+		"description": "",
 		"category": "Sushi",
 		"price": 4.50,
 		"menu": "ayce",
@@ -1045,10 +1018,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Squid (Ika)",
-        "description": "",
+	},
+	{
+		"name": "Squid (Ika)",
+		"description": "",
 		"category": "Sushi",
 		"price": 4.50,
 		"menu": "ayce",
@@ -1057,10 +1030,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Surf Clam (Hoikkigai)",
-        "description": "",
+	},
+	{
+		"name": "Surf Clam (Hoikkigai)",
+		"description": "",
 		"category": "Sushi",
 		"price": 4.50,
 		"menu": "ayce",
@@ -1069,22 +1042,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Conch (Makigai)",
-        "description": "",
-		"category": "Sushi",
-		"price": 5.50,
-		"menu": "ayce",
-		"onlyOrderOnce": true,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
-		"fish": true
-    },
-    {
-        "name": "Tako Wasabi",
-        "description": "",
+	},
+	{
+		"name": "Conch (Makigai)",
+		"description": "",
 		"category": "Sushi",
 		"price": 5.50,
 		"menu": "ayce",
@@ -1093,10 +1054,22 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Sweet Shrimp (Ama Ebi)",
-        "description": "",
+	},
+	{
+		"name": "Tako Wasabi",
+		"description": "",
+		"category": "Sushi",
+		"price": 5.50,
+		"menu": "ayce",
+		"onlyOrderOnce": true,
+		"glutenFree": false,
+		"vegetarian": false,
+		"vegan": false,
+		"fish": true
+	},
+	{
+		"name": "Sweet Shrimp (Ama Ebi)",
+		"description": "",
 		"category": "Sushi",
 		"price": 8.95,
 		"menu": "ayce",
@@ -1105,10 +1078,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Tamago (Egg Custard)",
-        "description": "",
+	},
+	{
+		"name": "Tamago (Egg Custard)",
+		"description": "",
 		"category": "Sushi",
 		"price": 3.50,
 		"menu": "ayce",
@@ -1117,10 +1090,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "007 Roll",
-        "description": "In: crab, cucumber / Top: shrimp, avocado",
+	},
+	{
+		"name": "007 Roll",
+		"description": "In: crab, cucumber / Top: shrimp, avocado",
 		"category": "Chef’s Special Rolls",
 		"price": 7.95,
 		"menu": "ayce",
@@ -1129,10 +1102,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Alaska Roll",
-        "description": "In: crab, avocado, cucumber / Top: salmon",
+	},
+	{
+		"name": "Alaska Roll",
+		"description": "In: crab, avocado, cucumber / Top: salmon",
 		"category": "Chef’s Special Rolls",
 		"price": 9.95,
 		"menu": "ayce",
@@ -1141,10 +1114,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Avatar",
-        "description": "In: spicy crab, cooked shrimp, cucumber / Top: avocado / Sauce: spicy mayo, ginger dressing",
+	},
+	{
+		"name": "Avatar",
+		"description": "In: spicy crab, cooked shrimp, cucumber / Top: avocado / Sauce: spicy mayo, ginger dressing",
 		"category": "Chef’s Special Rolls",
 		"price": 11.50,
 		"menu": "ayce",
@@ -1153,10 +1126,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Banzai",
-        "description": "In: crab, avocado, cucumber, shrimp tempura / Sauce: eel sauce, crunch",
+	},
+	{
+		"name": "Banzai",
+		"description": "In: crab, avocado, cucumber, shrimp tempura / Sauce: eel sauce, crunch",
 		"category": "Chef’s Special Rolls",
 		"price": 8.95,
 		"menu": "ayce",
@@ -1165,10 +1138,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Black Jack",
-        "description": "In: spicy tuna, spicy crab, avocado, shrimp tempura / Sauce: spicy mayo, ginger dressing with soy paper",
+	},
+	{
+		"name": "Black Jack",
+		"description": "In: spicy tuna, spicy crab, avocado, shrimp tempura / Sauce: spicy mayo, ginger dressing with soy paper",
 		"category": "Chef’s Special Rolls",
 		"price": 10.95,
 		"menu": "ayce",
@@ -1177,10 +1150,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Candy Cane",
-        "description": "In: cucumber, spicy soft shell crab / Top: tuna, yellowtail / Sauce: Japanese mustard sauce, chop special",
+	},
+	{
+		"name": "Candy Cane",
+		"description": "In: cucumber, spicy soft shell crab / Top: tuna, yellowtail / Sauce: Japanese mustard sauce, chop special",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1189,10 +1162,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Casanova",
-        "description": "In: spicy tuna, cucumber / Top: yellowtail / Sauce: yuzu, ginger dressing, jalapeno, sriracha",
+	},
+	{
+		"name": "Casanova",
+		"description": "In: spicy tuna, cucumber / Top: yellowtail / Sauce: yuzu, ginger dressing, jalapeno, sriracha",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1201,10 +1174,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Caterpillar",
-        "description": "In: eel, cucumber / Top: avocado / Sauce: eel sauce",
+	},
+	{
+		"name": "Caterpillar",
+		"description": "In: eel, cucumber / Top: avocado / Sauce: eel sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 10.95,
 		"menu": "ayce",
@@ -1213,10 +1186,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Coco Mom",
-        "description": "In: chicken tempura, cream cheese, avocado / Sauce: crunch, eel sauce",
+	},
+	{
+		"name": "Coco Mom",
+		"description": "In: chicken tempura, cream cheese, avocado / Sauce: crunch, eel sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 9.95,
 		"menu": "ayce",
@@ -1225,10 +1198,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Crazy Crab",
-        "description": "In: crab, cream cheese, avocado / Top: crab stick / Sauce: carrot crunch, special sauce",
+	},
+	{
+		"name": "Crazy Crab",
+		"description": "In: crab, cream cheese, avocado / Top: crab stick / Sauce: carrot crunch, special sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1237,10 +1210,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Cucumber Passion (no rice)",
-        "description": "In: tuna, salmon, white fish, crab, avocado / Sauce: garlic ponzu, wrapped with cucumber",
+	},
+	{
+		"name": "Cucumber Passion (no rice)",
+		"description": "In: tuna, salmon, white fish, crab, avocado / Sauce: garlic ponzu, wrapped with cucumber",
 		"category": "Chef’s Special Rolls",
 		"price": 12.95,
 		"menu": "ayce",
@@ -1249,10 +1222,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Die Hard 1",
-        "description": "In: cucumber, spicy soft shell crab, shrimp tempura / Top: albacore, jalapeno / Sauce: spicy sauce",
+	},
+	{
+		"name": "Die Hard 1",
+		"description": "In: cucumber, spicy soft shell crab, shrimp tempura / Top: albacore, jalapeno / Sauce: spicy sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1261,10 +1234,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Dragon",
-        "description": "In: crab, cucumber / Top: fresh water eel, avocado / Sauce: eel sauce",
+	},
+	{
+		"name": "Dragon",
+		"description": "In: crab, cucumber / Top: fresh water eel, avocado / Sauce: eel sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 11.95,
 		"menu": "ayce",
@@ -1273,10 +1246,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "EX-Girlfriend",
-        "description": "In: spicy tuna, cucumber, shrimp tempura / Top: scallop yum yum / Sauce: garlic ponzu, spicy mayo, eel sauce, crunch",
+	},
+	{
+		"name": "EX-Girlfriend",
+		"description": "In: spicy tuna, cucumber, shrimp tempura / Top: scallop yum yum / Sauce: garlic ponzu, spicy mayo, eel sauce, crunch",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1285,10 +1258,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Final Destination",
-        "description": "In: spicy soft shell crab, cucumber, shrimp tempura / Top: tuna, avocado / Sauce: S.O. sauce",
+	},
+	{
+		"name": "Final Destination",
+		"description": "In: spicy soft shell crab, cucumber, shrimp tempura / Top: tuna, avocado / Sauce: S.O. sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1297,10 +1270,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Futomaki",
-        "description": "In: crab stick, pickled radish, tamago, burdock",
+	},
+	{
+		"name": "Futomaki",
+		"description": "In: crab stick, pickled radish, tamago, burdock",
 		"category": "Chef’s Special Rolls",
 		"price": 9.50,
 		"menu": "ayce",
@@ -1309,10 +1282,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Golden Cali",
-        "description": "In: deep fried California roll / Sauce: eel sauce, spicy mayo",
+	},
+	{
+		"name": "Golden Cali",
+		"description": "In: deep fried California roll / Sauce: eel sauce, spicy mayo",
 		"category": "Chef’s Special Rolls",
 		"price": 7.50,
 		"menu": "ayce",
@@ -1321,10 +1294,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Golden Philly",
-        "description": "In: deep fried Philly roll / Sauce: eel sauce, spicy mayo",
+	},
+	{
+		"name": "Golden Philly",
+		"description": "In: deep fried Philly roll / Sauce: eel sauce, spicy mayo",
 		"category": "Chef’s Special Rolls",
 		"price": 8.95,
 		"menu": "ayce",
@@ -1333,10 +1306,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Hot Night",
-        "description": "In: shrimp tempura, avocado, cucumber / Top: spicy crab / Sauce: spicy sauce, spicy mayo, eel sauce, sriracha, jalapeno",
+	},
+	{
+		"name": "Hot Night",
+		"description": "In: shrimp tempura, avocado, cucumber / Top: spicy crab / Sauce: spicy sauce, spicy mayo, eel sauce, sriracha, jalapeno",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1345,10 +1318,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "JJ Roll",
-        "description": "In: shrimp tempura, avocado, cream cheese / Top: spicy crab, white tuna / Sauce: S.O. sauce, chop special",
+	},
+	{
+		"name": "JJ Roll",
+		"description": "In: shrimp tempura, avocado, cream cheese / Top: spicy crab, white tuna / Sauce: S.O. sauce, chop special",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1357,10 +1330,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Junai Special",
-        "description": "In: spicy tuna, cucumber / Top: tuna / Sauce: garlic ponzu sauce, fresh onion",
+	},
+	{
+		"name": "Junai Special",
+		"description": "In: spicy tuna, cucumber / Top: tuna / Sauce: garlic ponzu sauce, fresh onion",
 		"category": "Chef’s Special Rolls",
 		"price": 11.95,
 		"menu": "ayce",
@@ -1369,10 +1342,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Just for the halibut",
-        "description": "In: cucumber, crab, fish tempura / Top: fish tempura / Sauce: eel sauce, yum yum sauce",
+	},
+	{
+		"name": "Just for the halibut",
+		"description": "In: cucumber, crab, fish tempura / Top: fish tempura / Sauce: eel sauce, yum yum sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1381,10 +1354,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "K B.B.Q Roll",
-        "description": "In: California roll / Top: Korean bulgogi",
+	},
+	{
+		"name": "K B.B.Q Roll",
+		"description": "In: California roll / Top: Korean bulgogi",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1393,10 +1366,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Kiss My Ass",
-        "description": "In: mixed fish, crab / Top: avocado / Sauce: eel sauce, spicy mayo, fried garlic",
+	},
+	{
+		"name": "Kiss My Ass",
+		"description": "In: mixed fish, crab / Top: avocado / Sauce: eel sauce, spicy mayo, fried garlic",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1405,10 +1378,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Lisa Lisa",
-        "description": "In: shrimp tempura, cream cheese / Top: avocado / Sauce: eel sauce",
+	},
+	{
+		"name": "Lisa Lisa",
+		"description": "In: shrimp tempura, cream cheese / Top: avocado / Sauce: eel sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 10.95,
 		"menu": "ayce",
@@ -1417,10 +1390,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Long Horn",
-        "description": "In: crab, cucumber, avocado / Top: spicy tuna, shrimp tempura / Sauce: eel sauce",
+	},
+	{
+		"name": "Long Horn",
+		"description": "In: crab, cucumber, avocado / Top: spicy tuna, shrimp tempura / Sauce: eel sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 11.50,
 		"menu": "ayce",
@@ -1429,10 +1402,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Mexican",
-        "description": "In: spicy crab, cucumber, cooked shrimp, avocado / Sauce: sriracha",
+	},
+	{
+		"name": "Mexican",
+		"description": "In: spicy crab, cucumber, cooked shrimp, avocado / Sauce: sriracha",
 		"category": "Chef’s Special Rolls",
 		"price": 8.95,
 		"menu": "ayce",
@@ -1441,10 +1414,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "OMG",
-        "description": "In: crab, cucumber, shrimp tempura / Top: spicy salmon / Sauce: S.O. sauce",
+	},
+	{
+		"name": "OMG",
+		"description": "In: crab, cucumber, shrimp tempura / Top: spicy salmon / Sauce: S.O. sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1453,10 +1426,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Pearl Special",
-        "description": "In: crab, cucumber, avocado, cream cheese, shrimp tempura / Sauce: crunch, special sauce",
+	},
+	{
+		"name": "Pearl Special",
+		"description": "In: crab, cucumber, avocado, cream cheese, shrimp tempura / Sauce: crunch, special sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 11.50,
 		"menu": "ayce",
@@ -1465,10 +1438,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Play Boy",
-        "description": "In: crab, asparagus / Top: salmon, shrimp, avocado / Sauce: Japanese mustard sauce, chop special",
+	},
+	{
+		"name": "Play Boy",
+		"description": "In: crab, asparagus / Top: salmon, shrimp, avocado / Sauce: Japanese mustard sauce, chop special",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1477,10 +1450,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Rainbow",
-        "description": "In: crab, cucumber / Top: tuna salmon, shrimp, w fish, avocado",
+	},
+	{
+		"name": "Rainbow",
+		"description": "In: crab, cucumber / Top: tuna salmon, shrimp, w fish, avocado",
 		"category": "Chef’s Special Rolls",
 		"price": 11.95,
 		"menu": "ayce",
@@ -1489,10 +1462,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Red Devil",
-        "description": "In: cucumber, shrimp tempura / Top: tuna, avocado / Sauce: garlic ponzu",
+	},
+	{
+		"name": "Red Devil",
+		"description": "In: cucumber, shrimp tempura / Top: tuna, avocado / Sauce: garlic ponzu",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1501,10 +1474,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Red Dragon",
-        "description": "In: spicy tuna, cucumber / Top: eel / Sauce: eel sauce",
+	},
+	{
+		"name": "Red Dragon",
+		"description": "In: spicy tuna, cucumber / Top: eel / Sauce: eel sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1513,10 +1486,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Salmon Holic",
-        "description": "In: shrimp tempura, avocado, spicy salmon / Top: salmon / Sauce: yum yum, yuzu, crunch",
+	},
+	{
+		"name": "Salmon Holic",
+		"description": "In: shrimp tempura, avocado, spicy salmon / Top: salmon / Sauce: yum yum, yuzu, crunch",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1525,10 +1498,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Salmon Lover",
-        "description": "In: spicy salmon, cucumber / Top: salmon, avocado / Sauce: garlic ponzu, fresh onion",
+	},
+	{
+		"name": "Salmon Lover",
+		"description": "In: spicy salmon, cucumber / Top: salmon, avocado / Sauce: garlic ponzu, fresh onion",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1537,10 +1510,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Sashimi Special (4 pcs)",
-        "description": "Tuna/garlic ponzu & masago. Yellowtail/yuzu & jalapeno. White tuna/sear & mustard sauce. Salmon/avocado & yum yum sauce",
+	},
+	{
+		"name": "Sashimi Special (4 pcs)",
+		"description": "Tuna/garlic ponzu & masago. Yellowtail/yuzu & jalapeno. White tuna/sear & mustard sauce. Salmon/avocado & yum yum sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 12.95,
 		"menu": "ayce",
@@ -1549,10 +1522,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Shrimp Tempura Roll",
-        "description": "In: cucumber, avocado, shrimp tempura / Sauce: eel sauce, crunch",
+	},
+	{
+		"name": "Shrimp Tempura Roll",
+		"description": "In: cucumber, avocado, shrimp tempura / Sauce: eel sauce, crunch",
 		"category": "Chef’s Special Rolls",
 		"price": 7.95,
 		"menu": "ayce",
@@ -1561,10 +1534,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Snow White",
-        "description": "In: shrimp tempura, cucumber, spicy tuna / Top: white tuna / Sauce: garlic ponzu",
+	},
+	{
+		"name": "Snow White",
+		"description": "In: shrimp tempura, cucumber, spicy tuna / Top: white tuna / Sauce: garlic ponzu",
 		"category": "Chef’s Special Rolls",
 		"price": 12.95,
 		"menu": "ayce",
@@ -1573,10 +1546,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Spider",
-        "description": "In: soft shell crab, cucumber, avocado, crab / Sauce: eel sauce",
+	},
+	{
+		"name": "Spider",
+		"description": "In: soft shell crab, cucumber, avocado, crab / Sauce: eel sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 9.95,
 		"menu": "ayce",
@@ -1585,10 +1558,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Star Buck",
-        "description": "In: spicy crab, cucumber, shrimp tempura / Top: shrimp, avocado / Sauce: eel, spicy mayo, crunch",
+	},
+	{
+		"name": "Star Buck",
+		"description": "In: spicy crab, cucumber, shrimp tempura / Top: shrimp, avocado / Sauce: eel, spicy mayo, crunch",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1597,10 +1570,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Strip Salmon",
-        "description": "In: spicy crab, cucumber-wrapped salmon / Sauce: S.O. sauce",
+	},
+	{
+		"name": "Strip Salmon",
+		"description": "In: spicy crab, cucumber-wrapped salmon / Sauce: S.O. sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1609,10 +1582,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Sweet Heart",
-        "description": "In: tuna, salmon, crab, radish, shrimp tempura / Sauce: ginger dressing with soy paper",
+	},
+	{
+		"name": "Sweet Heart",
+		"description": "In: tuna, salmon, crab, radish, shrimp tempura / Sauce: ginger dressing with soy paper",
 		"category": "Chef’s Special Rolls",
 		"price": 10.95,
 		"menu": "ayce",
@@ -1621,10 +1594,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Sweet Kiss",
-        "description": "In: salmon tempura, crab, avocado, cream cheese / Sauce: crunch, eel sauce, yum yum sauce",
+	},
+	{
+		"name": "Sweet Kiss",
+		"description": "In: salmon tempura, crab, avocado, cream cheese / Sauce: crunch, eel sauce, yum yum sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 10.95,
 		"menu": "ayce",
@@ -1633,10 +1606,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Tiger",
-        "description": "In: shrimp tempura, cucumber / Top: spicy tuna, avocado / Sauce: eel sauce",
+	},
+	{
+		"name": "Tiger",
+		"description": "In: shrimp tempura, cucumber / Top: spicy tuna, avocado / Sauce: eel sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 11.95,
 		"menu": "ayce",
@@ -1645,10 +1618,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Touch Down",
-        "description": "In: scallop yum yum, cucumber, avocado / Top: salmon / Sauce: eel sauce, crunch, yum yum sauce",
+	},
+	{
+		"name": "Touch Down",
+		"description": "In: scallop yum yum, cucumber, avocado / Top: salmon / Sauce: eel sauce, crunch, yum yum sauce",
 		"category": "Chef’s Special Rolls",
 		"price": 9.95,
 		"menu": "ayce",
@@ -1657,10 +1630,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Wet Dream",
-        "description": "In: spicy crab, cucumber / Top: seaweed salad / Sauce: spicy mayo, ginger dressing",
+	},
+	{
+		"name": "Wet Dream",
+		"description": "In: spicy crab, cucumber / Top: seaweed salad / Sauce: spicy mayo, ginger dressing",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1669,10 +1642,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "White House",
-        "description": "In: spicy crab, deep fried asparagus / Top: white tuna / Sauce: spicy mayo, ginger dressing",
+	},
+	{
+		"name": "White House",
+		"description": "In: spicy crab, deep fried asparagus / Top: white tuna / Sauce: spicy mayo, ginger dressing",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1681,10 +1654,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true
-    },
-    {
-        "name": "Diablo",
-        "description": "In: salmon, spicy crab, cream cheese, shrimp tempura / Sauce: spicy mayo, eel sauce, sriracha, jalapeno",
+	},
+	{
+		"name": "Diablo",
+		"description": "In: salmon, spicy crab, cream cheese, shrimp tempura / Sauce: spicy mayo, eel sauce, sriracha, jalapeno",
 		"category": "Tempura Rolls",
 		"price": 11.50,
 		"menu": "ayce",
@@ -1693,10 +1666,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Fat Ass",
-        "description": "In: crab, tuna, salmon, w fish, avocado / Sauce: special sauce, sriracha",
+	},
+	{
+		"name": "Fat Ass",
+		"description": "In: crab, tuna, salmon, w fish, avocado / Sauce: special sauce, sriracha",
 		"category": "Tempura Rolls",
 		"price": 12.95,
 		"menu": "ayce",
@@ -1705,10 +1678,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Salmon Ass",
-        "description": "In: salmon, avocado, crab, cream cheese / Top: salmon / Sauce: eel sauce, spicy mayo",
+	},
+	{
+		"name": "Salmon Ass",
+		"description": "In: salmon, avocado, crab, cream cheese / Top: salmon / Sauce: eel sauce, spicy mayo",
 		"category": "Tempura Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1717,10 +1690,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Stonehenge",
-        "description": "In: crab, avocado, cream cheese, shrimp tempura / Sauce: special sauce, sriracha, carrot crunch",
+	},
+	{
+		"name": "Stonehenge",
+		"description": "In: crab, avocado, cream cheese, shrimp tempura / Sauce: special sauce, sriracha, carrot crunch",
 		"category": "Tempura Rolls",
 		"price": 11.50,
 		"menu": "ayce",
@@ -1729,10 +1702,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "TNT Roll (No Rice)",
-        "description": "In: salmon, spicy tuna, spicy crab, cream cheese / Sauce: spicy mayo, eel sauce",
+	},
+	{
+		"name": "TNT Roll (No Rice)",
+		"description": "In: salmon, spicy tuna, spicy crab, cream cheese / Sauce: spicy mayo, eel sauce",
 		"category": "Tempura Rolls",
 		"price": 9.95,
 		"menu": "ayce",
@@ -1741,10 +1714,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Vegas",
-        "description": "In: fresh water eel, crab, avocado, cream cheese / Sauce: eel sauce",
+	},
+	{
+		"name": "Vegas",
+		"description": "In: fresh water eel, crab, avocado, cream cheese / Sauce: eel sauce",
 		"category": "Tempura Rolls",
 		"price": 10.50,
 		"menu": "ayce",
@@ -1753,10 +1726,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "What The Hell",
-        "description": "In: spicy tuna, cream cheese, jalapeno / Sauce: jalapeno, sriracha, eel sauce",
+	},
+	{
+		"name": "What The Hell",
+		"description": "In: spicy tuna, cream cheese, jalapeno / Sauce: jalapeno, sriracha, eel sauce",
 		"category": "Tempura Rolls",
 		"price": 8.95,
 		"menu": "ayce",
@@ -1765,10 +1738,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Who’s Your Daddy?",
-        "description": "In: crab, cooked shrimp, cream cheese / Sauce : special sauce",
+	},
+	{
+		"name": "Who’s Your Daddy?",
+		"description": "In: crab, cooked shrimp, cream cheese / Sauce : special sauce",
 		"category": "Tempura Rolls",
 		"price": 12.95,
 		"menu": "ayce",
@@ -1777,10 +1750,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Who’s your Ex-Wife?",
-        "description": "In: spicy tuna, jalapeno, cream cheese / Sauce: special sauce, sriracha",
+	},
+	{
+		"name": "Who’s your Ex-Wife?",
+		"description": "In: spicy tuna, jalapeno, cream cheese / Sauce: special sauce, sriracha",
 		"category": "Tempura Rolls",
 		"price": 12.95,
 		"menu": "ayce",
@@ -1789,10 +1762,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Death Valley",
-        "description": "In: crab, asparagus, cream cheese / Top: scallop yum yum / Sauce: crunch, eel sauce",
+	},
+	{
+		"name": "Death Valley",
+		"description": "In: crab, asparagus, cream cheese / Top: scallop yum yum / Sauce: crunch, eel sauce",
 		"category": "Baked Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1801,10 +1774,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Lasagna",
-        "description": "In: crab, avocado / Top: cream cheese / Sauce: eel sauce",
+	},
+	{
+		"name": "Lasagna",
+		"description": "In: crab, avocado / Top: cream cheese / Sauce: eel sauce",
 		"category": "Baked Rolls",
 		"price": 8.50,
 		"menu": "ayce",
@@ -1813,10 +1786,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Mountain",
-        "description": "In: crab, avocado / Top: salmon / Sauce: eel sauce",
+	},
+	{
+		"name": "Mountain",
+		"description": "In: crab, avocado / Top: salmon / Sauce: eel sauce",
 		"category": "Baked Rolls",
 		"price": 10.95,
 		"menu": "ayce",
@@ -1825,10 +1798,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Volcano",
-        "description": "In: spicy crab, cream cheese, avocado / Top: red snapper / Sauce: yum yum sauce, eel sauce",
+	},
+	{
+		"name": "Volcano",
+		"description": "In: spicy crab, cream cheese, avocado / Top: red snapper / Sauce: yum yum sauce, eel sauce",
 		"category": "Baked Rolls",
 		"price": 11.50,
 		"menu": "ayce",
@@ -1837,10 +1810,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Green Tea Ice Cream",
-        "description": "",
+	},
+	{
+		"name": "Green Tea Ice Cream",
+		"description": "",
 		"category": "Desserts",
 		"price": 3.00,
 		"menu": "ayce",
@@ -1849,10 +1822,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Vanilla Ice Cream",
-        "description": "",
+	},
+	{
+		"name": "Vanilla Ice Cream",
+		"description": "",
 		"category": "Desserts",
 		"price": 3.00,
 		"menu": "ayce",
@@ -1861,10 +1834,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Afogatto",
-        "description": "",
+	},
+	{
+		"name": "Afogatto",
+		"description": "",
 		"category": "Desserts",
 		"price": 4.50,
 		"menu": "ayce",
@@ -1873,10 +1846,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Ice Brownie",
-        "description": "",
+	},
+	{
+		"name": "Ice Brownie",
+		"description": "",
 		"category": "Desserts",
 		"price": 4.50,
 		"menu": "ayce",
@@ -1885,10 +1858,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false
-    },
-    {
-        "name": "Mochi Ice Cream",
-        "description": "(Green Tea, Mango, Strawberry",
+	},
+	{
+		"name": "Mochi Ice Cream",
+		"description": "(Green Tea, Mango, Strawberry",
 		"category": "Desserts",
 		"price": 3.95,
 		"menu": "ayce",
@@ -2049,7 +2022,17 @@
 	},
 	{
 		"name": "Soft Drinks",
-		"drinks": ["Pepsi", "Diet Pepsi", "Fanta", "Lemonade", "Sierra Mist", "Dr. Pepper", "Sweet Tea", "Unsweetened Tea", "Arnold Palmer"],
+		"drinks": [
+			"Pepsi",
+			"Diet Pepsi",
+			"Fanta",
+			"Lemonade",
+			"Sierra Mist",
+			"Dr. Pepper",
+			"Sweet Tea",
+			"Unsweetened Tea",
+			"Arnold Palmer"
+		],
 		"menu": "drinks",
 		"price": 1.95,
 		"category": "soft drinks"
@@ -2152,8 +2135,7 @@
 		"price": 8.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false,
-		"aLaCarte": true
+		"fish": false
 	},
 	{
 		"name": "Tonkatsu",
@@ -2161,8 +2143,7 @@
 		"price": 8.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false,
-		"aLaCarte": true
+		"fish": false
 	},
 	{
 		"name": "Chicken Katsu",
@@ -2170,8 +2151,7 @@
 		"price": 8.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false,
-		"aLaCarte": true
+		"fish": false
 	},
 	{
 		"name": "Korea Bulgogi",
@@ -2179,8 +2159,7 @@
 		"price": 9.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false,
-		"aLaCarte": true
+		"fish": false
 	},
 	{
 		"name": "Salmon Teriyaki",
@@ -2188,194 +2167,196 @@
 		"price": 10.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false,
-		"aLaCarte": true
+		"fish": false
 	},
 	{
 		"name": "Chirashi",
 		"description": "Assorted chefs' choice fresh sashimi on bed of sushi rice.",
 		"category": "sushi and sashimi",
-		"price": "$14.95",
+		"price": 14.95,
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
 		"fish": false
-},{
-	"name": "Sushi Platter",
-	"description": "Eight pieces of chefs' choice nigiri with one classic roll",
-	"category": "sushi and sashimi",
-	"price": "$16.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},{
-	"name": "Austin (6 pieces)",
-	"description": "",
-	"category": "platters",
-	"price": "$10.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Texas (12 pieces)",
-	"description": "",
-	"category": "platters",
-	"price": "$18.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "USA (18 pieces)",
-	"description": "",
-	"category": "platters",
-	"price": "$27.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},{
-	"name": "JUNAI (25 pieces)",
-	"description": "",
-	"category": "platters",
-	"price": "$36.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Chicken Salad",
-	"description": "Mixed greens topped with avocado and grilled chicken",
-	"category": "Salad",
-	"price": "$8.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Sashimi Salad",
-	"description": "10 piece slice sashimi, shredded radish with spicy sauce",
-	"category": "Salad",
-	"price": "$12.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Yellowtail Capachino (6 pieces)",
-	"description": "Slice yellowtail topped jalapeno with garlic ponzu",
-	"category": "Appetizer",
-	"price": "$9.50",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": true
-},
-{
-	"name": "Cajun Albacore Sashimi (8 pieces)",
-	"description": "Slice albacore with ninza sauce",
-	"category": "Appetizer",
-	"price": "$12.50",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": true
-},
-{
-	"name": "Salmon Collar",
-	"description": "Grilled salmon collar with ponzu sauce. Limited quantity available.",
-	"category": "Appetizer",
-	"price": "$6.95",
-	"menu": "alc",
-	"glutenFree": true,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Yellowtail Collar",
-	"description": "Grilled yellowtail collar with ponzu sauce. Limited quantity available.",
-	"category": "Appetizer",
-	"price": "$7.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Mini Rolly Katsu (4 pieces)",
-	"description": "Deep fried balls with masago, cream cheese and crab",
-	"category": "Appetizer",
-	"price": "$5.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Soft Shell Crab",
-	"description": "Deep fried soft shell crab with ponzu",
-	"category": "Appetizer",
-	"price": "$7.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Chicken Yaki Udon",
-	"description": "Stir fried udon noodles and chicken with vegetables",
-	"category": "Soup/Noodles",
-	"price": "$9.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Seafood Yaki Udon",
-	"description": "Stir fried udon noodles and seafood with vegetables",
-	"category": "Soup/Noodles",
-	"price": "$9.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Nabeyaki Udon",
-	"description": "Japanese traditional noodle in house special broth with tempura, vegetables, chicken, egg and fish cake",
-	"category": "Soup/Noodles",
-	"price": "$11.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Beef Teriyaki",
-	"description": "Grilled beef with house teriyaki sauce",
-	"category": "entree",
-	"price": "$13.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-},
-{
-	"name": "Unagi Donburi",
-	"description": "Broiled freshwater eel with unagi sauce on a bed of rice",
-	"category": "entree",
-	"price": "$13.95",
-	"menu": "alc",
-	"glutenFree": false,
-	"vegetarian": false,
-	"fish": false
-}
+	},
+	{
+		"name": "Sushi Platter",
+		"description": "Eight pieces of chefs' choice nigiri with one classic roll",
+		"category": "sushi and sashimi",
+		"price": 16.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Austin (6 pieces)",
+		"description": "",
+		"category": "platters",
+		"price": 10.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Texas (12 pieces)",
+		"description": "",
+		"category": "platters",
+		"price": 18.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "USA (18 pieces)",
+		"description": "",
+		"category": "platters",
+		"price": 27.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "JUNAI (25 pieces)",
+		"description": "",
+		"category": "platters",
+		"price": 36.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Chicken Salad",
+		"description": "Mixed greens topped with avocado and grilled chicken",
+		"category": "Salad",
+		"price": 8.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Sashimi Salad",
+		"description": "10 piece slice sashimi, shredded radish with spicy sauce",
+		"category": "Salad",
+		"price": 12.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Yellowtail Capachino (6 pieces)",
+		"description": "Slice yellowtail topped jalapeno with garlic ponzu",
+		"category": "Appetizer",
+		"price": 9.50,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": true
+	},
+	{
+		"name": "Cajun Albacore Sashimi (8 pieces)",
+		"description": "Slice albacore with ninza sauce",
+		"category": "Appetizer",
+		"price": 12.50,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": true
+	},
+	{
+		"name": "Salmon Collar",
+		"description": "Grilled salmon collar with ponzu sauce. Limited quantity available.",
+		"category": "Appetizer",
+		"price": 6.95,
+		"menu": "alc",
+		"glutenFree": true,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Yellowtail Collar",
+		"description": "Grilled yellowtail collar with ponzu sauce. Limited quantity available.",
+		"category": "Appetizer",
+		"price": 7.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Mini Rolly Katsu (4 pieces)",
+		"description": "Deep fried balls with masago, cream cheese and crab",
+		"category": "Appetizer",
+		"price": 5.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Soft Shell Crab",
+		"description": "Deep fried soft shell crab with ponzu",
+		"category": "Appetizer",
+		"price": 7.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Chicken Yaki Udon",
+		"description": "Stir fried udon noodles and chicken with vegetables",
+		"category": "Soup/Noodles",
+		"price": 9.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Seafood Yaki Udon",
+		"description": "Stir fried udon noodles and seafood with vegetables",
+		"category": "Soup/Noodles",
+		"price": 9.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Nabeyaki Udon",
+		"description": "Japanese traditional noodle in house special broth with tempura, vegetables, chicken, egg and fish cake",
+		"category": "Soup/Noodles",
+		"price": 11.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Beef Teriyaki",
+		"description": "Grilled beef with house teriyaki sauce",
+		"category": "entree",
+		"price": 13.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	},
+	{
+		"name": "Unagi Donburi",
+		"description": "Broiled freshwater eel with unagi sauce on a bed of rice",
+		"category": "entree",
+		"price": 13.95,
+		"menu": "alc",
+		"glutenFree": false,
+		"vegetarian": false,
+		"fish": false
+	}
 ]
