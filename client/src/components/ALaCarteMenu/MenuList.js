@@ -5,35 +5,38 @@ import menu from "../../db/menu.json";
 import MenuItems from "../MenuItems";
 import MenuNav from "../MenuNav/index";
 import Image from "../Image";
-import vegIcon from "./icons8-vegetarian-mark-50.png";
-import gfIcon from "./icons8-no-gluten-50.png";
-import fishIcon from "./icons8-fish-food-50.png";
+import vegIcon from "../AyceMenu/icons8-vegetarian-mark-50.png";
+import gfIcon from "../AyceMenu/icons8-no-gluten-50.png";
+import fishIcon from "../AyceMenu/icons8-fish-food-50.png";
 
 function Menu() {
     const [isVegetarian, setIsVegetarian] = useState(false);
     const [isGlutenFree, setIsGlutenFree] = useState(false);
 
-    let ayceMenu = menu.filter(item => item.menu === "ayce");
+    let alcMenu = menu.filter(item => item.menu === "ayce" || "alc");
 
     if (isVegetarian) {
-        ayceMenu = ayceMenu.filter(item => item.vegetarian);
+        alcMenu = alcMenu.filter(item => item.vegetarian);
     }
 
     if (isGlutenFree) {
-        ayceMenu = ayceMenu.filter(item => item.glutenFree);
+        alcMenu = alcMenu.filter(item => item.glutenFree);
     }
 
     
-    const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
-    const salads = ayceMenu.filter(item => item.category === "Salad");
-    const soups = ayceMenu.filter(item => item.category === "Soup/Noodles");
-    const rice = ayceMenu.filter(item => item.category === "Rice");
-    const classicRolls = ayceMenu.filter(item => item.category === "Classic Roll/Hand Roll");
-    const sushi = ayceMenu.filter(item => item.category === "Sushi");
-    const chefsSpecial = ayceMenu.filter(item => item.category === "Chef’s Special Rolls");
-    const tempuraRolls = ayceMenu.filter(item => item.category === "Tempura Rolls");
-    const bakedRolls = ayceMenu.filter(item => item.category === "Baked Rolls");
-    const desserts = ayceMenu.filter(item => item.category === "Desserts");
+    const appetizers = alcMenu.filter(item => item.category === "Appetizer");
+    const salads = alcMenu.filter(item => item.category === "Salad");
+    const soups = alcMenu.filter(item => item.category === "Soup/Noodles");
+    const rice = alcMenu.filter(item => item.category === "Rice");
+    const classicRolls = alcMenu.filter(item => item.category === "Classic Roll/Hand Roll");
+    const sushi = alcMenu.filter(item => item.category === "Sushi");
+    const chefsSpecial = alcMenu.filter(item => item.category === "Chef’s Special Rolls");
+    const tempuraRolls = alcMenu.filter(item => item.category === "Tempura Rolls");
+    const bakedRolls = alcMenu.filter(item => item.category === "Baked Rolls");
+    const desserts = alcMenu.filter(item => item.category === "Desserts");
+    const entrees = alcMenu.filter(item => item.category === "entree");
+    const sushiSashimi = alcMenu.filter(item => item.category === "sushi and sashimi");
+    const platters = alcMenu.filter(item => item.category === "platters");
     //eventually users will be able to favorite items straight from the menu (if logged-in) 
 
     function handleInputChangeVeg(){
@@ -73,7 +76,7 @@ function Menu() {
                                     return (
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -95,7 +98,7 @@ function Menu() {
                                     return (
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -116,7 +119,7 @@ function Menu() {
                                     return (
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -137,7 +140,70 @@ function Menu() {
                                     return (
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                </MenuItems>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </Container>
+                    </Row>
+                    <Row>
+                        <h4 id="entree">Entrees</h4>
+                        <Container>
+                            {
+                                entrees.map((item, idx) => {
+                                    let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                    if (item.onlyOrderOnce) {
+                                        oncePerOrder = "red";
+                                    }
+                                    return (
+                                        <div className="card text-center">
+                                            <div className="card-body d-flex justify-content-between">
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                </MenuItems>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </Container>
+                    </Row>
+                    <Row>
+                        <h4 id="sushiSashimi">Sushi & Sashimi</h4>
+                        <Container>
+                            {
+                                sushiSashimi.map((item, idx) => {
+                                    let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                    if (item.onlyOrderOnce) {
+                                        oncePerOrder = "red";
+                                    }
+                                    return (
+                                        <div className="card text-center">
+                                            <div className="card-body d-flex justify-content-between">
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                </MenuItems>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </Container>
+                    </Row>
+                    <Row>
+                        <h4 id="platters">Sashimi Platters (chef's choice)</h4>
+                        <Container>
+                            {
+                                platters.map((item, idx) => {
+                                    let oncePerOrder = ""; // Give the heading a class of "red" if the item can only be ordered once
+                                    if (item.onlyOrderOnce) {
+                                        oncePerOrder = "red";
+                                    }
+                                    return (
+                                        <div className="card text-center">
+                                            <div className="card-body d-flex justify-content-between">
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -158,7 +224,7 @@ function Menu() {
                                     return (
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -179,7 +245,7 @@ function Menu() {
                                     return (
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -200,7 +266,7 @@ function Menu() {
                                     return (
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -221,7 +287,7 @@ function Menu() {
                                     return (
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -242,7 +308,7 @@ function Menu() {
                                     return (
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -263,7 +329,7 @@ function Menu() {
                                     return (
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
                                             </div>
                                         </div>
