@@ -14,7 +14,9 @@ data.forEach((item) => store.dispatch({
 }));
 store.subscribe(() => {
     saveState("menuCart", store.getState().menuCart)
+    saveState("clearCart", store.getState().clearCart)
     saveState("favCart", store.getState().favCart)
+    //add save state 
 });
 
 function App() {

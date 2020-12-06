@@ -7,22 +7,33 @@
     {
         "id": 2,
             "title": "Menu",
-            "link": "/menu"
+            "link": "/menu",
+            "submenu": [
+                {
+                    "id": 6,
+                    "title": "Drinks",
+                    "link": "/drinks"
+                },
+                {
+                    "id": 7,
+                    "title": "Lunch Specials (Mon-Fri)",
+                    "link": "/lunch"
+                },
+                {
+                    "id": 8,
+                    "title": "Alacarte",
+                    "link": "/alacarte"
+                },
+                {
+                    "id": 9,
+                    "title": "All You Can Eat",
+                    "link": "/aycestatic"
+                }
+            ]
     },
     {
         "id": 3,
-            "title": "Dine-in",
-            "link": "/dinein"
-    },
-    {
-        "id": 4,
-            "title": "Order Summary",
-            "link": "/ordersummary"
-    },
-    {
-        "id": 5,
-            "title": "Favorite",
-            "link": "/favorite"
-
+        "title": "Dine-in",
+        "link": "/dinein"
     }
 ]
