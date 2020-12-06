@@ -36,7 +36,7 @@ function Login() {
             setShowError(true);
             setErrorMessage("An error occurred during login");
         })
-        console.log("The globalStore: "+ store);
+        console.log("The globalStore: "+ JSON.stringify(store));
     }
 
     return (

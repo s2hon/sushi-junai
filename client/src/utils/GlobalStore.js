@@ -9,7 +9,6 @@ const { Provider } = StoreContext;
 const reducer = (state, action) => {
     switch(action.type){
         case AUTH_SET_LOGGED_IN:
-            console.log('The globalStore is setting the email to: '+action.data.email);
             return {
                 ...state,
                 userLoggedIn: true,

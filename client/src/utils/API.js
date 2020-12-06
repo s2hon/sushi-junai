@@ -16,6 +16,13 @@ export default {
     },
     addFavorite: (item) => {
         return axios.post("/api/favorites", item)
+    },
+    getFavorites: (email) => {
+        return axios.get("/api/favorites/"+email);
     }
+    // //here we send the email and item that will be deleted
+    // deleteFavorites: (info) =>{
+    //     return axios.delete("/api/favorites", info)
+    // }
 
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FavCartItem from './FavCartItem';
 import Container from "../Container";
 import { Table } from 'reactstrap';
@@ -7,8 +7,12 @@ import { Button } from 'reactstrap';
 
 
 const FavCart = (props) => {
+    console.log("these are the props being sent to FavCart"+ props);
     const { favCart } = props
     const count = favCart.length
+    useEffect(() =>{
+        
+    },[count]);
     // let tipFifteen = ".15";
     // let tipTwenty = ".2";
     // let tipEighteen= ".18";

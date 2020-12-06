@@ -42,10 +42,11 @@ module.exports = function(app) {
   });
   
   //this code will retrieve the favorites
-  app.get("/api/favorite", function(req, res){
+  app.get("/api/favorites/:email", function(req, res){
+    console.log("we are searching for the email"+ req.params.email);
     db.Favorites.findAll({
       where: {
-        User_id: req.user.email
+        UserEmail: req.params.email
       }
     }).then(function(dbFavorites){
       res.json(dbFavorites);
