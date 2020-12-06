@@ -32,9 +32,12 @@ export default class Nav extends Component {
         const { isMenuShow, isOpen } = this.state;
 
         return (
-            <div>
+            <>
                 <div className={`sidebar ${isMenuShow ? 'show' : ''}`}>
                     <ul className="navlist">
+                        <li>
+                        <p onClick={this.menuHandler}>collapse<i className="fa fa-angle-left" ></i></p>
+                        </li>
                         {menus.map(item => {
                             return (
                                 <li key={item.id}>
@@ -71,9 +74,8 @@ export default class Nav extends Component {
 
                 <div className="navbtn" onClick={this.menuHandler}>
                     <Image src={"../assets/sushi.png"} alt={"kawaii-sake"} width="100%"/>
-                    <FontAwesomeIcon icon={faBars} />
                 </div>
-            </div>
+            </>
         )
     }
 }

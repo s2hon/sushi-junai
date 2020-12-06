@@ -2,24 +2,7 @@
     {
         "id": 1,
         "title": "Home",
-        "link": "/home",
-        "submenu": [
-            {
-                "id": 11,
-                "title": "Login",
-                "link": "/login"
-            },
-            {
-                "id": 12,
-                "title": "Signup",
-                "link": "/signup"
-            },
-            {
-                "id":13,
-                "title": "Logout",
-                "link": "/logout"
-            }
-        ]
+        "link": "/home"
     },
 
     {
