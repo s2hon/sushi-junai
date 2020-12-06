@@ -6,6 +6,7 @@ import MenuItems from "../MenuItems";
 import MenuNav from "../MenuNav/index"
 import Button from "../Button";
 import Image from "../Image";
+import "../menu.css"
 import vegIcon from "./icons8-vegetarian-mark-50.png";
 import gfIcon from "./icons8-no-gluten-50.png";
 import fishIcon from "./icons8-fish-food-50.png";
@@ -57,22 +58,22 @@ function Menu(props) {
                 <Row>
                     <h3>All-You-Can-Eat Menu</h3>
                 </Row>
-                <Row>
+                <Row className="sticky-top menuOptions">
                     <MenuNav />
-                    <div class="form-check form-check-inline">
+                    <span class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
                             <label class="form-check-label" for="vegetarianCheckbox"><Image src={vegIcon} width="18" alt="Vegetarian" />Vegetarian </label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                    </span>
+                    <span class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF}  value="glutenFree" />
                             <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
-                    </div>
-                    <div>
+                    </span>
+                    <span>
                     <a href="/ordersummary">Order Summary ({currentQtyTotal})</a>
-                    </div>
-                    <div>
+                    </span>
+                    <span>
                     <a href="/favorite">Favorite</a>
-                    </div>
+                    </span>
                 </Row>
                     <Row>
                         <h4 id="appetizers">Appetizers</h4>

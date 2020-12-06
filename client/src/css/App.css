@@ -132,3 +132,11 @@ li a.dropdown-toggle::after {
     left: 68%;
   }
 }
+
+/* ---------------------------------------------------
+    MENU STYLE
+----------------------------------------------------- */
+
+.menuOptions{
+  background-color: green;
+}

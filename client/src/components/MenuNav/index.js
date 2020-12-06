@@ -7,7 +7,7 @@ const NavBar = () => {
     const toggle = () => setDropdownOpen(!dropdownOpen);
 
     return (
-        <div>
+        <>
         <Nav tabs>
             <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
                 <DropdownToggle nav caret>
@@ -32,7 +32,7 @@ const NavBar = () => {
                 </DropdownMenu>
             </Dropdown>
         </Nav>
-        </div>
+        </>
     )
 }
 

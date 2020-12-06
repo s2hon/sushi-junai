@@ -27,7 +27,7 @@ function MenuItems(props) {
                         </h5>
                         $ {props.price}
                 </Col>
-                <Col sm="auto">
+                <Col sm="7" md="7" lg="7">
                         <p>{props.description}
                         
                         </p>
