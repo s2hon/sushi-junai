@@ -6,7 +6,7 @@ const clearCart = (state=persistedState || [], action) => {
     switch (action.type) {
         case 'CLEAR_CART':{
             const { cartTotal } = action.payload
-            return [...state, cartTotal]
+            return state+cartTotal;
         }
         default:
             return state

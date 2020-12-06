@@ -4,7 +4,8 @@ import MenuCart from "../components/OrderSummary/MenuCart";
 
 const mapStateToProps = state => ({
     menuCart: state.menuCart,
-    favCart: state.favCart
+    favCart: state.favCart,
+    totalSavings: state.clearCart
 });
 
 const mapDispatchToProps = dispatch => {

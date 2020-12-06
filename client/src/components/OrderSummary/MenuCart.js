@@ -13,6 +13,10 @@ import sadIcon from "./icons8-sad-50.png"
 
 const MenuCart = (props) => {
     const { menuCart } = props
+    const { totalSavings } = props
+    console.log(menuCart)
+
+    console.log(totalSavings)
 
     const currentQty = arr => arr.reduce((sum, {quantity}) => sum + quantity, 0);
     const currentQtyTotal = currentQty(menuCart);
@@ -21,6 +25,15 @@ const MenuCart = (props) => {
     const sumCostTotal = arr => arr.reduce((sum, {price, quantity})=> sum + price*quantity, 0);
     const cartCostTotal = sumCostTotal(menuCart);
     console.log(cartCostTotal);
+
+    let accumulativeTotal; 
+
+    if (cartCostTotal !== null) {
+        accumulativeTotal = cartCostTotal+totalSavings
+    }
+    else {
+        accumulativeTotal = totalSavings
+    }
 
     if (currentQtyTotal === 0) {
         return (
@@ -45,6 +58,17 @@ const MenuCart = (props) => {
                                 </Link>
                                 and order ebi-thing with a dining staff! 
                                 <br/> Let's Roll!</h3>
+                            <tr>
+                                <td></td>
+                                <td>Current Total Cost:</td>
+                                <td>$ {cartCostTotal.toFixed(2)}</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Accumulative Total:</td>
+                                <td>$ {accumulativeTotal.toFixed(2)}</td>
+                            </tr>
+                            <TipCalculater total={accumulativeTotal} />
                             </tbody>
                         </thead>
                     </Table>
@@ -84,15 +108,15 @@ const MenuCart = (props) => {
                             <th scope="row"></th>
                             <td></td>
                             <td>Current Total Cost:</td>
-                            <td>${cartCostTotal.toFixed(2)}</td>
+                            <td>$ {cartCostTotal.toFixed(2)}</td>
                         </tr>
                         <tr>
                             <th scope="row"></th>
                             <td></td>
-                            <td>Total savings:</td>
-                            <td>${(cartCostTotal - 32.95).toFixed(2)}</td>
+                            <td>Accumulative Total:</td>
+                            <td>$ {accumulativeTotal.toFixed(2)}</td>
                         </tr>
-                        <TipCalculater total={cartCostTotal} />
+                        <TipCalculater total={accumulativeTotal} />
                     </tbody>
                 </Table>
             </Container>
