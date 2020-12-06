@@ -30,12 +30,14 @@ const MenuCartItem = (props) => {
             </Button>
         </td>
         <th scope="row">{name}</th>
-        <td>{quantity}
-        <Button color="primary" onClick={() => props.changeQuantity(props.item)}>X</Button>
+        <td>
+        <Button color="primary" function={() => props.decrementItem(props.item)}>-</Button>
+        {quantity}
+        <Button color="primary" function={() => props.incrementItem(props.item)}>+</Button>
         </td>
         <td>{category}</td>
         <td>$ {price.toFixed(2)}</td>
-        <td><Button color="danger" onClick={() => props.removeItem(props.item)}>X</Button></td>
+        <td><Button color="danger" function={() => props.removeItem(name)}>X</Button></td>
         </tr>
     )
 };

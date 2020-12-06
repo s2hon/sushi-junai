@@ -58,9 +58,17 @@ const MenuCart = (props) => {
                         </tr>
                     </thead>
                     <tbody>
-                        {menuCart.map((item, idx) => <MenuCartItem key={idx} item={item} removeItem={props.removeItem} />)}
+                        {menuCart.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
                         <tr>
-                            <Button type={"button"} btn={"btn btn-dark"}>Submit Order to Server</Button>
+                            <Link
+                                to="/menu"
+                                className={window.location.pathname === "/menu" ? "nav-link active" : "nav-link"}
+                            >
+                            BACK TO MENU
+                            </Link>
+                        </tr>
+                        <tr>
+                            <Button type={"button"} btn={"btn btn-dark"} function={() => {props.clearCart(total)}}>Ordered with a Server</Button>
                         </tr>
                         <tr>
                             <th scope="row"></th>
