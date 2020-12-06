@@ -61,11 +61,11 @@ function Menu(props) {
                     <MenuNav />
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
-                            <label class="form-check-label" for="vegetarianCheckbox">Vegetarian </label>
+                            <label class="form-check-label" for="vegetarianCheckbox">Vegetarian <Image src={vegIcon} width="18" alt="Vegeterian" /></label>
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF}  value="glutenFree" />
-                            <label class="form-check-label" for="glutenFreeCheckbox">Gluten Free <Image src={gfIcon} width="18" alt="Gluten Free" /></label>
+                            <label class="form-check-label" for="glutenFreeCheckbox">Gluten Free (order without sauce)<Image src={gfIcon} width="18" alt="Gluten Free" /></label>
                     </div>
                     <div>
                     <a href="/ordersummary">Order Summary ({currentQtyTotal})</a>

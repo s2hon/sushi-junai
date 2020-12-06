@@ -13,7 +13,6 @@ import sadIcon from "./icons8-sad-50.png"
 
 const MenuCart = (props) => {
     const { menuCart } = props
-    console.log(menuCart)
 
     const currentQty = arr => arr.reduce((sum, {quantity}) => sum + quantity, 0);
     const currentQtyTotal = currentQty(menuCart);
@@ -84,13 +83,13 @@ const MenuCart = (props) => {
                         <tr>
                             <th scope="row"></th>
                             <td></td>
-                            <td>Total Cost:</td>
+                            <td>Current Total Cost:</td>
                             <td>${cartCostTotal.toFixed(2)}</td>
                         </tr>
                         <tr>
                             <th scope="row"></th>
                             <td></td>
-                            <td>You just saved:</td>
+                            <td>Total savings:</td>
                             <td>${(cartCostTotal - 32.95).toFixed(2)}</td>
                         </tr>
                         <TipCalculater total={cartCostTotal} />
