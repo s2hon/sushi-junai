@@ -8,6 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
+      primaryKey:true,
       validate: {
         isEmail: true
       }
@@ -35,8 +36,9 @@ module.exports = function(sequelize, DataTypes) {
   //here we will add a user.associate to connect to  favorites model 
   User.associate = function(models) {
     // Associating user with box models
-    User.hasMany(models.UserFavorites, {
-      onDelete: "cascade"
+    User.hasMany(models.Favorites, {
+      onDelete: "cascade",
+      foreignKey: "UserEmail"
     });
   };
   return User;

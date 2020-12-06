@@ -3,25 +3,24 @@ import { Button } from 'reactstrap';
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import API from '../../utils/API';
+import {useStoreContext} from "../../utils/GlobalStore";
 
-function saveFave(itemName, itemCategory){
-    //save email from store
-   //  const [state,dispatch] = useStoreContext.useStoreContext();
-   //  const email = state.email;
-   //  console.log("The user's email is"+email);
-
-   console.log("You are trying to favorite" + itemName );
-    API.addFavorite({name:itemName, category:itemCategory}).
-    then(res=> console.log(res)).
-    catch(err => console.log(err));
-   alert("You have favorited "+itemName);
-}
-
-//add function to delete favorite
-//add ability to reload items so taht they respond to the item 
 
 //DO NOT RENDER HEART BUTTON IF NOT LOGGED-IN
 const MenuCartItem = (props) => {
+    //add function to delete favorite
+    //add ability to reload items so taht they respond to the item 
+    const [state,dispatch] = useStoreContext();
+    //save email from store to use with DB later
+    const email = state.email;
+    console.log("The user email is "+email)
+    function saveFave(itemName, itemCategory){
+        console.log("You are about to save the item:"+ itemName+" category: "+itemCategory);
+        API.addFavorite({item:itemName, category:itemCategory, UserEmail: state.email}).
+        then(res=> console.log(res)).
+        catch(err => console.log(err));
+    };
+
     const { name, quantity, category, price } = props.item
     return (
         <tr>
@@ -31,13 +30,13 @@ const MenuCartItem = (props) => {
         </td>
         <th scope="row">{name}</th>
         <td>
-        <Button color="primary" function={() => props.decrementItem(props.item)}>-</Button>
+        <Button color="primary" onClick={() => props.decrementItem(props.item)}>-</Button>
         {quantity}
-        <Button color="primary" function={() => props.incrementItem(props.item)}>+</Button>
+        <Button type="button" color="primary" onClick={() => props.incrementItem(props.item)}>+</Button>
         </td>
         <td>{category}</td>
         <td>$ {price.toFixed(2)}</td>
-        <td><Button color="danger" function={() => props.removeItem(name)}>X</Button></td>
+        <td><Button color="danger" onClick={() => props.removeItem(props.item)}>X</Button></td>
         </tr>
     )
 };

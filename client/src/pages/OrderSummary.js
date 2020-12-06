@@ -15,10 +15,10 @@ const mapDispatchToProps = dispatch => {
                 payload: { item }
             })
         },
-        removeItem: name => {
+        removeItem: item => {
             dispatch({
                 type: 'DELETE_MENU_ITEM',
-                payload: { name }
+                payload: { item }
             })
         },
         decrementItem: item => {
@@ -27,6 +27,7 @@ const mapDispatchToProps = dispatch => {
                 payload: { item }
             })
         },
+        
         // handleFavorite: item => {
         //     dispatch({
         //         type: 'ADD_FAV_ITEM',

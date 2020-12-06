@@ -5,8 +5,11 @@ import Container from "../Container";
 import { Table } from 'reactstrap';
 import Row from '../Row';
 import TipCalculater from '../TipCalculater';
-import Button from '../Button';
-
+import { Button } from 'reactstrap';
+import './style.css';
+import Image from "../Image";
+import shockedIcon from "./icons8-surprised-50.png"
+import sadIcon from "./icons8-sad-50.png"
 
 const MenuCart = (props) => {
     const { menuCart } = props
@@ -25,14 +28,14 @@ const MenuCart = (props) => {
                                 <th>Price</th>
                             </tr>
                             <tbody>
-                                <h3>whatsabi? 0 items so far?
+                                <h3><Image src={shockedIcon} width="25" alt="shockedMaki" /> whatsabi? 0 items so far?
+                                <Image src={sadIcon} width="25" alt="sadMaki" />
                                 <br/> 
-                                Go
                                 <Link
-                                    to="/menu"
-                                    className={window.location.pathname === "/menu" ? "nav-link active" : "nav-link"}
+                                    to="/ayce"
+                                    className={window.location.pathname === "/ayce" ? "nav-link active" : "nav-link"}
                                 >
-                                HERE
+                                Go HERE
                                 </Link>
                                 and order ebi-thing with a dining staff! 
                                 <br/> Let's Roll!</h3>
@@ -51,6 +54,7 @@ const MenuCart = (props) => {
                 <Table>
                     <thead>
                         <tr>
+                            <th> </th>
                             <th>Item</th>
                             <th>Quantity</th>
                             <th>Category</th>
@@ -61,14 +65,14 @@ const MenuCart = (props) => {
                         {menuCart.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
                         <tr>
                             <Link
-                                to="/menu"
-                                className={window.location.pathname === "/menu" ? "nav-link active" : "nav-link"}
+                                to="/ayce"
+                                className={window.location.pathname === "/ayce" ? "nav-link active" : "nav-link"}
                             >
                             BACK TO MENU
                             </Link>
                         </tr>
                         <tr>
-                            <Button type={"button"} btn={"btn btn-dark"} function={() => {props.clearCart(total)}}>Ordered with a Server</Button>
+                            <Button type={"button"} btn={"btn btn-dark"} onClick={() => {props.clearCart(total)}}>Ordered with a Server</Button>
                         </tr>
                         <tr>
                             <th scope="row"></th>
