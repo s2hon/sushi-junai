@@ -5,6 +5,7 @@ import menu from "../../db/menu.json";
 import MenuItems from "./MenuItems";
 import MenuNav from "../MenuNav/index";
 import Image from "../Image";
+import "../AyceMenu/menu.css"
 import vegIcon from "../AyceMenu/icons8-vegetarian-mark-50.png";
 import gfIcon from "../AyceMenu/icons8-no-gluten-50.png";
 import fishIcon from "../AyceMenu/icons8-fish-food-50.png";
@@ -53,16 +54,16 @@ function Menu() {
                 <Row>
                     <h3>A La Carte Menu</h3>
                 </Row>
-                <Row>
+                <Row className="sticky-top menuOptions">
                     <MenuNav />
-                    <div class="form-check form-check-inline">
+                    <span class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
                             <label class="form-check-label" for="vegetarianCheckbox"><Image src={vegIcon} width="18" alt="Vegetarian" />Vegetarian </label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                    </span>
+                    <span class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF}  value="glutenFree" />
                             <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
-                    </div>
+                    </span>
                 </Row>
                     <Row>
                         <h4 id="appetizers">Appetizers</h4>
