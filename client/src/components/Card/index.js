@@ -1,29 +1,36 @@
 import React from "react";
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { 
+    faClock,
+    faPhone,
+    faLocationArrow
+ } from "@fortawesome/free-solid-svg-icons";
+ import './style.css';
 
 function Card(props) {
     return (
-        <div className="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center text-center">
-            <div className="wpo-event-item">
-                <div className="wpo-event-img">
-                    <img alt=""/>
-                    <div className="thumb-text">
-                        <span>{props.id}</span>
-                    </div>
+        <div className="col-lg-6 col-md-6 col-sm-12 col-12 custom-grid">
+            <div className="wpo-team-wrap">
+                <div className="wpo-team-img">
+                    <img  alt=""/>
                 </div>
-                <div className="wpo-event-text">
-                    <h1>{props.location}</h1>
-                    <ul>
-                        <li><i className="fa fa-clock-o" aria-hidden="true"></i>Monday {props.mon}</li>
+                <div className="wpo-team-content">
+                    <div className="wpo-team-text-sub">
+                        <h2>{props.location}</h2>
+                        <span><FontAwesomeIcon icon={faLocationArrow} />{props.address}</span>
+                        <br />
+                        <span><FontAwesomeIcon icon={faPhone} />{props.phone}</span>
+                        <ul>
+                        <li><FontAwesomeIcon icon={faClock} /></li>
+                        <li>Monday {props.mon}</li>
                         <li>Tuesday {props.tue}</li>
                         <li>Wednesday {props.wed}</li>
                         <li>Thursday {props.thu}</li>
                         <li>Friday {props.fri}</li>
                         <li>Saturday {props.sat}</li>
                         <li>Sunday {props.sun}</li>
-
-                        <li><i className="fa fa-map-marker-alt"></i>{props.address}</li>
-                        <li><i className="fa fa-phone"></i>{props.phone}</li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
             {props.children}
