@@ -24,12 +24,6 @@ const MenuCart = (props) => {
     const cartCostTotal = sumCostTotal(menuCart);
     console.log(cartCostTotal);
 
-    let accumulativeTotal = (parseFloat(totalSavings)+cartCostTotal).toFixed(2)
-
-    if (accumulativeTotal !== undefined) {
-        accumulativeTotal = 0;
-    }
-
     if (currentQtyTotal === 0) {
         return (
             <>
@@ -58,12 +52,7 @@ const MenuCart = (props) => {
                                 <td>Current Total Cost:</td>
                                 <td>$ {cartCostTotal.toFixed(2)}</td>
                             </tr>
-                            <tr>
-                                <td></td>
-                                <td>Accumulative Total:</td>
-                                <td>$ {accumulativeTotal}</td>
-                            </tr>
-                            <TipCalculater total={accumulativeTotal} />
+                            <TipCalculater total={cartCostTotal.toFixed(2)} />
                             </tbody>
                         </thead>
                     </Table>
@@ -97,21 +86,12 @@ const MenuCart = (props) => {
                             </Link>
                         </tr>
                         <tr>
-                            <Button type={"button"} btn={"btn btn-dark"} onClick={() => {props.clearCart(cartCostTotal)}}>Ordered with a Server</Button>
-                        </tr>
-                        <tr>
                             <th scope="row"></th>
                             <td></td>
                             <td>Current Total Cost:</td>
                             <td>$ {cartCostTotal.toFixed(2)}</td>
                         </tr>
-                        <tr>
-                            <th scope="row"></th>
-                            <td></td>
-                            <td>Accumulative Total:</td>
-                            <td>$ {accumulativeTotal}</td>
-                        </tr>
-                        <TipCalculater total={accumulativeTotal} />
+                        <TipCalculater total={cartCostTotal.toFixed(2)} />
                     </tbody>
                 </Table>
             </Container>

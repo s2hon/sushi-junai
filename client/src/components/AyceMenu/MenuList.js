@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom"
 import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
@@ -71,10 +72,10 @@ function Menu(props) {
                             <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
                     </span>
                     <span>
-                    <Button type="button" btn="btn"><a href="/ordersummary">Order Summary ({currentQtyTotal})</a></Button>
+                    <Button type="button" btn="btn"><Link to="/ordersummary">Order Summary ({currentQtyTotal})</Link></Button>
                     </span>
                     <span>
-                    <Button type="button" btn="btn"><a href="/favorite">Favorite</a></Button>
+                    <Button type="button" btn="btn"><Link to="/favorite">Favorite</Link></Button>
                     </span>
                 </Row>
                     <Row>

@@ -1,23 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
-import Row from "../components/Row";
+import { Row, Col } from "reactstrap";
 import Button from "../components/Button"
 
 function Choice () {
     return (
     <Container>
         <Row>
-        <h4>Get the items you love</h4>
+            <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center" style={{marginTop: 50,marginBottom: 50}}>
+            <h4>Get the items you love!</h4>
             <Link to="/alacarte">
                 <Button type={"button"} btn={"btn btn-dark"}>A La Carte</Button>
             </Link>
+            </Col>
         </Row>
         <Row>
-        <h4>Try All You Can Eat and taste our delicious dishes.</h4>
+            <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center" style={{marginBottom: 50}}>
+            <h4>Try our delicious dishes!</h4>
             <Link to="/rules">
                 <Button type={"button"} btn={"btn btn-dark"}>All You Can Eat</Button>
             </Link>
+            </Col>
         </Row>
     </Container>)
 }
