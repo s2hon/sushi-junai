@@ -1,3 +1,4 @@
+
 .location-info h2 {
     font-size: 24px;
     font-weight: 500;
@@ -6,7 +7,6 @@
 
 .location-info ul {
     list-style: none;
-    display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
 }

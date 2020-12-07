@@ -10,7 +10,7 @@ function Choice () {
         <Row>
         <h4>Get the items you love</h4>
             <Link to="/alacarte">
-                <Button type={"button"} btn={"btn btn-dark"}>A La Carte</Button>
+                <Button type={"button"} btn={"btn btn-dark"}>À La Carte</Button>
             </Link>
         </Row>
         <Row>

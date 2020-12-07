@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "../components/Container";
-import rulesAgreement from "../components/Slider/Slider";
+import Slider from "../components/Slider/index";
 
 function Rules(props) {
     return (
         <>
         <Container>
-            <rulesAgreement/>
+            <Slider/>
         </Container>
         </>
     );
