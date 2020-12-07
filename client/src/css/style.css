@@ -66,6 +66,10 @@ button.btn2:hover {
     background-color: #f26430;
 }
 
+button.btn-lrg {
+    padding: 20px;
+}
+
 /* Fonts */
 
 h1, h2, h3, h4 {
@@ -74,4 +78,11 @@ h1, h2, h3, h4 {
 
 h5, h6, p, label, .btn, .mainFont {
     font-family: 'Open Sans', sans-serif;
+}
+
+
+.centered{ 
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
 }

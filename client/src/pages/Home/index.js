@@ -16,6 +16,7 @@ function Home(props) {
     return (
         <React.Fragment>
             <Container>
+            <div className="menu-container">
                 <Row>
                     {
                         data.map((data, idx) => {
@@ -29,21 +30,23 @@ function Home(props) {
                     }
                 </Row>
                 <Row>
-                        <Col sm="12" md={{ size: 6}} lg={{ size: 6}} style={{padding: "30px"}}>
+                        <Col sm="12" md={{ size: 12}} lg={{ size: 12}} style={{padding: "30px"}}>
+            
                             <HomeCarousel />
                         </Col>
                 </Row>
-                <Row >
+                <Row className="centered">
                     <a href={"https://www.yelp.com/biz/sushi-junai-austin"}>
-                        <Button type={"button"} btn={"btn btn1"}>Reservations</Button>
+                        <Button type={"button"} btn={"btn btn1 btn-lrg"}><h3>Reservations</h3></Button>
                     </a>
                     <Link to={!state.userLoggedIn ? "/signinsignup": "/choice"}>
-                        <Button type={"button"} btn={"btn btn1"}>Dine In</Button>
+                        <Button type={"button"} btn={"btn btn1 btn-lrg"}><h3>Dine In</h3></Button>
                     </Link>    
                     <a href={"https://www.yelp.com/order/v2/cart/954de1b27f3ee7705f2ca2d2c8336670"}>
-                            <Button type={"button"} btn={"btn btn1"}>Carry Out</Button>
+                            <Button type={"button"} btn={"btn btn1 btn-lrg"}><h3>Carry Out</h3></Button>
                             </a>
                 </Row>
+                </div>
             </Container>
     </React.Fragment>);
 }
