@@ -10,12 +10,9 @@ import {
 function Card(props) {
     return (
         <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
-            <div className="wpo-team-wrap">
-                <div className="wpo-team-img">
-                    <img  alt=""/>
-                </div>
-                <div className="wpo-team-content">
-                    <div className="wpo-team-text-sub">
+            <div className="location-wrap">
+                <div className="location-content">
+                    <div className="location-info">
                         <h2>{props.location}</h2>
                         <span><FontAwesomeIcon icon={faLocationArrow} />{props.address}</span>
                         <br />

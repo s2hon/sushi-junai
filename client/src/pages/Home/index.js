@@ -14,8 +14,8 @@ function Home(props) {
 
     return (
     <React.Fragment>
-            <div className="container" style={{display:"flex", justifyContent:"space-evenly", flexDirection:"column"}}>
-                <div className="row" style={{height:100, display:"flex", justifyContent:"space-evenly", }}>
+            <div className="container">
+                <div className="row">
                     {
                         data.map((data, idx) => {
                             return (
