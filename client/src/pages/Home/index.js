@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from "../../components/Card/index";
 import Container from "../../components/Container";
-import {Row, Col} from "reactstrap";
+import {Col} from "reactstrap";
 import Button from "../../components/Button";
 import data from "../../db/store.json";
 import { useStoreContext } from '../../utils/GlobalStore';
