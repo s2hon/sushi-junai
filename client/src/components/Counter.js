@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import moment from 'moment';
-import AlertBox from "../components/AlertBox";
 
 function Counter() {
     const [count, setCount] = useState(localStorage.getItem("timer"));
@@ -33,7 +32,7 @@ function Counter() {
 
         if (count < 0) {
             clearTimeout(timer);
-            <AlertBox> text={"All you can eat has ended!"} </AlertBox>
+            alert("All you can eat has ended!");
         }
 
         return function cleanup(){

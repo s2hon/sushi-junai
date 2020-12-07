@@ -1,6 +1,6 @@
 import React from 'react';
 import {Switch, Route } from 'react-router-dom'
-import Home from "../pages/Home";
+import Home from "../pages/Home/index";
 import Alacarte from "../pages/Alacarte";
 import AYCEMenu from "../pages/AYCEMenu";
 import Favorite from "../pages/Favorite";
