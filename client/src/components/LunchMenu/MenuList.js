@@ -14,16 +14,17 @@ function Menu() {
     return (
         <>
             <Container>
+            <div className="menu-container">
                 <Row>
-                    <h2>Lunch Menu</h2>
+                    <h1>Lunch Menu</h1><hr />
                 </Row>
                 <Row>
-                    <h3 id="LunchSpecials">Lunch Specials</h3>
+                <div className="section-head"><h2 id="LunchSpecials">Lunch Specials</h2></div>
                     <Container>
                         {
                             lunchSpecials.map((item, idx) => {
                                 return (
-                                    <div className="card text-center">
+                                    <div className="card menu-card text-center">
                                         <div className="card-body d-flex justify-content-between">
                                             <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} >
                                             </MenuItems>
@@ -35,12 +36,12 @@ function Menu() {
                     </Container>
                 </Row>
                 <Row>
-                    <h3 id="Combos">Combos</h3>
+                <div className="section-head"><h2 id="Combos">Combos</h2></div>
                     <Container>
                         {
                             combos.map((item, idx) => {
                                 return (
-                                    <div className="card text-center">
+                                    <div className="card menu-card text-center">
                                         <div className="card-body d-flex justify-content-between">
                                             <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} >
                                             </MenuItems>
@@ -52,12 +53,12 @@ function Menu() {
                     </Container>
                 </Row>
                 <Row>
-                    <h3 id="LunchBox">Lunch Box</h3>
+                <div className="section-head"><h2 id="LunchBox">Lunch Box</h2></div>
                     <Container>
                         {
                             lunchBox.map((item, idx) => {
                                 return (
-                                    <div className="card text-center">
+                                    <div className="card menu-card text-center">
                                         <div className="card-body d-flex justify-content-between">
                                             <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} >
                                             </MenuItems>
@@ -74,6 +75,7 @@ function Menu() {
                             <p>Consuming raw or undercooked fish increases the risk of food bourne diseases, especially in people with certain health conditions.</p>
                         </Container>
                     </Row>
+                    </div>
             </Container>
         </>
     );

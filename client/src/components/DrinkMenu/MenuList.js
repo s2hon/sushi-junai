@@ -13,16 +13,17 @@ function Menu(props) {
     return (
         <>
             <Container>
+                <div className="menu-container">
                 <Row>
-                    <h2>Drink Menu</h2>
+                    <h1>Drink Menu</h1><hr />
                 </Row>
                 <Row>
-                    <h3 id="Sake">Sake</h3>
+                <div className="section-head"><h2 id="Sake">Sake</h2></div>
                     <Container>
                         {
                             sake.map((item, idx) => {
                                 return (
-                                    <div className="card text-center">
+                                    <div className="card menu-card text-center">
                                         <div className="card-body d-flex justify-content-between">
                                             <MenuItems key={idx} name={item.name} price={item.price} description={item.description} subtitle={item.subtitle} size={item.size} smallPrice={item.smallPrice} largePrice={item.largePrice}>
                                             </MenuItems>
@@ -34,12 +35,12 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h3 id="Wine">Wine</h3>
+                <div className="section-head"><h2 id="Wine">Wine</h2></div>
                     <Container>
                         {
                             wine.map((item, idx) => {
                                 return (
-                                    <div className="card text-center">
+                                    <div className="card menu-card text-center">
                                         <div className="card-body d-flex justify-content-between">
                                             <MenuItems key={idx} name={item.name} glassPrice={item.glassPrice} bottlePrice={item.bottlePrice} origin={item.origin} >
                                             </MenuItems>
@@ -51,12 +52,12 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h3 id="Beer">Beer</h3>
+                <div className="section-head"><h2 id="Beer">Beer</h2></div>
                     <Container>
                         {
                             beer.map((item, idx) => {
                                 return (
-                                    <div className="card text-center">
+                                    <div className="card menu-card text-center">
                                         <div className="card-body d-flex justify-content-between">
                                             <MenuItems key={idx} name={item.name} size={item.size} price={item.price} >
                                             </MenuItems>
@@ -68,12 +69,12 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h3 id="Soft Drinks">Soft Drinks</h3>
+                <div className="section-head"><h2 id="Soft Drinks">Soft Drinks</h2></div>
                     <Container>
                         {
                             softDrinks.map((item, idx) => {
                                 return (
-                                    <div className="card text-center">
+                                    <div className="card menu-card text-center">
                                         <div className="card-body d-flex justify-content-between">
                                             <MenuItems key={idx} name={item.name} price={item.price} drinks={item.drinks} >
                                             </MenuItems>
@@ -84,6 +85,7 @@ function Menu(props) {
                         }
                     </Container>
                 </Row>
+                </div>
             </Container>
         </>
     );

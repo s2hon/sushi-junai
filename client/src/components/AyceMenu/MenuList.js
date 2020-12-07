@@ -68,13 +68,13 @@ function Menu(props) {
                         <Container>
                             <MenuNav />
                             <Col>
-                            <span class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
-                                <label class="form-check-label" for="vegetarianCheckbox"><Image src={vegIcon} width="18" alt="Vegetarian" />Vegetarian </label>
+                            <span className="form-check form-check-inline">
+                                <input className="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
+                                <label className="form-check-label" for="vegetarianCheckbox"><Image src={vegIcon} width="18" alt="Vegetarian" />Vegetarian </label>
                             </span>
-                            <span class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
-                                <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
+                            <span className="form-check form-check-inline">
+                                <input className="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
+                                <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
                             </span>
                             </Col>
                             <Col>
@@ -100,7 +100,7 @@ function Menu(props) {
                                     }
                                     return (
                                         <div className="card menu-card text-center">
-                                            <div className="card-body  d-flex justify-content-between">
+                                            <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                     <Button type="button" btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
