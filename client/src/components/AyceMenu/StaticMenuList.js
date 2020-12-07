@@ -47,8 +47,9 @@ function Menu() {
     return (
         <>
             <Container>
+                <div className="menu-container">
                 <Row>
-                    <h2>All-You-Can-Eat Menu</h2>
+                    <h1>All-You-Can-Eat Menu</h1><hr />
                 </Row>
                 <Row className="sticky-top menuOptions">
                     <MenuNav />
@@ -62,7 +63,7 @@ function Menu() {
                     </span>
                 </Row>
                     <Row>
-                        <h3 id="appetizers">Appetizers</h3>
+                    <div className="section-head"><h2 id="appetizers">Appetizers</h2></div>
                         <Container>
                             {
                                 appetizers.map((item, idx) => {
@@ -71,7 +72,7 @@ function Menu() {
                                         oncePerOrder = "red";
                                     }
                                     return (
-                                        <div className="card text-center">
+                                        <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
@@ -84,7 +85,7 @@ function Menu() {
                     </Row>
 
                     <Row>
-                        <h3 id="salad">Salad</h3>
+                    <div className="section-head"><h2 id="salad">Salad</h2></div>
                         <Container>
                             {
                                 salads.map((item, idx) => {
@@ -93,7 +94,7 @@ function Menu() {
                                         oncePerOrder = "red";
                                     }
                                     return (
-                                        <div className="card text-center">
+                                        <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
@@ -105,7 +106,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h3 id="soup">Soup/Noodles</h3>
+                    <div className="section-head"><h2 id="soup">Soup/Noodles</h2></div>
                         <Container>
                             {
                                 soups.map((item, idx) => {
@@ -114,7 +115,7 @@ function Menu() {
                                         oncePerOrder = "red";
                                     }
                                     return (
-                                        <div className="card text-center">
+                                        <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
@@ -126,7 +127,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h3 id="rice">Rice Entree</h3>
+                    <div className="section-head"><h2 id="rice">Rice Entree</h2></div>
                         <Container>
                             {
                                 rice.map((item, idx) => {
@@ -135,7 +136,7 @@ function Menu() {
                                         oncePerOrder = "red";
                                     }
                                     return (
-                                        <div className="card text-center">
+                                        <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
@@ -147,7 +148,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h3 id="classicRoll">Classic Roll/Hand Roll</h3>
+                    <div className="section-head"><h2 id="classicRoll">Classic Roll/Hand Roll</h2></div>
                         <Container>
                             {
                                 classicRolls.map((item, idx) => {
@@ -156,7 +157,7 @@ function Menu() {
                                         oncePerOrder = "red";
                                     }
                                     return (
-                                        <div className="card text-center">
+                                        <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
@@ -168,7 +169,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h3 id="sushi">Sushi (Nigiri)</h3>
+                        <div className="section-head"><h2 id="sushi">Sushi (Nigiri)</h2></div>
                         <Container>
                             {
                                 sushi.map((item, idx) => {
@@ -177,7 +178,7 @@ function Menu() {
                                         oncePerOrder = "red";
                                     }
                                     return (
-                                        <div className="card text-center">
+                                        <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
@@ -189,7 +190,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h3 id="chefsSpecial">Chef's Special Rolls</h3>
+                    <div className="section-head"><h2 id="chefsSpecial">Chef's Special Rolls</h2></div>
                         <Container>
                             {
                                 chefsSpecial.map((item, idx) => {
@@ -198,7 +199,7 @@ function Menu() {
                                         oncePerOrder = "red";
                                     }
                                     return (
-                                        <div className="card text-center">
+                                        <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
@@ -210,7 +211,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h3 id="tempura">Tempura (Fried) Rolls</h3>
+                    <div className="section-head"><h2 id="tempura">Tempura (Fried) Rolls</h2></div>
                         <Container>
                             {
                                 tempuraRolls.map((item, idx) => {
@@ -219,7 +220,7 @@ function Menu() {
                                         oncePerOrder = "red";
                                     }
                                     return (
-                                        <div className="card text-center">
+                                        <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
@@ -231,7 +232,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h3 id="bakedRolls">Baked Rolls</h3>
+                    <div className="section-head"><h2 id="bakedRolls">Baked Rolls</h2></div>
                         <Container>
                             {
                                 bakedRolls.map((item, idx) => {
@@ -240,7 +241,7 @@ function Menu() {
                                         oncePerOrder = "red";
                                     }
                                     return (
-                                        <div className="card text-center">
+                                        <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
@@ -252,7 +253,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h3 id="desserts">Desserts</h3>
+                    <div className="section-head"><h2 id="desserts">Desserts</h2></div>
                         <Container>
                             {
                                 desserts.map((item, idx) => {
@@ -261,7 +262,7 @@ function Menu() {
                                         oncePerOrder = "red";
                                     }
                                     return (
-                                        <div className="card text-center">
+                                        <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                 </MenuItems>
@@ -289,6 +290,7 @@ function Menu() {
                     <Row>
                         <h5 id="vegetarian">Vegetarian <Image src={vegIcon} width="18" alt="Vegetarian" /></h5>
                     </Row>
+                    </div>
                 </Container>
         </>
     );
