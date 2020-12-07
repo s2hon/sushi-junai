@@ -37,7 +37,7 @@ function Home(props) {
                     <a href={"https://www.yelp.com/biz/sushi-junai-austin"}>
                         <Button type={"button"} btn={"btn btn-dark"}>Reservations</Button>
                     </a>
-                    <Link to={!state.userLoggedIn ? "/login": "/choice"}>
+                    <Link to={!state.userLoggedIn ? "/signinsignup": "/choice"}>
                         <Button type={"button"} btn={"btn btn-dark"}>Dine In</Button>
                     </Link>    
                     <a href={"https://www.yelp.com/order/v2/cart/954de1b27f3ee7705f2ca2d2c8336670"}>
