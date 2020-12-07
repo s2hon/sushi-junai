@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from "../../components/Card/index";
 import Container from "../../components/Container";
-import {Col} from "reactstrap";
+import { Col } from "reactstrap";
+import Row from "../../components/Row";
 import Button from "../../components/Button";
 import data from "../../db/store.json";
 import { useStoreContext } from '../../utils/GlobalStore';
@@ -13,27 +14,26 @@ function Home(props) {
     const [state] = useStoreContext();
 
     return (
-    <React.Fragment>
-            <div className="container">
-                <div className="row">
+        <React.Fragment>
+            <Container>
+                <Row>
                     {
                         data.map((data, idx) => {
                             return (
-                    
-                                    <Card key={idx} location={data.location} phone={data.phone} address={data.address}
+                                <Card key={idx} location={data.location} phone={data.phone} address={data.address}
                                     mon={data.mon} tue={data.tue} wed={data.tue} thu={data.thu} fri={data.fri} sat={data.sat} sun={data.sun}>
-                                    </Card>
-                            
+                                </Card>
+
                             )
                         })
                     }
-                </div>
-                <div className="row">
-                    <Col sm="12" md={{ size: 6, offset: 3 }} lg={{size: 6, offset: 3}}>
-                    <HomeCarousel />
-                    </Col>
-                </div>
-                <div className="row" style={{display:"flex", justifyContent:"space-evenly", flexDirection:"row"}}>
+                </Row>
+                <Row>
+                        <Col sm="12" md={{ size: 6}} lg={{ size: 6}} style={{padding: "30px"}}>
+                            <HomeCarousel />
+                        </Col>
+                </Row>
+                <Row >
                     <a href={"https://www.yelp.com/biz/sushi-junai-austin"}>
                         <Button type={"button"} btn={"btn btn1"}>Reservations</Button>
                     </a>
@@ -43,8 +43,8 @@ function Home(props) {
                     <a href={"https://www.yelp.com/order/v2/cart/954de1b27f3ee7705f2ca2d2c8336670"}>
                             <Button type={"button"} btn={"btn btn1"}>Carry Out</Button>
                             </a>
-                </div>
-            </div>
+                </Row>
+            </Container>
     </React.Fragment>);
 }
 
