@@ -2,12 +2,12 @@ import React from 'react';
 import { Flip } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import Button from "../Button";
-import moment from 'moment';
 import Row from "../Row";
 import Container from "../Container";
 import Image from "../Image";
 import OnlyOnce from "./icons8-number-1-50.png";
 import './style.css';
+import moment from 'moment';
 
 const Slider = (props) => {
 
