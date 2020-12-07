@@ -8,10 +8,22 @@ const menuCart = (state = persistedState || [], action) => {
             const { item } = action.payload
             const findItem = state.find( x => x.name == item.name)
             if (findItem) {
-                return state.map(x => {
-                    if (x.name == item.name) x.quantity++
-                    return x
-                })
+                if (findItem !== "Beef" 
+                || "Screaming \"O\" (3/8 pcs)" 
+                || "White \"O\" (3/8 pcs)" 
+                || "Conch (Makigai)"
+                || "Tako Wasabi"
+                || "Sweet Shrimp (Ama Ebi)"
+                || "Sashimi Special (4 pcs)"
+                || "Mochi Ice Cream") {
+                    return state.map(x => {
+                        if (x.name == item.name) x.quantity++
+                        return x
+                    })
+                }
+                else {
+                
+            }
             }
             else {
                 return [...state, {

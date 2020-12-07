@@ -7,7 +7,7 @@ function TipCalculater(props) {
     });
 
     return (
-        <tr class="mainFont">
+        <tr className="mainFont">
             <th scope="row"></th>
             <td><ButtonGroup total={props.total} setTipState={setTipState}/></td>
             <td>Total Tip:</td>
