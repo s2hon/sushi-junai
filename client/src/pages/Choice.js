@@ -11,11 +11,7 @@ function Choice () {
             <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center" style={{marginTop: 50,marginBottom: 50}}>
             <h4>Get the items you love!</h4>
             <Link to="/alacarte">
-<<<<<<< HEAD
                 <Button type={"button"} btn={"btn btn-dark"}>À La Carte</Button>
-=======
-                <Button type={"button"} btn={"btn btn1"}>A La Carte</Button>
->>>>>>> 3697ee4eec992f78f8f29c0d645e3028bac3db83
             </Link>
             </Col>
         </Row>

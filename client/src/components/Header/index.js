@@ -10,6 +10,7 @@ import './style.css';
 import Counter from "../Counter";
 import PopSignUp from "../PopSignUp";
 
+
 function Header (props) {
     const [state, dispatch] = useStoreContext();
     // const history = useHistory();
@@ -21,35 +22,34 @@ function Header (props) {
         })
     }
     
-
-    return (
-        <div className="topbar">
-            <div className="container">
-                <div className="row">
-                    <div className="col-4">
-                        <Nav/>
-                    </div>
-                    <div className="col-4 d-flex justify-content-center">
-                        <Link to="/home">
-                            <Image src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
-                        </Link>
-                    </div>
-                    
-                    <div className="col-1 text-right">
-                        <Counter/>
-                    </div>
-                    <div className="col-2 text-right">
-                        <ul>
-                            <li className={state.userLoggedIn ? "hide": ""}><PopLoggin/></li>
-                            <li className={state.userLoggedIn ? "hide": ""}><PopSignUp/></li>
-                            <li className={!state.userLoggedIn ? "hide": ""}>
-                                <Button type="button" btn="btn btn1" onClick={logout}>Logout</Button></li>
-                        </ul>
+        return (
+            <div className="topbar">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-4">
+                            <Nav/>
+                        </div>
+                        <div className="col-4 d-flex justify-content-center">
+                            <Link to="/home">
+                                <Image src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
+                            </Link>
+                        </div>
+                        
+                        <div className="col-1 text-right">
+                            <Counter className="counter"/>
+                        </div>
+                        <div className="col-2 text-right">
+                            <ul>
+                                <li className={state.userLoggedIn ? "hide": ""}><PopLoggin/></li>
+                                <li className={state.userLoggedIn ? "hide": ""}><PopSignUp/></li>
+                                <li className={!state.userLoggedIn ? "hide": ""}>
+                                    <Button type="button" btn="btn btn1" onClick={logout}>Logout</Button></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    )
-}
+        )
+    }
 
 export default Header;
