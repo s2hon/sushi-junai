@@ -32,7 +32,6 @@ function Counter() {
 
         if (count < 0) {
             clearTimeout(timer);
-            alert("All you can eat has ended!");
         }
 
         return function cleanup(){
