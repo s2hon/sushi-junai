@@ -1,0 +1,77 @@
+.body-bg {
+    background-color: #f2f2f2;
+    margin-top: 5px;
+}
+
+/* Menu Styles */
+
+.menu-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-card {
+    margin: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menuOptions {
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 7px;
+    margin: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+
+.form-check {
+    margin-top: 5px;
+}
+
+.section-head {
+    padding: 10px;
+    margin: 30px auto;
+    background-color: #f29877;
+    border-radius: 7px;
+    text-align: center;
+    min-width: 200px;
+    width: 50%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+}
+
+/* Only order once */
+
+h5.red {
+    color: red;
+}
+
+/* Button Styling */
+
+button.btn1 {
+    background-color: #93dfb6;
+    margin: 2px;
+}
+button.btn1:hover{
+    background-color: #5AC379;
+}
+
+button.btn2 {
+    margin: 2px;
+    background-color: #f29877;
+}
+
+button.btn2:hover {
+    background-color: #f26430;
+}
+
+/* Fonts */
+
+h1, h2, h3, h4 {
+    font-family: 'Philosopher', sans-serif;
+}
+
+h5, h6, p, label, .btn, .mainFont {
+    font-family: 'Open Sans', sans-serif;
+}

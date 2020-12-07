@@ -19,9 +19,6 @@ const NavBar = () => {
                     <DropdownItem><a className="mainFont" href="#soup">Soup/Noodles</a></DropdownItem>
                     <DropdownItem><a className="mainFont" href="#rice">Rice</a></DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem><a className="mainFont" href="#entree">Entrees</a></DropdownItem>
-                    <DropdownItem><a className="mainFont" href="#sushiSashimi">Sushi & Sashimi</a></DropdownItem>
-                    <DropdownItem><a className="mainFont" href="#platters">Sashimi Platters</a></DropdownItem>
                     <DropdownItem><a className="mainFont" href="#classicRoll">Classic Rolls/Hand Rolls</a></DropdownItem> 
                     <DropdownItem><a className="mainFont" href="#sushi">Sushi (Nigiri)</a></DropdownItem> 
                     <DropdownItem><a className="mainFont" href="#chefsSpecial">Chef's Special Rolls</a></DropdownItem> 
