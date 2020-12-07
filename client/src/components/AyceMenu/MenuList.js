@@ -58,7 +58,7 @@ function Menu(props) {
         <>
             <Container>
                 <Row>
-                    <h3>All-You-Can-Eat Menu</h3>
+                    <h2>All-You-Can-Eat Menu</h2>
                 </Row>
                 <Row className="sticky-top menuOptions">
                     <MenuNav />
@@ -71,14 +71,14 @@ function Menu(props) {
                             <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
                     </span>
                     <span>
-                    <a href="/ordersummary">Order Summary ({currentQtyTotal})</a>
+                    <Button type="button" btn="btn"><a href="/ordersummary">Order Summary ({currentQtyTotal})</a></Button>
                     </span>
                     <span>
-                    <a href="/favorite">Favorite</a>
+                    <Button type="button" btn="btn"><a href="/favorite">Favorite</a></Button>
                     </span>
                 </Row>
                     <Row>
-                        <h4 id="appetizers">Appetizers</h4>
+                        <h3 id="appetizers">Appetizers</h3>
                         <Container>
                             {
                                 appetizers.map((item, idx) => {
@@ -106,7 +106,7 @@ function Menu(props) {
                     </Row>
 
                     <Row>
-                        <h4 id="salad">Salad</h4>
+                        <h3 id="salad">Salad</h3>
                         <Container>
                             {
                                 salads.map((item, idx) => {
@@ -133,7 +133,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="soup">Soup/Noodles</h4>
+                        <h3 id="soup">Soup/Noodles</h3>
                         <Container>
                             {
                                 soups.map((item, idx) => {
@@ -160,7 +160,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="rice">Rice Entree</h4>
+                        <h3 id="rice">Rice Entree</h3>
                         <Container>
                             {
                                 rice.map((item, idx) => {
@@ -187,7 +187,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="classicRoll">Classic Roll/Hand Roll</h4>
+                        <h3 id="classicRoll">Classic Roll/Hand Roll</h3>
                         <Container>
                             {
                                 classicRolls.map((item, idx) => {
@@ -214,7 +214,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="sushi">Sushi (Nigiri)</h4>
+                        <h3 id="sushi">Sushi (Nigiri)</h3>
                         <Container>
                             {
                                 sushi.map((item, idx) => {
@@ -241,7 +241,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="chefsSpecial">Chef's Special Rolls</h4>
+                        <h3 id="chefsSpecial">Chef's Special Rolls</h3>
                         <Container>
                             {
                                 chefsSpecial.map((item, idx) => {
@@ -268,7 +268,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="tempura">Tempura (Fried) Rolls</h4>
+                        <h3 id="tempura">Tempura (Fried) Rolls</h3>
                         <Container>
                             {
                                 tempuraRolls.map((item, idx) => {
@@ -295,7 +295,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="bakedRolls">Baked Rolls</h4>
+                        <h3 id="bakedRolls">Baked Rolls</h3>
                         <Container>
                             {
                                 bakedRolls.map((item, idx) => {
@@ -322,7 +322,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="desserts">Desserts</h4>
+                        <h3 id="desserts">Desserts</h3>
                         <Container>
                             {
                                 desserts.map((item, idx) => {

@@ -11,24 +11,24 @@ const NavBar = () => {
         <Nav tabs>
             <Dropdown  nav isOpen={dropdownOpen} toggle={toggle}>
                 <DropdownToggle nav caret>
-                    Menu
+                    <span className="mainFont">Menu</span>
                 </DropdownToggle>
                 <DropdownMenu>
-                    <DropdownItem><a href="#appetizers">Appetizers</a></DropdownItem>
-                    <DropdownItem><a href="#salad">Salads</a></DropdownItem>
-                    <DropdownItem><a href="#soup">Soup/Noodles</a></DropdownItem>
-                    <DropdownItem><a href="#rice">Rice</a></DropdownItem>
+                    <DropdownItem><a  className="mainFont" href="#appetizers">Appetizers</a></DropdownItem>
+                    <DropdownItem><a className="mainFont" href="#salad">Salads</a></DropdownItem>
+                    <DropdownItem><a className="mainFont" href="#soup">Soup/Noodles</a></DropdownItem>
+                    <DropdownItem><a className="mainFont" href="#rice">Rice</a></DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem><a href="#entree">Entrees</a></DropdownItem>
-                    <DropdownItem><a href="#sushiSashimi">Sushi & Sashimi</a></DropdownItem>
-                    <DropdownItem><a href="#platters">Sashimi Platters</a></DropdownItem>
-                    <DropdownItem><a href="#classicRoll">Classic Rolls/Hand Rolls</a></DropdownItem> 
-                    <DropdownItem><a href="#sushi">Sushi (Nigiri)</a></DropdownItem> 
-                    <DropdownItem><a href="#chefsSpecial">Chef's Special Rolls</a></DropdownItem> 
-                    <DropdownItem><a href="#tempura">Tempura Rolls</a></DropdownItem> 
-                    <DropdownItem><a href="#bakedRolls">Baked Rolls</a></DropdownItem> 
+                    <DropdownItem><a className="mainFont" href="#entree">Entrees</a></DropdownItem>
+                    <DropdownItem><a className="mainFont" href="#sushiSashimi">Sushi & Sashimi</a></DropdownItem>
+                    <DropdownItem><a className="mainFont" href="#platters">Sashimi Platters</a></DropdownItem>
+                    <DropdownItem><a className="mainFont" href="#classicRoll">Classic Rolls/Hand Rolls</a></DropdownItem> 
+                    <DropdownItem><a className="mainFont" href="#sushi">Sushi (Nigiri)</a></DropdownItem> 
+                    <DropdownItem><a className="mainFont" href="#chefsSpecial">Chef's Special Rolls</a></DropdownItem> 
+                    <DropdownItem><a className="mainFont" href="#tempura">Tempura Rolls</a></DropdownItem> 
+                    <DropdownItem><a className="mainFont" href="#bakedRolls">Baked Rolls</a></DropdownItem> 
                     <DropdownItem divider />
-                    <DropdownItem><a href="#desserts">Desserts</a></DropdownItem> 
+                    <DropdownItem><a className="mainFont" href="#desserts">Desserts</a></DropdownItem> 
                 </DropdownMenu>
             </Dropdown>
         </Nav>

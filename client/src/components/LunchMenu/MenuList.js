@@ -15,10 +15,10 @@ function Menu() {
         <>
             <Container>
                 <Row>
-                    <h3>Lunch Menu</h3>
+                    <h2>Lunch Menu</h2>
                 </Row>
                 <Row>
-                    <h4 id="LunchSpecials">Lunch Specials</h4>
+                    <h3 id="LunchSpecials">Lunch Specials</h3>
                     <Container>
                         {
                             lunchSpecials.map((item, idx) => {
@@ -35,7 +35,7 @@ function Menu() {
                     </Container>
                 </Row>
                 <Row>
-                    <h4 id="Combos">Combos</h4>
+                    <h3 id="Combos">Combos</h3>
                     <Container>
                         {
                             combos.map((item, idx) => {
@@ -52,7 +52,7 @@ function Menu() {
                     </Container>
                 </Row>
                 <Row>
-                    <h4 id="LunchBox">Lunch Box</h4>
+                    <h3 id="LunchBox">Lunch Box</h3>
                     <Container>
                         {
                             lunchBox.map((item, idx) => {

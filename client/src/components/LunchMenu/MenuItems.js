@@ -12,7 +12,7 @@ function MenuItems(props) {
                         <a href="ayce#rawfish"><Image src={fishIcon} width="18" alt="Fish" /></a>
                         : <span></span>}
                         </h5>
-                        $ {props.price}
+                        <p>$ {props.price}</p>
                 </Col>
                 <Col sm="9" md="9" lg="9">
                         <p>{props.description}

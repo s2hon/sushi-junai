@@ -25,7 +25,7 @@ function MenuItems(props) {
                                 : <span></span>
                         }
                         </h5>
-                        $ {props.price.toFixed(2)}
+                        <p>$ {props.price.toFixed(2)}</p>
                 </Col>
                 <Col sm="9" md="9" lg="9">
                         <p>{props.description}
