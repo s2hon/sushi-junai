@@ -1,10 +1,10 @@
 import React from 'react';
 import './style.css';
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-// import { 
-//   faFacebookF,
-//   faInstagram
-// } from "@fortawesome/free-brands-svg-icons"; 
+import { 
+  faFacebookF,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons"; 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = (props) =>{
@@ -18,8 +18,8 @@ const Footer = (props) =>{
               <div className="widget about-widget">
                 <p>Connect with us!</p>
                 <ul className="text-center">
-                    {/* <li><a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/sushijunai/"><FontAwesomeIcon icon={faFacebookF} size="2x"/></a></li>
-                    <li><a target={"_blank"} rel="noreferrer" href="https://www.instagram.com/sushijunai/"><FontAwesomeIcon icon={faInstagram} size="2x"/></a></li> */}
+                    <li><a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/sushijunai/"><FontAwesomeIcon icon={faFacebookF} size="2x"/></a></li>
+                    <li><a target={"_blank"} rel="noreferrer" href="https://www.instagram.com/sushijunai/"><FontAwesomeIcon icon={faInstagram} size="2x"/></a></li>
                     <li><a target={"_blank"} rel="noreferrer" href="mailto:sushijunai1@gmail.com"><FontAwesomeIcon icon={faEnvelope} size="2x" /></a></li>
                 </ul>
               </div>
