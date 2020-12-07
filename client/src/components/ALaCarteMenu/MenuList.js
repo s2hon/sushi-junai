@@ -5,10 +5,9 @@ import menu from "../../db/menu.json";
 import MenuItems from "./MenuItems";
 import MenuNav from "../MenuNav/index";
 import Image from "../Image";
-import "../AyceMenu/menu.css"
-import vegIcon from "../AyceMenu/icons8-vegetarian-mark-50.png";
-import gfIcon from "../AyceMenu/icons8-no-gluten-50.png";
-import fishIcon from "../AyceMenu/icons8-fish-food-50.png";
+import vegIcon from "../AyceMenu/icons8-vegetarian-mark-48.png";
+import gfIcon from "../AyceMenu/icons8-color-50.png";
+import fishIcon from "../AyceMenu/icons8-dressed-fish-50.png";
 
 function Menu() {
     const [isVegetarian, setIsVegetarian] = useState(false);

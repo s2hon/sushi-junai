@@ -7,11 +7,11 @@ import MenuNav from "../MenuNav/index"
 import Button from "../Button";
 import Image from "../Image";
 import "./menu.css"
-import vegIcon from "./icons8-vegetarian-mark-50.png";
-import gfIcon from "./icons8-no-gluten-50.png";
-import fishIcon from "./icons8-fish-food-50.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faPlus} from "@fortawesome/free-solid-svg-icons"
+import vegIcon from "./icons8-vegetarian-mark-48.png";
+import gfIcon from "./icons8-color-50.png";
+import fishIcon from "./icons8-dressed-fish-50.png";
 
 
 function Menu(props) {
