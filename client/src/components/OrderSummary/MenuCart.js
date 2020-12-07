@@ -5,7 +5,7 @@ import Container from "../Container";
 import { Table } from 'reactstrap';
 import Row from '../Row';
 import TipCalculater from '../TipCalculater';
-import { Button } from 'reactstrap';
+import Button from '../Button';
 import './style.css';
 import Image from "../Image";
 import shockedIcon from "./icons8-surprised-50.png"
@@ -75,17 +75,18 @@ const MenuCart = (props) => {
                             <th>Price</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="mainFont">
                         {menuCart.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
                         <tr>
                             <Link
                                 to="/ayce"
                                 className={window.location.pathname === "/ayce" ? "nav-link active" : "nav-link"}
-                            >
-                            BACK TO MENU
+                            ><Button type={"button"} btn={"btn btn1"}>BACK TO MENU</Button>
+                            
                             </Link>
                         </tr>
                         <tr>
+
                             <th scope="row"></th>
                             <td></td>
                             <td>Current Total Cost:</td>
