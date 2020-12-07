@@ -13,6 +13,7 @@
 
 .location-info ul li {
     margin-right: 25px;
+    width: 80%;
 }
 
 .location-info ul li:last-child {

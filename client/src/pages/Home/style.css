@@ -4,16 +4,19 @@
     flex-direction: column;
 }
 
-.row {
-    height: auto;
-    display:flex; 
-    justify-content: space-evenly;
-}
-
 @media(max-width: 992px) {
 
     .wpo-team-area {
         padding-bottom: 30px;
     }
 }
+.location-wrap {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+
+
+
 
