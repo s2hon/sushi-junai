@@ -5,7 +5,7 @@ import Container from "../Container";
 import { Table } from 'reactstrap';
 import Row from '../Row';
 import TipCalculater from '../TipCalculater';
-import Button from '../Button';
+import { Button } from 'reactstrap';
 import './style.css';
 import Image from "../Image";
 import shockedIcon from "./icons8-surprised-50.png"

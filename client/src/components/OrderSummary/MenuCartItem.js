@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button';
+import {Button} from 'reactstrap';
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import API from '../../utils/API';
