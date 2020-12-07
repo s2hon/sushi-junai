@@ -73,7 +73,7 @@ export default class Nav extends Component {
                 </div>
 
                 <div className="navbtn" onClick={this.menuHandler}>
-                    <Image src={"../assets/sushi-icon.png"} alt={"sushi menu icon"} width="75%"/>
+                    <Image src={"../assets/sushi-icon.png"} alt={"sushi menu icon"} width="50%"/>
                 </div>
             </>
         )
