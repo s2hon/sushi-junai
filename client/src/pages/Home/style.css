@@ -1,0 +1,96 @@
+
+.wpo-team-content h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.wpo-team-content h2 a{
+    color: #062265;
+}
+
+.wpo-team-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.wpo-team-content ul li {
+    margin-right: 25px;
+}
+
+.wpo-team-content ul li a {
+    color: #062265;
+}
+
+.wpo-team-content ul li:last-child {
+    margin-right: 0;
+}
+
+.wpo-team-content {
+    background: #fff;
+    box-shadow: 0px 5px 9.8px 0.2px rgba(85, 85, 85, 0.07);
+    transition: all .3s;
+}
+
+.wpo-team-wrap {
+    position: relative;
+    transition: all .3s;
+}
+
+.wpo-team-content {
+    position: absolute;
+    right: 0px;
+    bottom: -45px;
+    width: 80%;
+    text-align: center;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.wpo-team-text-sub {
+    margin-bottom: -35px;
+    transition: all .3s;
+}
+
+.wpo-team-wrap:hover .wpo-team-text-sub {
+    margin-bottom: 0px;
+}
+
+.wpo-team-text-sub span {
+    margin-bottom: 28px;
+    display: block;
+    transition: all .3s;
+}
+
+.wpo-team-wrap:hover .wpo-team-text-sub span {
+    margin-bottom: 0px;
+}
+
+.wpo-team-wrap:hover .wpo-team-content {
+    background: #93DFB6;
+}
+.wpo-team-wrap:hover .wpo-team-text-sub span{
+    color: #fff;
+}
+.wpo-team-wrap:hover .wpo-team-content ul li a{
+    color: #fff;
+}
+.wpo-team-wrap:hover .wpo-team-text-sub h2 a{
+    color: #fff;
+}
+
+.wpo-team-img img {
+    width: 100%;
+}
+
+@media(max-width: 992px) {
+    .wpo-team-wrap {
+        margin-bottom: 80px;
+    }
+
+    .wpo-team-area {
+        padding-bottom: 30px;
+    }
+}

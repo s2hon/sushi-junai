@@ -78,7 +78,7 @@ export default class Nav extends Component {
                             </Collapse>
                         </li>
                         <li key="9">
-                            <p onClick={this.setIsOpen()}>
+                            <p onClick={this.setIsOpen(9)}>
                             Online Order <i className="fa fa-angle-right" aria-hidden="true"></i>
                             </p>
                             <Collapse isOpen={9 === isOpen}>
