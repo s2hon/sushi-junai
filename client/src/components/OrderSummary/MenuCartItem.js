@@ -21,7 +21,7 @@ const MenuCartItem = (props) => {
         catch(err => console.log(err));
     };
 
-    const { name, category, price } = props.item;
+    const { name, quantity, category, price } = props.item
     return (
         <tr>
         <td><Button btn={"float-right"} onClick={() => saveFave(name,category)}>
@@ -29,6 +29,11 @@ const MenuCartItem = (props) => {
             </Button>
         </td>
         <th scope="row">{name}</th>
+        <td>
+        <Button color="primary" onClick={() => props.decrementItem(props.item)}>-</Button>
+        {quantity}
+        <Button type="button" color="primary" onClick={() => props.incrementItem(props.item)}>+</Button>
+        </td>
         <td>{category}</td>
         <td>$ {price.toFixed(2)}</td>
         <td><Button color="danger" onClick={() => props.removeItem(props.item)}>X</Button></td>

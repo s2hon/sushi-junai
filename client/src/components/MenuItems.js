@@ -1,30 +1,33 @@
 import React from "react";
-import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faFish, faLeaf, faBreadSlice } from "@fortawesome/free-solid-svg-icons";
+import Image from "./Image";
+import vegIcon from "./AyceMenu/icons8-vegetarian-mark-48.png";
+import gfIcon from "./AyceMenu/icons8-color-50.png";
+import fishIcon from "./AyceMenu/icons8-dressed-fish-50.png";
 import { Col } from 'reactstrap';
 
 function MenuItems(props) {
         return (
                 <>
-                <Col sm="1" md="3" lg="3">
+                <Col sm="3" md="3" lg="3">
                         <h5 className={props.oncePerOrder}>{props.name} <br/> 
+                        
                         {props.fish ? 
-                        <a href="ayce#rawfish"><FontAwesomeIcon icon={faFish} /></a>
+                        <a href="#rawfish"><Image src={fishIcon} width="18" alt="Fish" /></a>
                         : <span></span>}
                         {
                                 props.vegetarian ?
-                                <a href="ayce#vegetarian"><FontAwesomeIcon icon={faLeaf} /></a>
+                                <a href="#vegetarian"><Image src={vegIcon} width="18" alt="Vegetarian" /></a>
                                 : <span></span>
                         }
                         {
                                 props.glutenFree ?
-                                <a href="ayce#glutenFree"><FontAwesomeIcon icon={faBreadSlice} /></a>
+                                <a href="#glutenFree"><Image src={gfIcon} width="18" alt="Gluten Free" /></a>
                                 : <span></span>
                         }
                         </h5>
-                        $ {props.price}
+                        <p>$ {props.price}</p>
                 </Col>
-                <Col sm="auto">
+                <Col sm="7" md="7" lg="7">
                         <p>{props.description}
                         
                         </p>

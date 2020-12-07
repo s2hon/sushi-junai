@@ -14,10 +14,10 @@ function Menu(props) {
         <>
             <Container>
                 <Row>
-                    <h3>Drink Menu</h3>
+                    <h2>Drink Menu</h2>
                 </Row>
                 <Row>
-                    <h4 id="Sake">Sake</h4>
+                    <h3 id="Sake">Sake</h3>
                     <Container>
                         {
                             sake.map((item, idx) => {
@@ -34,7 +34,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4 id="Wine">Wine</h4>
+                    <h3 id="Wine">Wine</h3>
                     <Container>
                         {
                             wine.map((item, idx) => {
@@ -51,7 +51,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4 id="Beer">Beer</h4>
+                    <h3 id="Beer">Beer</h3>
                     <Container>
                         {
                             beer.map((item, idx) => {
@@ -68,7 +68,7 @@ function Menu(props) {
                     </Container>
                 </Row>
                 <Row>
-                    <h4 id="Soft Drinks">Soft Drinks</h4>
+                    <h3 id="Soft Drinks">Soft Drinks</h3>
                     <Container>
                         {
                             softDrinks.map((item, idx) => {

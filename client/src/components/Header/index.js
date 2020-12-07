@@ -1,46 +1,53 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link}  from 'react-router-dom';
 import Image from "./../Image";
 import { useStoreContext } from '../../utils/GlobalStore';
+import {Button} from "reactstrap"
 import { AUTH_SET_LOGGED_OUT} from "../../utils/actions";
+import PopLoggin from '../PopLoggin'
 import Nav from "../Nav/index";
 import './style.css';
 import Counter from "../Counter";
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import PopSignUp from "../PopSignUp";
 
 function Header (props) {
     const [state, dispatch] = useStoreContext();
     // const history = useHistory();
 
-    // //handles the logout
-    // const logout = () => {
-    //     dispatch({
-    //         type: AUTH_SET_LOGGED_OUT
-    //     })
-    //     history.push("/")
-    // }
+    //handles the logout
+    const logout = () => {
+        dispatch({
+            type: AUTH_SET_LOGGED_OUT
+        })
+    }
+    
 
     return (
         <div className="topbar">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-4 col-sm-12 col-12">
+                    <div className="col-4">
+                        {/* <FontAwesomeIcon icon={faBars} /> */}
+                        <Nav/>
+                    </div>
+                    <div className="col-4 d-flex justify-content-center">
                         <Link to="/home">
-                            <Image src={"../assets/logo.png"} alt={"sushi-junai logo"} width="40%"/>
+                            <Image src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
                         </Link>
                     </div>
-                    <div className="col col-md-4 col-sm-8 col-8">
-                        <ul>
-                            <li><Link to="/login">Login</Link></li>
-                            <li><Link to="/signup">Sign Up</Link></li>
-                            {/* <li className={!state.userLoggedIn ? "hide": ""}>
-                                <Link onClick={logout}>Logout</Link></li> */}
-                        </ul>
-                    </div>
-                    <div className="col-md-2 col-sm-2 col-2">
+                    
+                    <div className="col-1 text-right">
                         <Counter/>
                     </div>
-                    <div className="col-md-2 col-sm-2 col-2">
-                        <Nav/>
+                    <div className="col-2 text-right">
+                        <ul>
+                            <li className={state.userLoggedIn ? "hide": ""}><PopLoggin/></li>
+                            <li className={state.userLoggedIn ? "hide": ""}><PopSignUp/></li>
+                            <li className={!state.userLoggedIn ? "hide": ""}>
+                                <Button outline color="secondary" onClick={logout}>Logout</Button></li>
+                        </ul>
                     </div>
                 </div>
             </div>

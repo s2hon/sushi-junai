@@ -1,5 +1,13 @@
-import React from 'react'
-import './style.css'
+import React from 'react';
+import './style.css';
+import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { 
+  faFacebookF,
+  faGithub,
+  faInstagram,
+  
+} from "@fortawesome/free-brands-svg-icons"; 
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = (props) =>{
 
@@ -12,9 +20,9 @@ const Footer = (props) =>{
               <div className="widget about-widget">
                 <p>Connect with us!</p>
                 <ul className="text-center">
-                    <li><a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/sushijunai/"><i className="fa fa-facebook fa-2x"></i></a></li>
-                    <li><a target={"_blank"} rel="noreferrer" href="https://www.instagram.com/sushijunai/"><i className="fa fa-instagram fa-2x"></i></a></li>
-                    <li><a target={"_blank"} rel="noreferrer" href="mailto:sushijunai1@gmail.com"><i className="fa fa-envelope fa-2x"></i></a></li>
+                    <li><a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/sushijunai/"><FontAwesomeIcon icon={faFacebookF} size="2x"/></a></li>
+                    <li><a target={"_blank"} rel="noreferrer" href="https://www.instagram.com/sushijunai/"><FontAwesomeIcon icon={faInstagram} size="2x"/></a></li>
+                    <li><a target={"_blank"} rel="noreferrer" href="mailto:sushijunai1@gmail.com"><FontAwesomeIcon icon={faEnvelope} size="2x" /></a></li>
                 </ul>
               </div>
             </div>
@@ -26,7 +34,7 @@ const Footer = (props) =>{
           <div className="row">
             <div className="col col-xs-12">
               <p className="copyright">&copy;MIT <a href="https://github.com/s2hon/sushi-junai">
-                <i className="fa fa-github fa-2x"></i></a> Built with love
+              <FontAwesomeIcon icon={faGithub} size="2x" /></a> Built with love
               </p>
             </div>
           </div>

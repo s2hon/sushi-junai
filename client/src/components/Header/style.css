@@ -2,6 +2,10 @@
     list-style:none !important;
 }
 
+.hide {
+    display: none;
+}
+
 .topbar li {
     position: relative;
 }
