@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../components/Container";
-import Slider from "../components/Slider/Slider";
+import Slider from "../components/Slider/index";
 
 function Rules(props) {
     return (

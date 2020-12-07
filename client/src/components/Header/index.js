@@ -8,7 +8,6 @@ import PopLoggin from '../PopLoggin'
 import Nav from "../Nav/index";
 import './style.css';
 import Counter from "../Counter";
-
 import PopSignUp from "../PopSignUp";
 
 
