@@ -6,6 +6,7 @@ function Counter() {
     const [hour, setHour] = useState();
     const [minute, setMinute] = useState();
     const [seconds, setSeconds] = useState();
+    const [color, setColor] = useState('black');
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -25,13 +26,17 @@ function Counter() {
             if (localStorage.getItem("timer")) {
                 localStorage.setItem("timer", count);
             }
-            else if (localStorage.getItem("date") !== moment().format('MMMM Do YYYY')) {
-                localStorage.setItem("timer", count);
-            }
+            // else if (localStorage.getItem("date") !== moment().format('MMMM Do YYYY')) {
+            //     // localStorage.setItem("timer", count);
+            // }
         }, 1000)
 
         if (count < 0) {
             clearTimeout(timer);
+            setColor("red");
+        }
+        else if (count === 3599.5){
+            setColor("blue");
         }
 
         return function cleanup(){
@@ -39,7 +44,7 @@ function Counter() {
         }
     }, [count])
     return (
-        <div className ="counter">{hour}:{minute}:{seconds} </div>
+        <div className ="counter" style={{color}}>{hour}:{minute}:{seconds} </div>
     )
 }
 
