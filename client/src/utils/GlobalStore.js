@@ -1,5 +1,5 @@
 import React, { createContext, useReducer, useContext } from "react";
-import { AUTH_SET_LOGGED_OUT, AUTH_SET_LOGGED_IN } from "./actions";
+import { AUTH_SET_LOGGED_OUT, AUTH_SET_LOGGED_IN, LOAD_FAVORITES,ADD_FAVORITE,REMOVE_FAVORITE } from "./actions";
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
@@ -20,32 +20,30 @@ const reducer = (state, action) => {
                 userLoggedIn: false,
                 email: ""
             }    
+        case LOAD_FAVORITES:
+            return {
+                ...state,
+                favorites: [...action.favorites],
+            }
+        case REMOVE_FAVORITE:
+            return {
+                ...state,
+                favorites: state.favorites.filter((post) => {
+                return post._id !== action._id; 
+                })
+            };
         default:
             return state;
     }
 }
-//make new reducer from menuCart reducer folder
-// const menuCartReducer = (state = {} || [], action) => {
-//     switch (action.type) {
-//         case 'ADD_MENU_ITEM':
-//             const { item } = action.payload
-//             console.log(state);
-//             return [...state, {
-//                 name: item.name,
-//                 price: item.price,
-//                 category: item.category
-//             }];
-//         default:
-//             return state
-//     }
-// };
 
 // Setup the provider component for our apps store
 const StoreProvider = ({value, ...props}) => {
     // What the react app view model starts as
     const initialState = value || {
         userLoggedIn: false,
-        email: ""
+        email: "",
+        favorites:[]
     };
     const [state, dispatch] = useReducer(reducer, initialState)
     window.dispatch = dispatch;

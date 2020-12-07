@@ -27,7 +27,7 @@ function Menu(props) {
         <MenuNav />
         <h3>All-You-Can-Eat Menu</h3> 
             <Container>
-                <Row>
+                <Row>   
                     <h4 id="appetizers">Appetizers</h4> 
                     <Container>
                         {

@@ -52,7 +52,17 @@ module.exports = function(app) {
       res.json(dbFavorites);
     })
   })
-
+//delete favorites 
+  // app.delete("/api/favorites", function(req, res) {
+  //   db.Post.destroy({
+  //     where: {
+  //       id: req.params.id
+  //     }
+  //   })
+  //     .then(function(dbPost) {
+  //       res.json(dbPost);
+  //     });
+  // });
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
