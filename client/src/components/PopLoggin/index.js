@@ -1,6 +1,5 @@
 import React, {useState, useRef} from "react";
-import {  Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
-import Button from "../Button"
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
 import API from "../../utils/API";
 import { AUTH_SET_LOGGED_IN } from "../../utils/actions";
 import { useStoreContext } from '../../utils/GlobalStore';
@@ -43,7 +42,7 @@ function PopLoggin (props){
     
     return (
         <>
-            <Button type="button" btn="btn btn1" onClick={toggle}>Log In</Button>
+            <Button outline color="secondary" onClick={toggle}>Log In</Button>
             <Modal isOpen={modal} toggle={toggle} fade={false}>
             <ModalHeader toggle={toggle}>Log In</ModalHeader>
             <ModalBody>
@@ -63,7 +62,7 @@ function PopLoggin (props){
                 </form>
             </ModalBody>
             <ModalFooter>
-                <Button type="button" btn="btn btn1" onClick={handleLogin}>LogIn</Button>
+                <Button color="primary" onClick={handleLogin}>LogIn</Button>
             </ModalFooter>
             </Modal>
         </>
