@@ -13,14 +13,6 @@ body {
   background: #f2f2f2;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Philosopher', sans-serif;
-}
-
-h5, h6, p, label, .btn {
-  font-family: 'Open Sans', sans-serif;
-}
-
 a,
 a:hover,
 a:focus {
@@ -141,11 +133,4 @@ li a.dropdown-toggle::after {
     position: relative;
     left: 68%;
   }
-}
-
-/* ---------------------------------------------------
-    BUTTONS
------------------------------------------------------ */
-.btn1 {
-  background-color: #93dfb6;
 }

@@ -1,0 +1,39 @@
+.body-bg {
+    background-color: #f2f2f2;
+    margin-top: 5px;
+}
+
+.menu-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-card {
+    margin: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menuOptions {
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 7px;
+    margin: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-check {
+    margin-top: 5px;
+}
+
+.section-head {
+    padding: 10px;
+    margin: 30px auto;
+    background-color: #f29877;
+    border-radius: 7px;
+    text-align: center;
+    min-width: 200px;
+    width: 50%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+}
