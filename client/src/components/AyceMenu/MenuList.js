@@ -72,10 +72,10 @@ function Menu(props) {
                             <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
                     </span>
                     <span>
-                    <Link to="/ordersummary"><Button type="button" btn="btn btn1">Order Summary ({currentQtyTotal})</Button></Link>
+                    <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Order Summary ({currentQtyTotal})</Button></Link>
                     </span>
                     <span>
-                    <Link to="/favorite"><Button type="button" btn="btn btn1">Favorite</Button></Link>
+                    <Link to="/favorite"><Button type="button" btn="btn btn1 float-right">Favorite</Button></Link>
                     </span>
                 </Row>
                     <Row>
