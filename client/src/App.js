@@ -6,6 +6,7 @@ import reducer from './reducer';
 import data from './db/menu.json';
 import {saveState} from "./localstorage";
 import AllRouter from "./Router/index";
+import moment from "moment";
 
 const store = createStore(reducer);
 data.forEach((item) => store.dispatch({
@@ -18,6 +19,11 @@ store.subscribe(() => {
     saveState("favCart", store.getState().favCart)
     //add save state 
 });
+
+if (localStorage.getItem("date") !== moment().format('MMMM Do YYYY')) {
+    localStorage.clear()
+}
+
 
 function App() {
 
