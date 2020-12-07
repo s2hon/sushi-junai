@@ -51,7 +51,7 @@ export default class Nav extends Component {
                                             <CardBody>
                                                 <ul>
                                                     {item.submenu.map(submenu => (
-                                                        <li key={submenu.id}><Link className="active" className="mainFont" to={submenu.link} onClick={this.menuHandler}>{submenu.title}</Link></li>
+                                                        <li key={submenu.id}><Link className="active mainFont" to={submenu.link} onClick={this.menuHandler}>{submenu.title}</Link></li>
                                                     ))}
                                                 </ul>
                                             </CardBody>
