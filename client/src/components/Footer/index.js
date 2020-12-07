@@ -3,7 +3,9 @@ import './style.css';
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { 
   faFacebookF,
-  faInstagram
+  faGit,
+  faInstagram,
+  
 } from "@fortawesome/free-brands-svg-icons"; 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -32,7 +34,7 @@ const Footer = (props) =>{
           <div className="row">
             <div className="col col-xs-12">
               <p className="copyright">&copy;MIT <a href="https://github.com/s2hon/sushi-junai">
-                <i className="fa fa-github fa-2x"></i></a> Built with love
+              <FontAwesomeIcon icon={faGit} size="2x" /></a> Built with love
               </p>
             </div>
           </div>

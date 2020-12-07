@@ -1,0 +1,20 @@
+
+.menuOptions{
+    background-color: white;
+}
+
+h5.red {
+    color: red;
+}
+
+button.float-right {
+    background-color: #93dfb6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Philosopher', sans-serif;
+  }
+  
+  h5, h6, p, label, .btn, .mainFont {
+    font-family: 'Open Sans', sans-serif;
+  }

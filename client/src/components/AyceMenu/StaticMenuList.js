@@ -48,24 +48,21 @@ function Menu() {
         <>
             <Container>
                 <Row>
-                    <h3>All-You-Can-Eat Menu</h3>
+                    <h2>All-You-Can-Eat Menu</h2>
                 </Row>
-                <Row>
+                <Row className="sticky-top menuOptions">
                     <MenuNav />
-                    <div class="form-check form-check-inline">
+                    <span class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
                             <label class="form-check-label" for="vegetarianCheckbox"><Image src={vegIcon} width="18" alt="Vegetarian" />Vegetarian </label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                    </span>
+                    <span class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF}  value="glutenFree" />
-                            <label class="form-check-label" for="glutenFreeCheckbox">
-                            <a href="#glutenFree"><Image src={gfIcon} width="18" alt="Gluten Free" /></a>
-                            Gluten Free (order without sauce)
-                            </label>
-                    </div>
+                            <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
+                    </span>
                 </Row>
                     <Row>
-                        <h4 id="appetizers">Appetizers</h4>
+                        <h3 id="appetizers">Appetizers</h3>
                         <Container>
                             {
                                 appetizers.map((item, idx) => {
@@ -87,7 +84,7 @@ function Menu() {
                     </Row>
 
                     <Row>
-                        <h4 id="salad">Salad</h4>
+                        <h3 id="salad">Salad</h3>
                         <Container>
                             {
                                 salads.map((item, idx) => {
@@ -108,7 +105,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="soup">Soup/Noodles</h4>
+                        <h3 id="soup">Soup/Noodles</h3>
                         <Container>
                             {
                                 soups.map((item, idx) => {
@@ -129,7 +126,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="rice">Rice Entree</h4>
+                        <h3 id="rice">Rice Entree</h3>
                         <Container>
                             {
                                 rice.map((item, idx) => {
@@ -150,7 +147,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="classicRoll">Classic Roll/Hand Roll</h4>
+                        <h3 id="classicRoll">Classic Roll/Hand Roll</h3>
                         <Container>
                             {
                                 classicRolls.map((item, idx) => {
@@ -171,7 +168,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="sushi">Sushi (Nigiri)</h4>
+                        <h3 id="sushi">Sushi (Nigiri)</h3>
                         <Container>
                             {
                                 sushi.map((item, idx) => {
@@ -192,7 +189,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="chefsSpecial">Chef's Special Rolls</h4>
+                        <h3 id="chefsSpecial">Chef's Special Rolls</h3>
                         <Container>
                             {
                                 chefsSpecial.map((item, idx) => {
@@ -213,7 +210,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="tempura">Tempura (Fried) Rolls</h4>
+                        <h3 id="tempura">Tempura (Fried) Rolls</h3>
                         <Container>
                             {
                                 tempuraRolls.map((item, idx) => {
@@ -234,7 +231,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="bakedRolls">Baked Rolls</h4>
+                        <h3 id="bakedRolls">Baked Rolls</h3>
                         <Container>
                             {
                                 bakedRolls.map((item, idx) => {
@@ -255,7 +252,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="desserts">Desserts</h4>
+                        <h3 id="desserts">Desserts</h3>
                         <Container>
                             {
                                 desserts.map((item, idx) => {

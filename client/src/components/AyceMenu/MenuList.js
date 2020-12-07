@@ -6,6 +6,9 @@ import MenuItems from "../MenuItems";
 import MenuNav from "../MenuNav/index"
 import Button from "../Button";
 import Image from "../Image";
+import "./menu.css"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faPlus} from "@fortawesome/free-solid-svg-icons"
 import vegIcon from "./icons8-vegetarian-mark-48.png";
 import gfIcon from "./icons8-color-50.png";
 import fishIcon from "./icons8-dressed-fish-50.png";
@@ -55,30 +58,27 @@ function Menu(props) {
         <>
             <Container>
                 <Row>
-                    <h3>All-You-Can-Eat Menu</h3>
+                    <h2>All-You-Can-Eat Menu</h2>
                 </Row>
-                <Row>
+                <Row className="sticky-top menuOptions">
                     <MenuNav />
-                    <div class="form-check form-check-inline">
+                    <span class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
                             <label class="form-check-label" for="vegetarianCheckbox"><Image src={vegIcon} width="18" alt="Vegetarian" />Vegetarian </label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                    </span>
+                    <span class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF}  value="glutenFree" />
-                            <label class="form-check-label" for="glutenFreeCheckbox">
-                            <a href="#glutenFree"><Image src={gfIcon} width="18" alt="Gluten Free" /></a>
-                            Gluten Free (order without sauce)
-                            </label>
-                    </div>
-                    <div>
-                    <a href="/ordersummary">Order Summary ({currentQtyTotal})</a>
-                    </div>
-                    <div>
-                    <a href="/favorite">Favorite</a>
-                    </div>
+                            <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
+                    </span>
+                    <span>
+                    <Button type="button" btn="btn"><a href="/ordersummary">Order Summary ({currentQtyTotal})</a></Button>
+                    </span>
+                    <span>
+                    <Button type="button" btn="btn"><a href="/favorite">Favorite</a></Button>
+                    </span>
                 </Row>
                     <Row>
-                        <h4 id="appetizers">Appetizers</h4>
+                        <h3 id="appetizers">Appetizers</h3>
                         <Container>
                             {
                                 appetizers.map((item, idx) => {
@@ -90,10 +90,12 @@ function Menu(props) {
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button icon={"fa fa-plus"} btn={"float-right"} function={() => {
+                                                    <Button type="button" btn={"float-right btn"} function={() => {
                                                         props.addItem(item)
                                                     }}
-                                                    ></Button>
+                                                    >
+                                                        <FontAwesomeIcon icon={faPlus}/>
+                                                    </Button>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -104,7 +106,7 @@ function Menu(props) {
                     </Row>
 
                     <Row>
-                        <h4 id="salad">Salad</h4>
+                        <h3 id="salad">Salad</h3>
                         <Container>
                             {
                                 salads.map((item, idx) => {
@@ -116,10 +118,12 @@ function Menu(props) {
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button icon={"fa fa-plus"} btn={"float-right"} function={() => {
+                                                    <Button  btn={"float-right btn"} function={() => {
                                                         props.addItem(item)
                                                     }}
-                                                    ></Button>
+                                                    >
+                                                        <FontAwesomeIcon icon={faPlus}/>
+                                                    </Button>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -129,7 +133,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="soup">Soup/Noodles</h4>
+                        <h3 id="soup">Soup/Noodles</h3>
                         <Container>
                             {
                                 soups.map((item, idx) => {
@@ -141,10 +145,12 @@ function Menu(props) {
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button icon={"fa fa-plus"} btn={"float-right"} function={() => {
+                                                    <Button btn={"float-right btn"} function={() => {
                                                         props.addItem(item)
                                                     }}
-                                                    ></Button>
+                                                    >
+                                                        <FontAwesomeIcon icon={faPlus}/>
+                                                    </Button>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -154,7 +160,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="rice">Rice Entree</h4>
+                        <h3 id="rice">Rice Entree</h3>
                         <Container>
                             {
                                 rice.map((item, idx) => {
@@ -166,10 +172,12 @@ function Menu(props) {
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button icon={"fa fa-plus"} btn={"float-right"} function={() => {
+                                                    <Button btn={"float-right btn"} function={() => {
                                                         props.addItem(item)
                                                     }}
-                                                    ></Button>
+                                                    >
+                                                        <FontAwesomeIcon icon={faPlus}/>
+                                                    </Button>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -179,7 +187,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="classicRoll">Classic Roll/Hand Roll</h4>
+                        <h3 id="classicRoll">Classic Roll/Hand Roll</h3>
                         <Container>
                             {
                                 classicRolls.map((item, idx) => {
@@ -191,10 +199,12 @@ function Menu(props) {
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button icon={"fa fa-plus"} btn={"float-right"} function={() => {
+                                                    <Button  btn={"float-right btn"} function={() => {
                                                         props.addItem(item)
                                                     }}
-                                                    ></Button>
+                                                    >
+                                                        <FontAwesomeIcon icon={faPlus}/>
+                                                    </Button>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -204,7 +214,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="sushi">Sushi (Nigiri)</h4>
+                        <h3 id="sushi">Sushi (Nigiri)</h3>
                         <Container>
                             {
                                 sushi.map((item, idx) => {
@@ -216,10 +226,12 @@ function Menu(props) {
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button icon={"fa fa-plus"} btn={"float-right"} function={() => {
+                                                    <Button btn={"float-right btn"} function={() => {
                                                         props.addItem(item)
                                                     }}
-                                                    ></Button>
+                                                    >
+                                                        <FontAwesomeIcon icon={faPlus}/>
+                                                    </Button>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -229,7 +241,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="chefsSpecial">Chef's Special Rolls</h4>
+                        <h3 id="chefsSpecial">Chef's Special Rolls</h3>
                         <Container>
                             {
                                 chefsSpecial.map((item, idx) => {
@@ -241,10 +253,12 @@ function Menu(props) {
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button icon={"fa fa-plus"} btn={"float-right"} function={() => {
+                                                    <Button btn={"float-right btn"} function={() => {
                                                         props.addItem(item)
                                                     }}
-                                                    ></Button>
+                                                    >
+                                                        <FontAwesomeIcon icon={faPlus}/>
+                                                    </Button>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -254,7 +268,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="tempura">Tempura (Fried) Rolls</h4>
+                        <h3 id="tempura">Tempura (Fried) Rolls</h3>
                         <Container>
                             {
                                 tempuraRolls.map((item, idx) => {
@@ -266,10 +280,12 @@ function Menu(props) {
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button icon={"fa fa-plus"} btn={"float-right"} function={() => {
+                                                    <Button btn={"float-right btn"} function={() => {
                                                         props.addItem(item)
                                                     }}
-                                                    ></Button>
+                                                    >
+                                                        <FontAwesomeIcon icon={faPlus}/>
+                                                    </Button>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -279,7 +295,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="bakedRolls">Baked Rolls</h4>
+                        <h3 id="bakedRolls">Baked Rolls</h3>
                         <Container>
                             {
                                 bakedRolls.map((item, idx) => {
@@ -291,10 +307,12 @@ function Menu(props) {
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button icon={"fa fa-plus"} btn={"float-right"} function={() => {
+                                                    <Button btn={"float-right btn"} function={() => {
                                                         props.addItem(item)
                                                     }}
-                                                    ></Button>
+                                                    >
+                                                        <FontAwesomeIcon icon={faPlus}/>
+                                                    </Button>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -304,7 +322,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <h4 id="desserts">Desserts</h4>
+                        <h3 id="desserts">Desserts</h3>
                         <Container>
                             {
                                 desserts.map((item, idx) => {
@@ -316,10 +334,12 @@ function Menu(props) {
                                         <div className="card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button icon={"fa fa-plus"} btn={"float-right"} function={() => {
+                                                    <Button btn={"float-right btn"} function={() => {
                                                         props.addItem(item)
                                                     }}
-                                                    ></Button>
+                                                    >
+                                                        <FontAwesomeIcon icon={faPlus}/>
+                                                    </Button>
                                                 </MenuItems>
                                             </div>
                                         </div>

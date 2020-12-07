@@ -26,6 +26,10 @@ const MenuCart = (props) => {
 
     let accumulativeTotal = (parseFloat(totalSavings)+cartCostTotal).toFixed(2)
 
+    if (accumulativeTotal !== undefined) {
+        accumulativeTotal = 0;
+    }
+
     if (currentQtyTotal === 0) {
         return (
             <>
