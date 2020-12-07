@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from "../../components/Card/index";
 import Container from "../../components/Container";
-import {Row, Col} from "reactstrap";
+import {Col} from "reactstrap";
 import Button from "../../components/Button";
 import data from "../../db/store.json";
 import { useStoreContext } from '../../utils/GlobalStore';
@@ -14,7 +14,7 @@ function Home(props) {
 
     return (
     <React.Fragment>
-            <div className="container" style={{display:"flex", justifyContent:"space-evenly", flexDirection:"column"}}>
+            <div className="container" style={{display:"flex", justifyContent:"space-evenly", flexDirection:"column", marginTop:150}}>
                 <div className="row" style={{height:100, display:"flex", justifyContent:"space-evenly", }}>
                     {
                         data.map((data, idx) => {

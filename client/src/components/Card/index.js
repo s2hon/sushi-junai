@@ -9,7 +9,7 @@ import {
 
 function Card(props) {
     return (
-        <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
+        <div className="col-lg-6 col-md-6 col-sm-12 col-12 custom-grid">
             <div className="wpo-team-wrap">
                 <div className="wpo-team-img">
                     <img  alt=""/>
