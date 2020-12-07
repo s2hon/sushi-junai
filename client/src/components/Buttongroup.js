@@ -19,11 +19,11 @@ function Buttongroup(props) {
     return (
         <ButtonToolbar>
             <ButtonGroup size="lg">
-                <Button btn={"btn btn-dark"} className="fifteen" function={handleFifteen}>15%
+                <Button btn={"btn btn1"} className="fifteen" function={handleFifteen}>15%
                 </Button>
-                <Button btn={"btn btn-dark"} className="eighteen" function={handleEighteen}>18%
+                <Button btn={"btn btn1"} className="eighteen" function={handleEighteen}>18%
                 </Button>
-                <Button btn={"btn btn-dark"} className="twenty" function={handleTwenty}>20%
+                <Button btn={"btn btn1"} className="twenty" function={handleTwenty}>20%
                 </Button>
             </ButtonGroup>
         </ButtonToolbar>
