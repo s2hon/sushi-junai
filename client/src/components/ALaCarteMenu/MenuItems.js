@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./Image";
+import Image from "../Image";
 import vegIcon from "../AyceMenu/icons8-vegetarian-mark-48.png";
 import gfIcon from "../AyceMenu/icons8-color-50.png";
 import fishIcon from "../AyceMenu/icons8-dressed-fish-50.png";

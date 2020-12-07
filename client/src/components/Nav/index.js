@@ -61,12 +61,40 @@ export default class Nav extends Component {
                                 </li>
                             )
                         })}
-
-                        <li>
-                            <a className="mainFont" target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-2-austin">Reservations</a>
+                        <li key="8">
+                            <p onClick={this.setIsOpen(8)}>
+                            Reservations <i className="fa fa-angle-right" aria-hidden="true"></i>
+                            </p>
+                            <Collapse isOpen={8 === isOpen}>
+                                <Card>
+                                    <CardBody>
+                                        <ul>
+                                            <li>
+                                                <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-austin">Sushi Junai 1</a>
+                                            </li>
+                                        </ul>
+                                    </CardBody>
+                                </Card>
+                            </Collapse>
                         </li>
-                        <li>
-                            <a className="mainFont" target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-2-austin">Order Online</a>
+                        <li key="9">
+                            <p onClick={this.setIsOpen(9)}>
+                            Online Order <i className="fa fa-angle-right" aria-hidden="true"></i>
+                            </p>
+                            <Collapse isOpen={9 === isOpen}>
+                                <Card>
+                                    <CardBody>
+                                        <ul>
+                                            <li>
+                                                <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-austin">Sushi Junai 1</a>
+                                            </li>
+                                            <li>
+                                                <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-2-austin">Sushi Junai 2</a>
+                                            </li>
+                                        </ul>
+                                    </CardBody>
+                                </Card>
+                            </Collapse>
                         </li>
                     </ul>
 
