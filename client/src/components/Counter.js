@@ -40,7 +40,7 @@ function Counter() {
         }
     }, [count])
     return (
-        <div>{hour}:{minute}:{seconds} </div>
+        <div className ="counter">{hour}:{minute}:{seconds} </div>
     )
 }
 
