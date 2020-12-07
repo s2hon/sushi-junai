@@ -11,7 +11,7 @@ function Choice () {
             <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center" style={{marginTop: 50,marginBottom: 50}}>
             <h4>Get the items you love!</h4>
             <Link to="/alacarte">
-                <Button type={"button"} btn={"btn btn-dark"}>A La Carte</Button>
+                <Button type={"button"} btn={"btn btn1"}>A La Carte</Button>
             </Link>
             </Col>
         </Row>
@@ -19,7 +19,7 @@ function Choice () {
             <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center" style={{marginBottom: 50}}>
             <h4>Try our delicious dishes!</h4>
             <Link to="/rules">
-                <Button type={"button"} btn={"btn btn-dark"}>All You Can Eat</Button>
+                <Button type={"button"} btn={"btn btn1"}>All You Can Eat</Button>
             </Link>
             </Col>
         </Row>
