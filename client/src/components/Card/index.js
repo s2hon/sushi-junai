@@ -2,7 +2,7 @@ import React from "react";
 
 function Card(props) {
     return (
-        <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid container">
+        <div className="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center text-center">
             <div className="wpo-event-item">
                 <div className="wpo-event-img">
                     <img alt=""/>
