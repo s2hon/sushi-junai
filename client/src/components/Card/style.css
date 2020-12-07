@@ -1,21 +1,21 @@
-h2 {
+.location-info h2 {
     font-size: 24px;
     font-weight: 500;
     margin-top: 0;
 }
 
-ul {
+.location-info ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
 }
 
-ul li {
+.location-info ul li {
     margin-right: 25px;
 }
 
-ul li:last-child {
+.location-info ul li:last-child {
     margin-right: 0;
 }
 
@@ -72,8 +72,4 @@ ul li:last-child {
 
 .location-wrap:hover .location-info h2 a{
     color: #fff;
-}
-
-img {
-    width: 100%;
 }
