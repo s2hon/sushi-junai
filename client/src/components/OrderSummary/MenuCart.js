@@ -5,7 +5,7 @@ import Container from "../Container";
 import { Table } from 'reactstrap';
 import Row from '../Row';
 import TipCalculater from '../TipCalculater';
-import { Button } from 'reactstrap';
+import Button from '../Button';
 import './style.css';
 import Image from "../Image";
 import shockedIcon from "./icons8-surprised-50.png"
@@ -23,12 +23,6 @@ const MenuCart = (props) => {
     const sumCostTotal = arr => arr.reduce((sum, {price, quantity})=> sum + price*quantity, 0);
     const cartCostTotal = sumCostTotal(menuCart);
     console.log(cartCostTotal);
-
-    let accumulativeTotal = (parseFloat(totalSavings)+cartCostTotal).toFixed(2)
-
-    if (accumulativeTotal !== undefined) {
-        accumulativeTotal = 0;
-    }
 
     if (currentQtyTotal === 0) {
         return (
@@ -58,12 +52,7 @@ const MenuCart = (props) => {
                                 <td>Current Total Cost:</td>
                                 <td>$ {cartCostTotal.toFixed(2)}</td>
                             </tr>
-                            <tr>
-                                <td></td>
-                                <td>Accumulative Total:</td>
-                                <td>$ {accumulativeTotal}</td>
-                            </tr>
-                            <TipCalculater total={accumulativeTotal} />
+                            <TipCalculater total={cartCostTotal.toFixed(2)} />
                             </tbody>
                         </thead>
                     </Table>
@@ -86,32 +75,24 @@ const MenuCart = (props) => {
                             <th>Price</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="mainFont">
                         {menuCart.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
                         <tr>
                             <Link
                                 to="/ayce"
                                 className={window.location.pathname === "/ayce" ? "nav-link active" : "nav-link"}
-                            >
-                            BACK TO MENU
+                            ><Button type={"button"} btn={"btn btn1"}>BACK TO MENU</Button>
+                            
                             </Link>
                         </tr>
                         <tr>
-                            <Button type={"button"} btn={"btn btn-dark"} onClick={() => {props.clearCart(cartCostTotal)}}>Ordered with a Server</Button>
-                        </tr>
-                        <tr>
+
                             <th scope="row"></th>
                             <td></td>
                             <td>Current Total Cost:</td>
                             <td>$ {cartCostTotal.toFixed(2)}</td>
                         </tr>
-                        <tr>
-                            <th scope="row"></th>
-                            <td></td>
-                            <td>Accumulative Total:</td>
-                            <td>$ {accumulativeTotal}</td>
-                        </tr>
-                        <TipCalculater total={accumulativeTotal} />
+                        <TipCalculater total={cartCostTotal.toFixed(2)} />
                     </tbody>
                 </Table>
             </Container>
