@@ -45,6 +45,9 @@ const menuCart = (state = persistedState || [], action) => {
             const { item } = action.payload
             return state.filter(x => x.name !== item.name) 
         }
+        case 'CLEAR_CART':{
+            return [];
+        }
         default:
             return state
     }
