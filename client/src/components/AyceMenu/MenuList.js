@@ -8,7 +8,7 @@ import MenuNav from "../MenuNav/index"
 import Button from "../Button";
 import Image from "../Image";
 import "./menu.css"
-import "../../css/menu.css"
+import "../../css/style.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlus } from "@fortawesome/free-solid-svg-icons"
 import vegIcon from "./icons8-vegetarian-mark-48.png";
