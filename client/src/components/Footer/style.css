@@ -1,30 +1,40 @@
-
+footer {
+    flex-shrink: 0;
+}
 .wpo-site-footer {
     background: #F26430;
     position: relative;
     font-size: 15px;
     overflow: hidden;
-}
-
-.wpo-site-footer ul{
-    list-style: none;
-    align-content: center !important;
-    text-align: center !important;
-}
-
-.wpo-site-footer p,
-.wpo-site-footer li {
-    margin-top: 10px;
+    flex-direction: row;
     color: #f2f2f2;
 }
 
-.wpo-site-footer li{
-    margin-left: auto;
-    margin-right: auto;
+.wpo-site-footer p {
+    margin-top: 10px;
+    justify-content: space-evenly;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #f2f2f2;
+    list-style: none;
+    text-align: left !important;
+    position: relative;
+}
+.wpo-site-footer a {
+    margin-top: 10px;
+    justify-content: space-evenly;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: #f2f2f2;
+    list-style: none;
+    align-content: center !important;
+    text-align: center !important;
+    position: relative;
 }
 
 .wpo-site-footer .container {
     position: relative;
+    color: #f2f2f2;
 }
 
 .wpo-site-footer .wpo-upper-footer {
@@ -68,25 +78,6 @@
 
 .wpo-site-footer .about-widget p:last-child {
     margin-bottom: 0;
-}
-
-.wpo-site-footer .about-widget ul {
-    overflow: hidden;
-    padding-top: 10px;
-    padding-left: 90px;
-}
-
-.wpo-site-footer .about-widget ul li {
-    font-size: 22px;
-    float: left;
-}
-
-.wpo-site-footer .about-widget ul>li+li {
-    margin-left: 20px;
-}
-
-.wpo-site-footer .about-widget ul a {
-    color: #f2f2f2;
 }
 
 .wpo-site-footer .wpo-lower-footer {

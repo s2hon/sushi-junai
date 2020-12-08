@@ -10,6 +10,7 @@ const favCart = (state=persistedState || [], action) => {
                 name: item.name,
                 category: item.category
             }];
+            //add case for removing item? 
         default:
             return state
     }

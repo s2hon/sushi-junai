@@ -11,7 +11,7 @@ function TipCalculater(props) {
             <th scope="row"></th>
             <td><ButtonGroup total={props.total} setTipState={setTipState}/></td>
             <td>Total Tip:</td>
-            <td>{(props.total * tipState.percent).toFixed(2)}</td>
+            <td>$ {(props.total * tipState.percent).toFixed(2)}</td>
             {props.children}
         </tr>
     );

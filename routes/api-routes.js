@@ -42,16 +42,27 @@ module.exports = function(app) {
   });
   
   //this code will retrieve the favorites
-  app.get("/api/favorite", function(req, res){
+  app.get("/api/favorites/:email", function(req, res){
+    console.log("we are searching for the email"+ req.params.email);
     db.Favorites.findAll({
       where: {
-        User_id: req.user.email
+        UserEmail: req.params.email
       }
     }).then(function(dbFavorites){
       res.json(dbFavorites);
     })
   })
-
+//delete favorites 
+  // app.delete("/api/favorites", function(req, res) {
+  //   db.Post.destroy({
+  //     where: {
+  //       id: req.params.id
+  //     }
+  //   })
+  //     .then(function(dbPost) {
+  //       res.json(dbPost);
+  //     });
+  // });
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();

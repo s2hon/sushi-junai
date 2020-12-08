@@ -4,10 +4,12 @@ import Image from "./../Image";
 import { useStoreContext } from '../../utils/GlobalStore';
 import Button from "../Button"
 import { AUTH_SET_LOGGED_OUT} from "../../utils/actions";
-import PopLoggin from '../PopLoggin'
 import Nav from "../Nav/index";
 import './style.css';
+<<<<<<< HEAD
 import PopSignUp from "../PopSignUp";
+=======
+>>>>>>> 8b2014e187039850b0e46ef54c718aeac498a57c
 
 
 function Header (props) {
@@ -24,7 +26,7 @@ function Header (props) {
             <div className="topbar">
                 <div className="container">
                     <div className="row">
-                        <div className="col-3">
+                        <div className="col-2">
                             <Nav/>
                         </div>
                         <div className="col-6">
@@ -32,14 +34,16 @@ function Header (props) {
                                 <Image className="center-block" src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
                             </Link>
                         </div>
-                        
-                        
                         <div className="col-2 text-right">
                             <ul>
-                                <li className={state.userLoggedIn ? "hide": ""}><PopLoggin/></li>
-                                <li className={state.userLoggedIn ? "hide": ""}><PopSignUp/></li>
+                                <li className={state.userLoggedIn ? "hide": ""}>
+                                    <Link to="/signinsignup">
+                                        <Button type={"button"} btn={"btn btn1"}>Login/Signup</Button>
+                                    </Link>
+                                </li>
                                 <li className={!state.userLoggedIn ? "hide": ""}>
-                                    <Button type="button" className="btn btn1" onClick={logout}>Logout</Button></li>
+                                    <Button type={"button"} btn={"btn btn1"} onClick={logout}>Logout</Button>
+                                </li>
                             </ul>
                         </div>
                     </div>

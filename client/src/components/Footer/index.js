@@ -8,6 +8,7 @@ import {
   
 } from "@fortawesome/free-brands-svg-icons"; 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Container from '../Container';
 
 const Footer = (props) =>{
 
@@ -17,14 +18,12 @@ const Footer = (props) =>{
         <div className="container">
           <div className="row justify-content-center">
             <div className="col col-lg-3 col-md-6 col-sm-12 col-12 text-center">
-              <div className="widget about-widget">
                 <p>Connect with us!</p>
-                <ul className="text-center">
-                    <li><a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/sushijunai/"><FontAwesomeIcon icon={faFacebookF} size="2x"/></a></li>
-                    <li><a target={"_blank"} rel="noreferrer" href="https://www.instagram.com/sushijunai/"><FontAwesomeIcon icon={faInstagram} size="2x"/></a></li>
-                    <li><a target={"_blank"} rel="noreferrer" href="mailto:sushijunai1@gmail.com"><FontAwesomeIcon icon={faEnvelope} size="2x" /></a></li>
-                </ul>
-              </div>
+                <div className="footer-social-container">
+                    <a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/sushijunai/"><FontAwesomeIcon icon={faFacebookF} size="3x"/></a>
+                    <a target={"_blank"} rel="noreferrer" href="https://www.instagram.com/sushijunai/"><FontAwesomeIcon icon={faInstagram} size="3x"/></a>
+                    <a target={"_blank"} rel="noreferrer" href="mailto:sushijunai1@gmail.com"><FontAwesomeIcon icon={faEnvelope} size="3x" /></a>
+                </div>
             </div>
           </div>
         </div>
@@ -33,9 +32,8 @@ const Footer = (props) =>{
         <div className="container">
           <div className="row">
             <div className="col col-xs-12">
-              <p className="copyright">&copy;MIT <a href="https://github.com/s2hon/sushi-junai">
-                <FontAwesomeIcon icon={faGithub} size="2x" /></a> Built with love
-              </p>
+              <a className="copyright" href="https://github.com/s2hon/sushi-junai">&copy;MIT <FontAwesomeIcon icon={faGithub} size="2x" /> Built with love
+              </a>
             </div>
           </div>
         </div>
