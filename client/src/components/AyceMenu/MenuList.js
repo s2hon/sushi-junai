@@ -15,6 +15,7 @@ import vegIcon from "./icons8-vegetarian-mark-48.png";
 import gfIcon from "./icons8-color-50.png";
 import fishIcon from "./icons8-dressed-fish-50.png";
 import Col from "../Col";
+import Scrollbar from "../ScrollUp/index";
 
 
 function Menu(props) {
@@ -379,6 +380,7 @@ function Menu(props) {
                     </Row>
                 </div>
             </Container>
+            <Scrollbar />
         </>
     );
 }
