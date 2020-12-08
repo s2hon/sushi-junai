@@ -30,7 +30,7 @@ function SignIn () {
                     email
                 }
             })
-            history.push("/choice");
+            history.push("/dinein");
         }).catch(err => {
             setShowError(true);
             setErrorMessage("An error occurred during login");
