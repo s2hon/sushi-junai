@@ -26,12 +26,12 @@ function Header (props) {
             <div className="topbar">
                 <div className="container">
                     <div className="row">
-                        <div className="col-2">
+                        <div className="col-3">
                             <Nav/>
                         </div>
                         <div className="col-6">
                             <Link to="/home">
-                                <Image src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
+                                <Image className="center-block" src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
                             </Link>
                         </div>
                         
