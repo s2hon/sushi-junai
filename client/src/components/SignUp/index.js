@@ -28,7 +28,7 @@ function  SignUp () {
                     email
                 }
             });
-            history.push("/choice")
+            history.push("/dinein")
         }).catch(err => {
             setShowError(true);
             setErrorMessage("An error occurred while signing up");
@@ -39,8 +39,7 @@ function  SignUp () {
         <div className="form-container sign-up-container">
             <form className="signupform" onSubmit={handleSignup}>
                 <h1 className="form-title">Hello, Friend!</h1>
-
-                <input className="inputsignin" type="text" placeholder="Sign Up" />
+                <h1 className="form-title">Sign Up</h1>
                 <input className="inputsignin" type="email" placeholder="Email" ref={emailRef}/>
                 <input className="inputsignin" type="password" placeholder="Password" ref={passwordRef}/>
                 <div style={{ "display": showError ? "block" : "none" }} id="alert" className="alert alert-danger" role="alert">

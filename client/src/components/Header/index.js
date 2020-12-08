@@ -10,8 +10,7 @@ import './style.css';
 
 function Header (props) {
     const [state, dispatch] = useStoreContext();
-    // const history = useHistory();
-
+    
     //handles the logout
     const logout = () => {
         dispatch({
@@ -46,7 +45,8 @@ function Header (props) {
                     </div>
                 </div>
             </div>
-        )
+        </div>
+    )
     }
 
 export default Header;
