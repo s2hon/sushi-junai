@@ -9,9 +9,8 @@
   "scripts": {
     "install": "cd client && npm install",
     "test": "npm run lint",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "node server.js",
     "start:dev": "concurrently \"nodemon server.js --ignore 'client/*'\" \"npm run client\"",
-    "start:prod": "node server.js",
     "client": "cd client && npm start",
     "lint": "eslint --quiet .",
     "fix": "eslint --fix .",
@@ -41,6 +40,8 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "popper.js": "^1.16.1",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
     "react-bootstrap": "^1.4.0",
     "react-fontawesome": "^1.7.1",
     "react-redux": "^7.2.2",
@@ -59,9 +60,6 @@
     "if-env": "^1.0.4",
     "mocha": "^5.2.0",
     "mysql2": "^2.2.5",
-    "nodemon": "^2.0.3",
-    "passport": "^0.4.1",
-    "sequelize": "^6.3.5",
-    "sequelize-cli": "^6.2.0"
+    "nodemon": "^2.0.3"
   }
 }
