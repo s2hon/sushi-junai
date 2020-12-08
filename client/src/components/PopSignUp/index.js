@@ -40,7 +40,7 @@ function PopSignUp (props){
   
   return (
       <>
-        <Button outline color="secondary" onClick={toggle}>Sign Up</Button>
+        <Button className="btn btn1" onClick={toggle}><span className="black-text">Sign Up</span></Button>
         <Modal isOpen={modal} toggle={toggle} fade={false}>
           <ModalHeader toggle={toggle}>Sign Up</ModalHeader>
           <ModalBody>
@@ -60,7 +60,7 @@ function PopSignUp (props){
         </form>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={handleSignUp}>Sign Up</Button>
+            <Button className="btn btn1" onClick={handleSignUp}><span className="black-text">Sign Up</span></Button>
           </ModalFooter>
         </Modal>
       </>
