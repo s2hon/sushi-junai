@@ -5,7 +5,7 @@ import { Row, Col } from "reactstrap";
 import Button from "../components/Button"
 import Counter from "../components/Counter";
 
-function Choice() {
+function Dinein() {
     return (
         <>
             <Counter />
@@ -31,4 +31,4 @@ function Choice() {
 
 }
 
-export default Choice;
+export default Dinein;

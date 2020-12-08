@@ -16,9 +16,6 @@ function SignupSignin () {
 
     return(<>
     <Counter/>
-        <div className="text-center">
-            <h1><Link to="/rules">Or continue as guest</Link> </h1>
-        </div>
         <div
             className={`containersignup ${rightPanelActive ? `right-panel-active` : ``}`}
             id="container"

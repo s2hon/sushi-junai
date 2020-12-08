@@ -1,5 +1,7 @@
 * {
     list-style:none !important;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .hide {
@@ -8,6 +10,8 @@
 
 .topbar li {
     position: relative;
+    align-self: auto;
+    margin-top: 10%;
 }
 
 @media (max-width: 991px) {
@@ -32,6 +36,7 @@
 .topbar ul li {
         float: none;
         list-style:none;
+        
     }
 }
 
