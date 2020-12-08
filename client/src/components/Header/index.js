@@ -26,12 +26,12 @@ function Header (props) {
             <div className="topbar">
                 <div className="container">
                     <div className="row">
-                        <div className="col-2">
+                        <div className="col-3">
                             <Nav/>
                         </div>
                         <div className="col-6">
                             <Link to="/home">
-                                <Image src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
+                                <Image className="center-block" src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
                             </Link>
                         </div>
                         
@@ -41,9 +41,8 @@ function Header (props) {
                                 <li className={state.userLoggedIn ? "hide": ""}><PopLoggin/></li>
                                 <li className={state.userLoggedIn ? "hide": ""}><PopSignUp/></li>
                                 <li className={!state.userLoggedIn ? "hide": ""}>
-                                    <Button type="button" btn="btn btn1" onClick={logout}>Logout</Button></li>
+                                    <Button type="button" className="btn btn1" onClick={logout}>Logout</Button></li>
                             </ul>
-                            <Counter className="counter"/>
                         </div>
                     </div>
                 </div>

@@ -41,7 +41,7 @@ function Login() {
 
     return (
     <React.Fragment>
-        <div className="container">
+        <div className="container menu-container">
             <div className="row">
                 <div className="col-md-6 col-md-offset-3">
                     <h2>Login</h2>

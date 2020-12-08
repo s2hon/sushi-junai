@@ -8,6 +8,7 @@ import Image from "../Image";
 import vegIcon from "../AyceMenu/icons8-vegetarian-mark-48.png";
 import gfIcon from "../AyceMenu/icons8-color-50.png";
 import fishIcon from "../AyceMenu/icons8-dressed-fish-50.png";
+import Counter from "../Counter";
 
 function Menu() {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -49,6 +50,7 @@ function Menu() {
 
     return (
         <>
+        <Counter/>
             <Container>
                 <div className="menu-container">
                 <Row>

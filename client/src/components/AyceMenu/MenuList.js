@@ -16,7 +16,7 @@ import gfIcon from "./icons8-color-50.png";
 import fishIcon from "./icons8-dressed-fish-50.png";
 import Col from "../Col";
 import Scrollbar from "../ScrollUp/index";
-
+import Counter from "../Counter";
 
 function Menu(props) {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -60,6 +60,7 @@ function Menu(props) {
 
     return (
         <>
+            <Counter/>
             <Container>
                 <div className="menu-container">
                     <Row>
@@ -69,22 +70,22 @@ function Menu(props) {
                         <Container>
                             <MenuNav />
                             <Col>
-                            <span className="form-check form-check-inline">
-                                <input className="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
-                                <label className="form-check-label" for="vegetarianCheckbox"><Image src={vegIcon} width="18" alt="Vegetarian" />Vegetarian </label>
-                            </span>
-                            <span className="form-check form-check-inline">
-                                <input className="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
-                                <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
-                            </span>
+                                <span className="form-check form-check-inline">
+                                    <input className="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
+                                    <label className="form-check-label" for="vegetarianCheckbox"><Image src={vegIcon} width="18" alt="Vegetarian" />Vegetarian </label>
+                                </span>
+                                <span className="form-check form-check-inline">
+                                    <input className="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
+                                    <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
+                                </span>
                             </Col>
                             <Col>
-                            <span>
-                                <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Order Summary ({currentQtyTotal})</Button></Link>
-                            </span>
-                            <span>
-                                <Link to="/favorite"><Button type="button" btn="btn btn1 float-right">Favorites</Button></Link>
-                            </span>
+                                <span>
+                                    <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Order Summary ({currentQtyTotal})</Button></Link>
+                                </span>
+                                <span>
+                                    <Link to="/favorite"><Button type="button" btn="btn btn1 float-right">Favorites</Button></Link>
+                                </span>
                             </Col>
                         </Container>
                     </Row>
@@ -119,7 +120,7 @@ function Menu(props) {
                     </Row>
 
                     <Row>
-                    <div className="section-head"><h2 id="salad">SALAD</h2></div>
+                        <div className="section-head"><h2 id="salad">SALAD</h2></div>
                         <Container>
                             {
                                 salads.map((item, idx) => {
@@ -146,7 +147,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="soup">SOUP/NOODLES</h2></div>
+                        <div className="section-head"><h2 id="soup">SOUP/NOODLES</h2></div>
                         <Container>
                             {
                                 soups.map((item, idx) => {
@@ -173,7 +174,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="rice">RICE</h2></div>
+                        <div className="section-head"><h2 id="rice">RICE</h2></div>
                         <Container>
                             {
                                 rice.map((item, idx) => {
@@ -200,7 +201,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="classicRoll">CLASSIC ROLL/HAND ROLL</h2></div>
+                        <div className="section-head"><h2 id="classicRoll">CLASSIC ROLL/HAND ROLL</h2></div>
                         <Container>
                             {
                                 classicRolls.map((item, idx) => {
@@ -227,7 +228,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="sushi">SUSHI (NIGIRI)</h2></div>
+                        <div className="section-head"><h2 id="sushi">SUSHI (NIGIRI)</h2></div>
                         <Container>
                             {
                                 sushi.map((item, idx) => {
@@ -254,7 +255,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="chefsSpecials">CHEF'S SPECIALS</h2></div>
+                        <div className="section-head"><h2 id="chefsSpecials">CHEF'S SPECIALS</h2></div>
                         <Container>
                             {
                                 chefsSpecial.map((item, idx) => {
@@ -281,7 +282,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="tempura">TEMPURA (FRIED) ROLLS</h2></div>
+                        <div className="section-head"><h2 id="tempura">TEMPURA (FRIED) ROLLS</h2></div>
                         <Container>
                             {
                                 tempuraRolls.map((item, idx) => {
@@ -308,7 +309,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="bakedRolls">BAKED ROLLS</h2></div>
+                        <div className="section-head"><h2 id="bakedRolls">BAKED ROLLS</h2></div>
                         <Container>
                             {
                                 bakedRolls.map((item, idx) => {
@@ -335,7 +336,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="desserts">DESSERTS</h2></div>
+                        <div className="section-head"><h2 id="desserts">DESSERTS</h2></div>
                         <Container>
                             {
                                 desserts.map((item, idx) => {

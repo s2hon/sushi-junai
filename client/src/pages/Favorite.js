@@ -39,6 +39,7 @@ function Favorites() {
     };
     //parse state into an object to use in rendering
     var parsedFavorites = state.favorites.map(x => JSON.parse(x));
+// import Header from "../Header";
 
     useEffect(() => {
         getFavoriteItems(state.email);

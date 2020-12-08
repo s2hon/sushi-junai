@@ -5,12 +5,14 @@ import Button from "../Button";
 import Row from "../Row";
 import Container from "../Container";
 import Image from "../Image";
-import OnlyOnce from "./icons8-number-1-50.png";
+import SoySauce from "./images/soy-sauce.png"
+import Noodles from "./images/icons8-noodles-100.png"
+import SalmonSushi from "./images/icons8-salmon-sushi-100.png"
+import Bento from "./images/icons8-bento-100.png"
 import './style.css';
 import moment from 'moment';
 
 const Slider = (props) => {
-
     function setTimer(e) {
         localStorage.setItem("timer", 7199);
         localStorage.setItem("date", moment().format('MMMM Do YYYY'));
@@ -23,7 +25,7 @@ const Slider = (props) => {
                     <div className="col-12">
                         <div className="rules-title">
                             <h1>All You Can Eat Rules</h1>
-                            <h4>Please Read ALL rules before agreeing, or click "À la carte" to order individual items.</h4>
+                            <h4>Please read ALL rules before agreeing, or click "À la carte" to order individual items.</h4>
                         </div>
                     </div>
                 </Row>
@@ -33,11 +35,11 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
-                                        
+                                    <Image src={SalmonSushi} width="40px" alt="SalmonSushi" />
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #1</h2>
-                                        <p>Absolutely NO SHARING between All you can eat and À LA CARTE customers.</p>
+                                        <p>Absolutely NO SHARING between all you can eat and a la carte customers.</p>
                                     </div>
                                 </div>
                             </div>
@@ -46,10 +48,11 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
+                                    <Image src={Noodles} width="40px" alt="Noodles" />
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #2</h2>
-                                        <p>If ALL items ordered are not completely consumed, you may be charged À LA CARTE pricing.</p>
+                                        <p>If you don't eat ALL of the items you order, you may be charged À LA CARTE pricing for them.</p>
                                     </div>
                                 </div>
                             </div>
@@ -58,11 +61,11 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
-                                        <Image src={OnlyOnce} width="18" alt="onlyonce" />
+                                        <Image src={SoySauce} width="40px" alt="SoySauce" />
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #3</h2>
-                                        <p>Items marked with red text can only be ordered once.</p>
+                                        <p>Items in red can only be ordered once.</p>
                                     </div>
                                 </div>
                             </div>
@@ -71,20 +74,20 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
-                                        
+                                    <Image src={Bento} width="40px" alt="Bento Box" />
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #4</h2>
-                                        <p>Ordering time is limited to 2 Hours (maximum).</p>
+                                        <p>Ordering time is limited to a maximum of two hours.</p>
                                     </div>
                                 </div>
                             </div>
                             <Row className="rules-button">
                             <Link to={"/alacarte"}>
-                                <Button type={"button"} btn={"btn btn1"}>Go to A La Carte</Button>
+                                <Button type={"button"} btn={"btn btn2"}>Go to A La Carte</Button>
                             </Link>
                             <Link className="active" to={"/ayce"}>
-                                <Button type={"button"} btn={"btn btn-dark"} function ={setTimer}>I AGREE</Button>
+                                <Button type={"button"} btn={"btn btn1"} function ={setTimer}>I AGREE</Button>
                             </Link>
                         </Row>
                         </Flip>
