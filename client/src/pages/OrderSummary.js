@@ -14,7 +14,7 @@ const mapDispatchToProps = dispatch => {
             dispatch({
                 type: 'INCREMENT_MENU_ITEM',
                 payload: { item }
-            })
+            });
         },
         removeItem: item => {
             dispatch({

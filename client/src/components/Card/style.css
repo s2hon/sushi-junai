@@ -1,8 +1,9 @@
-
 .location-info h2 {
     font-size: 24px;
     font-weight: 500;
     margin-top: 0;
+    color: black;
+    text-decoration: none;
 }
 
 .location-info ul {
@@ -13,7 +14,7 @@
 
 .location-info ul li {
     margin-right: 25px;
-    width: 80%;
+    width: 90%;
 }
 
 .location-info ul li:last-child {
@@ -34,14 +35,14 @@
 .location-content {
     right: 0px;
     bottom: -45px;
-    width: 80%;
+    width: 100%;
     text-align: center;
     padding: 30px;
     overflow: hidden;
 }
 
 .location-info {
-    margin-bottom: -35px;
+    margin-bottom: -15px;
     transition: all .3s;
 }
 
@@ -61,6 +62,7 @@
 
 .location-content:hover {
     background: #93DFB6;
+
 }
 
 .location-wrap:hover .location-info span{
