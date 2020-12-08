@@ -5,8 +5,8 @@ function MenuItems(props) {
     return (
         <>
             <Col sm="3" md="3" lg="3">
-                <h5>{props.name} <h6>{props.subtitle}</h6>
-                </h5>
+                <h5>{props.name} 
+                </h5><h6>{props.subtitle}</h6>
                 <p>$ {props.price ? props.price.toFixed(2): "" }
                 {props.smallPrice ? props.smallPrice.toFixed(2): "" }
                 {props.glassPrice ? props.glassPrice.toFixed(2): "" }

@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from "../../components/Card/index";
 import Container from "../../components/Container";
-import { Col } from "reactstrap";
-import Row from "../../components/Row";
+import { Row, Col } from "reactstrap";
 import Button from "../../components/Button";
 import data from "../../db/store.json";
 import { useStoreContext } from '../../utils/GlobalStore';
@@ -16,7 +15,7 @@ function Home(props) {
     return (
         <React.Fragment>
             <Container>
-                <Row>
+                <Row className="justify-content-center">
                     {
                         data.map((data, idx) => {
                             return (
@@ -28,16 +27,16 @@ function Home(props) {
                         })
                     }
                 </Row>
-                <Row>
+                <Row className="justify-content-center">
                         <Col sm="12" md={{ size: 6}} lg={{ size: 6}} style={{padding: "30px"}}>
                             <HomeCarousel />
                         </Col>
                 </Row>
-                <Row >
+                <Row className="justify-content-center" style={{marginTop: 20, marginBottom: 20}}>
                     <a href={"https://www.yelp.com/biz/sushi-junai-austin"}>
                         <Button type={"button"} btn={"btn btn1"}>Reservations</Button>
                     </a>
-                    <Link to={!state.userLoggedIn ? "/login": "/choice"}>
+                    <Link to={!state.userLoggedIn ? "/signinsignup": "/choice"}>
                         <Button type={"button"} btn={"btn btn1"}>Dine In</Button>
                     </Link>    
                     <a href={"https://www.yelp.com/order/v2/cart/954de1b27f3ee7705f2ca2d2c8336670"}>
