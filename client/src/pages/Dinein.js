@@ -13,22 +13,27 @@ function Dinein() {
         <>
             <Counter />
             <Container>
+                <div className="menu-container">
                 <Row>
                     <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center" style={{ marginTop: 50, marginBottom: 50 }}>
-                        <h4>Get the items you love!</h4>
+                        
                         <Link to="/alacarte">
-                            <Button type={"button"} btn={"btn btn1 btn-lrg"}>À La Carte</Button>
+                            <Button type={"button"} btn={"btn btn1 btn-lrg"}><h2>À La Carte</h2><h5>Get the items you love!</h5>
+                            </Button>
                         </Link>
                     </Col>
                 </Row>
                 <Row>
                     <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center" style={{ marginBottom: 50 }}>
-                        <h4>Try our delicious dishes!</h4>
+                        
                         <Link to={!state.userLoggedIn ? "/signinsignup": "/rules"}>
-                            <Button type={"button"} btn={"btn btn1 btn-lrg"}>All You Can Eat</Button>
+                            <Button type={"button"} btn={"btn btn1 btn-lrg"}><h2>All You Can Eat</h2>
+                            <h5>Try our delicious dishes!</h5>
+                            </Button>
                         </Link>
                     </Col>
                 </Row>
+                </div>
             </Container>
         </>)
 
