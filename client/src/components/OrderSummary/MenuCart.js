@@ -79,12 +79,12 @@ const MenuCart = (props) => {
                         </Table>
                         <div className="row">
                         <Link
-                                to="/ayce"
-                                className={window.location.pathname === "/ayce" ? "nav-link active" : "nav-link"}
-                            ><Button type={"button"} className={"btn btn1"} style={{display:"inline-block"}}><h5>BACK TO MENU</h5></Button>
+                                to="/ayce" className="active">
+                                    <Button type={"button"} className={"btn btn1"} style={{display:"inline-block"}}><h5>BACK TO MENU</h5></Button>
                         </Link> 
-                        <Link to="/favorite">
-                            <Button type={"button"} className={"btn btn1"} style={{backgroundColor: "#F29B9B", display:"inline-block"}}><h5>Favorites</h5></Button></Link>
+                        <Link to="/favorite" className="active">
+                            <Button type={"button"} className={"btn btn1"} style={{backgroundColor: "#F29B9B", display:"inline-block"}}><h5>Favorites</h5></Button>
+                        </Link>
                         </div>
 
                         <Table>

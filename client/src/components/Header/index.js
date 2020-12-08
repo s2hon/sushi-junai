@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Link}  from 'react-router-dom';
 import Image from "./../Image";
 import { useStoreContext } from '../../utils/GlobalStore';
@@ -10,7 +10,7 @@ import './style.css';
 
 function Header (props) {
     const [state, dispatch] = useStoreContext();
-   
+    
     //handles the logout
     const logout = () => {
         dispatch({
