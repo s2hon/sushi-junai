@@ -25,7 +25,7 @@ const reducer = (state, action) => {
         case LOAD_FAVORITES:
             return {
                 ...state,
-                favorites: [...action.favorites],
+                favorites: [...action.payload],
             }
         case REMOVE_FAVORITE:
             return {
