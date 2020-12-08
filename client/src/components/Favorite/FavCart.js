@@ -19,6 +19,7 @@ const FavCart = (props) => {
         return (   
         <>
         <Container> 
+        <div className="menu-container">
             <Table>
                 <thead>
                     <tr>
@@ -33,6 +34,7 @@ const FavCart = (props) => {
                     </tbody>
                 </thead>
             </Table>
+            </div>
         </Container>
         </>
     )}
@@ -40,6 +42,7 @@ const FavCart = (props) => {
     return (
         <React.Fragment>
             <Container>
+            <div className="menu-container">
                 <Row><h3 className="cartHeading">My Favorites ({count})</h3></Row>
                 <Table>
                     <thead>
@@ -56,6 +59,7 @@ const FavCart = (props) => {
                         </tr>
                     </tbody>
                 </Table>
+                </div>
             </Container>
         </React.Fragment>
     );
