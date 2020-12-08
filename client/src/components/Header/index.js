@@ -18,29 +18,30 @@ function Header (props) {
         })
     }
     
-    return (
-        <div className="topbar">
-            <div className="container">
-                <div className="row">
-                    <div className="col-2">
-                        <Nav/>
-                    </div>
-                    <div className="col-6">
-                        <Link to="/home">
-                            <Image className="center-block" src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
-                        </Link>
-                    </div>
-                    <div className="col-2 text-right">
-                        <ul>
-                            <li className={state.userLoggedIn ? "hide": ""}>
-                                <Link to="/signinsignup">
-                                    <Button type={"button"} btn={"btn btn1"}>Login/Signup</Button>
-                                </Link>
-                            </li>
-                            <li className={!state.userLoggedIn ? "hide": ""}>
-                                <Button type={"button"} btn={"btn btn1"} onClick={logout}>Logout</Button>
-                            </li>
-                        </ul>
+        return (
+            <div className="topbar">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-3">
+                            <Nav/>
+                        </div>
+                        <div className="col-6">
+                            <Link to="/home">
+                                <Image className="center-block" src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
+                            </Link>
+                        </div>
+                        <div className="col-sm-3 col-xs-12 text-right">
+                            <ul>
+                                <li className={state.userLoggedIn ? "hide": ""}>
+                                    <Link to="/signinsignup">
+                                        <Button type={"button"} btn={"btn btn1"}>Login/Signup</Button>
+                                    </Link>
+                                </li>
+                                <li className={!state.userLoggedIn ? "hide": ""}>
+                                    <Button type={"button"} btn={"btn btn1"} onClick={logout}>Logout</Button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

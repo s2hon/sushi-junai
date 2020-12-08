@@ -1,5 +1,6 @@
 footer {
     flex-shrink: 0;
+    width: 100%;
 }
 .wpo-site-footer {
     background: #F26430;
@@ -39,20 +40,6 @@ footer {
 
 .wpo-site-footer .wpo-upper-footer {
     padding: 0 0 0px;
-}
-
-@media (max-width: 991px) {
-
-    .wpo-site-footer .wpo-upper-footer {
-        padding: 0 0 0px;
-    }
-}
-
-@media (max-width: 767px) {
-
-    .wpo-site-footer .wpo-upper-footer {
-        padding: 0 0 0px;
-    }
 }
 
 @media (max-width: 991px) {
