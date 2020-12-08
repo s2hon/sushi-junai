@@ -28,6 +28,7 @@ function Choice() {
                 </Row>
             </Container>
         </>)
+
 }
 
 export default Choice;

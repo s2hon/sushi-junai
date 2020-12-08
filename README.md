@@ -56,6 +56,10 @@ All-You-Can-Eat:
 
 Client wants an alternative to physical menus for dine-in customers, as well as a way for all-you-can-eat customers to digitally track everything they've eaten.
 
+## Images
+
+![Menu](./readme-assets/menu-screenshot.png)
+
 ## Contributors
 
 * Staci Shon <a href="https://github.com/s2hon" target="_blank">![GitHub followers](https://img.shields.io/github/followers/s2hon?label=s2hon&style=social)</a></br>

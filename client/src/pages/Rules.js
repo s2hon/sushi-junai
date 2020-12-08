@@ -8,7 +8,9 @@ function Rules(props) {
         <>
         <Counter/>
         <Container>
+        <div className="menu-container">
             <Slider/>
+            </div>
         </Container>
         </>
     );
