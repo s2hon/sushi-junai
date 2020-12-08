@@ -41,7 +41,7 @@ function Counter() {
             clearTimeout(timer);
             setColor("red");
         }
-       
+
         return function cleanup() {
             clearTimeout(timer)
         }

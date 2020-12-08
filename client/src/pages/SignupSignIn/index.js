@@ -29,9 +29,6 @@ function SignupSignin () {
                 toggle={toggle}
             />
         </div>
-        <div className="text-center">
-            <h1><Link to="/rules">Or continue as guest</Link> </h1>
-        </div>
         </Container>
         </>
     ) 
