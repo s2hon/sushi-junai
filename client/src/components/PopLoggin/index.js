@@ -42,7 +42,7 @@ function PopLoggin (props){
     
     return (
         <>
-            <Button outline color="secondary" onClick={toggle}>Log In</Button>
+            <Button className="btn btn1" onClick={toggle}><span className="black-text">Log In</span></Button>
             <Modal isOpen={modal} toggle={toggle} fade={false}>
             <ModalHeader toggle={toggle}>Log In</ModalHeader>
             <ModalBody>
@@ -62,7 +62,7 @@ function PopLoggin (props){
                 </form>
             </ModalBody>
             <ModalFooter>
-                <Button color="primary" onClick={handleLogin}>LogIn</Button>
+                <Button className="btn btn1" onClick={handleLogin}>LogIn</Button>
             </ModalFooter>
             </Modal>
         </>
