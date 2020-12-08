@@ -14,10 +14,10 @@ function Card(props) {
                 <div className="location-content">
                     <div className="location-info">
                         <h2>{props.location}</h2>
-                        <ul>
+                        <br/>
+                        <a target={"_blank"} rel="noreferrer" href={props.maps} style={{textDecoration: "none"}}>
                             <li><FontAwesomeIcon icon={faLocationArrow} /> {props.address}</li>
-                            <li><FontAwesomeIcon icon={faPhone} /> {props.phone}</li>
-                        </ul>
+                        </a>
                         <ul>
                             <li><FontAwesomeIcon icon={faClock} /> Store Hours</li>
                             <li>Monday {props.mon}</li>
@@ -28,6 +28,8 @@ function Card(props) {
                             <li>Saturday {props.sat}</li>
                             <li>Sunday {props.sun}</li>
                         </ul>
+                        <br/>
+                            <li><FontAwesomeIcon icon={faPhone} /> {props.phone}</li>
                     </div>
                 </div>
             </div>

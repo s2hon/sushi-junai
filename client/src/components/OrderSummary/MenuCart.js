@@ -32,11 +32,8 @@ const MenuCart = (props) => {
                         <thead>
                             <tr>
                                 <th> <h1>Item (0)</h1></th>
-                                <th>Category</th>
-                                <th>Price</th>
                             </tr>
-                            <tbody>
-                                <h3><Image src={shockedIcon} width="25" alt="shockedMaki" /> whatsabi? 0 items so far?
+                            <h3><Image src={shockedIcon} width="25" alt="shockedMaki" /> whatsabi? 0 items so far?
                                 <Image src={sadIcon} width="25" alt="sadMaki" />
                                 <br/> 
                                 <Link
@@ -47,12 +44,11 @@ const MenuCart = (props) => {
                                 </Link>
                                 and order ebi-thing with a dining staff! 
                                 <br/> Let's Roll!</h3>
+                            <tbody>
                             <tr>
-                                <td></td>
                                 <td>Current Total Cost:</td>
                                 <td>$ {cartCostTotal.toFixed(2)}</td>
                             </tr>
-                            <TipCalculater total={cartCostTotal.toFixed(2)} />
                             </tbody>
                         </thead>
                     </Table>
@@ -72,10 +68,8 @@ const MenuCart = (props) => {
                 <Table bordered striped>
                     <thead>
                         <tr>
-                            <th> </th>
                             <th>Item</th>
                             <th>Quantity</th>
-                            <th>Category</th>
                             <th>Price</th>
                         </tr>
                     </thead>
@@ -83,20 +77,20 @@ const MenuCart = (props) => {
                         {menuCart.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
                         </tbody>
                         </Table>
+                        <div className="row">
                         <Link
                                 to="/ayce"
                                 className={window.location.pathname === "/ayce" ? "nav-link active" : "nav-link"}
-                            ><Button type={"button"} className={"btn btn1"}><h5>BACK TO MENU</h5></Button>
-                            </Link>
+                            ><Button type={"button"} className={"btn btn1"} style={{display:"inline-block"}}><h5>BACK TO MENU</h5></Button>
+                        </Link> 
+                        <Link to="/favorite">
+                            <Button type={"button"} className={"btn btn1"} style={{backgroundColor: "#F29B9B", display:"inline-block"}}><h5>Favorites</h5></Button></Link>
+                        </div>
+
                         <Table>
                             <tbody>
                         <tr>
-                            <Link to="/favorite"><Button type="button" btn="btn btn1 float-right">Favorites</Button></Link>
-                        </tr>
-                        <tr>
-
                             <th scope="row"></th>
-                            <td></td>
                             <td>Current Total Cost:</td>
                             <td>$ {cartCostTotal.toFixed(2)}</td>
                         </tr>

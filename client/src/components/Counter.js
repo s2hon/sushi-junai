@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Container from "../components/Container"
 
 function Counter() {
     function getHour(count){
@@ -47,7 +48,12 @@ function Counter() {
     }, [count])
 
     return (
-    <div className="counter" style={{ color }}>{hour}:{minute}:{seconds} </div>
+        <Container>
+            <div className="float-right">
+                <div className="counter float-right" style={{ color }}>{localStorage.getItem("timer") ?  `${hour}:${minute}:${seconds}` : ''} </div>
+                </div>
+
+        </Container>
     )
     
 }

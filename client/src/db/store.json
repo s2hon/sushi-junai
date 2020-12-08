@@ -2,7 +2,7 @@
     {
         "id": 1,
         "location": "Sushi Junai 1",
-        "phone": "(512)322-2428",
+        "phone": "(512) 322-2428",
         "address": "1612 Lavaca St, Austin, TX 78701",
         "mon": "11AM–10PM",
         "tue": "11AM–10PM",
@@ -11,12 +11,13 @@
         "fri": "11AM–10PM",
         "sat": "11AM–10PM",
         "sun": "Closed",
-        "href": "https://www.google.com/maps/search/?api=1&query=SUSHI%20JUNAI%2C%201612%20Lavaca%20Street%2C%20Austin%2C%20TX&query_place_id=ChIJy_qQgHW1RIYR63XnjHU5X2g"
+        "maps": "https://www.google.com/maps/search/?api=1&query=SUSHI%20JUNAI%2C%201612%20Lavaca%20Street%2C%20Austin%2C%20TX&query_place_id=ChIJy_qQgHW1RIYR63XnjHU5X2g",
+        "phonehref": "tel:512-322-2428"
     },
     {
         "id": 2,
         "location": "Sushi Junai 2",
-        "phone": "(512)716-3922",
+        "phone": "(512) 716-3922",
         "address": "2500 W Parmer Ln #100, Austin, TX 78727",
         "mon": "11AM–10PM",
         "tue": "11AM–10PM",
@@ -25,6 +26,7 @@
         "fri": "11AM–10PM",
         "sat": "11AM–10:30PM",
         "sun": "5PM–10PM",
-        "href": "https://www.google.com/maps/search/?api=1&query=Sushi%20Junai%202%2C%202500%20W%20Parmer%20Ln%2C%20Austin%2C%20TX&query_place_id=ChIJl1QkySbMRIYR6q8_Ja2NAkc"
+        "maps": "https://www.google.com/maps/search/?api=1&query=Sushi%20Junai%202%2C%202500%20W%20Parmer%20Ln%2C%20Austin%2C%20TX&query_place_id=ChIJl1QkySbMRIYR6q8_Ja2NAkc",
+        "phonehref": "tel:512-716-3922"
     }
 ]

@@ -39,7 +39,8 @@ function Header (props) {
                                     </Link>
                                 </li>
                                 <li className={!state.userLoggedIn ? "hide": ""}>
-                                    <Button type={"button"} btn={"btn btn1"} onClick={logout}>Logout</Button></li>
+                                    <Button type={"button"} btn={"btn btn1"} onClick={logout}>Logout</Button>
+                                </li>
                             </ul>
                         </div>
                     </div>

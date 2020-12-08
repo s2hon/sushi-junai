@@ -2,6 +2,8 @@
     font-size: 24px;
     font-weight: 500;
     margin-top: 0;
+    color: black;
+    text-decoration: none;
 }
 
 .location-info ul {
@@ -40,7 +42,7 @@
 }
 
 .location-info {
-    margin-bottom: -35px;
+    margin-bottom: -15px;
     transition: all .3s;
 }
 
@@ -60,6 +62,7 @@
 
 .location-content:hover {
     background: #93DFB6;
+
 }
 
 .location-wrap:hover .location-info span{

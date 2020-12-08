@@ -103,7 +103,7 @@ function Menu(props) {
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button id={item.name} type="button" btn={"float-right btn btn1"} onClick={() => {
+                                                    <Button id={item.name} type="button" btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item) }} 
                                                     >
                                                         <FontAwesomeIcon icon={faPlus} />

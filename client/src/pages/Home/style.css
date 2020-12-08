@@ -1,7 +1,19 @@
-.container {
+.menu-container {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
+    margin-top: 20;
+    margin-bottom: 20;
+    align-content: center;  
+}
+
+.location-wrap {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.justify-content-center .li {
+    justify-content: space-between;
 }
 
 @media(max-width: 992px) {
@@ -9,8 +21,10 @@
         padding-bottom: 30px;
     }
 }
-.location-wrap {
-    padding-bottom: 30px;
-    padding-top: 30px;
+
+.justify-content-center .buttons{
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
