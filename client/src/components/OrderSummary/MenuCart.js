@@ -10,6 +10,7 @@ import './style.css';
 import Image from "../Image";
 import shockedIcon from "./icons8-surprised-50.png"
 import sadIcon from "./icons8-sad-50.png"
+import Counter from "../Counter";
 
 const MenuCart = (props) => {
     const { menuCart } = props
@@ -27,6 +28,7 @@ const MenuCart = (props) => {
     if (currentQtyTotal === 0) {
         return (
             <>
+            <Counter/>
                 <Container>
                     <Table>
                         <thead>
@@ -63,6 +65,7 @@ const MenuCart = (props) => {
 
     return (
         <>
+        <Counter/>
             <Container>
                 <Row><h3 className="cartHeading">Order Summary ({currentQtyTotal})</h3></Row>
                 <Table>
