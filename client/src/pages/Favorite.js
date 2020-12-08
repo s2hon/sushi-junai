@@ -15,9 +15,11 @@ import Button from "../components/Button";
 import { Row } from 'reactstrap';
 import { LOAD_FAVORITES } from "../utils/actions";
 import { string } from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPlus } from "@fortawesome/free-solid-svg-icons"
 
 function Favorites() {
-
+    
     // get user email
     const [state,dispatch] = useStoreContext();
     //load menu items stored under that user
@@ -55,15 +57,16 @@ function Favorites() {
             
          {/* need to be able to see past favorites and then either add to cart or remove from favorites */}
          {/* first lets load them using the menuItems componenet */}
-         Our state favorites are {state.favorites} with a length of {state.favorites.length};
+         Our state typeOF is {(typeof(state.favorites))} with a length of {state.favorites.length};
+         Here is the state {state.favorites[0]}
          {/* {string.JSON(state.favorites)} */}
          {
-             state.favorites.map((fav)=>{
+             (state.favorites).map((fav)=>{
                 return (
                     <div className="card text-center">
                         <div className="card-body d-flex justify-content-between">
-                            <MenuItems key={fav.id} name={fav.item}  description={fav.description} >
-                                <Button icon ={"fa fa-plus"} btn={"float-right"}>{fav.item}</Button>
+                            <MenuItems key={fav.id} name={fav.item}  price={1} description={fav.category} >
+                                <Button icon ={"fa fa-plus"} btn={"float-right"} >{fav.item}</Button>
                             </MenuItems>
                         </div>
                     </div>
