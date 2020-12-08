@@ -15,8 +15,8 @@ const Footer = (props) =>{
     <footer className="wpo-site-footer">
       <div className="wpo-upper-footer">
         <div className="container">
-          <div className="row">
-            <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
+          <div className="row justify-content-center">
+            <div className="col col-lg-3 col-md-6 col-sm-12 col-12 text-center">
               <div className="widget about-widget">
                 <p>Connect with us!</p>
                 <ul className="text-center">
