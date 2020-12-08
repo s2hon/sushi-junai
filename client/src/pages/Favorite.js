@@ -8,6 +8,7 @@ import Image from "../components/Image";
 import favItems from "../components/MenuItems"
 import { connect } from 'react-redux'
 import FavCart from "../components/Favorite/FavCart";
+// import Header from "../Header";
 
 // function Favorite(props) {
 

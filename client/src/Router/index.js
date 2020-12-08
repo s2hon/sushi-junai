@@ -9,12 +9,12 @@ import Signup from "../pages/Signup";
 import Choice from "../pages/Choice";
 import Rules from "../pages/Rules";
 import Login from "../pages/Login";
-import Drinks from "../pages/Drinks"
-import Header from "../components/Header/index";
-import Footer from "../components/Footer/index"
+import Drinks from "../pages/Drinks";
+import Footer from "../components/Footer/index";
 import LunchMenu from '../pages/LunchMenu';
 import StaticAYCEMenu from '../pages/StaticAYCEMenu';
 import SignupSignin from '../pages/SignupSignIn';
+import Header from "../components/Header";
 
 const AllRoute = () => { 
 
