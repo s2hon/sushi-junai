@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
@@ -23,7 +23,7 @@ function Menu() {
         ayceMenu = ayceMenu.filter(item => item.glutenFree);
     }
 
-    
+
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
     const soups = ayceMenu.filter(item => item.category === "Soup/Noodles");
@@ -36,11 +36,11 @@ function Menu() {
     const desserts = ayceMenu.filter(item => item.category === "Desserts");
     //eventually users will be able to favorite items straight from the menu (if logged-in) 
 
-    function handleInputChangeVeg(){
+    function handleInputChangeVeg() {
         setIsVegetarian(!isVegetarian);
     }
 
-    function handleInputChangeGF(){
+    function handleInputChangeGF() {
         setIsGlutenFree(!isGlutenFree);
     }
 
@@ -48,22 +48,22 @@ function Menu() {
         <>
             <Container>
                 <div className="menu-container">
-                <Row>
-                    <h1>All-You-Can-Eat Menu</h1><hr />
-                </Row>
-                <Row className="sticky-top menuOptions">
-                    <MenuNav />
-                    <span class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
-                            <label class="form-check-label" for="vegetarianCheckbox"><Image src={vegIcon} width="18" alt="Vegetarian" />Vegetarian </label>
-                    </span>
-                    <span class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF}  value="glutenFree" />
-                            <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
-                    </span>
-                </Row>
                     <Row>
-                    <div className="section-head"><h2 id="appetizers">Appetizers</h2></div>
+                        <h1>All-You-Can-Eat Menu</h1><hr />
+                    </Row>
+                    <Row className="sticky-top menuOptions">
+                        <MenuNav />
+                        <span class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
+                            <label class="form-check-label" for="vegetarianCheckbox"><Image src={vegIcon} width="18" alt="Vegetarian" />Vegetarian </label>
+                        </span>
+                        <span class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
+                            <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
+                        </span>
+                    </Row>
+                    <Row>
+                        <div className="section-head"><h2 id="appetizers">Appetizers</h2></div>
                         <Container>
                             {
                                 appetizers.map((item, idx) => {
@@ -85,7 +85,7 @@ function Menu() {
                     </Row>
 
                     <Row>
-                    <div className="section-head"><h2 id="salad">Salad</h2></div>
+                        <div className="section-head"><h2 id="salad">Salad</h2></div>
                         <Container>
                             {
                                 salads.map((item, idx) => {
@@ -106,7 +106,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="soup">Soup/Noodles</h2></div>
+                        <div className="section-head"><h2 id="soup">Soup/Noodles</h2></div>
                         <Container>
                             {
                                 soups.map((item, idx) => {
@@ -127,7 +127,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="rice">Rice Entree</h2></div>
+                        <div className="section-head"><h2 id="rice">Rice Entree</h2></div>
                         <Container>
                             {
                                 rice.map((item, idx) => {
@@ -148,7 +148,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="classicRoll">Classic Roll/Hand Roll</h2></div>
+                        <div className="section-head"><h2 id="classicRoll">Classic Roll/Hand Roll</h2></div>
                         <Container>
                             {
                                 classicRolls.map((item, idx) => {
@@ -190,7 +190,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="chefsSpecial">Chef's Special Rolls</h2></div>
+                        <div className="section-head"><h2 id="chefsSpecial">Chef's Special Rolls</h2></div>
                         <Container>
                             {
                                 chefsSpecial.map((item, idx) => {
@@ -211,7 +211,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="tempura">Tempura (Fried) Rolls</h2></div>
+                        <div className="section-head"><h2 id="tempura">Tempura (Fried) Rolls</h2></div>
                         <Container>
                             {
                                 tempuraRolls.map((item, idx) => {
@@ -232,7 +232,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="bakedRolls">Baked Rolls</h2></div>
+                        <div className="section-head"><h2 id="bakedRolls">Baked Rolls</h2></div>
                         <Container>
                             {
                                 bakedRolls.map((item, idx) => {
@@ -253,7 +253,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                    <div className="section-head"><h2 id="desserts">Desserts</h2></div>
+                        <div className="section-head"><h2 id="desserts">Desserts</h2></div>
                         <Container>
                             {
                                 desserts.map((item, idx) => {
@@ -290,8 +290,8 @@ function Menu() {
                     <Row>
                         <h5 id="vegetarian">Vegetarian <Image src={vegIcon} width="18" alt="Vegetarian" /></h5>
                     </Row>
-                    </div>
-                </Container>
+                </div>
+            </Container>
         </>
     );
 }

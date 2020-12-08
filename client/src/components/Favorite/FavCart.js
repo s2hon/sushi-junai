@@ -9,12 +9,7 @@ import { Button } from 'reactstrap';
 const FavCart = (props) => {
     const { favCart } = props
     const count = favCart.length
-    // let tipFifteen = ".15";
-    // let tipTwenty = ".2";
-    // let tipEighteen= ".18";
-    // let totalTip = (total*tipFifteen)
-    
-
+  
     if (count === 0) {
         return (   
         <>

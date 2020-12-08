@@ -12,7 +12,6 @@ const Scrollbar = () => {
                 </ul>
             </div>
         </div>
-        
     )
 }
 

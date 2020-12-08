@@ -14,15 +14,15 @@ const Slider = (props) => {
         localStorage.setItem("timer", 7199);
         localStorage.setItem("date", moment().format('MMMM Do YYYY'));
     }
-    
-    return(
+
+    return (
         <>
             <Container className="rules-container">
                 <Row>
                     <div className="col-12">
                         <div className="rules-title">
                             <h1>All You Can Eat Rules</h1>
-                            <h4>Please read ALL rules before agreeing, or click "À la carte" to order individual items.</h4>
+                            <h4>Click "I Agree" to start your time.</h4>
                         </div>
                     </div>
                 </Row>
@@ -32,7 +32,7 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
-                                        
+
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #1</h2>
@@ -70,7 +70,7 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
-                                        
+
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #4</h2>
@@ -79,13 +79,13 @@ const Slider = (props) => {
                                 </div>
                             </div>
                             <Row className="rules-button">
-                            <Link to={"/alacarte"}>
-                                <Button type={"button"} btn={"btn btn2"}>Go to A La Carte</Button>
-                            </Link>
-                            <Link className="active" to={"/ayce"}>
-                                <Button type={"button"} btn={"btn btn1"} function ={setTimer}>I AGREE</Button>
-                            </Link>
-                        </Row>
+                                <Link to={"/alacarte"}>
+                                    <Button type={"button"} btn={"btn btn2"}>Go to A La Carte</Button>
+                                </Link>
+                                <Link className="active" to={"/ayce"}>
+                                    <Button type={"button"} btn={"btn btn1"} function={setTimer}>I AGREE</Button>
+                                </Link>
+                            </Row>
                         </Flip>
                     </Row>
                 </div>

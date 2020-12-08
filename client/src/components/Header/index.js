@@ -7,14 +7,12 @@ import { AUTH_SET_LOGGED_OUT} from "../../utils/actions";
 import PopLoggin from '../PopLoggin'
 import Nav from "../Nav/index";
 import './style.css';
-import Counter from "../Counter";
 import PopSignUp from "../PopSignUp";
 
 
 function Header (props) {
     const [state, dispatch] = useStoreContext();
-    // const history = useHistory();
-
+   
     //handles the logout
     const logout = () => {
         dispatch({

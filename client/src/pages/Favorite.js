@@ -13,7 +13,7 @@ import FavCart from "../components/Favorite/FavCart";
 // function Favorite(props) {
 
 //     //get user email
-   
+
 //     //load menu items stored under that user
 //     const [state] = useStoreContext();
 //     const userEmail = state.email;

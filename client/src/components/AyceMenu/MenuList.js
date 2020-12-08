@@ -27,11 +27,9 @@ function Menu(props) {
     if (isVegetarian) {
         ayceMenu = ayceMenu.filter(item => item.vegetarian);
     }
-
     if (isGlutenFree) {
         ayceMenu = ayceMenu.filter(item => item.glutenFree);
     }
-
 
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
