@@ -23,7 +23,7 @@ function Header (props) {
             <div className="topbar">
                 <div className="container">
                     <div className="row">
-                        <div className="col-3">
+                        <div className="col-2">
                             <Nav/>
                         </div>
                         <div className="col-6">
@@ -31,8 +31,6 @@ function Header (props) {
                                 <Image className="center-block" src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
                             </Link>
                         </div>
-                        
-                        
                         <div className="col-2 text-right">
                             <ul>
                                 <li className={state.userLoggedIn ? "hide": ""}>
