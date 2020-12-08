@@ -53,16 +53,20 @@ module.exports = function(app) {
     })
   })
 //delete favorites 
-  // app.delete("/api/favorites", function(req, res) {
-  //   db.Post.destroy({
-  //     where: {
-  //       id: req.params.id
-  //     }
-  //   })
-  //     .then(function(dbPost) {
-  //       res.json(dbPost);
-  //     });
-  // });
+  app.delete("/api/favorites", function(req, res) {
+    console.log("We are deleting "+req.data)
+    const name = req.data.item;
+    const email = req.data.UserEmail
+    db.Favorites.destroy({
+      where: {
+        item:name,
+        UserEmail:email
+      }
+    })
+      .then(function(dbPost) {
+        res.json(dbPost);
+      });
+  });
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();

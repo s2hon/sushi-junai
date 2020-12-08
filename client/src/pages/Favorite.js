@@ -16,57 +16,55 @@ import { Row } from 'reactstrap';
 import { LOAD_FAVORITES } from "../utils/actions";
 import { string } from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPlus } from "@fortawesome/free-solid-svg-icons"
-
+import { faHeartBroken } from "@fortawesome/free-solid-svg-icons";
 function Favorites() {
     
-    // get user email
     const [state,dispatch] = useStoreContext();
     //load menu items stored under that user
     const getFavoriteItems=(email) => {
+        //gets favorites from db given user email
         API.getFavorites(email).
         then(res=> {
             let favoritesArray = []
-            console.log("This is our response: "+JSON.stringify(res.data))
-            console.log("The length of our response array is "+res.data.length);
+            //here we have to stringify each response to save to state 
             res.data.map((favs) => {
                 // convert each response object to string
                 favoritesArray.push(JSON.stringify(favs));
                 console.log("We are pushing"+ JSON.stringify(favs));
             });
-            console.log("Length of favorites array "+favoritesArray.length);
+            //save state
             dispatch({type:LOAD_FAVORITES,favorites:favoritesArray});
         }).
         catch(err => console.log(err));
     };
+    //parse state into an object to use in rendering
+    var parsedFavorites = state.favorites.map(x => JSON.parse(x));
+
     useEffect(() => {
         getFavoriteItems(state.email);
     },[]);
-    // function deleteFave(itemName, email){
-    //     console.log("You are about to delete the item:"+ itemName+" from email: "+email);
-    //     API.deleteFavorite({item:itemName, UserEmail: email}).
-    //     then(res=> console.log(res)).
-    //     catch(err => console.log(err));
-    // };
-// get and load favs
-    //add delete function 
+    
+    function deleteFave(itemName){
+        console.log("You are about to delete the item:"+ itemName+" from email: "+state.email);
+        API.deleteFavorite({item:itemName, UserEmail: state.email}).
+        then(res=> console.log(res)).
+        catch(err => console.log(err));
+    };
     //add funciton to add item to order 
     return (<>
         <Container>
             <h1>Favorites</h1>
             
-         {/* need to be able to see past favorites and then either add to cart or remove from favorites */}
-         {/* first lets load them using the menuItems componenet */}
+         {/* logging data just to see what we are working with */}
          Our state typeOF is {(typeof(state.favorites))} with a length of {state.favorites.length};
-         Here is the state {state.favorites[0]}
-         {/* {string.JSON(state.favorites)} */}
-         {
-             (state.favorites).map((fav)=>{
+         Here is the state {state.favorites}
+         {//go through parsed data and create buttons 
+             parsedFavorites.map((fav)=>{
                 return (
                     <div className="card text-center">
                         <div className="card-body d-flex justify-content-between">
-                            <MenuItems key={fav.id} name={fav.item}  price={1} description={fav.category} >
-                                <Button icon ={"fa fa-plus"} btn={"float-right"} >{fav.item}</Button>
+                            <MenuItems key={fav.id} name={fav.item}  description={fav.category} >
+                                <Button btn={"float-right"} function={() => deleteFave(fav.item)} >{fav.item}<FontAwesomeIcon icon={faHeartBroken} /></Button>
                             </MenuItems>
                         </div>
                     </div>
