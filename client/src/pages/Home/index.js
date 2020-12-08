@@ -7,12 +7,15 @@ import data from "../../db/store.json";
 import { useStoreContext } from '../../utils/GlobalStore';
 import HomeCarousel from "../../components/HomeCarousel";
 import './style.css';
+import Counter from "../../components/Counter";
+
 
 function Home(props) {
     const [state] = useStoreContext();
 
     return (
         <React.Fragment>
+            <Counter/>
             <div className="menu-container">
                 <Row className="justify-content-center">
                     {

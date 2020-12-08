@@ -12,7 +12,6 @@ import { faHeartBroken } from "@fortawesome/free-solid-svg-icons";
 function Favorites() {    
     // get user email
     const [state,dispatch] = useStoreContext();
-    // console.log("This is our state "+ JSON.stringify(state));
     //load menu items stored under that user
     const getFavoriteItems=(email) => {
         //gets favorites from db given user email
@@ -26,7 +25,6 @@ function Favorites() {
     },[]);
     
     function deleteFave(itemName){
-        console.log("You are about to delete the item:"+ itemName+" from email: "+state.email);
         API.deleteFavorite({item:itemName, UserEmail: state.email}).
         then(res=> getFavoriteItems(state.email)).
         catch(err => console.log(err));
@@ -37,9 +35,6 @@ function Favorites() {
     return (<>
         <Container>
             <h1>Favorites</h1>
-            
-         {/* logging data just to see what we are working with */}
-         Our state typeOF is {(typeof(state.favorites))} with a length of {state.favorites.length};
          {/* Here is the state {state.favorites} */}
          {//go through parsed data and create buttons 
              state.favorites.map((fav)=>{
