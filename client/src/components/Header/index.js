@@ -43,7 +43,7 @@ function Header (props) {
                                 <li className={state.userLoggedIn ? "hide": ""}><PopLoggin/></li>
                                 <li className={state.userLoggedIn ? "hide": ""}><PopSignUp/></li>
                                 <li className={!state.userLoggedIn ? "hide": ""}>
-                                    <Button type="button" btn="btn btn1" onClick={logout}>Logout</Button></li>
+                                    <Button type="button" className="btn btn1" onClick={logout}>Logout</Button></li>
                             </ul>
                         </div>
                     </div>
