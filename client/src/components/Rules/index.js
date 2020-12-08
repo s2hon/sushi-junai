@@ -10,7 +10,6 @@ import './style.css';
 import moment from 'moment';
 
 const Slider = (props) => {
-
     function setTimer(e) {
         localStorage.setItem("timer", 7199);
         localStorage.setItem("date", moment().format('MMMM Do YYYY'));
@@ -84,7 +83,7 @@ const Slider = (props) => {
                                 <Button type={"button"} btn={"btn btn1"}>Go to A La Carte</Button>
                             </Link>
                             <Link className="active" to={"/ayce"}>
-                                <Button type={"button"} btn={"btn btn-dark"} function ={setTimer}>I AGREE</Button>
+                                <Button type={"button"} btn={"btn btn-dark"} function={setTimer}>I AGREE</Button>
                             </Link>
                         </Row>
                         </Flip>
