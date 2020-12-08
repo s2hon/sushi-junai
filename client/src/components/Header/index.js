@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Link}  from 'react-router-dom';
 import Image from "./../Image";
 import { useStoreContext } from '../../utils/GlobalStore';
@@ -14,6 +14,11 @@ import PopSignUp from "../PopSignUp";
 function Header (props) {
     const [state, dispatch] = useStoreContext();
     // const history = useHistory();
+    useEffect(()=>{
+        
+    },[]);
+    //useEffect to check the cookie and see if user is logged-in
+    //if logged in set the global store dispatch AUTH_SET_LOGGED_IN
 
     //handles the logout
     const logout = () => {

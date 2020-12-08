@@ -8,6 +8,10 @@ module.exports = function(app) {
     res.json(req.user);
   });
 
+  // app.get("/api/user",function(req,res){
+  //   console.log((req.user));
+  //   res.json(req.user)
+  // });
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
@@ -54,9 +58,8 @@ module.exports = function(app) {
   })
 //delete favorites 
   app.delete("/api/favorites", function(req, res) {
-    console.log("We are deleting "+req.data)
-    const name = req.data.item;
-    const email = req.data.UserEmail
+    const name = req.body.item;
+    const email = req.body.UserEmail
     db.Favorites.destroy({
       where: {
         item:name,
@@ -64,8 +67,10 @@ module.exports = function(app) {
       }
     })
       .then(function(dbPost) {
-        res.json(dbPost);
-      });
+        res.status(200);
+        res.send("You have deleted the item: "+name);
+      }).
+      catch((err)=>res.send(err));
   });
   // Route for logging user out
   app.get("/logout", function(req, res) {

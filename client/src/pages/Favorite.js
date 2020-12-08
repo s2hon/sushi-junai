@@ -20,27 +20,15 @@ import { faHeartBroken } from "@fortawesome/free-solid-svg-icons";
 function Favorites() {
     
     const [state,dispatch] = useStoreContext();
+    // console.log("This is our state "+ JSON.stringify(state));
     //load menu items stored under that user
     const getFavoriteItems=(email) => {
         //gets favorites from db given user email
         API.getFavorites(email).
-        then(res=> {
-            let favoritesArray = []
-            //here we have to stringify each response to save to state 
-            res.data.map((favs) => {
-                // convert each response object to string
-                favoritesArray.push(JSON.stringify(favs));
-                console.log("We are pushing"+ JSON.stringify(favs));
-            });
-            //save state
-            dispatch({type:LOAD_FAVORITES,favorites:favoritesArray});
-        }).
+        then(res=> dispatch({type:LOAD_FAVORITES,payload:res.data})).
         catch(err => console.log(err));
     };
-    //parse state into an object to use in rendering
-    var parsedFavorites = state.favorites.map(x => JSON.parse(x));
-// import Header from "../Header";
-
+   
     useEffect(() => {
         getFavoriteItems(state.email);
     },[]);
@@ -48,19 +36,21 @@ function Favorites() {
     function deleteFave(itemName){
         console.log("You are about to delete the item:"+ itemName+" from email: "+state.email);
         API.deleteFavorite({item:itemName, UserEmail: state.email}).
-        then(res=> console.log(res)).
+        then(res=> getFavoriteItems(state.email)).
         catch(err => console.log(err));
+        
     };
     //add funciton to add item to order 
+    console.log(state.favorites);
     return (<>
         <Container>
             <h1>Favorites</h1>
             
          {/* logging data just to see what we are working with */}
          Our state typeOF is {(typeof(state.favorites))} with a length of {state.favorites.length};
-         Here is the state {state.favorites}
+         {/* Here is the state {state.favorites} */}
          {//go through parsed data and create buttons 
-             parsedFavorites.map((fav)=>{
+             state.favorites.map((fav)=>{
                 return (
                     <div className="card text-center">
                         <div className="card-body d-flex justify-content-between">
