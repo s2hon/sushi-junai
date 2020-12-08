@@ -5,7 +5,10 @@ import Button from "../Button";
 import Row from "../Row";
 import Container from "../Container";
 import Image from "../Image";
-import OnlyOnce from "./icons8-number-1-50.png";
+import SoySauce from "./images/soy-sauce.png"
+import Noodles from "./images/icons8-noodles-100.png"
+import SalmonSushi from "./images/icons8-salmon-sushi-100.png"
+import Bento from "./images/icons8-bento-100.png"
 import './style.css';
 import moment from 'moment';
 
@@ -32,7 +35,7 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
-                                        
+                                    <Image src={SalmonSushi} width="40px" alt="SalmonSushi" />
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #1</h2>
@@ -45,6 +48,7 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
+                                    <Image src={Noodles} width="40px" alt="Noodles" />
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #2</h2>
@@ -57,7 +61,7 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
-                                        <Image src={OnlyOnce} width="18" alt="onlyonce" />
+                                        <Image src={SoySauce} width="40px" alt="SoySauce" />
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #3</h2>
@@ -70,7 +74,7 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
-                                        
+                                    <Image src={Bento} width="40px" alt="Bento Box" />
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #4</h2>
