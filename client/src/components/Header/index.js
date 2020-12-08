@@ -43,7 +43,6 @@ function Header (props) {
                                 <li className={!state.userLoggedIn ? "hide": ""}>
                                     <Button type="button" className="btn btn1" onClick={logout}>Logout</Button></li>
                             </ul>
-                            <Counter className="counter"/>
                         </div>
                     </div>
                 </div>

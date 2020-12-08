@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-
+import Counter from "../../components/Counter";
 import SignIn from "../../components/SignIn";
 import SignUp from "../../components/SignUp";
 import Overlay from "../../components/Overlay";
@@ -15,6 +15,7 @@ function SignupSignin () {
     };
 
     return(<>
+    <Counter/>
         <div className="text-center">
             <h1><Link to="/rules">Or continue as guest</Link> </h1>
         </div>

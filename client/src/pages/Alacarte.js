@@ -1,12 +1,14 @@
 import React from "react";
 import ALaCarteMenu from "../components/ALaCarteMenu/MenuList"
+import Counter from "../components/Counter";
 
 function Alacarte(props) {
     return (
         <>
-        <ALaCarteMenu />
+            <Counter/>
+            <ALaCarteMenu />
         </>
-        );
+    );
 }
 
 export default Alacarte;
