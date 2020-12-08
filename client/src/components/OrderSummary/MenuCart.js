@@ -13,16 +13,13 @@ import sadIcon from "./icons8-sad-50.png"
 
 const MenuCart = (props) => {
     const { menuCart } = props
-    const { totalSavings } = props
-    console.log(totalSavings)
+    console.log(menuCart)
 
     const currentQty = arr => arr.reduce((sum, {quantity}) => sum + quantity, 0);
     const currentQtyTotal = currentQty(menuCart);
-    console.log(currentQtyTotal);
 
     const sumCostTotal = arr => arr.reduce((sum, {price, quantity})=> sum + price*quantity, 0);
     const cartCostTotal = sumCostTotal(menuCart);
-    console.log(cartCostTotal);
 
     if (currentQtyTotal === 0) {
         return (
@@ -82,8 +79,10 @@ const MenuCart = (props) => {
                                 to="/ayce"
                                 className={window.location.pathname === "/ayce" ? "nav-link active" : "nav-link"}
                             ><Button type={"button"} btn={"btn btn1"}>BACK TO MENU</Button>
-                            
                             </Link>
+                        </tr>
+                        <tr>
+                            <Link to="/favorite"><Button type="button" btn="btn btn1 float-right">Favorites</Button></Link>
                         </tr>
                         <tr>
 

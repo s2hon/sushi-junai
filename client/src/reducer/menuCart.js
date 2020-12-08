@@ -22,8 +22,8 @@ const menuCart = (state = persistedState || [], action) => {
                     })
                 }
                 else {
-                
-            }
+                    return state
+                }
             }
             else {
                 return [...state, {
