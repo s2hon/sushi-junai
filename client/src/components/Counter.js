@@ -49,10 +49,9 @@ function Counter() {
 
     return (
         <Container>
-            <div className="float-right">
+            <div className="float-right counter">
                 <div className="counter float-right" style={{ color }}>{localStorage.getItem("timer") ?  `${hour}:${minute}:${seconds}` : ''} </div>
                 </div>
-
         </Container>
     )
     
