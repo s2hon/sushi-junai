@@ -35,11 +35,7 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
-<<<<<<< HEAD
-
-=======
                                     <Image src={SalmonSushi} width="40px" alt="SalmonSushi" />
->>>>>>> 8b2014e187039850b0e46ef54c718aeac498a57c
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #1</h2>
@@ -78,11 +74,7 @@ const Slider = (props) => {
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
-<<<<<<< HEAD
-
-=======
                                     <Image src={Bento} width="40px" alt="Bento Box" />
->>>>>>> 8b2014e187039850b0e46ef54c718aeac498a57c
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #4</h2>

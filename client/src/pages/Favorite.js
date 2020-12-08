@@ -40,51 +40,7 @@ function Favorites() {
 
     const { favorites } = state
     var x = favorites.map((item) => JSON.parse(item))
-    console.log(x)
 
-<<<<<<< HEAD
-//     //get user email
-
-//     //load menu items stored under that user
-//     const [state] = useStoreContext();
-//     const userEmail = state.email;
-
-//     //add delete function 
-//     //add funciton to add item to order 
-//     return (<>
-//         <Nav />
-//         <Container>
-//             <h1>Coming Soon</h1>
-//          <Image src={"./assets/029-tuna.svg"} alt={"picture of sushi"}/>
-//         </Container>
-//         <Footer />
-//     </>);
-// }
-
-
-
-const mapStateToProps = state => ({
-    favCart: state.favCart
-});
-
-const mapDispatchToProps = dispatch => {
-    return {
-        removeItem: id => {
-            dispatch({})
-        }
-    }
-};
-
-const Favorite = connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(FavCart);
-
-
-export default Favorite
-=======
-   
-    
     
     // function deleteFave(itemName, email){
     //     console.log("You are about to delete the item:"+ itemName+" from email: "+email);
@@ -147,4 +103,3 @@ export default Favorite
 
 
 export default Favorites;
->>>>>>> 8b2014e187039850b0e46ef54c718aeac498a57c

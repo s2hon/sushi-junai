@@ -6,10 +6,6 @@ import Button from "../Button"
 import { AUTH_SET_LOGGED_OUT} from "../../utils/actions";
 import Nav from "../Nav/index";
 import './style.css';
-<<<<<<< HEAD
-import PopSignUp from "../PopSignUp";
-=======
->>>>>>> 8b2014e187039850b0e46ef54c718aeac498a57c
 
 
 function Header (props) {
