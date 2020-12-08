@@ -24,17 +24,18 @@ const MenuCartItem = (props) => {
     const { name, quantity, category, price } = props.item
     return (
         <tr>
-        <td><Button type="button" className={"float-right btn1 btn"} onClick={() => saveFave(name,category)}>
+        <td>
+            <Button type="button" className={"float-right btn1 btn"} onClick={() => saveFave(name,category)}>
                 <FontAwesomeIcon className="black-text" icon={faHeart} />
             </Button>
         </td>
-        <th scope="row"><p>{name}</p></th>
+        <th scope="row"><p>{name} <br/>
+        ({category})</p></th>
         <td>
         <p><Button type="button" className="btn1 btn" onClick={() => props.decrementItem(props.item)}><span className="black-text">-</span></Button>
         {quantity}
         <Button type="button" className="btn btn1" onClick={() => props.incrementItem(props.item)}><span className="black-text">+</span></Button></p>
         </td>
-        <td><p>{category}</p></td>
         <td><p>$ {price.toFixed(2)}</p></td>
         <td><Button  type="button" className={"btn btn2"} onClick={() => props.removeItem(props.item)}><span className="black-text">X</span></Button></td>
         </tr>

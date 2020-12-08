@@ -12,8 +12,10 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 userLoggedIn: true,
+                isAuthUser: true,
                 email: action.data.email
             }
+            
         case AUTH_SET_LOGGED_OUT:
             return {
                 ...state,
@@ -37,13 +39,15 @@ const reducer = (state, action) => {
     }
 }
 
+
 // Setup the provider component for our apps store
 const StoreProvider = ({value, ...props}) => {
     // What the react app view model starts as
     const initialState = value || {
         userLoggedIn: false,
         email: "",
-        favorites:[]
+        favorites:[],
+        isAuthUser: false,
     };
     const [state, dispatch] = useReducer(reducer, initialState)
     window.dispatch = dispatch;

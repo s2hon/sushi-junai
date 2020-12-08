@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import API from "../../utils/API";
 import { AUTH_SET_LOGGED_IN } from "../../utils/actions";
 import { useStoreContext } from '../../utils/GlobalStore';
+import { Link } from 'react-router-dom';
 
 function SignIn () {
     const [showError, setShowError] = useState(false);
@@ -51,6 +52,9 @@ function SignIn () {
                 </div>
 
                 <button className="form-button">sign in</button>
+                <div className="find-password">
+                    <p><Link to="/rules">Or continue as guest</Link> </p>
+                </div>
                 {/* <a className="find-password" href="#">forgot password</a> */}
             </form>
         </div>

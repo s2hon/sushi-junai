@@ -57,7 +57,6 @@ function Menu(props) {
     const currentQty = arr => arr.reduce((sum, { quantity }) => sum + quantity, 0);
     const currentQtyTotal = currentQty(menuCart);
 
-
     return (
         <>
             <Counter/>
@@ -104,9 +103,8 @@ function Menu(props) {
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
-                                                    <Button type="button" btn={"float-right btn btn1"} function={() => {
-                                                        props.addItem(item)
-                                                    }}
+                                                    <Button id={item.name} type="button" btn={"float-right btn btn1"} function={() => {
+                                                        props.addItem(item) }} 
                                                     >
                                                         <FontAwesomeIcon icon={faPlus} />
                                                     </Button>
@@ -134,7 +132,7 @@ function Menu(props) {
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
-                                                    }}
+                                                    }} 
                                                     >
                                                         <FontAwesomeIcon icon={faPlus} />
                                                     </Button>

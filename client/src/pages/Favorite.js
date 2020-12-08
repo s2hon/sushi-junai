@@ -1,24 +1,16 @@
 import React, { useEffect } from "react";
 // import { Link } from "react-router-dom";
 import Container from "../components/Container";
-// import Row from "../components/Row";
-import Footer from "../components/Footer";
-// import Col from "../components/Col";
-import Image from "../components/Image";
-import favItems from "../components/MenuItems"
-import { connect } from 'react-redux'
-import FavCart from "../components/Favorite/FavCart";
 import {useStoreContext} from "../utils/GlobalStore";
 import API from '../utils/API';
 import MenuItems from "../components/MenuItems";
 import Button from "../components/Button";
-import { Row } from 'reactstrap';
 import { LOAD_FAVORITES } from "../utils/actions";
-import { string } from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeartBroken } from "@fortawesome/free-solid-svg-icons";
-function Favorites() {
     
+function Favorites() {    
+    // get user email
     const [state,dispatch] = useStoreContext();
     // console.log("This is our state "+ JSON.stringify(state));
     //load menu items stored under that user

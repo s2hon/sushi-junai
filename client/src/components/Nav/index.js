@@ -61,6 +61,7 @@ export default class Nav extends Component {
                                 </li>
                             )
                         })}
+                        
                         <li key="8">
                             <p onClick={this.setIsOpen(8)}>
                             Reservations <i className="fa fa-angle-right" aria-hidden="true"></i>

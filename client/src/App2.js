@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom'
 import './css/App.css';
-import Login from "./pages/Login";
+import Signin from "./components/SignIn";
 import Signup from "./pages/Signup";
 import Members from "./pages/Members";
 import { useStoreContext } from './utils/GlobalStore';
@@ -52,7 +52,7 @@ function App() {
                             // if the user is Logged out
                             <>
                                 <b>Welcome Guest!</b> &nbsp;&nbsp;&nbsp;
-                                <Link to="/login">Login</Link> | <Link to="/signup">Signup</Link>
+                                <Link to="/signin">Login</Link> | <Link to="/signup">Signup</Link>
                             </>
                         ) : (
                             // If the user is Logged In
@@ -69,7 +69,7 @@ function App() {
                         !state.userLoggedIn ? (
                             // These routes are only avaialable to LOGGED OUT users
                             <>
-                                <Route exact path="/login" component={Login} />
+                                <Route exact path="/login" component={Signin} />
                                 <Route exact path="/signup" component={Signup} />
                             </>
                         ) : (
