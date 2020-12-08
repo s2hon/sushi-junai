@@ -16,7 +16,7 @@ function Home(props) {
         <React.Fragment>
             <Container>
                 <div className="menu-container">
-                <Row className="justify-content-center menu-container">
+                <Row className="justify-content-center">
                     {
                         data.map((data, idx) => {
                             return (
@@ -29,7 +29,7 @@ function Home(props) {
                     }
                 </Row>
                 <Row className="justify-content-center">
-                        <Col sm="12" md={{ size: 6}} lg={{ size: 6}} style={{padding: "30px"}}>
+                        <Col sm="12" md={{ size: 10}} lg={{ size: 10}} style={{padding: "30px"}}>
                             <HomeCarousel />
                         </Col>
                 </Row>
