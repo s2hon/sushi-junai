@@ -14,15 +14,18 @@
 .menu-card {
     margin: 2px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
 
 .menuOptions {
     padding: 10px;
     padding-top: 0;
     border-radius: 7px;
-    margin: 10px;
+    margin: 10px auto;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
+    position: sticky;
+    width: 90%;
 }
 
 .form-check {
@@ -85,4 +88,8 @@ h5, h6, p, label, .btn, .mainFont {
     display: inline-flex;
     justify-content: space-evenly;
     margin: 0 auto;
+}
+
+.black-text {
+    color: black;
 }
