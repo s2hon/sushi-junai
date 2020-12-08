@@ -24,7 +24,6 @@ if (localStorage.getItem("date") !== moment().format('MMMM Do YYYY')) {
     localStorage.clear()
 }
 
-
 function App() {
 
     return (
