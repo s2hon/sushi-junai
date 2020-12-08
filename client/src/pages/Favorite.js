@@ -57,6 +57,7 @@ function Favorites() {
     return (
     <>
         <Container>
+            <div className="menu-container">
             <h1>Favorites</h1>
             
          {/* need to be able to see past favorites and then either add to cart or remove from favorites */}
@@ -78,7 +79,7 @@ function Favorites() {
                 )
             })
          }
-        
+        </div>
         </Container>
     </>);
 }
