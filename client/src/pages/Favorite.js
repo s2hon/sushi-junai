@@ -34,6 +34,7 @@ function Favorites() {
     console.log(state.favorites);
     return (<>
         <Container>
+            <div className="menu-container">
             <h1>Favorites</h1>
          {/* Here is the state {state.favorites} */}
          {//go through parsed data and create buttons 
@@ -49,7 +50,7 @@ function Favorites() {
                 )
             })
          }
-        
+        </div>
         </Container>
     </>);
 }

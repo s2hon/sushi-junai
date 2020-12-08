@@ -83,7 +83,6 @@ h5, h6, p, label, .btn, .mainFont {
     font-family: 'Open Sans', sans-serif;
 }
 
-
 .centered{ 
     display: inline-flex;
     justify-content: space-evenly;
@@ -92,4 +91,26 @@ h5, h6, p, label, .btn, .mainFont {
 
 .black-text {
     color: black;
+}
+
+.white-text {
+    color: white;
+}
+
+.counter {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #f26430;
+}
+
+.margins {
+    margin: 5px;
+    color: white;
+}
+
+.center {
+    text-align: center;
 }
