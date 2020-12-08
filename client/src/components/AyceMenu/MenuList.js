@@ -16,6 +16,7 @@ import gfIcon from "./icons8-color-50.png";
 import fishIcon from "./icons8-dressed-fish-50.png";
 import Col from "../Col";
 import Scrollbar from "../ScrollUp/index";
+import Counter from "../Counter";
 
 function Menu(props) {
     const [isVegetarian, setIsVegetarian] = useState(false);
