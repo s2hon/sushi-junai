@@ -7,7 +7,6 @@ import { AUTH_SET_LOGGED_OUT} from "../../utils/actions";
 import PopLoggin from '../PopLoggin'
 import Nav from "../Nav/index";
 import './style.css';
-import Counter from "../Counter";
 import PopSignUp from "../PopSignUp";
 
 
@@ -43,7 +42,6 @@ function Header (props) {
                                 <li className={!state.userLoggedIn ? "hide": ""}>
                                     <Button type="button" className="btn btn1" onClick={logout}>Logout</Button></li>
                             </ul>
-                            <Counter className="counter"/>
                         </div>
                     </div>
                 </div>

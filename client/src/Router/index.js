@@ -15,14 +15,12 @@ import Footer from "../components/Footer/index"
 import LunchMenu from '../pages/LunchMenu';
 import StaticAYCEMenu from '../pages/StaticAYCEMenu';
 import SignupSignin from '../pages/SignupSignIn';
-import Counter from '../components/Counter';
 
 const AllRoute = () => { 
 
   return (
     <div id="top">
-      <Header />
-      <Counter />
+      <Header/>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/home" component={Home}/>

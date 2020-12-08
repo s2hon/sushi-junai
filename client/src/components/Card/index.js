@@ -14,18 +14,19 @@ function Card(props) {
                 <div className="location-content">
                     <div className="location-info">
                         <h2>{props.location}</h2>
-                        <span><FontAwesomeIcon icon={faLocationArrow} />{props.address}</span>
-                        <br />
-                        <span><FontAwesomeIcon icon={faPhone} />{props.phone}</span>
                         <ul>
-                        <li><FontAwesomeIcon icon={faClock} /></li>
-                        <li>Monday {props.mon}</li>
-                        <li>Tuesday {props.tue}</li>
-                        <li>Wednesday {props.wed}</li>
-                        <li>Thursday {props.thu}</li>
-                        <li>Friday {props.fri}</li>
-                        <li>Saturday {props.sat}</li>
-                        <li>Sunday {props.sun}</li>
+                            <li><FontAwesomeIcon icon={faLocationArrow} /> {props.address}</li>
+                            <li><FontAwesomeIcon icon={faPhone} /> {props.phone}</li>
+                        </ul>
+                        <ul>
+                            <li><FontAwesomeIcon icon={faClock} /> Store Hours</li>
+                            <li>Monday {props.mon}</li>
+                            <li>Tuesday {props.tue}</li>
+                            <li>Wednesday {props.wed}</li>
+                            <li>Thursday {props.thu}</li>
+                            <li>Friday {props.fri}</li>
+                            <li>Saturday {props.sat}</li>
+                            <li>Sunday {props.sun}</li>
                         </ul>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ import Button from "../../components/Button";
 import data from "../../db/store.json";
 import { useStoreContext } from '../../utils/GlobalStore';
 import HomeCarousel from "../../components/HomeCarousel";
-import './style.css'
+import './style.css';
 
 function Home(props) {
     const [state] = useStoreContext();
@@ -20,10 +20,11 @@ function Home(props) {
                     {
                         data.map((data, idx) => {
                             return (
-                                <Card key={idx} location={data.location} phone={data.phone} address={data.address}
-                                    mon={data.mon} tue={data.tue} wed={data.tue} thu={data.thu} fri={data.fri} sat={data.sat} sun={data.sun}>
-                                </Card>
-
+                                <a width="200%" target={"_blank"} rel="noreferrer" href={data.href}>
+                                    <Card key={idx} location={data.location} phone={data.phone} address={data.address}
+                                        mon={data.mon} tue={data.tue} wed={data.tue} thu={data.thu} fri={data.fri} sat={data.sat} sun={data.sun} href={data.href}>
+                                    </Card>
+                                </a>
                             )
                         })
                     }

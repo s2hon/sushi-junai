@@ -10,7 +10,8 @@
         "thu": "11AM–10PM",
         "fri": "11AM–10PM",
         "sat": "11AM–10PM",
-        "sun": "Closed"
+        "sun": "Closed",
+        "href": "https://www.google.com/maps/search/?api=1&query=SUSHI%20JUNAI%2C%201612%20Lavaca%20Street%2C%20Austin%2C%20TX&query_place_id=ChIJy_qQgHW1RIYR63XnjHU5X2g"
     },
     {
         "id": 2,
@@ -23,6 +24,7 @@
         "thu": "11AM–10PM",
         "fri": "11AM–10PM",
         "sat": "11AM–10:30PM",
-        "sun": "5PM–10PM"
+        "sun": "5PM–10PM",
+        "href": "https://www.google.com/maps/search/?api=1&query=Sushi%20Junai%202%2C%202500%20W%20Parmer%20Ln%2C%20Austin%2C%20TX&query_place_id=ChIJl1QkySbMRIYR6q8_Ja2NAkc"
     }
 ]
