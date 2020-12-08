@@ -10,17 +10,7 @@ import './style.css';
 
 function Header (props) {
     const [state, dispatch] = useStoreContext();
-<<<<<<< HEAD
-    // const history = useHistory();
-    useEffect(()=>{
-        
-    },[]);
-    //useEffect to check the cookie and see if user is logged-in
-    //if logged in set the global store dispatch AUTH_SET_LOGGED_IN
-
-=======
     
->>>>>>> 416436c4a52e8d3e1edb2fb50fd52c383a10f70d
     //handles the logout
     const logout = () => {
         dispatch({

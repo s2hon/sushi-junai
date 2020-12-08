@@ -31,7 +31,6 @@ function Favorites() {
         
     };
     //add funciton to add item to order 
-    console.log(state.favorites);
     return (<>
         <Container>
             <div className="menu-container">

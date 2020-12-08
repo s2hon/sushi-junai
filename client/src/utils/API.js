@@ -23,7 +23,6 @@ export default {
     },
     // //here we send the email and item that will be deleted
     deleteFavorite: (info) =>{
-        console.log("You are using front end API and about to delete "+info);
         return axios.delete("/api/favorites", {data:info})
     }
 }
