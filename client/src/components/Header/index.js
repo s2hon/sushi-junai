@@ -45,8 +45,7 @@ function Header (props) {
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        )
     }
 
 export default Header;
