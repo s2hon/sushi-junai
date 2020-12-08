@@ -34,7 +34,7 @@ const Footer = (props) =>{
           <div className="row">
             <div className="col col-xs-12">
               <p className="copyright">&copy;MIT <a href="https://github.com/s2hon/sushi-junai">
-              <FontAwesomeIcon icon={faGithub} size="2x" /></a> Built with love
+                <FontAwesomeIcon icon={faGithub} size="2x" /></a> Built with love
               </p>
             </div>
           </div>
