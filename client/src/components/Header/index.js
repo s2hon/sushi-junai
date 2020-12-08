@@ -26,18 +26,16 @@ function Header (props) {
             <div className="topbar">
                 <div className="container">
                     <div className="row">
-                        <div className="col-4">
+                        <div className="col-2">
                             <Nav/>
                         </div>
-                        <div className="col-4 d-flex justify-content-center">
+                        <div className="col-6">
                             <Link to="/home">
                                 <Image src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
                             </Link>
                         </div>
                         
-                        <div className="col-1 text-right">
-                            <Counter className="counter"/>
-                        </div>
+                        
                         <div className="col-2 text-right">
                             <ul>
                                 <li className={state.userLoggedIn ? "hide": ""}><PopLoggin/></li>
@@ -45,6 +43,7 @@ function Header (props) {
                                 <li className={!state.userLoggedIn ? "hide": ""}>
                                     <Button type="button" className="btn btn1" onClick={logout}>Logout</Button></li>
                             </ul>
+                            <Counter className="counter"/>
                         </div>
                     </div>
                 </div>

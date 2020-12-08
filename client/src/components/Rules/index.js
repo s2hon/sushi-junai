@@ -83,7 +83,7 @@ const Slider = (props) => {
                             <Link to={"/alacarte"}>
                                 <Button type={"button"} btn={"btn btn2"}>Go to A La Carte</Button>
                             </Link>
-                            <Link to={"/ayce"}>
+                            <Link className="active" to={"/ayce"}>
                                 <Button type={"button"} btn={"btn btn1"} function ={setTimer}>I AGREE</Button>
                             </Link>
                         </Row>
