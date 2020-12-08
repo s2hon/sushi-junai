@@ -41,10 +41,7 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "popper.js": "^1.16.1",
-<<<<<<< d58b9d355ef161e9eed193673b590fbd304097b7
-=======
     "react-awesome-reveal": "^3.5.1",
->>>>>>> MERGE
     "react-bootstrap": "^1.4.0",
     "react-fontawesome": "^1.7.1",
     "react-redux": "^7.2.2",
