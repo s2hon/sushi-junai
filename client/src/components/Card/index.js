@@ -9,7 +9,7 @@ import {
 
 function Card(props) {
     return (
-        <div className="col-lg-4 col-md-6 col-sm-12 col-12 custom-grid">
+        <div className=" col-md-6 col-sm-12 col-12 custom-grid">
             <div className="location-wrap">
                 <div className="location-content">
                     <div className="location-info">

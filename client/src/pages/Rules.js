@@ -6,7 +6,9 @@ function Rules(props) {
     return (
         <>
         <Container>
+        <div className="menu-container">
             <Slider/>
+            </div>
         </Container>
         </>
     );
