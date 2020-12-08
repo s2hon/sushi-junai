@@ -105,3 +105,12 @@ h5, h6, p, label, .btn, .mainFont {
 footer {
     background-color: #f26430;
 }
+
+.margins {
+    margin: 5px;
+    color: white;
+}
+
+.center {
+    text-align: center;
+}

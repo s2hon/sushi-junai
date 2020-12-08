@@ -46,15 +46,15 @@ const Footer = (props) => {
         <div>
           <p className="white-text">Connect with us!</p>
           <div className="footer-social-container">
-            <a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/sushijunai/"><FontAwesomeIcon icon={faFacebookF} size="3x" /></a>
-            <a target={"_blank"} rel="noreferrer" href="https://www.instagram.com/sushijunai/"><FontAwesomeIcon icon={faInstagram} size="3x" /></a>
-            <a target={"_blank"} rel="noreferrer" href="mailto:sushijunai1@gmail.com"><FontAwesomeIcon icon={faEnvelope} size="3x" /></a>
+            <a className="margins" target={"_blank"} rel="noreferrer" href="https://www.facebook.com/sushijunai/"><FontAwesomeIcon icon={faFacebookF} size="3x" /></a>
+            <a className="margins" target={"_blank"} rel="noreferrer" href="https://www.instagram.com/sushijunai/"><FontAwesomeIcon icon={faInstagram} size="3x" /></a>
+            <a className="margins" target={"_blank"} rel="noreferrer" href="mailto:sushijunai1@gmail.com"><FontAwesomeIcon icon={faEnvelope} size="3x" /></a>
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row justify-content-center center">
         <div className="col col-xs-12">
-          <a className="copyright" href="https://github.com/s2hon/sushi-junai">&copy;MIT <FontAwesomeIcon icon={faGithub} size="2x" /> Built with love</a>
+          <a className="copyright margins" href="https://github.com/s2hon/sushi-junai">&copy;MIT <FontAwesomeIcon icon={faGithub} size="2x" /> Built with love</a>
         </div>
       </div>
       </div>
