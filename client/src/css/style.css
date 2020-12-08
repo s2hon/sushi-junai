@@ -93,7 +93,15 @@ h5, h6, p, label, .btn, .mainFont {
     color: black;
 }
 
+.white-text {
+    color: white;
+}
+
 .counter {
     font-size: 2em;
     font-weight: bold;
+}
+
+footer {
+    background-color: #f26430;
 }
