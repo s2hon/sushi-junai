@@ -54,12 +54,6 @@ function Menu(props) {
     function handleInputChangeGF() {
         setIsGlutenFree(!isGlutenFree);
     }
-    function handleInputChangeSpicy() {
-        setIsSpicy(!isSpicy);
-    }
-    function handleInputChangeShellfish() {
-        setContainsNoShellfish(!containsNoShellfish);
-    }
 
     const { menuCart } = props
     const currentQty = arr => arr.reduce((sum, { quantity }) => sum + quantity, 0);
