@@ -11,11 +11,11 @@ import "./menu.css"
 import "../../css/style.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlus } from "@fortawesome/free-solid-svg-icons"
-import vegIcon from "./icons8-vegetarian-mark-48.png";
-import gfIcon from "./icons8-color-50.png";
 import Col from "../Col";
-import Scrollbar from "../ScrollUp/index";
+import Scrollup from "../ScrollUp/index";
 import Counter from "../Counter";
+import vegIcon from "../FoodKey/icons8-vegetarian-mark-144.png";
+import gfIcon from "../FoodKey/icons8-no-gluten-144.png";
 import Vegetarian from "../FoodKey/Vegetarian";
 import RawFish from "../FoodKey/Rawfish";
 import GlutenFree from "../FoodKey/GlutenFree";
@@ -31,11 +31,9 @@ function Menu(props) {
     if (isVegetarian) {
         ayceMenu = ayceMenu.filter(item => item.vegetarian);
     }
-
     if (isGlutenFree) {
         ayceMenu = ayceMenu.filter(item => item.glutenFree);
     }
-
 
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
@@ -56,10 +54,29 @@ function Menu(props) {
     function handleInputChangeGF() {
         setIsGlutenFree(!isGlutenFree);
     }
+    function handleInputChangeSpicy() {
+        setIsSpicy(!isSpicy);
+    }
+    function handleInputChangeShellfish() {
+        setContainsNoShellfish(!containsNoShellfish);
+    }
 
     const { menuCart } = props
     const currentQty = arr => arr.reduce((sum, { quantity }) => sum + quantity, 0);
     const currentQtyTotal = currentQty(menuCart);
+
+    const limitedItem = [
+    'Screaming "O" (3/8 pcs)',
+    'White "O" (3/8 pcs)',
+    "Beef",
+    "Conch (Makigai)",
+    "Tako Wasabi",
+    "Sweet Shrimp (Ama Ebi)",
+    "Sashimi Special (4 pcs)",
+    "Mochi Ice Cream"]
+
+    const cartItems = menuCart.map(menuCart => menuCart.name)
+    let used =  cartItems.filter(item => limitedItem.includes(item))
 
     return (
         <>
@@ -83,11 +100,12 @@ function Menu(props) {
                                 </span>
                             </Col>
                             <Col>
+                                
                                 <span>
                                     <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Order Summary ({currentQtyTotal})</Button></Link>
                                 </span>
                                 <span>
-                                    <Link to="/favorite"><Button type="button" btn="btn btn1 float-right">Favorites</Button></Link>
+                                    <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
                                 </span>
                                 <span>
                                     <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
@@ -112,7 +130,7 @@ function Menu(props) {
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button id={item.name} type="button" btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
-                                                    }}
+                                                    }} onetime={used.includes(item.name)}
                                                     >
                                                         <FontAwesomeIcon icon={faPlus} />
                                                     </Button>
@@ -248,7 +266,7 @@ function Menu(props) {
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
-                                                    }}
+                                                    }} onetime={used.includes(item.name)}
                                                     >
                                                         <FontAwesomeIcon icon={faPlus} />
                                                     </Button>
@@ -275,7 +293,7 @@ function Menu(props) {
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
-                                                    }}
+                                                    }} onetime={used.includes(item.name)}
                                                     >
                                                         <FontAwesomeIcon icon={faPlus} />
                                                     </Button>
@@ -356,7 +374,7 @@ function Menu(props) {
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
-                                                    }}
+                                                    }} onetime={used.includes(item.name)}
                                                     >
                                                         <FontAwesomeIcon icon={faPlus} />
                                                     </Button>
@@ -368,7 +386,6 @@ function Menu(props) {
                             }
                         </Container>
                     </Row>
-
                     <RawFish />
                     <GlutenFree />
                     <Vegetarian />
@@ -376,7 +393,7 @@ function Menu(props) {
                     <Spicy />
                 </div>
             </Container>
-            <Scrollbar />
+            <Scrollup />
         </>
     );
 }

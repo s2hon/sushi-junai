@@ -5,6 +5,7 @@ import menu from "../../db/menu.json";
 import MenuItems from "../MenuItems";
 import MenuNav from "../MenuNav/index";
 import Image from "../Image";
+
 import vegIcon from "./icons8-vegetarian-mark-48.png";
 import gfIcon from "./icons8-color-50.png";
 import Vegetarian from "../FoodKey/Vegetarian";
@@ -26,7 +27,6 @@ function Menu() {
     if (isGlutenFree) {
         ayceMenu = ayceMenu.filter(item => item.glutenFree);
     }
-
 
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
@@ -278,7 +278,6 @@ function Menu() {
                             }
                         </Container>
                     </Row>
-
                     <RawFish />
                     <GlutenFree />
                     <Vegetarian />

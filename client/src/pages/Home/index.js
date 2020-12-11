@@ -9,7 +9,6 @@ import HomeCarousel from "../../components/HomeCarousel";
 import './style.css';
 import Counter from "../../components/Counter";
 
-
 function Home(props) {
     const [state] = useStoreContext();
 

@@ -4,6 +4,7 @@ import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "./MenuItems";
 import MenuNav from "../MenuNav/index";
+import Scrollup from "../ScrollUp/index";
 import Image from "../Image";
 import vegIcon from "../AyceMenu/icons8-vegetarian-mark-48.png";
 import gfIcon from "../AyceMenu/icons8-color-50.png";
@@ -42,7 +43,7 @@ function Menu() {
     const entrees = alcMenu.filter(item => item.category === "entree");
     const sushiSashimi = alcMenu.filter(item => item.category === "sushi and sashimi");
     const platters = alcMenu.filter(item => item.category === "platters");
-    //eventually users will be able to favorite items straight from the menu (if logged-in) 
+ 
 
     function handleInputChangeVeg() {
         setIsVegetarian(!isVegetarian);
@@ -346,13 +347,14 @@ function Menu() {
                         </Container>
                     </Row>
 
-                    <RawFish />
-                    <GlutenFree />
-                    <Vegetarian />
-                    <Shellfish />
+                        <RawFish />
+                        <GlutenFree />
+                        <Vegetarian />
+                        <Shellfish />
                     <Spicy />
-                </div>
-            </Container>
+                    </div>
+                </Container>
+                <Scrollup />
         </>
     );
 }

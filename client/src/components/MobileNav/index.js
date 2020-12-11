@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Collapse, CardBody, Card } from 'reactstrap';
-import { Link } from 'react-router-dom'
-import './style.css';
-import Image from "./../Image";
+import { Link } from 'react-router-dom';
+import Image from "../Image";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import menus from "../../db/nav.json";
+import mobileIcon from "./icons8-sashimi-menu.png";
+import mobileIcon2 from "./icons8-menu-96.png";
+import './style.css';
 
 
 export default class Nav extends Component {
@@ -61,48 +63,12 @@ export default class Nav extends Component {
                                 </li>
                             )
                         })}
-                        
-                        <li key="8">
-                            <p onClick={this.setIsOpen(8)}>
-                            Reservations <i className="fa fa-angle-right" aria-hidden="true"></i>
-                            </p>
-                            <Collapse isOpen={8 === isOpen}>
-                                <Card>
-                                    <CardBody>
-                                        <ul>
-                                            <li>
-                                                <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-austin">Sushi Junai 1</a>
-                                            </li>
-                                        </ul>
-                                    </CardBody>
-                                </Card>
-                            </Collapse>
-                        </li>
-                        <li key="9">
-                            <p onClick={this.setIsOpen(9)}>
-                            Online Order <i className="fa fa-angle-right" aria-hidden="true"></i>
-                            </p>
-                            <Collapse isOpen={9 === isOpen}>
-                                <Card>
-                                    <CardBody>
-                                        <ul>
-                                            <li>
-                                                <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-austin">Sushi Junai 1</a>
-                                            </li>
-                                            <li>
-                                                <a target={"_blank"} rel="noreferrer" href="https://www.yelp.com/biz/sushi-junai-2-austin">Sushi Junai 2</a>
-                                            </li>
-                                        </ul>
-                                    </CardBody>
-                                </Card>
-                            </Collapse>
-                        </li>
                     </ul>
 
                 </div>
 
                 <div className="navbtn" onClick={this.menuHandler}>
-                    <Image src={"../assets/sushi-icon.png"} alt={"sushi menu icon"} width="75%"/>
+                    <Image src={mobileIcon2} alt={"sushi menu icon"} width="120%"/>
                 </div>
             </>
         )

@@ -14,13 +14,25 @@ import Counter from "../Counter";
 
 const MenuCart = (props) => {
     const { menuCart } = props
-    console.log(menuCart)
 
     const currentQty = arr => arr.reduce((sum, {quantity}) => sum + quantity, 0);
     const currentQtyTotal = currentQty(menuCart);
 
     const sumCostTotal = arr => arr.reduce((sum, {price, quantity})=> sum + price*quantity, 0);
     const cartCostTotal = sumCostTotal(menuCart);
+
+    const limitedItem = [
+        'Screaming "O" (3/8 pcs)',
+        'White "O" (3/8 pcs)',
+        "Beef",
+        "Conch (Makigai)",
+        "Tako Wasabi",
+        "Sweet Shrimp (Ama Ebi)",
+        "Sashimi Special (4 pcs)",
+        "Mochi Ice Cream"]
+    
+        const cartItems = menuCart.map(menuCart => menuCart.name)
+        let used =  cartItems.filter(item => limitedItem.includes(item))    
 
     if (currentQtyTotal === 0) {
         return (
@@ -74,7 +86,7 @@ const MenuCart = (props) => {
                         </tr>
                     </thead>
                     <tbody className="mainFont">
-                        {menuCart.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
+                        {menuCart.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
                         </tbody>
                         </Table>
                         <div className="row">
