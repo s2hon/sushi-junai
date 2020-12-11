@@ -9,7 +9,9 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Pang",
@@ -21,7 +23,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Fish Taco",
@@ -33,10 +37,12 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
-		"name": "Grilled Jalapeno (2/4 pcs)",
+		"name": "Grilled Jalapeño (2/4 pcs)",
 		"description": "",
 		"category": "Appetizer",
 		"price": 4.95,
@@ -45,11 +51,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Chicken Karaage",
-		"description": "",
+		"description": "Deep-fried bite-size chicken thigh with house teriyaki sauce",
 		"category": "Appetizer",
 		"price": 7.50,
 		"menu": "ayce",
@@ -57,23 +65,27 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Edamame",
-		"description": "",
+		"description": "Steamed edamame with a sprinkle of sea salt",
 		"category": "Appetizer",
 		"price": 2.00,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
 		"vegetarian": true,
-		"vegan": false,
-		"fish": false
+		"vegan": true,
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Spicy Garlic Edamame",
-		"description": "",
+		"description": "Flash stir fried edmamme in house special spicy garlic sauce",
 		"category": "Appetizer",
 		"price": 4.00,
 		"menu": "ayce",
@@ -81,7 +93,9 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Screaming \"O\" (3/8 pcs)",
@@ -93,11 +107,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "White \"O\" (3/8 pcs)",
-		"description": "Slice super white tuna over shredded radish with garlic ponzu",
+		"description": "Slice super white tuna over shredded radish with house garlic ponzu",
 		"category": "Appetizer",
 		"price": 12.50,
 		"menu": "ayce",
@@ -105,7 +121,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Tuna Poki",
@@ -117,7 +135,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Salmon Poki",
@@ -129,7 +149,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Shrimp Tempura (2/5 pcs)",
@@ -141,7 +163,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Vegetable Tempura (2/5 pcs)",
@@ -153,7 +177,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Mixed Tempura (2 shrimp and 3 veggie)",
@@ -165,11 +191,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Calamari Tempura",
-		"description": "Lightly fried calamari with a little yum yum sauce",
+		"description": "Lightly fried calamari with a dash of yum yum sauce",
 		"category": "Appetizer",
 		"price": 7.95,
 		"menu": "ayce",
@@ -177,7 +205,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"shellfish": false,
+		"fish": false,
+		"spicy": false
 	},
 	{
 		"name": "Creamy Shrimp (2/4 pcs)",
@@ -189,7 +219,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"shellfish": true,
+		"fish": false,
+		"spicy": false
 	},
 	{
 		"name": "Kurobuta Sausage (2/4 pcs)",
@@ -201,7 +233,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Shrimp Shumai (2/4 pcs)",
@@ -213,7 +247,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Gyoza (2/4 pcs)",
@@ -225,10 +261,12 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
-		"name": "Spring Roll (2/4 pcs)",
+		"name": "Fried Spring Roll (2/4 pcs)",
 		"description": "Deep fried mixed vegetables with yum yum sauce",
 		"category": "Appetizer",
 		"price": 4.95,
@@ -237,11 +275,13 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Dynamite",
-		"description": "Onions, mushroom, scallop, crab baked in a shell",
+		"description": "Onions, mushroom, scallop, crab topped with mayo and baked in the oven",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -249,11 +289,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Mushroom Cap (2/4 pcs)",
-		"description": "Mushroom topped crab with eel sauce",
+		"description": "Mushroom stuffed with crab mix with eel sauce",
 		"category": "Appetizer",
 		"price": 4.50,
 		"menu": "ayce",
@@ -261,11 +303,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
-		"name": "Monkey Brain (2/4 pcs)",
-		"description": "Deep fried mushroom with cream cheese, crab, spicy tuna and eel, spicy mayo",
+		"name": "Monkey Brain (4/8 pcs)",
+		"description": "Deep fried mushroom stuffed with cream cheese, crab, spicy tuna topped off with eel sauce and spicy mayo",
 		"category": "Appetizer",
 		"price": 6.50,
 		"menu": "ayce",
@@ -273,11 +317,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Spicy Tuna Cracker (2/4 pcs)",
-		"description": "Crispy rice topped spicy tuna with eel, spicy mayo sauce",
+		"description": "Crispy rice topped with spicy tuna with eel sauce and spicy mayo",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -285,11 +331,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "House Crab Salad",
-		"description": "Mixed greens topped crab stick with house sesame dressing",
+		"description": "Mixed greens topped imitation crab with creamy house sesame dressing",
 		"category": "Salad",
 		"price": 3.50,
 		"menu": "ayce",
@@ -297,23 +345,27 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Cucumber Salad",
-		"description": "Cucumber and crab with vinaigrette dressing",
+		"description": "Cucumber tossed in vinaigrette dressing topped with house crab mix and creamy house sesame dressing",
 		"category": "Salad",
 		"price": 3.95,
 		"menu": "ayce",
 		"onlyOrderOnce": false,
 		"glutenFree": true,
-		"vegetarian": true,
+		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Seaweed Salad",
-		"description": "Seasoned seaweed with sesame",
+		"description": "Seasoned seaweed with sesame seeds",
 		"category": "Salad",
 		"price": 4.95,
 		"menu": "ayce",
@@ -321,11 +373,13 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Spicy Asian Salad",
-		"description": "Spring mix with spicy garlic sauce",
+		"description": "Spring mix with house spicy garlic dressing",
 		"category": "Salad",
 		"price": 5.95,
 		"menu": "ayce",
@@ -333,11 +387,13 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Avocado Salad",
-		"description": "Spring mix and avocado with Japanese mustard",
+		"description": "Spring mix and avocado with Japanese mustard dressing",
 		"category": "Salad",
 		"price": 6.95,
 		"menu": "ayce",
@@ -345,11 +401,13 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Salmon Skin Salad",
-		"description": "Spicy, crunchy salmon over mixed greens with special sauce. (Contains traces of gluten.)",
+		"description": "Spicy, crunchy salmon skin over mixed greens with special spicy sauce dressing. (Contains traces of gluten)",
 		"category": "Salad",
 		"price": 6.95,
 		"menu": "ayce",
@@ -357,11 +415,13 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Miso Soup",
-		"description": "",
+		"description": "Classic miso soup with cubed tofu and small pieces of seaweed",
 		"category": "Soup/Noodles",
 		"price": 2.00,
 		"menu": "ayce",
@@ -369,11 +429,13 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Kake Udon",
-		"description": "Traditional udon noodle in hot broth topped with scallions",
+		"description": "Traditional udon noodle in house broth topped with scallions",
 		"category": "Soup/Noodles",
 		"price": 5.95,
 		"menu": "ayce",
@@ -381,7 +443,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Tempura Udon",
@@ -393,11 +457,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Spicy Ramen",
-		"description": "Spicy noodle with soup",
+		"description": "Korean spicy ramen",
 		"category": "Soup/Noodles",
 		"price": 6.95,
 		"menu": "ayce",
@@ -405,11 +471,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Steam Rice",
-		"description": "",
+		"description": "white",
 		"category": "Rice",
 		"price": 1.50,
 		"menu": "ayce",
@@ -417,11 +485,13 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Mixed Fish Rice",
-		"description": "Rice mixed with assorted fish, vegetables, and inhouse made spicy sauce",
+		"description": "Rice topped with assorted fish, vegetables, and inhouse made spicy dressing",
 		"category": "Rice",
 		"price": 13.95,
 		"menu": "ayce",
@@ -429,11 +499,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Vegetable Fried Rice",
-		"description": "Fried rice mixed with egg, yellow onion, carrot, green onion, sesame, mushroom",
+		"description": "Fried rice mixed with egg, yellow onion, mushroom, carrot, green onion, sesame seeds",
 		"category": "Rice",
 		"price": 6.95,
 		"menu": "ayce",
@@ -441,11 +513,13 @@
 		"glutenFree": false,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Chicken Fried Rice",
-		"description": "Chicken fried rice mixed with egg and green onion",
+		"description": "Fried rice mixed with chicken, egg, yellow onion, mushroom, carrot, green onion, sesame seeds",
 		"category": "Rice",
 		"price": 7.95,
 		"menu": "ayce",
@@ -453,11 +527,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Shrimp Fried Rice",
-		"description": "Shrimp fried rice mixed with egg and green onion",
+		"description": "Fried rice mixed with shrimp, egg, yellow onion, mushroom, carrot, green onion, sesame seeds",
 		"category": "Rice",
 		"price": 9.95,
 		"menu": "ayce",
@@ -465,11 +541,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Chicken Teriyaki",
-		"description": "Grilled chicken with house teriyaki sauce",
+		"description": "Grilled chicken served with house teriyaki sauce",
 		"category": "Rice",
 		"price": 11.95,
 		"menu": "ayce",
@@ -477,11 +555,13 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Salmon Teriyaki",
-		"description": "Salmon teriyaki with houes teriyaki sauce",
+		"description": "Grilled salmon served with house teriyaki sauce",
 		"category": "Rice",
 		"price": 12.95,
 		"menu": "ayce",
@@ -489,11 +569,13 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Chicken Katsu",
-		"description": "Deep fried breaded chicken breast with house hatsu sauce",
+		"description": "Breaded chicken breast deep-fried with house katsu sauce",
 		"category": "Rice",
 		"price": 12.50,
 		"menu": "ayce",
@@ -501,11 +583,13 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Korea Bulgogi",
-		"description": "Stir fried seasoned beef with mixed vegetable",
+		"description": "In house seasoned beef stir fried with mixed vegetable",
 		"category": "Rice",
 		"price": 12.95,
 		"menu": "ayce",
@@ -513,7 +597,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "California Roll",
@@ -525,7 +611,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Cucumber Roll",
@@ -537,7 +625,9 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Tuna Roll",
@@ -549,7 +639,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Salmon Roll",
@@ -561,7 +653,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Yellowtail Roll",
@@ -573,7 +667,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Philadelphia Roll",
@@ -585,7 +681,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Eel Roll",
@@ -597,7 +695,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Salmon Skin Roll",
@@ -609,7 +709,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Crab Stick Roll",
@@ -621,7 +723,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Spicy Tuna Roll",
@@ -633,7 +737,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Spicy Salmon Roll",
@@ -645,7 +751,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Spicy Crab Roll",
@@ -657,7 +765,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Asparagus Roll",
@@ -669,7 +779,9 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": true,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Vegetable Roll",
@@ -681,11 +793,13 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Yum Yum Roll",
-		"description": "Scallop tossed in spicy house special sauce wrapped in sushi rice and seaweed paper, balanced out with sweet mayo",
+		"description": "Scallop tossed in house special sauce wrapped with cucumber and avocado in sushi rice and seaweed paper, balanced out with sweet mayo",
 		"category": "Classic Roll/Hand Roll",
 		"price": 6.50,
 		"menu": "ayce",
@@ -693,7 +807,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Avocado Roll",
@@ -705,7 +821,9 @@
 		"glutenFree": true,
 		"vegetarian": true,
 		"vegan": true,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Salmon (Sake)",
@@ -717,11 +835,13 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Salmon Belly (Sake toro)",
-		"description": "Fattier cut of king salmon *limited quantity*",
+		"description": "Fattier cut of king salmon *Limited Quantity*",
 		"category": "Sushi",
 		"price": 4.95,
 		"menu": "ayce",
@@ -729,7 +849,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Garlic Salmon",
@@ -741,7 +863,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Sweet Salmon",
@@ -753,7 +877,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Tuna (Maguro)",
@@ -765,7 +891,8 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false
 	},
 	{
 		"name": "Pepper Tuna",
@@ -777,7 +904,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Garlic Tuna",
@@ -789,7 +918,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Yellowtail (Hamachi)",
@@ -801,7 +932,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Yuzu Yellowtail",
@@ -813,7 +946,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Albacore (Bincho Maguro)",
@@ -825,7 +960,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Cajun Albacore",
@@ -837,7 +974,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Garlic Albacore",
@@ -849,7 +988,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Super White Tuna (Escolar)",
@@ -861,7 +1002,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Beef",
@@ -873,7 +1016,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Crab Stick (Kani Surimi)",
@@ -885,7 +1030,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Fresh Water Eel (Unagi)",
@@ -897,7 +1044,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Inari",
@@ -909,7 +1058,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Mackerel (Saba)",
@@ -921,7 +1072,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Octopus (Tako)",
@@ -933,7 +1086,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Red Snapper (Tai)",
@@ -945,7 +1100,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Scallop Yum Yum",
@@ -957,7 +1114,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Aomori Scallop",
@@ -969,7 +1128,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Shrimp (Ebi)",
@@ -981,7 +1142,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Salmon Egg (Ikura)",
@@ -993,7 +1156,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Smelt Egg (Masago)",
@@ -1005,7 +1170,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Flying Fish Egg (Tobiko)",
@@ -1017,7 +1184,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Squid (Ika)",
@@ -1029,7 +1198,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Surf Clam (Hoikkigai)",
@@ -1041,7 +1212,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Conch (Makigai)",
@@ -1053,7 +1226,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Tako Wasabi",
@@ -1065,7 +1240,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Sweet Shrimp (Ama Ebi)",
@@ -1077,7 +1254,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Tamago (Egg Custard)",
@@ -1089,7 +1268,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "007 Roll",
@@ -1101,7 +1282,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Alaska Roll",
@@ -1113,7 +1296,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Avatar",
@@ -1125,7 +1310,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Banzai",
@@ -1137,7 +1324,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Black Jack",
@@ -1149,7 +1338,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Candy Cane",
@@ -1161,7 +1352,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Casanova",
@@ -1173,7 +1366,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Caterpillar",
@@ -1185,7 +1380,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Coco Mom",
@@ -1197,7 +1394,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Crazy Crab",
@@ -1209,7 +1408,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Cucumber Passion (no rice)",
@@ -1221,7 +1422,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Die Hard 1",
@@ -1233,7 +1436,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Dragon",
@@ -1245,7 +1450,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "EX-Girlfriend",
@@ -1257,7 +1464,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Final Destination",
@@ -1269,7 +1478,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Futomaki",
@@ -1281,7 +1492,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Golden Cali",
@@ -1293,7 +1506,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Golden Philly",
@@ -1305,7 +1520,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Hot Night",
@@ -1317,7 +1534,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "JJ Roll",
@@ -1329,7 +1548,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Junai Special",
@@ -1341,7 +1562,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Just for the halibut",
@@ -1353,7 +1576,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "K B.B.Q Roll",
@@ -1365,7 +1590,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Kiss My Ass",
@@ -1377,7 +1604,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Lisa Lisa",
@@ -1389,7 +1618,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Long Horn",
@@ -1401,7 +1632,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Mexican",
@@ -1413,7 +1646,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "OMG",
@@ -1425,7 +1660,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Pearl Special",
@@ -1437,7 +1674,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Play Boy",
@@ -1449,7 +1688,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Rainbow",
@@ -1461,7 +1702,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Red Devil",
@@ -1473,7 +1716,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Red Dragon",
@@ -1485,7 +1730,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Salmon Holic",
@@ -1497,7 +1744,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Salmon Lover",
@@ -1509,7 +1758,9 @@
 		"glutenFree": true,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Sashimi Special (4 pcs)",
@@ -1521,7 +1772,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Shrimp Tempura Roll",
@@ -1533,7 +1786,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Snow White",
@@ -1545,7 +1800,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Spider",
@@ -1557,7 +1814,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Star Buck",
@@ -1569,7 +1828,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Strip Salmon",
@@ -1581,7 +1842,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Sweet Heart",
@@ -1593,7 +1856,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Sweet Kiss",
@@ -1605,7 +1870,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Tiger",
@@ -1617,7 +1884,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Touch Down",
@@ -1629,7 +1898,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Wet Dream",
@@ -1641,7 +1912,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "White House",
@@ -1653,7 +1926,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": true
+		"fish": true,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Diablo",
@@ -1665,7 +1940,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Fat Ass",
@@ -1677,7 +1954,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Salmon Ass",
@@ -1689,7 +1968,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Stonehenge",
@@ -1701,7 +1982,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "TNT Roll (No Rice)",
@@ -1713,7 +1996,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Vegas",
@@ -1725,7 +2010,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "What The Hell",
@@ -1737,7 +2024,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Who’s Your Daddy?",
@@ -1749,7 +2038,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Who’s your Ex-Wife?",
@@ -1761,7 +2052,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": true
 	},
 	{
 		"name": "Death Valley",
@@ -1773,7 +2066,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Lasagna",
@@ -1785,7 +2080,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Mountain",
@@ -1797,7 +2094,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Volcano",
@@ -1809,7 +2108,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": true
 	},
 	{
 		"name": "Green Tea Ice Cream",
@@ -1821,7 +2122,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Vanilla Ice Cream",
@@ -1833,7 +2136,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Afogatto",
@@ -1845,7 +2150,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Ice Brownie",
@@ -1857,7 +2164,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Mochi Ice Cream",
@@ -1869,7 +2178,9 @@
 		"glutenFree": false,
 		"vegetarian": false,
 		"vegan": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "House Hot Sake",
@@ -2025,12 +2336,10 @@
 		"drinks": [
 			"Pepsi",
 			"Diet Pepsi",
-			"Fanta",
+			"Orange Fanta",
 			"Lemonade",
 			"Sierra Mist",
 			"Dr. Pepper",
-			"Sweet Tea",
-			"Unsweetened Tea",
 			"Arnold Palmer"
 		],
 		"menu": "drinks",
@@ -2038,13 +2347,14 @@
 		"category": "soft drinks"
 	},
 	{
-		"name": "Hot or Iced Tea",
+		"name": "Hot or Iced Black Tea",
+		"description": "Sugar or Sugar Substitute avaliable",
 		"menu": "drinks",
 		"price": 1.95,
 		"category": "soft drinks"
 	},
 	{
-		"name": "Hot Green Tea",
+		"name": "Hot or Iced Green Tea",
 		"menu": "drinks",
 		"price": 1.95,
 		"category": "soft drinks"
@@ -2177,7 +2487,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Sushi Platter",
@@ -2187,7 +2499,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Austin (6 pieces)",
@@ -2197,7 +2511,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Texas (12 pieces)",
@@ -2207,7 +2523,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "USA (18 pieces)",
@@ -2217,7 +2535,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "JUNAI (25 pieces)",
@@ -2227,7 +2547,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Chicken Salad",
@@ -2237,7 +2559,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Sashimi Salad",
@@ -2247,7 +2571,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Yellowtail Capachino (6 pieces)",
@@ -2257,7 +2583,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Cajun Albacore Sashimi (8 pieces)",
@@ -2267,7 +2595,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": true
+		"fish": true,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Salmon Collar",
@@ -2277,7 +2607,9 @@
 		"menu": "alc",
 		"glutenFree": true,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Yellowtail Collar",
@@ -2287,7 +2619,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Mini Rolly Katsu (4 pieces)",
@@ -2297,7 +2631,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Soft Shell Crab",
@@ -2307,7 +2643,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Chicken Yaki Udon",
@@ -2317,7 +2655,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Seafood Yaki Udon",
@@ -2327,7 +2667,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Nabeyaki Udon",
@@ -2337,7 +2679,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": true,
+		"spicy": false
 	},
 	{
 		"name": "Beef Teriyaki",
@@ -2347,7 +2691,9 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	},
 	{
 		"name": "Unagi Donburi",
@@ -2357,6 +2703,8 @@
 		"menu": "alc",
 		"glutenFree": false,
 		"vegetarian": false,
-		"fish": false
+		"fish": false,
+		"shellfish": false,
+		"spicy": false
 	}
 ]
