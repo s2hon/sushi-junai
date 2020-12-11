@@ -133,7 +133,7 @@ function Menu(props) {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button id={item.name} type="button" btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
                                                     }}
@@ -161,7 +161,7 @@ function Menu(props) {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
                                                     }}
@@ -188,7 +188,7 @@ function Menu(props) {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
                                                     }}
@@ -215,7 +215,7 @@ function Menu(props) {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
                                                     }}
@@ -242,7 +242,7 @@ function Menu(props) {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
                                                     }}
@@ -269,7 +269,7 @@ function Menu(props) {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
                                                     }}
@@ -296,7 +296,7 @@ function Menu(props) {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
                                                     }}
@@ -323,7 +323,7 @@ function Menu(props) {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
                                                     }}
@@ -350,7 +350,7 @@ function Menu(props) {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
                                                     }}
@@ -377,7 +377,7 @@ function Menu(props) {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
+                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
                                                     }}
