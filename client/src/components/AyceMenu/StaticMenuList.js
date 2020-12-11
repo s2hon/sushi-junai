@@ -7,8 +7,6 @@ import MenuNav from "../MenuNav/index";
 import Image from "../Image";
 import vegIcon from "./icons8-vegetarian-mark-48.png";
 import gfIcon from "./icons8-color-50.png";
-import spicyIcon from "../FoodKey/icons8-chili-pepper-144.png";
-import shellfishIcon from "../FoodKey/icons8-prawn-144.png";
 import Vegetarian from "../FoodKey/Vegetarian";
 import RawFish from "../FoodKey/Rawfish";
 import GlutenFree from "../FoodKey/GlutenFree";
@@ -16,8 +14,6 @@ import GlutenFree from "../FoodKey/GlutenFree";
 function Menu() {
     const [isVegetarian, setIsVegetarian] = useState(false);
     const [isGlutenFree, setIsGlutenFree] = useState(false);
-    const [isSpicy, setIsSpicy] = useState(false);
-    const [containsNoShellfish, setContainsNoShellfish] = useState(false);
 
     let ayceMenu = menu.filter(item => item.menu === "ayce");
 
@@ -27,13 +23,6 @@ function Menu() {
 
     if (isGlutenFree) {
         ayceMenu = ayceMenu.filter(item => item.glutenFree);
-    }
-    if (isSpicy) {
-        ayceMenu = ayceMenu.filter(item => item.spicy === false);
-    }
-
-    if (containsNoShellfish) {
-        ayceMenu = ayceMenu.filter(item => item.shellfish === false);
     }
 
 
@@ -56,12 +45,7 @@ function Menu() {
     function handleInputChangeGF() {
         setIsGlutenFree(!isGlutenFree);
     }
-    function handleInputChangeSpicy() {
-        setIsSpicy(!isSpicy);
-    }
-    function handleInputChangeShellfish() {
-        setContainsNoShellfish(!containsNoShellfish);
-    }
+
 
     return (
         <>
@@ -79,14 +63,6 @@ function Menu() {
                         <span class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
                             <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce or with tamari) </label>
-                        </span>
-                        <span className="form-check form-check-inline">
-                            <input className="form-check-input" type="checkbox" id="spicyCheckbox" onChange={handleInputChangeSpicy} value="spicy" />
-                            <label className="form-check-label" for="spicyCheckbox"><Image src={spicyIcon} width="18" alt="Not Spicy" />Not Spicy </label>
-                        </span>
-                        <span className="form-check form-check-inline">
-                            <input className="form-check-input" type="checkbox" id="shellfishCheckbox" onChange={handleInputChangeShellfish} value="shellfish" />
-                            <label className="form-check-label" for="shellfishCheckbox"><Image src={shellfishIcon} width="18" alt="Shellfish Free" />Shellfish Free </label>
                         </span>
                     </Row>
                     <Row>
