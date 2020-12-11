@@ -15,9 +15,7 @@ function Card(props) {
                     <div className="location-info">
                         <h2>{props.location}</h2>
                         <br/>
-                        <a target={"_blank"} rel="noreferrer" href={props.maps} style={{textDecoration: "none"}}>
-                            <li><FontAwesomeIcon icon={faLocationArrow} /> {props.address}</li>
-                        </a>
+                        <a href={props.href} target={"_blank"} rel="noreferrer" style={{ textDecoration: "none" }}><li><FontAwesomeIcon icon={faLocationArrow} /> {props.address}</li></a>
                         <ul>
                             <li><FontAwesomeIcon icon={faClock} /> Store Hours</li>
                             <li>Monday {props.mon}</li>
@@ -29,7 +27,7 @@ function Card(props) {
                             <li>Sunday {props.sun}</li>
                         </ul>
                         <br/>
-                            <li><FontAwesomeIcon icon={faPhone} /> {props.phone}</li>
+                        <a href="tel:{props.phonehref}"><li><FontAwesomeIcon icon={faPhone} />{props.phone}</li></a>
                     </div>
                 </div>
             </div>
