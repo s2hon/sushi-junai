@@ -79,7 +79,7 @@ function Menu(props) {
 
     return (
         <>
-            <Counter/>
+            <Counter />
             <Container>
                 <div className="menu-container">
                     <Row>
@@ -98,13 +98,13 @@ function Menu(props) {
                                     <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
                                 </span>
                                 <span className="form-check form-check-inline">
-                                <input className="form-check-input" type="checkbox" id="spicyCheckbox" onChange={handleInputChangeSpicy} value="spicy" />
-                                <label className="form-check-label" for="spicyCheckbox"><Image src={spicyIcon} width="18" alt="Not Spicy" />Not Spicy </label>
-                            </span>
-                            <span className="form-check form-check-inline">
-                                <input className="form-check-input" type="checkbox" id="shellfishCheckbox" onChange={handleInputChangeShellfish} value="shellfish" />
-                                <label className="form-check-label" for="shellfishCheckbox"><Image src={shellfishIcon} width="18" alt="Shellfish Free" />Shellfish Free </label>
-                            </span>
+                                    <input className="form-check-input" type="checkbox" id="spicyCheckbox" onChange={handleInputChangeSpicy} value="spicy" />
+                                    <label className="form-check-label" for="spicyCheckbox"><Image src={spicyIcon} width="18" alt="Not Spicy" />Not Spicy </label>
+                                </span>
+                                <span className="form-check form-check-inline">
+                                    <input className="form-check-input" type="checkbox" id="shellfishCheckbox" onChange={handleInputChangeShellfish} value="shellfish" />
+                                    <label className="form-check-label" for="shellfishCheckbox"><Image src={shellfishIcon} width="18" alt="Shellfish Free" />Shellfish Free </label>
+                                </span>
                             </Col>
                             <Col>
                                 <span>
@@ -135,7 +135,8 @@ function Menu(props) {
                                             <div className="card-body d-flex justify-content-between">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                     <Button id={item.name} type="button" btn={"float-right btn btn1"} function={() => {
-                                                        props.addItem(item) }} 
+                                                        props.addItem(item)
+                                                    }}
                                                     >
                                                         <FontAwesomeIcon icon={faPlus} />
                                                     </Button>
@@ -163,7 +164,7 @@ function Menu(props) {
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree}>
                                                     <Button btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
-                                                    }} 
+                                                    }}
                                                     >
                                                         <FontAwesomeIcon icon={faPlus} />
                                                     </Button>
@@ -393,8 +394,8 @@ function Menu(props) {
                     </Row>
 
                     <RawFish />
-                        <GlutenFree />
-                        <Vegetarian />
+                    <GlutenFree />
+                    <Vegetarian />
                 </div>
             </Container>
             <Scrollbar />
