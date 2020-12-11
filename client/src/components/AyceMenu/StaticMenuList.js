@@ -36,7 +36,6 @@ function Menu() {
         ayceMenu = ayceMenu.filter(item => item.shellfish === false);
     }
 
-
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
     const soups = ayceMenu.filter(item => item.category === "Soup/Noodles");
@@ -300,7 +299,6 @@ function Menu() {
                             }
                         </Container>
                     </Row>
-
                     <RawFish />
                     <GlutenFree />
                     <Vegetarian />

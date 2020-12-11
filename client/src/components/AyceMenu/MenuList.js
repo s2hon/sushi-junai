@@ -33,7 +33,6 @@ function Menu(props) {
     if (isVegetarian) {
         ayceMenu = ayceMenu.filter(item => item.vegetarian);
     }
-
     if (isGlutenFree) {
         ayceMenu = ayceMenu.filter(item => item.glutenFree);
     }
@@ -44,7 +43,6 @@ function Menu(props) {
     if (containsNoShellfish) {
         ayceMenu = ayceMenu.filter(item => item.shellfish === false);
     }
-
 
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");

@@ -52,7 +52,7 @@ function Menu() {
     const entrees = alcMenu.filter(item => item.category === "entree");
     const sushiSashimi = alcMenu.filter(item => item.category === "sushi and sashimi");
     const platters = alcMenu.filter(item => item.category === "platters");
-    //eventually users will be able to favorite items straight from the menu (if logged-in) 
+ 
 
     function handleInputChangeVeg() {
         setIsVegetarian(!isVegetarian);
