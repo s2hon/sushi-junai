@@ -113,6 +113,9 @@ function Menu(props) {
                                 <span>
                                     <Link to="/favorite"><Button type="button" btn="btn btn1 float-right">Favorites</Button></Link>
                                 </span>
+                                <span>
+                                    <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
+                                </span>
                             </Col>
                         </Container>
                     </Row>
