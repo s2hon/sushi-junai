@@ -28,12 +28,12 @@ function MenuItems(props) {
                         }
                         {
                                 props.spicy ?
-                                <a href="#glutenFree"><Image src={spicyIcon} width="18" alt="Spicy" /></a>
+                                <a href="#spicy"><Image src={spicyIcon} width="18" alt="Spicy" /></a>
                                 : <span></span>
                         }
                         {
                                 props.shellfish ?
-                                <a href="#glutenFree"><Image src={shellfishIcon} width="18" alt="Shellfish" /></a>
+                                <a href="#shellfish"><Image src={shellfishIcon} width="18" alt="Shellfish" /></a>
                                 : <span></span>
                         }
                         </h5>

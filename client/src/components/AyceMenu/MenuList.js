@@ -19,12 +19,12 @@ import gfIcon from "../FoodKey/icons8-no-gluten-144.png";
 import Vegetarian from "../FoodKey/Vegetarian";
 import RawFish from "../FoodKey/Rawfish";
 import GlutenFree from "../FoodKey/GlutenFree";
+import Shellfish from "../FoodKey/Shellfish";
+import Spicy from "../FoodKey/Spicy";
 
 function Menu(props) {
     const [isVegetarian, setIsVegetarian] = useState(false);
     const [isGlutenFree, setIsGlutenFree] = useState(false);
-    const [isSpicy, setIsSpicy] = useState(false);
-    const [containsNoShellfish, setContainsNoShellfish] = useState(false);
 
     let ayceMenu = menu.filter(item => item.menu === "ayce");
 
@@ -34,24 +34,6 @@ function Menu(props) {
     if (isGlutenFree) {
         ayceMenu = ayceMenu.filter(item => item.glutenFree);
     }
-    if (isSpicy) {
-        ayceMenu = ayceMenu.filter(item => item.spicy === false);
-    }
-
-<<<<<<< HEAD
-    if (isSpicy) {
-        ayceMenu = ayceMenu.filter(item => item.spicy === false);
-    }
-
-    if (containsNoShellfish) {
-        ayceMenu = ayceMenu.filter(item => item.shellfish === false);
-    }
-
-=======
-    if (containsNoShellfish) {
-        ayceMenu = ayceMenu.filter(item => item.shellfish === false);
-    }
->>>>>>> f42acb280484887bd92120c2d4f7bf782cce07b1
 
     const appetizers = ayceMenu.filter(item => item.category === "Appetizer");
     const salads = ayceMenu.filter(item => item.category === "Salad");
@@ -71,19 +53,6 @@ function Menu(props) {
 
     function handleInputChangeGF() {
         setIsGlutenFree(!isGlutenFree);
-    }
-    function handleInputChangeSpicy() {
-        setIsSpicy(!isSpicy);
-    }
-    function handleInputChangeShellfish() {
-        setContainsNoShellfish(!containsNoShellfish);
-    }
-
-    function handleInputChangeSpicy() {
-        setIsSpicy(!isSpicy);
-    }
-    function handleInputChangeShellfish() {
-        setContainsNoShellfish(!containsNoShellfish);
     }
 
     const { menuCart } = props
@@ -122,14 +91,6 @@ function Menu(props) {
                                 <span className="form-check form-check-inline">
                                     <input className="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
                                     <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce or with tamari) </label>
-                                </span>
-                                <span className="form-check form-check-inline">
-                                    <input className="form-check-input" type="checkbox" id="spicyCheckbox" onChange={handleInputChangeSpicy} value="spicy" />
-                                    <label className="form-check-label" for="spicyCheckbox"><Image src={spicyIcon} width="18" alt="Not Spicy" />Not Spicy </label>
-                                </span>
-                                <span className="form-check form-check-inline">
-                                    <input className="form-check-input" type="checkbox" id="shellfishCheckbox" onChange={handleInputChangeShellfish} value="shellfish" />
-                                    <label className="form-check-label" for="shellfishCheckbox"><Image src={shellfishIcon} width="18" alt="Shellfish Free" />Shellfish Free </label>
                                 </span>
                             </Col>
                             <Col>
@@ -422,6 +383,8 @@ function Menu(props) {
                     <RawFish />
                     <GlutenFree />
                     <Vegetarian />
+                    <Shellfish />
+                    <Spicy />
                 </div>
             </Container>
             <Scrollup />
