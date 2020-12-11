@@ -13,14 +13,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlus } from "@fortawesome/free-solid-svg-icons"
 import vegIcon from "./icons8-vegetarian-mark-48.png";
 import gfIcon from "./icons8-color-50.png";
-import fishIcon from "./icons8-dressed-fish-50.png";
+import spicyIcon from "../FoodKey/icons8-chili-pepper-144.png";
+import shellfishIcon from "../FoodKey/icons8-prawn-144.png";
 import Col from "../Col";
 import Scrollbar from "../ScrollUp/index";
 import Counter from "../Counter";
+import Vegetarian from "../FoodKey/Vegetarian";
+import RawFish from "../FoodKey/Rawfish";
+import GlutenFree from "../FoodKey/GlutenFree";
 
 function Menu(props) {
     const [isVegetarian, setIsVegetarian] = useState(false);
     const [isGlutenFree, setIsGlutenFree] = useState(false);
+    const [isSpicy, setIsSpicy] = useState(false);
+    const [containsNoShellfish, setContainsNoShellfish] = useState(false);
 
     let ayceMenu = menu.filter(item => item.menu === "ayce");
 
@@ -30,6 +36,13 @@ function Menu(props) {
 
     if (isGlutenFree) {
         ayceMenu = ayceMenu.filter(item => item.glutenFree);
+    }
+    if (isSpicy) {
+        ayceMenu = ayceMenu.filter(item => item.spicy === false);
+    }
+
+    if (containsNoShellfish) {
+        ayceMenu = ayceMenu.filter(item => item.shellfish === false);
     }
 
 
@@ -51,6 +64,13 @@ function Menu(props) {
 
     function handleInputChangeGF() {
         setIsGlutenFree(!isGlutenFree);
+    }
+
+    function handleInputChangeSpicy() {
+        setIsSpicy(!isSpicy);
+    }
+    function handleInputChangeShellfish() {
+        setContainsNoShellfish(!containsNoShellfish);
     }
 
     const { menuCart } = props
@@ -77,6 +97,14 @@ function Menu(props) {
                                     <input className="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
                                     <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
                                 </span>
+                                <span className="form-check form-check-inline">
+                                <input className="form-check-input" type="checkbox" id="spicyCheckbox" onChange={handleInputChangeSpicy} value="spicy" />
+                                <label className="form-check-label" for="spicyCheckbox"><Image src={spicyIcon} width="18" alt="Not Spicy" />Not Spicy </label>
+                            </span>
+                            <span className="form-check form-check-inline">
+                                <input className="form-check-input" type="checkbox" id="shellfishCheckbox" onChange={handleInputChangeShellfish} value="shellfish" />
+                                <label className="form-check-label" for="shellfishCheckbox"><Image src={shellfishIcon} width="18" alt="Shellfish Free" />Shellfish Free </label>
+                            </span>
                             </Col>
                             <Col>
                                 <span>
@@ -361,22 +389,9 @@ function Menu(props) {
                         </Container>
                     </Row>
 
-                    <Row>
-                        <h5 id="rawfish">Raw Fish <Image src={fishIcon} width="18" alt="Raw Fish" /></h5>
-                        <Container>
-                            <p>Consuming raw or undercooked fish increases the risk of food bourne diseases, especially in people with certain health conditions.</p>
-                        </Container>
-                    </Row>
-
-                    <Row>
-                        <h5 id="glutenFree">Gluten Free <Image src={gfIcon} width="18" alt="Gluten Free" /></h5>
-                        <Container>
-                            <p>Request no sauce when ordering.</p>
-                        </Container>
-                    </Row>
-                    <Row>
-                        <h5 id="vegetarian">Vegetarian <Image src={vegIcon} width="18" alt="Vegetarian" /></h5>
-                    </Row>
+                    <RawFish />
+                        <GlutenFree />
+                        <Vegetarian />
                 </div>
             </Container>
             <Scrollbar />
