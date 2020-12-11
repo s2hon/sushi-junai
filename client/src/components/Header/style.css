@@ -1,64 +1,179 @@
-* {
-    list-style:none !important;
+/* font-family: 'Philosopher', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+.logo {
+	max-width: 180px;
+	margin-top: 10%;
+}
+.logo img{
+	max-width: 200%;
+}
+.middle-header {
+	font-family: 'Philosopher', sans-serif;
+	box-shadow: 0px 5px 14.25px 0.75px rgba(12, 105, 184, 0.1);
+	background-color: #573635;
+	margin-top: 0;
+	height: 110%;
+	position: relative;
 }
 
-.topbar {
-    object-fit: contain;
-    max-width: 100%;
+nav ul {
+	text-align: right;
+}
+nav > ul > li {
+	display: inline-block;
+	position: relative;
+}
+nav ul li a {
+	display: inline-block;
+	color: #F8F0EB ;
+	font-size: 20px;
+	font-weight: 600;
+	position: relative;
+	padding: 40px 25px;
+}
+nav ul li a:before {
+	content: "";
+	background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 43px;
+    border-radius: 43px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 21px);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+	z-index: -1;
+	
+}
+nav ul li a.active:before{
+	opacity: 1;
+}
+nav ul li a:hover:before{
+	opacity: 1;
+}
+nav ul li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+}
+nav ul li:hover > ul li {
+	margin-top: 0;
+}
+nav ul li a:hover,
+nav ul li a.active {
+	color: #F1B4AF;
+	text-decoration: none;
 }
 
-.hide {
-    display: none;
+nav ul ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 215px;
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.08);
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.08);
+	-ms-box-shadow: 0 0 20px rgba(0,0,0,0.08);
+	-o-box-shadow: 0 0 20px rgba(0,0,0,0.08);
+	box-shadow: 0 0 20px rgba(0,0,0,0.08);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 99;
+	text-align: left;
+}
+nav ul ul li {
+	padding: 10px 15px;
+	background-color: #573635;
+	border-bottom: 1px solid #ebebeb;
+	margin-top: 20px;
+	position: relative;
+	transition: all .5s;
+	position: relative;
+}
+nav ul ul li i{
+	position: absolute;
+	right: 10px;
+	top: 18px;
+}
+nav ul ul li a{
+	padding: 5px;
+	color: #F8F0EB;
+}
+nav ul ul li:last-child {
+	border-bottom: 0;
+}
+nav ul ul ul {
+	left: 100%;
+	top: 4px;
+	transition: all .5s;
 }
 
-.topbar li {
-    position: relative;
-    align-self: auto;
-    margin-top: 10%;
+header.fixed,
+header.fixed.style2,
+.layout3 header.fixed,
+.layout4 header.fixed,
+header.ab.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background-color: #EBDFD9;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.10);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.10);
+	-ms-box-shadow: 0 0 10px rgba(0,0,0,0.10);
+	-o-box-shadow: 0 0 10px rgba(0,0,0,0.10);
+	box-shadow: 0 0 10px rgba(0,0,0,0.10);
+	padding-top: 0;
+}
+header.fixed .header-content {
+	-webkit-box-shadow: inherit;
+	-moz-box-shadow: inherit;
+	-ms-box-shadow: inherit;
+	-o-box-shadow: inherit;
+	box-shadow: inherit;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-@media (max-width: 991px) {
-.topbar ul li {
-        font-size: 12px;
-        list-style:none;
-    }
+.middle-header nav ul{
+	margin-bottom: 0;
+	border-radius: 25px;
 }
 
-@media (max-width: 767px) {
-.topbar ul li {
-        border: none;
-        font-size: 13px;
-        list-style:none;
-    }
+
+@media(max-width:991px){
+	.middle-header {
+		position: relative;
+		background: #573635;
+		padding-bottom: 20px;
+	}
+	.header-content .contact-info-1 span {
+		margin-right: 20px;
+		margin-top: 0;
+	}
 }
 
-@media (max-width: 590px) {
-.topbar ul li {
-        float: none;
-        list-style:none;
-        
-    }
+
+@media(max-width:500px){
+	.header-content .contact-info-1 span{
+		display: none;
+	}
 }
 
-.topbar ul>li+li+li {
-    padding: 0;
-    list-style:none;
-}
+  @media(max-width:1400px){
+	nav ul ul ul {
+		left: -100%;
+	}
+  }
 
-.topbar ul>li+li {
-    list-style:none;
-}
 
-.topbar ul .fi {
-    top: 1px;
-    display: inline-block;
-    list-style:none;
-}
-
-.topbar ul .fi:before {
-    font-size: 15px;
-    font-size: 1rem;
-    color: #f2f2f2;
-    list-style:none;
-    left: 10%;
-}
+  @media(max-width:1200px){
+	nav ul li a {
+		display: inline-block;
+		padding: 40px 20px;
+	}
+  }

@@ -5,10 +5,16 @@ import menu from "../../db/menu.json";
 import MenuItems from "../MenuItems";
 import MenuNav from "../MenuNav/index";
 import Image from "../Image";
+<<<<<<< HEAD
+import vegIcon from "../FoodKey/icons8-vegetarian-mark-144.png";
+import gfIcon from "../FoodKey/icons8-no-gluten-144.png";
+import fishIcon from "../FoodKey/icons8-dressed-fish-144.png";
+=======
 import vegIcon from "./icons8-vegetarian-mark-48.png";
 import gfIcon from "./icons8-color-50.png";
 import spicyIcon from "../FoodKey/icons8-chili-pepper-144.png";
 import shellfishIcon from "../FoodKey/icons8-prawn-144.png";
+>>>>>>> f42acb280484887bd92120c2d4f7bf782cce07b1
 import Vegetarian from "../FoodKey/Vegetarian";
 import RawFish from "../FoodKey/Rawfish";
 import GlutenFree from "../FoodKey/GlutenFree";

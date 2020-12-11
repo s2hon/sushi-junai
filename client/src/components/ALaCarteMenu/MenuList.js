@@ -4,6 +4,7 @@ import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "./MenuItems";
 import MenuNav from "../MenuNav/index";
+import Scrollup from "../ScrollUp/index";
 import Image from "../Image";
 import vegIcon from "../AyceMenu/icons8-vegetarian-mark-48.png";
 import gfIcon from "../AyceMenu/icons8-color-50.png";
@@ -375,8 +376,9 @@ function Menu() {
                         <Vegetarian />
                     </div>
                 </Container>
-            </>
-        );
-    }
+                <Scrollup />
+        </>
+    );
+}
 
 export default Menu;
