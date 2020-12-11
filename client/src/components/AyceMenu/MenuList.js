@@ -19,6 +19,8 @@ import Counter from "../Counter";
 import Vegetarian from "../FoodKey/Vegetarian";
 import RawFish from "../FoodKey/Rawfish";
 import GlutenFree from "../FoodKey/GlutenFree";
+import Shellfish from "../FoodKey/Shellfish";
+import Spicy from "../FoodKey/Spicy";
 
 function Menu(props) {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -370,6 +372,8 @@ function Menu(props) {
                     <RawFish />
                     <GlutenFree />
                     <Vegetarian />
+                    <Shellfish />
+                    <Spicy />
                 </div>
             </Container>
             <Scrollbar />
