@@ -5,9 +5,12 @@ import menu from "../../db/menu.json";
 import MenuItems from "../MenuItems";
 import MenuNav from "../MenuNav/index";
 import Image from "../Image";
-import vegIcon from "./icons8-vegetarian-mark-48.png";
-import gfIcon from "./icons8-color-50.png";
-import fishIcon from "./icons8-dressed-fish-50.png";
+import vegIcon from "../FoodKey/icons8-vegetarian-mark-144.png";
+import gfIcon from "../FoodKey/icons8-no-gluten-144.png";
+import fishIcon from "../FoodKey/icons8-dressed-fish-144.png";
+import Vegetarian from "../FoodKey/Vegetarian";
+import RawFish from "../FoodKey/Rawfish";
+import GlutenFree from "../FoodKey/GlutenFree";
 
 function Menu() {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -273,23 +276,9 @@ function Menu() {
                             }
                         </Container>
                     </Row>
-
-                    <Row>
-                        <h5 id="rawfish">Raw Fish <Image src={fishIcon} width="18" alt="Raw Fish" /></h5>
-                        <Container>
-                            <p>Consuming raw or undercooked fish increases the risk of food bourne diseases, especially in people with certain health conditions.</p>
-                        </Container>
-                    </Row>
-
-                    <Row>
-                        <h5 id="glutenFree">Gluten Free <Image src={gfIcon} width="18" alt="Gluten Free" /></h5>
-                        <Container>
-                            <p>Request no sauce when ordering.</p>
-                        </Container>
-                    </Row>
-                    <Row>
-                        <h5 id="vegetarian">Vegetarian <Image src={vegIcon} width="18" alt="Vegetarian" /></h5>
-                    </Row>
+                    <RawFish />
+                    <GlutenFree />
+                    <Vegetarian />
                     </div>
                 </Container>
         </>
