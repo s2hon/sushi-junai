@@ -1,5 +1,5 @@
 import React from "react";
-import fishIcon from "../AyceMenu/icons8-dressed-fish-50.png";
+import fishIcon from "../FoodKey/icons8-dressed-fish-144.png";
 import Image from "../Image";
 import { Col } from 'reactstrap';
 
