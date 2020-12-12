@@ -2738,5 +2738,45 @@
 		"menu": "lunch",
 		"category": "house special",
 		"fish": true
+	},
+	{
+		"name": "Combo A",
+		"description": "2 Special Rolls, Seaweed Salad, Kurobuta (Black pig) Sausage 4 pcs, 1 cup of Miso Soup",
+		"price": 24.95,
+		"menu": "togo",
+		"servings": "1-2 servings",
+		"fish": true
+	},
+	{
+		"name": "Combo B",
+		"description": "2 Special Rolls, 1 Classic Roll, Gyoza 4 pcs (pork or veggie), 1 Cup of miso, Spicy Garlic Edamame, Monkey Brain 4pcs",
+		"price": 32.95,
+		"menu": "togo",
+		"servings": "2-3 servings",
+		"fish": true
+	},
+	{
+		"name": "Combo C",
+		"description": "1 Special Roll, 3 Classic Roll, full size Tuna OR Salmon Poki, 1 cup of Miso Soup, Chicken Karaage",
+		"price": 32.95,
+		"menu": "togo",
+		"servings": "2-3 servings",
+		"fish": true
+	},
+	{
+		"name": "Combo D",
+		"description": "4 SpeciaL Rolls, 1 Classic Roll, Spring Rolls 4pcs(fried), full size Tuna OR Salmon Poki, 2 cups of Miso Soup, Shrimp Tempura 4 pcs",
+		"price": 59.95,
+		"menu": "togo",
+		"servings": "3-5 servings",
+		"fish": true
+	},
+	{
+		"name": "Combo E",
+		"description": "3 Special Rolls, 3 classic Rolls, 2 cups of Miso Soup, Spicy Garlic Edamame, Chicken Karaage",
+		"price": 49.90,
+		"menu": "togo",
+		"servings": "3-5 servings",
+		"fish": true
 	}
 ]
