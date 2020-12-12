@@ -34,7 +34,7 @@ const MenuCartItem = (props) => {
         <td>
         <p><Button type="button" className="btn1 btn" onClick={() => props.decrementItem(props.item)}><span className="black-text">-</span></Button>
         {quantity}
-        <Button type="button" className="btn btn1" onClick={() => props.incrementItem(props.item)}><span className="black-text">+</span></Button></p>
+        <Button type="button" className="btn btn1" onClick={() => props.incrementItem(props.item)} disabled={props.onetime}><span className="black-text">+</span></Button></p>
         </td>
         <td><p>$ {price.toFixed(2)}</p></td>
         <td><Button  type="button" className={"btn btn2"} onClick={() => props.removeItem(props.item)}><span className="black-text">X</span></Button></td>

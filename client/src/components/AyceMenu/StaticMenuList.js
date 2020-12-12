@@ -6,8 +6,8 @@ import MenuItems from "../MenuItems";
 import MenuNav from "../MenuNav/index";
 import Image from "../Image";
 
-import vegIcon from "./icons8-vegetarian-mark-48.png";
-import gfIcon from "./icons8-color-50.png";
+import vegIcon from "../FoodKey/icons8-vegetarian-mark-144.png";
+import gfIcon from "../FoodKey/icons8-no-gluten-144.png";
 import Vegetarian from "../FoodKey/Vegetarian";
 import RawFish from "../FoodKey/Rawfish";
 import GlutenFree from "../FoodKey/GlutenFree";
