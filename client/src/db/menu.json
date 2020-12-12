@@ -2706,5 +2706,37 @@
 		"fish": false,
 		"shellfish": false,
 		"spicy": false
+	},
+	{
+		"name": "Otokoyama Sake",
+		"description": "",
+		"price": 18,
+		"menu": "lunch",
+		"category": "house special",
+		"fish": false
+	},
+	{
+		"name": "Itami Onigoroshi Sake",
+		"description": "",
+		"price": 18,
+		"menu": "lunch",
+		"category": "house special",
+		"fish": false
+	},
+	{
+		"name": "Two Roll Combo",
+		"description": "Chef Special, miso soup, and salad",
+		"price": 14.95,
+		"menu": "lunch",
+		"category": "house special",
+		"fish": true
+	},
+	{
+		"name": "Five Piece Nigiri",
+		"description": "Chef's Choice",
+		"price": 19.95,
+		"menu": "lunch",
+		"category": "house special",
+		"fish": false
 	}
 ]
