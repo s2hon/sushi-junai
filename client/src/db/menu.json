@@ -2737,6 +2737,6 @@
 		"price": 19.95,
 		"menu": "lunch",
 		"category": "house special",
-		"fish": false
+		"fish": true
 	}
 ]
