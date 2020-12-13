@@ -5,7 +5,6 @@ import menu from "../../db/menu.json";
 import MenuItems from "../MenuItems";
 import MenuNav from "../MenuNav/index";
 import Image from "../Image";
-
 import vegIcon from "../FoodKey/icons8-vegetarian-mark-144.png";
 import gfIcon from "../FoodKey/icons8-no-gluten-144.png";
 import Vegetarian from "../FoodKey/Vegetarian";
