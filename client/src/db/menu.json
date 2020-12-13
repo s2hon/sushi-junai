@@ -2639,13 +2639,15 @@
 		"description": "Sugar or sugar substitute avaliable",
 		"menu": "drinks",
 		"price": 1.95,
-		"category": "soft drinks"
+		"category": "soft drinks",
+		"restaurant": "both"
 	},
 	{
 		"name": "Hot or Iced Green Tea",
 		"menu": "drinks",
 		"price": 1.95,
-		"category": "soft drinks"
+		"category": "soft drinks",
+		"restaurant": "both"
 	},
 	{
 		"name": "Hot Green Tea (pot)",
