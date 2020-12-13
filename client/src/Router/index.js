@@ -14,6 +14,7 @@ import Footer from "../components/Footer/index";
 import LunchMenu from '../pages/LunchMenu';
 import StaticAYCEMenu from '../pages/StaticAYCEMenu';
 import SignupSignin from '../pages/SignupSignIn';
+import Takeout from '../pages/Takeout';
 import Header from "../components/Header";
 
 const AllRoute = () => { 
@@ -36,6 +37,7 @@ const AllRoute = () => {
         <Route exact path="/lunch" component={LunchMenu}/>
         <Route exact path="/aycestatic" component={StaticAYCEMenu}/>
         <Route exact path="/signinsignup" component={SignupSignin}/>
+        <Route exact path="/takeout" component={Takeout}/>
       </Switch>
       <Footer />
     </div>

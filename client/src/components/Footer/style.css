@@ -1,15 +1,15 @@
-footer {
+/* footer {
     flex-shrink: 0;
     width: 100%;
-}
-.wpo-site-footer {
+} */
+/* .wpo-site-footer {
     background: #F26430;
     position: relative;
     font-size: 15px;
     overflow: hidden;
     flex-direction: row;
     color: #f2f2f2;
-}
+} */
 
 .wpo-site-footer p {
     margin-top: 10px;
@@ -32,31 +32,31 @@ footer {
     text-align: center !important;
     position: relative;
 }
-
+/* 
 .wpo-site-footer .container {
     position: relative;
     color: #f2f2f2;
-}
+} */
 
 .wpo-site-footer .wpo-upper-footer {
     padding: 0 0 0px;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
 
     .wpo-site-footer .wpo-upper-footer .col {
         min-height: 235px;
         margin-bottom: 0px;
     }
-}
+} */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 
     .wpo-site-footer .wpo-upper-footer .col {
         min-height: auto;
         margin-bottom: 0px;
     }
-}
+} */
 
 .wpo-site-footer .about-widget p {
     margin-bottom: 0.2em;

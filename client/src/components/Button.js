@@ -1,9 +1,8 @@
 import React from "react";
-import "./button.css";
 
 function Button(props) {
     return (
-        <button type={`${props.type}`} className={`${props.btn}`} onClick={props.function}><i className={`${props.icon}`}></i>{props.children}</button>
+        <button type={`${props.type}`} className={`${props.btn}`} onClick={props.function} disabled={props.onetime}>{props.children}</button>
     );
 }
 
