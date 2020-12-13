@@ -2185,9 +2185,11 @@
 	{
 		"name": "House Hot Sake",
 		"category": "sake",
+		"subcategory": "sake",
 		"menu": "drinks",
 		"smallPrice": 3.5,
-		"largePrice": 5.95
+		"largePrice": 5.95,
+		"restaurant": "both"
 	},
 	{
 		"name": "Ozeki Karatamba, Honjozo",
@@ -2196,7 +2198,9 @@
 		"size": "300 ml",
 		"description": "Ozeki Karatamba has a full-bodied, rich taste that feels smooth on the palate",
 		"price": 14,
-		"category": "sake"
+		"category": "sake",
+		"subcategory": "premium sake",
+		"restaurant": "sj1"
 	},
 	{
 		"name": "Ozeki Yamada Nishik, Tokubetsu Junmai",
@@ -2205,7 +2209,9 @@
 		"size": "300 ml",
 		"description": "Ozeki Yamadanishiki tastes clean and refreshing with a dry aftertaste.",
 		"price": 14,
-		"category": "sake"
+		"category": "sake",
+		"subcategory": "premium sake",
+		"restaurant": "sj1"
 	},
 	{
 		"name": "Joto One Cup \"Graffiti Cup\", Honjozo",
@@ -2214,7 +2220,9 @@
 		"size": "200 ml",
 		"description": "Light and fresh, notes of juicy green apple and watermelon",
 		"price": 7,
-		"category": "sake"
+		"category": "sake",
+		"subcategory": "premium sake",
+		"restaurant": "sj1"
 	},
 	{
 		"name": "Joto Yuri Masamune Honjozo",
@@ -2223,7 +2231,9 @@
 		"size": "200 ml",
 		"description": "This sake has nutty and earthy notes and is balanced by an underlying fruitiness.",
 		"price": 9,
-		"category": "sake"
+		"category": "sake",
+		"subcategory": "premium sake",
+		"restaurant": "sj1"
 	},
 	{
 		"name": "Ozeki Dry Sake, Junmai",
@@ -2232,7 +2242,9 @@
 		"size": "750 ml",
 		"description": "This is an excellent choice for first time sake drinkers due to its lower alcohol content and smooth taste",
 		"price": 18,
-		"category": "sake"
+		"category": "sake",
+		"subcategory": "premium sake",
+		"restaurant": "sj1"
 	},
 	{
 		"name": "Ozeki Nigori, Junmai Nigori",
@@ -2241,7 +2253,9 @@
 		"size": "375 ml",
 		"description": "The texture is velvety smooth and soft and has a tropical flavor similar to coconut milk.",
 		"price": 12,
-		"category": "sake"
+		"category": "sake",
+		"subcategory": "premium sake",
+		"restaurant": "sj1"
 	},
 	{
 		"name": "Sho Chiku Bai Nigori",
@@ -2250,7 +2264,9 @@
 		"size": "300 ml",
 		"description": "Coconut custard on the nose with pear and coconut.",
 		"price": 10,
-		"category": "sake"
+		"category": "sake",
+		"subcategory": "premium sake",
+		"restaurant": "both"
 	},
 	{
 		"name": "Shirayuki Nama",
@@ -2259,7 +2275,9 @@
 		"size": "300 ml",
 		"description": "A unique, light and fresh, easy to drink sake.",
 		"price": 11,
-		"category": "sake"
+		"category": "sake",
+		"subcategory": "premium sake",
+		"restaurant": "both"
 	},
 	{
 		"name": "Shirayuki Junmai Gingo",
@@ -2268,7 +2286,63 @@
 		"size": "300 ml",
 		"description": "A great-tasting sake with a fruit aroma.",
 		"price": 16,
-		"category": "sake"
+		"category": "sake",
+		"subcategory": "premium sake",
+		"restaurant": "both"
+	},
+	{
+		"name": "Nigori",
+		"subtitle": "cream sake",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "Aromas of pear and coconut",
+		"price": 10,
+		"category": "sake",
+		"subcategory": "premium sake",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Itami Onigorosi",
+		"subtitle": "",
+		"menu": "drinks",
+		"size": "300 ml | 1.8 L",
+		"description": "Mellow with citrus tones and a dry finish",
+		"smallPrice": 15,
+		"largePrice": 69,
+		"category": "sake",
+		"subcategory": "premium sake",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Hana",
+		"subtitle": "fuji apple, lychee, raspberry",
+		"menu": "drinks",
+		"size": "750 ml",
+		"description": "Mellow with citrus tones and a dry finish",
+		"price": 22,
+		"category": "sake",
+		"subcategory": "flavored sake",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "MIO",
+		"subtitle": "sparkling sake",
+		"menu": "drinks",
+		"size": "300 ml",
+		"description": "Refreshing and fruity",
+		"price": 14,
+		"category": "sake",
+		"subcategory": "flavored sake",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Choya",
+		"description": "Wine with unique uma flavor (premium plum wine from Japan)",
+		"menu": "drinks",
+		"price": 25,
+		"size": "750 ml",
+		"category": "plum wine",
+		"restaurant": "sj2"
 	},
 	{
 		"name": "Estancia Chardonnay",
@@ -2276,7 +2350,9 @@
 		"menu": "drinks",
 		"glassPrice": 6,
 		"bottlePrice": 22,
-		"category": "wine"
+		"category": "wine",
+		"subcategory": "white",
+		"restaurant": "sj1"
 	},
 	{
 		"name": "Chateau Ste Michelle Riesling",
@@ -2284,7 +2360,9 @@
 		"menu": "drinks",
 		"glassPrice": 6,
 		"bottlePrice": 23,
-		"category": "wine"
+		"category": "wine",
+		"subcategory": "white",
+		"restaurant": "sj1"
 	},
 	{
 		"name": "Castle Rock Pinot Noir",
@@ -2292,7 +2370,9 @@
 		"menu": "drinks",
 		"glassPrice": 7,
 		"bottlePrice": 27,
-		"category": "wine"
+		"category": "wine",
+		"subcategory": "red",
+		"restaurant": "sj1"
 	},
 	{
 		"name": "Fall Creek Merlot",
@@ -2300,7 +2380,9 @@
 		"menu": "drinks",
 		"glassPrice": 6,
 		"bottlePrice": 23,
-		"category": "wine"
+		"category": "wine",
+		"subcategory": "red",
+		"restaurant": "sj1"
 	},
 	{
 		"name": "Robert Mondavi Private Selection Cabernet",
@@ -2308,28 +2390,233 @@
 		"menu": "drinks",
 		"glassPrice": 6,
 		"bottlePrice": 24,
-		"category": "wine"
+		"category": "wine",
+		"subcategory": "red",
+		"restaurant": "sj1"
+	},
+	{
+		"name": "Robert Mondavi Private Selection Cabernet",
+		"origin": "California",
+		"menu": "drinks",
+		"glassPrice": 6,
+		"bottlePrice": 24,
+		"category": "wine",
+		"subcategory": "red",
+		"restaurant": "sj1"
+	},
+	{
+		"name": "Zardetto Prosecco",
+		"description": "Sparkling wine with notes of pear and apples with a hint of wild flowers",
+		"menu": "drinks",
+		"glassPrice": "",
+		"bottlePrice": 30,
+		"category": "wine",
+		"subcategory": "sparkling",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Avissi Prosecco",
+		"description": "Delicate with floral notes and fruit aromas",
+		"menu": "drinks",
+		"glassPrice": "",
+		"bottlePrice": 38,
+		"category": "wine",
+		"subcategory": "sparkling",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Schramsberg Brut Rose",
+		"description": "Aromas of mixed red berries, white peach, flavors of raspberries and apricot",
+		"menu": "drinks",
+		"glassPrice": "",
+		"bottlePrice": 70,
+		"category": "wine",
+		"subcategory": "sparkling",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Santa Cristina Pinot Grigio",
+		"description": "Aromas of orange flowers, tropical fruit and bananas",
+		"menu": "drinks",
+		"glassPrice": 8,
+		"bottlePrice": 30,
+		"category": "wine",
+		"subcategory": "white",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Count Karolyi Gruner Veltliner",
+		"description": "Fresh white wine with notes of lemon and a touch of spice",
+		"menu": "drinks",
+		"glassPrice": 7,
+		"bottlePrice": 26,
+		"category": "wine",
+		"subcategory": "white",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Napa Cellars Sauvignon Blanc",
+		"description": "Aromas of gooseberry and pineapple with flavors of pear and guava",
+		"menu": "drinks",
+		"glassPrice": 10,
+		"bottlePrice": 38,
+		"category": "wine",
+		"subcategory": "white",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "St Supery Dollarhide Sauvignon Blanc",
+		"description": "Aromas of gooseberry and pineapple with flavors of pear and guava",
+		"menu": "drinks",
+		"glassPrice": 10,
+		"bottlePrice": 38,
+		"category": "wine",
+		"subcategory": "white",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Schmitt Sohne Riesling",
+		"description": "Flavors of apricots and peaches, balanced with bright acidity",
+		"menu": "drinks",
+		"glassPrice": 7,
+		"bottlePrice": 26,
+		"category": "wine",
+		"subcategory": "white",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Charles Smith Kung Fu Girl Riesling",
+		"description": "Flavors of white stone fruit and Fuji apples",
+		"menu": "drinks",
+		"glassPrice": 9,
+		"bottlePrice": 34,
+		"category": "wine",
+		"subcategory": "white",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Trefthen Dry Riesling",
+		"description": "Aromas of orange blossom and lime zest with a lush tropical fruit finish",
+		"menu": "drinks",
+		"glassPrice": 11,
+		"bottlePrice": 42,
+		"category": "wine",
+		"subcategory": "white",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "10 Span Central Coast Chardonnay",
+		"description": "Flavors of lush fruit with a touch of oak",
+		"menu": "drinks",
+		"glassPrice": 7,
+		"bottlePrice": 26,
+		"category": "wine",
+		"subcategory": "white",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Sonoma Curter Russian River Chardonnay",
+		"description": "Aromas of fresh apple and peach with oak and spice on the finish",
+		"menu": "drinks",
+		"glassPrice": 12,
+		"bottlePrice": 45,
+		"category": "wine",
+		"subcategory": "white",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Argyle Willamette Pinot Noir",
+		"description": "Aromas of black cherry, black tea and a hint of spice with silky tannins",
+		"menu": "drinks",
+		"glassPrice": 11,
+		"bottlePrice": 42,
+		"category": "wine",
+		"subcategory": "red",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Meiomi Pinot Noir",
+		"description": "Flavors of bright strawberry, mocha and toasty oak notes",
+		"menu": "drinks",
+		"glassPrice": 12,
+		"bottlePrice": 46,
+		"category": "wine",
+		"subcategory": "red",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Foley Santa Rita Hills Pinot Noir",
+		"description": "Vivacious red fruit notes with hints of violet and toasted oak, lingering finish",
+		"menu": "drinks",
+		"glassPrice": "",
+		"bottlePrice": 62,
+		"category": "wine",
+		"subcategory": "red",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Wild Horse Merlot",
+		"description": "Aromas of berry cobbler and mocha with a hint of cedar",
+		"menu": "drinks",
+		"glassPrice": 10,
+		"bottlePrice": 38,
+		"category": "wine",
+		"subcategory": "red",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Tasca Almerita Regaleale Nero De'avola",
+		"description": "Notes of cherry, raspberry and rose petals with a refreshing finish",
+		"menu": "drinks",
+		"glassPrice": 10,
+		"bottlePrice": 38,
+		"category": "wine",
+		"subcategory": "red",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Hess Shirtail Ranches Cabernet Sauvignon",
+		"description": "Rich and bold with notes of blackberry and a touch of oak",
+		"menu": "drinks",
+		"glassPrice": 12,
+		"bottlePrice": 46,
+		"category": "wine",
+		"subcategory": "red",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Joel Gott 815 Cabernet Sauvignon",
+		"description": "Flavors of plums, black cherry and spice with rich tannins",
+		"menu": "drinks",
+		"glassPrice": 12,
+		"bottlePrice": 46,
+		"category": "wine",
+		"subcategory": "red",
+		"restaurant": "sj2"
 	},
 	{
 		"name": "Sapporo",
 		"size": "21 oz",
 		"menu": "drinks",
 		"price": 6.5,
-		"category": "beer"
+		"category": "beer",
+		"restaurant": "both"
 	},
 	{
 		"name": "Asahi",
 		"size": "22 oz",
 		"menu": "drinks",
 		"price": 6.5,
-		"category": "beer"
+		"category": "beer",
+		"restaurant": "both"
 	},
 	{
 		"name": "Kirin Inchban",
 		"size": "",
 		"menu": "drinks",
 		"price": 6.5,
-		"category": "beer"
+		"category": "beer",
+		"restaurant": "both"
 	},
 	{
 		"name": "Soft Drinks",
@@ -2344,11 +2631,12 @@
 		],
 		"menu": "drinks",
 		"price": 1.95,
-		"category": "soft drinks"
+		"category": "soft drinks",
+		"restaurant": "both"
 	},
 	{
 		"name": "Hot or Iced Black Tea",
-		"description": "Sugar or Sugar Substitute avaliable",
+		"description": "Sugar or sugar substitute avaliable",
 		"menu": "drinks",
 		"price": 1.95,
 		"category": "soft drinks"
@@ -2358,6 +2646,34 @@
 		"menu": "drinks",
 		"price": 1.95,
 		"category": "soft drinks"
+	},
+	{
+		"name": "Hot Green Tea (pot)",
+		"menu": "drinks",
+		"price": 3.50,
+		"category": "soft drinks",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Apple Juice",
+		"menu": "drinks",
+		"price": 2.5,
+		"category": "soft drinks",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Orange Juice",
+		"menu": "drinks",
+		"price": 2.50,
+		"category": "soft drinks",
+		"restaurant": "sj2"
+	},
+	{
+		"name": "Sparkling Water",
+		"menu": "drinks",
+		"price": 2.95,
+		"category": "soft drinks",
+		"restaurant": "sj2"
 	},
 	{
 		"name": "Vegetable Fried Rice",
