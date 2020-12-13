@@ -13,9 +13,7 @@ const MenuCartItem = (props) => {
     const [state,dispatch] = useStoreContext();
     //save email from store to use with DB later
     const email = state.email;
-    console.log("The user email is "+email)
     function saveFave(itemName, itemCategory){
-        console.log("You are about to save the item:"+ itemName+" category: "+itemCategory);
         API.addFavorite({item:itemName, category:itemCategory, UserEmail: state.email}).
         then(res=> console.log(res)).
         catch(err => console.log(err));
