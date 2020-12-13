@@ -43,6 +43,11 @@
     color: white;
 }
 
+.subhead {
+    margin: 15px;
+    text-align: center;
+}
+
 /* Only order once */
 
 h5.red {
