@@ -42,7 +42,7 @@ function Menu(props) {
                                 return (
                                     <div className="card menu-card text-center">
                                         <div className="card-body d-flex justify-content-between">
-                                            <MenuItems key={idx} name={item.name} glassPrice={item.glassPrice} bottlePrice={item.bottlePrice} origin={item.origin} >
+                                            <MenuItems key={idx} name={item.name} glassPrice={item.glassPrice} bottlePrice={item.bottlePrice} origin={item.origin} description={item.description} >
                                             </MenuItems>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@ function Menu(props) {
                                 return (
                                     <div className="card menu-card text-center">
                                         <div className="card-body d-flex justify-content-between">
-                                            <MenuItems key={idx} name={item.name} size={item.size} price={item.price} >
+                                            <MenuItems key={idx} name={item.name} size={item.size} price={item.price} description={item.description} >
                                             </MenuItems>
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@ function Menu(props) {
                                 return (
                                     <div className="card menu-card text-center">
                                         <div className="card-body d-flex justify-content-between">
-                                            <MenuItems key={idx} name={item.name} price={item.price} drinks={item.drinks} >
+                                            <MenuItems key={idx} name={item.name} price={item.price} drinks={item.drinks} description={item.description} >
                                             </MenuItems>
                                         </div>
                                     </div>
