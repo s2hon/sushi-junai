@@ -1,6 +1,5 @@
 .body-bg {
     background-color: #f2f2f2;
-    margin-top: 5px;
 }
 
 /* Menu Styles */
@@ -42,6 +41,11 @@
     width: 50%;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
     color: white;
+}
+
+.subhead {
+    margin: 15px;
+    text-align: center;
 }
 
 /* Only order once */
