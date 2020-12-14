@@ -8,11 +8,11 @@ const YelpCard = (props) => {
   return (
     <div>
       <Card>
-        <CardImg top width="100%" src={props.image} alt="Yelp reviewers" />
+        <CardImg top width="100%" src={props.image} alt="Yelp reviewers" className="yelp-img"/>
         <CardBody>
-          <CardTitle tag="h5">{props.name}</CardTitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">{props.stars}</CardSubtitle>
-          <CardText>{props.text}</CardText>
+          <CardTitle className="yelp-title" style ={{fontWeight: "bold"}}tag="h1">{props.name}</CardTitle>
+          <CardSubtitle tag="h6" className="mb-2 text-muted rating"> Rating{props.stars} Stars</CardSubtitle>
+          <CardText className="review-text">"{props.text}"</CardText>
         </CardBody>
       </Card>
     </div>
