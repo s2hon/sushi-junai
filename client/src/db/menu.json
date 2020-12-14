@@ -99,7 +99,7 @@
 	},
 	{
 		"name": "Screaming \"O\" (3/8 pcs)",
-		"description": "Slice seared tuna over shredded radish with S.O. sauce",
+		"description": "Slice seared tuna over shredded radish with S.O. sauce*",
 		"category": "Appetizer",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1470,7 +1470,7 @@
 	},
 	{
 		"name": "Final Destination",
-		"description": "In: spicy soft shell crab, cucumber, shrimp tempura / Top: tuna, avocado / Sauce: S.O. sauce",
+		"description": "In: spicy soft shell crab, cucumber, shrimp tempura / Top: tuna, avocado / Sauce: S.O. sauce*",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1540,7 +1540,7 @@
 	},
 	{
 		"name": "JJ Roll",
-		"description": "In: shrimp tempura, avocado, cream cheese / Top: spicy crab, white tuna / Sauce: S.O. sauce, chop special",
+		"description": "In: shrimp tempura, avocado, cream cheese / Top: spicy crab, white tuna / Sauce: S.O. sauce*, chop special",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1652,7 +1652,7 @@
 	},
 	{
 		"name": "OMG",
-		"description": "In: crab, cucumber, shrimp tempura / Top: spicy salmon / Sauce: S.O. sauce",
+		"description": "In: crab, cucumber, shrimp tempura / Top: spicy salmon / Sauce: S.O. sauce*",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1834,7 +1834,7 @@
 	},
 	{
 		"name": "Strip Salmon",
-		"description": "In: spicy crab, cucumber-wrapped salmon / Sauce: S.O. sauce",
+		"description": "In: spicy crab, cucumber-wrapped salmon / Sauce: S.O. sauce*",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
