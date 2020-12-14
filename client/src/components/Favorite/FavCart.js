@@ -39,7 +39,7 @@ const FavCart = (props) => {
             <Container>
             <div className="menu-container">
                 <Row><h3 className="cartHeading">My Favorites ({count})</h3></Row>
-                <Table>
+                <Table bordered striped>
                     <thead>
                         <tr>
                         <th>Item</th>
@@ -50,7 +50,7 @@ const FavCart = (props) => {
                     <tbody>
                         {favCart.map((item, idx) => <FavCartItem key={idx} item={item}/ > )}
                         <tr>
-                            <Button>Add for future reference</Button>
+                            <Button type={"button"}className={"btn btn1"}>Add for future reference</Button>
                         </tr>
                     </tbody>
                 </Table>
