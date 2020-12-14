@@ -69,7 +69,7 @@ function Menu() {
                         </span>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="appetizers">Appetizers</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="appetizers"></span>Appetizers</h2></div>
                         <Container>
                             {
                                 appetizers.map((item, idx) => {
@@ -91,7 +91,7 @@ function Menu() {
                     </Row>
 
                     <Row>
-                        <div className="section-head"><h2 id="salad">Salad</h2></div>
+                        <div className="section-head"><h2 ><span className="anchor" id="salad"></span>Salad</h2></div>
                         <Container>
                             {
                                 salads.map((item, idx) => {
@@ -112,7 +112,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="soup">Soup/Noodles</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="soup"></span>Soup/Noodles</h2></div>
                         <Container>
                             {
                                 soups.map((item, idx) => {
@@ -133,7 +133,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="rice">Rice Entree</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="rice"></span>Rice Entree</h2></div>
                         <Container>
                             {
                                 rice.map((item, idx) => {
@@ -154,7 +154,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="classicRoll">Classic Roll/Hand Roll</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="classicRoll"></span>Classic Roll/Hand Roll</h2></div>
                         <Container>
                             {
                                 classicRolls.map((item, idx) => {
@@ -175,7 +175,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="sushi">Sushi (Nigiri)</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="sushi"></span>Sushi (Nigiri)</h2></div>
                         <Container>
                             {
                                 sushi.map((item, idx) => {
@@ -196,7 +196,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="chefsSpecial">Chef's Special Rolls</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="chefsSpecials"></span>Chef's Special Rolls</h2></div>
                         <Container>
                             {
                                 chefsSpecial.map((item, idx) => {
@@ -217,7 +217,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="tempura">Tempura (Fried) Rolls</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="tempura"></span>Tempura (Fried) Rolls</h2></div>
                         <Container>
                             {
                                 tempuraRolls.map((item, idx) => {
@@ -238,7 +238,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="bakedRolls">Baked Rolls</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="bakedRolls"></span>Baked Rolls</h2></div>
                         <Container>
                             {
                                 bakedRolls.map((item, idx) => {
@@ -259,7 +259,7 @@ function Menu() {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="desserts">Desserts</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="desserts"></span>Desserts</h2></div>
                         <Container>
                             {
                                 desserts.map((item, idx) => {
