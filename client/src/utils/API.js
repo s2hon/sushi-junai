@@ -24,5 +24,8 @@ export default {
     // //here we send the email and item that will be deleted
     deleteFavorite: (info) =>{
         return axios.delete("/api/favorites", {data:info})
+    },
+    getReviews: () => {
+        return axios.get("/api/reviews")
     }
 }

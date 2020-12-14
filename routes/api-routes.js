@@ -1,6 +1,7 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+const axios = require("axios");
 
 module.exports = function(app) {
   // Route for logging in
@@ -90,6 +91,33 @@ module.exports = function(app) {
         email: req.user.email,
         id: req.user.id
       });
+    }
+  });
+
+  app.get("/api/reviews", function(req, res) {
+    console.log('I am running')
+    const APIKEY = "I2SLuyyKWHvDg8heVcUEXkrNxuWiWE-1Qe2SEVE2bGwJ-yk4bNbUoo4_30UN0cPCLAL5csPI17_pUKwgJiqFn4EHzK2KakXxtiLb5Q6BXoM990rSIziXHBLRWEKgX3Yx";
+    try {
+      axios
+      .get(
+          BASEURL,
+          {
+            headers: {
+                Authorization: `Bearer ${APIKEY}`,
+            },
+          }
+      ) 
+      .then(json => {
+        console.log(json, 'data');
+        res.status(200).json(json);
+        //set state
+      }) 
+      .catch(err => {
+        res.status(404);
+      }) 
+      
+    } catch (err) {
+      console.error(err)
     }
   });
 
