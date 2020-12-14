@@ -14,6 +14,8 @@ import RawFish from "../FoodKey/Rawfish";
 import GlutenFree from "../FoodKey/GlutenFree";
 import Shellfish from "../FoodKey/Shellfish";
 import Spicy from "../FoodKey/Spicy";
+import SO from "../FoodKey/SO";
+import YumYum from "../FoodKey/YumYum";
 
 function Menu() {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -351,7 +353,9 @@ function Menu() {
                         <GlutenFree />
                         <Vegetarian />
                         <Shellfish />
-                    <Spicy />
+                        <Spicy />
+                        <SO />
+                        <YumYum />
                     </div>
                 </Container>
                 <Scrollup />

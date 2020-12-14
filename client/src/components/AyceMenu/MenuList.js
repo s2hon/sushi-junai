@@ -21,6 +21,8 @@ import RawFish from "../FoodKey/Rawfish";
 import GlutenFree from "../FoodKey/GlutenFree";
 import Shellfish from "../FoodKey/Shellfish";
 import Spicy from "../FoodKey/Spicy";
+import SO from "../FoodKey/SO";
+import YumYum from "../FoodKey/YumYum";
 
 function Menu(props) {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -99,7 +101,7 @@ function Menu(props) {
                                     <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Order Summary ({currentQtyTotal})</Button></Link>
                                 </span>
                                 <span>
-                                    <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
+                                    <Link to="/favorite"><Button type="button" btn="btn btn1 float-right">Favorites</Button></Link>
                                 </span>
                                 <span>
                                     <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
@@ -385,6 +387,8 @@ function Menu(props) {
                     <Vegetarian />
                     <Shellfish />
                     <Spicy />
+                    <SO />
+                    <YumYum />
                 </div>
             </Container>
             <Scrollup />
