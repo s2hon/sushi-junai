@@ -84,7 +84,7 @@ const Slider = (props) => {
                                 </div>
                             </div>
                             </Flip>
-                            <Flip triggerOnce delay={4000} direction="horizontal">
+                            <Flip triggerOnce delay={5000} direction="horizontal">
                             <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
@@ -92,11 +92,10 @@ const Slider = (props) => {
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #5</h2>
-                                        <p>Children pricing: Lunch $10.95 and Dinner $15.95.</p>
+                                        <p>Children pricing Lunch $10.95 and Dinner $15.95.</p>
                                     </div>
                                 </div>
                             </div>
-                            
                             <Row className="rules-button">
                                 <Link to={"/alacarte"}>
                                     <Button type={"button"} btn={"btn btn2"}>Go to A La Carte</Button>
