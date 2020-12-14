@@ -8,7 +8,6 @@ import Scrollup from "../ScrollUp/index";
 import Image from "../Image";
 import vegIcon from "../FoodKey/icons8-vegetarian-mark-144.png";
 import gfIcon from "../FoodKey/icons8-no-gluten-144.png";
-import Counter from "../Counter";
 import Vegetarian from "../FoodKey/Vegetarian";
 import RawFish from "../FoodKey/Rawfish";
 import GlutenFree from "../FoodKey/GlutenFree";
