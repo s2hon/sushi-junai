@@ -25,7 +25,7 @@
     background-color: white;
     position: sticky;
     width: 90%;
-    z-index: -1;
+    z-index: -100;
 }
 
 .form-check {
