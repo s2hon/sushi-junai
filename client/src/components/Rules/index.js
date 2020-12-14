@@ -92,7 +92,7 @@ const Slider = (props) => {
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #5</h2>
-                                        <p>Children pricing: Lunch $10.95 and Dinner $15.95.</p>
+                                        <p>Children pricing Lunch $10.95 and Dinner $15.95.</p>
                                     </div>
                                 </div>
                             </div>
