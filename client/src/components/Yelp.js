@@ -9,6 +9,7 @@ function Yelp(props) {
         API.getReviews()
         .then((data) => {
             setReviews(data);
+            
         })
         .catch((error) => {
             console.error(error);
