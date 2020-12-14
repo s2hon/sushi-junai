@@ -1,5 +1,5 @@
 import React, { createContext, useReducer, useContext } from "react";
-import { AUTH_SET_LOGGED_OUT, AUTH_SET_LOGGED_IN, LOAD_FAVORITES,ADD_FAVORITE,REMOVE_FAVORITE } from "./actions";
+import { AUTH_SET_LOGGED_OUT, AUTH_SET_LOGGED_IN, LOAD_FAVORITES,REMOVE_FAVORITE } from "./actions";
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;

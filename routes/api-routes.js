@@ -111,7 +111,8 @@ module.exports = function(app) {
       ) 
       .then(json => {
         console.log(json.data.reviews, 'data');
-        res.status(200).json(json).data;
+        res.status(200)
+;        res.json(json.data);
         //set state
       }) 
       .catch(err => {

@@ -7,9 +7,9 @@ function Yelp(props) {
     const getReviews = () => {
         // make api call, set reviews in state
         API.getReviews()
-        .then((data) => {
-            setReviews(data);
-            
+        .then((res) => {
+            setReviews(res.data.reviews);
+            console.log(res.data.reviews);
         })
         .catch((error) => {
             console.error(error);
