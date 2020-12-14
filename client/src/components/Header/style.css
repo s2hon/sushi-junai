@@ -14,7 +14,6 @@ font-family: 'Open Sans', sans-serif; */
 	background-color: #573635;
 	margin-top: 0;
 	height: 110%;
-	position: relative;
 }
 
 nav ul {
@@ -74,15 +73,10 @@ nav ul ul {
 	top: 100%;
 	left: 0;
 	width: 215px;
-	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.08);
-	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.08);
-	-ms-box-shadow: 0 0 20px rgba(0,0,0,0.08);
-	-o-box-shadow: 0 0 20px rgba(0,0,0,0.08);
-	box-shadow: 0 0 20px rgba(0,0,0,0.08);
 	opacity: 0;
 	visibility: hidden;
-	z-index: 99;
 	text-align: left;
+	list-style-type: none;
 }
 nav ul ul li {
 	padding: 10px 15px;
@@ -91,7 +85,6 @@ nav ul ul li {
 	margin-top: 20px;
 	position: relative;
 	transition: all .5s;
-	position: relative;
 }
 nav ul ul li i{
 	position: absolute;
@@ -120,7 +113,7 @@ header.ab.fixed {
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 999;
+	/* z-index: 999; */
 	background-color: #EBDFD9;
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.10);
 	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.10);
