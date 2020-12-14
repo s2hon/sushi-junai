@@ -8,6 +8,7 @@ function Yelp(props) {
         // make api call, set reviews in state
         API.getReviews()
         .then((data) => {
+            console.log(data)
             setReviews(data);
         })
         .catch((error) => {
