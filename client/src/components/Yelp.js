@@ -9,9 +9,8 @@ function Yelp(props) {
         // make api call, set reviews in state
         API.getReviews()
         .then((res) => {
-            console.log(res.data)
             setReviews(res.data.reviews);
-            
+            console.log(res.data.reviews);
         })
         .catch((error) => {
             console.error(error);
@@ -25,7 +24,7 @@ function Yelp(props) {
     return(
         <Container> 
             {
-            res.data.map((data) => {
+            reviews.map((data) => {
             return (
             <YelpCard image={data.user.image_url}
             name={data.user.name}
