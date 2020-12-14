@@ -48,7 +48,7 @@ const FavCart = (props) => {
                         </tr>
                     </thead>
                     <tbody>
-                        {favCart.map((item, idx) => <FavCartItem key={idx} item={item}/ > )}
+                        {favCart.map((item, idx) => <FavCartItem key={idx} item={item} /> )}
                         <tr>
                             <Button type={"button"}className={"btn btn1"}>Add for future reference</Button>
                         </tr>

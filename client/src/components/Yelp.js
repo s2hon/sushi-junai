@@ -24,7 +24,7 @@ function Yelp(props) {
 
     return(
         <Container> 
-            {
+            {/* {
             res.data.map((data) => {
             return (
             <YelpCard image={data.user.image_url}
@@ -33,7 +33,7 @@ function Yelp(props) {
             text={data.text}
             />)
         })
-    }
+    } */}
         </Container>
     )
 }
