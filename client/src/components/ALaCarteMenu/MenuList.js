@@ -57,7 +57,6 @@ function Menu() {
 
     return (
         <>
-            <Counter />
             <Container>
                 <div className="menu-container">
                     <Row>
