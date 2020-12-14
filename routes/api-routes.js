@@ -50,7 +50,6 @@ module.exports = function(app) {
   
   //this code will retrieve the favorites
   app.get("/api/favorites/:email", function(req, res){
-    console.log("we are searching for the email"+ req.params.email);
     db.Favorites.findAll({
       where: {
         UserEmail: req.params.email
@@ -97,7 +96,6 @@ module.exports = function(app) {
   });
 
   app.get("/api/reviews", function(req, res) {
-    console.log('I am running')
     const BASEURL = "https://api.yelp.com/v3/businesses/uK3hclf6oje7rRAbUhPCLg/reviews";
     try {
       axios
@@ -110,8 +108,9 @@ module.exports = function(app) {
           }
       ) 
       .then(json => {
-        console.log(json.data.reviews, 'data');
-        res.json(json.data);
+        res.status(200)
+;        res.json(json.data);
+        //set state
       }) 
       .catch(err => {
         res.status(404);
