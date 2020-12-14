@@ -13,6 +13,7 @@ function MenuItems(props) {
                                                 : <span></span>}
                                 </h5>
                                 <p>$ {props.price}</p>
+                                <p>{props.servings}</p>
                         </Col>
                         <Col sm="9" md="9" lg="9">
                                 <p>{props.description}</p>
