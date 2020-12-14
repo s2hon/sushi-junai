@@ -8,6 +8,7 @@ import Image from "../Image";
 import SoySauce from "./images/soy-sauce.png"
 import Noodles from "./images/icons8-noodles-100.png"
 import SalmonSushi from "./images/icons8-salmon-sushi-100.png"
+import Children from "./images/icons8-maneki-144.png"
 import Bento from "./images/icons8-bento-100.png"
 import './style.css';
 import moment from 'moment';
@@ -78,10 +79,24 @@ const Slider = (props) => {
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #4</h2>
-                                        <p>Ordering time is limited to a maximum of two hours.</p>
+                                        <p>Ordering time for lunch is limited to 60min for $24.95 and 90min for $32.95 for dinner.</p>
                                     </div>
                                 </div>
                             </div>
+                            </Flip>
+                            <Flip triggerOnce delay={4000} direction="horizontal">
+                            <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
+                                <div className="rules-item">
+                                    <div className="rule-icon">
+                                    <Image src={Children} width="40px" alt="Bento Box" />
+                                    </div>
+                                    <div className="rule-content">
+                                        <h2>Rule #5</h2>
+                                        <p>Children pricing: Lunch $10.95 and Dinner $15.95.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <Row className="rules-button">
                                 <Link to={"/alacarte"}>
                                     <Button type={"button"} btn={"btn btn2"}>Go to A La Carte</Button>

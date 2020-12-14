@@ -8,6 +8,7 @@ import { useStoreContext } from '../../utils/GlobalStore';
 import HomeCarousel from "../../components/HomeCarousel";
 import './style.css';
 import Counter from "../../components/Counter";
+import Yelp from "../../components/Yelp";
 
 function Home(props) {
     const [state] = useStoreContext();
@@ -48,6 +49,9 @@ function Home(props) {
                             <Button type={"button"} btn={"btn btn1 btn-lrg"}><h3>Carry Out</h3></Button>
                         </a>
                     </div>
+                </Row>
+                <Row>
+                    <Yelp/>
                 </Row>
             </div>
     </React.Fragment>);

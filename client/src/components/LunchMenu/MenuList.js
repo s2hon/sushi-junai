@@ -12,12 +12,31 @@ function Menu() {
     const combos = lunchMenu.filter(item => item.category === "combo");
     const lunchSpecials = lunchMenu.filter(item => item.category === "Lunch Special");
     const lunchBox = lunchMenu.filter(item => item.category === "Lunch Box");
+    const houseSpecial = lunchMenu.filter(item => item.category === "house special");
     return (
         <>
             <Container>
             <div className="menu-container">
                 <Row>
                     <h1>Lunch Menu</h1><hr />
+                </Row>
+                <Row>
+                <div className="section-head"><h2 id="HouseSpecials">House Specials</h2>
+                <h5>Sushi Junai 1 exclusives</h5></div>
+                    <Container>
+                        {
+                            houseSpecial.map((item, idx) => {
+                                return (
+                                    <div className="card menu-card text-center">
+                                        <div className="card-body d-flex justify-content-between">
+                                            <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} >
+                                            </MenuItems>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </Container>
                 </Row>
                 <Row>
                 <div className="section-head"><h2 id="LunchSpecials">Lunch Rice Specials</h2>
