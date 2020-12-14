@@ -19,7 +19,7 @@ const MenuCartItem = (props) => {
         <tr>
         <th scope="row">{name}</th>
         <td>{category}</td>
-        <td ><Button  ><FontAwesomeIcon icon={faHeartBroken} /></Button></td>
+        <td ><Button type={"button"}className={"btn btn1"} ><FontAwesomeIcon icon={faHeartBroken} /></Button></td>
         </tr>
     )
 };

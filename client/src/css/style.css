@@ -25,6 +25,7 @@
     background-color: white;
     position: sticky;
     width: 90%;
+    z-index: -100;
 }
 
 .form-check {
@@ -117,4 +118,11 @@ footer {
 
 .center {
     text-align: center;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -125px;
+    visibility: hidden;
 }

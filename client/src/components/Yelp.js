@@ -32,7 +32,7 @@ function Yelp(props) {
             text={data.text}
             />)
         })
-    }
+    } 
         </Container>
     )
 }
