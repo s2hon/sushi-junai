@@ -7,7 +7,7 @@ import { useStoreContext } from "../../utils/GlobalStore";
 
 
 //DO NOT RENDER HEART BUTTON IF NOT LOGGED-IN
-const MenuCartItem = (props) => {
+const MenuCartGreyItem = (props) => {
     //add function to delete favorite
     //add ability to reload items so taht they respond to the item 
     const [state, dispatch] = useStoreContext();
@@ -29,16 +29,12 @@ const MenuCartItem = (props) => {
                 <FontAwesomeIcon className="black-text" icon={faHeart} />
             </Button>
         </td>
-        <th scope="row"><p>{name}</p></th>
-        <td>
-        <p><Button type="button" className="btn1 btn" onClick={() => props.decrementItem(props.item)}><span className="black-text">-</span></Button>
-        {quantity}
-        <Button type="button" className="btn btn1" onClick={() => props.incrementItem(props.item)} disabled={props.onetime}><span className="black-text">+</span></Button></p>
-        </td>
+        <th scope="row"><p>{name} <br/>
+        ({category})</p></th>
+        <td>{quantity}</td>
         <td><p>$ {price.toFixed(2)}</p></td>
-        <td><Button  type="button" className={"btn btn2"} onClick={() => props.removeItem(props.item)}><span className="black-text">X</span></Button></td>
         </tr>
     )
 };
 
-export default MenuCartItem;
+export default MenuCartGreyItem;
