@@ -53,7 +53,7 @@ function Favorites(props) {
                         <div className="card-body d-flex justify-content-between">
                             <MenuItems key={fav.id} name={fav.item} price={getPrice(fav.item)} description={fav.category} >                        
                                 <Button btn={"float-right"} function={() => deleteFave(fav.item)} ><FontAwesomeIcon icon={faHeartBroken} /></Button>
-                                <Button id={fav.id} type="button" btn={"float-right btn btn1"} function={() => { props.addItem({"name":fav.item,"price":1000,"category":fav.category,"quantity":1})}}>
+                                <Button id={fav.id} type="button" btn={"float-right btn btn1"} function={() => { props.addItem({"name":fav.item,"price":getPrice(fav.item),"category":fav.category,"quantity":1})}}>
                                     <FontAwesomeIcon icon={faPlus} />
                                 </Button>
                             </MenuItems>
@@ -66,26 +66,6 @@ function Favorites(props) {
     </>);
 }
 
-
-
-// const mapStateToProps = state => ({
-//     favCart: state.favCart
-// });
-
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         removeItem: item => {
-//             //is this where we remove the item?
-//             // or in reducer/favCart?
-//             dispatch({})
-//         }
-//     }
-// };
-
-// const Favorite = connect(
-//     mapStateToProps,
-//     mapDispatchToProps
-// )(FavCart);
 
 
 export default Favorites;
