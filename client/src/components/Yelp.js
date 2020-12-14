@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Container from './Container';
+import YelpCard from './YelpCard';
 import API from '../utils/API';
 
 function Yelp(props) {
@@ -21,8 +22,17 @@ function Yelp(props) {
     }, []);
 
     return(
-        <Container>
-
+        <Container> 
+            {
+            res.data.map((data) => {
+            return (
+            <YelpCard image={data.user.image_url}
+            name={data.user.name}
+            stars={data.rating}
+            text={data.text}
+            />)
+        })
+    }
         </Container>
     )
 }
