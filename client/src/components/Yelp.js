@@ -24,7 +24,7 @@ function Yelp(props) {
     return(
         <Container> 
             {
-            res.data.map((data) => {
+            reviews.map((data) => {
             return (
             <YelpCard image={data.user.image_url}
             name={data.user.name}
