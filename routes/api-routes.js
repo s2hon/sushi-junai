@@ -1,6 +1,9 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+const axios = require("axios");
+require('dotenv').config();
+const APIKEY = process.env.API_KEY;
 
 module.exports = function(app) {
   // Route for logging in
@@ -90,6 +93,33 @@ module.exports = function(app) {
         email: req.user.email,
         id: req.user.id
       });
+    }
+  });
+
+  app.get("/api/reviews", function(req, res) {
+    console.log('I am running')
+    const BASEURL = "https://api.yelp.com/v3/businesses/uK3hclf6oje7rRAbUhPCLg/reviews";
+    try {
+      axios
+      .get(
+          BASEURL,
+          {
+            headers: {
+                Authorization: `Bearer ${APIKEY}`,
+            },
+          }
+      ) 
+      .then(json => {
+        console.log(json.data.reviews, 'data');
+        res.status(200).json(json).data;
+        //set state
+      }) 
+      .catch(err => {
+        res.status(404);
+      }) 
+      
+    } catch (err) {
+      console.error(err)
     }
   });
 
