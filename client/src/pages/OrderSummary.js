@@ -5,7 +5,9 @@ import MenuCart from "../components/OrderSummary/MenuCart";
 const mapStateToProps = state => ({
     menuCart: state.menuCart,
     favCart: state.favCart,
-    totalSavings: state.clearCart
+    totalSavings: state.clearCart,
+    pastOrders: state.oldCart
+
 });
 
 const mapDispatchToProps = dispatch => {
@@ -28,10 +30,22 @@ const mapDispatchToProps = dispatch => {
                 payload: { item }
             })
         },
-        clearCart: accumulativeTotal => {
+        getTotal: accumulativeTotal => {
+            dispatch({
+                type: 'CALCULATE_CART',
+                payload: { accumulativeTotal }
+            })
+        },
+        savePastCart: menuCart => {
+            dispatch({
+                type: 'SAVE_PAST_CART',
+                payload: { menuCart }
+            })
+        },
+        clearCart: () => {
             dispatch({
                 type: 'CLEAR_CART',
-                payload: { accumulativeTotal }
+                payload: { }
             })
         }
         // handleFavorite: item => {
