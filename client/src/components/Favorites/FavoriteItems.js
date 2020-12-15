@@ -18,11 +18,10 @@ function Favorites(props) {
     //load menu items stored under that user
     const getFavoriteItems=(email) => {
         //gets favorites from db given user email
-        API.getFavorites(email).
-        then(res=> dispatch({type:LOAD_FAVORITES,payload:res.data})).
-        catch(err => console.log(err));
+        API.getFavorites(email)
+        .then(res=> dispatch({type:LOAD_FAVORITES,payload:res.data}))
+        .catch(err => console.log(err));
     };
-   
     //create function that goes and gets the current price for an item item from the 
     //menu. store that price in an array. 
     function getPrice(item){
@@ -31,12 +30,11 @@ function Favorites(props) {
     useEffect(() => {
         getFavoriteItems(state.email);
     },[]);
-    const { menuCart } = props;
     
     function deleteFave(itemName){
-        API.deleteFavorite({item:itemName, UserEmail: state.email}).
-        then(res=> getFavoriteItems(state.email)).
-        catch(err => console.log(err));
+        API.deleteFavorite({item:itemName, UserEmail: state.email})
+        .then(res=> getFavoriteItems(state.email))
+        .catch(err => console.log(err));
         
     };
     //add funciton to add item to order 
@@ -58,7 +56,7 @@ function Favorites(props) {
                         </div>
                     </div>
                 )
-            }) : <span><h3>You have no favorites :( You may add favorites from your order summary! Happy eating! </h3></span>}
+            }) : <span><h4>Your favorites are empty.</h4></span>}
         </div>
         <Link to="/ayce" className="active">
                 <Button type={"button"} btn={"btn btn1 inline"}><h5>MENU</h5></Button>
