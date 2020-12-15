@@ -51,6 +51,11 @@ nav ul li a:before {
 	z-index: -1;
 	
 }
+
+nav ul li a.focus {
+	color: black;
+}
+
 nav ul li a.active:before{
 	opacity: 1;
 }
@@ -65,15 +70,16 @@ nav ul li:hover > ul li {
 	margin-top: 0;
 }
 nav ul li a:hover,
-nav ul li a.active {
-	color: #F1B4AF;
+nav ul li a.active,
+nav ul li a.focus {
+	color: #f26430;
 	text-decoration: none;
 }
 
 nav ul ul {
 	position: absolute;
 	top: 100%;
-	left: 0;
+	left: -42px;
 	width: 215px;
 	opacity: 0;
 	visibility: hidden;
@@ -82,7 +88,7 @@ nav ul ul {
 }
 nav ul ul li {
 	padding: 10px 15px;
-	background-color: #573635;
+	background-color: #f29877;
 	border-bottom: 1px solid #ebebeb;
 	margin-top: 20px;
 	position: relative;
