@@ -1,3 +1,7 @@
+.location-info {
+    list-style: none;
+}
+
 .location-info h2 {
     font-size: 24px;
     font-weight: 500;

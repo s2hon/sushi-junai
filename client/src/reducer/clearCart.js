@@ -4,9 +4,15 @@ const persistedState = loadState("clearCart");
 
 const clearCart = (state=persistedState || [], action) => {
     switch (action.type) {
-        case 'CLEAR_CART':{
+        case 'CALCULATE_CART':{
             const { accumulativeTotal } = action.payload
-            const newTotal = parseFloat(state)+accumulativeTotal
+            let newTotal;
+            if (!state.length) {
+                newTotal = accumulativeTotal
+            }
+            else {
+                newTotal = parseFloat(state)+accumulativeTotal
+            } 
             return newTotal;
         }
         default:

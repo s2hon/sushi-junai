@@ -3,7 +3,8 @@ import MenuList from "../components/AyceMenu/MenuList";
 
 const mapStateToProps = state => {
     return {
-        menuCart: state.menuCart
+        menuCart: state.menuCart,
+        pastOrders: state.oldCart
     }
 };
 

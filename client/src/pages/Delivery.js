@@ -7,7 +7,7 @@ function Delivery() {
     return (<>
     <Row>
         <Col sm="12" md={{ size: 6, offset: 3 }}>
-        <h2 className="text-center">Use our partners for delivery:</h2>
+        <h2 style={{padding:"30px"}}className="text-center">Use our partners for delivery:</h2>
         <CardDeck>
         <Card>
             <CardImg src={"./assets/019-salmon.png"}></CardImg>
