@@ -21,6 +21,8 @@ import RawFish from "../FoodKey/Rawfish";
 import GlutenFree from "../FoodKey/GlutenFree";
 import Shellfish from "../FoodKey/Shellfish";
 import Spicy from "../FoodKey/Spicy";
+import SO from "../FoodKey/SO";
+import YumYum from "../FoodKey/YumYum";
 
 function Menu(props) {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -103,7 +105,7 @@ function Menu(props) {
                                     <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Order Summary ({currentQtyTotal})</Button></Link>
                                 </span>
                                 <span>
-                                    <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
+                                    <Link to="/favorite"><Button type="button" btn="btn btn1 float-right">Favorites</Button></Link>
                                 </span>
                                 <span>
                                     <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
@@ -113,7 +115,7 @@ function Menu(props) {
                     </Row>
 
                     <Row>
-                        <div className="section-head"><h2 id="appetizers">APPETIZERS</h2></div>
+                        <div className="section-head"><h2><span id="appetizers" className="anchor"></span>APPETIZERS</h2></div>
 
                         <Container>
                             {
@@ -142,7 +144,7 @@ function Menu(props) {
                     </Row>
 
                     <Row>
-                        <div className="section-head"><h2 id="salad">SALAD</h2></div>
+                        <div className="section-head"><h2><span id="salad" className="anchor"></span>SALAD</h2></div>
                         <Container>
                             {
                                 salads.map((item, idx) => {
@@ -169,7 +171,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="soup">SOUP/NOODLES</h2></div>
+                        <div className="section-head"><h2><span id="soup" className="anchor"></span>SOUP/NOODLES</h2></div>
                         <Container>
                             {
                                 soups.map((item, idx) => {
@@ -196,7 +198,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="rice">RICE</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="rice"></span>RICE</h2></div>
                         <Container>
                             {
                                 rice.map((item, idx) => {
@@ -223,7 +225,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="classicRoll">CLASSIC ROLL/HAND ROLL</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="classicRoll"></span>CLASSIC ROLL/HAND ROLL</h2></div>
                         <Container>
                             {
                                 classicRolls.map((item, idx) => {
@@ -250,7 +252,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="sushi">SUSHI (NIGIRI)</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="sushi"></span>SUSHI (NIGIRI)</h2></div>
                         <Container>
                             {
                                 sushi.map((item, idx) => {
@@ -277,7 +279,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="chefsSpecials">CHEF'S SPECIALS</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="chefsSpecials"></span>CHEF'S SPECIALS</h2></div>
                         <Container>
                             {
                                 chefsSpecial.map((item, idx) => {
@@ -304,7 +306,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="tempura">TEMPURA (FRIED) ROLLS</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="tempura"></span>TEMPURA (FRIED) ROLLS</h2></div>
                         <Container>
                             {
                                 tempuraRolls.map((item, idx) => {
@@ -331,7 +333,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="bakedRolls">BAKED ROLLS</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="bakedRolls"></span>BAKED ROLLS</h2></div>
                         <Container>
                             {
                                 bakedRolls.map((item, idx) => {
@@ -358,7 +360,7 @@ function Menu(props) {
                         </Container>
                     </Row>
                     <Row>
-                        <div className="section-head"><h2 id="desserts">DESSERTS</h2></div>
+                        <div className="section-head"><h2><span className="anchor" id="desserts"></span>DESSERTS</h2></div>
                         <Container>
                             {
                                 desserts.map((item, idx) => {
@@ -389,6 +391,8 @@ function Menu(props) {
                     <Vegetarian />
                     <Shellfish />
                     <Spicy />
+                    <SO />
+                    <YumYum />
                 </div>
             </Container>
             <Scrollup />

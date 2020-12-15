@@ -99,7 +99,7 @@
 	},
 	{
 		"name": "Screaming \"O\" (3/8 pcs)",
-		"description": "Slice seared tuna over shredded radish with S.O. sauce",
+		"description": "Slice seared tuna over shredded radish with S.O. sauce*",
 		"category": "Appetizer",
 		"price": 12.50,
 		"menu": "ayce",
@@ -197,7 +197,7 @@
 	},
 	{
 		"name": "Calamari Tempura",
-		"description": "Lightly fried calamari with a dash of yum yum sauce",
+		"description": "Lightly fried calamari with a dash of yum yum sauce**",
 		"category": "Appetizer",
 		"price": 7.95,
 		"menu": "ayce",
@@ -267,7 +267,7 @@
 	},
 	{
 		"name": "Fried Spring Roll (2/4 pcs)",
-		"description": "Deep fried mixed vegetables with yum yum sauce",
+		"description": "Deep fried mixed vegetables with yum yum sauce**",
 		"category": "Appetizer",
 		"price": 4.95,
 		"menu": "ayce",
@@ -1456,7 +1456,7 @@
 	},
 	{
 		"name": "EX-Girlfriend",
-		"description": "In: spicy tuna, cucumber, shrimp tempura / Top: scallop yum yum / Sauce: garlic ponzu, spicy mayo, eel sauce, crunch",
+		"description": "In: spicy tuna, cucumber, shrimp tempura / Top: scallop yum yum** / Sauce: garlic ponzu, spicy mayo, eel sauce, crunch",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1470,7 +1470,7 @@
 	},
 	{
 		"name": "Final Destination",
-		"description": "In: spicy soft shell crab, cucumber, shrimp tempura / Top: tuna, avocado / Sauce: S.O. sauce",
+		"description": "In: spicy soft shell crab, cucumber, shrimp tempura / Top: tuna, avocado / Sauce: S.O. sauce*",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1540,7 +1540,7 @@
 	},
 	{
 		"name": "JJ Roll",
-		"description": "In: shrimp tempura, avocado, cream cheese / Top: spicy crab, white tuna / Sauce: S.O. sauce, chop special",
+		"description": "In: shrimp tempura, avocado, cream cheese / Top: spicy crab, white tuna / Sauce: S.O. sauce*, chop special",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1568,7 +1568,7 @@
 	},
 	{
 		"name": "Just for the halibut",
-		"description": "In: cucumber, crab, fish tempura / Top: fish tempura / Sauce: eel sauce, yum yum sauce",
+		"description": "In: cucumber, crab, fish tempura / Top: fish tempura / Sauce: eel sauce, yum yum sauce**",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1652,7 +1652,7 @@
 	},
 	{
 		"name": "OMG",
-		"description": "In: crab, cucumber, shrimp tempura / Top: spicy salmon / Sauce: S.O. sauce",
+		"description": "In: crab, cucumber, shrimp tempura / Top: spicy salmon / Sauce: S.O. sauce*",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1736,7 +1736,7 @@
 	},
 	{
 		"name": "Salmon Holic",
-		"description": "In: shrimp tempura, avocado, spicy salmon / Top: salmon / Sauce: yum yum, yuzu, crunch",
+		"description": "In: shrimp tempura, avocado, spicy salmon / Top: salmon / Sauce: yum yum**, yuzu, crunch",
 		"category": "Chef’s Special Rolls",
 		"price": 13.50,
 		"menu": "ayce",
@@ -1764,7 +1764,7 @@
 	},
 	{
 		"name": "Sashimi Special (4 pcs)",
-		"description": "Tuna/garlic ponzu & masago. Yellowtail/yuzu & jalapeno. White tuna/sear & mustard sauce. Salmon/avocado & yum yum sauce",
+		"description": "Tuna/garlic ponzu & masago. Yellowtail/yuzu & jalapeno. White tuna/sear & mustard sauce. Salmon/avocado & yum yum sauce**",
 		"category": "Chef’s Special Rolls",
 		"price": 12.95,
 		"menu": "ayce",
@@ -1834,7 +1834,7 @@
 	},
 	{
 		"name": "Strip Salmon",
-		"description": "In: spicy crab, cucumber-wrapped salmon / Sauce: S.O. sauce",
+		"description": "In: spicy crab, cucumber-wrapped salmon / Sauce: S.O. sauce*",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1862,7 +1862,7 @@
 	},
 	{
 		"name": "Sweet Kiss",
-		"description": "In: salmon tempura, crab, avocado, cream cheese / Sauce: crunch, eel sauce, yum yum sauce",
+		"description": "In: salmon tempura, crab, avocado, cream cheese / Sauce: crunch, eel sauce, yum yum sauce**",
 		"category": "Chef’s Special Rolls",
 		"price": 10.95,
 		"menu": "ayce",
@@ -1890,7 +1890,7 @@
 	},
 	{
 		"name": "Touch Down",
-		"description": "In: scallop yum yum, cucumber, avocado / Top: salmon / Sauce: eel sauce, crunch, yum yum sauce",
+		"description": "In: scallop yum yum, cucumber, avocado / Top: salmon / Sauce: eel sauce, crunch, yum yum sauce**",
 		"category": "Chef’s Special Rolls",
 		"price": 9.95,
 		"menu": "ayce",
@@ -2058,7 +2058,7 @@
 	},
 	{
 		"name": "Death Valley",
-		"description": "In: crab, asparagus, cream cheese / Top: scallop yum yum / Sauce: crunch, eel sauce",
+		"description": "In: crab, asparagus, cream cheese / Top: scallop yum yum** / Sauce: crunch, eel sauce",
 		"category": "Baked Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -2100,7 +2100,7 @@
 	},
 	{
 		"name": "Volcano",
-		"description": "In: spicy crab, cream cheese, avocado / Top: red snapper / Sauce: yum yum sauce, eel sauce",
+		"description": "In: spicy crab, cream cheese, avocado / Top: red snapper / Sauce: yum yum sauce**, eel sauce",
 		"category": "Baked Rolls",
 		"price": 11.50,
 		"menu": "ayce",

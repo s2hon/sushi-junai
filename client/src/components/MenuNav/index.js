@@ -21,7 +21,7 @@ const NavBar = () => {
                     <DropdownItem divider />
                     <DropdownItem><a className="mainFont" href="#classicRoll">Classic Rolls/Hand Rolls</a></DropdownItem> 
                     <DropdownItem><a className="mainFont" href="#sushi">Sushi (Nigiri)</a></DropdownItem> 
-                    <DropdownItem><a className="mainFont" href="#chefsSpecial">Chef's Special Rolls</a></DropdownItem> 
+                    <DropdownItem><a className="mainFont" href="#chefsSpecials">Chef's Special Rolls</a></DropdownItem> 
                     <DropdownItem><a className="mainFont" href="#tempura">Tempura Rolls</a></DropdownItem> 
                     <DropdownItem><a className="mainFont" href="#bakedRolls">Baked Rolls</a></DropdownItem> 
                     <DropdownItem divider />
