@@ -22,7 +22,8 @@ function Yelp(props) {
     }, []);
 
     return(
-        <Container> 
+        <Container>
+            <h3>Reviews from yelp</h3> 
             {
             reviews.map((data) => {
             return (
