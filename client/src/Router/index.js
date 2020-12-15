@@ -10,7 +10,6 @@ import Dinein from "../pages/Dinein";
 import Rules from "../pages/Rules";
 import Signin from "../components/SignIn";
 import Drinks from "../pages/Drinks";
-import Footer from "../components/Footer/index";
 import LunchMenu from '../pages/LunchMenu';
 import StaticAYCEMenu from '../pages/StaticAYCEMenu';
 import SignupSignin from '../pages/SignupSignIn';
@@ -41,7 +40,6 @@ const AllRoute = () => {
         <Route exact path="/togo" component={ToGo}/>
         <Route exact path="/delivery" component={Delivery}/>
       </Switch>
-      <Footer />
     </div>
   );
 }
