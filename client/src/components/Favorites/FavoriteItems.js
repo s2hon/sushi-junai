@@ -44,15 +44,13 @@ function Favorites(props) {
         <Container>
             <div className="menu-container">
             <h1>Favorites</h1>     
-            <Link to="/ayce" className="active">
-                <Button type={"button"} className={"btn btn1"} style={{display:"inline-block"}}><h5>BACK TO MENU</h5></Button>
-            </Link>    
+                
             {state.favorites.length ? state.favorites.map((fav)=>{
                 return (
-                    <div className="card text-center">
+                    <div className="card menu-card text-center">
                         <div className="card-body d-flex justify-content-between">
-                            <MenuItems key={fav.id} name={fav.item} price={getPrice(fav.item)} description={fav.category} >                        
-                                <Button btn={"float-right"} function={() => deleteFave(fav.item)} ><FontAwesomeIcon icon={faHeartBroken} /></Button>
+                            <MenuItems key={fav.id} name={fav.item} price={getPrice(fav.item).toFixed(2)} description={fav.category} >                        
+                                <Button btn={"float-right btn btn2"} function={() => deleteFave(fav.item)} ><FontAwesomeIcon icon={faHeartBroken} /></Button>
                                 <Button id={fav.id} type="button" btn={"float-right btn btn1"} function={() => { props.addItem({"name":fav.item,"price":getPrice(fav.item),"category":fav.category,"quantity":1})}}>
                                     <FontAwesomeIcon icon={faPlus} />
                                 </Button>
@@ -60,8 +58,14 @@ function Favorites(props) {
                         </div>
                     </div>
                 )
-            }) : <span>You have no favorites :(  You may add favorites from your cart! Happy eating!  ) </span>}
+            }) : <span><h3>You have no favorites :( You may add favorites from your order summary! Happy eating! </h3></span>}
         </div>
+        <Link to="/ayce" className="active">
+                <Button type={"button"} btn={"btn btn1 inline"}><h5>MENU</h5></Button>
+            </Link>
+            <Link to="/ordersummary" className="active">
+                <Button type={"button"} btn={"btn btn1 inline"}><h5>ORDER SUMMARY</h5></Button>
+            </Link>
         </Container>
     </>);
 }
