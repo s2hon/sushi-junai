@@ -45,11 +45,6 @@ function Home(props) {
                             <Button type={"button"} btn={"btn btn1 btn-lrg"}><h3>Dine In</h3></Button>
                         </Link>
                     </div>
-                    <div className="col-lg-3 col-md-4 col-sm-12 col-12 custom-grid">
-                        <a href={"https://www.yelp.com/order/v2/cart/954de1b27f3ee7705f2ca2d2c8336670"}>
-                            <Button type={"button"} btn={"btn btn1 btn-lrg"}><h3>Carry Out</h3></Button>
-                        </a>
-                    </div>
                 </Row>
                 <Row>
                     <Yelp/>
