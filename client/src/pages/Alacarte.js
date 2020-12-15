@@ -6,7 +6,6 @@ import BackButton from "../components/BackButton";
 function Alacarte(props) {
     return (
         <>  
-            <BackButton />
             <Counter/>
             <ALaCarteMenu />
         </>
