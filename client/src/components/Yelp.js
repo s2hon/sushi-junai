@@ -23,7 +23,8 @@ function Yelp(props) {
 
     return(
         <Container>
-            <h3>Reviews from yelp</h3> 
+            <hr />
+            <h3 className="section-head">Reviews from Yelp</h3> 
             {
             reviews.map((data) => {
             return (

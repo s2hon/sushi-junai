@@ -17,6 +17,7 @@
 }
 
 .menuOptions {
+    z-index: -9999;
     padding: 10px;
     padding-top: 0;
     border-radius: 7px;
@@ -25,7 +26,7 @@
     background-color: white;
     position: sticky;
     width: 90%;
-    z-index: -100;
+
 }
 
 .form-check {

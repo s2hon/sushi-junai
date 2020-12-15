@@ -58,7 +58,7 @@ function Favorites(props) {
                         </div>
                     </div>
                 )
-            }) : <span><h3>You have no favorites :( You may add favorites from your order summary! Happy eating! </h3></span>}
+            }) : <span><h4>Your favorites are empty.</h4></span>}
         </div>
         <Link to="/ayce" className="active">
                 <Button type={"button"} btn={"btn btn1 inline"}><h5>MENU</h5></Button>
