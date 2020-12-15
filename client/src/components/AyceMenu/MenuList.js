@@ -88,7 +88,7 @@ function Menu(props) {
                     </Row>
                     <Row className="sticky-top menuOptions">
                         <Container>
-                            <MenuNav />
+                        <MenuNav />
                             <Col>
                                 <span className="form-check form-check-inline">
                                     <input className="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
