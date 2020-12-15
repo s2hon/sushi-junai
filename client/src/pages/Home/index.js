@@ -22,7 +22,7 @@ function Home(props) {
                     {
                         data.map((data, idx) => {
                             return (
-                                <Card key={idx} location={data.location} phone={data.phone} address={data.address}
+                                <Card key={idx} location={data.location} phonehref={data.phonehref} phone = {data.phone} address={data.address}
                                     mon={data.mon} tue={data.tue} wed={data.tue} thu={data.thu} fri={data.fri} sat={data.sat} sun={data.sun} href={data.maps}>
                                 </Card>
                             )
