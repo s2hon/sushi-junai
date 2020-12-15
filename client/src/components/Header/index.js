@@ -5,10 +5,7 @@ import MobileNav from "../MobileNav/index";
 import './style.css';
 
 const Header = () => {
-    const SubmitHandler = (e) =>{
-        e.preventDefault()
-    }
-
+    
     return(	
 	<div className="middle-header header-style-3">
         <div className="container">

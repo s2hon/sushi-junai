@@ -27,7 +27,7 @@ function Card(props) {
                             <li>Sunday {props.sun}</li>
                         </ul>
                         <br/>
-                        <a href="tel:{props.phonehref}"><li><FontAwesomeIcon icon={faPhone} />{props.phone}</li></a>
+                        <a href={props.phonehref}><li><FontAwesomeIcon icon={faPhone} />{props.phone}</li></a>
                     </div>
                 </div>
             </div>

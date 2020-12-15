@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Nav, Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from 'reactstrap';
+import './style.css';
 
 const NavBar = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
