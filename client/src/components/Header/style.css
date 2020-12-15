@@ -11,7 +11,7 @@ font-family: 'Open Sans', sans-serif; */
 .middle-header {
 	font-family: 'Philosopher', sans-serif;
 	box-shadow: 0px 5px 14.25px 0.75px rgba(12, 105, 184, 0.1);
-	background-color: #573635;
+	background-color: #f29877;
 	margin-top: 0;
 	height: 110%;
 	z-index: 500;
@@ -145,7 +145,7 @@ header.fixed .header-content {
 @media(max-width:991px){
 	.middle-header {
 		position: relative;
-		background: #573635;
+		background: #f29877;
 		padding-bottom: 20px;
 	}
 	.header-content .contact-info-1 span {
