@@ -51,7 +51,7 @@ function Favorites(props) {
                         <div className="card-body d-flex justify-content-between">
                             <MenuItems key={fav.id} name={fav.item} price={getPrice(fav.item).toFixed(2)} description={fav.category} >                        
                                 <Button btn={"float-right btn btn2"} function={() => deleteFave(fav.item)} ><FontAwesomeIcon icon={faHeartBroken} /></Button>
-                                <Button id={fav.id} type="button" btn={"float-right btn btn1"} function={() => { props.addItem({"name":fav.item,"price":getPrice(fav.item),"category":fav.category,"quantity":1})}}>
+                                <Button id={fav.id} type="button" btn={"float-right btn btn1"} function={() => { props.addItem({"name":fav.item,"price":getPrice(fav.item).toFixed(2),"category":fav.category,"quantity":1})}}>
                                     <FontAwesomeIcon icon={faPlus} />
                                 </Button>
                             </MenuItems>
