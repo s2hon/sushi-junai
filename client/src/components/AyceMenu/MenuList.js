@@ -58,6 +58,8 @@ function Menu(props) {
     }
 
     const { menuCart } = props
+    const { pastOrders } = props
+
     const currentQty = arr => arr.reduce((sum, { quantity }) => sum + quantity, 0);
     const currentQtyTotal = currentQty(menuCart);
 
@@ -71,7 +73,9 @@ function Menu(props) {
     "Sashimi Special (4 pcs)",
     "Mochi Ice Cream"]
 
-    const cartItems = menuCart.map(menuCart => menuCart.name)
+    const currentCartItems = menuCart.map(menuCart => menuCart.name)
+    const pastCartItems = pastOrders.map(pastOrders => pastOrders.name)
+    const cartItems = [...currentCartItems, ...pastCartItems]
     let used =  cartItems.filter(item => limitedItem.includes(item))
 
     return (
