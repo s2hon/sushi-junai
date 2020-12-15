@@ -12,9 +12,18 @@ const YelpCard = (props) => {
   const stars = props.stars;
   
   function numStars(stars) {
-    for (let i=0; i<props.stars; i++){
+    if (stars===1) {
       return <FontAwesomeIcon icon={faStar} />
+    } else if (stars===2) {
+      return <><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></>
+    } else if (stars===3) {
+      return <><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></>
+    } else if (stars===4) {
+      return <><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></>
+    } else {
+      return <><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></>
     }
+    
   }
 
   return (
