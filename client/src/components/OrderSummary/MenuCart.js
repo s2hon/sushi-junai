@@ -36,7 +36,6 @@ const MenuCart = (props) => {
     const cartCostTotal = sumCostTotal(menuCart);
 
     let accumulativeTotal = (parseFloat(totalSavings)+cartCostTotal).toFixed(2) 
-    console.log(accumulativeTotal)
     
     const limitedItem = [
     'Screaming "O" (3/8 pcs)',

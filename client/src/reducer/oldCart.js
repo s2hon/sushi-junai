@@ -15,7 +15,6 @@ const oldCart = (state=persistedState || [], action) => {
 
                 const itemsObj = {}
                 combined.reduce(((key) => itemsObj[key] = itemsObj), {})
-                console.log(itemsObj)
 
                 for (let i = 0; i < combined.length; ++i) {
                     const name = combined[i].name
@@ -24,7 +23,6 @@ const oldCart = (state=persistedState || [], action) => {
                     } else {
                         const newQuantity = itemsObj[name].quantity + combined[i].quantity
                         itemsObj[name].quantity = newQuantity
-                        console.log(itemsObj)
                     }
                 }
 

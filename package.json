@@ -61,7 +61,5 @@
     "mocha": "^5.2.0",
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.3",
-    "sequelize": "^6.3.5",
-    "sequelize-cli": "^6.2.0"
   }
 }
