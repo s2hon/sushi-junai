@@ -5,8 +5,7 @@ import Image from "../Image";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import menus from "../../db/nav.json";
-import mobileIcon from "./icons8-sashimi-menu.png";
-import mobileIcon2 from "./icons8-menu-96.png";
+import mobileIcon2 from "./sushi-icon.png";
 import './style.css';
 
 
