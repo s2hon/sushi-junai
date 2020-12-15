@@ -205,13 +205,13 @@ const MenuCart = (props) => {
                     </div>
                     <div className="row">
                         <div className="col-3">
-                            Current Total Cost:
+                            Round Total:
                         </div>
                         <div className="col-3">
                             $ {cartCostTotal.toFixed(2)}
                         </div>
                         <div className="col-3">
-                            Accumulative Total:
+                            All Rounds Total:
                         </div>
                         <div className="col-3">
                             $ {isNaN(accumulativeTotal) ? cartCostTotal.toFixed(2) : accumulativeTotal}
