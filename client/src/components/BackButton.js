@@ -6,7 +6,7 @@ function BackButton () {
 
     return (
         <>
-        <button type="button" className="btn btn1 btn-lrg" onClick={()=>history.goBack()}>Go back</button>
+        <button style={{marginLeft:"30px"}} type="button" className="btn btn1 btn-lrg" onClick={()=>history.goBack()}>Go back</button>
         </>
     )
 }
