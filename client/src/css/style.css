@@ -126,3 +126,7 @@ footer {
     top: -125px;
     visibility: hidden;
 }
+
+.inline {
+    display: inline;
+}
