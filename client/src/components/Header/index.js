@@ -28,7 +28,7 @@ const Header = () => {
                                 <Link to="/home" title="">Home</Link>
                             </li>
                             <li>
-                                <Link to="/menu" title="">Menu</Link>
+                                <Link title="">Menu</Link>
                                 <ul>
                                     <li><Link to="/drinks" title="">Drinks</Link></li>
                                     <li><Link to="/lunch" title="">Lunch Specials (Mon-Fri)</Link></li>
@@ -42,9 +42,7 @@ const Header = () => {
                             <li>
                                 <Link to="/delivery" title="">Delivery</Link>
                             </li>
-                            <li>
-                                <Link to="/about" title="">About</Link>
-                            </li>
+                            
                         </ul>
                     </nav>
                 </div>
