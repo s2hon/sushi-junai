@@ -13,7 +13,7 @@
 }
 
 .navlist .card-body{
-    background: #f26430;
+    background: #f29877;
 }
 
 .sidebar h2{
@@ -61,7 +61,7 @@
 
 .navlist .card-body li {
     list-style: none;
-    background: #f26430;
+    background: #f29877;
 }
 
 .navlist li a{
@@ -75,7 +75,7 @@
 }
 .navbtn i {
     font-size: 30px;
-    color: #f26430;
+    color: #f29877;
 }
 
 .mobileMenu{
@@ -109,7 +109,7 @@
 }
 
 .middle-header-3 .navbtn i{
-    color: #f26430;
+    color: #f29877;
 }
 
 @media(max-width:450px){
