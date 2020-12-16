@@ -1,6 +1,7 @@
 
 .menuOptions{
     background-color: white;
+    z-index: 1;
 }
 
 h5.red {
