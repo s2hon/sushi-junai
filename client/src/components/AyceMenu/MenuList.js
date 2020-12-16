@@ -87,8 +87,8 @@ function Menu(props) {
                         <h1>All-You-Can-Eat Menu</h1><hr />
                     </Row>
                     <Row className="sticky-top menuOptions">
+                    <MenuNav />
                         <Container>
-                        <MenuNav />
                             <Col>
                                 <span className="form-check form-check-inline">
                                     <input className="form-check-input" type="checkbox" id="vegetarianCheckbox" onChange={handleInputChangeVeg} value="vegetarian" />
