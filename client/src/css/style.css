@@ -17,7 +17,7 @@
 }
 
 .menuOptions {
-    z-index: 0;
+    z-index: 5;
     padding: 10px;
     padding-top: 0;
     border-radius: 7px;

@@ -2,7 +2,7 @@
     position: fixed;
     left: -270px;
     top: 0;
-    z-index: 9999;
+    z-index: 10;
     height: 100vh;
     width: 180px;
     background: #f29877;
@@ -26,7 +26,7 @@
     position: absolute;
     right: 30px;
     top: 25px;
-    z-index: 999;
+    z-index: 10;
     cursor: pointer;
 }
 .navlist {
