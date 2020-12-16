@@ -14,7 +14,7 @@ font-family: 'Open Sans', sans-serif; */
 	background-color: #f29877;
 	margin-top: 0;
 	height: 110%;
-	z-index: 9999;
+	z-index: 10;
 }
 
 nav ul {
@@ -93,7 +93,7 @@ nav ul ul li {
 	margin-top: 20px;
 	position: relative;
 	transition: all .5s;
-	z-index: 9999;
+	z-index: 10;
 }
 nav ul ul li i{
 	position: absolute;
@@ -123,7 +123,7 @@ header.ab.fixed {
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 999;
+	z-index: 10;
 	background-color: #EBDFD9;
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.10);
 	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.10);
