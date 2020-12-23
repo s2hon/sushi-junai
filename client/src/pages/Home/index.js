@@ -37,12 +37,12 @@ function Home(props) {
                 <Row className="justify-content-center buttons">
                     <div className="col-lg-3 col-md4 col-sm-12 col-12 custom-grid">
                         <a href={"https://www.yelp.com/biz/sushi-junai-austin"}>
-                            <Button type={"button"} btn={"btn btn1 btn-lrg"}><h3>Reservations</h3></Button>
+                            <Button type={"button"} btn={"btn btn1 btn-lrg"}><h3 className="white-text">Reservations</h3></Button>
                         </a>
                     </div>
                     <div className="col-lg-3 col-md-4 col-sm-12 col-12 custom-grid">
                         <Link to={!state.userLoggedIn ? "/signinsignup": "/dinein"}>
-                            <Button type={"button"} btn={"btn btn1 btn-lrg"}><h3>Dine In</h3></Button>
+                            <Button type={"button"} btn={"btn btn1 btn-lrg"}><h3 className="white-text">Dine In</h3></Button>
                         </Link>
                     </div>
                 </Row>

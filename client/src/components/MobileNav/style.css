@@ -5,7 +5,7 @@
     z-index: 10;
     height: 100vh;
     width: 180px;
-    background: #f29877;
+    background: #D41A00;
     transition: all 0.3s ease 0s;
     box-shadow: 0px 10px 40px 0px rgba(50, 50, 50, 0.1);
     overflow-x: auto;
@@ -13,7 +13,7 @@
 }
 
 .navlist .card-body{
-    background: #f29877;
+    background: #f5c47a;
 }
 
 .sidebar h2{
@@ -61,7 +61,7 @@
 
 .navlist .card-body li {
     list-style: none;
-    background: #f29877;
+    background: #f5c47a;
 }
 
 .navlist li a{
@@ -75,7 +75,7 @@
 }
 .navbtn i {
     font-size: 30px;
-    color: #f29877;
+    color: #f5c47a;
 }
 
 .mobileMenu{
@@ -109,7 +109,11 @@
 }
 
 .middle-header-3 .navbtn i{
-    color: #f29877;
+    color: #f5c47a;
+}
+
+.submenu {
+    color: #A62E29 !important;
 }
 
 @media(max-width:450px){

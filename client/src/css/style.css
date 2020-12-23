@@ -1,5 +1,5 @@
 .body-bg {
-    background-color: #f2f2f2;
+    background-color: #f2e8e4;
 }
 
 /* Menu Styles */
@@ -36,7 +36,7 @@
 .section-head {
     padding: 10px;
     margin: 30px auto;
-    background-color: #f29877;
+    background-color: #f5c47a;
     border-radius: 7px;
     text-align: center;
     min-width: 200px;
@@ -59,11 +59,12 @@ h5.red {
 /* Button Styling */
 
 button.btn1 {
-    background-color: #93dfb6;
+    background-color: #D41A00;
     margin: 2px;
 }
 button.btn1:hover{
-    background-color: #5AC379;
+    background-color: #a62e29;
+    color: white;
 }
 
 button.btn2 {
@@ -100,7 +101,7 @@ h5, h6, p, label, .btn, .mainFont {
 }
 
 .white-text {
-    color: white;
+    color: white !important;
 }
 
 .counter {

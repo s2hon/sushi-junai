@@ -40,6 +40,7 @@
 
 .wpo-site-footer .wpo-upper-footer {
     padding: 0 0 0px;
+    background: #D41A00;
 }
 
 /* @media (max-width: 991px) {
@@ -70,7 +71,7 @@
 .wpo-site-footer .wpo-lower-footer {
     text-align: center;
     position: relative;
-    background: #F26430;
+    background: #D41A00;
 }
 
 .wpo-site-footer .wpo-lower-footer .row {
