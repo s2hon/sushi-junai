@@ -1,5 +1,5 @@
 .body-bg {
-    background-color: #f2e8e4;
+    background-color: #6E0200;
 }
 
 /* Menu Styles */
@@ -36,7 +36,7 @@
 .section-head {
     padding: 10px;
     margin: 30px auto;
-    background-color: #f5c47a;
+    background-color: #FF8725;
     border-radius: 7px;
     text-align: center;
     min-width: 200px;
@@ -61,6 +61,7 @@ h5.red {
 button.btn1 {
     background-color: #D41A00;
     margin: 2px;
+    color: white !important;
 }
 button.btn1:hover{
     background-color: #a62e29;
