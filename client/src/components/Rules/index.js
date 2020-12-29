@@ -18,12 +18,12 @@ const Slider = (props) => {
     function setTimer(e) {
         const currentHour = moment().format("HH");
         console.log(currentHour);
-        
+
         if (currentHour < 15){
-            localStorage.setItem("timer", 3600);
+            localStorage.setItem("timer", 4740);
             localStorage.setItem("date", moment().format('MMMM Do YYYY'));
         } else {
-            localStorage.setItem("timer", 5400);
+            localStorage.setItem("timer", 6000);
             localStorage.setItem("date", moment().format('MMMM Do YYYY'));
         }
     }
