@@ -10,6 +10,7 @@ import './style.css';
 import Counter from "../../components/Counter";
 import Yelp from "../../components/Yelp";
 import Footer from "../../components/Footer/"
+import Feedback from "../../components/Feedback";
 
 function Home(props) {
     const [state] = useStoreContext();
@@ -49,6 +50,7 @@ function Home(props) {
                 <Row>
                     <Yelp/>
                 </Row>
+                <Feedback />
                 <Footer />
             </div>
     </React.Fragment>);
