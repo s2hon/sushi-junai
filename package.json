@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s2hon/sushi-junai.git"
+    "url": "git+https://github.com/sushijunaiatx/sushi-junai.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/s2hon/sushi-junai#readme",
+  "homepage": "https://github.com/sushijunaiatx/sushi-junai#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
