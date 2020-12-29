@@ -8,6 +8,8 @@ import withReactContent from 'sweetalert2-react-content'
 import { useForm } from 'react-hook-form'
 import * as emailjs from "emailjs-com";
 import Swal from 'sweetalert2'
+import './style.css';
+
 const MySwal = withReactContent(Swal)
 
 const alertContent = () => {
@@ -63,97 +65,70 @@ const FeedbackForm = () => {
     };
 
         return (
-            <div id="contact" className="contact-area three border-bottom-two pt-100 pb-70">
+            <section className="wpo-news-letter-section">
                 <div className="container">
-                    <div className="form-title">
-                        <h2>Leave us a feedback!</h2>
-                    </div>
+                    <div className="row">
+                        <div className="col col-md-6 offset-lg-3 col-sm-8 offset-md-2">
+                            <div className="wpo-newsletter">
+                                <h3>Leave us a Feedback?</h3>
+                                <div className="wpo-newsletter-form">
+                                    <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
+                                        <div className="form-field">
+                                            <textarea 
+                                                name="message" 
+                                                className="form-control" 
+                                                cols="30" 
+                                                rows="6" 
+                                                placeholder="Write me something, anything" 
+                                                value={contact.message}
+                                                onChange={handleChange}
+                                            />
+                                            <div className='invalid-feedback' style={{display: 'block'}}>
+                                                {errors.message && 'Text body is required.'}
+                                            </div>
+                                        </div>
+                                        <div className="form-field">
+                                            <input 
+                                                type="text" 
+                                                name="email" 
+                                                className="form-control" 
+                                                placeholder="Email" 
+                                                value={contact.email}
+                                                onChange={handleChange}
+                                                ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+                                            />
+                                            <div className='invalid-feedback' style={{display: 'block'}}>
+                                                {errors.email && 'Email is required.'}
+                                            </div>
+                                        </div>
 
-                    <div className="row align-items-center">
-                        <div className="col-md-7 col-lg-6">
-                            <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
-                                <div className="form-field">
-                                    <input 
-                                        type="text" 
-                                        name="email" 
-                                        className="form-control" 
-                                        placeholder="Email" 
-                                        value={contact.email}
-                                        onChange={handleChange}
-                                        ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-                                    />
-                                    <div className='invalid-feedback' style={{display: 'block'}}>
-                                        {errors.email && 'Email is required.'}
+                                        <button type="submit" className="btn common-btn three">Send <span></span></button>
+                                    </form>
+                                </div>
+
+                                <div className="col-md-5 col-lg-6">
+                                    <div className="form-field">
+                                        <div className="bottom">
+                                            <ul>
+                                                <li>
+                                                    <a target="_blank">
+                                                        <FontAwesomeIcon icon={faInstagram} />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank">
+                                                        <FontAwesomeIcon icon={faFacebookF} />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            
-                                <div className="form-field">
-                                    <textarea 
-                                        name="message" 
-                                        className="form-control" 
-                                        cols="30" 
-                                        rows="6" 
-                                        placeholder="Write me something, anything" 
-                                        value={contact.message}
-                                        onChange={handleChange}
-                                    />
-                                    <div className='invalid-feedback' style={{display: 'block'}}>
-                                        {errors.message && 'Text body is required.'}
-                                    </div>
-                                </div>
-                                    
-                                <button type="submit" className="btn common-btn three">Send <span></span></button>
-                            </form>
-                        </div>
-
-                        <div className="col-md-5 col-lg-6">
-                            <div className="form-field">
-                                <div className="top">
-                                    <span>Sushi Junai 1</span>
-                                    <ul>
-                                        <li>
-                                            <span>Phone:</span>
-                                            <a href="tel:+19792195702"></a>
-                                        </li>
-                                        <li>
-                                            <span>Address:</span>
-                                            <a href="#" target="_blank"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="top">
-                                    <span>Sushi Junai 2</span>
-                                    <ul>
-                                        <li>
-                                            <span>Phone:</span>
-                                            <a href="tel:+19792195702"></a>
-                                        </li>
-                                        <li>
-                                            <span>Address:</span>
-                                            <a href="#" target="_blank"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div className="bottom">
-                                    <ul>
-                                        <li>
-                                            <a target="_blank">
-                                                <FontAwesomeIcon icon={faInstagram} />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a target="_blank">
-                                                <FontAwesomeIcon icon={faFacebookF} />
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 
