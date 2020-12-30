@@ -7,30 +7,21 @@ const oldCart = (state=persistedState || [], action) => {
     switch (action.type) {
         case 'SAVE_PAST_CART':{
             const { menuCart } = action.payload
-
-            const convertArrayToObject = (array, key) => {
-                const initialValue = {};
-                return array.reduce((obj, item) => {
-                    return {
-                        ...obj,
-                        [key]: item
-                    };
-                }, initialValue);
-            };
-
             if (!state.length) {
                 state = menuCart
             }
             else {
-                const combinedArray = [...state, ...menuCart]
-                const itemsObj = convertArrayToObject(combinedArray, "name")
+                const combined = [...state, ...menuCart]
 
-                for (let i = 0; i < combinedArray.length; ++i) {
-                    const name = combinedArray[i].name
+                const itemsObj = {}
+                combined.reduce(((key) => itemsObj[key] = itemsObj), {})
+
+                for (let i = 0; i < combined.length; ++i) {
+                    const name = combined[i].name
                     if (itemsObj[name] === undefined) {
-                        itemsObj[name] = combinedArray[i]
+                        itemsObj[name] = combined[i]
                     } else {
-                        const newQuantity = itemsObj[name].quantity + combinedArray[i].quantity
+                        const newQuantity = itemsObj[name].quantity + combined[i].quantity
                         itemsObj[name].quantity = newQuantity
                     }
                 }

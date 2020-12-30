@@ -12,7 +12,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Footer(props){
   return (
     <footer className="wpo-site-footer">
-      {/* <div className="wpo-upper-footer">
+      <div className="wpo-upper-footer">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col col-lg-3 col-md-6 col-sm-12 col-12 text-center">
@@ -25,7 +25,7 @@ function Footer(props){
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="wpo-lower-footer">
         <div className="container">
           <div className="row">
