@@ -23,6 +23,7 @@ import Shellfish from "../FoodKey/Shellfish";
 import Spicy from "../FoodKey/Spicy";
 import SO from "../FoodKey/SO";
 import YumYum from "../FoodKey/YumYum";
+import BackButton from "../BackButton/BackButton"
 
 function Menu(props) {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -81,10 +82,12 @@ function Menu(props) {
     return (
         <>
             <Counter />
+            
             <Container>
                 <div className="menu-container">
                     <Row>
-                        <h1>All-You-Can-Eat Menu</h1><hr />
+                    
+                        <h1 className="center"><BackButton />All-You-Can-Eat Menu</h1><hr />
                     </Row>
                     <Row className="sticky-top menuOptions">
                     <MenuNav />
@@ -96,13 +99,10 @@ function Menu(props) {
                                 </span>
                                 <span className="form-check form-check-inline">
                                     <input className="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
-                                    <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (must order without sauce) </label>
+                                    <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (must order without sauce or Tamari, GF soy sauce) </label>
                                 </span>
                             </Col>
                             <Col>
-                                <span>
-                                    Ask for Tamari (GF Soy Sauce) from a waitstaff!
-                                </span>
                                 <span>
                                     <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Order Summary ({currentQtyTotal})</Button></Link>
                                 </span>
