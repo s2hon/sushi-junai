@@ -2,7 +2,6 @@ import React from "react";
 import Card from "../../components/Card/index";
 import { Row, Col } from "reactstrap";
 import data from "../../db/store.json";
-import { useStoreContext } from '../../utils/GlobalStore';
 import './style.css';
 import Counter from "../../components/Counter";
 import Yelp from "../../components/Yelp";
@@ -12,7 +11,6 @@ import Gallery from "react-photo-gallery";
 import Feedback from "../../components/Feedback";
 
 function Home(props) {
-    const [state] = useStoreContext();
 
     return (
         <React.Fragment>
