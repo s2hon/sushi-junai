@@ -75,8 +75,8 @@ function Menu(props) {
 
     const currentCartItems = menuCart.map(menuCart => menuCart.name)
     const pastCartItems = pastOrders.map(pastOrders => pastOrders.name)
-    const cartItems = [...currentCartItems, ...pastCartItems]
-    let used =  cartItems.filter(item => limitedItem.includes(item))
+    const allCartItems = [...currentCartItems, ...pastCartItems]
+    let used =  allCartItems.filter(item => limitedItem.includes(item))
 
     return (
         <>
@@ -96,11 +96,13 @@ function Menu(props) {
                                 </span>
                                 <span className="form-check form-check-inline">
                                     <input className="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
-                                    <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce or with tamari) </label>
+                                    <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (must order without sauce) </label>
                                 </span>
                             </Col>
                             <Col>
-                                
+                                <span>
+                                    Ask for Tamari (GF Soy Sauce) from a waitstaff!
+                                </span>
                                 <span>
                                     <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Order Summary ({currentQtyTotal})</Button></Link>
                                 </span>
