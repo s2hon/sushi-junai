@@ -12,7 +12,7 @@ function ToGo () {
 
     return (
     <>
-    <div className="menu-container">
+    <div className="menu-container container">
     <h2 id="HouseSpecials" className="text-center">Order from our <Link to="/alacarte">A La Carte</Link> menu</h2>
         <Row>
         

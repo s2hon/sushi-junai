@@ -6,11 +6,11 @@ ul.smothscroll {
     z-index: 9;
 }
 ul.smothscroll a {
-    background-color: rgb(8, 204, 127,.7);
+    background-color: #E63736;
     width: 45px;
     height: 45px;
     line-height: 40px;
-    border: 2px solid #08cc7f;
+    border: 2px solid #FF4D4D;
     border-radius: 0;
     display: block;
     text-align: center;
@@ -18,7 +18,7 @@ ul.smothscroll a {
     border-radius: 50%;
 }
 ul.smothscroll a:hover {
-    background-color: #08cc7f;
+    background-color: #FF4D4D;
 }
 
 @media(max-width:767px){
