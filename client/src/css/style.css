@@ -111,6 +111,12 @@ h5, h6, p, label, .btn, .mainFont {
 .counter {
     font-size: 2em;
     font-weight: bold;
+    /* background: #E63736; */
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    /* margin-top: 5px; */
+    color: #E6D9D3 !important;
 }
 
 footer {
