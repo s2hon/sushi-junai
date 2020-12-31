@@ -14,7 +14,7 @@ font-family: 'Open Sans', sans-serif; */
 	background-color: #E63736;
 	margin-top: 0;
 	height: 110%;
-	z-index: 10;
+	z-index: 9999;
 }
 
 nav ul {
