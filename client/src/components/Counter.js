@@ -14,11 +14,14 @@ function Counter() {
     }
 
    // calculateTimeLeft
-    const currentTime = moment().format("HH:mm:ss");
+    const currentTime = moment().format("MMMM Do YYYY HH:mm:ss");
+    console.log(currentTime)
     const endTime = localStorage.getItem("endtime");
+    console.log(endTime)
     
-    let difference = moment.utc(moment(endTime,"HH:mm:ss").diff(moment(currentTime,"HH:mm:ss"))).format("HH:mm:ss")
+    let difference = moment.utc(moment(endTime,"MMMM Do YYYY HH:mm:ss").diff(moment(currentTime,"MMMM Do YYYY HH:mm:ss"))).format("HH:mm:ss")
     difference = moment.duration(difference).asSeconds()
+    console.log(difference)
 
     const [count, setCount] = useState(difference);
     const [hour, setHour] = useState(getHour(count));

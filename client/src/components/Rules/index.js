@@ -18,11 +18,12 @@ const Slider = (props) => {
     function setTimer(e) {
         const currentHour = moment().format("HH");
         if (currentHour < 15){
-            let endtime = moment().add(70, "m");
-            localStorage.setItem("endtime", endtime).format("HH:mm:ss");
+            let endtime = moment().add(70, "m").format("MMMM Do YYYY HH:mm:ss");
+            console.log(endtime);
+            localStorage.setItem("endtime", endtime);
             localStorage.setItem("date", moment().format('MMMM Do YYYY'));
         } else {
-            let endtime = moment().add(100, 'm').format("HH:mm:ss");
+            let endtime = moment().add(100, 'm').format("MMMM Do YYYY HH:mm:ss");
             localStorage.setItem("endtime", endtime);
             localStorage.setItem("date", moment().format('MMMM Do YYYY'));
         }
@@ -35,17 +36,19 @@ const Slider = (props) => {
                     <div className="col-12">
                         <div className="rules-title">
                             <h1>All You Can Eat Rules</h1>
-                            <h2>Lunch (until 3PM): time limit 60 min for $24.95 (Nigiri NOT included) <br/>
-                                Dinner (All Day): time limit 90 min for $32.95</h2>
-                            <p>Children pricing Lunch $10.95 and Dinner $15.95.</p>
+                            <h2>Lunch (until 3PM): time limit 60 min for $24.95 (Nigiri NOT included) </h2>
+                            <h3>Children's: $10.95</h3>
+                            <h2>Dinner (All Day): time limit 90 min for $32.95</h2>
+                            <h3>Children's: $15.95</h3>
+                            <hr />
                             <h4>Click "I Agree" to start your timer.</h4>
                         </div>
                     </div>
                 </Row>
                 <div className="rules-wrapper">
                     <Row>
-                        <Flip triggerOnce delay={1000} direction="horizontal">
-                            <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
+                        <Flip triggerOnce delay={0} direction="horizontal">
+                            <div className="col-lg-4 col-md-4 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
                                     <Image src={SalmonSushi} width="40px" alt="SalmonSushi" />
@@ -57,8 +60,8 @@ const Slider = (props) => {
                                 </div>
                             </div>
                         </Flip>
-                        <Flip triggerOnce delay={2000} direction="horizontal">
-                            <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
+                        <Flip triggerOnce delay={1000} direction="horizontal">
+                            <div className="col-lg-4 col-md-4 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
                                     <Image src={Noodles} width="40px" alt="Noodles" />
@@ -70,8 +73,8 @@ const Slider = (props) => {
                                 </div>
                             </div>
                         </Flip>
-                        <Flip triggerOnce delay={3000} direction="horizontal">
-                            <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
+                        <Flip triggerOnce delay={2000} direction="horizontal">
+                            <div className="col-lg-4 col-md-4 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
                                         <Image src={SoySauce} width="40px" alt="SoySauce" />
@@ -96,7 +99,9 @@ const Slider = (props) => {
                                 </div>
                             </div>
                         </Flip> */}
-                        <Flip triggerOnce delay={5000} direction="horizontal">
+                        
+                    </Row>
+                    <Flip triggerOnce delay={3000} direction="horizontal">
                             {/* <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
@@ -109,15 +114,16 @@ const Slider = (props) => {
                                 </div>
                             </div> */}
                             <Row className="rules-button">
+                                
                                 <Link to={"/alacarte"}>
                                     <Button type={"button"} btn={"btn btn2"}>Go to A La Carte</Button>
                                 </Link>
                                 <Link className="active" to={"/ayce"}>
                                     <Button type={"button"} btn={"btn btn1"} function={setTimer}>I AGREE</Button>
                                 </Link>
+                                
                             </Row>
                         </Flip>
-                    </Row>
                 </div>
             </Container>
         </>

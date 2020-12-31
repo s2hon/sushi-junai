@@ -5,6 +5,7 @@ import {Row, Col, Card, CardTitle, CardImg, CardBody, CardDeck }from "reactstrap
 function Delivery() {
 
     return (<>
+    <div className="menu-container container">
     <Row>
         <Col sm="12" md={{ size: 6, offset: 3 }}>
         <h2 style={{padding:"30px"}}className="text-center">Use our partners for delivery:</h2>
@@ -32,6 +33,7 @@ function Delivery() {
         </Col>
         
     </Row>
+    </div>
     </>)
 
 }

@@ -86,6 +86,9 @@ const MenuCart = (props) => {
                     <h3 className="cartHeading">Sushi Tracker ({currentQtyTotal})</h3>
                 </Row>
                 <div className="menu-container">
+                    <Row>
+                    <h3 className="cartHeading">Order Summary ({currentQtyTotal})</h3>
+                    </Row>
                     <Nav tabs>
                         <NavItem>
                             <NavLink
@@ -200,7 +203,7 @@ const MenuCart = (props) => {
                                 <Button type={"button"} className={"btn btn1"} style={{display:"inline-block"}}><h5>BACK TO MENU</h5></Button>
                         </Link> 
                         <Link to="/favorite" className="active">
-                            <Button type={"button"} className={"btn btn1"} style={{backgroundColor: "#F29B9B", display:"inline-block"}}><h5>Favorites</h5></Button>
+                            <Button type={"button"} className={"btn btn1"} style={{display:"inline-block"}}><h5>Favorites</h5></Button>
                         </Link>
                     </div>
                     <div className="row">

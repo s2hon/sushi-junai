@@ -1,13 +1,14 @@
 .body-bg {
-    background-color: #f2f2f2;
+    background-color: #573635;
 }
 
 /* Menu Styles */
 
 .menu-container {
-    background-color: white;
+    background-color: #E6D9D3;
     padding: 10px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .menu-card {
@@ -36,7 +37,7 @@
 .section-head {
     padding: 10px;
     margin: 30px auto;
-    background-color: #f29877;
+    background-color: #FFB400;
     border-radius: 7px;
     text-align: center;
     min-width: 200px;
@@ -59,20 +60,24 @@ h5.red {
 /* Button Styling */
 
 button.btn1 {
-    background-color: #93dfb6;
+    background-color: #E63736;
     margin: 2px;
+    color: white !important;
 }
 button.btn1:hover{
-    background-color: #5AC379;
+    background-color: #FF4D4D;
+    color: white !important;
 }
 
 button.btn2 {
     margin: 2px;
-    background-color: #f29877;
+    background-color: #FFB400;
+    color: white !important;
 }
 
 button.btn2:hover {
-    background-color: #f26430;
+    background-color: #FFC233;
+    color: white !important;
 }
 
 button.btn-lrg {
@@ -100,7 +105,7 @@ h5, h6, p, label, .btn, .mainFont {
 }
 
 .white-text {
-    color: white;
+    color: white !important;
 }
 
 .counter {
@@ -109,7 +114,7 @@ h5, h6, p, label, .btn, .mainFont {
 }
 
 footer {
-    background-color: #f26430;
+    background-color: #E63736;
 }
 
 .margins {
@@ -119,6 +124,10 @@ footer {
 
 .center {
     text-align: center;
+}
+
+.centered {
+    margin: 0 auto !important;
 }
 
 .anchor {

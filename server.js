@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 
 // Setting up port and requiring models for syncing
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 app.use(express.json());
