@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Container from "../components/Container"
+import moment from 'moment';
 
 function Counter() {
     function getHour(count){
@@ -11,7 +12,16 @@ function Counter() {
     function getSecond(count){
         return count % 60;
     }
-    const [count, setCount] = useState(localStorage.getItem("timer"));
+
+   // calculateTimeLeft
+    const currentTime = moment().format("HH:mm:ss");
+    const endTime = localStorage.getItem("endtime");
+    
+    let difference = moment.utc(moment(endTime,"HH:mm:ss").diff(moment(currentTime,"HH:mm:ss"))).format("HH:mm:ss")
+    difference = moment.duration(difference).asSeconds()
+    console.log(difference);
+
+    const [count, setCount] = useState(difference);
     const [hour, setHour] = useState(getHour(count));
     const [minute, setMinute] = useState(getMinute(count));
     const [seconds, setSeconds] = useState(getSecond(count));
@@ -32,9 +42,6 @@ function Counter() {
                     secondsRemaining = secondsRemaining.toString().padStart(2, "0");
                 }
                 setSeconds(secondsRemaining);
-                if (localStorage.getItem("timer")) {
-                    localStorage.setItem("timer", count);
-                }
         }, 1000)
 
         if (count < 0) {
@@ -50,7 +57,7 @@ function Counter() {
     return (
         <Container>
             <div className="float-right counter">
-                <div className="counter float-right" style={{ color }}>{localStorage.getItem("timer") ?  `${hour}:${minute}:${seconds}` : ''} </div>
+                <div className="counter float-right" style={{ color }}>{localStorage.getItem("endtime") ?  `${hour}:${minute}:${seconds}` : ''} </div>
                 </div>
         </Container>
     )
