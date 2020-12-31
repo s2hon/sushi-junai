@@ -2,7 +2,6 @@
   "name": "sushi-junai",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
   "engines": {
     "node": "14.13.1"
   },
@@ -31,25 +30,22 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
     "axios": "^0.21.0",
-    "bcryptjs": "2.4.3",
     "bootstrap": "^4.5.3",
+    "dotenv": "^8.2.0",
+    "emailjs-com": "^2.6.4",
     "express": "^4.17.0",
-    "express-session": "^1.16.1",
     "moment": "^2.29.1",
-    "mysql2": "^1.6.5",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
     "popper.js": "^1.16.1",
     "react-bootstrap": "^1.4.0",
     "react-fontawesome": "^1.7.1",
+    "react-hook-form": "^6.13.1",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.2.2",
     "reactstrap": "^8.7.1",
     "redux": "^4.0.5",
-    "sequelize": "^6.3.5",
-    "sequelize-cli": "^6.2.0",
-    "dotenv": "^8.2.0"
+    "sweetalert2": "^10.12.6",
+    "sweetalert2-react-content": "^3.2.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",

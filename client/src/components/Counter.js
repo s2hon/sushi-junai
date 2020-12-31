@@ -19,7 +19,6 @@ function Counter() {
     
     let difference = moment.utc(moment(endTime,"HH:mm:ss").diff(moment(currentTime,"HH:mm:ss"))).format("HH:mm:ss")
     difference = moment.duration(difference).asSeconds()
-    console.log(difference);
 
     const [count, setCount] = useState(difference);
     const [hour, setHour] = useState(getHour(count));
