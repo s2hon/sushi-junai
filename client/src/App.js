@@ -26,7 +26,6 @@ if (localStorage.getItem("date") !== moment().format('MMMM Do YYYY')) {
 }
 
 function App() {
-
     return (
         <Provider store={store}>
             <Router>

@@ -5,7 +5,7 @@ export default function EmptyCart () {
         <React.Fragment>
             <tbody className="mainFont">
                 <td></td>
-            <h4>Order summary empty. </h4>
+            <h4>Order Tracker Is EMPTY! </h4>
             </tbody>
         </React.Fragment>
     )

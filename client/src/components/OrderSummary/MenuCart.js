@@ -82,7 +82,9 @@ const MenuCart = (props) => {
         <>
         <Counter/>
             <Container>
-                
+                <Row>
+                    <h3 className="cartHeading">Sushi Tracker ({currentQtyTotal})</h3>
+                </Row>
                 <div className="menu-container">
                     <Row>
                     <h3 className="cartHeading">Order Summary ({currentQtyTotal})</h3>

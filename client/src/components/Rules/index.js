@@ -5,25 +5,26 @@ import Button from "../Button";
 import Row from "../Row";
 import Container from "../Container";
 import Image from "../Image";
+import moment from 'moment';
 import SoySauce from "./images/soy-sauce.png"
 import Noodles from "./images/icons8-noodles-100.png"
 import SalmonSushi from "./images/icons8-salmon-sushi-100.png"
 // import Children from "./images/icons8-maneki-144.png"
 // import Bento from "./images/icons8-bento-100.png"
 import './style.css';
-import moment from 'moment';
+
 
 const Slider = (props) => {
-    
     function setTimer(e) {
         const currentHour = moment().format("HH");
-        console.log(currentHour);
-
         if (currentHour < 15){
-            localStorage.setItem("timer", 4740);
+            let endtime = moment().add(70, "m").format("MMMM Do YYYY HH:mm:ss");
+            console.log(endtime);
+            localStorage.setItem("endtime", endtime);
             localStorage.setItem("date", moment().format('MMMM Do YYYY'));
         } else {
-            localStorage.setItem("timer", 6000);
+            let endtime = moment().add(100, 'm').format("MMMM Do YYYY HH:mm:ss");
+            localStorage.setItem("endtime", endtime);
             localStorage.setItem("date", moment().format('MMMM Do YYYY'));
         }
     }
