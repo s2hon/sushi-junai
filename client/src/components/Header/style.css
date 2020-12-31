@@ -11,7 +11,7 @@ font-family: 'Open Sans', sans-serif; */
 .middle-header {
 	font-family: 'Philosopher', sans-serif;
 	box-shadow: 0px 5px 14.25px 0.75px rgba(12, 105, 184, 0.1);
-	background-color: #f29877;
+	background-color: #E63736;
 	margin-top: 0;
 	height: 110%;
 	z-index: 10;
@@ -27,7 +27,7 @@ nav > ul > li {
 }
 nav ul li a {
 	display: inline-block;
-	color: #F8F0EB ;
+	color: #F8F0EB;
 	font-size: 20px;
 	font-weight: 600;
 	position: relative;
@@ -72,7 +72,7 @@ nav ul li:hover > ul li {
 nav ul li a:hover,
 nav ul li a.active,
 nav ul li a.focus {
-	color: #f26430;
+	color: #573635;
 	text-decoration: none;
 }
 
@@ -88,7 +88,7 @@ nav ul ul {
 }
 nav ul ul li {
 	padding: 10px 15px;
-	background-color: #f29877;
+	background-color: #E63736;
 	border-bottom: 1px solid #ebebeb;
 	margin-top: 20px;
 	position: relative;
@@ -151,7 +151,7 @@ header.fixed .header-content {
 @media(max-width:991px){
 	.middle-header {
 		position: relative;
-		background: #f29877;
+		background: #E63736;
 		padding-bottom: 20px;
 	}
 	.header-content .contact-info-1 span {

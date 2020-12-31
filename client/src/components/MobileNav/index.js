@@ -50,9 +50,9 @@ export default class Nav extends Component {
                                     <Collapse isOpen={item.id === isOpen}>
                                         <Card>
                                             <CardBody>
-                                                <ul>
+                                                <ul className="black-text submenu">
                                                     {item.submenu.map(submenu => (
-                                                        <li key={submenu.id}><Link className="active mainFont" to={submenu.link} onClick={this.menuHandler}>{submenu.title}</Link></li>
+                                                        <li key={submenu.id} className="black-text submenu"><Link className="mainFont black-text submenu" to={submenu.link} onClick={this.menuHandler}>{submenu.title}</Link></li>
                                                     ))}
                                                 </ul>
                                             </CardBody>

@@ -52,11 +52,11 @@ const FeedbackForm = () => {
             const USER_ID = "user_ZQSDdDgoptUzuy6jwSMHv";
 
             await emailjs.send(SERVICE_ID, TEMPLATE_ID, payload, USER_ID)
-            .then(function(response) {
-                console.log(response.status, response.text);
-                setContact(INITIAL_STATE);
-                alertContent();
-                }, function(err) {
+                .then(function (response) {
+                    console.log(response.status, response.text);
+                    setContact(INITIAL_STATE);
+                    alertContent();
+                }, function (err) {
                     console.log('FAILED...', err);
                 })
         } catch (error) {
@@ -64,72 +64,73 @@ const FeedbackForm = () => {
         }
     };
 
-        return (
-            <section className="wpo-news-letter-section">
-                <div className="container">
-                    <div className="row">
-                        <div className="col col-md-6 offset-lg-3 col-sm-8 offset-md-2">
-                            <div className="wpo-newsletter">
-                                <h3>Leave us a Feedback?</h3>
-                                <div className="wpo-newsletter-form">
-                                    <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
-                                        <div className="form-field">
-                                            <textarea 
-                                                name="message" 
-                                                className="form-control" 
-                                                cols="30" 
-                                                rows="6" 
-                                                placeholder="Write me something, anything" 
-                                                value={contact.message}
-                                                onChange={handleChange}
-                                            />
-                                            <div className='invalid-feedback' style={{display: 'block'}}>
-                                                {errors.message && 'Text body is required.'}
-                                            </div>
-                                        </div>
-                                        <div className="form-field">
-                                            <input 
-                                                type="text" 
-                                                name="email" 
-                                                className="form-control" 
-                                                placeholder="Email" 
-                                                value={contact.email}
-                                                onChange={handleChange}
-                                                ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-                                            />
-                                            <div className='invalid-feedback' style={{display: 'block'}}>
-                                                {errors.email && 'Email is required.'}
-                                            </div>
-                                        </div>
+    return (
 
-                                        <button type="submit" className="btn common-btn three">Send <span></span></button>
-                                    </form>
+        <div className="row">
+            <div className="col">
+                <div className="wpo-news-letter">
+                    <h3 className="section-head">Leave Us Feedback!</h3>
+                    <div className="wpo-news-letter-form">
+                        <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
+                            <div className="form-field">
+                                <textarea
+                                    name="message"
+                                    className="form-control"
+                                    cols="30"
+                                    rows="6"
+                                    placeholder="Your message"
+                                    value={contact.message}
+                                    onChange={handleChange}
+                                />
+                                <div className='invalid-feedback' style={{ display: 'block' }}>
+                                    {errors.message && 'Text body is required.'}
                                 </div>
+                            </div>
+                            <div className="form-field">
+                                <input
+                                    type="text"
+                                    name="email"
+                                    className="form-control"
+                                    placeholder="Email"
+                                    value={contact.email}
+                                    onChange={handleChange}
+                                    ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+                                />
+                                <div className='invalid-feedback' style={{ display: 'block' }}>
+                                    {errors.email && 'Email is required.'}
+                                </div>
+                            </div>
 
-                                <div className="col-md-5 col-lg-6">
-                                    <div className="form-field">
-                                        <div className="bottom">
-                                            <ul>
-                                                <li>
-                                                    <a target="_blank">
-                                                        <FontAwesomeIcon icon={faInstagram} />
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_blank">
-                                                        <FontAwesomeIcon icon={faFacebookF} />
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                            <button type="submit" className="btn btn1">Send <span></span></button>
+                        </form>
+                    </div>
+
+                    <div>
+                        <div className="center">
+                            <div className="bottom">
+
+                                <button className="btn btn2">
+                                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/sushijunai/">
+                                        <FontAwesomeIcon icon={faInstagram} />
+                                    </a>
+                                </button>
+
+                                <button className="btn btn2">
+                                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/sushijunai">
+                                        <FontAwesomeIcon icon={faFacebookF} />
+                                    </a>
+                                </button>
+
+
+
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        )
-    }
+            </div>
+        </div>
+
+    )
+}
 
 export default FeedbackForm
