@@ -15,17 +15,19 @@ import './style.css';
 
 
 const Slider = (props) => {
+    
     function setTimer(e) {
-        const currentHour = moment().format("HH");
-        if (currentHour < 15){
-            let endtime = moment().add(70, "m").format("MMMM Do YYYY HH:mm:ss");
-            console.log(endtime);
-            localStorage.setItem("endtime", endtime);
-            localStorage.setItem("date", moment().format('MMMM Do YYYY'));
-        } else {
-            let endtime = moment().add(100, 'm').format("MMMM Do YYYY HH:mm:ss");
-            localStorage.setItem("endtime", endtime);
-            localStorage.setItem("date", moment().format('MMMM Do YYYY'));
+        if (localStorage.getItem("endtime") === null) {
+            const currentHour = moment().format("HH");
+            if (currentHour < 15){
+                let endtime = moment().add(70, "m").format("MMMM Do YYYY HH:mm:ss");
+                localStorage.setItem("endtime", endtime);
+                localStorage.setItem("date", moment().format('MMMM Do YYYY'));
+            } else {
+                let endtime = moment().add(100, 'm').format("MMMM Do YYYY HH:mm:ss");
+                localStorage.setItem("endtime", endtime);
+                localStorage.setItem("date", moment().format('MMMM Do YYYY'));
+            }
         }
     }
 
