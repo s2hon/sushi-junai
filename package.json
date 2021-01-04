@@ -14,7 +14,7 @@
     "lint": "eslint --quiet .",
     "fix": "eslint --fix .",
     "watch": "nodemon server.js",
-    "build": "npm run build",
+    "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
