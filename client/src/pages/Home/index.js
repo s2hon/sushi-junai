@@ -30,7 +30,7 @@ function Home(props) {
                     }
                 </Row>
                 <Row className="justify-content-center">
-                    <Col sm="12" md={{size:8, offset:2}} lg={{size:8, offset: 0}}>
+                    <Col sm="12" md={{size:8, offset:0}} lg={{size:12, offset: 0}}>
                     <Gallery photos={photos}/>
                     </Col>
                         
