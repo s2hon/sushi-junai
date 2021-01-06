@@ -19,6 +19,7 @@ import ToGo from './pages/ToGo';
 import Header from "./components/Header";
 import Footer from './components/Footer';
 import moment from "moment";
+import ScrollToTop from "./components/ScrollToTop"
 
 const store = createStore(reducer);
 data.forEach((item) => store.dispatch({
@@ -40,7 +41,7 @@ function App() {
     return (
         <Provider store={store}>
             <Router>
-                <div id="top">
+                <ScrollToTop>
                     <Header/>
                     <Switch>
                         <Route exact path="/" component={Home}/>
@@ -57,7 +58,7 @@ function App() {
                         <Route exact path="/delivery" component={Delivery}/>
                     </Switch>
                     <Footer />
-                    </div>
+                </ScrollToTop>
             </Router>
         </Provider>
     );
