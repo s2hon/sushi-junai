@@ -8,7 +8,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
   });
 
-  app.use(function(req, res) {
-      res.sendFile(path.join(__dirname, 'build', "./client/src/pages/Dinein.js"))
+  app.use('/dinein', function(req, res) {
+      res.sendFile(path.join(__dirname, 'build', "dinein.html"))
   })
 };
