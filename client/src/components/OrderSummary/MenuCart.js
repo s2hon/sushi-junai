@@ -17,6 +17,7 @@ import EmptyCart from './EmptyCart';
 import TipCalculater from '../TipCalculater';
 import Counter from "../Counter";
 import './style.css';
+import BackButton from '../BackButton/BackButton';
 import VisibleNotification from "../Notification2";
 
 const MenuCart = (props) => {
@@ -85,6 +86,7 @@ const MenuCart = (props) => {
             <Container>
                 <div className="menu-container">
                     <Row>
+                    <h3 className="cartHeading center"><BackButton />Order Summary ({currentQtyTotal})</h3>
                     <h3 className="cartHeading">Sushi Tracker ({currentQtyTotal})</h3>
                     </Row>
                     <Nav tabs>
