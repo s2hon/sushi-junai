@@ -1,7 +1,6 @@
 import { connect } from 'react-redux'
 import MenuCart from "../components/OrderSummary/MenuCart";
 
-
 const mapStateToProps = state => ({
     menuCart: state.menuCart,
     favCart: state.favCart,
@@ -40,7 +39,10 @@ const mapDispatchToProps = dispatch => {
             dispatch({
                 type: 'SAVE_PAST_CART',
                 payload: { menuCart }
-            })
+            });
+            dispatch({
+                type: "SHOW_NOTIFICATION"
+            });
         },
         clearCart: () => {
             dispatch({
