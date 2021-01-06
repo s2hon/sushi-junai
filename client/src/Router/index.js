@@ -12,6 +12,7 @@ import StaticAYCEMenu from '../pages/StaticAYCEMenu';
 import Delivery from '../pages/Delivery';
 import ToGo from '../pages/ToGo';
 import Header from "../components/Header";
+import Footer from '../components/Footer';
 
 const AllRoute = () => { 
 
@@ -32,6 +33,7 @@ const AllRoute = () => {
         <Route exact path="/togo" component={ToGo}/>
         <Route exact path="/delivery" component={Delivery}/>
       </Switch>
+      <Footer />
     </div>
   );
 }

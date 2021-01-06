@@ -2,3 +2,15 @@ td, th {
     width: 1px;
     white-space: nowrap;
 }
+
+.cartHeading {
+    padding-left: 3%;
+}
+
+.menu-container .buttons {
+    padding-left: 2%;
+}
+
+.right {
+    align-content: right;
+}

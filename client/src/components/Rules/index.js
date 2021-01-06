@@ -9,23 +9,23 @@ import moment from 'moment';
 import SoySauce from "./images/soy-sauce.png"
 import Noodles from "./images/icons8-noodles-100.png"
 import SalmonSushi from "./images/icons8-salmon-sushi-100.png"
-// import Children from "./images/icons8-maneki-144.png"
-// import Bento from "./images/icons8-bento-100.png"
 import './style.css';
 
 
 const Slider = (props) => {
+    
     function setTimer(e) {
-        const currentHour = moment().format("HH");
-        if (currentHour < 15){
-            let endtime = moment().add(70, "m").format("MMMM Do YYYY HH:mm:ss");
-            console.log(endtime);
-            localStorage.setItem("endtime", endtime);
-            localStorage.setItem("date", moment().format('MMMM Do YYYY'));
-        } else {
-            let endtime = moment().add(100, 'm').format("MMMM Do YYYY HH:mm:ss");
-            localStorage.setItem("endtime", endtime);
-            localStorage.setItem("date", moment().format('MMMM Do YYYY'));
+        if (localStorage.getItem("endtime") === null) {
+            const currentHour = moment().format("HH");
+            if (currentHour < 15){
+                let endtime = moment().add(70, "m").format("MMMM Do YYYY HH:mm:ss");
+                localStorage.setItem("endtime", endtime);
+                localStorage.setItem("date", moment().format('MMMM Do YYYY'));
+            } else {
+                let endtime = moment().add(100, 'm').format("MMMM Do YYYY HH:mm:ss");
+                localStorage.setItem("endtime", endtime);
+                localStorage.setItem("date", moment().format('MMMM Do YYYY'));
+            }
         }
     }
 
@@ -41,7 +41,7 @@ const Slider = (props) => {
                             <h2>Dinner (All Day): time limit 90 min for $32.95</h2>
                             <h3>Children's: $15.95</h3>
                             <hr />
-                            <h4>Click "I Agree" to start your timer.</h4>
+                            <h4>Scroll to the bottom and click "I Agree" to access your sushi tracker.</h4>
                         </div>
                     </div>
                 </Row>
@@ -73,7 +73,7 @@ const Slider = (props) => {
                                 </div>
                             </div>
                         </Flip>
-                        <Flip triggerOnce delay={2000} direction="horizontal">
+                        <Flip triggerOnce delay={1750} direction="horizontal">
                             <div className="col-lg-4 col-md-4 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
@@ -86,44 +86,19 @@ const Slider = (props) => {
                                 </div>
                             </div>
                         </Flip>
-                        {/* <Flip triggerOnce delay={4000} direction="horizontal">
-                            <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
-                                <div className="rules-item">
-                                    <div className="rule-icon">
-                                    <Image src={Bento} width="40px" alt="Bento Box" />
-                                    </div>
-                                    <div className="rule-content">
-                                        <h2>Rule #4</h2>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </Flip> */}
-                        
                     </Row>
-                    <Flip triggerOnce delay={3000} direction="horizontal">
-                            {/* <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
-                                <div className="rules-item">
-                                    <div className="rule-icon">
-                                    <Image src={Children} width="40px" alt="Bento Box" />
-                                    </div>
-                                    <div className="rule-content">
-                                        <h2>Rule #5</h2>
-                                        
-                                    </div>
-                                </div>
-                            </div> */}
-                            <Row className="rules-button">
-                                
-                                <Link to={"/alacarte"}>
-                                    <Button type={"button"} btn={"btn btn2"}>Go to A La Carte</Button>
-                                </Link>
-                                <Link className="active" to={"/ayce"}>
-                                    <Button type={"button"} btn={"btn btn1"} function={setTimer}>I AGREE</Button>
-                                </Link>
-                                
-                            </Row>
-                        </Flip>
+                    <Flip triggerOnce delay={2000} direction="horizontal">
+                        <Row className="rules-button">
+                            
+                            <Link to={"/alacarte"}>
+                                <Button type={"button"} btn={"btn btn2"}>Go to A La Carte</Button>
+                            </Link>
+                            <Link className="active" to={"/ayce"}>
+                                <Button type={"button"} btn={"btn btn1"} function={setTimer}>I AGREE</Button>
+                            </Link>
+                            
+                        </Row>
+                    </Flip>
                 </div>
             </Container>
         </>

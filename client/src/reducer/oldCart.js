@@ -1,5 +1,4 @@
 import {loadState} from "../localstorage";
-import menuCart from "./menuCart";
 
 const persistedState = loadState("oldCart");
 

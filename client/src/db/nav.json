@@ -45,10 +45,5 @@
         "id": 5,
         "title": "Delivery",
         "link": "/delivery"
-    },
-    {
-        "id": 6,
-        "title": "Favorites",
-        "link": "/favorite"
     }
 ]
