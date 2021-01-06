@@ -23,7 +23,8 @@ import Shellfish from "../FoodKey/Shellfish";
 import Spicy from "../FoodKey/Spicy";
 import SO from "../FoodKey/SO";
 import YumYum from "../FoodKey/YumYum";
-import BackButton from "../BackButton/BackButton"
+import BackButton from "../BackButton/BackButton";
+import VisibleNotification from "../Notification";
 
 function Menu(props) {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -113,6 +114,7 @@ function Menu(props) {
                                     <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
                                 </span>
                             </Col>
+                            <VisibleNotification/>
                         </Container>
                     </Row>
 

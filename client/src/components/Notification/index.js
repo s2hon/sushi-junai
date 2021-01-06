@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './index.css';
-import { connect } from 'react-redux'
-import {disableNotify} from '../../actions'
+import { connect } from 'react-redux';
 
 class Notification extends Component {
     constructor() {
@@ -13,7 +12,7 @@ class Notification extends Component {
             clearTimeout(this.id);
         this.id = undefined;
         if(nextProps.showNotification)
-            this.id = setTimeout(() => this.props.disableNotify(), 3000);
+            this.id = setTimeout(() => this.props.disableNotify(), 1500);
     }
     componentWillUnmount() {
         if(this.id)
@@ -23,7 +22,7 @@ class Notification extends Component {
         if(this.props.showNotification)
             return (
                     <div className="notificationBar">
-                        Item has been added to Cart
+                        Item has been added
                     </div>
             );
         else return (
@@ -41,7 +40,9 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         disableNotify: id => {
-            dispatch(disableNotify(id))
+            dispatch({
+                type: "REMOVE_NOTIFICATION"
+            })
         }
     }
 };
