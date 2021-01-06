@@ -3,6 +3,7 @@ import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "./MenuItems";
+import BackButton from "../BackButton/BackButton";
 
 function Menu(props) {
     const [sj1, setsj1] = useState(false);
@@ -40,7 +41,7 @@ function Menu(props) {
             <Container>
                 <div className="menu-container">
                     <Row>
-                        <h1>Drink Menu</h1><hr />
+                        <h1 className="center"><BackButton />Drink Menu</h1><hr />
                     </Row>
                     <Row className="sticky-top menuOptions">
                         <span class="form-check form-check-inline">

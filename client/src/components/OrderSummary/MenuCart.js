@@ -17,6 +17,7 @@ import EmptyCart from './EmptyCart';
 import TipCalculater from '../TipCalculater';
 import Counter from "../Counter";
 import './style.css';
+import BackButton from '../BackButton/BackButton';
 
 const MenuCart = (props) => {
     const [activeTab, setActiveTab] = useState('1');
@@ -87,7 +88,7 @@ const MenuCart = (props) => {
                 </Row>
                 <div className="menu-container">
                     <Row>
-                    <h3 className="cartHeading">Order Summary ({currentQtyTotal})</h3>
+                    <h3 className="cartHeading center"><BackButton />Order Summary ({currentQtyTotal})</h3>
                     </Row>
                     <Nav tabs>
                         <NavItem>
