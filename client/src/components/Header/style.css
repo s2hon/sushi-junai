@@ -1,9 +1,6 @@
-/* font-family: 'Philosopher', sans-serif;
-font-family: 'Open Sans', sans-serif; */
-
 .logo {
 	max-width: 180px;
-	margin-top: 10%;
+	margin-top: 6%;
 }
 .logo img{
 	max-width: 200%;
@@ -15,6 +12,7 @@ font-family: 'Open Sans', sans-serif; */
 	margin-top: 0;
 	height: 110%;
 	z-index: 9999;
+	margin-bottom: 30px;
 }
 
 nav ul {
