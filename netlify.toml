@@ -2,10 +2,10 @@
 from = "/*"
 to = "/index.html"
 status = 200
-force = false
+force = true
 
 [[redirects]]
 from = "/*"
 to = "/index.html"
 status = 301
-force = false
+force = true
