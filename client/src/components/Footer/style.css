@@ -1,15 +1,17 @@
-/* footer {
-    flex-shrink: 0;
+footer {
+    bottom: 0;
     width: 100%;
-} */
-/* .wpo-site-footer {
-    background: #F26430;
     position: relative;
+}
+
+.wpo-site-footer {
+    margin-top: 30px;
+    background: #F26430;
     font-size: 15px;
     overflow: hidden;
     flex-direction: row;
     color: #f2f2f2;
-} */
+}
 
 .wpo-site-footer p {
     margin-top: 10px;
