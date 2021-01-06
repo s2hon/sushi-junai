@@ -7,6 +7,7 @@ import data from './db/menu.json';
 import {saveState} from "./localstorage";
 import AllRouter from "./Router/index";
 import moment from "moment";
+import ScrollToTop from "./components/ScrollToTop"
 
 const store = createStore(reducer);
 data.forEach((item) => store.dispatch({
@@ -28,7 +29,10 @@ function App() {
     return (
         <Provider store={store}>
             <Router>
-                <AllRouter />
+                <ScrollToTop>
+                    <AllRouter />
+                </ScrollToTop>
+                
             </Router>
         </Provider>
     );
