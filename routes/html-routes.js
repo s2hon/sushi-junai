@@ -9,6 +9,6 @@ module.exports = function(app) {
   });
 
   app.use(function(req, res) {
-      res.sendFile(path.join(__dirname, "./client/src/pages/Dinein.js"))
+      res.sendFile(path.join(__dirname, 'build', "./client/src/pages/Dinein.js"))
   })
 };
