@@ -1,16 +1,19 @@
+[build]
+publish = "build"
+base = "/client/build"
+command = "npm run build:client"
+
+[build.environment]
+API_KEY = aLbhT1DXQ5IWJD4wvE-5k7Yyl8mRbVMc1LuY49u8cOJ_20lvX5h47uHZKeYH37JZPjupk-c-jlfvD67RZeT_fj4KgdC9Rkz585ZI1ZkZKEna6xuwarS3Axp756S1X3Yx
+
 [[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
-force = true
+force = false
 
 [[redirects]]
 from = "/*"
 to = "/index.html"
 status = 301
-force = false
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
 force = false
