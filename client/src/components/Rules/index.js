@@ -41,7 +41,7 @@ const Slider = (props) => {
                             <h2>Dinner (All Day): time limit 90 min for $32.95</h2>
                             <h3>Children's: $15.95</h3>
                             <hr />
-                            <h4>Click "I Agree" at the bottom to access your sushi tracker.</h4>
+                            <h4>Scroll to the bottom and click "I Agree" to access your sushi tracker.</h4>
                         </div>
                     </div>
                 </Row>
