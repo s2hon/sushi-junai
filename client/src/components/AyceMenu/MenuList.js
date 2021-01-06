@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 import Container from "../Container";
 import Row from "../Row";
@@ -27,6 +27,10 @@ import BackButton from "../BackButton/BackButton";
 import VisibleNotification from "../Notification";
 
 function Menu(props) {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     const [isVegetarian, setIsVegetarian] = useState(false);
     const [isGlutenFree, setIsGlutenFree] = useState(false);
 
