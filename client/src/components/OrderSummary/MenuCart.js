@@ -82,12 +82,9 @@ const MenuCart = (props) => {
         <>
         <Counter/>
             <Container>
-                <Row>
-                    <h3 className="cartHeading">Sushi Tracker ({currentQtyTotal})</h3>
-                </Row>
                 <div className="menu-container">
                     <Row>
-                    <h3 className="cartHeading">Order Summary ({currentQtyTotal})</h3>
+                    <h3 className="cartHeading">Sushi Tracker ({currentQtyTotal})</h3>
                     </Row>
                     <Nav tabs>
                         <NavItem>
@@ -197,7 +194,7 @@ const MenuCart = (props) => {
                             </Table>
                         </TabPane>
                     </TabContent>
-                    <div className="row">
+                    <div className="row buttons">
                         <Link
                             to="/ayce" className="active">
                                 <Button type={"button"} className={"btn btn1"} style={{display:"inline-block"}}><h5>BACK TO MENU</h5></Button>
@@ -206,7 +203,7 @@ const MenuCart = (props) => {
                             <Button type={"button"} className={"btn btn1"} style={{display:"inline-block"}}><h5>Favorites</h5></Button>
                         </Link>
                     </div>
-                    <div className="row">
+                    <div className="row right">
                         <div className="col-3">
                             Round Total:
                         </div>
@@ -220,7 +217,7 @@ const MenuCart = (props) => {
                             $ {isNaN(accumulativeTotal) ? cartCostTotal.toFixed(2) : accumulativeTotal}
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row buttons right">
                         <TipCalculater total={isNaN(accumulativeTotal) ? cartCostTotal.toFixed(2) : accumulativeTotal} />
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import { Button } from 'reactstrap';
 
 const MenuCartItem = (props) => {
 
-    const { name, quantity, category, price } = props.item
+    const { name, quantity, price } = props.item
     return (
         <tr>
             <td>

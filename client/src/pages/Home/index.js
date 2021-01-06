@@ -6,7 +6,6 @@ import data from "../../db/store.json";
 import './style.css';
 import Counter from "../../components/Counter";
 import Yelp from "../../components/Yelp";
-import Footer from "../../components/Footer/"
 import photos from "../../db/photos.json"
 import Gallery from "react-photo-gallery";
 import Feedback from "../../components/Feedback";
@@ -39,7 +38,6 @@ function Home(props) {
                     <Yelp/>
                 </Row>
                 <Feedback />
-                <Footer />
             </div>
     </React.Fragment>);
 }
