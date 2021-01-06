@@ -1,2 +1,2 @@
-https://sushi-junai.app/ https://sushi-junai.app/:splat 301!
-/*    /index.html   200
+https://sushi-junai.app/* /index.html 301
+/*    /index.html   301
