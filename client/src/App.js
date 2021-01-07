@@ -4,8 +4,6 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducer';
 import data from './db/menu.json';
-import {saveState} from "./localstorage";
-import AllRouter from "./router/index";
 import moment from "moment";
 import ScrollToTop from "./components/ScrollToTop";
 
