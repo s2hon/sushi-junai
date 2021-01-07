@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducer';
 import data from './db/menu.json';
-import Home from "./pages/Home/index";
+import Home from "./pages/Home";
 import Alacarte from "./pages/Alacarte";
 import AYCEMenu from "./pages/AYCEMenu";
 import OrderSummary from "./pages/OrderSummary";
