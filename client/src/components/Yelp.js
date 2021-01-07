@@ -23,20 +23,20 @@ function Yelp(props) {
     }, []);
 
     return(
-        <Container>
-            <hr />
-            <h3 className="section-head">Reviews from Yelp</h3> 
-            {
-            reviews.map((data) => {
-            return (
-            <YelpCard image={data.user.image_url}
-            name={data.user.name}
-            stars={data.rating}
-            text={data.text}
-            />)
-        })
-    } 
-        </Container>
+    //     <Container>
+    //         <hr />
+    //         <h3 className="section-head">Reviews from Yelp</h3> 
+    //         {
+    //         reviews.map((data) => {
+    //         return (
+    //         <YelpCard image={data.user.image_url}
+    //         name={data.user.name}
+    //         stars={data.rating}
+    //         text={data.text}
+    //         />)
+    //     })
+    // } 
+    //     </Container>
     )
 }
 
