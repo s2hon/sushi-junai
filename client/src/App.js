@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import reducer from './reducer';
 import data from './db/menu.json';
 import {saveState} from "./localstorage";
-import AllRouter from "./Router/index";
+import AllRouter from "./router/index";
 import moment from "moment";
 import ScrollToTop from "./components/ScrollToTop";
 
