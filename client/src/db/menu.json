@@ -52,7 +52,7 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false,
-		"shellfish": true,
+		"shellfish": false,
 		"spicy": true
 	},
 	{

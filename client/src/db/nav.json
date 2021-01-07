@@ -32,11 +32,6 @@
             ]
     },
     {
-        "id": 3,
-        "title": "Dine-in",
-        "link": "/dinein"
-    },
-    {
         "id": 4,
         "title": "Carry Out",
         "link": "/togo"
