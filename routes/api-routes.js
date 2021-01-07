@@ -1,7 +1,7 @@
 
 const axios = require("axios");
 require('dotenv').config();
-const REACT_APP_API_KEY = process.env.API_KEY;
+const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 const BASEURL = "https://api.yelp.com/v3/businesses/uK3hclf6oje7rRAbUhPCLg/reviews";
 
 module.exports = function(app) {
