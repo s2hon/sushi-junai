@@ -3,13 +3,11 @@ import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import { Row, Col } from "reactstrap";
 import Button from "../components/Button";
-import Counter from "../components/Counter";
 
 function Dinein() {
 
     return (
         <>
-            <Counter />
             <Container>
                 <div className="menu-container">
                 <Row>

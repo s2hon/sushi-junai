@@ -14,7 +14,6 @@ function Home(props) {
 
     return (
         <React.Fragment>
-            <Counter/>
             <div className="menu-container container">
                 <Row className="justify-content-center">
                     {
