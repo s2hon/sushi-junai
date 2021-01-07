@@ -33,7 +33,7 @@ function Home(props) {
                         
                 </Row>
                 <Row>
-                    <Yelp/>
+                    {/* <Yelp/> */}
                 </Row>
                 <Feedback />
             </div>
