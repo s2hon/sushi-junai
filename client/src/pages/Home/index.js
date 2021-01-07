@@ -5,7 +5,7 @@ import data from "../../db/store.json";
 // import { useStoreContext } from '../../utils/GlobalStore';
 import './style.css';
 import Counter from "../../components/Counter";
-import Yelp from "../../components/Yelp";
+// import Yelp from "../../components/Yelp";
 import photos from "../../db/photos.json"
 import Gallery from "react-photo-gallery";
 import Feedback from "../../components/Feedback";
@@ -34,9 +34,9 @@ function Home(props) {
                     </Col>
                         
                 </Row>
-                <Row>
+                {/* <Row>
                     <Yelp/>
-                </Row>
+                </Row> */}
                 <Feedback />
             </div>
     </React.Fragment>);
