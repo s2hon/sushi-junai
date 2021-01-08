@@ -69,7 +69,6 @@ const FeedbackForm = () => {
         <div className="row">
             <div className="col">
                 <div className="wpo-news-letter">
-                    <h3 className="section-head">Leave Us Feedback!</h3>
                     <div className="wpo-news-letter-form">
                         <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
                             <div className="form-field">
@@ -103,28 +102,6 @@ const FeedbackForm = () => {
 
                             <button type="submit" className="btn btn1">Send <span></span></button>
                         </form>
-                    </div>
-
-                    <div>
-                        <div className="center">
-                            <div className="bottom">
-
-                                <button className="btn btn2">
-                                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/sushijunai/">
-                                        <FontAwesomeIcon icon={faInstagram} />
-                                    </a>
-                                </button>
-
-                                <button className="btn btn2">
-                                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/sushijunai">
-                                        <FontAwesomeIcon icon={faFacebookF} />
-                                    </a>
-                                </button>
-
-
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

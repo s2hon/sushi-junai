@@ -1763,8 +1763,8 @@
 		"spicy": true
 	},
 	{
-		"name": "Sashimi Special (4 pcs)",
-		"description": "Tuna/garlic ponzu & masago. Yellowtail/yuzu & jalapeno. White tuna/sear & mustard sauce. Salmon/avocado & yum yum sauce**",
+		"name": "Sashimi Special",
+		"description": "(4 pcs) Tuna/garlic ponzu & masago. Yellowtail/yuzu & jalapeno. White tuna/sear & mustard sauce. Salmon/avocado & yum yum sauce**",
 		"category": "Chef’s Special Rolls",
 		"price": 12.95,
 		"menu": "ayce",
@@ -1834,7 +1834,7 @@
 	},
 	{
 		"name": "Strip Salmon",
-		"description": "In: spicy crab, cucumber-wrapped salmon / Sauce: S.O. sauce*",
+		"description": "(no rice) In: spicy crab, cucumber-wrapped salmon / Sauce: S.O. sauce*",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1987,8 +1987,8 @@
 		"spicy": true
 	},
 	{
-		"name": "TNT Roll (No Rice)",
-		"description": "In: salmon, spicy tuna, spicy crab, cream cheese / Sauce: spicy mayo, eel sauce",
+		"name": "TNT Roll",
+		"description": "(No Rice) In: salmon, spicy tuna, spicy crab, cream cheese / Sauce: spicy mayo, eel sauce",
 		"category": "Tempura Rolls",
 		"price": 9.95,
 		"menu": "ayce",
@@ -2044,7 +2044,7 @@
 	},
 	{
 		"name": "Who’s your Ex-Wife?",
-		"description": "In: spicy tuna, jalapeno, cream cheese / Sauce: special sauce, sriracha",
+		"description": "(Jalapeño Poppers) In: spicy tuna, jalapeno, cream cheese / Sauce: special sauce, sriracha",
 		"category": "Tempura Rolls",
 		"price": 12.95,
 		"menu": "ayce",

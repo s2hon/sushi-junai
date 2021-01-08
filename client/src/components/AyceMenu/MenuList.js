@@ -70,20 +70,19 @@ function Menu(props) {
     const currentQtyTotal = currentQty(menuCart);
 
     const limitedItem = [
-    'Screaming "O" (3/8 pcs)',
-    'White "O" (3/8 pcs)',
+    'Screaming "O"',
+    'White "O"',
     "Beef",
     "Conch (Makigai)",
     "Tako Wasabi",
     "Sweet Shrimp (Ama Ebi)",
-    "Sashimi Special (4 pcs)",
+    "Sashimi Special",
     "Mochi Ice Cream"]
 
     const currentCartItems = menuCart.map(menuCart => menuCart.name)
     const pastCartItems = pastOrders.map(pastOrders => pastOrders.name)
     const allCartItems = [...currentCartItems, ...pastCartItems]
     let used =  allCartItems.filter(item => limitedItem.includes(item))
-
     return (
         <>
             <Counter />
