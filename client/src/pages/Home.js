@@ -34,7 +34,6 @@ function Home(props) {
                 <Row>
                     {/* <Yelp/> */}
                 </Row>
-                <Feedback />
             </div>
     </React.Fragment>);
 }

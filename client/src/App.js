@@ -17,9 +17,11 @@ import StaticAYCEMenu from './pages/StaticAYCEMenu';
 import Delivery from './pages/Delivery';
 import ToGo from './pages/ToGo';
 import Header from "./components/Header";
+import HeaderTopbar from "./components/HeaderTopbar";
 import Footer from './components/Footer';
 import moment from "moment";
 import ScrollToTop from "./components/ScrollToTop"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const store = createStore(reducer);
 data.forEach((item) => store.dispatch({
@@ -42,6 +44,7 @@ function App() {
         <Provider store={store}>
             <Router>
                 <ScrollToTop>
+                    <HeaderTopbar style ={{zIndex: "9999"}}/>
                     <Header/>
                     <Switch>
                         <Route exact path="/" component={Home}/>

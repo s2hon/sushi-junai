@@ -4,8 +4,8 @@ import {
     faClock,
     faPhone,
     faLocationArrow
- } from "@fortawesome/free-solid-svg-icons";
- import './style.css';
+} from "@fortawesome/free-solid-svg-icons";
+import './style.css';
 
 function Card(props) {
     return (

@@ -40,13 +40,13 @@ const MenuCart = (props) => {
     let accumulativeTotal = (parseFloat(totalSavings)+cartCostTotal).toFixed(2) 
     
     const limitedItem = [
-    'Screaming "O" (3/8 pcs)',
-    'White "O" (3/8 pcs)',
+    'Screaming "O"',
+    'White "O"',
     "Beef",
     "Conch (Makigai)",
     "Tako Wasabi",
     "Sweet Shrimp (Ama Ebi)",
-    "Sashimi Special (4 pcs)",
+    "Sashimi Special",
     "Mochi Ice Cream"]
     
     const cartItems = menuCart.map(menuCart => menuCart.name);
@@ -86,7 +86,7 @@ const MenuCart = (props) => {
             <Container>
                 <div className="menu-container">
                     <Row>
-                        <h3 className="cartHeading">Sushi Tracker ({currentQtyTotal})</h3>
+                        <h3 className="cartHeading"><BackButton />Sushi Tracker ({currentQtyTotal})</h3>
                     </Row>
                     <Nav tabs>
                         <NavItem>
