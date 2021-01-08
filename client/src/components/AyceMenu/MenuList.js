@@ -94,7 +94,6 @@ function Menu(props) {
                         <h1 className="center"><BackButton />All-You-Can-Eat Menu</h1><hr />
                     </Row>
                     <Row className="sticky-top menuOptions">
-                        <VisibleNotification/>
                         <MenuNav />
                         <Container>
                             <Col>
@@ -119,6 +118,7 @@ function Menu(props) {
                                 </span>
                             </Col>
                         </Container>
+                        <VisibleNotification/>
                     </Row>
 
                     <Row>
