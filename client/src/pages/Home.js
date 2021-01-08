@@ -2,7 +2,6 @@ import React from "react";
 import Card from "../components/Card/index";
 import { Row, Col } from "reactstrap";
 import data from "../db/store.json";
-import Counter from "../components/Counter";
 import Yelp from "../components/Yelp";
 import photos from "../db/photos.json"
 import Gallery from "react-photo-gallery";

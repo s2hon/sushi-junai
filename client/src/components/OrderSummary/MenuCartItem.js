@@ -7,8 +7,6 @@ const MenuCartItem = (props) => {
     const { name, quantity, price } = props.item
     return (
         <tr>
-            <td>
-            </td>
             <th scope="row"><p>{name}</p></th>
             <td>
                 <p><Button type="button" className="btn1 btn" onClick={() => props.decrementItem(props.item)}><span className="black-text">-</span></Button>

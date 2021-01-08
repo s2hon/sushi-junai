@@ -112,7 +112,6 @@ const MenuCart = (props) => {
                             <Table bordered striped>
                                 <thead>
                                     <tr>
-                                        <th></th>
                                         <th>Item</th>
                                         <th>Quantity</th>
                                         <th>Price</th>
