@@ -3,7 +3,7 @@ ul.smothscroll {
     bottom: 25px;
     right:30px;
     list-style: none;
-    z-index: 9;
+    z-index: 20;
 }
 ul.smothscroll a {
     background-color: #E63736;
