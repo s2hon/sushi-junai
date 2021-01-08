@@ -81,7 +81,7 @@ const Slider = (props) => {
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #3</h2>
-                                        <p>Items in <span style={{color: "#FF0000"}}>RED</span> can only be ordered once.</p>
+                                        <p>Item in <span style={{color: "#FF0000"}}>RED</span> can only be ordered once per person.</p>
                                     </div>
                                 </div>
                             </div>
@@ -89,14 +89,12 @@ const Slider = (props) => {
                     </Row>
                     <Flip triggerOnce delay={2000} direction="horizontal">
                         <Row className="rules-button">
-                            
                             <Link to={"/alacarte"}>
                                 <Button type={"button"} btn={"btn btn2"}>Go to A La Carte</Button>
                             </Link>
                             <Link className="active" to={"/ayce"}>
                                 <Button type={"button"} btn={"btn btn1"} function={setTimer}>I AGREE</Button>
                             </Link>
-                            
                         </Row>
                     </Flip>
                 </div>

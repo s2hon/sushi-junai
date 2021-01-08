@@ -5,8 +5,6 @@ import data from "../db/store.json";
 import Yelp from "../components/Yelp";
 import photos from "../db/photos.json"
 import Gallery from "react-photo-gallery";
-import Feedback from "../components/Feedback";
-
 
 function Home(props) {
     
