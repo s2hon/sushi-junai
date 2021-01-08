@@ -9,6 +9,7 @@ import moment from 'moment';
 import SoySauce from "./images/soy-sauce.png"
 import Noodles from "./images/icons8-noodles-100.png"
 import SalmonSushi from "./images/icons8-salmon-sushi-100.png"
+import Maneki from "./images/icons8-maneki-144.png"
 import './style.css';
 
 
@@ -82,6 +83,19 @@ const Slider = (props) => {
                                     <div className="rule-content">
                                         <h2>Rule #3</h2>
                                         <p>Item in <span style={{color: "#FF0000"}}>RED</span> can only be ordered once per person.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Flip>
+                        <Flip triggerOnce delay={2000} direction="horizontal">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12 custom-grid">
+                                <div className="rules-item">
+                                    <div className="rule-icon" style={{background: "pink"}}>
+                                        <Image src={Maneki} width="40px" alt="SoySauce" />
+                                    </div>
+                                    <div className="rule-content">
+                                        <h2>IMPORTANT</h2>
+                                        <p>This is just a interactive menu to keep track of your orders. <span style={{color: "#FF0000"}}>YOU MUST ORDER WITH A WAIT STAFF!</span></p>
                                     </div>
                                 </div>
                             </div>
