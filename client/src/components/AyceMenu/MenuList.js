@@ -88,7 +88,7 @@ function Menu(props) {
             <Counter />
             
             <Container>
-                <div className="menu-container">
+                <div className="menu-container" id="top">
                     <Row>
                         <h1 className="center"><BackButton />All-You-Can-Eat Menu</h1><hr />
                     </Row>
