@@ -91,11 +91,11 @@ function Menu(props) {
             <Container>
                 <div className="menu-container">
                     <Row>
-                    
                         <h1 className="center"><BackButton />All-You-Can-Eat Menu</h1><hr />
                     </Row>
                     <Row className="sticky-top menuOptions">
-                    <MenuNav />
+                        <VisibleNotification/>
+                        <MenuNav />
                         <Container>
                             <Col>
                                 <span className="form-check form-check-inline">
@@ -118,7 +118,6 @@ function Menu(props) {
                                     <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
                                 </span>
                             </Col>
-                            <VisibleNotification/>
                         </Container>
                     </Row>
 
