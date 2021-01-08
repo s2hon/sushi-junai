@@ -9,7 +9,7 @@ export default function GlutenFree () {
         <Row>
             <h5 id="glutenFree">Gluten Free <Image src={gfIcon} width="18" alt="Gluten Free" /></h5>
             <Container>
-                <p>Request no sauce when ordering.</p>
+                <p>Request no sauce when ordering. Tamari (GF Soysauce) avaliable upon request.</p>
             </Container>
         </Row>
     )

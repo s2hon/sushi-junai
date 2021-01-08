@@ -102,15 +102,12 @@ function Menu(props) {
                                 </span>
                                 <span className="form-check form-check-inline">
                                     <input className="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
-                                    <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (must order without sauce or Tamari, GF soy sauce) </label>
+                                    <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (must order without sauce) </label>
                                 </span>
                             </Col>
                             <Col>
                                 <span>
-                                    <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Order Summary ({currentQtyTotal})</Button></Link>
-                                </span>
-                                <span>
-                                    <Link to="/favorite"><Button type="button" btn="btn btn1 float-right">Favorites</Button></Link>
+                                    <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Sushi Cart ({currentQtyTotal})</Button></Link>
                                 </span>
                                 <span>
                                     <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
