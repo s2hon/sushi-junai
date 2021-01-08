@@ -48,7 +48,7 @@ const Slider = (props) => {
                 <div className="rules-wrapper">
                     <Row>
                         <Flip triggerOnce delay={0} direction="horizontal">
-                            <div className="col-lg-4 col-md-4 col-sm-12 col-12 custom-grid">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
                                     <Image src={SalmonSushi} width="40px" alt="SalmonSushi" />
@@ -61,7 +61,7 @@ const Slider = (props) => {
                             </div>
                         </Flip>
                         <Flip triggerOnce delay={1000} direction="horizontal">
-                            <div className="col-lg-4 col-md-4 col-sm-12 col-12 custom-grid">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
                                     <Image src={Noodles} width="40px" alt="Noodles" />
@@ -74,7 +74,7 @@ const Slider = (props) => {
                             </div>
                         </Flip>
                         <Flip triggerOnce delay={1750} direction="horizontal">
-                            <div className="col-lg-4 col-md-4 col-sm-12 col-12 custom-grid">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12 custom-grid">
                                 <div className="rules-item">
                                     <div className="rule-icon">
                                         <Image src={SoySauce} width="40px" alt="SoySauce" />

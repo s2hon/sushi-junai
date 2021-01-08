@@ -86,8 +86,7 @@ const MenuCart = (props) => {
             <Container>
                 <div className="menu-container">
                     <Row>
-                    <h3 className="cartHeading center"><BackButton />Order Summary ({currentQtyTotal})</h3>
-                    <h3 className="cartHeading">Sushi Tracker ({currentQtyTotal})</h3>
+                        <h3 className="cartHeading">Sushi Tracker ({currentQtyTotal})</h3>
                     </Row>
                     <Nav tabs>
                         <NavItem>
