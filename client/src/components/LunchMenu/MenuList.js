@@ -16,7 +16,7 @@ function Menu() {
     return (
         <>
             <Container>
-            <div className="menu-container">
+            <div className="menu-container" id="top">
                 <Row>
                     <h1>Lunch Menu</h1><hr />
                 </Row>

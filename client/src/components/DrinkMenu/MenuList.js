@@ -39,7 +39,7 @@ function Menu(props) {
     return (
         <>
             <Container>
-                <div className="menu-container">
+                <div className="menu-container" id="top">
                     <Row>
                         <h1 className="center"><BackButton />Drink Menu</h1><hr />
                     </Row>
