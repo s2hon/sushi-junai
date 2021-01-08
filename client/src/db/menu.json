@@ -98,8 +98,8 @@
 		"spicy": true
 	},
 	{
-		"name": "Screaming \"O\" (3/8 pcs)",
-		"description": "Slice seared tuna over shredded radish with S.O. sauce*",
+		"name": "Screaming \"O\"",
+		"description": "(3/8 pcs) Slice seared tuna over shredded radish with S.O. sauce*",
 		"category": "Appetizer",
 		"price": 12.50,
 		"menu": "ayce",
@@ -112,8 +112,8 @@
 		"spicy": false
 	},
 	{
-		"name": "White \"O\" (3/8 pcs)",
-		"description": "Slice super white tuna over shredded radish with house garlic ponzu",
+		"name": "White \"O\"",
+		"description": "(3/8 pcs) Slice super white tuna over shredded radish with house garlic ponzu",
 		"category": "Appetizer",
 		"price": 12.50,
 		"menu": "ayce",
@@ -154,8 +154,8 @@
 		"spicy": true
 	},
 	{
-		"name": "Shrimp Tempura (2/5 pcs)",
-		"description": "",
+		"name": "Shrimp Tempura",
+		"description": "(2/5 pcs)",
 		"category": "Appetizer",
 		"price": 7.50,
 		"menu": "ayce",
@@ -168,8 +168,8 @@
 		"spicy": false
 	},
 	{
-		"name": "Vegetable Tempura (2/5 pcs)",
-		"description": "",
+		"name": "Vegetable Tempura",
+		"description": "(2/5 pcs)",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -182,8 +182,8 @@
 		"spicy": false
 	},
 	{
-		"name": "Mixed Tempura (2 shrimp and 3 veggie)",
-		"description": "",
+		"name": "Mixed Tempura",
+		"description": "(2 shrimp and 3 veggie)",
 		"category": "Appetizer",
 		"price": 6.50,
 		"menu": "ayce",
@@ -210,8 +210,8 @@
 		"spicy": false
 	},
 	{
-		"name": "Creamy Shrimp (2/4 pcs)",
-		"description": "Cream cheese, shrimp deep fried",
+		"name": "Creamy Shrimp",
+		"description": "(2/4 pcs) Cream cheese and shrimp deep fried in wonton wrapper",
 		"category": "Appetizer",
 		"price": 7.50,
 		"menu": "ayce",
@@ -224,8 +224,8 @@
 		"spicy": false
 	},
 	{
-		"name": "Kurobuta Sausage (2/4 pcs)",
-		"description": "",
+		"name": "Kurobuta Sausage",
+		"description": "(2/4 pcs) Fried Berkshire pork mini sausages with ketchup",
 		"category": "Appetizer",
 		"price": 5.95,
 		"menu": "ayce",
@@ -238,8 +238,8 @@
 		"spicy": false
 	},
 	{
-		"name": "Shrimp Shumai (2/4 pcs)",
-		"description": "",
+		"name": "Shrimp Shumai",
+		"description": "(2/4 pcs) Juicy and flavorful shrimp dumplings fried ",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -252,8 +252,8 @@
 		"spicy": false
 	},
 	{
-		"name": "Gyoza (2/4 pcs)",
-		"description": "Meat and vegetable dumplings fried or steamed",
+		"name": "Gyoza",
+		"description": "(2/4 pcs) Pork and vegetable dumplings fried or steamed",
 		"category": "Appetizer",
 		"price": 4.95,
 		"menu": "ayce",
@@ -266,8 +266,8 @@
 		"spicy": false
 	},
 	{
-		"name": "Fried Spring Roll (2/4 pcs)",
-		"description": "Deep fried mixed vegetables with yum yum sauce**",
+		"name": "Fried Spring Rolls",
+		"description": "(2/4 pcs) Deep fried mixed vegetables with yum yum sauce**",
 		"category": "Appetizer",
 		"price": 4.95,
 		"menu": "ayce",
@@ -281,7 +281,7 @@
 	},
 	{
 		"name": "Dynamite",
-		"description": "Onions, mushroom, scallop, crab topped with mayo and baked in the oven",
+		"description": "Sautéed onions, mushroom, scallop, crab topped with mayo and baked in the oven",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -294,8 +294,8 @@
 		"spicy": false
 	},
 	{
-		"name": "Mushroom Cap (2/4 pcs)",
-		"description": "Mushroom stuffed with crab mix with eel sauce",
+		"name": "Mushroom Cap",
+		"description": "(2/4 pcs) Mushroom cap stuffed with crab mix topped with mayo and eel sauce",
 		"category": "Appetizer",
 		"price": 4.50,
 		"menu": "ayce",
@@ -308,8 +308,8 @@
 		"spicy": false
 	},
 	{
-		"name": "Monkey Brain (4/8 pcs)",
-		"description": "Deep fried mushroom stuffed with cream cheese, crab, spicy tuna topped off with eel sauce and spicy mayo",
+		"name": "Monkey Brain",
+		"description": "(4/8 pcs) Deep fried mushroom stuffed with cream cheese, crab, spicy tuna topped off with eel sauce and spicy mayo",
 		"category": "Appetizer",
 		"price": 6.50,
 		"menu": "ayce",
@@ -322,8 +322,8 @@
 		"spicy": true
 	},
 	{
-		"name": "Spicy Tuna Cracker (2/4 pcs)",
-		"description": "Crispy rice topped with spicy tuna with eel sauce and spicy mayo",
+		"name": "Spicy Tuna Cracker",
+		"description": "(2/4 pcs) Crispy rice topped with spicy tuna with eel sauce and spicy mayo",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
