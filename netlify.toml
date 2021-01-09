@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/yelp/*"
+  to = "https://api.yelp.com/v3/businesses/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}

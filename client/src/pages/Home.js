@@ -30,7 +30,7 @@ function Home(props) {
                         
                 </Row>
                 <Row>
-                    {/* <Yelp/> */}
+                    <Yelp/>
                 </Row>
             </div>
     </React.Fragment>);
