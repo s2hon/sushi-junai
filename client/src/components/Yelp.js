@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import Container from './Container';
 import YelpCard from './YelpCard';
