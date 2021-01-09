@@ -1,5 +1,8 @@
 
 # Sushi Junai Official Website ![maintained](https://img.shields.io/maintenance/true/2021) ![license](https://img.shields.io/badge/license-MIT-blue) [![Netlify Status](https://api.netlify.com/api/v1/badges/ca48bdf5-4541-4124-a828-861efbf87893/deploy-status)](https://app.netlify.com/sites/sushi-junai-atx/deploys)
+    This project was bootstrapped with Create React App.
+    It uses the Yelp Fusion API
+    It uses cors-anywhere to proxy requests for local development Cors-Anywhere
 
 ### Description
 Official repo for Sushi Junai Restaurant website
