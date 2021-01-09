@@ -61,8 +61,6 @@ Staci used to be a general manager at Sushi Junai for about two years. On the jo
 
 * Aminadab Morales <a href="https://github.com/aminadabm93/" target="_blank">![GitHub followers](https://img.shields.io/github/followers/aminadabm93?label=aminadabm93&style=social)</a></br>
 
-* Michelle Moon <a href="https://github.com/Moon-Ingenium/" target="_blank">![GitHub followers](https://img.shields.io/github/followers/Moon-Ingenium?label=Moon-Ingenium&style=social)</a></br>
-
 ## Questions
 Ask me anything: <a href="mailto:staci.shon@gmail.com" target="_blank">![open Gmail](https://img.shields.io/badge/open-Gmail-red?style=for-the-badge)</a> 
 
