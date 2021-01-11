@@ -82,7 +82,7 @@ const Slider = (props) => {
                                     </div>
                                     <div className="rule-content">
                                         <h2>Rule #3</h2>
-                                        <p>Item in <span style={{color: "#FF0000"}}>RED</span> can only be ordered once per person.</p>
+                                        <p>Each item in <span style={{color: "#FF0000"}}>RED</span> can be ordered only once per person.</p>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@ const Slider = (props) => {
                                         <Image src={Maneki} width="40px" alt="SoySauce" />
                                     </div>
                                     <div className="rule-content">
-                                        <h2>IMPORTANT</h2>
+                                        <h2>DISCLAIMER</h2>
                                         <p>This is just a interactive menu to keep track of your orders. <span style={{color: "#FF0000"}}>YOU MUST ORDER WITH A WAIT STAFF!</span></p>
                                     </div>
                                 </div>
