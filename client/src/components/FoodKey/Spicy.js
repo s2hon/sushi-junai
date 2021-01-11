@@ -6,7 +6,7 @@ import spicyIcon from "./icons8-chili-pepper-144.png";
 export default function Spicy () {
     return (
         <Row>
-            <h5 id="spicy">Spicy <Image src={spicyIcon} width="18" alt="Spicy" /></h5>
+            <h5 id="spicy"><Image src={spicyIcon} width="18" alt="Spicy" /> Spicy</h5>
         </Row>
     )
 }

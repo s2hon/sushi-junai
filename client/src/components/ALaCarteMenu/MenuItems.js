@@ -5,6 +5,8 @@ import gfIcon from "../FoodKey/icons8-no-gluten-144.png";
 import fishIcon from "../FoodKey/icons8-dressed-fish-144.png";
 import spicyIcon from "../FoodKey/icons8-chili-pepper-144.png";
 import shellfishIcon from "../FoodKey/icons8-prawn-144.png";
+import star from "../FoodKey/icons8-star-256.png";
+import heart from "../FoodKey/icons8-heart-256.png";
 import { Col } from 'reactstrap';
 
 function MenuItems(props) {
@@ -13,9 +15,11 @@ function MenuItems(props) {
                 <Col sm="3" md="3" lg="3">
                         <h5>{props.name} <br/> 
                         
-                        {props.fish ? 
-                        <a href="#rawfish"><Image src={fishIcon} width="18" alt="Fish" /></a>
-                        : <span></span>}
+                        {
+                                props.fish ? 
+                                <a href="#rawfish"><Image src={fishIcon} width="18" alt="Fish" /></a>
+                                : <span></span>
+                        }
                         {
                                 props.vegetarian ?
                                 <a href="#vegetarian"><Image src={vegIcon} width="18" alt="Vegetarian" /></a>
@@ -34,6 +38,16 @@ function MenuItems(props) {
                         {
                                 props.shellfish ?
                                 <a href="#shellfish"><Image src={shellfishIcon} width="18" alt="Shellfish" /></a>
+                                : <span></span>
+                        }
+                        {
+                                props.popular ?
+                                <a href="#popular"><Image src={star} width="18" alt="most popular" /></a>
+                                : <span></span>
+                        }
+                        {
+                                props.staffpick ?
+                                <a href="#staffpick"><Image src={heart} width="18" alt="staff pick" /></a>
                                 : <span></span>
                         }
                         </h5>

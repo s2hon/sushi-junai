@@ -49,7 +49,12 @@ footer {
     color: #FFB400;
 }
 
-@media (max-width: 991px) {
+
+.wpo-site-footer .wpo-upper-footer .col {
+    margin-bottom: 10px;
+}
+
+/* @media (max-width: 991px) {
 
     .wpo-site-footer .wpo-upper-footer .col {
         min-height: 235px;
@@ -63,7 +68,7 @@ footer {
         min-height: auto;
         margin-bottom: 0px;
     }
-}
+} */
 
 .wpo-site-footer .about-widget p {
     margin-bottom: 0.2em;

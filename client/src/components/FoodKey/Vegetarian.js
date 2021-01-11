@@ -6,7 +6,7 @@ import vegIcon from "./icons8-vegetarian-mark-144.png";
 export default function Vegetarian () {
     return (
         <Row>
-        <h5 id="vegetarian">Vegetarian <Image src={vegIcon} width="18" alt="Vegetarian" /></h5>
+        <h5 id="vegetarian"><Image src={vegIcon} width="19" alt="Vegetarian" /> Vegetarian</h5>
         </Row>
     )
 }
