@@ -26,6 +26,7 @@ Official repo for Sushi Junai Restaurant website
 
 ### Deployed Project
     https://www.sushi-junai.app
+    https://www.sushi-junai.app/dinein
 
 ![dineinpageQRcode](./qr-code.png)
 
