@@ -6,18 +6,19 @@ import Row from "../Row";
 import Container from "../Container";
 import Image from "../Image";
 import moment from 'moment';
-import SoySauce from "./images/soy-sauce.png"
-import Noodles from "./images/icons8-noodles-100.png"
-import SalmonSushi from "./images/icons8-salmon-sushi-100.png"
-import Maneki from "./images/icons8-maneki-144.png"
+import Lunch from "./LunchRules"
+import SoySauce from "./images/soy-sauce.png";
+import Noodles from "./images/icons8-noodles-100.png";
+import SalmonSushi from "./images/icons8-salmon-sushi-100.png";
+import Maneki from "./images/icons8-maneki-144.png";
 import './style.css';
 
 
 const Slider = (props) => {
-    
+    const currentHour = moment().format("HH");
+
     function setTimer(e) {
         if (localStorage.getItem("endtime") === null) {
-            const currentHour = moment().format("HH");
             if (currentHour < 15){
                 let endtime = moment().add(70, "m").format("MMMM Do YYYY HH:mm:ss");
                 localStorage.setItem("endtime", endtime);
@@ -37,10 +38,9 @@ const Slider = (props) => {
                     <div className="col-12">
                         <div className="rules-title">
                             <h1>All You Can Eat Rules</h1>
-                            <h2>Lunch (until 3PM): time limit 60 min for $24.95 (Nigiri NOT included) </h2>
-                            <h3>Children's: $10.95</h3>
+                            {currentHour<15 ? <Lunch /> : ""}
                             <h2>Dinner (All Day): time limit 90 min for $32.95</h2>
-                            <h3>Children's: $15.95</h3>
+                            <h3>for Kid's 2 to 7yrs: $15.95</h3>
                             <hr />
                             <h4>Scroll to the bottom and click "I Agree" to access your sushi tracker.</h4>
                         </div>
