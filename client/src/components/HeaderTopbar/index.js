@@ -35,7 +35,7 @@ const HeaderTopbar = (props) => {
                                 <li>
                                     <div>
                                         <Button style={{backgroundColor: "#E63736"}} onClick={toggle}>{buttonLabel}Your Feedback Matters!</Button>
-                                        <Modal isOpen={modal} toggle={toggle} fade={false} className={className} style={{opacity:1}}>
+                                        <Modal isOpen={modal} toggle={toggle} fade={false} className={className} style={{opacity:1, zIndex:20}}>
                                             <ModalHeader toggle={toggle} close={closeBtn}>
                                                 <h3 className="section-head">Tell us what you think!</h3>
                                             </ModalHeader>
