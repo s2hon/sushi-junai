@@ -67,7 +67,7 @@ function Menu() {
                         </span>
                         <span class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
-                            <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce or with tamari) </label>
+                            <label class="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce) </label>
                         </span>
                     </Row>
                     <Row>
@@ -82,7 +82,7 @@ function Menu() {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish}>
+                                                <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish} popular={item.popular} staffpick={item.staffpick}>
                                                 </MenuItems>
                                             </div>
                                         </div>
