@@ -16,6 +16,7 @@ import SO from "../FoodKey/SO";
 import YumYum from "../FoodKey/YumYum";
 import StaffPick from "../FoodKey/StaffPick";
 import Popular from "../FoodKey/Popular";
+import Scrollup from "../ScrollUp/index";
 
 function Menu() {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -297,6 +298,7 @@ function Menu() {
                     </Container>
                 </div>
             </Container>
+            <Scrollup />
         </>
     );
 }
