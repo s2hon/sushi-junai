@@ -4,7 +4,7 @@ import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "../MenuItems";
-import MenuNav from "../MenuNav/index"
+import MenuNav from "../MenuNav/index2"
 import Button from "../Button";
 import Image from "../Image";
 import "./menu.css"

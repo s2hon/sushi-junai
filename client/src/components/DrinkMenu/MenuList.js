@@ -4,6 +4,7 @@ import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "./MenuItems";
 import BackButton from "../BackButton/BackButton";
+import Scrollup from "../ScrollUp/index";
 
 function Menu(props) {
     const [sj1, setsj1] = useState(false);
@@ -200,6 +201,7 @@ function Menu(props) {
                     </Row>
                 </div>
             </Container>
+            <Scrollup />
         </>
     );
 }
