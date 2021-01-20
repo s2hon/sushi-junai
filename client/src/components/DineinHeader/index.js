@@ -17,7 +17,7 @@ const Header = () => {
             <div className="row">
                 <div className="col-lg-4 col-md-10 col-sm-10 col-10">
                     <div className="logo">
-                        <Link to="" title="">
+                        <Link to="/dinein" title="">
                             <Image className="center-block" src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
                         </Link>
                     </div>
