@@ -11,6 +11,18 @@ td, th {
     padding-left: 2%;
 }
 
-.right {
-    align-content: right;
+.right{
+    margin-right: auto;
+}
+
+.title-bar{
+    display: flex;
+}
+
+.title-bar h3{
+    margin-right: auto;
+}
+
+.title-bar button{
+    background-color: #f26430;
 }
