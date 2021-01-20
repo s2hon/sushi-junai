@@ -29,7 +29,7 @@ import StaffPick from "../FoodKey/StaffPick";
 import Popular from "../FoodKey/Popular";
 import HeaderTopbar from "../HeaderTopbar";
 import Header from "../DineinHeader";
-import Tour from "../Tour"
+import Tour from "../MenuTour"
 
 function Menu(props) {
     useEffect(() => {
@@ -115,8 +115,8 @@ function Menu(props) {
                                 </span>
                             </Col>
                             <Col>
-                                <span className="four">
-                                    <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Sushi Cart ({currentQtyTotal})</Button></Link>
+                                <span>
+                                    <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right four">Sushi Cart ({currentQtyTotal})</Button></Link>
                                 </span>
                                 <span>
                                     <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>

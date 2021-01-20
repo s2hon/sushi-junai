@@ -14,3 +14,15 @@ td, th {
 .right {
     align-content: right;
 }
+
+.title-bar{
+    display: flex;
+}
+
+.title-bar h3{
+    margin-right: auto;
+}
+
+.title-bar button{
+    background-color: #f26430;
+}
