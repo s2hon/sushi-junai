@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom"
-import Button from "../Button";
 import Container from "../Container";
 import Row from "../Row";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -12,6 +10,7 @@ import RawFish from "../FoodKey/Rawfish";
 import HouseSalad from "../FoodKey/Salad";
 import StaffPick from "../FoodKey/StaffPick";
 import Popular from "../FoodKey/Popular";
+import BackButton from "../BackButton";
 
 function Menu() {
     let alcMenu = menu.filter(item => item.menu === "ayce" || "alc");
@@ -29,7 +28,7 @@ function Menu() {
         <Container>
             <div className="menu-container" id="top">
                 <Row>
-                    <h1 style={{paddingLeft: "3%"}}>Lunch Menu</h1>
+                    <h1 style={{paddingLeft: "3%"}}><BackButton/> Lunch Menu</h1>
                     <hr />
                 </Row>
                 <Row>
