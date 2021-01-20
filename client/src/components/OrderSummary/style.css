@@ -11,8 +11,8 @@ td, th {
     padding-left: 2%;
 }
 
-.right {
-    align-content: right;
+.right{
+    margin-right: auto;
 }
 
 .title-bar{
