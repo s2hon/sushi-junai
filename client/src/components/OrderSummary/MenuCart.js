@@ -17,7 +17,7 @@ import EmptyCart from './EmptyCart';
 import TipCalculater from '../TipCalculater';
 import Counter from "../Counter";
 import './style.css';
-import BackButton from '../BackButton/BackButton';
+import BackButton from '../BackButton';
 import VisibleNotification from "../Notification2";
 import HeaderTopbar from "../HeaderTopbar";
 import Header from "../DineinHeader";
