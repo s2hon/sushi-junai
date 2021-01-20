@@ -1,11 +1,15 @@
 import React from 'react';
 import {Link}  from 'react-router-dom';
 import Image from "./../Image";
-import MobileNav from "../MobileNav/index";
+import Lunch from "./LunchButton"
+import MobileNav from "../DineinMobileNav/index";
+import moment from "moment";
 import './style.css';
 
 const Header = () => {
-    
+    const currentHour = moment().format("HH");
+    const currentDay = moment().day();
+
     return(	
 	<div className="middle-header">
         <div className="container">
@@ -13,7 +17,7 @@ const Header = () => {
             <div className="row">
                 <div className="col-lg-4 col-md-10 col-sm-10 col-10">
                     <div className="logo">
-                        <Link to="/home" title="">
+                        <Link to="" title="">
                             <Image className="center-block" src={"../assets/logo.png"} alt={"sushi-junai logo"} width="175px"/>
                         </Link>
                     </div>
@@ -22,22 +26,13 @@ const Header = () => {
                     <nav>
                         <ul>
                             <li>
-                                <Link to="/home" title="">Home</Link>
-                            </li>
-                            <li>
                                 <Link title="">Menu</Link>
                                 <ul>
-                                    <li><Link to="/drinks" title="">Drinks</Link></li>
-                                    <li><Link to="/lunch" title="">Lunch Specials (Mon-Fri)</Link></li>
-                                    <li><Link to="/alacarte" title="">À La Carte</Link></li>
-                                    <li><Link to="/aycestatic" title="">All You Can Eat</Link></li>
+                                    <li><Link to="/dinein-drinks" title="">Drinks</Link></li>
+                                    {currentHour<15 && (currentDay % 6 !== 0) ? <Lunch /> : ""}
+                                    <li><Link to="/dinein-alacarte" title="">À La Carte</Link></li>
+                                    <li><Link to="/rules" title="">All You Can Eat</Link></li>
                                 </ul>
-                            </li>
-                            <li>
-                                <Link to="/togo" title="">Carry Out</Link>
-                            </li>
-                            <li>
-                                <Link to="/delivery" title="">Delivery</Link>
                             </li>
                         </ul>
                     </nav>

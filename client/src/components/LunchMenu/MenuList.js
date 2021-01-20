@@ -32,11 +32,6 @@ function Menu() {
                     <h1 style={{paddingLeft: "3%"}}>Lunch Menu</h1>
                     <hr />
                 </Row>
-                <Row className="sticky-top menuOptions">
-                    <span>
-                        <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
-                    </span>
-                </Row>
                 <Row>
                 <div className="section-head"><h2 id="HouseSpecials">House Specials</h2>
                 <h5>Sushi Junai 1 exclusives</h5></div>

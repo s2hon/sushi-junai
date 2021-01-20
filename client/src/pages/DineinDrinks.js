@@ -1,16 +1,16 @@
 import React from "react";
-import LunchMenu from "../components/LunchMenu/MenuList";
-import Header from "../components/Header";
+import DrinkMenu from "../components/DrinkMenu/MenuList"
 import HeaderTopbar from "../components/HeaderTopbar";
+import Header from "../components/DineinHeader";
 
-function Lunch() {
+function Drinks(props) {
     return (
         <>
             <HeaderTopbar style ={{zIndex: "9999"}}/>
             <Header/>
-            <LunchMenu />
+            <DrinkMenu />
         </>
-    );
+        );
 }
 
-export default Lunch;
+export default Drinks;

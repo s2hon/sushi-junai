@@ -5,13 +5,17 @@ import { Row, Col } from "reactstrap";
 import Button from "../../components/Button";
 import Lunch from "./LunchButton";
 import moment from "moment";
+import HeaderTopbar from "../../components/HeaderTopbar";
+import Header from "../../components/DineinHeader";
 
-function Dinein() {
+const Dinein = () => {
     const currentHour = moment().format("HH");
     const currentDay = moment().day();
 
     return (
         <>
+            <HeaderTopbar style ={{zIndex: "9999"}}/>
+            <Header/>
             <Container>
                 <div className="menu-container">
                     {currentHour<15 && (currentDay % 6 !== 0) ? <Lunch /> : ""}
