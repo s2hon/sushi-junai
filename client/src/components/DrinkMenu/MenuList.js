@@ -3,7 +3,7 @@ import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "./MenuItems";
-import BackButton from "../BackButton/BackButton";
+import BackButton from "../BackButton";
 import Scrollup from "../ScrollUp/index";
 
 function Menu(props) {
