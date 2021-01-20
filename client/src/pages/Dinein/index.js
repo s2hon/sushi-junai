@@ -21,7 +21,7 @@ const Dinein = () => {
                     {currentHour<15 && (currentDay % 6 !== 0) ? <Lunch /> : ""}
                     <Row>
                         <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center" style={{ marginTop: 50}}>
-                            <Link to="/drinks">
+                            <Link to="/dinein-drinks">
                                 <Button type={"button"} btn={"btn btn1 btn-lrg"}><h1 style={{ color: "#E6D9D3" }}><strong>Drinks</strong></h1><h3>Why limit happy to an hour?</h3>
                                 </Button>
                             </Link>
@@ -39,7 +39,7 @@ const Dinein = () => {
                     </Row>
                     <Row>
                         <Col sm="12" md={{ size: 6, offset: 3 }} className="text-center" style={{ marginBottom: 50 }}>
-                            <Link to="/alacarte">
+                            <Link to="/dinein-alacarte">
                                 <Button type={"button"} btn={"btn btn1 btn-lrg"}><h1 style={{ color: "#E6D9D3" }}><strong>À La Carte</strong></h1><h3>Get the items you love!</h3>
                                 </Button>
                             </Link>
