@@ -62,7 +62,7 @@ function Menu() {
             <Container>
                 <div className="menu-container" id="top">
                     <Row>
-                        <h1 style={{paddingLeft: "3%"}}>A La Carte Menu</h1><hr />
+                        <h1 style={{paddingLeft: "3%"}}>À La Carte Menu</h1><hr />
                     </Row>
                     <Row className="sticky-top menuOptions">
                         <MenuNav />
@@ -73,9 +73,6 @@ function Menu() {
                         <span className="form-check form-check-inline">
                             <input className="form-check-input" type="checkbox" id="glutenFreeCheckbox" onChange={handleInputChangeGF} value="glutenFree" />
                             <label className="form-check-label" for="glutenFreeCheckbox"><Image src={gfIcon} width="18" alt="Gluten Free" />Gluten Free (order without sauce or with tamari) </label>
-                        </span>
-                        <span>
-                            <Link to="/drinks"><Button type="button" btn="btn btn1 float-right">Drinks</Button></Link>
                         </span>
                     </Row>
                     <Row>
