@@ -29,6 +29,7 @@ import StaffPick from "../FoodKey/StaffPick";
 import Popular from "../FoodKey/Popular";
 import HeaderTopbar from "../HeaderTopbar";
 import Header from "../DineinHeader";
+import Tour from "../Tour"
 
 function Menu(props) {
     useEffect(() => {
@@ -95,10 +96,12 @@ function Menu(props) {
             
             <Container>
                 <div className="menu-container" id="top">
-                    <Row>
-                        <h1 className="center" style={{paddingLeft: "3%"}}><BackButton />All-You-Can-Eat Menu</h1><hr />
+                    <Row className="title-bar">
+                        <h1 className="center" style={{paddingLeft: "3%"}}><BackButton />All-You-Can-Eat Menu</h1>
+                        <Button btn="float-right btn btn1 zero">Tutorial</Button>
                     </Row>
-                    <Row className="sticky-top menuOptions">
+                    <hr />
+                    <Row className="sticky-top menuOptions two">
                         <MenuNav />
                         <Container>
                             <Col>
@@ -112,7 +115,7 @@ function Menu(props) {
                                 </span>
                             </Col>
                             <Col>
-                                <span>
+                                <span className="four">
                                     <Link to="/ordersummary"><Button type="button" btn="btn btn1 float-right">Sushi Cart ({currentQtyTotal})</Button></Link>
                                 </span>
                                 <span>
@@ -135,7 +138,7 @@ function Menu(props) {
                                     }
                                     return (
                                         <div className="card menu-card text-center">
-                                            <div className="card-body d-flex justify-content-between">
+                                            <div className="card-body d-flex justify-content-between three">
                                                 <MenuItems key={idx} name={item.name} price={item.price.toFixed(2)} description={item.description} fish={item.fish} oncePerOrder={oncePerOrder} vegetarian={item.vegetarian} glutenFree={item.glutenFree} spicy={item.spicy} shellfish={item.shellfish} popular={item.popular} staffpick={item.staffpick}>
                                                     <Button id={item.name} type="button" btn={"float-right btn btn1"} function={() => {
                                                         props.addItem(item)
@@ -412,6 +415,7 @@ function Menu(props) {
                 </div>
             </Container>
             <Scrollup />
+            <Tour />
         </>
     );
 }

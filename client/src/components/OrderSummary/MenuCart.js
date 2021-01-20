@@ -21,6 +21,7 @@ import BackButton from '../BackButton/BackButton';
 import VisibleNotification from "../Notification2";
 import HeaderTopbar from "../HeaderTopbar";
 import Header from "../DineinHeader";
+import Tour from "../Tour"
 
 const MenuCart = (props) => {
     const [activeTab, setActiveTab] = useState('1');
@@ -88,7 +89,7 @@ const MenuCart = (props) => {
             <Header/>
             <Counter/>
             <Container>
-                <div className="menu-container">
+                <div className="menu-container five">
                     <Row>
                         <h3 className="cartHeading"><BackButton />Sushi Tracker ({currentQtyTotal})</h3>
                     </Row>
@@ -101,7 +102,7 @@ const MenuCart = (props) => {
                                 current rounds
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className="eight">
                             <NavLink
                                 className={classnames({ active: activeTab === '2' })}
                                 onClick={() => { toggle('2'); }}
@@ -111,7 +112,7 @@ const MenuCart = (props) => {
                         </NavItem>
                     </Nav>
                     <TabContent activeTab={activeTab}>
-                        <TabPane tabId="1">
+                        <TabPane className="six" tabId="1">
                             <Table bordered striped>
                                 <thead>
                                     <tr>
@@ -152,7 +153,7 @@ const MenuCart = (props) => {
                                 <tbody className="mainFont">
                                     {desserts.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
                                 </tbody>
-                                {!menuCart.length ? "" : <Button type={"button"} btn={"btn btn1"} onClick={() => nextRound()} style={{display:"inline-block"}}>Next Round </Button> }
+                                {!menuCart.length ? "" : <Button className="seven" type={"button"} btn={"btn btn1"} onClick={() => nextRound()} style={{display:"inline-block"}}>Next Round </Button> }
                                 <VisibleNotification/>
                             </Table>
                         </TabPane>
@@ -202,7 +203,7 @@ const MenuCart = (props) => {
                     <div className="row buttons">
                         <Link
                             to="/ayce" className="active">
-                                <Button type={"button"} className={"btn btn1"} style={{display:"inline-block"}}><h5>BACK TO MENU</h5></Button>
+                                <Button type={"button"} className={"btn btn1 nine"} style={{display:"inline-block"}}><h5>BACK TO MENU</h5></Button>
                         </Link> 
                     </div>
                     <div className="row right">
@@ -224,6 +225,7 @@ const MenuCart = (props) => {
                     </div>
                 </div>
             </Container>
+            <Tour />
         </>
     );
 };
