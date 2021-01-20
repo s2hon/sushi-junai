@@ -23,7 +23,7 @@ import Shellfish from "../FoodKey/Shellfish";
 import Spicy from "../FoodKey/Spicy";
 import SO from "../FoodKey/SO";
 import YumYum from "../FoodKey/YumYum";
-import BackButton from "../BackButton/BackButton";
+import BackButton from "../BackButton";
 import VisibleNotification from "../Notification";
 import StaffPick from "../FoodKey/StaffPick";
 import Popular from "../FoodKey/Popular";
@@ -97,7 +97,7 @@ function Menu(props) {
             <Container>
                 <div className="menu-container" id="top">
                     <Row className="title-bar">
-                        <h1 className="center" style={{paddingLeft: "3%"}}><BackButton />All-You-Can-Eat Menu</h1>
+                        <h1 className="center" style={{paddingLeft: "3%"}}><BackButton /> All-You-Can-Eat Menu</h1>
                         <Button btn="float-right btn btn1 zero">Tutorial</Button>
                     </Row>
                     <hr />

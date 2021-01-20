@@ -17,6 +17,7 @@ import YumYum from "../FoodKey/YumYum";
 import StaffPick from "../FoodKey/StaffPick";
 import Popular from "../FoodKey/Popular";
 import Scrollup from "../ScrollUp/index";
+import BackButton from "../BackButton";
 
 function Menu() {
     const [isVegetarian, setIsVegetarian] = useState(false);
@@ -58,7 +59,7 @@ function Menu() {
             <Container>
                 <div className="menu-container" id="top">
                     <Row>
-                        <h1 style={{paddingLeft: "3%"}}>All-You-Can-Eat Menu</h1><hr />
+                        <h1 style={{paddingLeft: "3%"}}><BackButton /> All-You-Can-Eat Menu</h1><hr />
                     </Row>
                     <Row className="sticky-top menuOptions">
                         <MenuNav />
