@@ -22,7 +22,7 @@ Official repo for Sushi Junai Restaurant website
 
 
 ### Version 
-3.1.4
+4.1.6
 
 ### Deployed Project
     https://www.sushi-junai.app
