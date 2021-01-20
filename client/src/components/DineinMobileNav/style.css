@@ -1,0 +1,127 @@
+.sidebar {
+    position: fixed;
+    left: -270px;
+    top: 0;
+    z-index: 15;
+    height: 100vh;
+    width: 180px;
+    background: #E63736;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 10px 40px 0px rgba(50, 50, 50, 0.1);
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+.navlist .card-body{
+    background: #E63736;
+}
+
+.sidebar h2{
+    padding-left: 20px;
+}
+.sidebar.show{
+    left: 0;
+}
+.showmenu {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    z-index: 15;
+    cursor: pointer;
+}
+.navlist {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 30px;
+}
+.navlist li a,
+.navlist li p{
+    list-style: none;
+    display: block;
+    padding: 13px 20px;
+    font-size: 16px;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #F8F0EB;
+    cursor: pointer;
+}
+.navlist li p{
+    list-style: none;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.navlist .card{
+    border:none
+}
+.navlist .card-body{
+    padding-top: 0;
+}
+
+.navlist .card-body li {
+    list-style: none;
+    background: #E63736;
+}
+
+.navlist li a{
+    position: relative;
+}
+.navlist li i{
+    list-style: none;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+}
+.navbtn i {
+    font-size: 30px;
+    color: white;
+}
+
+.mobileMenu{
+    display: none;
+}
+.navbtn{
+    display: none;
+}
+@media (max-width:992px){
+    .navbtn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 5px;
+        position: absolute;
+        top: 25%;
+        right: 25%;
+    }
+    .mobileMenu{
+        display: block;
+    }
+}
+
+.middle-header-3 .navbtn {
+    top: 36px;
+}
+.middle-header2 .navbtn {
+    top: 26px;
+}
+
+.middle-header-3 .navbtn i{
+    color: white;
+}
+
+.submenu {
+    color: white !important;
+}
+
+@media(max-width:450px){
+    .mobileMenu {
+        left: -180px;
+        width: 180px;
+    }
+    .navlist li a, .responsivemenu li p {
+        font-size: 16px;
+    }
+}

@@ -1,16 +1,16 @@
 import React from "react";
-import LunchMenu from "../components/LunchMenu/MenuList";
-import Header from "../components/Header";
+import ALaCarteMenu from "../components/ALaCarteMenu/MenuList"
 import HeaderTopbar from "../components/HeaderTopbar";
+import Header from "../components/DineinHeader";
 
-function Lunch() {
+function Alacarte(props) {
     return (
         <>
             <HeaderTopbar style ={{zIndex: "9999"}}/>
             <Header/>
-            <LunchMenu />
+            <ALaCarteMenu />
         </>
     );
 }
 
-export default Lunch;
+export default Alacarte;

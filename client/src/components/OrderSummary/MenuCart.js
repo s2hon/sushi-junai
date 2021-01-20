@@ -19,6 +19,8 @@ import Counter from "../Counter";
 import './style.css';
 import BackButton from '../BackButton/BackButton';
 import VisibleNotification from "../Notification2";
+import HeaderTopbar from "../HeaderTopbar";
+import Header from "../DineinHeader";
 
 const MenuCart = (props) => {
     const [activeTab, setActiveTab] = useState('1');
@@ -82,7 +84,9 @@ const MenuCart = (props) => {
 
     return (
         <>
-        <Counter/>
+            <HeaderTopbar style ={{zIndex: "9999"}}/>
+            <Header/>
+            <Counter/>
             <Container>
                 <div className="menu-container">
                     <Row>

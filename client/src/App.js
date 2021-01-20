@@ -10,14 +10,15 @@ import Alacarte from "./pages/Alacarte";
 import AYCEMenu from "./pages/AYCEMenu";
 import OrderSummary from "./pages/OrderSummary";
 import Dinein from "./pages/Dinein";
+import DineinAlacarte from "./pages/DineInAlacarte";
+import DineinLunchMenu from "./pages/DineinLunchMenu";
+import DineinDrinks from "./pages/DineinDrinks"
 import Rules from "./pages/Rules";
 import Drinks from "./pages/Drinks";
 import LunchMenu from './pages/LunchMenu';
 import StaticAYCEMenu from './pages/StaticAYCEMenu';
 import Delivery from './pages/Delivery';
 import ToGo from './pages/ToGo';
-import Header from "./components/Header";
-import HeaderTopbar from "./components/HeaderTopbar";
 import Footer from './components/Footer';
 import moment from "moment";
 import ScrollToTop from "./components/ScrollToTop"
@@ -44,16 +45,17 @@ function App() {
         <Provider store={store}>
             <Router>
                 <ScrollToTop>
-                    <HeaderTopbar style ={{zIndex: "9999"}}/>
-                    <Header/>
                     <Switch>
                         <Route exact path="/" component={Home}/>
                         <Route exact path="/home" component={Home}/>
-                        <Route exact path="/alacarte" component={Alacarte}/>
-                        <Route exact path="/ayce" component={AYCEMenu}/>
                         <Route exact path="/dinein" component={Dinein}/>
+                        <Route exact path="/ayce" component={AYCEMenu}/>
                         <Route exact path="/ordersummary" component={OrderSummary}/>            
                         <Route exact path="/rules" component={Rules}/>
+                        <Route exact path="/dinein-alacarte" component={DineinAlacarte}/>
+                        <Route exact path="/dinein-drinks" component={DineinDrinks}/>
+                        <Route exact path="/dinein-lunch" component={DineinLunchMenu}/>
+                        <Route exact path="/alacarte" component={Alacarte}/>
                         <Route exact path="/drinks" component={Drinks}/>
                         <Route exact path="/lunch" component={LunchMenu}/>
                         <Route exact path="/aycestatic" component={StaticAYCEMenu}/>

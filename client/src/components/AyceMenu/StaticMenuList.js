@@ -3,7 +3,7 @@ import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "../MenuItems";
-import MenuNav from "../MenuNav/index";
+import MenuNav from "../MenuNav";
 import Image from "../Image";
 import vegIcon from "../FoodKey/icons8-vegetarian-mark-144.png";
 import gfIcon from "../FoodKey/icons8-no-gluten-144.png";

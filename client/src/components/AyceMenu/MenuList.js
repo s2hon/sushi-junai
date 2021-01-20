@@ -4,7 +4,7 @@ import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "../MenuItems";
-import MenuNav from "../MenuNav/index2"
+import MenuNav from "../MenuNav"
 import Button from "../Button";
 import Image from "../Image";
 import "./menu.css"
@@ -27,6 +27,8 @@ import BackButton from "../BackButton/BackButton";
 import VisibleNotification from "../Notification";
 import StaffPick from "../FoodKey/StaffPick";
 import Popular from "../FoodKey/Popular";
+import HeaderTopbar from "../HeaderTopbar";
+import Header from "../DineinHeader";
 
 function Menu(props) {
     useEffect(() => {
@@ -87,6 +89,8 @@ function Menu(props) {
     let used =  allCartItems.filter(item => limitedItem.includes(item))
     return (
         <>
+            <HeaderTopbar style ={{zIndex: "9999"}}/>
+            <Header/>
             <Counter />
             
             <Container>
