@@ -28,12 +28,13 @@ const YelpCard = (props) => {
 
   return (
     <div>
-      <Card>
-          <CardBody>
-          <CardImg top width="100%" src={props.image} alt="Yelp reviewers" className="yelp-img" style={{border: 1, borderRadius:"50%", width: 100, padding: 5, float: "left" }}/>
-          <CardTitle className="yelp-title" style ={{fontWeight: "bold"}}tag="h5">{props.name}</CardTitle>
-          <CardSubtitle tag="h3" className="mb-2 text-muted rating"> Rating: {numStars(stars)}</CardSubtitle>
-          <CardText className="review-text" style={{fontSize:12}}><strong>"{props.text}"</strong></CardText>
+      <Card className="review-card menu-card">
+          <CardBody className="center">
+          {/* <CardImg top width="100%" src={props.image} alt="Yelp reviewers" className="yelp-img" style={{border: 1, borderRadius:"50%", width: 100, padding: 5, float: "left" }}/> */}
+          
+          <CardSubtitle tag="h3" className="mb-2 stars rating"> {numStars(stars)}</CardSubtitle>
+          <CardText className="review-text mainFont">"{props.text}"</CardText>
+          <CardText className="yelp-title mainFont" style ={{fontWeight: "bold"}}tag="h5">{props.name}</CardText>
           </CardBody>
       </Card>
     </div>
