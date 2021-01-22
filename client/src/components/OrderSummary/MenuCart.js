@@ -3,15 +3,16 @@ import { Link } from "react-router-dom";
 import MenuCartItem from './MenuCartItem';
 import MenuCartGreyItem from './MenuCartGreyItem';
 import Container from "../Container";
-import { 
-    TabContent, 
-    TabPane, 
-    Button, 
-    Row, 
-    Nav, 
-    NavItem, 
+import {
+    TabContent,
+    TabPane,
+    Button,
+    Row,
+    Nav,
+    NavItem,
     NavLink,
-    Table } from 'reactstrap';
+    Table
+} from 'reactstrap';
 import classnames from 'classnames';
 import EmptyCart from './EmptyCart';
 import TipCalculater from '../TipCalculater';
@@ -24,33 +25,33 @@ const MenuCart = (props) => {
     const [activeTab, setActiveTab] = useState('1');
 
     const toggle = tab => {
-        if(activeTab !== tab) setActiveTab(tab);
+        if (activeTab !== tab) setActiveTab(tab);
     }
 
     const { menuCart } = props
     const { totalSavings } = props
     const { pastOrders } = props
 
-    const currentQty = arr => arr.reduce((sum, {quantity}) => sum + quantity, 0);
+    const currentQty = arr => arr.reduce((sum, { quantity }) => sum + quantity, 0);
     const currentQtyTotal = currentQty(menuCart);
 
-    const sumCostTotal = arr => arr.reduce((sum, {price, quantity})=> sum + price*quantity, 0);
+    const sumCostTotal = arr => arr.reduce((sum, { price, quantity }) => sum + price * quantity, 0);
     const cartCostTotal = sumCostTotal(menuCart);
 
-    let accumulativeTotal = (parseFloat(totalSavings)+cartCostTotal).toFixed(2) 
-    
+    let accumulativeTotal = (parseFloat(totalSavings) + cartCostTotal).toFixed(2)
+
     const limitedItem = [
-    'Screaming "O" (3/8 pcs)',
-    'White "O" (3/8 pcs)',
-    "Beef",
-    "Conch (Makigai)",
-    "Tako Wasabi",
-    "Sweet Shrimp (Ama Ebi)",
-    "Sashimi Special (4 pcs)",
-    "Mochi Ice Cream"]
-    
+        'Screaming "O" (3/8 pcs)',
+        'White "O" (3/8 pcs)',
+        "Beef",
+        "Conch (Makigai)",
+        "Tako Wasabi",
+        "Sweet Shrimp (Ama Ebi)",
+        "Sashimi Special (4 pcs)",
+        "Mochi Ice Cream"]
+
     const cartItems = menuCart.map(menuCart => menuCart.name);
-    let used =  cartItems.filter(item => limitedItem.includes(item));
+    let used = cartItems.filter(item => limitedItem.includes(item));
 
     const appetizers = menuCart.filter(item => item.category === "Appetizer");
     const salads = menuCart.filter(item => item.category === "Salad");
@@ -82,12 +83,12 @@ const MenuCart = (props) => {
 
     return (
         <>
-        <Counter/>
+            <Counter />
             <Container>
                 <div className="menu-container">
                     <Row>
-                    <h3 className="cartHeading center"><BackButton />Order Summary ({currentQtyTotal})</h3>
-                    <h3 className="cartHeading">Sushi Tracker ({currentQtyTotal})</h3>
+
+                        <h3 className="cartHeading"><BackButton /> Sushi Tracker ({currentQtyTotal})</h3>
                     </Row>
                     <Nav tabs>
                         <NavItem>
@@ -133,29 +134,29 @@ const MenuCart = (props) => {
                                 </tbody>
                                 <h4>{rice.length > 0 ? "Rice" : ""}</h4>
                                 <tbody className="mainFont">
-                                    {rice.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem}/>)}
+                                    {rice.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
                                 </tbody>
                                 <h4>{sushi.length > 0 ? "Sushi (Nigiri)" : ""}</h4>
                                 <tbody className="mainFont">
                                     {sushi.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
                                 </tbody>
-                                <h4>{classicRolls.length || chefsSpecial.length || tempuraRolls.length || bakedRolls.length> 0 ? "Rolls" : ""}</h4>
+                                <h4>{classicRolls.length || chefsSpecial.length || tempuraRolls.length || bakedRolls.length > 0 ? "Rolls" : ""}</h4>
                                 <tbody className="mainFont">
                                     {classicRolls.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
                                     {chefsSpecial.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
-                                    {tempuraRolls.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem}/>)}
-                                    {bakedRolls.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem}/>)}
+                                    {tempuraRolls.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
+                                    {bakedRolls.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
                                 </tbody>
                                 <h4>{desserts.length > 0 ? "Desserts" : ""}</h4>
                                 <tbody className="mainFont">
                                     {desserts.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
                                 </tbody>
-                                {!menuCart.length ? "" : <Button type={"button"} btn={"btn btn1"} onClick={() => nextRound()} style={{display:"inline-block"}}>Next Round </Button> }
-                                <VisibleNotification/>
+                                {!menuCart.length ? "" : <Button type={"button"} btn={"btn btn1"} onClick={() => nextRound()} style={{ display: "inline-block" }}>Next Round </Button>}
+                                <VisibleNotification />
                             </Table>
                         </TabPane>
                         <TabPane tabId="2">
-                        <Table bordered striped>
+                            <Table bordered striped>
                                 <thead>
                                     <tr>
                                         <th></th>
@@ -163,7 +164,7 @@ const MenuCart = (props) => {
                                         <th>Quantity</th>
                                         <th>Price</th>
                                     </tr>
-                                    </thead>
+                                </thead>
                                 <h4>{pastApps.length > 0 ? "Appetizers" : ""}</h4>
                                 <tbody className="mainFont">
                                     {pastApps.map((item, idx) => <MenuCartGreyItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
@@ -178,18 +179,18 @@ const MenuCart = (props) => {
                                 </tbody>
                                 <h4>{pastRice.length > 0 ? "Rice" : ""}</h4>
                                 <tbody className="mainFont">
-                                    {pastRice.map((item, idx) => <MenuCartGreyItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem}/>)}
+                                    {pastRice.map((item, idx) => <MenuCartGreyItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
                                 </tbody>
                                 <h4>{pastSushi.length > 0 ? "Sushi (Nigiri)" : ""}</h4>
                                 <tbody className="mainFont">
                                     {pastSushi.map((item, idx) => <MenuCartGreyItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
                                 </tbody>
-                                <h4>{pastClassicRolls.length || pastChefsSpecial.length || pastTempuraRolls.length || pastBakedRolls.length> 0 ? "Rolls" : ""}</h4>
+                                <h4>{pastClassicRolls.length || pastChefsSpecial.length || pastTempuraRolls.length || pastBakedRolls.length > 0 ? "Rolls" : ""}</h4>
                                 <tbody className="mainFont">
                                     {pastClassicRolls.map((item, idx) => <MenuCartGreyItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
                                     {pastChefsSpecial.map((item, idx) => <MenuCartGreyItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
-                                    {pastTempuraRolls.map((item, idx) => <MenuCartGreyItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem}/>)}
-                                    {pastBakedRolls.map((item, idx) => <MenuCartGreyItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem}/>)}
+                                    {pastTempuraRolls.map((item, idx) => <MenuCartGreyItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
+                                    {pastBakedRolls.map((item, idx) => <MenuCartGreyItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} />)}
                                 </tbody>
                                 <h4>{pastDesserts.length > 0 ? "Desserts" : ""}</h4>
                                 <tbody className="mainFont">
@@ -201,23 +202,27 @@ const MenuCart = (props) => {
                     <div className="row buttons">
                         <Link
                             to="/ayce" className="active">
-                                <Button type={"button"} className={"btn btn1"} style={{display:"inline-block"}}><h5>BACK TO MENU</h5></Button>
-                        </Link> 
+                            <Button type={"button"} className={"btn btn1"} style={{ display: "inline-block" }}><h5>BACK TO MENU</h5></Button>
+                        </Link>
                     </div>
                     <div className="row right">
-                        <div className="col-3">
+                        <div className="col-3 offset-6">
                             Round Total:
                         </div>
                         <div className="col-3">
                             $ {cartCostTotal.toFixed(2)}
                         </div>
-                        <div className="col-3">
+                    </div>
+                    <div className="row right">
+                        <div className="col-3 offset-6">
                             All Rounds Total:
                         </div>
                         <div className="col-3">
                             $ {isNaN(accumulativeTotal) ? cartCostTotal.toFixed(2) : accumulativeTotal}
                         </div>
                     </div>
+
+
                     <div className="row buttons right">
                         <TipCalculater total={isNaN(accumulativeTotal) ? cartCostTotal.toFixed(2) : accumulativeTotal} />
                     </div>

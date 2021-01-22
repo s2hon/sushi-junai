@@ -1,12 +1,12 @@
 import React from 'react';
 import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle
+  Card,  CardText, CardBody,
+  CardSubtitle
 } from 'reactstrap';
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { 
     faStar
- } from "@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons";
 
 const YelpCard = (props) => {
   const stars = props.stars;
