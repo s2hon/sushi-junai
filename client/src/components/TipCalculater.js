@@ -7,13 +7,18 @@ function TipCalculater(props) {
     });
 
     return (
-        <tr className="mainFont">
-            <th scope="row"></th>
-            <td><ButtonGroup total={props.total} setTipState={setTipState}/></td>
-            <td>Total Tip:</td>
-            <td>$ {(props.total * tipState.percent).toFixed(2)}</td>
-            {props.children}
-        </tr>
+        <>
+            
+            <div className="col-3 offset-6">Total Tip:
+                        </div>
+            <div className="col-3">
+                $ {(props.total * tipState.percent).toFixed(2)}
+            </div>
+<div className="col-3">
+                <ButtonGroup total={props.total} setTipState={setTipState} />
+            </div>
+
+        </>
     );
 }
 

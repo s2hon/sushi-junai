@@ -221,8 +221,6 @@ const MenuCart = (props) => {
                             $ {isNaN(accumulativeTotal) ? cartCostTotal.toFixed(2) : accumulativeTotal}
                         </div>
                     </div>
-
-
                     <div className="row buttons right">
                         <TipCalculater total={isNaN(accumulativeTotal) ? cartCostTotal.toFixed(2) : accumulativeTotal} />
                     </div>
