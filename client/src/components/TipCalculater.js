@@ -14,9 +14,9 @@ function TipCalculater(props) {
             <div className="col-3">
                 $ {(props.total * tipState.percent).toFixed(2)}
             </div>
-<div className="col-3">
+
                 <ButtonGroup total={props.total} setTipState={setTipState} />
-            </div>
+
 
         </>
     );

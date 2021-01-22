@@ -151,7 +151,7 @@ const MenuCart = (props) => {
                                 <tbody className="mainFont">
                                     {desserts.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
                                 </tbody>
-                                {!menuCart.length ? "" : <Button type={"button"} btn={"btn btn1"} onClick={() => nextRound()} style={{ display: "inline-block" }}>Next Round </Button>}
+                                {!menuCart.length ? "" : <Button type={"button"} className={"btn btn2"} onClick={() => nextRound()} style={{ display: "inline-block" }}><h5>Next Round</h5> </Button>}
                                 <VisibleNotification />
                             </Table>
                         </TabPane>
