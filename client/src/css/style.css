@@ -26,7 +26,8 @@
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
     position: sticky;
-    width: 90%;
+    width: 100%;
+    font-size: 14px !important;
 
 }
 
@@ -156,6 +157,16 @@ footer {
     margin-top: 20;
     margin-bottom: 20;
     align-content: center;  
+}
+
+a.nav-link {
+    padding: 5px !important;
+    margin-top: 2px;
+    margin-right: 2px;
+    color: black;
+    background-color: #FFB400;
+    border-radius: 7px;
+    font-size: 14px;
 }
 
 .location-wrap {
