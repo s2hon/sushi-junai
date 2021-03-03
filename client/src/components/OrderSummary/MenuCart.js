@@ -208,18 +208,18 @@ const MenuCart = (props) => {
                         </Link> 
                     </div>
                     <div className="row right">
-                        <div className="col-3 offset-6">
+                        <div className="col-3 offset-6 mainFont">
                             Round Total:
                         </div>
-                        <div className="col-3">
+                        <div className="col-3 mainFont">
                             $ {cartCostTotal.toFixed(2)}
                         </div>
                     </div>
                     <div className="row right">
-                        <div className="col-3 offset-6">
+                        <div className="col-3 offset-6 mainFont">
                             All Rounds Total:
                         </div>
-                        <div className="col-3">
+                        <div className="col-3 mainFont">
                             $ {isNaN(accumulativeTotal) ? cartCostTotal.toFixed(2) : accumulativeTotal}
                         </div>
                     </div>

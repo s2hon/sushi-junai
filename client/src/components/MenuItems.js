@@ -13,7 +13,7 @@ function MenuItems(props) {
         return (
                 <>
                 <Col sm="3" md="3" lg="3">
-                        <h5 className={props.oncePerOrder}>{props.name} <br/> 
+                        <h5 className={props.oncePerOrder}>{props.name} </h5> 
                         
                         {props.fish ? 
                         <a href="#rawfish"><Image src={fishIcon} width="18" alt="Fish" /></a>
@@ -48,7 +48,7 @@ function MenuItems(props) {
                                 <a href="#staffpick"><Image src={heart} width="18" alt="staff pick" /></a>
                                 : <span></span>
                         }
-                        </h5>
+                        {/* </h5> */}
                         <p>$ {props.price}</p>
                 </Col>
                 <Col sm="7" md="7" lg="7">

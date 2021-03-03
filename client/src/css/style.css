@@ -90,8 +90,10 @@ h1, h2, h3, h4 {
     font-family: 'Philosopher', sans-serif;
 }
 
-h5, h6, p, label, .btn, .mainFont {
+
+h5, h6, p, label, .btn, .mainFont, li, th {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px !important;
 }
 
 .centered{ 
@@ -107,6 +109,7 @@ h5, h6, p, label, .btn, .mainFont {
 .white-text {
     color: white !important;
 }
+
 
 .counter {
     font-size: 2em;
