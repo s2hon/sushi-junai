@@ -52,10 +52,10 @@ function Counter() {
         }
     }, [count])
 
-    if (moment().isAfter(localStorage.getItem("endtime")) || difference > 6000) {
+    if (difference > 6000) {
         return (
             <Container>
-                <div className="float-right counter">
+                <div className="float-right counter one">
                     <div className="counter float-right" style={{ color:"red" }}>00:00:00</div>
                     </div>
             </Container>
@@ -64,8 +64,8 @@ function Counter() {
     else {
         return (
             <Container>
-                <div className="float-right counter">
-                    <div className="counter float-right" style={{ color }}>{localStorage.getItem("endtime") === null ?  " " : `${hour}:${minute}:${seconds}`} </div>
+                <div className="float-right counter one">
+                    <div className="counter float-right" style={{ color }}>{`${hour}:${minute}:${seconds}`} </div>
                     </div>
             </Container>
         )

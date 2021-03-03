@@ -1,12 +1,14 @@
 import React from "react";
-import DrinkMenu from "../components/DrinkMenu/MenuList"
-import Counter from "../components/Counter";
+import DrinkMenu from "../components/DrinkMenu/MenuList";
+import Header from "../components/Header";
+import HeaderTopbar from "../components/HeaderTopbar";
 
 function Drinks(props) {
     return (
         <>
-        <Counter/>
-        <DrinkMenu />
+            <HeaderTopbar style ={{zIndex: "9999"}}/>
+            <Header/>
+            <DrinkMenu />
         </>
         );
 }

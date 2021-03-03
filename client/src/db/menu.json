@@ -11,7 +11,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Pang",
@@ -25,7 +27,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Fish Taco",
@@ -39,7 +43,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Grilled Jalapeño (2/4 pcs)",
@@ -52,8 +58,10 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": false,
-		"shellfish": true,
-		"spicy": true
+		"shellfish": false,
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Chicken Karaage",
@@ -67,7 +75,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Edamame",
@@ -81,7 +91,9 @@
 		"vegan": true,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Spicy Garlic Edamame",
@@ -95,11 +107,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": true,
+		"popular": false
 	},
 	{
-		"name": "Screaming \"O\" (3/8 pcs)",
-		"description": "Slice seared tuna over shredded radish with S.O. sauce*",
+		"name": "Screaming \"O\"",
+		"description": "(3/8 pcs) Slice seared tuna over shredded radish with S.O. sauce*",
 		"category": "Appetizer",
 		"price": 12.50,
 		"menu": "ayce",
@@ -109,11 +123,13 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
-		"name": "White \"O\" (3/8 pcs)",
-		"description": "Slice super white tuna over shredded radish with house garlic ponzu",
+		"name": "White \"O\"",
+		"description": "(3/8 pcs) Slice super white tuna over shredded radish with house garlic ponzu",
 		"category": "Appetizer",
 		"price": 12.50,
 		"menu": "ayce",
@@ -123,7 +139,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Tuna Poki",
@@ -137,7 +155,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Salmon Poki",
@@ -151,11 +171,13 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": true
 	},
 	{
-		"name": "Shrimp Tempura (2/5 pcs)",
-		"description": "",
+		"name": "Shrimp Tempura",
+		"description": "(2/5 pcs)",
 		"category": "Appetizer",
 		"price": 7.50,
 		"menu": "ayce",
@@ -165,11 +187,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
-		"name": "Vegetable Tempura (2/5 pcs)",
-		"description": "",
+		"name": "Vegetable Tempura",
+		"description": "(2/5 pcs)",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -179,11 +203,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
-		"name": "Mixed Tempura (2 shrimp and 3 veggie)",
-		"description": "",
+		"name": "Mixed Tempura",
+		"description": "(2 shrimp and 3 veggie)",
 		"category": "Appetizer",
 		"price": 6.50,
 		"menu": "ayce",
@@ -207,11 +233,13 @@
 		"vegan": false,
 		"shellfish": false,
 		"fish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
-		"name": "Creamy Shrimp (2/4 pcs)",
-		"description": "Cream cheese, shrimp deep fried",
+		"name": "Creamy Shrimp",
+		"description": "(2/4 pcs) Cream cheese and shrimp deep fried in wonton wrapper",
 		"category": "Appetizer",
 		"price": 7.50,
 		"menu": "ayce",
@@ -221,11 +249,13 @@
 		"vegan": false,
 		"shellfish": true,
 		"fish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
-		"name": "Kurobuta Sausage (2/4 pcs)",
-		"description": "",
+		"name": "Kurobuta Sausage",
+		"description": "(2/4 pcs) Fried Berkshire pork mini sausages with ketchup",
 		"category": "Appetizer",
 		"price": 5.95,
 		"menu": "ayce",
@@ -235,11 +265,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
-		"name": "Shrimp Shumai (2/4 pcs)",
-		"description": "",
+		"name": "Shrimp Shumai",
+		"description": "(2/4 pcs) Juicy and flavorful shrimp dumplings fried ",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -249,11 +281,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
-		"name": "Gyoza (2/4 pcs)",
-		"description": "Meat and vegetable dumplings fried or steamed",
+		"name": "Gyoza",
+		"description": "(2/4 pcs) Pork and vegetable dumplings fried or steamed",
 		"category": "Appetizer",
 		"price": 4.95,
 		"menu": "ayce",
@@ -263,11 +297,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
-		"name": "Fried Spring Roll (2/4 pcs)",
-		"description": "Deep fried mixed vegetables with yum yum sauce**",
+		"name": "Fried Spring Rolls",
+		"description": "(2/4 pcs) Deep fried mixed vegetables with yum yum sauce**",
 		"category": "Appetizer",
 		"price": 4.95,
 		"menu": "ayce",
@@ -277,11 +313,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Dynamite",
-		"description": "Onions, mushroom, scallop, crab topped with mayo and baked in the oven",
+		"description": "Sautéed onions, mushroom, scallop, crab topped with mayo and baked in the oven",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -291,11 +329,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
-		"name": "Mushroom Cap (2/4 pcs)",
-		"description": "Mushroom stuffed with crab mix with eel sauce",
+		"name": "Mushroom Cap",
+		"description": "(2/4 pcs) Mushroom cap stuffed with crab mix topped with mayo and eel sauce",
 		"category": "Appetizer",
 		"price": 4.50,
 		"menu": "ayce",
@@ -305,11 +345,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
-		"name": "Monkey Brain (4/8 pcs)",
-		"description": "Deep fried mushroom stuffed with cream cheese, crab, spicy tuna topped off with eel sauce and spicy mayo",
+		"name": "Monkey Brain",
+		"description": "(4/8 pcs) Deep fried mushroom stuffed with cream cheese, crab, spicy tuna topped off with eel sauce and spicy mayo",
 		"category": "Appetizer",
 		"price": 6.50,
 		"menu": "ayce",
@@ -319,11 +361,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
-		"name": "Spicy Tuna Cracker (2/4 pcs)",
-		"description": "Crispy rice topped with spicy tuna with eel sauce and spicy mayo",
+		"name": "Spicy Tuna Cracker",
+		"description": "(2/4 pcs) Crispy rice topped with spicy tuna with eel sauce and spicy mayo",
 		"category": "Appetizer",
 		"price": 5.50,
 		"menu": "ayce",
@@ -333,7 +377,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "House Crab Salad",
@@ -347,7 +393,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Cucumber Salad",
@@ -361,7 +409,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Seaweed Salad",
@@ -375,7 +425,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Spicy Asian Salad",
@@ -389,7 +441,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Avocado Salad",
@@ -403,7 +457,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Salmon Skin Salad",
@@ -417,7 +473,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Miso Soup",
@@ -431,7 +489,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Kake Udon",
@@ -445,7 +505,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Tempura Udon",
@@ -459,7 +521,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Spicy Ramen",
@@ -473,7 +537,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Steam Rice",
@@ -487,7 +553,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Mixed Fish Rice",
@@ -501,7 +569,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Vegetable Fried Rice",
@@ -515,7 +585,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Chicken Fried Rice",
@@ -529,7 +601,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Shrimp Fried Rice",
@@ -543,7 +617,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Chicken Teriyaki",
@@ -557,7 +633,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Salmon Teriyaki",
@@ -571,7 +649,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Chicken Katsu",
@@ -585,7 +665,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Korea Bulgogi",
@@ -599,7 +681,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "California Roll",
@@ -613,7 +697,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Cucumber Roll",
@@ -627,7 +713,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Tuna Roll",
@@ -641,7 +729,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Salmon Roll",
@@ -655,7 +745,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Yellowtail Roll",
@@ -669,7 +761,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Philadelphia Roll",
@@ -683,7 +777,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Eel Roll",
@@ -697,7 +793,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Salmon Skin Roll",
@@ -711,7 +809,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Crab Stick Roll",
@@ -725,7 +825,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Spicy Tuna Roll",
@@ -739,7 +841,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Spicy Salmon Roll",
@@ -753,7 +857,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Spicy Crab Roll",
@@ -767,7 +873,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Asparagus Roll",
@@ -781,7 +889,9 @@
 		"vegan": true,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Vegetable Roll",
@@ -795,7 +905,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Yum Yum Roll",
@@ -809,7 +921,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Avocado Roll",
@@ -823,7 +937,9 @@
 		"vegan": true,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Salmon (Sake)",
@@ -837,7 +953,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Salmon Belly (Sake toro)",
@@ -851,7 +969,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Garlic Salmon",
@@ -865,7 +985,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Sweet Salmon",
@@ -879,7 +1001,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Tuna (Maguro)",
@@ -892,7 +1016,9 @@
 		"vegetarian": false,
 		"vegan": false,
 		"fish": true,
-		"shellfish": false
+		"shellfish": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Pepper Tuna",
@@ -906,7 +1032,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Garlic Tuna",
@@ -920,7 +1048,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Yellowtail (Hamachi)",
@@ -934,7 +1064,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Yuzu Yellowtail",
@@ -948,7 +1080,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Albacore (Bincho Maguro)",
@@ -962,7 +1096,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Cajun Albacore",
@@ -976,7 +1112,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Garlic Albacore",
@@ -990,7 +1128,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Super White Tuna (Escolar)",
@@ -1004,7 +1144,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Beef",
@@ -1018,7 +1160,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Crab Stick (Kani Surimi)",
@@ -1032,7 +1176,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Fresh Water Eel (Unagi)",
@@ -1046,7 +1192,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Inari",
@@ -1060,7 +1208,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Mackerel (Saba)",
@@ -1074,7 +1224,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Octopus (Tako)",
@@ -1088,7 +1240,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Red Snapper (Tai)",
@@ -1102,7 +1256,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Scallop Yum Yum",
@@ -1116,7 +1272,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Aomori Scallop",
@@ -1130,7 +1288,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Shrimp (Ebi)",
@@ -1144,7 +1304,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Salmon Egg (Ikura)",
@@ -1158,7 +1320,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Smelt Egg (Masago)",
@@ -1172,7 +1336,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Flying Fish Egg (Tobiko)",
@@ -1186,7 +1352,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Squid (Ika)",
@@ -1200,7 +1368,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Surf Clam (Hoikkigai)",
@@ -1214,7 +1384,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Conch (Makigai)",
@@ -1228,7 +1400,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Tako Wasabi",
@@ -1270,7 +1444,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "007 Roll",
@@ -1284,7 +1460,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Alaska Roll",
@@ -1298,7 +1476,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Avatar",
@@ -1312,7 +1492,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Banzai",
@@ -1326,7 +1508,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Black Jack",
@@ -1340,7 +1524,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Candy Cane",
@@ -1354,7 +1540,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Casanova",
@@ -1368,7 +1556,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Caterpillar",
@@ -1382,7 +1572,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Coco Mom",
@@ -1396,7 +1588,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Crazy Crab",
@@ -1410,7 +1604,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Cucumber Passion (no rice)",
@@ -1424,7 +1620,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Die Hard 1",
@@ -1438,7 +1636,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Dragon",
@@ -1452,7 +1652,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "EX-Girlfriend",
@@ -1466,7 +1668,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": true,
+		"popular": true
 	},
 	{
 		"name": "Final Destination",
@@ -1480,7 +1684,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": true
 	},
 	{
 		"name": "Futomaki",
@@ -1494,35 +1700,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
-	},
-	{
-		"name": "Golden Cali",
-		"description": "In: deep fried California roll / Sauce: eel sauce, spicy mayo",
-		"category": "Chef’s Special Rolls",
-		"price": 7.50,
-		"menu": "ayce",
-		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
-		"fish": false,
-		"shellfish": true,
-		"spicy": true
-	},
-	{
-		"name": "Golden Philly",
-		"description": "In: deep fried Philly roll / Sauce: eel sauce, spicy mayo",
-		"category": "Chef’s Special Rolls",
-		"price": 8.95,
-		"menu": "ayce",
-		"onlyOrderOnce": false,
-		"glutenFree": false,
-		"vegetarian": false,
-		"vegan": false,
-		"fish": false,
-		"shellfish": false,
-		"spicy": true
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Hot Night",
@@ -1536,7 +1716,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "JJ Roll",
@@ -1550,7 +1732,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Junai Special",
@@ -1564,7 +1748,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Just for the halibut",
@@ -1578,7 +1764,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "K B.B.Q Roll",
@@ -1592,7 +1780,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Kiss My Ass",
@@ -1606,7 +1796,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Lisa Lisa",
@@ -1620,7 +1812,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Long Horn",
@@ -1634,7 +1828,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Mexican",
@@ -1648,7 +1844,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "OMG",
@@ -1662,7 +1860,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Pearl Special",
@@ -1676,7 +1876,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Play Boy",
@@ -1690,7 +1892,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Rainbow",
@@ -1704,7 +1908,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Red Devil",
@@ -1718,7 +1924,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Red Dragon",
@@ -1732,7 +1940,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Salmon Holic",
@@ -1746,7 +1956,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Salmon Lover",
@@ -1760,11 +1972,13 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": true
 	},
 	{
-		"name": "Sashimi Special (4 pcs)",
-		"description": "Tuna/garlic ponzu & masago. Yellowtail/yuzu & jalapeno. White tuna/sear & mustard sauce. Salmon/avocado & yum yum sauce**",
+		"name": "Sashimi Special",
+		"description": "(4 pcs) Tuna/garlic ponzu & masago. Yellowtail/yuzu & jalapeno. White tuna/sear & mustard sauce. Salmon/avocado & yum yum sauce**",
 		"category": "Chef’s Special Rolls",
 		"price": 12.95,
 		"menu": "ayce",
@@ -1774,7 +1988,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Shrimp Tempura Roll",
@@ -1788,7 +2004,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Snow White",
@@ -1802,7 +2020,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Spider",
@@ -1816,7 +2036,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Star Buck",
@@ -1830,11 +2052,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Strip Salmon",
-		"description": "In: spicy crab, cucumber-wrapped salmon / Sauce: S.O. sauce*",
+		"description": "(no rice) In: spicy crab, cucumber-wrapped salmon / Sauce: S.O. sauce*",
 		"category": "Chef’s Special Rolls",
 		"price": 12.50,
 		"menu": "ayce",
@@ -1844,7 +2068,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Sweet Heart",
@@ -1858,7 +2084,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Sweet Kiss",
@@ -1872,7 +2100,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Tiger",
@@ -1886,7 +2116,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Touch Down",
@@ -1900,7 +2132,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Wet Dream",
@@ -1914,7 +2148,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "White House",
@@ -1928,7 +2164,9 @@
 		"vegan": false,
 		"fish": true,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Diablo",
@@ -1942,7 +2180,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Fat Ass",
@@ -1956,7 +2196,41 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
+	},
+	{
+		"name": "Golden Cali",
+		"description": "In: deep fried California roll / Sauce: eel sauce, spicy mayo",
+		"category": "Tempura Rolls",
+		"price": 7.50,
+		"menu": "ayce",
+		"onlyOrderOnce": false,
+		"glutenFree": false,
+		"vegetarian": false,
+		"vegan": false,
+		"fish": false,
+		"shellfish": true,
+		"spicy": true,
+		"staffpick": false,
+		"popular": true
+	},
+	{
+		"name": "Golden Philly",
+		"description": "In: deep fried Philly roll / Sauce: eel sauce, spicy mayo",
+		"category": "Tempura Rolls",
+		"price": 8.95,
+		"menu": "ayce",
+		"onlyOrderOnce": false,
+		"glutenFree": false,
+		"vegetarian": false,
+		"vegan": false,
+		"fish": false,
+		"shellfish": false,
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Salmon Ass",
@@ -1970,7 +2244,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Stonehenge",
@@ -1984,11 +2260,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": true,
+		"popular": false
 	},
 	{
-		"name": "TNT Roll (No Rice)",
-		"description": "In: salmon, spicy tuna, spicy crab, cream cheese / Sauce: spicy mayo, eel sauce",
+		"name": "TNT Roll",
+		"description": "(No Rice) In: salmon, spicy tuna, spicy crab, cream cheese / Sauce: spicy mayo, eel sauce",
 		"category": "Tempura Rolls",
 		"price": 9.95,
 		"menu": "ayce",
@@ -1998,7 +2276,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Vegas",
@@ -2012,7 +2292,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "What The Hell",
@@ -2040,11 +2322,13 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Who’s your Ex-Wife?",
-		"description": "In: spicy tuna, jalapeno, cream cheese / Sauce: special sauce, sriracha",
+		"description": "(Jalapeño Poppers) In: spicy tuna, jalapeno, cream cheese / Sauce: special sauce, sriracha",
 		"category": "Tempura Rolls",
 		"price": 12.95,
 		"menu": "ayce",
@@ -2054,7 +2338,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Death Valley",
@@ -2068,7 +2354,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Lasagna",
@@ -2082,7 +2370,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Mountain",
@@ -2096,7 +2386,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Volcano",
@@ -2110,7 +2402,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": true
+		"spicy": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Green Tea Ice Cream",
@@ -2124,7 +2418,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Vanilla Ice Cream",
@@ -2138,7 +2434,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Afogatto",
@@ -2152,7 +2450,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Ice Brownie",
@@ -2166,7 +2466,8 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Mochi Ice Cream",
@@ -2180,7 +2481,9 @@
 		"vegan": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "House Hot Sake",
@@ -2189,7 +2492,9 @@
 		"menu": "drinks",
 		"smallPrice": 3.5,
 		"largePrice": 5.95,
-		"restaurant": "both"
+		"restaurant": "both",
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Ozeki Karatamba, Honjozo",
@@ -2200,7 +2505,9 @@
 		"price": 14,
 		"category": "sake",
 		"subcategory": "premium sake",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Ozeki Yamada Nishik, Tokubetsu Junmai",
@@ -2211,7 +2518,9 @@
 		"price": 14,
 		"category": "sake",
 		"subcategory": "premium sake",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Joto One Cup \"Graffiti Cup\", Honjozo",
@@ -2222,7 +2531,9 @@
 		"price": 7,
 		"category": "sake",
 		"subcategory": "premium sake",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Joto Yuri Masamune Honjozo",
@@ -2233,7 +2544,9 @@
 		"price": 9,
 		"category": "sake",
 		"subcategory": "premium sake",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Ozeki Dry Sake, Junmai",
@@ -2244,7 +2557,9 @@
 		"price": 18,
 		"category": "sake",
 		"subcategory": "premium sake",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Ozeki Nigori, Junmai Nigori",
@@ -2255,7 +2570,9 @@
 		"price": 12,
 		"category": "sake",
 		"subcategory": "premium sake",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Sho Chiku Bai Nigori",
@@ -2266,7 +2583,9 @@
 		"price": 10,
 		"category": "sake",
 		"subcategory": "premium sake",
-		"restaurant": "both"
+		"restaurant": "both",
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Shirayuki Nama",
@@ -2277,7 +2596,9 @@
 		"price": 11,
 		"category": "sake",
 		"subcategory": "premium sake",
-		"restaurant": "both"
+		"restaurant": "both",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Shirayuki Junmai Gingo",
@@ -2288,7 +2609,9 @@
 		"price": 16,
 		"category": "sake",
 		"subcategory": "premium sake",
-		"restaurant": "both"
+		"restaurant": "both",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Nigori",
@@ -2299,7 +2622,9 @@
 		"price": 10,
 		"category": "sake",
 		"subcategory": "premium sake",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Itami Onigorosi",
@@ -2311,38 +2636,46 @@
 		"largePrice": 69,
 		"category": "sake",
 		"subcategory": "premium sake",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Hana",
 		"subtitle": "fuji apple, lychee, raspberry",
 		"menu": "drinks",
 		"size": "750 ml",
-		"description": "Mellow with citrus tones and a dry finish",
+		"description": "Easy to drink; Mellow and sweet",
 		"price": 22,
 		"category": "sake",
 		"subcategory": "flavored sake",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "MIO",
 		"subtitle": "sparkling sake",
 		"menu": "drinks",
 		"size": "300 ml",
-		"description": "Refreshing and fruity",
+		"description": "Easy to drink; Refreshing and fruity",
 		"price": 14,
 		"category": "sake",
 		"subcategory": "flavored sake",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Choya",
-		"description": "Wine with unique uma flavor (premium plum wine from Japan)",
+		"description": "Sweet wine with unique uma flavor (premium plum wine from Japan)",
 		"menu": "drinks",
 		"price": 25,
 		"size": "750 ml",
 		"category": "plum wine",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Estancia Chardonnay",
@@ -2352,7 +2685,9 @@
 		"bottlePrice": 22,
 		"category": "wine",
 		"subcategory": "white",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Chateau Ste Michelle Riesling",
@@ -2362,7 +2697,9 @@
 		"bottlePrice": 23,
 		"category": "wine",
 		"subcategory": "white",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Castle Rock Pinot Noir",
@@ -2372,7 +2709,9 @@
 		"bottlePrice": 27,
 		"category": "wine",
 		"subcategory": "red",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Fall Creek Merlot",
@@ -2382,7 +2721,9 @@
 		"bottlePrice": 23,
 		"category": "wine",
 		"subcategory": "red",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Robert Mondavi Private Selection Cabernet",
@@ -2392,7 +2733,9 @@
 		"bottlePrice": 24,
 		"category": "wine",
 		"subcategory": "red",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Robert Mondavi Private Selection Cabernet",
@@ -2402,7 +2745,9 @@
 		"bottlePrice": 24,
 		"category": "wine",
 		"subcategory": "red",
-		"restaurant": "sj1"
+		"restaurant": "sj1",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Zardetto Prosecco",
@@ -2412,7 +2757,9 @@
 		"bottlePrice": 30,
 		"category": "wine",
 		"subcategory": "sparkling",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Avissi Prosecco",
@@ -2422,7 +2769,9 @@
 		"bottlePrice": 38,
 		"category": "wine",
 		"subcategory": "sparkling",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Schramsberg Brut Rose",
@@ -2432,7 +2781,9 @@
 		"bottlePrice": 70,
 		"category": "wine",
 		"subcategory": "sparkling",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Santa Cristina Pinot Grigio",
@@ -2442,7 +2793,9 @@
 		"bottlePrice": 30,
 		"category": "wine",
 		"subcategory": "white",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Count Karolyi Gruner Veltliner",
@@ -2452,7 +2805,9 @@
 		"bottlePrice": 26,
 		"category": "wine",
 		"subcategory": "white",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Napa Cellars Sauvignon Blanc",
@@ -2462,7 +2817,9 @@
 		"bottlePrice": 38,
 		"category": "wine",
 		"subcategory": "white",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "St Supery Dollarhide Sauvignon Blanc",
@@ -2472,7 +2829,9 @@
 		"bottlePrice": 38,
 		"category": "wine",
 		"subcategory": "white",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Schmitt Sohne Riesling",
@@ -2482,7 +2841,9 @@
 		"bottlePrice": 26,
 		"category": "wine",
 		"subcategory": "white",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Charles Smith Kung Fu Girl Riesling",
@@ -2492,7 +2853,9 @@
 		"bottlePrice": 34,
 		"category": "wine",
 		"subcategory": "white",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Trefthen Dry Riesling",
@@ -2502,7 +2865,9 @@
 		"bottlePrice": 42,
 		"category": "wine",
 		"subcategory": "white",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "10 Span Central Coast Chardonnay",
@@ -2512,7 +2877,9 @@
 		"bottlePrice": 26,
 		"category": "wine",
 		"subcategory": "white",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Sonoma Curter Russian River Chardonnay",
@@ -2522,7 +2889,9 @@
 		"bottlePrice": 45,
 		"category": "wine",
 		"subcategory": "white",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Argyle Willamette Pinot Noir",
@@ -2532,7 +2901,9 @@
 		"bottlePrice": 42,
 		"category": "wine",
 		"subcategory": "red",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Meiomi Pinot Noir",
@@ -2542,7 +2913,9 @@
 		"bottlePrice": 46,
 		"category": "wine",
 		"subcategory": "red",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Foley Santa Rita Hills Pinot Noir",
@@ -2552,7 +2925,9 @@
 		"bottlePrice": 62,
 		"category": "wine",
 		"subcategory": "red",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Wild Horse Merlot",
@@ -2562,7 +2937,9 @@
 		"bottlePrice": 38,
 		"category": "wine",
 		"subcategory": "red",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Tasca Almerita Regaleale Nero De'avola",
@@ -2582,7 +2959,9 @@
 		"bottlePrice": 46,
 		"category": "wine",
 		"subcategory": "red",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Joel Gott 815 Cabernet Sauvignon",
@@ -2592,31 +2971,42 @@
 		"bottlePrice": 46,
 		"category": "wine",
 		"subcategory": "red",
-		"restaurant": "sj2"
+		"restaurant": "sj2",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Sapporo",
+		"description": "Darker blonde with straight and clean finish",
 		"size": "21 oz",
 		"menu": "drinks",
 		"price": 6.5,
 		"category": "beer",
-		"restaurant": "both"
+		"restaurant": "both",
+		"staffpick": true,
+		"popular": false
 	},
 	{
-		"name": "Asahi",
+		"name": "Asahi Dry",
+		"description": "Blonde with short but clean finish",
 		"size": "22 oz",
 		"menu": "drinks",
 		"price": 6.5,
 		"category": "beer",
-		"restaurant": "both"
+		"restaurant": "both",
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Kirin Inchban",
-		"size": "",
+		"description": "Blonde with crisper notes-than Asashi-with mild finish that lingers",
+		"size": "21 oz",
 		"menu": "drinks",
 		"price": 6.5,
 		"category": "beer",
-		"restaurant": "both"
+		"restaurant": "both",
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Soft Drinks",
@@ -2683,7 +3073,9 @@
 		"price": 6.95,
 		"menu": "lunch",
 		"category": "Lunch Special",
-		"fish": false
+		"fish": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Chicken Fried Rice",
@@ -2691,7 +3083,9 @@
 		"price": 7.95,
 		"menu": "lunch",
 		"category": "Lunch Special",
-		"fish": false
+		"fish": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Seafood Fried Rice",
@@ -2699,15 +3093,19 @@
 		"price": 9.95,
 		"menu": "lunch",
 		"category": "Lunch Special",
-		"fish": false
+		"fish": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Sashimi Combo",
-		"description": "Six pieces of chef's pick sashimi, four pieces california roll, four pieces spicy tuna roll, and a Banzai roll",
+		"description": "Six pieces of chef's choice sashimi, four pieces california roll, four pieces spicy tuna roll, and a Banzai roll",
 		"price": 12.5,
 		"menu": "lunch",
 		"category": "combo",
-		"fish": true
+		"fish": true,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Texas Combo (A)",
@@ -2715,15 +3113,19 @@
 		"price": 9.95,
 		"menu": "lunch",
 		"category": "combo",
-		"fish": true
+		"fish": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Texas Combo (B)",
-		"description": "Udon with four pieces california roll, four pieces spicy tuna roll, five pieces of chef's choice sushi(Nigiri)",
+		"description": "Udon with four pieces california roll, four pieces spicy tuna roll, five pieces of chef's choice Nigiri",
 		"price": 9.95,
 		"menu": "lunch",
 		"category": "combo",
-		"fish": true
+		"fish": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Texas Combo (C)",
@@ -2731,7 +3133,9 @@
 		"price": 9.95,
 		"menu": "lunch",
 		"category": "combo",
-		"fish": true
+		"fish": true,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Austin Combo (A)",
@@ -2739,7 +3143,9 @@
 		"price": 9.95,
 		"menu": "lunch",
 		"category": "combo",
-		"fish": true
+		"fish": true,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Austin Combo (B)",
@@ -2747,7 +3153,9 @@
 		"price": 9.95,
 		"menu": "lunch",
 		"category": "combo",
-		"fish": true
+		"fish": true,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Austin Combo (C)",
@@ -2755,7 +3163,9 @@
 		"price": 9.95,
 		"menu": "lunch",
 		"category": "combo",
-		"fish": false
+		"fish": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Chicken Teriyaki",
@@ -2763,7 +3173,9 @@
 		"price": 8.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false
+		"fish": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Tonkatsu",
@@ -2771,7 +3183,9 @@
 		"price": 8.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false
+		"fish": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Chicken Katsu",
@@ -2779,7 +3193,9 @@
 		"price": 8.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false
+		"fish": false,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Korea Bulgogi",
@@ -2787,7 +3203,9 @@
 		"price": 9.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false
+		"fish": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Salmon Teriyaki",
@@ -2795,7 +3213,9 @@
 		"price": 10.95,
 		"menu": "lunch",
 		"category": "Lunch Box",
-		"fish": false
+		"fish": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Chirashi",
@@ -2807,7 +3227,9 @@
 		"vegetarian": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Sushi Platter",
@@ -2819,7 +3241,9 @@
 		"vegetarian": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Austin (6 pieces)",
@@ -2870,18 +3294,6 @@
 		"spicy": false
 	},
 	{
-		"name": "Chicken Salad",
-		"description": "Mixed greens topped with avocado and grilled chicken",
-		"category": "Salad",
-		"price": 8.95,
-		"menu": "alc",
-		"glutenFree": false,
-		"vegetarian": false,
-		"fish": false,
-		"shellfish": false,
-		"spicy": false
-	},
-	{
 		"name": "Sashimi Salad",
 		"description": "10 piece slice sashimi, shredded radish with spicy sauce",
 		"category": "Salad",
@@ -2891,7 +3303,9 @@
 		"vegetarian": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Yellowtail Capachino (6 pieces)",
@@ -2903,7 +3317,9 @@
 		"vegetarian": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Cajun Albacore Sashimi (8 pieces)",
@@ -2915,43 +3331,9 @@
 		"vegetarian": false,
 		"fish": true,
 		"shellfish": false,
-		"spicy": false
-	},
-	{
-		"name": "Salmon Collar",
-		"description": "Grilled salmon collar with ponzu sauce. Limited quantity available.",
-		"category": "Appetizer",
-		"price": 6.95,
-		"menu": "alc",
-		"glutenFree": true,
-		"vegetarian": false,
-		"fish": false,
-		"shellfish": false,
-		"spicy": false
-	},
-	{
-		"name": "Yellowtail Collar",
-		"description": "Grilled yellowtail collar with ponzu sauce. Limited quantity available.",
-		"category": "Appetizer",
-		"price": 7.95,
-		"menu": "alc",
-		"glutenFree": false,
-		"vegetarian": false,
-		"fish": false,
-		"shellfish": false,
-		"spicy": false
-	},
-	{
-		"name": "Mini Rolly Katsu (4 pieces)",
-		"description": "Deep fried balls with masago, cream cheese and crab",
-		"category": "Appetizer",
-		"price": 5.95,
-		"menu": "alc",
-		"glutenFree": false,
-		"vegetarian": false,
-		"fish": false,
-		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Soft Shell Crab",
@@ -2963,7 +3345,9 @@
 		"vegetarian": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Chicken Yaki Udon",
@@ -2975,7 +3359,9 @@
 		"vegetarian": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Seafood Yaki Udon",
@@ -2987,7 +3373,9 @@
 		"vegetarian": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Nabeyaki Udon",
@@ -2999,7 +3387,9 @@
 		"vegetarian": false,
 		"fish": false,
 		"shellfish": true,
-		"spicy": false
+		"spicy": false,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Beef Teriyaki",
@@ -3011,7 +3401,9 @@
 		"vegetarian": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Unagi Donburi",
@@ -3023,39 +3415,49 @@
 		"vegetarian": false,
 		"fish": false,
 		"shellfish": false,
-		"spicy": false
+		"spicy": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Otokoyama Sake",
 		"description": "",
 		"price": 18,
-		"menu": "lunch",
-		"category": "house special",
-		"fish": false
+		"menu": "drinks",
+		"restaurant": "sj1",
+		"fish": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Itami Onigoroshi Sake",
 		"description": "",
 		"price": 18,
-		"menu": "lunch",
-		"category": "house special",
-		"fish": false
+		"menu": "drinks",
+		"restaurant": "sj1",
+		"fish": false,
+		"staffpick": false,
+		"popular": false
 	},
 	{
 		"name": "Two Roll Combo",
-		"description": "Chef Special, miso soup, and salad",
+		"description": "Choice of 2 Chef Special Rolls, served with miso soup and house salad",
 		"price": 14.95,
 		"menu": "lunch",
 		"category": "house special",
-		"fish": true
+		"fish": true,
+		"staffpick": true,
+		"popular": false
 	},
 	{
 		"name": "Five Piece Nigiri",
-		"description": "Chef's Choice",
+		"description": "Five pieces of chef's choice nigiri, served with miso soup and house salad",
 		"price": 19.95,
 		"menu": "lunch",
 		"category": "house special",
-		"fish": true
+		"fish": true,
+		"staffpick": false,
+		"popular": true
 	},
 	{
 		"name": "Combo A",

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import Container from './Container';
 import YelpCard from './YelpCard';
@@ -10,7 +9,6 @@ function Yelp(props) {
         // make api call, set reviews in state
         API.getReviews()
         .then((res) => {
-            console.log(res.data)
             setReviews(res.data.reviews);
         })
         .catch((error) => {

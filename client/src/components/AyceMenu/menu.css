@@ -3,6 +3,14 @@
     background-color: white;
 }
 
+.title-bar{
+    display: flex;
+}
+
+.title-bar h1{
+    margin-right: auto;
+}
+
 h5.red {
     color: red;
 }

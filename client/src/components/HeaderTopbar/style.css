@@ -1,0 +1,191 @@
+.logo {
+    max-width: 180px;
+    margin-top: 0;
+}
+.logo img{
+	max-width: 200%;
+}
+
+.topbar {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    font-family: 'Philosopher', sans-serif;
+}
+
+.topbar {
+    border-bottom: 1px solid #dfe2e6;
+    background: #fff;
+}
+
+@media (max-width: 991px) {
+
+    .topbar {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .topbar {
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
+.topbar p {
+    font-size: 15px;
+    font-size: 1rem;
+    color: #636363;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+
+    .topbar p {
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-size: 0.93333rem;
+    }
+}
+
+.topbar ul {
+    overflow: hidden;
+    list-style: none;
+	float: right;
+	margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+
+    .topbar ul {
+        float: none;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.topbar ul li {
+    font-size: 14px;
+    float: left;
+    padding: 20px 20px;
+    line-height: 1em;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.topbar .contact-info ul li Button {
+    color: #fff;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.topbar .contact-info ul li a {
+    color: #fff;
+}
+
+.topbar .contact-info ul li a:hover {
+    color: #7db1f0;
+}
+
+.topbar ul li {
+    color: #666;
+    border-right: 1px solid #dfe2e6;
+}
+
+.topbar ul li:first-child {
+    padding-left: 0;
+}
+
+.topbar .contact-intro ul {
+    float: none;
+}
+
+.topbar .contact-intro ul li a {
+    color: #636363;
+}
+
+@media (max-width: 991px) {
+
+    .topbar ul li {
+        font-size: 12px;
+    }
+    .topbar .theme-btn {
+        margin-top: 2px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .topbar ul li {
+        float: left;
+        border: none;
+        padding: 8px 6px;
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 590px) {
+
+    .topbar ul li {
+        float: none;
+    }
+
+    .topbar .contact-info ul li {
+        float: left;
+    }
+}
+
+.topbar ul>li+li+li {
+    border-right: none;
+    padding-right: 10px;
+    padding: 0;
+}
+
+.topbar ul>li+li {
+    border-right: none;
+}
+
+.topbar .theme-btn {
+    padding: 12px 20px;
+    margin-top: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.topbar ul .fi {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    padding-right: 3px;
+}
+
+.topbar ul .fi:before {
+    font-size: 15px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.topbar ul .fi:before {
+    color: #666;
+}
+
+@media (max-width: 991px) {
+
+    .topbar ul .fi:before {
+        font-size: 20px;
+        font-size: 1.33333rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .topbar ul .fi:before {
+        font-size: 16px;
+    }
+}
+
+.navigation ul {
+    list-style: none;
+}

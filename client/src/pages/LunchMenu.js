@@ -1,11 +1,13 @@
 import React from "react";
-import LunchMenu from "../components/LunchMenu/MenuList"
-import Counter from "../components/Counter";
+import LunchMenu from "../components/LunchMenu/MenuList";
+import Header from "../components/Header";
+import HeaderTopbar from "../components/HeaderTopbar";
 
 function Lunch() {
     return (
         <>
-            <Counter />
+            <HeaderTopbar style ={{zIndex: "9999"}}/>
+            <Header/>
             <LunchMenu />
         </>
     );

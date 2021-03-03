@@ -1,11 +1,10 @@
 
 const axios = require("axios");
 require('dotenv').config();
-const REACT_APP_API_KEY = process.env.API_KEY;
+const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 const BASEURL = "https://api.yelp.com/v3/businesses/uK3hclf6oje7rRAbUhPCLg/reviews";
 
 module.exports = function(app) {
-  console.log("the api key is "+ REACT_APP_API_KEY);
   app.get("/api/reviews", function(req, res) {    
     try {
       axios
@@ -13,7 +12,7 @@ module.exports = function(app) {
           BASEURL,
           {
             headers: {
-                Authorization: "Bearer "+REACT_APP_API_KEY
+                Authorization: "Bearer "+ REACT_APP_API_KEY
             }
           }
       ) 

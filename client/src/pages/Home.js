@@ -1,21 +1,20 @@
 import React from "react";
-import Card from "../../components/Card/index";
+import Card from "../components/Card/index";
 import { Row, Col } from "reactstrap";
-import data from "../../db/store.json";
-// import { useStoreContext } from '../../utils/GlobalStore';
-import './style.css';
-import Counter from "../../components/Counter";
-import Yelp from "../../components/Yelp";
-import photos from "../../db/photos.json"
+import data from "../db/store.json";
+import Header from "../components/Header";
+import HeaderTopbar from "../components/HeaderTopbar";
+import Yelp from "../components/Yelp";
+import photos from "../db/photos.json"
 import Gallery from "react-photo-gallery";
-import Feedback from "../../components/Feedback";
 
 function Home(props) {
-    // const [state] = useStoreContext();
+    
 
     return (
         <React.Fragment>
-            <Counter/>
+            <HeaderTopbar style ={{zIndex: "9999"}}/>
+            <Header/>
             <div className="menu-container container">
                 <Row className="justify-content-center">
                     {
@@ -35,9 +34,8 @@ function Home(props) {
                         
                 </Row>
                 <Row>
-                    <Yelp/>
+                    {/* <Yelp/> */}
                 </Row>
-                <Feedback />
             </div>
     </React.Fragment>);
 }

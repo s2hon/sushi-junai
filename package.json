@@ -19,12 +19,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sushijunaiatx/sushi-junai.git"
+    "url": "git+https://github.com/sushi-junai-atx/sushi-junai.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/sushijunaiatx/sushi-junai#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
@@ -39,6 +38,7 @@
     "react-bootstrap": "^1.4.0",
     "react-fontawesome": "^1.7.1",
     "react-hook-form": "^6.13.1",
+    "react-joyride": "^2.3.0",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.2.2",

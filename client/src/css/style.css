@@ -147,13 +147,32 @@ footer {
     display: inline;
 }
 
-/* Reviews */
-
-.stars{
-    color: #FFB400;
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20;
+    margin-bottom: 20;
+    align-content: center;  
 }
 
-.review-text{
-    font-size: 15px;
-    
+.location-wrap {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.justify-content-center .li {
+    justify-content: space-between;
+}
+
+@media(max-width: 992px) {
+    .wpo-team-area {
+        padding-bottom: 30px;
+    }
+}
+
+.justify-content-center .buttons{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }

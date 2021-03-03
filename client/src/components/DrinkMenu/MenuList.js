@@ -3,7 +3,8 @@ import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";
 import MenuItems from "./MenuItems";
-import BackButton from "../BackButton/BackButton";
+import BackButton from "../BackButton";
+import Scrollup from "../ScrollUp/index";
 
 function Menu(props) {
     const [sj1, setsj1] = useState(false);
@@ -39,9 +40,9 @@ function Menu(props) {
     return (
         <>
             <Container>
-                <div className="menu-container">
+                <div className="menu-container" id="top">
                     <Row>
-                        <h1 className="center"><BackButton />Drink Menu</h1><hr />
+                        <h1 className="center" style={{paddingLeft: "3%"}}><BackButton />Drink Menu</h1><hr />
                     </Row>
                     <Row className="sticky-top menuOptions">
                         <span class="form-check form-check-inline">
@@ -189,7 +190,7 @@ function Menu(props) {
                                     return (
                                         <div className="card menu-card text-center">
                                             <div className="card-body d-flex justify-content-between">
-                                                <MenuItems key={idx} name={item.name} price={item.price} drinks={item.drinks} description={item.description} >
+                                                <MenuItems key={idx} name={item.name} price={item.price} drinks={item.drinks} description={item.description} popular={item.popular} staffpick={item.staffpick}>
                                                 </MenuItems>
                                             </div>
                                         </div>
@@ -200,6 +201,7 @@ function Menu(props) {
                     </Row>
                 </div>
             </Container>
+            <Scrollup />
         </>
     );
 }

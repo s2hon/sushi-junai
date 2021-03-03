@@ -3,23 +3,25 @@ import { Link } from "react-router-dom";
 import MenuCartItem from './MenuCartItem';
 import MenuCartGreyItem from './MenuCartGreyItem';
 import Container from "../Container";
-import {
-    TabContent,
-    TabPane,
-    Button,
-    Row,
-    Nav,
-    NavItem,
+import { 
+    TabContent, 
+    TabPane, 
+    Row, 
+    Nav, 
+    NavItem, 
     NavLink,
-    Table
-} from 'reactstrap';
+    Table } from 'reactstrap';
+import Button from "../Button";
 import classnames from 'classnames';
 import EmptyCart from './EmptyCart';
 import TipCalculater from '../TipCalculater';
 import Counter from "../Counter";
 import './style.css';
-import BackButton from '../BackButton/BackButton';
+import BackButton from '../BackButton';
 import VisibleNotification from "../Notification2";
+import HeaderTopbar from "../HeaderTopbar";
+import Header from "../DineinHeader";
+import Tour from "../OrderSummaryTour"
 
 const MenuCart = (props) => {
     const [activeTab, setActiveTab] = useState('1');
@@ -41,15 +43,15 @@ const MenuCart = (props) => {
     let accumulativeTotal = (parseFloat(totalSavings) + cartCostTotal).toFixed(2)
 
     const limitedItem = [
-        'Screaming "O" (3/8 pcs)',
-        'White "O" (3/8 pcs)',
-        "Beef",
-        "Conch (Makigai)",
-        "Tako Wasabi",
-        "Sweet Shrimp (Ama Ebi)",
-        "Sashimi Special (4 pcs)",
-        "Mochi Ice Cream"]
-
+    'Screaming "O"',
+    'White "O"',
+    "Beef",
+    "Conch (Makigai)",
+    "Tako Wasabi",
+    "Sweet Shrimp (Ama Ebi)",
+    "Sashimi Special",
+    "Mochi Ice Cream"]
+    
     const cartItems = menuCart.map(menuCart => menuCart.name);
     let used = cartItems.filter(item => limitedItem.includes(item));
 
@@ -83,12 +85,14 @@ const MenuCart = (props) => {
 
     return (
         <>
-            <Counter />
+            <HeaderTopbar style ={{zIndex: "9999"}}/>
+            <Header/>
+            <Counter/>
             <Container>
                 <div className="menu-container">
-                    <Row>
-
-                        <h3 className="cartHeading"><BackButton /> Sushi Tracker ({currentQtyTotal})</h3>
+                    <Row className="title-bar">
+                        <h3 className="cartHeading"><BackButton />Sushi Tracker ({currentQtyTotal})</h3>
+                        <Button btn="float-right btn btn1 five">Tutorial</Button>
                     </Row>
                     <Nav tabs>
                         <NavItem>
@@ -99,7 +103,7 @@ const MenuCart = (props) => {
                                 current rounds
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className="eight">
                             <NavLink
                                 className={classnames({ active: activeTab === '2' })}
                                 onClick={() => { toggle('2'); }}
@@ -109,11 +113,10 @@ const MenuCart = (props) => {
                         </NavItem>
                     </Nav>
                     <TabContent activeTab={activeTab}>
-                        <TabPane tabId="1">
+                        <TabPane className="six" tabId="1">
                             <Table bordered striped>
                                 <thead>
                                     <tr>
-                                        <th></th>
                                         <th>Item</th>
                                         <th>Quantity</th>
                                         <th>Price</th>
@@ -151,15 +154,14 @@ const MenuCart = (props) => {
                                 <tbody className="mainFont">
                                     {desserts.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
                                 </tbody>
-                                {!menuCart.length ? "" : <Button type={"button"} className={"btn btn2"} onClick={() => nextRound()} style={{ display: "inline-block" }}><h5>Next Round</h5> </Button>}
-                                <VisibleNotification />
+                                {!menuCart.length ? "" : <Button id="seven" btn="btn btn1" onClick={() => nextRound()} style={{display:"inline-block"}}>Next Round </Button> }
+                                <VisibleNotification/>
                             </Table>
                         </TabPane>
                         <TabPane tabId="2">
                             <Table bordered striped>
                                 <thead>
                                     <tr>
-                                        <th></th>
                                         <th>Item</th>
                                         <th>Quantity</th>
                                         <th>Price</th>
@@ -202,8 +204,8 @@ const MenuCart = (props) => {
                     <div className="row buttons">
                         <Link
                             to="/ayce" className="active">
-                            <Button type={"button"} className={"btn btn1"} style={{ display: "inline-block" }}><h5>BACK TO MENU</h5></Button>
-                        </Link>
+                                <Button className="nine" btn="btn btn1" style={{display:"inline-block"}}><h5>BACK TO MENU</h5></Button>
+                        </Link> 
                     </div>
                     <div className="row right">
                         <div className="col-3 offset-6">
@@ -226,6 +228,7 @@ const MenuCart = (props) => {
                     </div>
                 </div>
             </Container>
+            <Tour />
         </>
     );
 };

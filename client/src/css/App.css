@@ -86,19 +86,6 @@ li a.dropdown-toggle::after {
   overflow-y: scroll;
 }
 
-.side-menu::-webkit-scrollbar {
-  width: 10px;
-}
-
-.side-menu::-webkit-scrollbar-thumb {
-  background: #5AC379;
-  border-radius: 3px;
-}
-
-.side-menu::-webkit-scrollbar-thumb:hover {
-  background: #5AC379;
-}
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
