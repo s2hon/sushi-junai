@@ -17,8 +17,7 @@ const NavBar = (props) => {
                 <NavItem>
                 <NavLink href="#rice">Rice</NavLink>
                 </NavItem>
-            </Nav>
-            <Nav>
+
                 <NavItem>
                 <NavLink href="#classicRoll" active>Classic Rolls/Hand Rolls</NavLink>
                 </NavItem>
@@ -34,8 +33,7 @@ const NavBar = (props) => {
                 <NavItem>
                 <NavLink href="#bakedRolls">Baked Rolls</NavLink>
                 </NavItem>
-            </Nav>
-            <Nav>
+
                 <NavItem>
                 <NavLink href="#desserts" active>Desserts</NavLink>
                 </NavItem>

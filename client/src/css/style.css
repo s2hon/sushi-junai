@@ -26,7 +26,8 @@
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
     position: sticky;
-    width: 90%;
+    width: 100%;
+    font-size: 14px !important;
 
 }
 
@@ -90,8 +91,10 @@ h1, h2, h3, h4 {
     font-family: 'Philosopher', sans-serif;
 }
 
-h5, h6, p, label, .btn, .mainFont {
+
+h5, h6, p, label, .btn, .mainFont, li, th {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px !important;
 }
 
 .centered{ 
@@ -107,6 +110,7 @@ h5, h6, p, label, .btn, .mainFont {
 .white-text {
     color: white !important;
 }
+
 
 .counter {
     font-size: 2em;
@@ -153,6 +157,16 @@ footer {
     margin-top: 20;
     margin-bottom: 20;
     align-content: center;  
+}
+
+a.nav-link {
+    padding: 5px !important;
+    margin-top: 2px;
+    margin-right: 2px;
+    color: black;
+    background-color: #FFB400;
+    border-radius: 7px;
+    font-size: 14px;
 }
 
 .location-wrap {

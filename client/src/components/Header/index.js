@@ -40,9 +40,9 @@ const Header = () => {
                                 <Link to="/delivery" title="">Delivery</Link>
                             </li>
                             <li>
-                                <Link title="">Dinein</Link>
+                                <Link title="">Dine In</Link>
                                 <ul>
-                                    <li><Link to="/dinein" title="">Click Here if your at Sushi Junai & ready to roll!</Link></li>
+                                    <li><Link to="/dinein" title="">Click Here if you're at Sushi Junai & ready to roll!</Link></li>
                                 </ul>
                             </li>
                         </ul>
