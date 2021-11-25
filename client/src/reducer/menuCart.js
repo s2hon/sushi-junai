@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import {loadState} from "../localstorage";
 
 const persistedState = loadState("menuCart");

@@ -1,9 +1,4 @@
 import React, { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-    faFacebookF,
-    faInstagram
-} from "@fortawesome/free-brands-svg-icons";
 import withReactContent from 'sweetalert2-react-content'
 import { useForm } from 'react-hook-form'
 import * as emailjs from "emailjs-com";

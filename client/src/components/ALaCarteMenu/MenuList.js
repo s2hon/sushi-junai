@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"
-import Button from "../Button";
 import Container from "../Container";
 import Row from "../Row";
 import menu from "../../db/menu.json";

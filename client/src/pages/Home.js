@@ -4,7 +4,6 @@ import { Row, Col } from "reactstrap";
 import data from "../db/store.json";
 import Header from "../components/Header";
 import HeaderTopbar from "../components/HeaderTopbar";
-import Yelp from "../components/Yelp";
 import photos from "../db/photos.json"
 import Gallery from "react-photo-gallery";
 
