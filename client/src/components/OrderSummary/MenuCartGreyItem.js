@@ -2,7 +2,7 @@ import React from 'react';
 
 const MenuCartGreyItem = (props) => {
 
-    const { name, quantity, category, price } = props.item
+    const { name, quantity, price } = props.item
     return (
         <tr>
             <th scope="row"><p>{name}</p></th>

@@ -39,6 +39,7 @@ const oldCart = (state=persistedState || [], action) => {
                 })
             }
         } 
+        break
         default:
             return state
     }

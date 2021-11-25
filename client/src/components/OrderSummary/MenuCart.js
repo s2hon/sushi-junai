@@ -154,7 +154,8 @@ const MenuCart = (props) => {
                                 <tbody className="mainFont">
                                     {desserts.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
                                 </tbody>
-                                {!menuCart.length ? "" : <Button id="seven" btn="btn btn1" onClick={() => nextRound()} style={{display:"inline-block"}}>Next Round </Button> }
+                                {/* TODO: Fix NEXT ROUND button */}
+                                {/* {!menuCart.length ? "" : <Button id="seven" btn="btn btn1" onClick={() => nextRound()} style={{display:"inline-block"}}>Next Round </Button> } */}
                                 <VisibleNotification/>
                             </Table>
                         </TabPane>
