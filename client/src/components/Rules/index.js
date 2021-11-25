@@ -39,8 +39,8 @@ const Slider = (props) => {
                         <div className="rules-title">
                             <h1>All You Can Eat Rules</h1>
                             {currentHour<15 ? <Lunch /> : ""}
-                            <h2>Dinner (All Day): time limit 90 min for $32.95</h2>
-                            <h3>for Kid's 2 to 7yrs: $15.95</h3>
+                            <h2>Dinner (All Day): time limit 90 min for $36.95</h2>
+                            <h3>for Kid's 2 to 7yrs: $16.95</h3>
                             <hr />
                             <h4>Scroll to the bottom and click "I Agree" to access your sushi tracker.</h4>
                         </div>
